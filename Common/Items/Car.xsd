@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 8.1.2.2399 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation=".\CarCategory.xsd" />
+    <xs:element name="Car">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Company" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Car rental company</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Address1" type="xs:string" minOccurs="0" />
+                <xs:element name="Address2" type="xs:string" minOccurs="0" />
+                <xs:element name="Country" minOccurs="0">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="IsoCode" type="xs:string" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Region" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Region of the Country</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SubRegion" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Subregion of the region</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="PostalCode" type="xs:string" minOccurs="0" />
+                <xs:element name="City" type="xs:string" minOccurs="0" />
+                <xs:element name="Phone" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="AreaCode" type="xs:string" />
+                        <xs:attribute name="Number" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Fax" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="AreaCode" type="xs:string" />
+                        <xs:attribute name="Number" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CarCode" type="xs:string" minOccurs="0" />
+                <xs:element name="Category" type="xs:string" minOccurs="0" />
+                <xs:element name="Included" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA, describes what amenities are included in this booking.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Pickup" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="Time" type="xs:time" />
+                        <xs:attribute name="Description" type="xs:string" />
+                        <xs:attribute name="Info">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Airport" />
+                                    <xs:enumeration value="Hotel" />
+                                    <xs:enumeration value="Walkin" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="PickupInfo" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA display information for pickup</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Dropoff" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="Time" type="xs:time" />
+                        <xs:attribute name="Description" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="DropoffInfo" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA display information for dropoff</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ConfirmationNr" type="xs:string" minOccurs="0" />
+                <xs:element name="DescriptionVoucher" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA - Text string to be displayed on the voucher regarding additional information. Is normally sent in english.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Remark" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RemarkVoucher" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA display wish for voucher</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SupplierInfos" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA display for supplier information</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="PriceInfo" type="xs:string" minOccurs="0" />
+                <xs:element name="CarCategories" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>This is only used if the external developer sends an availability request</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="CarCategory" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

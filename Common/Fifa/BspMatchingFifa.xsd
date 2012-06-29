@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BspMatchingFifa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="BspHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VoucherNr" type="xs:integer" />
+              <xs:element name="CreditorAccountNr" type="xs:string" />
+              <xs:element name="BspPeriode" type="xs:string" />
+              <xs:element name="EntryDate" type="xs:date" />
+              <xs:element name="ValutaDate" type="xs:date" />
+              <xs:element name="Currency" type="xs:string" />
+              <xs:element name="TotalAmount" type="xs:decimal" />
+              <xs:element name="TotalCount" type="xs:integer" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BspTickets" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+              <xs:element name="BspTicket">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="RecordNr" type="xs:integer" />
+                    <xs:element name="TicketNr" type="xs:string">
+                      <xs:annotation>
+                        <xs:documentation>Flight ticket number</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AccountNr" type="xs:string" />
+                    <xs:element name="VAT_Code" type="xs:string" />
+                    <xs:element name="Description" type="xs:string" />
+                    <xs:element name="ToPayAmount" type="xs:decimal" />
+                    <xs:element name="TicketCurrency" type="xs:string" />
+                    <xs:element name="DossierNr" type="xs:string" />
+                    <xs:element name="RevisionNr" type="xs:unsignedByte" />
+                    <xs:element name="EmployeeCode" type="xs:string" />
+                    <xs:element name="PaxCustomerNr" type="xs:integer" />
+                    <xs:element name="PaxTitle" type="xs:string" />
+                    <xs:element name="PaxFirstName" type="xs:string" />
+                    <xs:element name="PaxLastName" type="xs:string" />
+                    <xs:element name="DepIata" type="xs:string" />
+                    <xs:element name="TurnaroundIata" type="xs:string" />
+                    <xs:element name="ReturnIata" type="xs:string" />
+                    <xs:element name="RoutingShort" type="xs:string" />
+                    <xs:element name="RoutingLong" type="xs:string" />
+                    <xs:element name="DepartureCountry" type="xs:string" />
+                    <xs:element name="TurnaroundCountry" type="xs:string" />
+                    <xs:element name="ReturnCountry" type="xs:string" />
+                    <xs:element name="MinDate" type="xs:date" minOccurs="0" />
+                    <xs:element name="MaxDate" type="xs:date" minOccurs="0" />
+                    <xs:element name="BspTicketSplits" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded">
+                          <xs:element name="BspTicketSplit">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ExtCostName" type="xs:string" minOccurs="0" />
+                                <xs:element name="ExtCostAdress1" type="xs:string" minOccurs="0" />
+                                <xs:element name="ExtCostAdress2" type="xs:string" minOccurs="0" />
+                                <xs:element name="ExtCostCity" type="xs:string" minOccurs="0" />
+                                <xs:element name="ExtCostCountry" type="xs:string" minOccurs="0" />
+                                <xs:element name="ExtCostReasonCode" type="xs:string" minOccurs="0" />
+                                <xs:element name="ExtCostAttention" type="xs:string" minOccurs="0" />
+                                <xs:element name="ProjectNr" type="xs:string" />
+                                <xs:element name="CostCenterEmployee" type="xs:string" />
+                                <xs:element name="CostCenterSponsor" type="xs:string" />
+                                <xs:element name="SplitAmount" type="xs:decimal" />
+                                <xs:element name="EffectiveAmount" type="xs:decimal" />
+                              </xs:sequence>
+                              <xs:attribute name="ExtCost" type="xs:boolean" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

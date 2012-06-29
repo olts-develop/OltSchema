@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio 7.1.0.1135 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TransportationTrains">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="TransportationTrain">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TravelClass">
+                <xs:annotation>
+                  <xs:documentation>1. Class, 2. Class, Default empty, error when no data entered</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FromCity">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string" />
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ToCity" type="xs:string" />
+              <xs:element minOccurs="0" name="ArrivalDate" type="xs:date" />
+              <xs:element minOccurs="0" name="ArrivalTime" type="xs:time">
+                <xs:annotation>
+                  <xs:documentation>Default empty, user must enter a time or a text "Any time"</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element minOccurs="0" name="DepartureDate" type="xs:date" />
+              <xs:element minOccurs="0" name="DepartureTime" type="xs:time">
+                <xs:annotation>
+                  <xs:documentation>Default empty, user must enter a time or a text "Any time"</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Remark" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>CDATA</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

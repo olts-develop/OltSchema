@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation=".\Description.xsd" />
+    <xs:include schemaLocation="..\GeneralCodes\InternalPriceType.xsd" />
+    <xs:element name="CancellationFee">
+        <xs:annotation>
+            <xs:documentation>Cancellation fee for this Item</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="BeginDate" type="xs:date" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Dossier creation date</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="EndDate" type="xs:date" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Dossier creation date</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Descriptions" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="Description" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation>One description per language supported</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Amount" type="xs:decimal" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>the Amout of the cancellation fee
+              only Amount or Percentage is valid not both
+            </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Percent" type="xs:decimal" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>the percentage of the total Price of the cancellation fee
+              only Amount or Percentage is valid not both
+            </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DayBevorDepartureBegin" type="xs:integer" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>First day when the item is allowed to be cancled</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DayBevorDepartureEnd" type="xs:integer" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Last day when the item is allowed to be cancled</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ProcessFee" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Will process fee be applied to the dossier
+              0 = No process fees
+              1 = With process fees
+            </xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:enumeration value="0" />
+                            <xs:enumeration value="1" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="PriceType" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation> 0 = Change, 1 = Storno
+            </xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:enumeration value="0" />
+                            <xs:enumeration value="1" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="NrDaysFeeApply" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation> 0 = same Day
+              1 = next Day
+              2 = 2 Days
+              3 = 3 Days
+            </xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:enumeration value="0" />
+                            <xs:enumeration value="1" />
+                            <xs:enumeration value="2" />
+                            <xs:enumeration value="3" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:all>
+            <xs:attribute name="InternalPriceType" type="InternalPriceType" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

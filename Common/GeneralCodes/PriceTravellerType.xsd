@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="PriceTravellerType">
+    <xs:attribute name="TravellerSeq" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="0" />
+          <xs:maxLength value="20" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="TravellerId" type="xs:integer" use="required">
+      <xs:annotation>
+        <xs:documentation>Optional. This value is for display purposes only.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="CustomerNr" type="xs:integer" use="optional">
+      <xs:annotation>
+        <xs:documentation>Customer number of this traveller, if the customer is in the Agent Online customer database.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+</xs:schema>

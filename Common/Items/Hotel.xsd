@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation=".\Room.xsd" />
+    <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
+    <xs:element name="Hotel">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="HotelName" type="xs:string" minOccurs="0" />
+                <xs:element name="Address1" type="xs:string" minOccurs="0" />
+                <xs:element name="Address2" type="xs:string" minOccurs="0" />
+                <xs:element name="Country" minOccurs="0">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="IsoCode" type="xs:string" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Region" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Region of the Country</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SubRegion" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Subregion of the region</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="PostalCode" type="xs:string" minOccurs="0" />
+                <xs:element name="City" type="xs:string" minOccurs="0" />
+                <xs:element name="Phone" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="AreaCode" type="xs:string" />
+                        <xs:attribute name="Number" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Fax" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="AreaCode" type="xs:string" />
+                        <xs:attribute name="Number" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Mobile" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="AreaCode" type="xs:string" />
+                        <xs:attribute name="Number" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="NrRooms" type="xs:integer" minOccurs="0" />
+                <xs:element name="RoomType" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>e.g. Deluxe Double Room</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Included" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA, describes what amenities are included in this booking.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RoomVoucher" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA - Text string to be displayed on the voucher regarding room information. Is normally sent in english.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MealVoucher" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA - Text string to be displayed on the voucher regarding meal information. Is normally sent in english.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DescriptionVoucher" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA - Text string to be displayed on the voucher regarding additional information. Is normally sent in english.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="WishVoucher" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA - Text string to be displayed on the wish voucher regarding additional information. Is normally sent in english.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RoomDescription" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Text string which contains additional information about the room in the language of the dossier, e.g. mit Bad oder Dusche / WC, or if this is an english dossier, with bath or shower / toilette</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ConfirmationNr" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Confirmation number of this booking</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="ConfirmedBy" type="xs:string" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Arrival" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Where does the user arrive. This could be a flight numer with airport information, e.g. "3I401Y Punta Arenas-Santiago de Chile".</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:attribute name="Time" type="xs:time" />
+                        <xs:attribute name="Description" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Departure" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Where does the user departThis could be a flight numer with airport information, e.g. "3I401Y Punta Arenas-Santiago de Chile".</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:attribute name="Time" type="xs:time" />
+                        <xs:attribute name="Description" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Email" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Email of the hotel</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="WebURL" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>URL of the hotel</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Destination" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>ISO code Destination of the hotel</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="HotelCode" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Hotel booking code, e.g. BELLAG for Bellagio</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Owner" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Name of the hotel owner</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Category" type="xs:decimal" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Category
+              1  =one Star
+              3.5 = 3 plus stars
+              0.0  =unknown
+            </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="HotelChain" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Full name of the hotel chain, e.g. Holiday Inn</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="BillingSupplier" type="SupplierType" minOccurs="0" />
+                <xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0" />
+                <xs:element name="PayableTo" type="xs:string" minOccurs="0" />
+                <xs:element name="VatNr" type="xs:string" minOccurs="0" />
+                <xs:element name="Rooms" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="Room" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

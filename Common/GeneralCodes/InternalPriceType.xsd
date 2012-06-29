@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="InternalPriceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FLIGHTTICKET" />
+      <xs:enumeration value="FLIGHTTAX" />
+      <xs:enumeration value="FLIGHTFEE" />
+      <xs:enumeration value="HOTELROOM" />
+      <xs:enumeration value="INSURANCE" />
+      <xs:enumeration value="CANCELLATIONFEE" />
+      <xs:enumeration value="CREDITNOTE" />
+      <xs:enumeration value="CUSTOMERDOSSIERFEE" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

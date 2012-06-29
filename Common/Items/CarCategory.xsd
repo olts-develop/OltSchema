@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation=".\ProductItemPrice.xsd" />
+  <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
+  <xs:element name="CarCategory">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="Category" type="xs:string" minOccurs="0" />
+        <xs:element name="CRSCode" type="xs:string" minOccurs="0" />
+        <xs:element name="Type" type="xs:string" minOccurs="0" />
+        <xs:element name="TourboCode" type="xs:string" minOccurs="0" />
+        <xs:element name="Camper" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="YES" />
+              <xs:enumeration value="NO" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="Miscellaneous" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="YES" />
+              <xs:enumeration value="NO" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="PlanCode" type="xs:string" minOccurs="0" />
+        <xs:element name="Destination" type="xs:string" minOccurs="0" />
+        <xs:element name="TourboDescription" type="xs:string" minOccurs="0" />
+        <xs:element name="IncludedDescription" type="xs:string" minOccurs="0" />
+        <xs:element name="Supplier" type="SupplierType" />
+        <xs:element name="ProductItemPrices" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="ProductItemPrice" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute name="Key" use="required">
+        <xs:annotation>
+          <xs:documentation> Primary Key of the Item used in Database of reciever</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

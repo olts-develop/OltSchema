@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TravelDate">
+    <xs:complexType>
+      <xs:attribute name="TravelBeginDate" type = "xs:date" use="required" />
+      <xs:attribute name="TravelEndDate" type = "xs:date" use="required" />
+      <xs:attribute name="ExcludeTravelDate" use="optional">
+        <xs:annotation>
+          <xs:documentation>The periode TravelBeginDate / TravelEndDate is not bookable</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Monday" use="optional">
+        <xs:annotation>
+          <xs:documentation>Every Monday from TravelBeginDate on, till the next Travelbegindate</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Tuesday" use="optional">
+        <xs:annotation>
+          <xs:documentation>Every Tuesday from TravelBeginDate on, till the next Travelbegindate</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Wednesday" use="optional">
+        <xs:annotation>
+          <xs:documentation>Every Wednesday from TravelBeginDate on, till the next Travelbegindate</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Thursday" use="optional">
+        <xs:annotation>
+          <xs:documentation>Every Thursday from TravelBeginDate on, till the next Travelbegindate</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Friday" use="optional">
+        <xs:annotation>
+          <xs:documentation>Every Friday from TravelBeginDate on, till the next Travelbegindate</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Saturday" use="optional">
+        <xs:annotation>
+          <xs:documentation>Every Saturday from TravelBeginDate on, till the next Travelbegindate</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Sunday" use="optional">
+        <xs:annotation>
+          <xs:documentation>Every Sunday from TravelBeginDate on, till the next Travelbegindate</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

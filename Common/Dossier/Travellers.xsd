@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio 7.1.4.1284 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Travellers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="Traveller">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element minOccurs="0" name="TravellerSeq">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="20" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TravellerId" type="xs:integer" />
+                            <xs:element minOccurs="0" name="CustomerNr" type="xs:integer" />
+                            <xs:element minOccurs="0" name="Language" type="xs:language" />
+                            <xs:element minOccurs="0" name="Gender">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="m" />
+                                        <xs:enumeration value="f" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Child">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Baby">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="FirstName" type="xs:string" />
+                            <xs:element name="LastName" type="xs:string" />
+                            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date" />
+                            <xs:element minOccurs="0" name="Email" type="xs:string" />
+                            <xs:element minOccurs="0" name="Mobile">
+                                <xs:complexType>
+                                    <xs:attribute name="AreaCode" type="xs:string" />
+                                    <xs:attribute name="Number" type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Phone">
+                                <xs:complexType>
+                                    <xs:attribute name="AreaCode" type="xs:string" />
+                                    <xs:attribute name="Number" type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Passport">
+                                <xs:complexType>
+                                    <xs:attribute name="PassportNumber" type="xs:string" />
+                                    <xs:attribute name="ValidUntil" type="xs:date" />
+                                    <xs:attribute name="Nationality" type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="TrainCardType">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        Y - Keine Karte vorhanden
+                                        H - Halbtax
+                                        G1 - Generalabo first Klass
+                                        G2 - Generalabo Second Klass
+                                        Can be empty
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="2" />
+                                        <xs:enumeration value="Y" />
+                                        <xs:enumeration value="H" />
+                                        <xs:enumeration value="G1" />
+                                        <xs:enumeration value="G2" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="TrainSeatReservation">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:boolean" />
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="FlightSeatCode">
+                                <xs:annotation>
+                                    <xs:documentation>  A - Aisle
+                                        W - Window
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="A" />
+                                        <xs:enumeration value="W" />
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="1" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="FlightMealCode" type="xs:string" />
+                            <xs:element minOccurs="0" name="HomeBase">
+                                <xs:annotation>
+                                    <xs:documentation>Three letter airport code of the home base of this traveller, if the traveller is associated with a customer in the customer database and has a home base entered.</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="3" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Country" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="IsoCode" type="xs:string" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="SourceDossierSeq" minOccurs="0" type="xs:string" >
+                                <xs:annotation>
+                                    <xs:documentation>Referenze to an existing Dossier</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>  
+                        </xs:all>
+                        <xs:attribute name="ViewOnly" type="xs:boolean" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>If this customer is not from the customer database then a modification of this traveller is not possible. Only a view is possible.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="Action" use="optional">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="insert" />
+                                    <xs:enumeration value="update" />
+                                    <xs:enumeration value="delete" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

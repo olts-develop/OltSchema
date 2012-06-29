@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation=".\Description.xsd" />
+  <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
+  <xs:element name="ProductItemPrice">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="UnitPrice" type="xs:decimal" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Price per Unit</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Descriptions" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>xs:element name=&amp;quot;Currency&amp;quot; type=&amp;quot;xs:string&amp;quot; /</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="Description" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>One description per language supported</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PriceBegin" type="xs:date" minOccurs="0" />
+        <xs:element name="PriceEnd" type="xs:date" minOccurs="0" />
+        <xs:element name="PricePerRoom" type="xs:boolean" minOccurs="0" />
+        <xs:element name="PricePerPerson" type="xs:boolean" minOccurs="0" />
+        <xs:element name="NumerOfPersons" type="xs:integer" minOccurs="0" />
+        <xs:element name="NumberOfNights" type="xs:integer" minOccurs="0" />
+        <xs:element name="AdditionalNight" type="xs:boolean" minOccurs="0" />
+        <xs:element name="PackagePrice" type="xs:boolean" minOccurs="0" />
+        <xs:element name="OneTimeCharge" type="xs:boolean" minOccurs="0" />
+        <xs:element name="ChargePerNight" type="xs:boolean" minOccurs="0" />
+        <xs:element name="NoDiscount" type="xs:boolean" minOccurs="0" />
+        <xs:element name="BeginDateRelevant" type="xs:boolean" minOccurs="0" />
+        <xs:element name="EndDateRelevant" type="xs:boolean" minOccurs="0" />
+        <xs:element name="BookMonday" type="xs:boolean" minOccurs="0" />
+        <xs:element name="BookTuesday" type="xs:boolean" minOccurs="0" />
+        <xs:element name="BookWednesday" type="xs:boolean" minOccurs="0" />
+        <xs:element name="BookThursday" type="xs:boolean" minOccurs="0" />
+        <xs:element name="BookFriday" type="xs:boolean" minOccurs="0" />
+        <xs:element name="BookSaturday" type="xs:boolean" minOccurs="0" />
+        <xs:element name="BookSunday" type="xs:boolean" minOccurs="0" />
+        <xs:element name="Flight" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PricePerWay" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Via" type="xs:boolean" minOccurs="0" />
+              <xs:element name="FlightClass" type="xs:string" minOccurs="0" />
+              <xs:element name="AirLine" type="xs:string" minOccurs="0" />
+              <xs:element name="OutboundFlight" type="xs:boolean" minOccurs="0" />
+              <xs:element name="InboundFlight" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Children" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Baby" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Child" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ChildAgeFrom" type="xs:integer" minOccurs="0" />
+              <xs:element name="ChildAgeTo" type="xs:integer" minOccurs="0" />
+              <xs:element name="NumberAdults" type="xs:integer" minOccurs="0" />
+              <xs:element name="NumberChilds" type="xs:integer" minOccurs="0" />
+              <xs:element name="ExtraChildRoom" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SpecialChildPrice" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EarlyBooking" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Percentage" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BookingBeginDate" type="xs:date" minOccurs="0" />
+              <xs:element name="BookingEndDate" type="xs:date" minOccurs="0" />
+              <xs:element name="FromDay" type="xs:integer" minOccurs="0" />
+              <xs:element name="TillDay" type="xs:integer" minOccurs="0" />
+              <xs:element name="DaysFromBookingDate" type="xs:integer" minOccurs="0" />
+              <xs:element name="DaysToBookingDate" type="xs:integer" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="More" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SpecialCommisionMore" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CommisionMore" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Supplier" type="SupplierType" minOccurs="0" />
+              <xs:element name="SecondWeek" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SeasonChange" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PerWeek" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PerDay" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FlightOnlyArrangement" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SpecialPrice" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AlwaysSpecialPrice" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PriceAvailableTill" type="xs:date" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SpecialOffer" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SavingDays" type="xs:integer" minOccurs="0" />
+              <xs:element name="PayNights" type="xs:integer" minOccurs="0" />
+              <xs:element name="Cumulativ" type="xs:integer" minOccurs="0" />
+              <xs:element name="StandardCalculationRule" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    0 = End Days
+                    1 = Start Days
+                    2 = Min. Amount
+                    3 = Max. Amount
+                    4 = Average
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                    <xs:enumeration value="3" />
+                    <xs:enumeration value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rail" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TrainCardType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>  H - Halbtax
+                    N - Kein ticket nötig
+                    G - Generalabonement
+                    Y - Voller Preis
+                    X - Keine FAmilienermäsigung
+                    W - Generalabo Second Klass, Hauptstrecke first Klass
+                    Z - Generalabo Second Klass, alle Segmente first Klass
+                    Can be empty
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="0" />
+                    <xs:maxLength value="1" />
+                    <xs:enumeration value="H" />
+                    <xs:enumeration value="N" />
+                    <xs:enumeration value="G" />
+                    <xs:enumeration value="Y" />
+                    <xs:enumeration value="X" />
+                    <xs:enumeration value="W" />
+                    <xs:enumeration value="Z" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RailClass" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Bus" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DepartureTerminal" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="DepartureTerminalKey" use="required">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:minLength value="0" />
+                            <xs:maxLength value="20" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:attribute>
+                      <xs:attribute name="DepartureTerminalName" type="xs:string" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ArrivalTerminal" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="ArrivalTerminalKey" use="required">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:minLength value="0" />
+                            <xs:maxLength value="20" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:attribute>
+                      <xs:attribute name="ArrivalTerminalName" type="xs:string" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="OneWay" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Retour" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TotalPriceNetto" type="xs:decimal" />
+      </xs:all>
+      <xs:attribute name="PriceSequence" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

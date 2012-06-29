@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio 7.0.1.654 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TransportationDriver">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TransportationDate" type="xs:date" />
+        <xs:element name="PickupTime" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Either a time in the format 13:59.99 or the string tbc (to be confirmed)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="DropOffDate" type="xs:date" />
+        <xs:element name="DropOffTime" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Either a time in the format 13:59.99 or the string tbc (to be confirmed)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="AssociatedFlightFrom" type="xs:string" />
+        <xs:element name="AssociatedFlightTo" type="xs:string" />
+        <xs:element name="TransportationRoutingFrom" type="xs:string" />
+        <xs:element name="TransportationRoutingTo" type="xs:string" />
+        <xs:element name="NrAccompanyingPersons" type="xs:integer" />
+        <xs:element name="Remark" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>CDATA</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

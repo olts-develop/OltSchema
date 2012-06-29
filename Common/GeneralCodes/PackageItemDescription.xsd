@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="PackageItemDescription">
+    <xs:sequence>
+      <xs:element name="InvoiceText" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>CDATA</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ItineraryText" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>CDATA</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DepartureText" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>CDATA</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

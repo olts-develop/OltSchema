@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!--xs:include schemaLocation="..\Fifa\Projects.xsd" /-->
+  <xs:include schemaLocation=".\TravelRequestFlights.xsd" />
+  <xs:include schemaLocation=".\TravelRequestAccommodations.xsd" />
+  <xs:include schemaLocation=".\TravelRequestTransportationDriver.xsd" />
+  <xs:include schemaLocation=".\TravelRequestTransportationVIP.xsd" />
+  <xs:include schemaLocation=".\TravelRequestTransportationTrain.xsd" />
+  <xs:include schemaLocation="..\GeneralCodes\ProjectType.xsd" />
+  <xs:element name="TravelRequests">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TravelRequest" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="0" />
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Projects" minOccurs="0">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="Project" type="ProjectType" />
+                  </xs:all>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Travellers" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Traveller" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="TravellerSeq" use="optional">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:minLength value="0" />
+                              <xs:maxLength value="20" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="TravellerId" type="xs:integer" use="optional">
+                          <xs:annotation>
+                            <xs:documentation>Optional. This value is for display purposes only.</xs:documentation>
+                          </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="CustomerNr" type="xs:integer" use="optional">
+                          <xs:annotation>
+                            <xs:documentation>Optional. This value is for display purposes only.</xs:documentation>
+                          </xs:annotation>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:choice>
+                <xs:element ref="Flights" />
+                <xs:element ref="Accommodations" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="TransportationDriver" />
+                <xs:element ref="TransportationVIP" />
+                <xs:element ref="TransportationTrains" />
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="TravelRequestSeq" type="xs:string" use="optional" />
+            <xs:attribute name="Type" use="required">
+              <xs:annotation>
+                <xs:documentation>This is duplicated information, as the information is supplied in the respective node of the TravelRequest. Supplying this data might make the interpretation of the caller system a little simpler to implement.</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="Flights" />
+                  <xs:enumeration value="Accommodations" />
+                  <xs:enumeration value="TransportationDriver" />
+                  <xs:enumeration value="TransportationVIP" />
+                  <xs:enumeration value="TransportationTrains" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="Action" use="optional">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="insert" />
+                  <xs:enumeration value="update" />
+                  <xs:enumeration value="delete" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="ViewOnly" type="xs:boolean" use="optional" />
+            <xs:attribute name="CreateTimeStamp" type="xs:dateTime" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

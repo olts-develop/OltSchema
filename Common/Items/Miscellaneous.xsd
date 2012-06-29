@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com)-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:include schemaLocation=".\ProductItemPrice.xsd" />
+  <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
+  <xs:element name="Miscellaneous">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="Title" type="xs:string" minOccurs="0" />
+        <xs:element name="Detail" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>CDATA</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Arrival" minOccurs="0">
+          <xs:complexType>
+            <xs:attribute name="Time" type="xs:time" />
+            <xs:attribute name="Description" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Departure" minOccurs="0">
+          <xs:complexType>
+            <xs:attribute name="Time" type="xs:time" />
+            <xs:attribute name="Description" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FlightNumber" type="xs:string" minOccurs="0" />
+        <xs:element name="ConfirmationNr" minOccurs="0">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="ConfirmedBy" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Remark" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>CDATA</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Country" minOccurs="0">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="IsoCode" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Region" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Region of the Country</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="SubRegion" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Subregion of the region</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Service" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Service shortdescription</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="City" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>City name (length=20)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ReservationSupplier" type="SupplierType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Supplier who makes the reservation</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="PaySupplier" type="SupplierType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Supplier who makes the payment</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Supplier who makes the voucher</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Commission" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>commission</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="MinimumPersons" type="xs:integer" minOccurs="0" />
+        <xs:element name="MaximumPersons" type="xs:integer" minOccurs="0" />
+        <xs:element name="MinimumDays" type="xs:integer" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Minimum number of days this product can be booked.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="MaximumDays" type="xs:integer" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Maximum number of days this product can be booked.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ProductItemPrices" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Only relevant for an Availability</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="ProductItemPrice" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute name="Language" use="optional">
+        <xs:annotation>
+          <xs:documentation>Languange of the description of the itmes</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:language">
+            <xs:enumeration value="de-ch" />
+            <xs:enumeration value="en-us" />
+            <xs:enumeration value="fr-ch" />
+            <xs:enumeration value="it-ch" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

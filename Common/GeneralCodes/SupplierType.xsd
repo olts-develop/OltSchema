@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="SupplierType">
+        <xs:attribute name="Seq" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>Supplier Sequence</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="AirlineNr" type="xs:string" use="optional" />
+        <xs:attribute name="Service" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>Bsp: 060 oder 010</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Code" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>Bsp: IMHO oder KUON</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ApiCode" use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="AL" />
+                    <xs:enumeration value="ZL" />
+                    <xs:enumeration value="FTI" />
+                    <xs:enumeration value="ZE" />
+                    <xs:enumeration value="CAIN" />
+                    <xs:enumeration value="AOT" />
+                    <xs:enumeration value="JV" />
+                    <xs:enumeration value="ATP" />
+                    <xs:enumeration value="TIO" />
+                    <xs:enumeration value="BON" />
+                    <xs:enumeration value="TUICTSPEG" />
+                    <xs:enumeration value="SIHA" />
+                    <xs:enumeration value="BLUMAR" />
+                    <xs:enumeration value="PRONTO" />
+                    <xs:enumeration value="pronto" />
+                    <xs:enumeration value="TUICTS" />
+                    <xs:enumeration value="tuicts" />
+                    <xs:enumeration value="TICO" />
+                    <xs:enumeration value="COMRES" />
+                    <xs:enumeration value="comres" />
+                    <xs:enumeration value="TOURICO" />
+                    <xs:enumeration value="tourico" />
+                    <xs:enumeration value="GTA" />
+                    <xs:enumeration value="HOTELBEDS" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="Broker" use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="PEG" />
+                    <xs:enumeration value="Hotelbeds" />
+                    <xs:enumeration value="IRIS" />
+                    <xs:enumeration value="HOTELBEDS" />
+                    <xs:enumeration value="TOURICO" />
+                    <xs:enumeration value="COMRES" />
+                    <xs:enumeration value="comres" />
+                    <xs:enumeration value="PRONTO" />
+                    <xs:enumeration value="pronto" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="PayableTo" type="xs:string" use="optional" />
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ProjectType">
+    <xs:sequence>
+      <xs:element maxOccurs="6" name="Project">
+        <xs:complexType>
+          <xs:attribute name="Seq" type="xs:string" use="required" />
+          <xs:attribute name="Code" type="xs:string" use="required" />
+          <xs:attribute name="Description" type="xs:string" use="required" />
+          <xs:attribute name="Percentage" type="xs:integer" use="optional" />
+          <xs:attribute name="ExtCostManagement" type="xs:boolean" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="System" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Prod" />
+          <xs:enumeration value="Educ" />
+          <xs:enumeration value="Test" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+</xs:schema>

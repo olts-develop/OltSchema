@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation=".\Customer.xsd" />
+    <xs:element name="Customers">
+        <xs:annotation>
+            <xs:documentation>A dossier can currently only have one and only one customer. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Customer" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>If a dossier is imported into Agent Online, the external developer can send numerous available information about the customer in the Customer node. If a TRAVID is available, this value can be sent. Some work flows use the Agent Online Customer web service to search for customers in Agent Online, and can thus send a CustomerSeq as a customer identifier. Other workflows can send name and address information as well as an email address, and Agent Online will attempt to find the customer in the backend. If the customer is not found, a new customer is created in Agent Online and assigned to the dossier.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="System" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Prod" />
+                        <xs:enumeration value="Educ" />
+                        <xs:enumeration value="Test" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

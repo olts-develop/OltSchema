@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:include schemaLocation=".\RequestItem.xsd" />
+    <xs:include schemaLocation="..\Items\DossierItem.xsd" />
+    <xs:element name="OLTAvailabilityRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="RequestItems">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="RequestItem" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="DossierItems">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="DossierItem" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Version" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Version Number, at the moment 1.0</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="From" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Sender of the XML. </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="DYNAPACK" />
+                        <xs:enumeration value="TOURONLINE" />
+                        <xs:enumeration value="HOTELONLY" />
+                        <xs:enumeration value="FLIGHTONLY" />
+                        <xs:enumeration value="MOBS" />
+                        <xs:enumeration value="OTHONLY" />
+                        <xs:enumeration value="OTFONLY" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="To" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Receiver of the XML. The value OLTSWS can be used as the To value.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="Date" type="xs:date" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Date when request/response is created.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="Time" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Time when request/response is created.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="Type" use="required">
+                <xs:annotation>
+                    <xs:documentation>Type of service that is asked for:
+                  IMPORT = Import a DossierIMPORT
+                  BOOK = Booking
+                  DISPLAY = Display
+                  MODIFY = Modify
+                  DELETE = Delete
+                  NOTE = Notes
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="AVL" />
+                        <xs:enumeration value="IMPORT" />
+                        <xs:enumeration value="AVP" />
+                        <xs:enumeration value="BOOK" />
+                        <xs:enumeration value="DISPLAY" />
+                        <xs:enumeration value="MODIFY" />
+                        <xs:enumeration value="DELETE" />
+                        <xs:enumeration value="NOTE" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="SubType" use="required">
+                <xs:annotation>
+                    <xs:documentation>SubType of service that is asked for.
+                  For a normal dossier import this values can be sent as empty.
+                  Possible values:
+                  T = Transport Availability
+                  L = Availability of scheduled flights
+                  H = Hotel-Availability
+                  E = Extra-Services
+                  V = Insurance
+                  I = Booking-Information
+                  C = Car
+                  A = Land-Service (Hotel/Car)
+                  R = Roundtrip
+                  S = Other Land-Services
+                  U = Cruise
+                  CI = Touroperator-News
+                  PI = Service-Info
+                  Z = Additional Data
+                  SEATMAP = Seat Reservation
+                  PS = Package Selection
+                  P = Package
+                  DETAIL = Details, which are displayed on the Client (BOOK only)
+                  PRICE = Price of a booking (BOOK only) OR Price Request of a Modification (DISPLAY only) OR Price Request of a Cancellation (DELETE only)
+                  OPTION = Option Booking. Booking Status = OP TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+                  OR Completion of a Modification. Booking Status = OP. TO reacts with ?MODIFY FINAL? or with compulsory information. (MODIFY only)
+                  PREBOOK = Prebooking. TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+                  FIX = Fixed Booking. Booking Status = OK. TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+                  OR Completion of a Modification. Booking Status = OK TO reacts with ?MODIFY FINAL? or with compulsory information. (MODIFY only)
+                  OR Confirmation of the Cancellation (DELETE only)
+                  DISPLAY = Display of a booking, which can?t be altered. (DISPLAY only)
+                  MODIFY = Display of a booking for modification. (DISPLAY only)
+                  DELETE = Display of a booking for cancellation (DISPLAY only)
+                  SEND = Notes sent from CETS to TO (NOTE only)
+                  DISP = Notes sent from TO to CETS NOTE only)
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="T" />
+                        <xs:enumeration value="L" />
+                        <xs:enumeration value="H" />
+                        <xs:enumeration value="E" />
+                        <xs:enumeration value="V" />
+                        <xs:enumeration value="I" />
+                        <xs:enumeration value="C" />
+                        <xs:enumeration value="Text" />
+                        <xs:enumeration value="A" />
+                        <xs:enumeration value="R" />
+                        <xs:enumeration value="S" />
+                        <xs:enumeration value="U" />
+                        <xs:enumeration value="CI" />
+                        <xs:enumeration value="PI" />
+                        <xs:enumeration value="Z" />
+                        <xs:enumeration value="SEATMAP" />
+                        <xs:enumeration value="PS" />
+                        <xs:enumeration value="P" />
+                        <xs:enumeration value="DETAIL" />
+                        <xs:enumeration value="PRICE" />
+                        <xs:enumeration value="OPTION" />
+                        <xs:enumeration value="PREBOOK" />
+                        <xs:enumeration value="DISPLAY" />
+                        <xs:enumeration value="MODIFY" />
+                        <xs:enumeration value="DELETE" />
+                        <xs:enumeration value="SEND" />
+                        <xs:enumeration value="DISP" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="BookingMode" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Values: B2B,B2C, B2B2C, or empty </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="" />
+                        <xs:enumeration value="B2B" />
+                        <xs:enumeration value="B2C" />
+                        <xs:enumeration value="B2B2C" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="Confirm" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Values: YES, NO CETS set this attribute to ?YES?, if the Agent confirmed compulsory information (TextC elements in Fab) (Refer to booking process)
+                  For a normal dossier import this value can be ignored.
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="YES" />
+                        <xs:enumeration value="NO" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="Agent" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Country-code (2digits)+TraviId (4digits) (refer to table Country-code)
+                  If this is a swiss customer, the first two country code digits do not need to be sent.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="AgentUsercode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>UserRef of the Tour Online or Cets User. Used to specify which User will receive the CMIR.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="Lang" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>ISO Language code (DE, FR, IT, EN)</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="Mode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Values: TEST, EDUC, PROD. EDUC for educational booking is obligatory </xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ViewOnly" type="xs:boolean" use="optional">
+                <xs:annotation>
+                    <xs:documentation>If true, this dossier may not be modified by the web service client. Is used for displaying dossiers as an indicator for the frontend if the dossier can be modified by the user or not.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="Key" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>This value is supplied by the web service and needs to be looped back to the web service by the web service client. It allows the server to find out if, between two requests of a client, there have been changes made to the dossier by another service or directly on the server.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="AllowDelete" type="xs:boolean">
+                <xs:annotation>
+                    <xs:documentation>Indicates if a fetched dossier can be deleted or not. If a dossier has been printed in the back office system, it cannot be deleted.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

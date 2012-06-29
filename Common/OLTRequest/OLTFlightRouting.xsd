@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="..\GeneralCodes\FlightRouting.xsd" />
+  <xs:element name="OLTFlightRoutings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="OLTFlightRouting" type="FlightRouting" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

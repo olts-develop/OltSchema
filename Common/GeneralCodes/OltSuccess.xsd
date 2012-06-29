@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="OltSuccess">
+    <xs:complexType>
+      <xs:all>
+        <xs:element minOccurs="0" name="Warning">
+          <xs:annotation>
+            <xs:documentation>If a Warning node is supplied, the process was completed successfully, but a message needs to be displayed to the user.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="WarningText" type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Each warning text to be displayed as a seperate line in the display of the warning.</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="WarningNr" type="xs:integer" use="required">
+              <xs:annotation>
+                <xs:documentation>Unique integer value identifying the warning</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

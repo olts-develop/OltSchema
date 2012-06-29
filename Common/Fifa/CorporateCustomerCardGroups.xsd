@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio 7.0.1.654 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CorporateCustomerCardCodes">
+    <xs:complexType>
+      <xs:all>
+        <xs:element minOccurs="0" name="airline">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="CorporateCustomerCardCode">
+                <xs:complexType>
+                  <xs:attribute name="Seq" type="xs:string" use="required" />
+                  <xs:attribute name="Code" type="xs:string" use="required" />
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="car">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="CorporateCustomerCardCode">
+                <xs:complexType>
+                  <xs:attribute name="Seq" type="xs:string" use="required" />
+                  <xs:attribute name="Code" type="xs:string" use="required" />
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="hotel">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="CorporateCustomerCardCode">
+                <xs:complexType>
+                  <xs:attribute name="Seq" type="xs:string" use="required" />
+                  <xs:attribute name="Code" type="xs:string" use="required" />
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="cc">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="CorporateCustomerCardCode">
+                <xs:complexType>
+                  <xs:attribute name="Seq" type="xs:string" use="required" />
+                  <xs:attribute name="Code" type="xs:string" use="required" />
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute name="System" use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Prod" />
+            <xs:enumeration value="Educ" />
+            <xs:enumeration value="Test" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

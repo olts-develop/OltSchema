@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation=".\Customers.xsd" />
+    <xs:include schemaLocation=".\Travellers.xsd" />
+    <xs:include schemaLocation="..\Fifa\TravelRequests.xsd" />
+    <xs:include schemaLocation="..\Items\DossierItem.xsd" />
+    <xs:include schemaLocation="..\Items\Payments.xsd" />
+    <xs:element name="Dossiers">
+        <xs:annotation>
+            <xs:documentation>This schema is used in more than one use case. In the use case "Display Dossier", a dossier in Agent Online is returned to the user. It is possible, that more than one Dossier is returned in the Dossiers node, Another use case is the import of an external dossier into an Agent Online to TO Online database. In this case the external developer sends one Dossier in the Dossiers node.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>This </xs:documentation>
+                </xs:annotation>
+                <xs:element name="Dossier">
+                    <xs:annotation>
+                        <xs:documentation>A dossier corresponds to an Agent Online or TO Online dossier</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element ref="Customers">
+                                <xs:annotation>
+                                    <xs:documentation>The invoice receiver of this dossier. Depending on the workflow an existing customer is searched for in the Agent Online or TO Online database and is assigned this dossier, or a new customer is created and assigned to this dossier.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="DossierSeq" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Dossier sequence - only relevant if the dossier is known, and needs to be modified.</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="60" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="DossierNr" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Dossier number</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="60" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="CreateDate" type="xs:date" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Dossier creation date</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="Title" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Dossier title</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="60" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="DepartureDate" type="xs:date" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Departure date of dossier - normally corresponds to the FirstDate, but some Agent Online customers allow the first date of the dossier to differ from the DepartureDate, in cases where a customer/traveller organizes their own transportation to the destination.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="FirstDate" type="xs:date" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>First/smallest date in this dossier</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="LastDate" type="xs:date" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Last/largest date in this dossier</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="Language" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:language">
+                                        <xs:enumeration value="de-ch" />
+                                        <xs:enumeration value="en-us" />
+                                        <xs:enumeration value="fr-ch" />
+                                        <xs:enumeration value="it-ch" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Destination" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>End destination of this dossier. This value is used for statistical purposes in Agent Online. The node contains the full name of the destination, e.g. "Las Vegas".</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="DestinationCode" use="required">
+                                                <xs:annotation>
+                                                    <xs:documentation>This ought to be a three letter code of the destination city of this dossier, e.g. "LAS".</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="30" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ExternalSource" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Defines the source of the booking, e.g. MOBS, DYNAP, TOURO</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="DYNAP" />
+                                        <xs:enumeration value="TOURO" />
+                                        <xs:enumeration value="MOBS" />
+                                        <xs:enumeration value="OTHONLY" />
+                                        <xs:enumeration value="OTFONLY" />
+                                        <xs:enumeration value="OLTZUG" />
+                                        <xs:enumeration value="CHRTR" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="DossierStatus" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Status of the dossier. The textdata contains the full name of the dossier status. It does not need to be sent when importing a dossier, but a DossierStatusCode attribute code ought to be sent, so that the dossier will habe a corrent status. Example values for a Dossier Status are
+                                        OK
+                                        OFF - Offer
+                                        HOLD - On Hold
+                                        OP - Option
+                                        RQ - Request
+                                        XX - Cancellation
+                                        VORRES - Pre booking
+                                        If a dossier is sent from Agent Online, other states are possible:
+                                        OKINV - Dossier OK and ready for invoice printing
+                                        OKINVP - Dossier OK and has been printed
+                                        XXINVP - Dossier cancelled and the cancelled dossier has been printed
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="DossierStatusCode" use="required">
+                                                <xs:annotation>
+                                                    <xs:documentation>OK
+                                                        OFF - Offer
+                                                        HOLD - On Hold
+                                                        OP - Option
+                                                        RQ - Request
+                                                        XX - Cancellation
+                                                        VORRES - Pre booking
+                                                        If a dossier is sent from Agent Online, other states are possible:
+                                                        OKINV - Dossier OK and ready for invoice printing
+                                                        OKINVP - Dossier OK and has been printed
+                                                        XXINVP - Dossier cancelled and the cancelled dossier has been printed
+                                                    </xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="30" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Code1" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Can specify an event. Generally this code is defined by the Agent Online customer. It makes generally no sense sending this value in the use case "Dossie Create", but in some workflows, e.g. TravelOffice Workflow, this value is sent and contains the event code, but this value can be returned if an existing dossier is displayed.</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="Seq" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code1 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="20" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Code" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code1 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="30" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Description" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code1 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="150" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Code2" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Can specify an event. Generally this code is defined by the Agent Online customer. It makes generally no sense sending this value in the use case "Dossie Create", but in some workflows, e.g. TravelOffice Workflow, this value is sent and contains the travel reason code, but this value can be returned if an existing dossier is displayed.</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="Seq" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code2 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="20" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Code" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code2 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="30" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Description" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code1 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="150" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="AdditionalReference1" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>A dossier can be assigned codes that reference information provided by the customer:
+                                        PK - Employee ID
+                                        DS - Dept Code
+                                        KS- Cost Account
+                                        PR - Project no
+                                        IK - Account no
+                                        AU - Order no
+                                        A dossier can have more than one customer relevant reference code. As this information is specific to the customer Agent Online supplies 4 free text fields into which the relevant information can be written. The customer profile defines which fields in the dossier contain which data.
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="Code">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="PK" />
+                                                        <xs:enumeration value="DS" />
+                                                        <xs:enumeration value="KS" />
+                                                        <xs:enumeration value="PR" />
+                                                        <xs:enumeration value="IK" />
+                                                        <xs:enumeration value="AU" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Description" type="xs:string" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="AdditionalReference2" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>A dossier can be assigned codes that reference information provided by the customer:
+                                        PK - Employee ID
+                                        DS - Dept Code
+                                        KS- Cost Account
+                                        PR - Project no
+                                        IK - Account no
+                                        AU - Order no
+                                        A dossier can have more than one customer relevant reference code. As this information is specific to the customer Agent Online supplies 4 free text fields into which the relevant information can be written. The customer profile defines which fields in the dossier contain which data.
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="Code">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="PK" />
+                                                        <xs:enumeration value="DS" />
+                                                        <xs:enumeration value="KS" />
+                                                        <xs:enumeration value="PR" />
+                                                        <xs:enumeration value="IK" />
+                                                        <xs:enumeration value="AU" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Description" type="xs:string" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="AdditionalReference3" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>A dossier can be assigned codes that reference information provided by the customer:
+                                        PK - Employee ID
+                                        DS - Dept Code
+                                        KS- Cost Account
+                                        PR - Project no
+                                        IK - Account no
+                                        AU - Order no
+                                        A dossier can have more than one customer relevant reference code. As this information is specific to the customer Agent Online supplies 4 free text fields into which the relevant information can be written. The customer profile defines which fields in the dossier contain which data.
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="Code">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="PK" />
+                                                        <xs:enumeration value="DS" />
+                                                        <xs:enumeration value="KS" />
+                                                        <xs:enumeration value="PR" />
+                                                        <xs:enumeration value="IK" />
+                                                        <xs:enumeration value="AU" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Description" type="xs:string" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="AdditionalReference4" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>A dossier can be assigned codes that reference information provided by the customer:
+                                        PK - Employee ID
+                                        DS - Dept Code
+                                        KS- Cost Account
+                                        PR - Project no
+                                        IK - Account no
+                                        AU - Order no
+                                        A dossier can have more than one customer relevant reference code. As this information is specific to the customer Agent Online supplies 4 free text fields into which the relevant information can be written. The customer profile defines which fields in the dossier contain which data.
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="Code">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="PK" />
+                                                        <xs:enumeration value="DS" />
+                                                        <xs:enumeration value="KS" />
+                                                        <xs:enumeration value="PR" />
+                                                        <xs:enumeration value="IK" />
+                                                        <xs:enumeration value="AU" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Description" type="xs:string" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Currency" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Currency code, e.g. CHF, EUR, USD</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element ref="Travellers" minOccurs="0" />
+                            <xs:element ref="Payments" minOccurs="0" />
+                            <xs:element ref="TravelRequests" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Travel Requests are only sent in the Travel Office Workflow. A normal Agent Online customer does not work with TravelRequests, only with DossierItems.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="DossierItems" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>A dossier can contain line items, products that are part of the dossier as a whole. This can be flights, cars, hotels, miscelaneous elements, bus, train, ship, text or arrangement elements.</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="DossierItem" minOccurs="0" maxOccurs="unbounded" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:all>
+                        <xs:attribute name="Version" type="xs:string" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Version Number, at the moment 1.0</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="From" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Sender of the XML. </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="DYNAPACK" />
+                                    <xs:enumeration value="TOURONLINE" />
+                                    <xs:enumeration value="HOTELONLY" />
+                                    <xs:enumeration value="FLIGHTONLY" />
+                                    <xs:enumeration value="MOBS" />
+                                    <xs:enumeration value="OTHONLY" />
+                                    <xs:enumeration value="OTFONLY" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="To" type="xs:string" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Receiver of the XML. The value OLTSWS can be used as the To value.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="Date" type="xs:date" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Date when request/response is created.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="Time" type="xs:string" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Time when request/response is created.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="Type" use="required">
+                            <xs:annotation>
+                                <xs:documentation>Type of service that is asked for:
+                                    IMPORT = Import a DossierIMPORT
+                                    BOOK = Booking
+                                    DISPLAY = Display
+                                    MODIFY = Modify
+                                    DELETE = Delete
+                                    NOTE = Notes
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="AVL" />
+                                    <xs:enumeration value="IMPORT" />
+                                    <xs:enumeration value="AVP" />
+                                    <xs:enumeration value="BOOK" />
+                                    <xs:enumeration value="DISPLAY" />
+                                    <xs:enumeration value="MODIFY" />
+                                    <xs:enumeration value="DELETE" />
+                                    <xs:enumeration value="NOTE" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="SubType" use="required">
+                            <xs:annotation>
+                                <xs:documentation>SubType of service that is asked for.
+                                    For a normal dossier import this values can be sent as empty.
+                                    Possible values:
+                                    T = Transport Availability
+                                    L = Availability of scheduled flights
+                                    H = Hotel-Availability
+                                    E = Extra-Services
+                                    V = Insurance
+                                    I = Booking-Information
+                                    C = Car
+                                    A = Land-Service (Hotel/Car)
+                                    R = Roundtrip
+                                    S = Other Land-Services
+                                    U = Cruise
+                                    CI = Touroperator-News
+                                    PI = Service-Info
+                                    Z = Additional Data
+                                    SEATMAP = Seat Reservation
+                                    PS = Package Selection
+                                    P = Package
+                                    DETAIL = Details, which are displayed on the Client (BOOK only)
+                                    PRICE = Price of a booking (BOOK only) OR Price Request of a Modification (DISPLAY only) OR Price Request of a Cancellation (DELETE only)
+                                    CHECK = Check Price and Availability
+                                    OPTION = Option Booking. Booking Status = OP TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+                                    OR Completion of a Modification. Booking Status = OP. TO reacts with ?MODIFY FINAL? or with compulsory information. (MODIFY only)
+                                    PREBOOK = Prebooking. TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+                                    FIX = Fixed Booking. Booking Status = OK. TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+                                    OR Completion of a Modification. Booking Status = OK TO reacts with ?MODIFY FINAL? or with compulsory information. (MODIFY only)
+                                    OR Confirmation of the Cancellation (DELETE only)
+                                    DISPLAY = Display of a booking, which can?t be altered. (DISPLAY only)
+                                    MODIFY = Display of a booking for modification. (DISPLAY only)
+                                    DELETE = Display of a booking for cancellation (DISPLAY only)
+                                    SEND = Notes sent from CETS to TO (NOTE only)
+                                    DISP = Notes sent from TO to CETS NOTE only)
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="T" />
+                                    <xs:enumeration value="L" />
+                                    <xs:enumeration value="H" />
+                                    <xs:enumeration value="E" />
+                                    <xs:enumeration value="V" />
+                                    <xs:enumeration value="I" />
+                                    <xs:enumeration value="C" />
+                                    <xs:enumeration value="Text" />
+                                    <xs:enumeration value="A" />
+                                    <xs:enumeration value="R" />
+                                    <xs:enumeration value="S" />
+                                    <xs:enumeration value="U" />
+                                    <xs:enumeration value="CI" />
+                                    <xs:enumeration value="PI" />
+                                    <xs:enumeration value="Z" />
+                                    <xs:enumeration value="SEATMAP" />
+                                    <xs:enumeration value="PS" />
+                                    <xs:enumeration value="P" />
+                                    <xs:enumeration value="DETAIL" />
+                                    <xs:enumeration value="PRICE" />
+                                    <xs:enumeration value="CHECK" />
+                                    <xs:enumeration value="FIX" />
+                                    <xs:enumeration value="OPTION" />
+                                    <xs:enumeration value="PREBOOK" />
+                                    <xs:enumeration value="DISPLAY" />
+                                    <xs:enumeration value="MODIFY" />
+                                    <xs:enumeration value="DELETE" />
+                                    <xs:enumeration value="SEND" />
+                                    <xs:enumeration value="DISP" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="BookingMode" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Values: B2B,B2C, B2B2C, or empty </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="" />
+                                    <xs:enumeration value="B2B" />
+                                    <xs:enumeration value="B2C" />
+                                    <xs:enumeration value="B2B2C" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="Confirm" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Values: YES, NO CETS set this attribute to ?YES?, if the Agent confirmed compulsory information (TextC elements in Fab) (Refer to booking process)
+                                    For a normal dossier import this value can be ignored.
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="YES" />
+                                    <xs:enumeration value="NO" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="Agent" type="xs:string" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Country-code (2digits)+TraviId (4digits) (refer to table Country-code)
+                                    If this is a swiss customer, the first two country code digits do not need to be sent.
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="AgentUsercode" type="xs:string" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>UserRef of the Tour Online or Cets User. Used to specify which User will receive the CMIR.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="Lang" type="xs:string" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>ISO Language code (DE, FR, IT, EN)</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="Mode" type="xs:string" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Values: TEST, EDUC, PROD. EDUC for educational booking is obligatory </xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="ViewOnly" type="xs:boolean" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>If true, this dossier may not be modified by the web service client. Is used for displaying dossiers as an indicator for the frontend if the dossier can be modified by the user or not.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="Key" type="xs:string">
+                            <xs:annotation>
+                                <xs:documentation>This value is supplied by the web service and needs to be looped back to the web service by the web service client. It allows the server to find out if, between two requests of a client, there have been changes made to the dossier by another service or directly on the server.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="AllowDelete" type="xs:boolean">
+                            <xs:annotation>
+                                <xs:documentation>Indicates if a fetched dossier can be deleted or not. If a dossier has been printed in the back office system, it cannot be deleted.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="System" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Prod" />
+                        <xs:enumeration value="Educ" />
+                        <xs:enumeration value="Test" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="TotalNrDossiers" type="xs:integer" use="optional" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

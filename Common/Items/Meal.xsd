@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Meal">
+    <xs:complexType>
+      <xs:all>
+        <xs:element minOccurs="0" name="MealType">
+          <xs:annotation>
+            <xs:documentation>Type of board:
+              Is displayed on the Room List (CETS-Client).
+              Following codes are defined:
+              ?RO?: room only
+              ?BB?: bed and breakfast
+              ?HB?: half board
+              ?FB?: full board
+              ?AI?: all inclusive
+              ?MP?: meals according to program
+              If TO uses other codes, then he must sent MealDesc
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="RO" />
+              <xs:enumeration value="BB" />
+              <xs:enumeration value="HB" />
+              <xs:enumeration value="FB" />
+              <xs:enumeration value="AI" />
+              <xs:enumeration value="MP" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="MealDescription" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Description of board</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

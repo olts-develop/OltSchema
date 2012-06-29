@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation=".\ProductItemPrice.xsd" />
+  <xs:include schemaLocation=".\Document.xsd" />
+  <xs:element name="Bus">
+    <xs:complexType>
+      <xs:all>
+        <xs:element minOccurs="0" name="BusCode" type="xs:string" />
+        <xs:element minOccurs="0" name="BusNumber" type="xs:string" />
+        <xs:element minOccurs="0" name="Departure">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="Code" type="xs:string" />
+                <xs:attribute name="Time" type="xs:time" />
+                <xs:attribute name="CheckInTime" type="xs:time" />
+                <xs:attribute name="Terminal" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="Arrival">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="Code" type="xs:string" />
+                <xs:attribute name="Time" type="xs:time" />
+                <xs:attribute name="Terminal" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="Seat" type="xs:string" />
+        <xs:element minOccurs="0" name="ConfirmationNr">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="ConfirmedBy" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="CompanyName" type="xs:string" />
+        <xs:element minOccurs="0" name="Address1" type="xs:string" />
+        <xs:element minOccurs="0" name="Address2" type="xs:string" />
+        <xs:element minOccurs="0" name="PostalCode" type="xs:string" />
+        <xs:element minOccurs="0" name="City" type="xs:string" />
+        <xs:element minOccurs="0" name="Phone">
+          <xs:complexType>
+            <xs:attribute name="AreaCode" type="xs:string" />
+            <xs:attribute name="Number" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="Fax">
+          <xs:complexType>
+            <xs:attribute name="AreaCode" type="xs:string" />
+            <xs:attribute name="Number" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="Remark" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>CDATA</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="Documents">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="Document" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="ProductItemPrices">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="ProductItemPrice" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

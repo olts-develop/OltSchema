@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Document">
+    <xs:complexType>
+      <xs:all>
+        <xs:element minOccurs="0" name="Name" type="xs:string" />
+        <xs:element minOccurs="0" name="ShortDescription" type="xs:string" />
+        <xs:element minOccurs="0" name="Type" type="xs:string" />
+        <xs:element minOccurs="0" name="Template" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>CDATA</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="IsMailing">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="YES" />
+              <xs:enumeration value="NO" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="IsMailattachment">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="YES" />
+              <xs:enumeration value="NO" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="IsScan">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="YES" />
+              <xs:enumeration value="NO" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute name="Key" use="required">
+        <xs:annotation>
+          <xs:documentation> Primary Key of the Item used in Database of reciever</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

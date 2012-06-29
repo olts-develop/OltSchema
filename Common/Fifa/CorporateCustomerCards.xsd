@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio 7.1.0.1135 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CorporateCustomerCards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="CorporateCustomerCard">
+          <xs:complexType>
+            <xs:attribute name="Seq" type="xs:string" use="required" />
+            <xs:attribute name="Code" type="xs:string" use="required" />
+            <xs:attribute name="Type" use="required">
+              <xs:annotation>
+                <xs:documentation>Type of card: airline, car, cc or hotel</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="airline" />
+                  <xs:enumeration value="car" />
+                  <xs:enumeration value="cc" />
+                  <xs:enumeration value="hotel" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="Expiry" use="required">
+              <xs:annotation>
+                <xs:documentation>e.g. '0309' für end March 2009</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string" />
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="Number" use="required">
+              <xs:annotation>
+                <xs:documentation>Card number</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string" />
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

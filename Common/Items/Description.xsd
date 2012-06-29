@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 8.1.2.2399 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Description">
+    <xs:complexType>
+      <xs:attribute name="Description" type="xs:string" />
+      <xs:attribute name="Language" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:language">
+            <xs:enumeration value="de-ch" />
+            <xs:enumeration value="en-us" />
+            <xs:enumeration value="fr-ch" />
+            <xs:enumeration value="it-ch" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

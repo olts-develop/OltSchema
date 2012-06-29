@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="ExportRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StartDate" type="xs:date" />
+        <xs:element minOccurs="0" name="EndDate" type="xs:date" />
+        <!--xs:element minOccurs="0" name="Country">
+                    <xs:annotation>
+                        <xs:documentation>Country name</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="IsoCode" use="required">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:minLength value="0" />
+                                            <xs:maxLength value="3" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element-->
+      </xs:sequence>
+      <xs:attribute name="Key" use="optional">
+        <xs:annotation>
+          <xs:documentation> Primary Key of the Item used in Database of reciever</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="InternalItem" use="required">
+        <xs:annotation>
+          <xs:documentation> Internal Itemtype name:
+            Flight
+            Car
+            Hotel
+            Miscellaneous
+            Bus
+            Train
+            Ship
+            Text
+            Package
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Flight" />
+            <xs:enumeration value="Car" />
+            <xs:enumeration value="Hotel" />
+            <xs:enumeration value="Miscellaneous" />
+            <xs:enumeration value="Bus" />
+            <xs:enumeration value="Train" />
+            <xs:enumeration value="Ship" />
+            <xs:enumeration value="Text" />
+            <xs:enumeration value="Package" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

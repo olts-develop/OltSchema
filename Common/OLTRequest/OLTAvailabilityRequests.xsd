@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:include schemaLocation=".\OLTAvailabilityRequest.xsd" />
+  <xs:element name="OLTAvailabilityRequests">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref= "OLTAvailabilityRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

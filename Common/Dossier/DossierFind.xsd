@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DossierFind">
+    <xs:complexType>
+      <xs:all>
+        <xs:element minOccurs="0" name="SearchType">
+          <xs:complexType>
+            <xs:attribute name="IncludeOwn" type="xs:boolean" use="optional">
+              <xs:annotation>
+                <xs:documentation>Only relevant for the SearchType employee and projectowner. The superior might want to search for all projects or dossiers of all employees including his own or excluding his own.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="Type">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="own" />
+                  <xs:enumeration value="employee" />
+                  <xs:enumeration value="projectowner" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="DossierSeq">
+          <xs:annotation>
+            <xs:documentation>Dossier sequence id</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="0" />
+              <xs:maxLength value="20" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="DossierNr">
+          <xs:annotation>
+            <xs:documentation>Dossier number</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="0" />
+              <xs:maxLength value="20" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="CreateDate">
+          <xs:complexType>
+            <xs:attribute name="DateFrom" type="xs:date" use="required">
+              <xs:annotation>
+                <xs:documentation>Start dossier creation date</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="DateTo" type="xs:date" use="optional">
+              <xs:annotation>
+                <xs:documentation>End dossier creation date. If this attribute is not sent, the search is only performed on the DateFrom date.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="DepartureDate">
+          <xs:complexType>
+            <xs:attribute name="DateFrom" type="xs:date" use="required">
+              <xs:annotation>
+                <xs:documentation>Start dossier departure date</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="DateTo" type="xs:date" use="optional">
+              <xs:annotation>
+                <xs:documentation>End dossier departure date. If this attribute is not sent, the search is only performed on the DateFrom date.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="Projects">
+          <xs:annotation>
+            <xs:documentation>Projects. Only a project owner, or a superior of a project owner can search with a project filter.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Project">
+                <xs:complexType>
+                  <xs:attribute name="Code" type="xs:string" use="required">
+                    <xs:annotation>
+                      <xs:documentation>Project code</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="Travellers">
+          <xs:annotation>
+            <xs:documentation>Dossier Pax</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Traveller">
+                <xs:annotation>
+                  <xs:documentation>A list of dossier Pax can be passed as a search parameter. Dossiers will be searched for in which the all specified pax can be found.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:attribute name="CustomerNr" type="xs:integer" use="required">
+                    <xs:annotation>
+                      <xs:documentation>Pax customer number</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="FirstName" type="xs:string" use="required">
+                    <xs:annotation>
+                      <xs:documentation>Pax first name</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="LastName" type="xs:string" use="required">
+                    <xs:annotation>
+                      <xs:documentation>Pax last name</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="Code1List">
+          <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+              <xs:element name="Code1">
+                <xs:complexType>
+                  <xs:attribute name="Seq">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:minLength value="0" />
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="Code">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:minLength value="0" />
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="Code2List">
+          <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+              <xs:element name="Code2">
+                <xs:complexType>
+                  <xs:attribute name="Seq">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:minLength value="0" />
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="Code">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:minLength value="0" />
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

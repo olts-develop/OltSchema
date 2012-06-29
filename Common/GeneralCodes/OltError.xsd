@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio Designer Edition 8.1.2.2399 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="OltError">
+    <xs:annotation>
+      <xs:documentation>An OltError is returned in the case of an error in the process. If this returned, a rollback has been executed on the backend, and no data has been written in Agent Online or TO Online.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="Error">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ErrorText" type="xs:string" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute name="ErrorNumber" type="xs:integer" use="required">
+              <xs:annotation>
+                <xs:documentation>Unique integer value identifying the error</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="Code" type="xs:string" use="required">
+              <xs:annotation>
+                <xs:documentation>Unique integer value identifying the error</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Debug" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Stack" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="ClassItem" type="xs:string" />
+                    <xs:element name="Method" type="xs:string" />
+                    <xs:element name="Line" type="xs:string" />
+                    <xs:element name="LineText" type="xs:string" />
+                    <xs:element name="MethodItem" type="xs:string" />
+                    <xs:element name="Params" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Param" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="Position" type="xs:integer" use="required" />
+                              <xs:attribute name="Name" type="xs:string" use="required" />
+                              <xs:attribute name="Value" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:all>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

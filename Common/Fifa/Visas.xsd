@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML Studio 7.1.0.1135 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Visas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Visa">
+          <xs:annotation>
+            <xs:documentation>Email address of the customer</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="Country" type="xs:string" use="optional" />
+            <xs:attribute name="Type" use="optional">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="single" />
+                  <xs:enumeration value="multiple" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="IssueDate" type="xs:date" use="optional" />
+            <xs:attribute name="ExpiryDate" type="xs:date" use="optional" />
+            <xs:attribute name="VisaRef" type="xs:string" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

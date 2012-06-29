@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="RequestItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TourOperatorCode" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Tour Operator Code (length=4)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="TourOperatorCatalog" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Tour Operator Catalog (length=4)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="AccountNumber" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Booking Number (length=12)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="StartDate" type="xs:date">
+          <xs:annotation>
+            <xs:documentation>Starting date of service</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="FlexDateBeforeNr" type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>Days before begindate for start and enddate</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+         <xs:element name="FlexDateAfterNr" type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>Days before enddate for start and enddate</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="Duration" type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>Duration of the service</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="Destination" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Destination code (length=3)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+         <xs:element minOccurs="0" name="OnlyAvail" type="xs:boolean">
+          <xs:annotation>
+            <xs:documentation>true = Only allotment available products will be returned
+                        false or true (default: true)
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Adults" type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>Number of adults </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="Children" type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>Number of children </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="Infants" type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>Number of infants </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="Product" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>ProductId (Hotel code)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="Room" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Type of room</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="Meal">
+          <xs:annotation>
+            <xs:documentation>RO: room only
+              BB: bed and breakfast
+              HB: half board
+              FB: full board
+              AI: all inclusive
+              MP: meals according to program
+              If TO uses other codes
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="RO" />
+              <xs:enumeration value="BB" />
+              <xs:enumeration value="HB" />
+              <xs:enumeration value="FB" />
+              <xs:enumeration value="AI" />
+              <xs:enumeration value="MP" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" name="NormalRoomOccupancy" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Normal occupancy of a room (length=1)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="Currency" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>ISO Currency code eg. EUR</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="Price" type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>Price</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="HotelCatagory" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Category of the Hotel (1,2,3,4,5)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="OutboundDepartureAirport" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Departure airport of outbound flight (length=3)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="OutboundArrivalAirport" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Arrival airport of outbound flight (length=3)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="OutboundChain" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Flight chain of outbound flight </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="OutboundClass" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Flight class of outbound flight </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="OutboundCarrier" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Carrier code of outbound flight </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="OutboundFlightNumber" type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>Flight number of outbound flight </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="InboundDepartureAirport" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Departure airport of inbound flight (length=3)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="InboundArrivalAirport" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Arrival airport of inbound flight (length=3)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="InboundChain" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Flight chain of inbound flight </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="InboundClass" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Flight class of inbound flight </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="InboundCarrier" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Carrier code of inbound flight </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" name="InboundFlightNumber" type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>Flight number of inbound flight </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Key" use="optional">
+        <xs:annotation>
+          <xs:documentation> Primary Key of the Item used in Database of reciever</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="InternalItem" use="required">
+        <xs:annotation>
+          <xs:documentation> Internal Itemtype name:
+            Flight
+            Car
+            Hotel
+            Miscellaneous
+            Bus
+            Train
+            Ship
+            Text
+            Package
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Flight" />
+            <xs:enumeration value="Car" />
+            <xs:enumeration value="Hotel" />
+            <xs:enumeration value="Miscellaneous" />
+            <xs:enumeration value="Bus" />
+            <xs:enumeration value="Train" />
+            <xs:enumeration value="Ship" />
+            <xs:enumeration value="Text" />
+            <xs:enumeration value="Package" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
