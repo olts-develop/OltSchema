@@ -1,0 +1,182 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType TransportationTrain in OLTDossiers</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Element', 'transportationtrain');
+                    </script><div class="pageheader">
+         Documentation for OLTDossiers
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>TransportationTrain</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="travelrequesttransportationtrain_xsd.html">TravelRequestTransportationTrain.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>MinOccurs</b></td>
+               <td>(1)</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>MaxOccurs</b></td>
+               <td>unbounded</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td>False</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="262,234,410,261" href="remark3.html" alt="Drilldown into Remark"></area>
+                     <area shape="rect" coords="285,201,473,228" href="departuretime2.html" alt="Drilldown into DepartureTime"></area>
+                     <area shape="rect" coords="285,168,472,195" href="departuredate3.html" alt="Drilldown into DepartureDate"></area>
+                     <area shape="rect" coords="285,135,453,162" href="arrivaltime2.html" alt="Drilldown into ArrivalTime"></area>
+                     <area shape="rect" coords="285,102,452,129" href="arrivaldate2.html" alt="Drilldown into ArrivalDate"></area>
+                     <area shape="rect" coords="262,69,410,96" href="tocity1.html" alt="Drilldown into ToCity"></area>
+                     <area shape="rect" coords="262,36,416,63" href="fromcity1.html" alt="Drilldown into FromCity"></area>
+                     <area shape="rect" coords="262,3,429,30" href="travelclass.html" alt="Drilldown into TravelClass"></area></map><img src="images/transportationtrain.png" border="0" alt="XSD Diagram of TransportationTrain" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:element maxOccurs="unbounded" name="TransportationTrain"&gt;
+  &lt;xs:complexType&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name="TravelClass"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;1. Class, 2. Class, Default empty, error when no data entered&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:integer"&gt;
+            &lt;xs:enumeration value="1" /&gt;
+            &lt;xs:enumeration value="2" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="FromCity"&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string" /&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="ToCity" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="ArrivalDate" type="xs:date" /&gt;
+      &lt;xs:element minOccurs="0" name="ArrivalTime" type="xs:time"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Default empty, user must enter a time or a text "Any time"&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element minOccurs="0" name="DepartureDate" type="xs:date" /&gt;
+      &lt;xs:element minOccurs="0" name="DepartureTime" type="xs:time"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Default empty, user must enter a time or a text "Any time"&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Remark" type="xs:string"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TravelClass</td>
+                        <td><a href="travelclass.html">TravelClass</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">FromCity</td>
+                        <td><a href="fromcity1.html">FromCity</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ToCity</td>
+                        <td><a href="tocity1.html">ToCity</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ArrivalDate</td>
+                        <td><a href="arrivaldate2.html">ArrivalDate</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ArrivalTime</td>
+                        <td><a href="arrivaltime2.html">ArrivalTime</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DepartureDate</td>
+                        <td><a href="departuredate3.html">DepartureDate</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DepartureTime</td>
+                        <td><a href="departuretime2.html">DepartureTime</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Remark</td>
+                        <td><a href="remark3.html">Remark</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Schema-Editor.aspx">Xml Schema Editor</a></div>
+   </body>
+</html>

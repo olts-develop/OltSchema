@@ -1,0 +1,268 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType OLTAvailabilityRequest.xsd in OLTAvailabilityRequests</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Schema', 'oltavailabilityrequest_xsd');
+                    </script><div class="pageheader">
+         Documentation for OLTAvailabilityRequests
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Schema Name:</b></td>
+               <td>OLTAvailabilityRequest.xsd</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>
+&lt;!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) --&gt;
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"&gt;
+    &lt;xs:include schemaLocation=".\RequestItem.xsd" /&gt;
+    &lt;xs:include schemaLocation="..\Items\DossierItem.xsd" /&gt;
+    &lt;xs:element name="OLTAvailabilityRequest"&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element name="RequestItems"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:sequence&gt;
+                            &lt;xs:element ref="RequestItem" /&gt;
+                        &lt;/xs:sequence&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element minOccurs="0" name="DossierItems"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:sequence&gt;
+                            &lt;xs:element ref="DossierItem" /&gt;
+                        &lt;/xs:sequence&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+            &lt;xs:attribute name="Version" type="xs:string" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Version Number, at the moment 1.0&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="From" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Sender of the XML. &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="DYNAPACK" /&gt;
+                        &lt;xs:enumeration value="TOURONLINE" /&gt;
+                        &lt;xs:enumeration value="HOTELONLY" /&gt;
+                        &lt;xs:enumeration value="FLIGHTONLY" /&gt;
+                        &lt;xs:enumeration value="MOBS" /&gt;
+                        &lt;xs:enumeration value="OTHONLY" /&gt;
+                        &lt;xs:enumeration value="OTFONLY" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="To" type="xs:string" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Receiver of the XML. The value OLTSWS can be used as the To value.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="Date" type="xs:date" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Date when request/response is created.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="Time" type="xs:string" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Time when request/response is created.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="Type" use="required"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Type of service that is asked for:
+                  IMPORT = Import a DossierIMPORT
+                  BOOK = Booking
+                  DISPLAY = Display
+                  MODIFY = Modify
+                  DELETE = Delete
+                  NOTE = Notes
+                    &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="AVL" /&gt;
+                        &lt;xs:enumeration value="IMPORT" /&gt;
+                        &lt;xs:enumeration value="AVP" /&gt;
+                        &lt;xs:enumeration value="BOOK" /&gt;
+                        &lt;xs:enumeration value="DISPLAY" /&gt;
+                        &lt;xs:enumeration value="MODIFY" /&gt;
+                        &lt;xs:enumeration value="DELETE" /&gt;
+                        &lt;xs:enumeration value="NOTE" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="SubType" use="required"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;SubType of service that is asked for.
+                  For a normal dossier import this values can be sent as empty.
+                  Possible values:
+                  T = Transport Availability
+                  L = Availability of scheduled flights
+                  H = Hotel-Availability
+                  E = Extra-Services
+                  V = Insurance
+                  I = Booking-Information
+                  C = Car
+                  A = Land-Service (Hotel/Car)
+                  R = Roundtrip
+                  S = Other Land-Services
+                  U = Cruise
+                  CI = Touroperator-News
+                  PI = Service-Info
+                  Z = Additional Data
+                  SEATMAP = Seat Reservation
+                  PS = Package Selection
+                  P = Package
+                  DETAIL = Details, which are displayed on the Client (BOOK only)
+                  PRICE = Price of a booking (BOOK only) OR Price Request of a Modification (DISPLAY only) OR Price Request of a Cancellation (DELETE only)
+                  OPTION = Option Booking. Booking Status = OP TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+                  OR Completion of a Modification. Booking Status = OP. TO reacts with ?MODIFY FINAL? or with compulsory information. (MODIFY only)
+                  PREBOOK = Prebooking. TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+                  FIX = Fixed Booking. Booking Status = OK. TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+                  OR Completion of a Modification. Booking Status = OK TO reacts with ?MODIFY FINAL? or with compulsory information. (MODIFY only)
+                  OR Confirmation of the Cancellation (DELETE only)
+                  DISPLAY = Display of a booking, which can?t be altered. (DISPLAY only)
+                  MODIFY = Display of a booking for modification. (DISPLAY only)
+                  DELETE = Display of a booking for cancellation (DISPLAY only)
+                  SEND = Notes sent from CETS to TO (NOTE only)
+                  DISP = Notes sent from TO to CETS NOTE only)
+                    &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="T" /&gt;
+                        &lt;xs:enumeration value="L" /&gt;
+                        &lt;xs:enumeration value="H" /&gt;
+                        &lt;xs:enumeration value="E" /&gt;
+                        &lt;xs:enumeration value="V" /&gt;
+                        &lt;xs:enumeration value="I" /&gt;
+                        &lt;xs:enumeration value="C" /&gt;
+                        &lt;xs:enumeration value="Text" /&gt;
+                        &lt;xs:enumeration value="A" /&gt;
+                        &lt;xs:enumeration value="R" /&gt;
+                        &lt;xs:enumeration value="S" /&gt;
+                        &lt;xs:enumeration value="U" /&gt;
+                        &lt;xs:enumeration value="CI" /&gt;
+                        &lt;xs:enumeration value="PI" /&gt;
+                        &lt;xs:enumeration value="Z" /&gt;
+                        &lt;xs:enumeration value="SEATMAP" /&gt;
+                        &lt;xs:enumeration value="PS" /&gt;
+                        &lt;xs:enumeration value="P" /&gt;
+                        &lt;xs:enumeration value="DETAIL" /&gt;
+                        &lt;xs:enumeration value="PRICE" /&gt;
+                        &lt;xs:enumeration value="OPTION" /&gt;
+                        &lt;xs:enumeration value="PREBOOK" /&gt;
+                        &lt;xs:enumeration value="DISPLAY" /&gt;
+                        &lt;xs:enumeration value="MODIFY" /&gt;
+                        &lt;xs:enumeration value="DELETE" /&gt;
+                        &lt;xs:enumeration value="SEND" /&gt;
+                        &lt;xs:enumeration value="DISP" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="BookingMode" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Values: B2B,B2C, B2B2C, or empty &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="" /&gt;
+                        &lt;xs:enumeration value="B2B" /&gt;
+                        &lt;xs:enumeration value="B2C" /&gt;
+                        &lt;xs:enumeration value="B2B2C" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="Confirm" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Values: YES, NO CETS set this attribute to ?YES?, if the Agent confirmed compulsory information (TextC elements in Fab) (Refer to booking process)
+                  For a normal dossier import this value can be ignored.
+                    &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="YES" /&gt;
+                        &lt;xs:enumeration value="NO" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="Agent" type="xs:string" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Country-code (2digits)+TraviId (4digits) (refer to table Country-code)
+                  If this is a swiss customer, the first two country code digits do not need to be sent.
+                    &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="AgentUsercode" type="xs:string" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;UserRef of the Tour Online or Cets User. Used to specify which User will receive the CMIR.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="Lang" type="xs:string" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;ISO Language code (DE, FR, IT, EN)&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="Mode" type="xs:string" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Values: TEST, EDUC, PROD. EDUC for educational booking is obligatory &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="ViewOnly" type="xs:boolean" use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;If true, this dossier may not be modified by the web service client. Is used for displaying dossiers as an indicator for the frontend if the dossier can be modified by the user or not.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="Key" type="xs:string"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;This value is supplied by the web service and needs to be looped back to the web service by the web service client. It allows the server to find out if, between two requests of a client, there have been changes made to the dossier by another service or directly on the server.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="AllowDelete" type="xs:boolean"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Indicates if a fetched dossier can be deleted or not. If a dossier has been printed in the back office system, it cannot be deleted.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+&lt;/xs:schema&gt;
+</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="Element" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Element's:</b></td>
+            </tr>
+            <tr id="Element_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="oltavailabilityrequest.html">OLTAvailabilityRequest</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Data-Binding.aspx">XML Data Binder</a></div>
+   </body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType Miscellaneous in OLTDossiers</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Element', 'miscellaneous1');
+                    </script><div class="pageheader">
+         Documentation for OLTDossiers
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Miscellaneous</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="miscellaneous_xsd.html">Miscellaneous.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td>False</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="163,696,328,723" href="language5.html" alt="Drilldown into Language"></area>
+                     <area shape="rect" coords="228,663,395,690" href="productitemprices3.html" alt="Drilldown into ProductItemPrices"></area>
+                     <area shape="rect" coords="228,630,414,657" href="maximumdays.html" alt="Drilldown into MaximumDays"></area>
+                     <area shape="rect" coords="228,597,411,624" href="minimumdays.html" alt="Drilldown into MinimumDays"></area>
+                     <area shape="rect" coords="228,564,431,591" href="maximumpersons.html" alt="Drilldown into MaximumPersons"></area>
+                     <area shape="rect" coords="228,531,428,558" href="minimumpersons.html" alt="Drilldown into MinimumPersons"></area>
+                     <area shape="rect" coords="228,498,399,525" href="commission.html" alt="Drilldown into Commission"></area>
+                     <area shape="rect" coords="228,465,469,492" href="vouchersupplier2.html" alt="Drilldown into VoucherSupplier"></area>
+                     <area shape="rect" coords="228,432,443,459" href="paysupplier1.html" alt="Drilldown into PaySupplier"></area>
+                     <area shape="rect" coords="228,399,490,426" href="reservationsupplier.html" alt="Drilldown into ReservationSupplier"></area>
+                     <area shape="rect" coords="228,366,376,393" href="city5.html" alt="Drilldown into City"></area>
+                     <area shape="rect" coords="228,333,376,360" href="service2.html" alt="Drilldown into Service"></area>
+                     <area shape="rect" coords="228,300,392,327" href="subregion3.html" alt="Drilldown into SubRegion"></area>
+                     <area shape="rect" coords="228,267,376,294" href="region3.html" alt="Drilldown into Region"></area>
+                     <area shape="rect" coords="228,234,392,261" href="country5.html" alt="Drilldown into Country"></area>
+                     <area shape="rect" coords="228,201,376,228" href="remark9.html" alt="Drilldown into Remark"></area>
+                     <area shape="rect" coords="228,168,434,195" href="confirmationnr3.html" alt="Drilldown into ConfirmationNr"></area>
+                     <area shape="rect" coords="228,135,408,162" href="flightnumber1.html" alt="Drilldown into FlightNumber"></area>
+                     <area shape="rect" coords="228,102,406,129" href="departure3.html" alt="Drilldown into Departure"></area>
+                     <area shape="rect" coords="228,69,394,96" href="arrival3.html" alt="Drilldown into Arrival"></area>
+                     <area shape="rect" coords="228,36,376,63" href="detail1.html" alt="Drilldown into Detail"></area>
+                     <area shape="rect" coords="228,3,376,30" href="title3.html" alt="Drilldown into Title"></area></map><img src="images/miscellaneous1.png" border="0" alt="XSD Diagram of Miscellaneous" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:element name="Miscellaneous"&gt;
+  &lt;xs:complexType&gt;
+    &lt;xs:all&gt;
+      &lt;xs:element name="Title" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Detail" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Arrival" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:attribute name="Time" type="xs:time" /&gt;
+          &lt;xs:attribute name="Description" type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Departure" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:attribute name="Time" type="xs:time" /&gt;
+          &lt;xs:attribute name="Description" type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="FlightNumber" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="ConfirmationNr" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:simpleContent&gt;
+            &lt;xs:extension base="xs:string"&gt;
+              &lt;xs:attribute name="ConfirmedBy" type="xs:string" /&gt;
+            &lt;/xs:extension&gt;
+          &lt;/xs:simpleContent&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Remark" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Country" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:simpleContent&gt;
+            &lt;xs:extension base="xs:string"&gt;
+              &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
+            &lt;/xs:extension&gt;
+          &lt;/xs:simpleContent&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Region" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Region of the Country&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="SubRegion" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Subregion of the region&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Service" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Service shortdescription&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="City" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;City name (length=20)&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="ReservationSupplier" type="SupplierType" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Supplier who makes the reservation&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="PaySupplier" type="SupplierType" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Supplier who makes the payment&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Supplier who makes the voucher&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Commission" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;commission&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="MinimumPersons" type="xs:integer" minOccurs="0" /&gt;
+      &lt;xs:element name="MaximumPersons" type="xs:integer" minOccurs="0" /&gt;
+      &lt;xs:element name="MinimumDays" type="xs:integer" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Minimum number of days this product can be booked.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="MaximumDays" type="xs:integer" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Maximum number of days this product can be booked.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="ProductItemPrices" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Only relevant for an Availability&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:sequence&gt;
+            &lt;xs:element ref="ProductItemPrice" maxOccurs="unbounded" /&gt;
+          &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+    &lt;/xs:all&gt;
+    &lt;xs:attribute name="Language" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Languange of the description of the itmes&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:language"&gt;
+          &lt;xs:enumeration value="de-ch" /&gt;
+          &lt;xs:enumeration value="en-us" /&gt;
+          &lt;xs:enumeration value="fr-ch" /&gt;
+          &lt;xs:enumeration value="it-ch" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Title</td>
+                        <td><a href="title3.html">Title</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Detail</td>
+                        <td><a href="detail1.html">Detail</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Arrival</td>
+                        <td><a href="arrival3.html">Arrival</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Departure</td>
+                        <td><a href="departure3.html">Departure</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">FlightNumber</td>
+                        <td><a href="flightnumber1.html">FlightNumber</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ConfirmationNr</td>
+                        <td><a href="confirmationnr3.html">ConfirmationNr</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Remark</td>
+                        <td><a href="remark9.html">Remark</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Country</td>
+                        <td><a href="country5.html">Country</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Region</td>
+                        <td><a href="region3.html">Region</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SubRegion</td>
+                        <td><a href="subregion3.html">SubRegion</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Service</td>
+                        <td><a href="service2.html">Service</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">City</td>
+                        <td><a href="city5.html">City</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ReservationSupplier</td>
+                        <td><a href="reservationsupplier.html">ReservationSupplier</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PaySupplier</td>
+                        <td><a href="paysupplier1.html">PaySupplier</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">VoucherSupplier</td>
+                        <td><a href="vouchersupplier2.html">VoucherSupplier</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Commission</td>
+                        <td><a href="commission.html">Commission</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MinimumPersons</td>
+                        <td><a href="minimumpersons.html">MinimumPersons</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MaximumPersons</td>
+                        <td><a href="maximumpersons.html">MaximumPersons</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MinimumDays</td>
+                        <td><a href="minimumdays.html">MinimumDays</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MaximumDays</td>
+                        <td><a href="maximumdays.html">MaximumDays</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ProductItemPrices</td>
+                        <td><a href="productitemprices3.html">ProductItemPrices</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Language</td>
+                        <td><a href="language5.html">Language</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+   </body>
+</html>

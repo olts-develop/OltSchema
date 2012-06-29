@@ -1,0 +1,232 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType CarCategory in OLTDossierResponses</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Element', 'carcategory');
+                    </script><div class="pageheader">
+         Documentation for OLTDossierResponses
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>CarCategory</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="carcategory_xsd.html">CarCategory.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td>False</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="154,399,304,426" href="key1.html" alt="Drilldown into Key"></area>
+                     <area shape="rect" coords="219,366,386,393" href="productitemprices1.html" alt="Drilldown into ProductItemPrices"></area>
+                     <area shape="rect" coords="196,333,390,360" href="supplier.html" alt="Drilldown into Supplier"></area>
+                     <area shape="rect" coords="219,300,436,327" href="includeddescription.html" alt="Drilldown into IncludedDescription"></area>
+                     <area shape="rect" coords="219,267,426,294" href="tourbodescription.html" alt="Drilldown into TourboDescription"></area>
+                     <area shape="rect" coords="219,234,387,261" href="destination1.html" alt="Drilldown into Destination"></area>
+                     <area shape="rect" coords="219,201,374,228" href="plancode.html" alt="Drilldown into PlanCode"></area>
+                     <area shape="rect" coords="219,168,401,195" href="miscellaneous.html" alt="Drilldown into Miscellaneous"></area>
+                     <area shape="rect" coords="219,135,367,162" href="camper.html" alt="Drilldown into Camper"></area>
+                     <area shape="rect" coords="219,102,390,129" href="tourbocode.html" alt="Drilldown into TourboCode"></area>
+                     <area shape="rect" coords="219,69,367,96" href="type5.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="219,36,373,63" href="crscode.html" alt="Drilldown into CRSCode"></area>
+                     <area shape="rect" coords="219,3,373,30" href="category1.html" alt="Drilldown into Category"></area></map><img src="images/carcategory.png" border="0" alt="XSD Diagram of CarCategory" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:element name="CarCategory"&gt;
+  &lt;xs:complexType&gt;
+    &lt;xs:all&gt;
+      &lt;xs:element name="Category" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="CRSCode" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Type" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="TourboCode" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Camper" minOccurs="0"&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:enumeration value="YES" /&gt;
+            &lt;xs:enumeration value="NO" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Miscellaneous" minOccurs="0"&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:enumeration value="YES" /&gt;
+            &lt;xs:enumeration value="NO" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="PlanCode" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Destination" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="TourboDescription" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="IncludedDescription" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Supplier" type="SupplierType" /&gt;
+      &lt;xs:element name="ProductItemPrices" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:sequence&gt;
+            &lt;xs:element ref="ProductItemPrice" maxOccurs="unbounded" /&gt;
+          &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+    &lt;/xs:all&gt;
+    &lt;xs:attribute name="Key" use="required"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt; Primary Key of the Item used in Database of reciever&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Category</td>
+                        <td><a href="category1.html">Category</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">CRSCode</td>
+                        <td><a href="crscode.html">CRSCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Type</td>
+                        <td><a href="type5.html">Type</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TourboCode</td>
+                        <td><a href="tourbocode.html">TourboCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Camper</td>
+                        <td><a href="camper.html">Camper</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Miscellaneous</td>
+                        <td><a href="miscellaneous.html">Miscellaneous</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PlanCode</td>
+                        <td><a href="plancode.html">PlanCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Destination</td>
+                        <td><a href="destination1.html">Destination</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TourboDescription</td>
+                        <td><a href="tourbodescription.html">TourboDescription</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">IncludedDescription</td>
+                        <td><a href="includeddescription.html">IncludedDescription</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Supplier</td>
+                        <td><a href="supplier.html">Supplier</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ProductItemPrices</td>
+                        <td><a href="productitemprices1.html">ProductItemPrices</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Key</td>
+                        <td><a href="key1.html">Key</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>Featuring a validating <a href="http://www.liquid-technologies.com/XML-Editor.aspx">XML Editor</a></div>
+   </body>
+</html>

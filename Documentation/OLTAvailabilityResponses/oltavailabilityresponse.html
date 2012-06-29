@@ -1,0 +1,475 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType OLTAvailabilityResponse in OLTAvailabilityResponses</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Element', 'oltavailabilityresponse');
+                    </script><div class="pageheader">
+         Documentation for OLTAvailabilityResponses
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>OLTAvailabilityResponse</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="oltavailabilityresponse_xsd.html">OLTAvailabilityResponse.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td>False</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="223,564,394,591" href="allowdelete.html" alt="Drilldown into AllowDelete"></area>
+                     <area shape="rect" coords="223,531,371,558" href="key3.html" alt="Drilldown into Key"></area>
+                     <area shape="rect" coords="223,498,379,525" href="viewonly2.html" alt="Drilldown into ViewOnly"></area>
+                     <area shape="rect" coords="223,465,371,492" href="mode.html" alt="Drilldown into Mode"></area>
+                     <area shape="rect" coords="223,432,371,459" href="lang.html" alt="Drilldown into Lang"></area>
+                     <area shape="rect" coords="223,399,411,426" href="agentusercode.html" alt="Drilldown into AgentUsercode"></area>
+                     <area shape="rect" coords="223,366,371,393" href="agent.html" alt="Drilldown into Agent"></area>
+                     <area shape="rect" coords="223,333,371,360" href="confirm.html" alt="Drilldown into Confirm"></area>
+                     <area shape="rect" coords="223,300,403,327" href="bookingmode.html" alt="Drilldown into BookingMode"></area>
+                     <area shape="rect" coords="223,267,374,294" href="subtype.html" alt="Drilldown into SubType"></area>
+                     <area shape="rect" coords="223,234,371,261" href="type6.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="223,201,371,228" href="time14.html" alt="Drilldown into Time"></area>
+                     <area shape="rect" coords="223,168,371,195" href="date.html" alt="Drilldown into Date"></area>
+                     <area shape="rect" coords="223,135,371,162" href="to.html" alt="Drilldown into To"></area>
+                     <area shape="rect" coords="223,102,371,129" href="from.html" alt="Drilldown into From"></area>
+                     <area shape="rect" coords="223,69,371,96" href="version.html" alt="Drilldown into Version"></area>
+                     <area shape="rect" coords="288,36,424,63" href="dossieritems.html" alt="Drilldown into DossierItems"></area>
+                     <area shape="rect" coords="288,3,462,30" href="travellers.html" alt="Drilldown into Travellers"></area></map><img src="images/oltavailabilityresponse.png" border="0" alt="XSD Diagram of OLTAvailabilityResponse" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:element name="OLTAvailabilityResponse"&gt;
+  &lt;xs:complexType&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element ref="Travellers" minOccurs="0" /&gt;
+      &lt;xs:element minOccurs="0" name="DossierItems"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:sequence&gt;
+            &lt;xs:element ref="DossierItem" /&gt;
+          &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name="Version" type="xs:string" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Version Number, at the moment 1.0&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="From" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Sender of the XML. &lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+          &lt;xs:enumeration value="DYNAPACK" /&gt;
+          &lt;xs:enumeration value="TOURONLINE" /&gt;
+          &lt;xs:enumeration value="HOTELONLY" /&gt;
+          &lt;xs:enumeration value="FLIGHTONLY" /&gt;
+          &lt;xs:enumeration value="MOBS" /&gt;
+          &lt;xs:enumeration value="OTHONLY" /&gt;
+          &lt;xs:enumeration value="OTFONLY" /&gt;
+          &lt;xs:enumeration value="TUI" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="To" type="xs:string" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Receiver of the XML. The value OLTSWS can be used as the To value.&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Date" type="xs:date" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Date when request/response is created.&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Time" type="xs:string" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Time when request/response is created.&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Type" use="required"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Type of service that is asked for:
+
+                  IMPORT = Import a DossierIMPORT
+
+                  BOOK = Booking
+
+                  DISPLAY = Display
+
+                  MODIFY = Modify
+
+                  DELETE = Delete
+
+                  NOTE = Notes
+
+                    &lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+          &lt;xs:enumeration value="AVL" /&gt;
+          &lt;xs:enumeration value="IMPORT" /&gt;
+          &lt;xs:enumeration value="AVP" /&gt;
+          &lt;xs:enumeration value="BOOK" /&gt;
+          &lt;xs:enumeration value="DISPLAY" /&gt;
+          &lt;xs:enumeration value="MODIFY" /&gt;
+          &lt;xs:enumeration value="DELETE" /&gt;
+          &lt;xs:enumeration value="NOTE" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="SubType" use="required"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;SubType of service that is asked for.
+
+                  For a normal dossier import this values can be sent as empty.
+
+                  Possible values:
+
+                  T = Transport Availability
+
+                  L = Availability of scheduled flights
+
+                  H = Hotel-Availability
+
+                  E = Extra-Services
+
+                  V = Insurance
+
+                  I = Booking-Information
+
+                  C = Car
+
+                  A = Land-Service (Hotel/Car)
+
+                  R = Roundtrip
+
+                  S = Other Land-Services
+
+                  U = Cruise
+
+                  CI = Touroperator-News
+
+                  PI = Service-Info
+
+                  Z = Additional Data
+
+                  SEATMAP = Seat Reservation
+
+                  PS = Package Selection
+
+                  P = Package
+
+                  DETAIL = Details, which are displayed on the Client (BOOK only)
+
+                  PRICE = Price of a booking (BOOK only) OR Price Request of a Modification (DISPLAY only) OR Price Request of a Cancellation (DELETE only)
+
+                  OPTION = Option Booking. Booking Status = OP TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+
+                  OR Completion of a Modification. Booking Status = OP. TO reacts with ?MODIFY FINAL? or with compulsory information. (MODIFY only)
+
+                  PREBOOK = Prebooking. TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+
+                  FIX = Fixed Booking. Booking Status = OK. TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
+
+                  OR Completion of a Modification. Booking Status = OK TO reacts with ?MODIFY FINAL? or with compulsory information. (MODIFY only)
+
+                  OR Confirmation of the Cancellation (DELETE only)
+
+                  DISPLAY = Display of a booking, which can?t be altered. (DISPLAY only)
+
+                  MODIFY = Display of a booking for modification. (DISPLAY only)
+
+                  DELETE = Display of a booking for cancellation (DISPLAY only)
+
+                  SEND = Notes sent from CETS to TO (NOTE only)
+
+                  DISP = Notes sent from TO to CETS NOTE only)
+
+                    &lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+          &lt;xs:enumeration value="T" /&gt;
+          &lt;xs:enumeration value="L" /&gt;
+          &lt;xs:enumeration value="H" /&gt;
+          &lt;xs:enumeration value="E" /&gt;
+          &lt;xs:enumeration value="V" /&gt;
+          &lt;xs:enumeration value="I" /&gt;
+          &lt;xs:enumeration value="C" /&gt;
+          &lt;xs:enumeration value="Text" /&gt;
+          &lt;xs:enumeration value="A" /&gt;
+          &lt;xs:enumeration value="R" /&gt;
+          &lt;xs:enumeration value="S" /&gt;
+          &lt;xs:enumeration value="U" /&gt;
+          &lt;xs:enumeration value="CI" /&gt;
+          &lt;xs:enumeration value="PI" /&gt;
+          &lt;xs:enumeration value="Z" /&gt;
+          &lt;xs:enumeration value="SEATMAP" /&gt;
+          &lt;xs:enumeration value="PS" /&gt;
+          &lt;xs:enumeration value="P" /&gt;
+          &lt;xs:enumeration value="DETAIL" /&gt;
+          &lt;xs:enumeration value="PRICE" /&gt;
+          &lt;xs:enumeration value="OPTION" /&gt;
+          &lt;xs:enumeration value="PREBOOK" /&gt;
+          &lt;xs:enumeration value="DISPLAY" /&gt;
+          &lt;xs:enumeration value="MODIFY" /&gt;
+          &lt;xs:enumeration value="DELETE" /&gt;
+          &lt;xs:enumeration value="SEND" /&gt;
+          &lt;xs:enumeration value="DISP" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="BookingMode" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Values: B2B,B2C, B2B2C, or empty &lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+          &lt;xs:enumeration value="" /&gt;
+          &lt;xs:enumeration value="B2B" /&gt;
+          &lt;xs:enumeration value="B2C" /&gt;
+          &lt;xs:enumeration value="B2B2C" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Confirm" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Values: YES, NO CETS set this attribute to ?YES?, if the Agent confirmed compulsory information (TextC elements in Fab) (Refer to booking process)
+
+                  For a normal dossier import this value can be ignored.
+
+                    &lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+          &lt;xs:enumeration value="YES" /&gt;
+          &lt;xs:enumeration value="NO" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Agent" type="xs:string" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Country-code (2digits)+TraviId (4digits) (refer to table Country-code)
+
+                  If this is a swiss customer, the first two country code digits do not need to be sent.
+
+                    &lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="AgentUsercode" type="xs:string" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;UserRef of the Tour Online or Cets User. Used to specify which User will receive the CMIR.&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Lang" type="xs:string" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;ISO Language code (DE, FR, IT, EN)&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Mode" type="xs:string" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Values: TEST, EDUC, PROD. EDUC for educational booking is obligatory &lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="ViewOnly" type="xs:boolean" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;If true, this dossier may not be modified by the web service client. Is used for displaying dossiers as an indicator for the frontend if the dossier can be modified by the user or not.&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Key" type="xs:string"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;This value is supplied by the web service and needs to be looped back to the web service by the web service client. It allows the server to find out if, between two requests of a client, there have been changes made to the dossier by another service or directly on the server.&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="AllowDelete" type="xs:boolean"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Indicates if a fetched dossier can be deleted or not. If a dossier has been printed in the back office system, it cannot be deleted.&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Travellers</td>
+                        <td><a href="travellers.html">Travellers</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DossierItems</td>
+                        <td><a href="dossieritems.html">DossierItems</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Version</td>
+                        <td><a href="version.html">Version</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">From</td>
+                        <td><a href="from.html">From</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">To</td>
+                        <td><a href="to.html">To</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Date</td>
+                        <td><a href="date.html">Date</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Time</td>
+                        <td><a href="time14.html">Time</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Type</td>
+                        <td><a href="type6.html">Type</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SubType</td>
+                        <td><a href="subtype.html">SubType</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">BookingMode</td>
+                        <td><a href="bookingmode.html">BookingMode</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Confirm</td>
+                        <td><a href="confirm.html">Confirm</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Agent</td>
+                        <td><a href="agent.html">Agent</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AgentUsercode</td>
+                        <td><a href="agentusercode.html">AgentUsercode</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Lang</td>
+                        <td><a href="lang.html">Lang</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Mode</td>
+                        <td><a href="mode.html">Mode</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ViewOnly</td>
+                        <td><a href="viewonly2.html">ViewOnly</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Key</td>
+                        <td><a href="key3.html">Key</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AllowDelete</td>
+                        <td><a href="allowdelete.html">AllowDelete</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+   </body>
+</html>

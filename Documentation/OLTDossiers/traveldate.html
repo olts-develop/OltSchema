@@ -1,0 +1,242 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType TravelDate in OLTDossiers</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Element', 'traveldate');
+                    </script><div class="pageheader">
+         Documentation for OLTDossiers
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>TravelDate</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="traveldate_xsd.html">TravelDate.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td>False</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="205,300,353,327" href="sunday.html" alt="Drilldown into Sunday"></area>
+                     <area shape="rect" coords="205,267,358,294" href="saturday.html" alt="Drilldown into Saturday"></area>
+                     <area shape="rect" coords="205,234,353,261" href="friday.html" alt="Drilldown into Friday"></area>
+                     <area shape="rect" coords="205,201,360,228" href="thursday.html" alt="Drilldown into Thursday"></area>
+                     <area shape="rect" coords="205,168,373,195" href="wednesday.html" alt="Drilldown into Wednesday"></area>
+                     <area shape="rect" coords="205,135,354,162" href="tuesday.html" alt="Drilldown into Tuesday"></area>
+                     <area shape="rect" coords="205,102,353,129" href="monday.html" alt="Drilldown into Monday"></area>
+                     <area shape="rect" coords="205,69,414,96" href="excludetraveldate.html" alt="Drilldown into ExcludeTravelDate"></area>
+                     <area shape="rect" coords="205,36,391,63" href="travelenddate.html" alt="Drilldown into TravelEndDate"></area>
+                     <area shape="rect" coords="205,3,402,30" href="travelbegindate.html" alt="Drilldown into TravelBeginDate"></area></map><img src="images/traveldate.png" border="0" alt="XSD Diagram of TravelDate" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:element name="TravelDate"&gt;
+  &lt;xs:complexType&gt;
+    &lt;xs:attribute name="TravelBeginDate" type="xs:date" use="required" /&gt;
+    &lt;xs:attribute name="TravelEndDate" type="xs:date" use="required" /&gt;
+    &lt;xs:attribute name="ExcludeTravelDate" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;The periode TravelBeginDate / TravelEndDate is not bookable&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:integer"&gt;
+          &lt;xs:enumeration value="0" /&gt;
+          &lt;xs:enumeration value="1" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Monday" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Every Monday from TravelBeginDate on, till the next Travelbegindate&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:integer"&gt;
+          &lt;xs:enumeration value="0" /&gt;
+          &lt;xs:enumeration value="1" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Tuesday" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Every Tuesday from TravelBeginDate on, till the next Travelbegindate&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:integer"&gt;
+          &lt;xs:enumeration value="0" /&gt;
+          &lt;xs:enumeration value="1" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Wednesday" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Every Wednesday from TravelBeginDate on, till the next Travelbegindate&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:integer"&gt;
+          &lt;xs:enumeration value="0" /&gt;
+          &lt;xs:enumeration value="1" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Thursday" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Every Thursday from TravelBeginDate on, till the next Travelbegindate&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:integer"&gt;
+          &lt;xs:enumeration value="0" /&gt;
+          &lt;xs:enumeration value="1" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Friday" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Every Friday from TravelBeginDate on, till the next Travelbegindate&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:integer"&gt;
+          &lt;xs:enumeration value="0" /&gt;
+          &lt;xs:enumeration value="1" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Saturday" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Every Saturday from TravelBeginDate on, till the next Travelbegindate&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:integer"&gt;
+          &lt;xs:enumeration value="0" /&gt;
+          &lt;xs:enumeration value="1" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Sunday" use="optional"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Every Sunday from TravelBeginDate on, till the next Travelbegindate&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:integer"&gt;
+          &lt;xs:enumeration value="0" /&gt;
+          &lt;xs:enumeration value="1" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TravelBeginDate</td>
+                        <td><a href="travelbegindate.html">TravelBeginDate</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TravelEndDate</td>
+                        <td><a href="travelenddate.html">TravelEndDate</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ExcludeTravelDate</td>
+                        <td><a href="excludetraveldate.html">ExcludeTravelDate</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Monday</td>
+                        <td><a href="monday.html">Monday</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Tuesday</td>
+                        <td><a href="tuesday.html">Tuesday</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Wednesday</td>
+                        <td><a href="wednesday.html">Wednesday</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Thursday</td>
+                        <td><a href="thursday.html">Thursday</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Friday</td>
+                        <td><a href="friday.html">Friday</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Saturday</td>
+                        <td><a href="saturday.html">Saturday</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Sunday</td>
+                        <td><a href="sunday.html">Sunday</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+   </body>
+</html>

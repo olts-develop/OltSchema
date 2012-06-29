@@ -1,0 +1,267 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType RequestItem.xsd in OLTAvailabilityRequests</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Schema', 'requestitem_xsd');
+                    </script><div class="pageheader">
+         Documentation for OLTAvailabilityRequests
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Schema Name:</b></td>
+               <td>RequestItem.xsd</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>
+&lt;!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) --&gt;
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"&gt;
+  &lt;xs:element name="RequestItem"&gt;
+    &lt;xs:complexType&gt;
+      &lt;xs:sequence&gt;
+        &lt;xs:element minOccurs="0" name="TourOperatorCode" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Tour Operator Code (length=4)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="TourOperatorCatalog" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Tour Operator Catalog (length=4)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="AccountNumber" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Booking Number (length=12)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="StartDate" type="xs:date"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Starting date of service&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="FlexDateBeforeNr" type="xs:integer"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Days before begindate for start and enddate&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+         &lt;xs:element name="FlexDateAfterNr" type="xs:integer"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Days before enddate for start and enddate&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="Duration" type="xs:integer"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Duration of the service&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="Destination" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Destination code (length=3)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+         &lt;xs:element minOccurs="0" name="OnlyAvail" type="xs:boolean"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;true = Only allotment available products will be returned
+                        false or true (default: true)
+            &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="Adults" type="xs:integer"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Number of adults &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="Children" type="xs:integer"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Number of children &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="Infants" type="xs:integer"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Number of infants &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="Product" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;ProductId (Hotel code)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="Room" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Type of room&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="Meal"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;RO: room only
+              BB: bed and breakfast
+              HB: half board
+              FB: full board
+              AI: all inclusive
+              MP: meals according to program
+              If TO uses other codes
+            &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+          &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:string"&gt;
+              &lt;xs:enumeration value="RO" /&gt;
+              &lt;xs:enumeration value="BB" /&gt;
+              &lt;xs:enumeration value="HB" /&gt;
+              &lt;xs:enumeration value="FB" /&gt;
+              &lt;xs:enumeration value="AI" /&gt;
+              &lt;xs:enumeration value="MP" /&gt;
+            &lt;/xs:restriction&gt;
+          &lt;/xs:simpleType&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="NormalRoomOccupancy" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Normal occupancy of a room (length=1)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="Currency" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;ISO Currency code eg. EUR&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="Price" type="xs:integer"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Price&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="HotelCatagory" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Category of the Hotel (1,2,3,4,5)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="OutboundDepartureAirport" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Departure airport of outbound flight (length=3)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="OutboundArrivalAirport" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Arrival airport of outbound flight (length=3)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="OutboundChain" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Flight chain of outbound flight &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="OutboundClass" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Flight class of outbound flight &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="OutboundCarrier" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Carrier code of outbound flight &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="OutboundFlightNumber" type="xs:integer"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Flight number of outbound flight &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="InboundDepartureAirport" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Departure airport of inbound flight (length=3)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="InboundArrivalAirport" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Arrival airport of inbound flight (length=3)&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="InboundChain" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Flight chain of inbound flight &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="InboundClass" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Flight class of inbound flight &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="InboundCarrier" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Carrier code of inbound flight &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element minOccurs="0" name="InboundFlightNumber" type="xs:integer"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Flight number of inbound flight &lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+      &lt;/xs:sequence&gt;
+      &lt;xs:attribute name="Key" use="optional"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt; Primary Key of the Item used in Database of reciever&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:attribute&gt;
+      &lt;xs:attribute name="InternalItem" use="required"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt; Internal Itemtype name:
+            Flight
+            Car
+            Hotel
+            Miscellaneous
+            Bus
+            Train
+            Ship
+            Text
+            Package
+          &lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:enumeration value="Flight" /&gt;
+            &lt;xs:enumeration value="Car" /&gt;
+            &lt;xs:enumeration value="Hotel" /&gt;
+            &lt;xs:enumeration value="Miscellaneous" /&gt;
+            &lt;xs:enumeration value="Bus" /&gt;
+            &lt;xs:enumeration value="Train" /&gt;
+            &lt;xs:enumeration value="Ship" /&gt;
+            &lt;xs:enumeration value="Text" /&gt;
+            &lt;xs:enumeration value="Package" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;
+</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="Element" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Element's:</b></td>
+            </tr>
+            <tr id="Element_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="requestitem.html">RequestItem</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>by  <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+   </body>
+</html>

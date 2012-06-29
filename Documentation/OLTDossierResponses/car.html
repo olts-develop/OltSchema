@@ -1,0 +1,370 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType Car in OLTDossierResponses</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Element', 'car');
+                    </script><div class="pageheader">
+         Documentation for OLTDossierResponses
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Car</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="car_xsd.html">Car.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td>False</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="194,795,334,822" href="carcategories.html" alt="Drilldown into CarCategories"></area>
+                     <area shape="rect" coords="194,762,349,789" href="priceinfo.html" alt="Drilldown into PriceInfo"></area>
+                     <area shape="rect" coords="194,729,373,756" href="supplierinfos.html" alt="Drilldown into SupplierInfos"></area>
+                     <area shape="rect" coords="194,696,387,723" href="remarkvoucher.html" alt="Drilldown into RemarkVoucher"></area>
+                     <area shape="rect" coords="194,663,342,690" href="remark6.html" alt="Drilldown into Remark"></area>
+                     <area shape="rect" coords="194,630,408,657" href="descriptionvoucher.html" alt="Drilldown into DescriptionVoucher"></area>
+                     <area shape="rect" coords="194,597,384,624" href="confirmationnr1.html" alt="Drilldown into ConfirmationNr"></area>
+                     <area shape="rect" coords="194,564,363,591" href="dropoffinfo.html" alt="Drilldown into DropoffInfo"></area>
+                     <area shape="rect" coords="194,531,360,558" href="dropoff.html" alt="Drilldown into Dropoff"></area>
+                     <area shape="rect" coords="194,498,358,525" href="pickupinfo.html" alt="Drilldown into PickupInfo"></area>
+                     <area shape="rect" coords="194,465,360,492" href="pickup.html" alt="Drilldown into Pickup"></area>
+                     <area shape="rect" coords="194,432,342,459" href="type4.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="194,399,347,426" href="included.html" alt="Drilldown into Included"></area>
+                     <area shape="rect" coords="194,366,348,393" href="category.html" alt="Drilldown into Category"></area>
+                     <area shape="rect" coords="194,333,344,360" href="carcode.html" alt="Drilldown into CarCode"></area>
+                     <area shape="rect" coords="194,300,360,327" href="fax2.html" alt="Drilldown into Fax"></area>
+                     <area shape="rect" coords="194,267,360,294" href="phone3.html" alt="Drilldown into Phone"></area>
+                     <area shape="rect" coords="194,234,342,261" href="city3.html" alt="Drilldown into City"></area>
+                     <area shape="rect" coords="194,201,360,228" href="postalcode2.html" alt="Drilldown into PostalCode"></area>
+                     <area shape="rect" coords="194,168,358,195" href="subregion.html" alt="Drilldown into SubRegion"></area>
+                     <area shape="rect" coords="194,135,342,162" href="region.html" alt="Drilldown into Region"></area>
+                     <area shape="rect" coords="194,102,358,129" href="country3.html" alt="Drilldown into Country"></area>
+                     <area shape="rect" coords="194,69,349,96" href="address22.html" alt="Drilldown into Address2"></area>
+                     <area shape="rect" coords="194,36,349,63" href="address12.html" alt="Drilldown into Address1"></area>
+                     <area shape="rect" coords="194,3,349,30" href="company.html" alt="Drilldown into Company"></area></map><img src="images/car.png" border="0" alt="XSD Diagram of Car" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:element name="Car"&gt;
+  &lt;xs:complexType&gt;
+    &lt;xs:all&gt;
+      &lt;xs:element name="Company" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Car rental company&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Address1" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Address2" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Country" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:simpleContent&gt;
+            &lt;xs:extension base="xs:string"&gt;
+              &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
+            &lt;/xs:extension&gt;
+          &lt;/xs:simpleContent&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Region" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Region of the Country&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="SubRegion" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Subregion of the region&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="PostalCode" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="City" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Phone" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:attribute name="AreaCode" type="xs:string" /&gt;
+          &lt;xs:attribute name="Number" type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Fax" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:attribute name="AreaCode" type="xs:string" /&gt;
+          &lt;xs:attribute name="Number" type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="CarCode" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Category" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Included" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA, describes what amenities are included in this booking.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Type" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Pickup" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:attribute name="Time" type="xs:time" /&gt;
+          &lt;xs:attribute name="Description" type="xs:string" /&gt;
+          &lt;xs:attribute name="Info"&gt;
+            &lt;xs:simpleType&gt;
+              &lt;xs:restriction base="xs:string"&gt;
+                &lt;xs:enumeration value="Airport" /&gt;
+                &lt;xs:enumeration value="Hotel" /&gt;
+                &lt;xs:enumeration value="Walkin" /&gt;
+              &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+          &lt;/xs:attribute&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="PickupInfo" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA display information for pickup&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Dropoff" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:attribute name="Time" type="xs:time" /&gt;
+          &lt;xs:attribute name="Description" type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="DropoffInfo" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA display information for dropoff&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="ConfirmationNr" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="DescriptionVoucher" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA - Text string to be displayed on the voucher regarding additional information. Is normally sent in english.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Remark" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="RemarkVoucher" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA display wish for voucher&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="SupplierInfos" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA display for supplier information&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="PriceInfo" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="CarCategories" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;This is only used if the external developer sends an availability request&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:sequence&gt;
+            &lt;xs:element ref="CarCategory" maxOccurs="unbounded" /&gt;
+          &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+    &lt;/xs:all&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Company</td>
+                        <td><a href="company.html">Company</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Address1</td>
+                        <td><a href="address12.html">Address1</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Address2</td>
+                        <td><a href="address22.html">Address2</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Country</td>
+                        <td><a href="country3.html">Country</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Region</td>
+                        <td><a href="region.html">Region</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SubRegion</td>
+                        <td><a href="subregion.html">SubRegion</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PostalCode</td>
+                        <td><a href="postalcode2.html">PostalCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">City</td>
+                        <td><a href="city3.html">City</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Phone</td>
+                        <td><a href="phone3.html">Phone</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Fax</td>
+                        <td><a href="fax2.html">Fax</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">CarCode</td>
+                        <td><a href="carcode.html">CarCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Category</td>
+                        <td><a href="category.html">Category</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Included</td>
+                        <td><a href="included.html">Included</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Type</td>
+                        <td><a href="type4.html">Type</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Pickup</td>
+                        <td><a href="pickup.html">Pickup</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PickupInfo</td>
+                        <td><a href="pickupinfo.html">PickupInfo</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Dropoff</td>
+                        <td><a href="dropoff.html">Dropoff</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DropoffInfo</td>
+                        <td><a href="dropoffinfo.html">DropoffInfo</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ConfirmationNr</td>
+                        <td><a href="confirmationnr1.html">ConfirmationNr</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DescriptionVoucher</td>
+                        <td><a href="descriptionvoucher.html">DescriptionVoucher</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Remark</td>
+                        <td><a href="remark6.html">Remark</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">RemarkVoucher</td>
+                        <td><a href="remarkvoucher.html">RemarkVoucher</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SupplierInfos</td>
+                        <td><a href="supplierinfos.html">SupplierInfos</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PriceInfo</td>
+                        <td><a href="priceinfo.html">PriceInfo</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">CarCategories</td>
+                        <td><a href="carcategories.html">CarCategories</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>Featuring <a href="http://www.liquid-technologies.com/XmlDataBinding/Xml-Schema-To-Cpp.aspx">XSD to C++ Code Generation</a></div>
+   </body>
+</html>
