@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation=".\Customers.xsd" />
   <xs:include schemaLocation=".\Travellers.xsd" />
@@ -604,6 +604,11 @@
             <xs:attribute name="AllowDelete" type="xs:boolean">
               <xs:annotation>
                 <xs:documentation>Indicates if a fetched dossier can be deleted or not. If a dossier has been printed in the back office system, it cannot be deleted.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ResponseFormat" type="xs:string">
+              <xs:annotation>
+                <xs:documentation>If the value CMIR is supplied, the reposonse of an OLTDossier is a CMIR and not the standard OLT XML</xs:documentation>
               </xs:annotation>
             </xs:attribute>
           </xs:complexType>
