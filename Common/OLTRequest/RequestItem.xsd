@@ -29,7 +29,7 @@
             <xs:documentation>Days before begindate for start and enddate</xs:documentation>
           </xs:annotation>
         </xs:element>
-         <xs:element name="FlexDateAfterNr" type="xs:integer">
+        <xs:element name="FlexDateAfterNr" type="xs:integer">
           <xs:annotation>
             <xs:documentation>Days before enddate for start and enddate</xs:documentation>
           </xs:annotation>
@@ -44,10 +44,10 @@
             <xs:documentation>Destination code (length=3)</xs:documentation>
           </xs:annotation>
         </xs:element>
-         <xs:element minOccurs="0" name="OnlyAvail" type="xs:boolean">
+        <xs:element minOccurs="0" name="OnlyAvail" type="xs:boolean">
           <xs:annotation>
             <xs:documentation>true = Only allotment available products will be returned
-                        false or true (default: true)
+              false or true (default: true)
             </xs:documentation>
           </xs:annotation>
         </xs:element>

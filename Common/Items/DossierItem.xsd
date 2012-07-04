@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <!--xs:include schemaLocation="..\Fifa\Projects.xsd" /-->
-    <xs:include schemaLocation=".\Flight.xsd" />
-    <xs:include schemaLocation=".\Car.xsd" />
-    <xs:include schemaLocation=".\Hotel.xsd" />
-    <xs:include schemaLocation=".\Miscellaneous.xsd" />
-    <xs:include schemaLocation=".\Bus.xsd" />
-    <xs:include schemaLocation=".\Train.xsd" />
-    <xs:include schemaLocation=".\Ship.xsd" />
-    <xs:include schemaLocation=".\Text.xsd" />
-    <xs:include schemaLocation=".\ItemPrice.xsd" />
-    <xs:include schemaLocation=".\PurchasePrice.xsd" />
-    <xs:include schemaLocation=".\CancellationFee.xsd" />
-    <xs:include schemaLocation=".\ProductItemPrice.xsd" />
-    <xs:include schemaLocation=".\Document.xsd" />
-    <xs:include schemaLocation="..\GeneralCodes\TravelDate.xsd" />
-    <xs:include schemaLocation="..\GeneralCodes\ProjectType.xsd" />
-    <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
-    <xs:element name="DossierItem">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="LogicDataProductSeq" type="xs:string" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Internal unique logicalkey of the product (for flights only)</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="BeginDate" type="xs:date" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Begin date of this dossier item</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="EndDate" type="xs:date" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>End date of this dossier item</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Duration" type="xs:integer" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Numer of days of this item</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="NumberOfItems" type="xs:integer" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Number of items booked. By default this value ought to be 1.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="ShortDescription1" type="xs:string" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>A short description what this item is. A hotel dossier item would have the hotel name in this node, a car the car catalog.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="ShortDescription2" type="xs:string" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>A short description what this item is. A hotel dossier item would have the room name in this node, a car the car category code.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Status" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>  AK
+  <!--xs:include schemaLocation="..\Fifa\Projects.xsd" /-->
+  <xs:include schemaLocation=".\Flight.xsd" />
+  <xs:include schemaLocation=".\Car.xsd" />
+  <xs:include schemaLocation=".\Hotel.xsd" />
+  <xs:include schemaLocation=".\Miscellaneous.xsd" />
+  <xs:include schemaLocation=".\Bus.xsd" />
+  <xs:include schemaLocation=".\Train.xsd" />
+  <xs:include schemaLocation=".\Ship.xsd" />
+  <xs:include schemaLocation=".\Text.xsd" />
+  <xs:include schemaLocation=".\ItemPrice.xsd" />
+  <xs:include schemaLocation=".\PurchasePrice.xsd" />
+  <xs:include schemaLocation=".\CancellationFee.xsd" />
+  <xs:include schemaLocation=".\ProductItemPrice.xsd" />
+  <xs:include schemaLocation=".\Document.xsd" />
+  <xs:include schemaLocation="..\GeneralCodes\TravelDate.xsd" />
+  <xs:include schemaLocation="..\GeneralCodes\ProjectType.xsd" />
+  <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
+  <xs:element name="DossierItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LogicDataProductSeq" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Internal unique logicalkey of the product (for flights only)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="BeginDate" type="xs:date" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Begin date of this dossier item</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="EndDate" type="xs:date" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>End date of this dossier item</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Duration" type="xs:integer" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Numer of days of this item</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="NumberOfItems" type="xs:integer" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Number of items booked. By default this value ought to be 1.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ShortDescription1" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>A short description what this item is. A hotel dossier item would have the hotel name in this node, a car the car catalog.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ShortDescription2" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>A short description what this item is. A hotel dossier item would have the room name in this node, a car the car category code.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Status" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>  AK
               AX
               BK
               EK
@@ -77,33 +77,33 @@
               UC
               WL
               YK
-                        </xs:documentation>
-                    </xs:annotation>
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:minLength value="0" />
-                            <xs:maxLength value="3" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-                <xs:element name="ExternalSource" type="xs:string" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Source of the dossier item, e.g. MOBS, FIFA, DYNAP etc.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="ExternalDossierNr" type="xs:string" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Dossier number of the external system used to create this TO Online or Agent Online booking. For an API booking made in an external system, this would be the external API booking code.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="ApiBookingNr" type="xs:string" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>If this is an external API booking, the effective bookng number is displayed here. Note, this must also be sent in the HotelItem, or CarItem, but there are some cases where the values can differ.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="GdsSource" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>  AMA - Amadeus
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="0" />
+              <xs:maxLength value="3" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ExternalSource" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Source of the dossier item, e.g. MOBS, FIFA, DYNAP etc.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ExternalDossierNr" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Dossier number of the external system used to create this TO Online or Agent Online booking. For an API booking made in an external system, this would be the external API booking code.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ApiBookingNr" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>If this is an external API booking, the effective bookng number is displayed here. Note, this must also be sent in the HotelItem, or CarItem, but there are some cases where the values can differ.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="GdsSource" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>  AMA - Amadeus
               GAL - Galileo
               SAB - Sabre
               WSP - Worldspan
@@ -111,445 +111,445 @@
               TOSV - Tour Online TOSV
               TOSV+ - Tour Online TOSV Plus
               CMIR - Cets MIR
-                        </xs:documentation>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="AMA" />
+              <xs:enumeration value="GAL" />
+              <xs:enumeration value="SAB" />
+              <xs:enumeration value="WSP" />
+              <xs:enumeration value="TMIR" />
+              <xs:enumeration value="TOSV" />
+              <xs:enumeration value="TOSV+" />
+              <xs:enumeration value="CMIR" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="GdsBookingNr" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>If this is a PNR, or CMIR etc, the external booking number is stored in this node.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="BookingSupplier" type="SupplierType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Supplier of this dossier item. If a dossier is imported</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="PaySupplier" minOccurs="0">
+          <xs:complexType>
+            <xs:complexContent>
+              <xs:extension base="SupplierType" />
+            </xs:complexContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0" />
+        <xs:element name="CostCenter" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Internal costcenter for this item</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Projects" minOccurs="0">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="Project" type="ProjectType" />
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Travellers" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Listet die Travellers auf welche mit dieser Leistung verknuepft sind.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Traveller" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="TravellerSeq" use="optional">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:minLength value="0" />
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="TravellerId" type="xs:integer" use="required">
+                    <xs:annotation>
+                      <xs:documentation>This value is used for finding the correct traveler.</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="CustomerNr" type="xs:integer" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Customer number of this traveller, if the customer is in the Agent Online customer database.</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="TicketPrice" type="xs:decimal" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Ticket price for the Customer. Supply only in  is Flight</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="TaxPrice" type="xs:decimal" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Tax price for the Customer. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="TicketingAirline" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Ticketing airline number (014) or string (AC). Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
                     <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="AMA" />
-                            <xs:enumeration value="GAL" />
-                            <xs:enumeration value="SAB" />
-                            <xs:enumeration value="WSP" />
-                            <xs:enumeration value="TMIR" />
-                            <xs:enumeration value="TOSV" />
-                            <xs:enumeration value="TOSV+" />
-                            <xs:enumeration value="CMIR" />
-                        </xs:restriction>
+                      <xs:restriction base="xs:string">
+                        <xs:minLength value="0" />
+                        <xs:maxLength value="3  " />
+                      </xs:restriction>
                     </xs:simpleType>
-                </xs:element>
-                <xs:element name="GdsBookingNr" type="xs:string" minOccurs="0">
+                  </xs:attribute>
+                  <xs:attribute name="Ticket1" type="xs:integer" use="optional">
                     <xs:annotation>
-                        <xs:documentation>If this is a PNR, or CMIR etc, the external booking number is stored in this node.</xs:documentation>
+                      <xs:documentation>Ticketnumber for Segment1. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
-                </xs:element>
-                <xs:element name="BookingSupplier" type="SupplierType" minOccurs="0">
+                  </xs:attribute>
+                  <xs:attribute name="Ticket2" type="xs:integer" use="optional">
                     <xs:annotation>
-                        <xs:documentation>Supplier of this dossier item. If a dossier is imported</xs:documentation>
+                      <xs:documentation>Ticketnumber for Segment2. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
-                </xs:element>
-                <xs:element name="PaySupplier" minOccurs="0">
-                    <xs:complexType>
-                        <xs:complexContent>
-                            <xs:extension base="SupplierType" />
-                        </xs:complexContent>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0" />
-                <xs:element name="CostCenter" type="xs:string" minOccurs="0">
+                  </xs:attribute>
+                  <xs:attribute name="Ticket3" type="xs:integer" use="optional">
                     <xs:annotation>
-                        <xs:documentation>Internal costcenter for this item</xs:documentation>
+                      <xs:documentation>Ticketnumber for Segment3. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
-                </xs:element>
-                <xs:element name="Projects" minOccurs="0">
-                    <xs:complexType>
-                        <xs:all>
-                            <xs:element name="Project" type="ProjectType" />
-                        </xs:all>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="Travellers" minOccurs="0">
+                  </xs:attribute>
+                  <xs:attribute name="Ticket4" type="xs:integer" use="optional">
                     <xs:annotation>
-                        <xs:documentation>Listet die Travellers auf welche mit dieser Leistung verknuepft sind.</xs:documentation>
+                      <xs:documentation>Ticketnumber for Segment4. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Traveller" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:attribute name="TravellerSeq" use="optional">
-                                        <xs:simpleType>
-                                            <xs:restriction base="xs:string">
-                                                <xs:minLength value="0" />
-                                                <xs:maxLength value="20" />
-                                            </xs:restriction>
-                                        </xs:simpleType>
-                                    </xs:attribute>
-                                    <xs:attribute name="TravellerId" type="xs:integer" use="required">
-                                        <xs:annotation>
-                                            <xs:documentation>This value is used for finding the correct traveler.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="CustomerNr" type="xs:integer" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Customer number of this traveller, if the customer is in the Agent Online customer database.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="TicketPrice" type="xs:decimal" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Ticket price for the Customer. Supply only in  is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="TaxPrice" type="xs:decimal" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Tax price for the Customer. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="TicketingAirline" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Ticketing airline number (014) or string (AC). Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                        <xs:simpleType>
-                                            <xs:restriction base="xs:string">
-                                                <xs:minLength value="0" />
-                                                <xs:maxLength value="3  " />
-                                            </xs:restriction>
-                                        </xs:simpleType>
-                                    </xs:attribute>
-                                    <xs:attribute name="Ticket1" type="xs:integer" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Ticketnumber for Segment1. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Ticket2" type="xs:integer" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Ticketnumber for Segment2. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Ticket3" type="xs:integer" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Ticketnumber for Segment3. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Ticket4" type="xs:integer" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Ticketnumber for Segment4. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Ticket5" type="xs:integer" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Ticketnumber for Segment5. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Seat1" type="xs:string" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Seatnumber for Segment1. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Seat2" type="xs:string" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Seatnumber for Segment2. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Seat3" type="xs:string" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Seatnumber for Segment3. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Seat4" type="xs:string" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Seatnumber for Segment4. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Seat5" type="xs:string" use="optional">
-                                        <xs:annotation>
-                                            <xs:documentation>Seatnumber for Segment5. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="SourceDossierSeq" minOccurs="0" type="xs:string" >
+                  </xs:attribute>
+                  <xs:attribute name="Ticket5" type="xs:integer" use="optional">
                     <xs:annotation>
-                        <xs:documentation>Referenze to an existing Dossier</xs:documentation>
+                      <xs:documentation>Ticketnumber for Segment5. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
-                </xs:element>  
-                <xs:choice>
-                    <xs:element ref="Flight" minOccurs="0" />
-                    <xs:element ref="Car" minOccurs="0" />
-                    <xs:element ref="Hotel" minOccurs="0" />
-                    <xs:element ref="Miscellaneous" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>This node can be used for transfers, or tickets, for any item that does not map to another item type in the DossierItems, but has a supplier and a potential reservation number.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:element ref="Bus" minOccurs="0" />
-                    <xs:element ref="Train" minOccurs="0" />
-                    <xs:element ref="Ship" minOccurs="0" />
-                    <xs:element ref="Text" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>A Text DossierItem is used to send Insurance Elements in a dossier, or descriptive strings in the dossier, e.g. information about visa regulations and passport rules, or vacinnation information. This element can also be used to send the customer details in a workflow where a central agent is used as the invoice receiver, but where the agent processes dossiers for third parties, the original invoice receiver details can be sent in a Text DossierItem.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:element name="Package" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>A Package DossierItem is used to group items. Only one level of recursion is allowed. An example of a package is a PNR, or a TOSV, or a CMIR. The Package generally contains the price information of all elements of the package.</xs:documentation>
-                        </xs:annotation>
-                        <xs:complexType>
-                            <xs:all>
-                                <xs:element name="Title" type="xs:string" minOccurs="0" />
-                                <xs:element name="Detail" type="xs:string" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>CDATA</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="County" type="xs:string" minOccurs="0" />
-                                <xs:element name="Region" type="xs:string" minOccurs="0" />
-                                <xs:element name="SubRegion" type="xs:string" minOccurs="0" />
-                                <xs:element name="Service" type="xs:string" minOccurs="0" />
-                                <xs:element name="Remark" type="xs:string" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>CDATA</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="FixDate" type="xs:integer" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>Package has a fix date (length=1)</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="PassiveDate" type="xs:date" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>Package is not available after this date </xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="NumberOfPersons" type="xs:integer" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>Number of Persons</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="ShortOffer" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>Package is a Shortoffer</xs:documentation>
-                                    </xs:annotation>
-                                    <xs:simpleType>
-                                        <xs:restriction base="xs:string">
-                                            <xs:enumeration value="Yes" />
-                                            <xs:enumeration value="No" />
-                                        </xs:restriction>
-                                    </xs:simpleType>
-                                </xs:element>
-                                <xs:element name="OfferStartDate" type="xs:date" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>When the Shortoffer begins in the Internet</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="OfferEndDate" type="xs:date" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>When the Shortoffer ends in the Internet</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="OfferIsSoldOut" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>Shortoffer is sold out, but sould still be displayed</xs:documentation>
-                                    </xs:annotation>
-                                    <xs:simpleType>
-                                        <xs:restriction base="xs:string">
-                                            <xs:enumeration value="YES" />
-                                            <xs:enumeration value="NO" />
-                                        </xs:restriction>
-                                    </xs:simpleType>
-                                </xs:element>
-                                <xs:element name="MinimumHotelStay" type="xs:integer" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>For citypackage only</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="MinimumTotalStay" type="xs:integer" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>For citypackage only</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="MaximumTotalStay" type="xs:integer" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>For citypackage only</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="PackageOfferDescription" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>A more detail description of the package</xs:documentation>
-                                    </xs:annotation>
-                                    <xs:complexType>
-                                        <xs:sequence />
-                                        <xs:attribute name="Language" use="required">
-                                            <xs:simpleType>
-                                                <xs:restriction base="xs:language">
-                                                    <xs:enumeration value="de-ch" />
-                                                    <xs:enumeration value="en-us" />
-                                                    <xs:enumeration value="fr-ch" />
-                                                    <xs:enumeration value="it-ch" />
-                                                </xs:restriction>
-                                            </xs:simpleType>
-                                        </xs:attribute>
-                                    </xs:complexType>
-                                </xs:element>
-                                <xs:element name="TicketAirline" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>Ticketing airline number (014) or string (AC). Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
-                                    </xs:annotation>
-                                    <xs:simpleType>
-                                        <xs:restriction base="xs:string">
-                                            <xs:minLength value="0" />
-                                            <xs:maxLength value="3  " />
-                                        </xs:restriction>
-                                    </xs:simpleType>
-                                </xs:element>
-                                <xs:element name="FareType" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>C=Consolidtor
+                  </xs:attribute>
+                  <xs:attribute name="Seat1" type="xs:string" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Seatnumber for Segment1. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="Seat2" type="xs:string" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Seatnumber for Segment2. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="Seat3" type="xs:string" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Seatnumber for Segment3. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="Seat4" type="xs:string" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Seatnumber for Segment4. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="Seat5" type="xs:string" use="optional">
+                    <xs:annotation>
+                      <xs:documentation>Seatnumber for Segment5. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SourceDossierSeq" minOccurs="0" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Referenze to an existing Dossier</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:choice>
+          <xs:element ref="Flight" minOccurs="0" />
+          <xs:element ref="Car" minOccurs="0" />
+          <xs:element ref="Hotel" minOccurs="0" />
+          <xs:element ref="Miscellaneous" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>This node can be used for transfers, or tickets, for any item that does not map to another item type in the DossierItems, but has a supplier and a potential reservation number.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element ref="Bus" minOccurs="0" />
+          <xs:element ref="Train" minOccurs="0" />
+          <xs:element ref="Ship" minOccurs="0" />
+          <xs:element ref="Text" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A Text DossierItem is used to send Insurance Elements in a dossier, or descriptive strings in the dossier, e.g. information about visa regulations and passport rules, or vacinnation information. This element can also be used to send the customer details in a workflow where a central agent is used as the invoice receiver, but where the agent processes dossiers for third parties, the original invoice receiver details can be sent in a Text DossierItem.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Package" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A Package DossierItem is used to group items. Only one level of recursion is allowed. An example of a package is a PNR, or a TOSV, or a CMIR. The Package generally contains the price information of all elements of the package.</xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+              <xs:all>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Detail" type="xs:string" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>CDATA</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="County" type="xs:string" minOccurs="0" />
+                <xs:element name="Region" type="xs:string" minOccurs="0" />
+                <xs:element name="SubRegion" type="xs:string" minOccurs="0" />
+                <xs:element name="Service" type="xs:string" minOccurs="0" />
+                <xs:element name="Remark" type="xs:string" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>CDATA</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="FixDate" type="xs:integer" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>Package has a fix date (length=1)</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="PassiveDate" type="xs:date" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>Package is not available after this date </xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfPersons" type="xs:integer" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>Number of Persons</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="ShortOffer" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>Package is a Shortoffer</xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="Yes" />
+                      <xs:enumeration value="No" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="OfferStartDate" type="xs:date" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>When the Shortoffer begins in the Internet</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="OfferEndDate" type="xs:date" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>When the Shortoffer ends in the Internet</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="OfferIsSoldOut" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>Shortoffer is sold out, but sould still be displayed</xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="YES" />
+                      <xs:enumeration value="NO" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="MinimumHotelStay" type="xs:integer" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>For citypackage only</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="MinimumTotalStay" type="xs:integer" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>For citypackage only</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="MaximumTotalStay" type="xs:integer" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>For citypackage only</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="PackageOfferDescription" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>A more detail description of the package</xs:documentation>
+                  </xs:annotation>
+                  <xs:complexType>
+                    <xs:sequence />
+                    <xs:attribute name="Language" use="required">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:language">
+                          <xs:enumeration value="de-ch" />
+                          <xs:enumeration value="en-us" />
+                          <xs:enumeration value="fr-ch" />
+                          <xs:enumeration value="it-ch" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:attribute>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="TicketAirline" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>Ticketing airline number (014) or string (AC). Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:minLength value="0" />
+                      <xs:maxLength value="3  " />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="FareType" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>C=Consolidtor
                       P=Published
                       T=Touroperator
-                                        </xs:documentation>
-                                    </xs:annotation>
-                                    <xs:simpleType>
-                                        <xs:restriction base="xs:string">
-                                            <xs:enumeration value="C" />
-                                            <xs:enumeration value="P" />
-                                            <xs:enumeration value="T" />
-                                        </xs:restriction>
-                                    </xs:simpleType>
-                                </xs:element>
-                                <xs:element name="MinimumPrice" type="xs:decimal" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation> cheapest available ticket price per person</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="OfficialPrice" type="xs:decimal" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation> Official ticket price per person</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="FrequentFlyer" type="xs:string" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>CDATA</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="VendorLocator" type="xs:string" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation>CDATA</xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="TravelDates" minOccurs="0">
-                                    <xs:complexType>
-                                        <xs:sequence>
-                                            <xs:element ref="TravelDate" maxOccurs="unbounded" />
-                                        </xs:sequence>
-                                    </xs:complexType>
-                                </xs:element>
-                                <xs:element name="Documents" minOccurs="0">
-                                    <xs:complexType>
-                                        <xs:sequence>
-                                            <xs:element ref="Document" maxOccurs="unbounded" />
-                                        </xs:sequence>
-                                    </xs:complexType>
-                                </xs:element>
-                                <xs:element name="PackageItems" minOccurs="0">
-                                    <xs:complexType>
-                                        <xs:sequence>
-                                            <xs:element ref="DossierItem" maxOccurs="unbounded" />
-                                        </xs:sequence>
-                                    </xs:complexType>
-                                </xs:element>
-                                <xs:element name="TicketGroupSegmentString" type="xs:string" minOccurs="0">
-                                    <xs:annotation>
-                                        <xs:documentation> Segmentstring from PNR (Ex.: ,1,2,3,)
-                                        </xs:documentation>
-                                    </xs:annotation>
-                                </xs:element>
-                                <xs:element name="PCC" type="xs:string" minOccurs="0" />
-                            </xs:all>
-                            <xs:attribute name="PackageType" use="optional">
-                                <xs:annotation>
-                                    <xs:documentation> Type of the Package used in Database of reciever (City Package, Flight Package..)
-                                    </xs:documentation>
-                                </xs:annotation>
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:enumeration value="Default" />
-                                        <xs:enumeration value="FlightOnly" />
-                                        <!--xs:enumeration value="TrainRoundDomesic1Hotel" />
-                                        <xs:enumeration value="TrainRoundDomesic2Hotel" /-->
-                                        <xs:enumeration value="Bus" />
-                                        <xs:enumeration value="CityPackage" />
-                                        <xs:enumeration value="Train" />
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:attribute>
-                        </xs:complexType>
-                    </xs:element>
-                </xs:choice>
-                <xs:element name="ItemPrices" minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element ref="ItemPrice" maxOccurs="unbounded" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="PurchasePrices" minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element ref="PurchasePrice" maxOccurs="unbounded" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="CancellationFees" minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element ref="CancellationFee" maxOccurs="unbounded" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-            <xs:attribute name="DossierItemSeq" type="xs:string" use="optional">
-                <xs:annotation>
-                    <xs:documentation>Only relevant for a Dossier display, or if an external system wishes to modify a specific DossierItem.</xs:documentation>
-                </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="BaseDataProductSeq" type="xs:string" use="optional">
-                <xs:annotation>
-                    <xs:documentation>Internal unique key of the product</xs:documentation>
-                </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="Position" type="xs:integer" use="optional">
-                <xs:annotation>
-                    <xs:documentation>Relative position to the DossierItem Node. Maps to the position number of the item in the Agent Online Dossier.</xs:documentation>
-                </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="Type" use="required">
-                <xs:annotation>
-                    <xs:documentation>This is duplicated information, as the information is supplied in the respective node of the DossierItem. Supplying this data might make the interpretation of the caller system a little simpler to implement.</xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="Flight" />
-                        <xs:enumeration value="Car" />
-                        <xs:enumeration value="Hotel" />
-                        <xs:enumeration value="Miscellaneous" />
-                        <xs:enumeration value="Bus" />
-                        <xs:enumeration value="Train" />
-                        <xs:enumeration value="Ship" />
-                        <xs:enumeration value="Text" />
-                        <xs:enumeration value="Package" />
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
-            <xs:attribute name="Consolidate" use="optional">
-                <xs:annotation>
-                    <xs:documentation>The sellingprices of this item will be consolidated in a total priceline
-            1=consolidate
                     </xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="C" />
+                      <xs:enumeration value="P" />
+                      <xs:enumeration value="T" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="MinimumPrice" type="xs:decimal" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation> cheapest available ticket price per person</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="OfficialPrice" type="xs:decimal" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation> Official ticket price per person</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="FrequentFlyer" type="xs:string" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>CDATA</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="VendorLocator" type="xs:string" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>CDATA</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="TravelDates" minOccurs="0">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element ref="TravelDate" maxOccurs="unbounded" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="Documents" minOccurs="0">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element ref="Document" maxOccurs="unbounded" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="PackageItems" minOccurs="0">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element ref="DossierItem" maxOccurs="unbounded" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="TicketGroupSegmentString" type="xs:string" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation> Segmentstring from PNR (Ex.: ,1,2,3,)
+                    </xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="PCC" type="xs:string" minOccurs="0" />
+              </xs:all>
+              <xs:attribute name="PackageType" use="optional">
+                <xs:annotation>
+                  <xs:documentation> Type of the Package used in Database of reciever (City Package, Flight Package..)
+                  </xs:documentation>
                 </xs:annotation>
                 <xs:simpleType>
-                    <xs:restriction base="xs:integer">
-                        <xs:enumeration value="0" />
-                        <xs:enumeration value="1" />
-                    </xs:restriction>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Default" />
+                    <xs:enumeration value="FlightOnly" />
+                    <!--xs:enumeration value="TrainRoundDomesic1Hotel" />
+                                        <xs:enumeration value="TrainRoundDomesic2Hotel" /-->
+                    <xs:enumeration value="Bus" />
+                    <xs:enumeration value="CityPackage" />
+                    <xs:enumeration value="Train" />
+                  </xs:restriction>
                 </xs:simpleType>
-            </xs:attribute>
-            <xs:attribute name="AllowProjectsEntry" type="xs:boolean">
-                <xs:annotation>
-                    <xs:documentation>If true, the user can modify the project numbers and percentage values. A DossierItem with no price data need not have project number information. This data only makes sense for priced items.</xs:documentation>
-                </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="ViewOnly" type="xs:boolean" use="optional" />
-        </xs:complexType>
-    </xs:element>
+              </xs:attribute>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+        <xs:element name="ItemPrices" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="ItemPrice" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PurchasePrices" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="PurchasePrice" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CancellationFees" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="CancellationFee" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="DossierItemSeq" type="xs:string" use="optional">
+        <xs:annotation>
+          <xs:documentation>Only relevant for a Dossier display, or if an external system wishes to modify a specific DossierItem.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="BaseDataProductSeq" type="xs:string" use="optional">
+        <xs:annotation>
+          <xs:documentation>Internal unique key of the product</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="Position" type="xs:integer" use="optional">
+        <xs:annotation>
+          <xs:documentation>Relative position to the DossierItem Node. Maps to the position number of the item in the Agent Online Dossier.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="Type" use="required">
+        <xs:annotation>
+          <xs:documentation>This is duplicated information, as the information is supplied in the respective node of the DossierItem. Supplying this data might make the interpretation of the caller system a little simpler to implement.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Flight" />
+            <xs:enumeration value="Car" />
+            <xs:enumeration value="Hotel" />
+            <xs:enumeration value="Miscellaneous" />
+            <xs:enumeration value="Bus" />
+            <xs:enumeration value="Train" />
+            <xs:enumeration value="Ship" />
+            <xs:enumeration value="Text" />
+            <xs:enumeration value="Package" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Consolidate" use="optional">
+        <xs:annotation>
+          <xs:documentation>The sellingprices of this item will be consolidated in a total priceline
+            1=consolidate
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="AllowProjectsEntry" type="xs:boolean">
+        <xs:annotation>
+          <xs:documentation>If true, the user can modify the project numbers and percentage values. A DossierItem with no price data need not have project number information. This data only makes sense for priced items.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="ViewOnly" type="xs:boolean" use="optional" />
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

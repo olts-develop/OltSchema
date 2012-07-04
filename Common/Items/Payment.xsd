@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="Payment">
-        <xs:complexType>
-            <xs:all>
-                <xs:element name="UnitNr" type="xs:decimal" minOccurs="0" />
-                <xs:element name="Amount" type="xs:decimal" />
-                <xs:element name="PaymentDate" type="xs:dateTime" />
-                <xs:element name="PaymentType" minOccurs="0">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="DefaultBank" />
-                            <xs:enumeration value="CreditCard" />
-                            <xs:enumeration value="Saferpay" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-                <xs:element name="PaymentText" type="xs:string" minOccurs="0" />
-                <xs:element name="AccountNr" type="xs:string" minOccurs="0" />
-                <xs:element name="PrePayment" type="xs:boolean" minOccurs="0" />
-                <xs:element name="SaferPayURL" type="xs:string" minOccurs="0" />
-                <xs:element name="PaymentId" type="xs:string" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>The internal Id from the payment Application</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="OrderId" type="xs:string" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>The internal Id from the sending Application</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-            </xs:all>
-        </xs:complexType>
-    </xs:element>
+  <xs:element name="Payment">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="UnitNr" type="xs:decimal" minOccurs="0" />
+        <xs:element name="Amount" type="xs:decimal" />
+        <xs:element name="PaymentDate" type="xs:dateTime" />
+        <xs:element name="PaymentType" minOccurs="0">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="DefaultBank" />
+              <xs:enumeration value="CreditCard" />
+              <xs:enumeration value="Saferpay" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="PaymentText" type="xs:string" minOccurs="0" />
+        <xs:element name="AccountNr" type="xs:string" minOccurs="0" />
+        <xs:element name="PrePayment" type="xs:boolean" minOccurs="0" />
+        <xs:element name="SaferPayURL" type="xs:string" minOccurs="0" />
+        <xs:element name="PaymentId" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>The internal Id from the payment Application</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="OrderId" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>The internal Id from the sending Application</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

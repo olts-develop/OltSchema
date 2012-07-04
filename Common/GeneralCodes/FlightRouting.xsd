@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-
+<!-- Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com) -->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:complexType name="FlightRouting">
-        <xs:all>
-            <xs:element name="Company" type="xs:string"/>
-            <xs:element name="DepIATA" type="xs:string"/>
-            <xs:element name="ArrIATA" type="xs:string"/>
-            <xs:element name="MinDate" type="xs:date" />
-            <xs:element name="MaxDate" type="xs:date"/>
-        </xs:all>
-    </xs:complexType>
+  <xs:complexType name="FlightRouting">
+    <xs:all>
+      <xs:element name="Company" type="xs:string" />
+      <xs:element name="DepIATA" type="xs:string" />
+      <xs:element name="ArrIATA" type="xs:string" />
+      <xs:element name="MinDate" type="xs:date" />
+      <xs:element name="MaxDate" type="xs:date" />
+    </xs:all>
+  </xs:complexType>
 </xs:schema>
-
-
-
-

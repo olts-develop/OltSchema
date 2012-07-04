@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:include schemaLocation="../Items/Description.xsd" />
-    <xs:element name="Logon">
-        <xs:annotation>
-            <xs:documentation>Retuns the logoninformation for a customer</xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:sequence minOccurs="0">
-                <xs:element name="B2B2CFees">
-                    <xs:complexType>
+  <xs:include schemaLocation="../Items/Description.xsd" />
+  <xs:element name="Logon">
+    <xs:annotation>
+      <xs:documentation>Retuns the logoninformation for a customer</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element name="B2B2CFees">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="B2B2CFee" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="FeeDateValidBegin" type="xs:date" />
+                    <xs:element name="FeeDateValidEnd" type="xs:date" />
+                    <xs:element name="FeeDescriptions" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>xs:element name=&amp;quot;Currency&amp;quot; type=&amp;quot;xs:string&amp;quot; /</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="B2B2CFee" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:all>
-                                        <xs:element name="FeeDateValidBegin" type="xs:date" />
-                                        <xs:element name="FeeDateValidEnd" type="xs:date" />
-                                        <xs:element name="FeeDescriptions" minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>xs:element name=&amp;quot;Currency&amp;quot; type=&amp;quot;xs:string&amp;quot; /</xs:documentation>
-                                            </xs:annotation>
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element ref="Description" maxOccurs="unbounded" />
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="FeeFixedAmount" type="xs:decimal" minOccurs="0" />
-                                        <xs:element name="FeePercent" type="xs:decimal" minOccurs="0" />
-                                        <xs:element name="FeeType" type="xs:string" minOccurs="0" />
-                                        <xs:element name="FeeHideFlag" type="xs:boolean" minOccurs="0" />
-                                        <xs:element name="FeeBaseAmountFrom" type="xs:decimal" minOccurs="0" />
-                                        <xs:element name="FeeBaseAmountTo" type="xs:decimal" minOccurs="0" />
-                                    </xs:all>
-                                </xs:complexType>
-                            </xs:element>
+                          <xs:element ref="Description" maxOccurs="unbounded" />
                         </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="FeeFixedAmount" type="xs:decimal" minOccurs="0" />
+                    <xs:element name="FeePercent" type="xs:decimal" minOccurs="0" />
+                    <xs:element name="FeeType" type="xs:string" minOccurs="0" />
+                    <xs:element name="FeeHideFlag" type="xs:boolean" minOccurs="0" />
+                    <xs:element name="FeeBaseAmountFrom" type="xs:decimal" minOccurs="0" />
+                    <xs:element name="FeeBaseAmountTo" type="xs:decimal" minOccurs="0" />
+                  </xs:all>
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
-            <xs:attribute name="BookingSource" type="xs:string" use="optional" />
-            <xs:attribute name="System" use="optional">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="Prod" />
-                        <xs:enumeration value="Educ" />
-                        <xs:enumeration value="Test" />
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
-            <xs:attribute name="Travid" type="xs:string" use="optional" />
-            <xs:attribute name="AllowBook">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="YES" />
-                        <xs:enumeration value="NO" />
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
-            <xs:attribute name="Email" type="xs:string" use="optional" />
-            <xs:attribute name="Language" use="optional">
-                <xs:simpleType>
-                    <xs:restriction base="xs:language">
-                        <xs:enumeration value="de-ch" />
-                        <xs:enumeration value="en-us" />
-                        <xs:enumeration value="fr-ch" />
-                        <xs:enumeration value="it-ch" />
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
-            <xs:attribute name="CustomerNr" type="xs:string" use="optional" />
-            <xs:attribute name="CustomerCommisionLevel" type="xs:string" use="optional" />
-            <xs:attribute name="Agent" type="xs:decimal" use="optional" />
-        </xs:complexType>
-    </xs:element>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="BookingSource" type="xs:string" use="optional" />
+      <xs:attribute name="System" use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Prod" />
+            <xs:enumeration value="Educ" />
+            <xs:enumeration value="Test" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Travid" type="xs:string" use="optional" />
+      <xs:attribute name="AllowBook">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="YES" />
+            <xs:enumeration value="NO" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Email" type="xs:string" use="optional" />
+      <xs:attribute name="Language" use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:language">
+            <xs:enumeration value="de-ch" />
+            <xs:enumeration value="en-us" />
+            <xs:enumeration value="fr-ch" />
+            <xs:enumeration value="it-ch" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="CustomerNr" type="xs:string" use="optional" />
+      <xs:attribute name="CustomerCommisionLevel" type="xs:string" use="optional" />
+      <xs:attribute name="Agent" type="xs:decimal" use="optional" />
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
