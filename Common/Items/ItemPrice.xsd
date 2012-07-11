@@ -94,6 +94,12 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
+         <xs:element name="ExtraPriceType" type="xs:integer" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>This Node contains the internal Pricetype and is, until further notice, for internal use only
+            </xs:documentation>
+          </xs:annotation>
+          </xs:element>
         <xs:element name="VatCode" type="xs:integer" minOccurs="0" />
         <xs:element name="VatPrintedCode" minOccurs="0">
           <xs:annotation>
