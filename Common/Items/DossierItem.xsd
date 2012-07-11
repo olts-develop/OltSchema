@@ -33,12 +33,12 @@
         </xs:element>
         <xs:element name="EndDate" type="xs:date" minOccurs="0">
           <xs:annotation>
-            <xs:documentation>End date of this dossier item</xs:documentation>
+        <xs:documentation>End date of this dossier item. If an item has a BeginDate=EndDate, then the EndDate an Duration Nodes will normally not be sent in Response. Implementers of the interface cannot expect an EndDate or Duration XML node to be sent in the XML if the StartDate and EndDate are the same.</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="Duration" type="xs:integer" minOccurs="0">
           <xs:annotation>
-            <xs:documentation>Numer of days of this item</xs:documentation>
+            <xs:documentation>Numer of days of this item. If an item has a BeginDate=EndDate, then the EndDate an Duration Nodes will normally not be sent in Response. Implementers of the interface cannot expect an EndDate or Duration XML node to be sent in the XML if the StartDate and EndDate are the same.</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="NumberOfItems" type="xs:integer" minOccurs="0">

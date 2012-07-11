@@ -85,7 +85,7 @@
                 <xs:attribute name="Terminal" type="xs:string" />
                 <xs:attribute name="DayIndicator">
                   <xs:annotation>
-                    <xs:documentation>Arrival date for this time is the day before the departuer date: -1; Arrival on the same day as the departure: 0; Arrival on the day after departure: 1; Arrival two days after departure: 2</xs:documentation>
+                    <xs:documentation>Arrival date for this time is the day before the departure date: -1; Arrival on the same day as the departure: 0; Arrival on the day after departure: 1; Arrival two days after departure: 2. If DossierItem/BeginDate=DossierItem/EndDate then the DayIndicator will be 0. Normally in these cases the DossierItem/EndDate and DossierItem/Duration nodes will not be sent in a response XML, and are not requires for a request XML.</xs:documentation>
                   </xs:annotation>
                   <xs:simpleType>
                     <xs:restriction base="xs:integer">
