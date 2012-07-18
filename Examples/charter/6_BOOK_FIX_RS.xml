@@ -1,0 +1,284 @@
+﻿<?xml version='1.0' encoding='ISO8859-1' ?>
+<OLTDossierResponses To="TUI" Date="2012-07-17" From="OTFONLY" Lang="de-ch" Mode="PROD" Time="10:55:55" Type="BOOK" Agent="54X123" Confirm="YES" SubType="FIX" Version="">
+  <Dossiers System="Test">
+    <Dossier Key="2012-07-17-10.55.54.000000" ViewOnly="true" AllowDelete="true">
+      <Customers>
+        <Customer>
+          <CustomerSeq>TUIXYA1829005</CustomerSeq>
+          <CustomerNr>52812</CustomerNr>
+          <UserId />
+          <Language>de-ch</Language>
+          <Gender>M</Gender>
+          <Title />
+          <FirstName />
+          <LastName>TUI INTERNET TRAVELSHOP</LastName>
+          <Address1>Friesenbergstrasse 75</Address1>
+          <Address2>Postfach 9180</Address2>
+          <PostalCode>8036</PostalCode>
+          <City>ZUERICH</City>
+          <Country IsoCode="CH" />
+          <Email>martin.geiger@tui.ch</Email>
+          <Email2 />
+          <Mobile Number="" AreaCode="" />
+          <Phone Number="0848 12 12 21" AreaCode="" />
+          <BusinessPhone Number="" AreaCode="" />
+          <Fax Number="455 44 45" AreaCode="044" />
+          <Nationality IsoCode="" />
+          <Smoker>0</Smoker>
+          <FlightMealCode />
+          <FlightSeatCode />
+          <TrainHalfPrice>0</TrainHalfPrice>
+          <TrainGeneralAbo>0</TrainGeneralAbo>
+          <HasSubordinates>false</HasSubordinates>
+          <HomeBase />
+        </Customer>
+      </Customers>
+      <DossierSeq>TUIXYA1459800</DossierSeq>
+      <DossierNr>5679057</DossierNr>
+      <CreateDate>2012-07-17</CreateDate>
+      <Title>Charter</Title>
+      <DepartureDate>2012-08-23</DepartureDate>
+      <FirstDate>2012-08-23</FirstDate>
+      <LastDate>2012-08-29</LastDate>
+      <Language>de-ch</Language>
+      <Destination DestinationCode="LAS">Las Vegas</Destination>
+      <ExternalSource>CHRTR</ExternalSource>
+      <DossierStatus DossierStatusCode="OK">ALLES OK</DossierStatus>
+      <Code1 Seq="TUIXYZ10004" Code="USA" Description="USA" />
+      <Code2 Seq="" Code="" Description="" />
+      <Currency>CHF</Currency>
+      <Travellers>
+        <Traveller>
+          <TravellerSeq>TUIXYA4066411</TravellerSeq>
+          <TravellerId>1</TravellerId>
+          <Language>de-ch</Language>
+          <Gender>m</Gender>
+          <Child>0</Child>
+          <Baby>0</Baby>
+          <FirstName>Jan</FirstName>
+          <LastName>Testperson</LastName>
+          <DateOfBirth>1976-09-26</DateOfBirth>
+          <TrainSeatReservation>false</TrainSeatReservation>
+        </Traveller>
+        <Traveller>
+          <TravellerSeq>TUIXYA4066413</TravellerSeq>
+          <TravellerId>2</TravellerId>
+          <Language>de-ch</Language>
+          <Child>1</Child>
+          <Baby>0</Baby>
+          <FirstName>Jannick</FirstName>
+          <LastName>Testperson</LastName>
+          <DateOfBirth>2005-11-19</DateOfBirth>
+          <TrainSeatReservation>false</TrainSeatReservation>
+        </Traveller>
+        <Traveller>
+          <TravellerSeq>TUIXYA4066415</TravellerSeq>
+          <TravellerId>3</TravellerId>
+          <Language>de-ch</Language>
+          <Child>0</Child>
+          <Baby>1</Baby>
+          <FirstName>Jana</FirstName>
+          <LastName>Testperson</LastName>
+          <DateOfBirth>2011-03-31</DateOfBirth>
+          <TrainSeatReservation>false</TrainSeatReservation>
+        </Traveller>
+      </Travellers>
+      <DossierItems>
+        <DossierItem Type="Package" Position="1" DossierItemSeq="TUIXYA7900789" BaseDataProductSeq="">
+          <NumberOfItems>2</NumberOfItems>
+          <ShortDescription1>Flug nach Las Vegas</ShortDescription1>
+          <Status>OK</Status>
+          <ExternalSource>CHRTR</ExternalSource>
+          <BookingSupplier Seq="TUIXYZ1772472" Code="AB" AirlineNr="745" />
+          <CostCenter>1111</CostCenter>
+          <Travellers>
+            <Traveller TravellerId="1" TravellerSeq="TUIXYA4066411" />
+            <Traveller TravellerId="2" TravellerSeq="TUIXYA4066413" />
+            <Traveller TravellerId="3" TravellerSeq="TUIXYA4066415" />
+          </Travellers>
+          <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+          <Package>
+            <PackageItems>
+              <DossierItem Type="Flight" Position="1" DossierItemSeq="TUIXYA7900791" BaseDataProductSeq="TUIXYA13939">
+                <LogicDataProductSeq>TUIXYA13947</LogicDataProductSeq>
+                <BeginDate>2012-08-23</BeginDate>
+                <NumberOfItems>2</NumberOfItems>
+                <ShortDescription1>AB1010C</ShortDescription1>
+                <ShortDescription2>ZRH - HAM</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalSource>CHRTR</ExternalSource>
+                <BookingSupplier Seq="TUIXYZ1772472" Code="AB" AirlineNr="745" />
+                <CostCenter>1111</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" TravellerSeq="TUIXYA4066411" />
+                  <Traveller TravellerId="2" TravellerSeq="TUIXYA4066413" />
+                  <Traveller TravellerId="3" TravellerSeq="TUIXYA4066415" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>1010</FlightNumber>
+                  <Departure Code="ZRH" Time="06:30:00" Type="departure" CheckInTime="05:00:00">Zürich</Departure>
+                  <Arrival Code="HAM" Time="08:00:00" Type="transfer" DayIndicator="0">Hamburg</Arrival>
+                  <Class>C</Class>
+                  <BaggageAllowance>2 Gepäckstücke à max. 32 kg</BaggageAllowance>
+                  <Meal>ein Snack</Meal>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight" Position="2" DossierItemSeq="TUIXYA7900793" BaseDataProductSeq="TUIXYA13941">
+                <LogicDataProductSeq>TUIXYA13947</LogicDataProductSeq>
+                <BeginDate>2012-08-23</BeginDate>
+                <NumberOfItems>2</NumberOfItems>
+                <ShortDescription1>AB1020C</ShortDescription1>
+                <ShortDescription2>HAM - LAS</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalSource>CHRTR</ExternalSource>
+                <BookingSupplier Seq="TUIXYZ1772472" Code="AB" AirlineNr="745" />
+                <CostCenter>1111</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" TravellerSeq="TUIXYA4066411" />
+                  <Traveller TravellerId="2" TravellerSeq="TUIXYA4066413" />
+                  <Traveller TravellerId="3" TravellerSeq="TUIXYA4066415" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>1020</FlightNumber>
+                  <Departure Code="HAM" Time="10:45:00" Type="transfer" CheckInTime="08:15:00">Hamburg</Departure>
+                  <Arrival Code="LAS" Time="14:45:00" Type="arrival" DayIndicator="0">Las Vegas</Arrival>
+                  <Class>C</Class>
+                  <BaggageAllowance>2 Gepäckstücke à max. 32 kg</BaggageAllowance>
+                  <Meal>kostenlose Verpflegung/alkoholische Getränke gegen Bezahlung</Meal>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight" Position="3" DossierItemSeq="TUIXYA7900795" BaseDataProductSeq="TUIXYA13943">
+                <LogicDataProductSeq>TUIXYA13949</LogicDataProductSeq>
+                <BeginDate>2012-08-28</BeginDate>
+                <EndDate>2012-08-29</EndDate>
+                <NumberOfItems>2</NumberOfItems>
+                <ShortDescription1>AB2010C</ShortDescription1>
+                <ShortDescription2>LAS - HAM</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalSource>CHRTR</ExternalSource>
+                <BookingSupplier Seq="TUIXYZ1772472" Code="AB" AirlineNr="745" />
+                <CostCenter>1111</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" TravellerSeq="TUIXYA4066411" />
+                  <Traveller TravellerId="2" TravellerSeq="TUIXYA4066413" />
+                  <Traveller TravellerId="3" TravellerSeq="TUIXYA4066415" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>2010</FlightNumber>
+                  <Departure Code="LAS" Time="22:00:00" Type="departure" CheckInTime="20:00:00">Las Vegas</Departure>
+                  <Arrival Code="HAM" Time="15:00:00" Type="transfer" DayIndicator="1">Hamburg</Arrival>
+                  <Class>C</Class>
+                  <BaggageAllowance>2 Gepäckstücke à max. 32 kg</BaggageAllowance>
+                  <Meal>kostenlose Verpflegung/alkoholische Getränke gegen Bezahlung</Meal>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight" Position="4" DossierItemSeq="TUIXYA7900797" BaseDataProductSeq="TUIXYA13945">
+                <LogicDataProductSeq>TUIXYA13949</LogicDataProductSeq>
+                <BeginDate>2012-08-29</BeginDate>
+                <NumberOfItems>2</NumberOfItems>
+                <ShortDescription1>AB2020C</ShortDescription1>
+                <ShortDescription2>HAM - ZRH</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalSource>CHRTR</ExternalSource>
+                <BookingSupplier Seq="TUIXYZ1772472" Code="AB" AirlineNr="745" />
+                <CostCenter>1111</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" TravellerSeq="TUIXYA4066411" />
+                  <Traveller TravellerId="2" TravellerSeq="TUIXYA4066413" />
+                  <Traveller TravellerId="3" TravellerSeq="TUIXYA4066415" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>2020</FlightNumber>
+                  <Departure Code="HAM" Time="17:00:00" Type="transfer" CheckInTime="15:45:00">Hamburg</Departure>
+                  <Arrival Code="ZRH" Time="18:25:00" Type="arrival" DayIndicator="0">Zürich</Arrival>
+                  <Class>C</Class>
+                  <BaggageAllowance>2 Gepäckstücke à max. 32 kg</BaggageAllowance>
+                  <Meal>ein Snack</Meal>
+                </Flight>
+              </DossierItem>
+            </PackageItems>
+          </Package>
+          <ItemPrices>
+            <ItemPrice PriceType="Ticket">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>2250.00</PricePerUnit>
+              <TotalPrice>2250.00</TotalPrice>
+              <PriceDescription>Preis pro Person</PriceDescription>
+              <PriceType>1</PriceType>
+              <PriceCommissionGive>5.00</PriceCommissionGive>
+              <PricePosition>1</PricePosition>
+              <VatCode>0</VatCode>
+              <VatPrintedCode>A</VatPrintedCode>
+              <VatInternalCode>CH-A</VatInternalCode>
+              <VatPercent>0.00</VatPercent>
+              <VatDescription>Ausland steuerfrei</VatDescription>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="1" TravellerSeq="TUIXYA4066411" />
+              </PriceTravellers>
+            </ItemPrice>
+            <ItemPrice PriceType="Ticket">
+              <UnitNr>2</UnitNr>
+              <PricePerUnit>1000.00</PricePerUnit>
+              <TotalPrice>2000.00</TotalPrice>
+              <PriceDescription>Preis pro Kind/Infant auf Anfrage - siehe Ausschreibung</PriceDescription>
+              <PriceType>1</PriceType>
+              <PriceCommissionGive>5.00</PriceCommissionGive>
+              <PricePosition>2</PricePosition>
+              <VatCode>0</VatCode>
+              <VatPrintedCode>A</VatPrintedCode>
+              <VatInternalCode>CH-A</VatInternalCode>
+              <VatPercent>0.00</VatPercent>
+              <VatDescription>Ausland steuerfrei</VatDescription>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="2" TravellerSeq="TUIXYA4066413" />
+                <PriceTraveller TravellerId="3" TravellerSeq="TUIXYA4066415" />
+              </PriceTravellers>
+            </ItemPrice>
+          </ItemPrices>
+        </DossierItem>
+        <DossierItem Type="Text" Position="2" DossierItemSeq="TUIXYA7900787" BaseDataProductSeq="">
+          <ShortDescription1>Rechnungsadresse</ShortDescription1>
+          <Travellers>
+            <Traveller TravellerId="1" TravellerSeq="TUIXYA4066411" />
+            <Traveller TravellerId="2" TravellerSeq="TUIXYA4066413" />
+            <Traveller TravellerId="3" TravellerSeq="TUIXYA4066415" />
+          </Travellers>
+          <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+          <Text>
+            <Title>Rechnungsadresse</Title>
+            <Detail><![CDATA[Language: de-ch
+Gender: m
+Title: Herr
+FirstName: Jan
+LastName: Testperson
+Address1: Friesenbergstr
+Address2:
+PostalCode: 8036
+City: Zürich
+Email: irene.kretzschmar@flextravel.ch
+Country:
+Phone:
+Fax:
+Nationality:
+Smoker:
+FlightMealCode:
+FlightSeatCode:
+TrainHalfPrice: 0
+TrainGeneralAbo: 0
+HasSubordinates: false
+HomeBase:
+AllowGroupBooking: 0]]></Detail>
+          </Text>
+        </DossierItem>
+      </DossierItems>
+    </Dossier>
+  </Dossiers>
+</OLTDossierResponses>

@@ -42,9 +42,10 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="139,762,361,789" href="basedataproductseq1.html" alt="Drilldown into BaseDataProductSeq"></area>
-                     <area shape="rect" coords="139,729,297,756" href="pricetype2.html" alt="Drilldown into PriceType"></area>
-                     <area shape="rect" coords="139,696,399,723" href="internalpricetype2.html" alt="Drilldown into InternalPriceType"></area>
+                     <area shape="rect" coords="139,795,361,822" href="basedataproductseq1.html" alt="Drilldown into BaseDataProductSeq"></area>
+                     <area shape="rect" coords="139,762,297,789" href="pricetype2.html" alt="Drilldown into PriceType"></area>
+                     <area shape="rect" coords="139,729,399,756" href="internalpricetype2.html" alt="Drilldown into InternalPriceType"></area>
+                     <area shape="rect" coords="204,696,416,723" href="specialcommission.html" alt="Drilldown into SpecialCommission"></area>
                      <area shape="rect" coords="204,663,349,690" href="pricetravellers.html" alt="Drilldown into PriceTravellers"></area>
                      <area shape="rect" coords="204,630,352,657" href="infants.html" alt="Drilldown into Infants"></area>
                      <area shape="rect" coords="204,597,354,624" href="children.html" alt="Drilldown into Children"></area>
@@ -362,6 +363,11 @@
           &lt;/xs:sequence&gt;
         &lt;/xs:complexType&gt;
       &lt;/xs:element&gt;
+      &lt;xs:element name="SpecialCommission" type="xs:boolean" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;When true, this price item has a special commission that overrides the automated commission calculation for the agent&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
     &lt;/xs:all&gt;
     &lt;xs:attribute name="InternalPriceType" type="InternalPriceType" use="optional" /&gt;
     &lt;xs:attribute name="PriceType" type="xs:string" use="optional" /&gt;
@@ -513,6 +519,12 @@
                      <tr>
                         <td class="first">PriceTravellers</td>
                         <td><a href="pricetravellers.html">PriceTravellers</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SpecialCommission</td>
+                        <td><a href="specialcommission.html">SpecialCommission</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

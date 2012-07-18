@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<OLTAvailabilityRequests>
+  <OLTAvailabilityRequest Version="1.0" From="DYNAPACK" To="TUI" Date="2012-07-17" Time="10:51:08" Type="AVL" SubType="A" Confirm="YES" Agent="54X123" Lang="de-ch" Mode="PROD">
+    <RequestItems>
+      <RequestItem InternalItem="Flight">
+        <TourOperatorCode>OLTR</TourOperatorCode>
+        <TourOperatorCatalog>123</TourOperatorCatalog>
+        <StartDate>2012-08-22</StartDate>
+        <FlexDateBeforeNr>2</FlexDateBeforeNr>
+        <FlexDateAfterNr>2</FlexDateAfterNr>
+        <Duration>6</Duration>
+        <Destination>LAS</Destination>
+        <Adults>1</Adults>
+        <Children>1</Children>
+        <Infants>1</Infants>
+        <OutboundDepartureAirport>ZRH</OutboundDepartureAirport>
+        <OutboundArrivalAirport>LAS</OutboundArrivalAirport>
+        <OutboundClass>B</OutboundClass>
+        <InboundDepartureAirport>LAS</InboundDepartureAirport>
+        <InboundArrivalAirport>ZRH</InboundArrivalAirport>
+        <InboundClass>B</InboundClass>
+      </RequestItem>
+    </RequestItems>
+  </OLTAvailabilityRequest>
+</OLTAvailabilityRequests>

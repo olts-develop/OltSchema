@@ -28,106 +28,106 @@
                <td><pre><code>
 &lt;!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)--&gt;
 &lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
-    &lt;xs:include schemaLocation=".\Description.xsd" /&gt;
-    &lt;xs:include schemaLocation="..\GeneralCodes\InternalPriceType.xsd" /&gt;
-    &lt;xs:element name="CancellationFee"&gt;
-        &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:complexType&gt;
-            &lt;xs:all&gt;
-                &lt;xs:element name="BeginDate" type="xs:date" minOccurs="0"&gt;
-                    &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;Dossier creation date&lt;/xs:documentation&gt;
-                    &lt;/xs:annotation&gt;
-                &lt;/xs:element&gt;
-                &lt;xs:element name="EndDate" type="xs:date" minOccurs="0"&gt;
-                    &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;Dossier creation date&lt;/xs:documentation&gt;
-                    &lt;/xs:annotation&gt;
-                &lt;/xs:element&gt;
-                &lt;xs:element name="Descriptions" minOccurs="0"&gt;
-                    &lt;xs:complexType&gt;
-                        &lt;xs:sequence&gt;
-                            &lt;xs:element ref="Description" maxOccurs="unbounded"&gt;
-                                &lt;xs:annotation&gt;
-                                    &lt;xs:documentation&gt;One description per language supported&lt;/xs:documentation&gt;
-                                &lt;/xs:annotation&gt;
-                            &lt;/xs:element&gt;
-                        &lt;/xs:sequence&gt;
-                    &lt;/xs:complexType&gt;
-                &lt;/xs:element&gt;
-                &lt;xs:element name="Amount" type="xs:decimal" minOccurs="0"&gt;
-                    &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;the Amout of the cancellation fee
+  &lt;xs:include schemaLocation=".\Description.xsd" /&gt;
+  &lt;xs:include schemaLocation="..\GeneralCodes\InternalPriceType.xsd" /&gt;
+  &lt;xs:element name="CancellationFee"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+    &lt;xs:complexType&gt;
+      &lt;xs:all&gt;
+        &lt;xs:element name="BeginDate" type="xs:date" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Dossier creation date&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="EndDate" type="xs:date" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Dossier creation date&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="Descriptions" minOccurs="0"&gt;
+          &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+              &lt;xs:element ref="Description" maxOccurs="unbounded"&gt;
+                &lt;xs:annotation&gt;
+                  &lt;xs:documentation&gt;One description per language supported&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+              &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="Amount" type="xs:decimal" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;the Amout of the cancellation fee
               only Amount or Percentage is valid not both
             &lt;/xs:documentation&gt;
-                    &lt;/xs:annotation&gt;
-                &lt;/xs:element&gt;
-                &lt;xs:element name="Percent" type="xs:decimal" minOccurs="0"&gt;
-                    &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;the percentage of the total Price of the cancellation fee
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="Percent" type="xs:decimal" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;the percentage of the total Price of the cancellation fee
               only Amount or Percentage is valid not both
             &lt;/xs:documentation&gt;
-                    &lt;/xs:annotation&gt;
-                &lt;/xs:element&gt;
-                &lt;xs:element name="DayBevorDepartureBegin" type="xs:integer" minOccurs="0"&gt;
-                    &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;First day when the item is allowed to be cancled&lt;/xs:documentation&gt;
-                    &lt;/xs:annotation&gt;
-                &lt;/xs:element&gt;
-                &lt;xs:element name="DayBevorDepartureEnd" type="xs:integer" minOccurs="0"&gt;
-                    &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;Last day when the item is allowed to be cancled&lt;/xs:documentation&gt;
-                    &lt;/xs:annotation&gt;
-                &lt;/xs:element&gt;
-                &lt;xs:element name="ProcessFee" minOccurs="0"&gt;
-                    &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;Will process fee be applied to the dossier
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="DayBevorDepartureBegin" type="xs:integer" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;First day when the item is allowed to be cancled&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="DayBevorDepartureEnd" type="xs:integer" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Last day when the item is allowed to be cancled&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="ProcessFee" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Will process fee be applied to the dossier
               0 = No process fees
               1 = With process fees
             &lt;/xs:documentation&gt;
-                    &lt;/xs:annotation&gt;
-                    &lt;xs:simpleType&gt;
-                        &lt;xs:restriction base="xs:integer"&gt;
-                            &lt;xs:enumeration value="0" /&gt;
-                            &lt;xs:enumeration value="1" /&gt;
-                        &lt;/xs:restriction&gt;
-                    &lt;/xs:simpleType&gt;
-                &lt;/xs:element&gt;
-                &lt;xs:element name="PriceType" minOccurs="0"&gt;
-                    &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt; 0 = Change, 1 = Storno
+          &lt;/xs:annotation&gt;
+          &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:integer"&gt;
+              &lt;xs:enumeration value="0" /&gt;
+              &lt;xs:enumeration value="1" /&gt;
+            &lt;/xs:restriction&gt;
+          &lt;/xs:simpleType&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="PriceType" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt; 0 = Change, 1 = Storno
             &lt;/xs:documentation&gt;
-                    &lt;/xs:annotation&gt;
-                    &lt;xs:simpleType&gt;
-                        &lt;xs:restriction base="xs:integer"&gt;
-                            &lt;xs:enumeration value="0" /&gt;
-                            &lt;xs:enumeration value="1" /&gt;
-                        &lt;/xs:restriction&gt;
-                    &lt;/xs:simpleType&gt;
-                &lt;/xs:element&gt;
-                &lt;xs:element name="NrDaysFeeApply" minOccurs="0"&gt;
-                    &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt; 0 = same Day
+          &lt;/xs:annotation&gt;
+          &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:integer"&gt;
+              &lt;xs:enumeration value="0" /&gt;
+              &lt;xs:enumeration value="1" /&gt;
+            &lt;/xs:restriction&gt;
+          &lt;/xs:simpleType&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="NrDaysFeeApply" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt; 0 = same Day
               1 = next Day
               2 = 2 Days
               3 = 3 Days
             &lt;/xs:documentation&gt;
-                    &lt;/xs:annotation&gt;
-                    &lt;xs:simpleType&gt;
-                        &lt;xs:restriction base="xs:integer"&gt;
-                            &lt;xs:enumeration value="0" /&gt;
-                            &lt;xs:enumeration value="1" /&gt;
-                            &lt;xs:enumeration value="2" /&gt;
-                            &lt;xs:enumeration value="3" /&gt;
-                        &lt;/xs:restriction&gt;
-                    &lt;/xs:simpleType&gt;
-                &lt;/xs:element&gt;
-            &lt;/xs:all&gt;
-            &lt;xs:attribute name="InternalPriceType" type="InternalPriceType" /&gt;
-        &lt;/xs:complexType&gt;
-    &lt;/xs:element&gt;
+          &lt;/xs:annotation&gt;
+          &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:integer"&gt;
+              &lt;xs:enumeration value="0" /&gt;
+              &lt;xs:enumeration value="1" /&gt;
+              &lt;xs:enumeration value="2" /&gt;
+              &lt;xs:enumeration value="3" /&gt;
+            &lt;/xs:restriction&gt;
+          &lt;/xs:simpleType&gt;
+        &lt;/xs:element&gt;
+      &lt;/xs:all&gt;
+      &lt;xs:attribute name="InternalPriceType" type="InternalPriceType" /&gt;
+    &lt;/xs:complexType&gt;
+  &lt;/xs:element&gt;
 &lt;/xs:schema&gt;
 </code></pre></td>
             </tr>

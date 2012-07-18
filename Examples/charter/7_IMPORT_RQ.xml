@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="ISO8859-1"?>
+<OLTDossiers>
+  <Dossiers>
+    <Dossier Version="1.0" From="OTFONLY" To="TUI" Date="2012-07-17" Time="10:56:00" Type="IMPORT" SubType="P" Lang="DE" Agent="542363" AgentUsercode="XX" BookingMode="B2C" Mode="TEST">
+      <DossierSeq>TUIXYA1459800</DossierSeq>
+      <CreateDate>2012-07-17</CreateDate>
+      <FirstDate>2012-08-23</FirstDate>
+      <LastDate>2012-08-29</LastDate>
+      <Language>de-ch</Language>
+      <ExternalSource>OTFONLY</ExternalSource>
+      <Destination DestinationCode="LAS" />
+      <DossierStatus DossierStatusCode="OK" />
+      <Currency>CHF</Currency>
+      <Customers>
+        <Customer>
+          <AgentCode>542363</AgentCode>
+        </Customer>
+        <Customer CustomerType="PayCustomer">
+          <Language>de-ch</Language>
+          <Gender>m</Gender>
+          <Title>MR</Title>
+          <FirstName>Jan</FirstName>
+          <LastName>Testperson</LastName>
+          <Address1>Friesenbergstr 75</Address1>
+          <PostalCode>8036</PostalCode>
+          <City>Zürich</City>
+          <Email>irene.kretzschmar@flextravel.ch</Email>
+          <Phone Number="0444554957" />
+        </Customer>
+      </Customers>
+      <Travellers>
+        <Traveller>
+          <TravellerId>1</TravellerId>
+          <Gender>m</Gender>
+          <Child>false</Child>
+          <Baby>false</Baby>
+          <FirstName>Jan</FirstName>
+          <LastName>Testperson</LastName>
+          <DateOfBirth>1976-09-26</DateOfBirth>
+        </Traveller>
+        <Traveller>
+          <TravellerId>2</TravellerId>
+          <Gender>m</Gender>
+          <Child>true</Child>
+          <Baby>false</Baby>
+          <FirstName>Jannick</FirstName>
+          <LastName>Testperson</LastName>
+          <DateOfBirth>2005-11-19</DateOfBirth>
+        </Traveller>
+        <Traveller>
+          <TravellerId>3</TravellerId>
+          <Gender>f</Gender>
+          <Child>false</Child>
+          <Baby>true</Baby>
+          <FirstName>Jana</FirstName>
+          <LastName>Testperson</LastName>
+          <DateOfBirth>2011-03-31</DateOfBirth>
+        </Traveller>
+      </Travellers>
+      <DossierItems>
+        <DossierItem Type="Package" Consolidate="0">
+          <NumberOfItems>4</NumberOfItems>
+          <ExternalSource>OTFONLY</ExternalSource>
+          <GdsSource>AMA</GdsSource>
+          <GdsBookingNr>5679057</GdsBookingNr>
+          <BookingSupplier Code="AB" />
+          <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+          <Travellers>
+            <Traveller TravellerId="1" />
+          </Travellers>
+          <Package>
+            <FareType>T</FareType>
+            <TicketAirline>AB</TicketAirline>
+            <PackageItems>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-23</BeginDate>
+                <EndDate>2012-08-23</EndDate>
+                <ShortDescription1>AB1010</ShortDescription1>
+                <ShortDescription2>ZRH-HAM</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="ZRH" Time="06:30:00">ZÜRICH /ZRH</Departure>
+                  <Arrival Code="HAM" Time="08:00:00" DayIndicator="0">HAMBURG /HAM</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>1010</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-23</BeginDate>
+                <EndDate>2012-08-23</EndDate>
+                <ShortDescription1>AB1020</ShortDescription1>
+                <ShortDescription2>HAM-LAS</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="HAM" Time="10:45:00">HAMBURG /HAM</Departure>
+                  <Arrival Code="LAS" Time="14:45:00" DayIndicator="0">LAS VEGAS (ALLE FLUGHÄFEN) /LAS</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>1020</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-28</BeginDate>
+                <EndDate>2012-08-29</EndDate>
+                <ShortDescription1>AB2010</ShortDescription1>
+                <ShortDescription2>LAS-HAM</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="LAS" Time="22:00:00">LAS VEGAS (ALLE FLUGHÄFEN) /LAS</Departure>
+                  <Arrival Code="HAM" Time="15:00:00" DayIndicator="1">HAMBURG /HAM</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>2010</FlightNumber>
+                  <FlightDirection>I</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-29</BeginDate>
+                <EndDate>2012-08-29</EndDate>
+                <ShortDescription1>AB2020</ShortDescription1>
+                <ShortDescription2>HAM-ZRH</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="HAM" Time="17:00:00">HAMBURG /HAM</Departure>
+                  <Arrival Code="ZRH" Time="18:25:00" DayIndicator="0">ZÜRICH /ZRH</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>2020</FlightNumber>
+                  <FlightDirection>I</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+            </PackageItems>
+          </Package>
+          <ItemPrices>
+            <ItemPrice InternalPriceType="FLIGHTTICKET">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>2250.00</PricePerUnit>
+              <TotalPrice>2250.00</TotalPrice>
+              <PriceType>1</PriceType>
+              <PriceCommissionGive>0.00</PriceCommissionGive>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="1" />
+              </PriceTravellers>
+            </ItemPrice>
+            <ItemPrice InternalPriceType="FLIGHTTAX">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>0.00</PricePerUnit>
+              <TotalPrice>0.00</TotalPrice>
+              <PriceType>2</PriceType>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="1" />
+              </PriceTravellers>
+            </ItemPrice>
+          </ItemPrices>
+          <PurchasePrices>
+            <PurchasePrice InternalPriceType="FLIGHTTICKET">
+              <Supplier Code="AB" />
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>2250.00</PricePerUnit>
+              <TotalPrice>2250.00</TotalPrice>
+              <PriceType>1</PriceType>
+            </PurchasePrice>
+            <PurchasePrice InternalPriceType="FLIGHTTAX">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>0.00</PricePerUnit>
+              <TotalPrice>0.00</TotalPrice>
+              <PriceType>2</PriceType>
+            </PurchasePrice>
+          </PurchasePrices>
+        </DossierItem>
+        <DossierItem Type="Package" Consolidate="0">
+          <NumberOfItems>4</NumberOfItems>
+          <ExternalSource>OTFONLY</ExternalSource>
+          <GdsSource>AMA</GdsSource>
+          <GdsBookingNr>5679057</GdsBookingNr>
+          <BookingSupplier Code="AB" />
+          <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+          <Travellers>
+            <Traveller TravellerId="2" />
+          </Travellers>
+          <Package>
+            <FareType>T</FareType>
+            <TicketAirline>AB</TicketAirline>
+            <PackageItems>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-23</BeginDate>
+                <EndDate>2012-08-23</EndDate>
+                <ShortDescription1>AB1010</ShortDescription1>
+                <ShortDescription2>ZRH-HAM</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="2" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="ZRH" Time="06:30:00">ZÜRICH /ZRH</Departure>
+                  <Arrival Code="HAM" Time="08:00:00" DayIndicator="0">HAMBURG /HAM</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>1010</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-23</BeginDate>
+                <EndDate>2012-08-23</EndDate>
+                <ShortDescription1>AB1020</ShortDescription1>
+                <ShortDescription2>HAM-LAS</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="2" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="HAM" Time="10:45:00">HAMBURG /HAM</Departure>
+                  <Arrival Code="LAS" Time="14:45:00" DayIndicator="0">LAS VEGAS (ALLE FLUGHÄFEN) /LAS</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>1020</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-28</BeginDate>
+                <EndDate>2012-08-29</EndDate>
+                <ShortDescription1>AB2010</ShortDescription1>
+                <ShortDescription2>LAS-HAM</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="2" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="LAS" Time="22:00:00">LAS VEGAS (ALLE FLUGHÄFEN) /LAS</Departure>
+                  <Arrival Code="HAM" Time="15:00:00" DayIndicator="1">HAMBURG /HAM</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>2010</FlightNumber>
+                  <FlightDirection>I</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-29</BeginDate>
+                <EndDate>2012-08-29</EndDate>
+                <ShortDescription1>AB2020</ShortDescription1>
+                <ShortDescription2>HAM-ZRH</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="2" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="HAM" Time="17:00:00">HAMBURG /HAM</Departure>
+                  <Arrival Code="ZRH" Time="18:25:00" DayIndicator="0">ZÜRICH /ZRH</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>2020</FlightNumber>
+                  <FlightDirection>I</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+            </PackageItems>
+          </Package>
+          <ItemPrices>
+            <ItemPrice InternalPriceType="FLIGHTTICKET">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>1000.00</PricePerUnit>
+              <TotalPrice>1000.00</TotalPrice>
+              <PriceType>1</PriceType>
+              <PriceCommissionGive>0.00</PriceCommissionGive>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="2" />
+              </PriceTravellers>
+            </ItemPrice>
+            <ItemPrice InternalPriceType="FLIGHTTAX">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>0.00</PricePerUnit>
+              <TotalPrice>0.00</TotalPrice>
+              <PriceType>2</PriceType>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="2" />
+              </PriceTravellers>
+            </ItemPrice>
+          </ItemPrices>
+          <PurchasePrices>
+            <PurchasePrice InternalPriceType="FLIGHTTICKET">
+              <Supplier Code="AB" />
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>1000.00</PricePerUnit>
+              <TotalPrice>1000.00</TotalPrice>
+              <PriceType>1</PriceType>
+            </PurchasePrice>
+            <PurchasePrice InternalPriceType="FLIGHTTAX">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>0.00</PricePerUnit>
+              <TotalPrice>0.00</TotalPrice>
+              <PriceType>2</PriceType>
+            </PurchasePrice>
+          </PurchasePrices>
+        </DossierItem>
+        <DossierItem Type="Package" Consolidate="0">
+          <NumberOfItems>4</NumberOfItems>
+          <ExternalSource>OTFONLY</ExternalSource>
+          <GdsSource>AMA</GdsSource>
+          <GdsBookingNr>5679057</GdsBookingNr>
+          <BookingSupplier Code="AB" />
+          <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+          <Travellers>
+            <Traveller TravellerId="3" />
+          </Travellers>
+          <Package>
+            <FareType>T</FareType>
+            <TicketAirline>AB</TicketAirline>
+            <PackageItems>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-23</BeginDate>
+                <EndDate>2012-08-23</EndDate>
+                <ShortDescription1>AB1010</ShortDescription1>
+                <ShortDescription2>ZRH-HAM</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="3" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="ZRH" Time="06:30:00">ZÜRICH /ZRH</Departure>
+                  <Arrival Code="HAM" Time="08:00:00" DayIndicator="0">HAMBURG /HAM</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>1010</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-23</BeginDate>
+                <EndDate>2012-08-23</EndDate>
+                <ShortDescription1>AB1020</ShortDescription1>
+                <ShortDescription2>HAM-LAS</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="3" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="HAM" Time="10:45:00">HAMBURG /HAM</Departure>
+                  <Arrival Code="LAS" Time="14:45:00" DayIndicator="0">LAS VEGAS (ALLE FLUGHÄFEN) /LAS</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>1020</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-28</BeginDate>
+                <EndDate>2012-08-29</EndDate>
+                <ShortDescription1>AB2010</ShortDescription1>
+                <ShortDescription2>LAS-HAM</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="3" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="LAS" Time="22:00:00">LAS VEGAS (ALLE FLUGHÄFEN) /LAS</Departure>
+                  <Arrival Code="HAM" Time="15:00:00" DayIndicator="1">HAMBURG /HAM</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>2010</FlightNumber>
+                  <FlightDirection>I</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight">
+                <BeginDate>2012-08-29</BeginDate>
+                <EndDate>2012-08-29</EndDate>
+                <ShortDescription1>AB2020</ShortDescription1>
+                <ShortDescription2>HAM-ZRH</ShortDescription2>
+                <Status>OK</Status>
+                <Travellers>
+                  <Traveller TravellerId="3" />
+                </Travellers>
+                <SourceDossierSeq>TUIXYA1459800</SourceDossierSeq>
+                <Flight>
+                  <Departure Code="HAM" Time="17:00:00">HAMBURG /HAM</Departure>
+                  <Arrival Code="ZRH" Time="18:25:00" DayIndicator="0">ZÜRICH /ZRH</Arrival>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>2020</FlightNumber>
+                  <FlightDirection>I</FlightDirection>
+                  <Class>C</Class>
+                  <BookingClass>C</BookingClass>
+                  <BookingNr>5679057</BookingNr>
+                </Flight>
+              </DossierItem>
+            </PackageItems>
+          </Package>
+          <ItemPrices>
+            <ItemPrice InternalPriceType="FLIGHTTICKET">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>1000.00</PricePerUnit>
+              <TotalPrice>1000.00</TotalPrice>
+              <PriceType>1</PriceType>
+              <PriceCommissionGive>0.00</PriceCommissionGive>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="3" />
+              </PriceTravellers>
+            </ItemPrice>
+            <ItemPrice InternalPriceType="FLIGHTTAX">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>0.00</PricePerUnit>
+              <TotalPrice>0.00</TotalPrice>
+              <PriceType>2</PriceType>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="3" />
+              </PriceTravellers>
+            </ItemPrice>
+          </ItemPrices>
+          <PurchasePrices>
+            <PurchasePrice InternalPriceType="FLIGHTTICKET">
+              <Supplier Code="AB" />
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>1000.00</PricePerUnit>
+              <TotalPrice>1000.00</TotalPrice>
+              <PriceType>1</PriceType>
+            </PurchasePrice>
+            <PurchasePrice InternalPriceType="FLIGHTTAX">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>0.00</PricePerUnit>
+              <TotalPrice>0.00</TotalPrice>
+              <PriceType>2</PriceType>
+            </PurchasePrice>
+          </PurchasePrices>
+        </DossierItem>
+      </DossierItems>
+    </Dossier>
+  </Dossiers>
+</OLTDossiers>

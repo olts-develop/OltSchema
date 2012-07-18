@@ -26,22 +26,22 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>
-&lt;!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) --&gt;
-&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"&gt;
+&lt;!--Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com)--&gt;
+&lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;xs:element name="RequestItem"&gt;
     &lt;xs:complexType&gt;
       &lt;xs:sequence&gt;
-        &lt;xs:element minOccurs="0" name="TourOperatorCode" type="xs:string"&gt;
+        &lt;xs:element name="TourOperatorCode" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Tour Operator Code (length=4)&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="TourOperatorCatalog" type="xs:string"&gt;
+        &lt;xs:element name="TourOperatorCatalog" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Tour Operator Catalog (length=4)&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="AccountNumber" type="xs:string"&gt;
+        &lt;xs:element name="AccountNumber" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Booking Number (length=12)&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -51,30 +51,30 @@
             &lt;xs:documentation&gt;Starting date of service&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="FlexDateBeforeNr" type="xs:integer"&gt;
+        &lt;xs:element name="FlexDateBeforeNr" type="xs:integer" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Days before begindate for start and enddate&lt;/xs:documentation&gt;
+            &lt;xs:documentation&gt;Days before begindate for start and enddate. Allows for the specification of a date range for the StartDate and a date range for the EndDate based on the Duration. Some customers have hard coded overrides for this value.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-         &lt;xs:element name="FlexDateAfterNr" type="xs:integer"&gt;
+        &lt;xs:element name="FlexDateAfterNr" type="xs:integer" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Days before enddate for start and enddate&lt;/xs:documentation&gt;
+            &lt;xs:documentation&gt;Days before enddate for start and enddate. Some customers have hard coded overrides for this value.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="Duration" type="xs:integer"&gt;
+        &lt;xs:element name="Duration" type="xs:integer" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Duration of the service&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="Destination" type="xs:string"&gt;
+        &lt;xs:element name="Destination" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Destination code (length=3)&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-         &lt;xs:element minOccurs="0" name="OnlyAvail" type="xs:boolean"&gt;
+        &lt;xs:element name="OnlyAvail" type="xs:boolean" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;true = Only allotment available products will be returned
-                        false or true (default: true)
+              false or true (default: true)
             &lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
@@ -83,27 +83,27 @@
             &lt;xs:documentation&gt;Number of adults &lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="Children" type="xs:integer"&gt;
+        &lt;xs:element name="Children" type="xs:integer" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Number of children &lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="Infants" type="xs:integer"&gt;
+        &lt;xs:element name="Infants" type="xs:integer" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Number of infants &lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="Product" type="xs:string"&gt;
+        &lt;xs:element name="Product" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;ProductId (Hotel code)&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="Room" type="xs:string"&gt;
+        &lt;xs:element name="Room" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Type of room&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="Meal"&gt;
+        &lt;xs:element name="Meal" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;RO: room only
               BB: bed and breakfast
@@ -125,82 +125,92 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="NormalRoomOccupancy" type="xs:string"&gt;
+        &lt;xs:element name="NormalRoomOccupancy" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Normal occupancy of a room (length=1)&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="Currency" type="xs:string"&gt;
+        &lt;xs:element name="Currency" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;ISO Currency code eg. EUR&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="Price" type="xs:integer"&gt;
+        &lt;xs:element name="Price" type="xs:integer" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Price&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="HotelCatagory" type="xs:string"&gt;
+        &lt;xs:element name="HotelCatagory" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Category of the Hotel (1,2,3,4,5)&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="OutboundDepartureAirport" type="xs:string"&gt;
+        &lt;xs:element name="OutboundDepartureAirport" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Departure airport of outbound flight (length=3)&lt;/xs:documentation&gt;
+            &lt;xs:documentation&gt;Departure airport of outbound flight (length=3), e.g. ZRH&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="OutboundArrivalAirport" type="xs:string"&gt;
+        &lt;xs:element name="OutboundArrivalAirport" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Arrival airport of outbound flight (length=3)&lt;/xs:documentation&gt;
+            &lt;xs:documentation&gt;Arrival airport of outbound flight (length=3), e.g. LAS&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="OutboundChain" type="xs:string"&gt;
+        &lt;xs:element name="OutboundChain" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Flight chain of outbound flight &lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="OutboundClass" type="xs:string"&gt;
+        &lt;xs:element name="OutboundClass" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Flight class of outbound flight &lt;/xs:documentation&gt;
+            &lt;xs:documentation&gt;Flight class of outbound flight 
+'F' = First
+'B' = Business
+'E' = Economy
+'C' = Comfort
+If no class is specified flights of all classes are returned&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="OutboundCarrier" type="xs:string"&gt;
+        &lt;xs:element name="OutboundCarrier" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Carrier code of outbound flight &lt;/xs:documentation&gt;
+            &lt;xs:documentation&gt;Carrier code of outbound flight, e.g. LX, LH, .... Currently only one airline can be supplied as a filter criterion. If the InboundCarrier is supplied then the OutboundCarrier ought to be supplied as well, normally with the same value as the InboundCarrier.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="OutboundFlightNumber" type="xs:integer"&gt;
+        &lt;xs:element name="OutboundFlightNumber" type="xs:integer" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Flight number of outbound flight &lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="InboundDepartureAirport" type="xs:string"&gt;
+        &lt;xs:element name="InboundDepartureAirport" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Departure airport of inbound flight (length=3)&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="InboundArrivalAirport" type="xs:string"&gt;
+        &lt;xs:element name="InboundArrivalAirport" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Arrival airport of inbound flight (length=3)&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="InboundChain" type="xs:string"&gt;
+        &lt;xs:element name="InboundChain" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Flight chain of inbound flight &lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="InboundClass" type="xs:string"&gt;
+        &lt;xs:element name="InboundClass" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Flight class of inbound flight &lt;/xs:documentation&gt;
+            &lt;xs:documentation&gt;Flight class of inbound flight
+'F' = First
+'B' = Business
+'E' = Economy
+'C' = Comfort
+If no class is specified flights of all classes are returned&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="InboundCarrier" type="xs:string"&gt;
+        &lt;xs:element name="InboundCarrier" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Carrier code of inbound flight &lt;/xs:documentation&gt;
+            &lt;xs:documentation&gt;Carrier code of inbound flight, e.g. LX, LH, .... Currently only one airline can be supplied as a filter criterion. If the InboundCarrier is supplied then the OutboundCarrier ought to be supplied as well, normally with the same value as the InboundCarrier.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element minOccurs="0" name="InboundFlightNumber" type="xs:integer"&gt;
+        &lt;xs:element name="InboundFlightNumber" type="xs:integer" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Flight number of inbound flight &lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -241,8 +251,7 @@
       &lt;/xs:attribute&gt;
     &lt;/xs:complexType&gt;
   &lt;/xs:element&gt;
-&lt;/xs:schema&gt;
-</code></pre></td>
+&lt;/xs:schema&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>

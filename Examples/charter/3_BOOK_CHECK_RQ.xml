@@ -1,0 +1,227 @@
+﻿<?xml version="1.0"?>
+<OLTDossiers>
+  <Dossiers>
+    <Dossier Version="1.0" From="OTFONLY" To="TUI" Date="2012-07-17" Time="10:51:54" Type="BOOK" SubType="CHECK" Confirm="YES" Agent="54X123" Lang="de-ch" BookingMode="B2B" Mode="PROD">
+      <CreateDate>2012-07-17</CreateDate>
+      <FirstDate></FirstDate>
+      <LastDate></LastDate>
+      <Language>de-ch</Language>
+      <ExternalSource>CHRTR</ExternalSource>
+      <Currency>CHF</Currency>
+      <Destination DestinationCode="LAS"></Destination>
+      <DossierStatus DossierStatusCode="OK"></DossierStatus>
+      <Customers>
+        <Customer>
+          <Language>de-ch</Language>
+          <Gender>m</Gender>
+          <Title>Herr</Title>
+          <FirstName>Alfred</FirstName>
+          <LastName>Neumann</LastName>
+          <Address1>Drosselgasse 99</Address1>
+          <Address2></Address2>
+          <PostalCode>8032</PostalCode>
+          <City>Zuerich</City>
+          <Email>info@onlinetravel.ch</Email>
+          <Country IsoCode="CH"></Country>
+          <Phone AreaCode="079" Number="12345"></Phone>
+          <Fax AreaCode="044" Number="12345567"></Fax>
+          <Nationality IsoCode="CH"></Nationality>
+          <Smoker></Smoker>
+          <FlightMealCode></FlightMealCode>
+          <FlightSeatCode></FlightSeatCode>
+          <TrainHalfPrice>0</TrainHalfPrice>
+          <TrainGeneralAbo>0</TrainGeneralAbo>
+          <HasSubordinates>false</HasSubordinates>
+          <HomeBase></HomeBase>
+          <AllowGroupBooking>0</AllowGroupBooking>
+        </Customer>
+      </Customers>
+      <Travellers>
+        <Traveller>
+          <TravellerId>1</TravellerId>
+          <Gender>m</Gender>
+          <Child>false</Child>
+          <Baby>false</Baby>
+          <FirstName>ForeDummy</FirstName>
+          <LastName>SurDummy</LastName>
+        </Traveller>
+        <Traveller>
+          <TravellerId>2</TravellerId>
+          <Gender>m</Gender>
+          <Child>true</Child>
+          <Baby>false</Baby>
+          <FirstName>LittleDummy</FirstName>
+          <LastName>SurDummy</LastName>
+        </Traveller>
+        <Traveller>
+          <TravellerId>3</TravellerId>
+          <Gender>m</Gender>
+          <Child>false</Child>
+          <Baby>true</Baby>
+          <FirstName>InfantDummy</FirstName>
+          <LastName>SurDummy</LastName>
+        </Traveller>
+      </Travellers>
+      <DossierItems>
+        <DossierItem Type="Package" Position="86">
+          <NumberOfItems>2</NumberOfItems>
+          <ShortDescription1>Flug nach Las Vegas</ShortDescription1>
+          <Status>OK</Status>
+          <ExternalSource>CHRTR</ExternalSource>
+          <BookingSupplier Seq="TUIXYZ1772472" Code="AB" AirlineNr="1010">Air Berlin</BookingSupplier>
+          <Travellers>
+            <Traveller TravellerId="1" />
+            <Traveller TravellerId="2" />
+            <Traveller TravellerId="3" />
+          </Travellers>
+          <Package>
+            <Title>Flug nach Las Vegas</Title>
+            <PackageItems>
+              <DossierItem Type="Flight" Position="87" BaseDataProductSeq="TUIXYA13939">
+                <LogicDataProductSeq>TUIXYA13947</LogicDataProductSeq>
+                <BeginDate>2012-08-23</BeginDate>
+                <NumberOfItems>2</NumberOfItems>
+                <ShortDescription1>AB1010C</ShortDescription1>
+                <ShortDescription2>ZRH - HAM</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalSource>CHRTR</ExternalSource>
+                <BookingSupplier Seq="TUIXYZ1772472" Code="AB" AirlineNr="1010">Air Berlin</BookingSupplier>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                  <Traveller TravellerId="2" />
+                  <Traveller TravellerId="3" />
+                </Travellers>
+                <Flight>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>1010</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Departure Code="ZRH" Time="06:30:00" CheckInTime="05:00:00" Type="departure">Z&#xFC;rich</Departure>
+                  <Arrival Code="HAM" Time="08:00:00" DayIndicator="0" Type="transfer">Hamburg</Arrival>
+                  <Class>C</Class>
+                  <LogicDataProductSeq>TUIXYA13947</LogicDataProductSeq>
+                  <LogicClass>C</LogicClass>
+                  <LogicClassDescription />
+                  <LogicAirLineCode>AB</LogicAirLineCode>
+                  <LogicFlightNr>1000</LogicFlightNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight" Position="88" BaseDataProductSeq="TUIXYA13941">
+                <LogicDataProductSeq>TUIXYA13947</LogicDataProductSeq>
+                <BeginDate>2012-08-23</BeginDate>
+                <NumberOfItems>2</NumberOfItems>
+                <ShortDescription1>AB1020C</ShortDescription1>
+                <ShortDescription2>HAM - LAS</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalSource>CHRTR</ExternalSource>
+                <BookingSupplier Seq="TUIXYZ1772472" Code="AB" AirlineNr="1010">Air Berlin</BookingSupplier>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                  <Traveller TravellerId="2" />
+                  <Traveller TravellerId="3" />
+                </Travellers>
+                <Flight>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>1020</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Departure Code="HAM" Time="10:45:00" CheckInTime="08:15:00" Type="transfer">Hamburg</Departure>
+                  <Arrival Code="LAS" Time="14:45:00" DayIndicator="0" Type="arrival">Las Vegas</Arrival>
+                  <Class>C</Class>
+                  <LogicDataProductSeq>TUIXYA13947</LogicDataProductSeq>
+                  <LogicClass>C</LogicClass>
+                  <LogicClassDescription />
+                  <LogicAirLineCode>AB</LogicAirLineCode>
+                  <LogicFlightNr>1000</LogicFlightNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight" Position="89" BaseDataProductSeq="TUIXYA13943">
+                <LogicDataProductSeq>TUIXYA13949</LogicDataProductSeq>
+                <BeginDate>2012-08-28</BeginDate>
+                <EndDate>2012-08-29</EndDate>
+                <Duration>1</Duration>
+                <NumberOfItems>2</NumberOfItems>
+                <ShortDescription1>AB2010C</ShortDescription1>
+                <ShortDescription2>LAS - HAM</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalSource>CHRTR</ExternalSource>
+                <BookingSupplier Seq="TUIXYZ1772472" Code="AB" AirlineNr="1010">Air Berlin</BookingSupplier>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                  <Traveller TravellerId="2" />
+                  <Traveller TravellerId="3" />
+                </Travellers>
+                <Flight>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>2010</FlightNumber>
+                  <FlightDirection>I</FlightDirection>
+                  <Departure Code="LAS" Time="22:00:00" CheckInTime="20:00:00" Type="departure">Las Vegas</Departure>
+                  <Arrival Code="HAM" Time="15:00:00" DayIndicator="1" Type="transfer">Hamburg</Arrival>
+                  <Class>C</Class>
+                  <LogicDataProductSeq>TUIXYA13949</LogicDataProductSeq>
+                  <LogicClass>C</LogicClass>
+                  <LogicClassDescription />
+                  <LogicAirLineCode>AB</LogicAirLineCode>
+                  <LogicFlightNr>2000</LogicFlightNr>
+                </Flight>
+              </DossierItem>
+              <DossierItem Type="Flight" Position="90" BaseDataProductSeq="TUIXYA13945">
+                <LogicDataProductSeq>TUIXYA13949</LogicDataProductSeq>
+                <BeginDate>2012-08-29</BeginDate>
+                <NumberOfItems>2</NumberOfItems>
+                <ShortDescription1>AB2020C</ShortDescription1>
+                <ShortDescription2>HAM - ZRH</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalSource>CHRTR</ExternalSource>
+                <BookingSupplier Seq="TUIXYZ1772472" Code="AB" AirlineNr="1010">Air Berlin</BookingSupplier>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                  <Traveller TravellerId="2" />
+                  <Traveller TravellerId="3" />
+                </Travellers>
+                <Flight>
+                  <Airlinecode>AB</Airlinecode>
+                  <FlightNumber>2020</FlightNumber>
+                  <FlightDirection>I</FlightDirection>
+                  <Departure Code="HAM" Time="17:00:00" CheckInTime="15:45:00" Type="transfer">Hamburg</Departure>
+                  <Arrival Code="ZRH" Time="18:25:00" DayIndicator="0" Type="arrival">Z&#xFC;rich</Arrival>
+                  <Class>C</Class>
+                  <LogicDataProductSeq>TUIXYA13949</LogicDataProductSeq>
+                  <LogicClass>C</LogicClass>
+                  <LogicClassDescription />
+                  <LogicAirLineCode>AB</LogicAirLineCode>
+                  <LogicFlightNr>2000</LogicFlightNr>
+                </Flight>
+              </DossierItem>
+            </PackageItems>
+          </Package>
+          <ItemPrices>
+            <ItemPrice InternalPriceType="FLIGHTTICKET">
+              <UnitNr>1</UnitNr>
+              <PricePerUnit>2250.00</PricePerUnit>
+              <TotalPrice>2250.00</TotalPrice>
+              <PriceCommissionGive>5.00</PriceCommissionGive>
+              <PriceType>1</PriceType>
+              <PriceDescription>Preis pro Person</PriceDescription>
+              <SpecialCommission>true</SpecialCommission>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="1" />
+              </PriceTravellers>
+            </ItemPrice>
+            <ItemPrice InternalPriceType="FLIGHTTICKET">
+              <UnitNr>2</UnitNr>
+              <PricePerUnit>1000.00</PricePerUnit>
+              <TotalPrice>2000.00</TotalPrice>
+              <PriceCommissionGive>5.00</PriceCommissionGive>
+              <PriceType>1</PriceType>
+              <PriceDescription>Preis pro Kind/Infant auf Anfrage - siehe Ausschreibung</PriceDescription>
+              <SpecialCommission>true</SpecialCommission>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="2" />
+                <PriceTraveller TravellerId="3" />
+              </PriceTravellers>
+            </ItemPrice>
+          </ItemPrices>
+        </DossierItem>
+      </DossierItems>
+    </Dossier>
+  </Dossiers>
+</OLTDossiers>
