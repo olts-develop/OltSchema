@@ -60,6 +60,7 @@
           <xs:enumeration value="comres" />
           <xs:enumeration value="PRONTO" />
           <xs:enumeration value="pronto" />
+          <xs:enumeration value="GTA" />
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
