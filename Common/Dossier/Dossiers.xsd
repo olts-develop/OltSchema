@@ -586,10 +586,23 @@
                 <xs:documentation>ISO Language code (DE, FR, IT, EN)</xs:documentation>
               </xs:annotation>
             </xs:attribute>
-            <xs:attribute name="Mode" type="xs:string" use="optional">
+            <xs:attribute name="Mode" use="optional">
               <xs:annotation>
                 <xs:documentation>Values: TEST, EDUC, PROD. EDUC for educational booking is obligatory </xs:documentation>
               </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="TEST" />
+                  <xs:enumeration value="EDUC" />
+                  <xs:enumeration value="PROD" />
+                  <xs:enumeration value="Test" />
+                  <xs:enumeration value="Educ" />
+                  <xs:enumeration value="Prod" />
+                  <xs:enumeration value="test" />
+                  <xs:enumeration value="educ" />
+                  <xs:enumeration value="prod" />
+                </xs:restriction>
+              </xs:simpleType>
             </xs:attribute>
             <xs:attribute name="ViewOnly" type="xs:boolean" use="optional">
               <xs:annotation>
