@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com) -->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation="..\GeneralCodes\InternalPriceType.xsd" />
   <xs:include schemaLocation="..\GeneralCodes\PriceTravellerType.xsd" />
@@ -84,8 +84,8 @@
         <xs:element name="PriceReferencePosition" minOccurs="0">
           <xs:annotation>
             <xs:documentation>This node identifies a hidden priceline.
-              This is a number that adds the price of the current item to that of the referenced price identified by the position number.
-              The rule for using this type of constuct is, that the "UnitNr" of the current item is the same as the "UnitNr" of the referenced item.
+             This is a number that adds the price of the current item to that of the referenced price identified by the position number.
+             The rule for using this type of constuct is, that the "UnitNr" of the current item is the same as the "UnitNr" of the referenced item.
             </xs:documentation>
           </xs:annotation>
           <xs:simpleType>
@@ -94,12 +94,12 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-         <xs:element name="ExtraPriceType" type="xs:integer" minOccurs="0">
+        <xs:element name="ExtraPriceType" type="xs:integer" minOccurs="0">
           <xs:annotation>
             <xs:documentation>This Node contains the internal Pricetype and is, until further notice, for internal use only
             </xs:documentation>
           </xs:annotation>
-          </xs:element>
+        </xs:element>
         <xs:element name="VatCode" type="xs:integer" minOccurs="0" />
         <xs:element name="VatPrintedCode" minOccurs="0">
           <xs:annotation>
@@ -115,15 +115,14 @@
               I Entgeltsminderungen 7.6
               M Eigenverbrauch 7.6
               N Eigenverbrauch 2.4
-              Q Bezug Dienstleistungen aus dem Ausland 0.0
-              Vorsteuer
+              Q Bezug Dienstleistungen aus dem Ausland 0.0 Vorsteuer
               O Material und Dienstleistungen 100.0
               P Investitionen und Betriebsaufwand 100.0
               R Material und Dienstleistungen 7.6
               S Material und Dienstleistungen 2.4
               T Investitionen und Betriebsaufwand 7.6
               U Investitionen und Betriebsaufwand 2.4
-              VT Invest. und Betriebsaufw. Normalsatz zu 50 % 7.6 zu 50 %
+              VT Invest. und Betriebsaufw. Normalsatz zu 50% 7.6 zu 50 %
               VU Invest. und Betriebsaufw. reduzierter Satz zu 50 %2.4 zu 50 %
               W Landwirtschaft 2.4
               X nicht berechtigt 0.0
@@ -237,7 +236,8 @@
         </xs:element>
         <xs:element name="PriceTravellers" minOccurs="0">
           <xs:annotation>
-            <xs:documentation>Listet die Travellers auf welche mit dieser Leistung verknuepft sind.</xs:documentation>
+            <xs:documentation>Listet die Travellers auf welche mit dieser Leistung verknuepft sind.
+            </xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:sequence>
@@ -247,7 +247,8 @@
         </xs:element>
         <xs:element name="SpecialCommission" type="xs:boolean" minOccurs="0">
           <xs:annotation>
-            <xs:documentation>When true, this price item has a special commission that overrides the automated commission calculation for the agent</xs:documentation>
+            <xs:documentation>When true, this price item has a special commission that overrides the automated commission calculation for the agent
+            </xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="DossierItemSourceSeq" type="xs:string" minOccurs="0">
@@ -255,13 +256,20 @@
             <xs:documentation>This Node contains the internal DossierItemSeq for this Itemprice and is, until further notice, for internal use only
             </xs:documentation>
           </xs:annotation>
-          </xs:element>
+        </xs:element>
+        <xs:element name="SupplierSeq" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>This Node contains the SupplierSeq and is, until further notice, for internal use only
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
       </xs:all>
       <xs:attribute name="InternalPriceType" type="InternalPriceType" use="optional" />
       <xs:attribute name="PriceType" type="xs:string" use="optional" />
       <xs:attribute name="BaseDataProductSeq" type="xs:string" use="optional">
         <xs:annotation>
-          <xs:documentation>Internal unique key for the fixed pricetype. Ex.: Customerfees</xs:documentation>
+          <xs:documentation>Internal unique key for the fixed pricetype. Ex.:  Customerfees
+          </xs:documentation>
         </xs:annotation>
       </xs:attribute>
     </xs:complexType>
