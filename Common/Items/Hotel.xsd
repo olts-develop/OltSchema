@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation=".\Room.xsd" />
   <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
@@ -153,9 +153,21 @@
             <xs:documentation>Full name of the hotel chain, e.g. Holiday Inn</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="BillingSupplier" type="SupplierType" minOccurs="0" />
-        <xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0" />
-        <xs:element name="PayableTo" type="xs:string" minOccurs="0" />
+        <xs:element name="BillingSupplier" type="SupplierType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Supplier that is to receive the payment for this item</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Supplier that is to receive the payment for this item</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="PayableTo" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>When the BillingSupplier is not known in a manner that the data can be sent in a structured format and mapped to the Supplier table in Agent Online / TO Online, then a PayaleTo string can be sent in the interface which gives the customer an indication who will be receiving the payment.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
         <xs:element name="VatNr" type="xs:string" minOccurs="0" />
         <xs:element name="Rooms" minOccurs="0">
           <xs:complexType>

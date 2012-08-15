@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com)-->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<!--Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation=".\ProductItemPrice.xsd" />
   <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
   <xs:element name="Miscellaneous">
@@ -10,6 +10,23 @@
         <xs:element name="Detail" type="xs:string" minOccurs="0">
           <xs:annotation>
             <xs:documentation>CDATA</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ItineraryTitle" type="xs:string" minOccurs="0" />
+        <xs:element name="ItineraryDetail" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>CDATA</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="VoucherTitle" type="xs:string" minOccurs="0" />
+        <xs:element name="VoucherDetail" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>CDATA</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="SupplierInfo" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>CDATA - Information for the supplier that is, for example, sent with communication about this item to the supplier. The customer does not get to see this data. The information might be sensitive in nature, but important for the supplier.</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="Arrival" minOccurs="0">
@@ -24,7 +41,6 @@
             <xs:attribute name="Description" type="xs:string" />
           </xs:complexType>
         </xs:element>
-        <xs:element name="FlightNumber" type="xs:string" minOccurs="0" />
         <xs:element name="ConfirmationNr" minOccurs="0">
           <xs:complexType>
             <xs:simpleContent>
@@ -34,9 +50,14 @@
             </xs:simpleContent>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Remark" type="xs:string" minOccurs="0">
+        <xs:element name="BillingSupplier" type="SupplierType" minOccurs="0">
           <xs:annotation>
-            <xs:documentation>CDATA</xs:documentation>
+            <xs:documentation>Supplier that is to receive the payment for this item</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Supplier that is to be printed on a voucher for this item</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="Country" minOccurs="0">
@@ -56,31 +77,6 @@
         <xs:element name="SubRegion" type="xs:string" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Subregion of the region</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="Service" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Service shortdescription</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="City" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>City name (length=20)</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="ReservationSupplier" type="SupplierType" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Supplier who makes the reservation</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="PaySupplier" type="SupplierType" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Supplier who makes the payment</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Supplier who makes the voucher</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="Commission" type="xs:string" minOccurs="0">
