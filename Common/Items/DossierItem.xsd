@@ -111,6 +111,9 @@
               TOSV - Tour Online TOSV
               TOSV+ - Tour Online TOSV Plus
               CMIR - Cets MIR
+              LCC - Low Cost Carrier
+              TOCHARTER - TFS Charter
+              TUICHARTER - TUI Charter
             </xs:documentation>
           </xs:annotation>
           <xs:simpleType>
@@ -123,6 +126,9 @@
               <xs:enumeration value="TOSV" />
               <xs:enumeration value="TOSV+" />
               <xs:enumeration value="CMIR" />
+              <xs:enumeration value="LCC" />
+              <xs:enumeration value="TOCHARTER" />
+              <xs:enumeration value="TUICHARTER" />
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
