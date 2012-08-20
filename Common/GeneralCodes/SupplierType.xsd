@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:complexType name="SupplierType">
     <xs:attribute name="Seq" type="xs:string" use="optional">
@@ -7,7 +7,11 @@
         <xs:documentation>Supplier Sequence</xs:documentation>
       </xs:annotation>
     </xs:attribute>
-    <xs:attribute name="AirlineNr" type="xs:string" use="optional" />
+    <xs:attribute name="AirlineNr" type="xs:string" use="optional">
+      <xs:annotation>
+        <xs:documentation>If a supplier is an airline, this node would contain the airline number</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
     <xs:attribute name="Service" type="xs:string" use="optional">
       <xs:annotation>
         <xs:documentation>Bsp: 060 oder 010</xs:documentation>
