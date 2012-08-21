@@ -41,7 +41,7 @@
                      <area shape="rect" coords="194,1092,300,1119" href="rooms.html" alt="Drilldown into Rooms"></area>
                      <area shape="rect" coords="194,1059,342,1086" href="vatnr.html" alt="Drilldown into VatNr"></area>
                      <area shape="rect" coords="194,1026,355,1053" href="payableto1.html" alt="Drilldown into PayableTo"></area>
-                     <area shape="rect" coords="194,993,435,1020" href="vouchersupplier1.html" alt="Drilldown into VoucherSupplier"></area>
+                     <area shape="rect" coords="194,993,435,1020" href="vouchersupplier.html" alt="Drilldown into VoucherSupplier"></area>
                      <area shape="rect" coords="194,960,424,987" href="billingsupplier.html" alt="Drilldown into BillingSupplier"></area>
                      <area shape="rect" coords="194,927,359,954" href="hotelchain.html" alt="Drilldown into HotelChain"></area>
                      <area shape="rect" coords="194,894,348,921" href="category2.html" alt="Drilldown into Category"></area>
@@ -237,9 +237,21 @@
           &lt;xs:documentation&gt;Full name of the hotel chain, e.g. Holiday Inn&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
-      &lt;xs:element name="BillingSupplier" type="SupplierType" minOccurs="0" /&gt;
-      &lt;xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0" /&gt;
-      &lt;xs:element name="PayableTo" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="BillingSupplier" type="SupplierType" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Supplier that is to receive the payment for this item&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Supplier that is to receive the payment for this item&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="PayableTo" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;When the BillingSupplier is not known in a manner that the data can be sent in a structured format and mapped to the Supplier table in Agent Online / TO Online, then a PayaleTo string can be sent in the interface which gives the customer an indication who will be receiving the payment.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
       &lt;xs:element name="VatNr" type="xs:string" minOccurs="0" /&gt;
       &lt;xs:element name="Rooms" minOccurs="0"&gt;
         &lt;xs:complexType&gt;
@@ -451,7 +463,7 @@
                      </tr>
                      <tr>
                         <td class="first">VoucherSupplier</td>
-                        <td><a href="vouchersupplier1.html">VoucherSupplier</a></td>
+                        <td><a href="vouchersupplier.html">VoucherSupplier</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

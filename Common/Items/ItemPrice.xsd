@@ -84,8 +84,8 @@
         <xs:element name="PriceReferencePosition" minOccurs="0">
           <xs:annotation>
             <xs:documentation>This node identifies a hidden priceline.
-             This is a number that adds the price of the current item to that of the referenced price identified by the position number.
-             The rule for using this type of constuct is, that the "UnitNr" of the current item is the same as the "UnitNr" of the referenced item.
+              This is a number that adds the price of the current item to that of the referenced price identified by the position number.
+              The rule for using this type of constuct is, that the "UnitNr" of the current item is the same as the "UnitNr" of the referenced item.
             </xs:documentation>
           </xs:annotation>
           <xs:simpleType>

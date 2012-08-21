@@ -45,19 +45,19 @@
                      <area shape="rect" coords="228,564,431,591" href="maximumpersons.html" alt="Drilldown into MaximumPersons"></area>
                      <area shape="rect" coords="228,531,428,558" href="minimumpersons.html" alt="Drilldown into MinimumPersons"></area>
                      <area shape="rect" coords="228,498,399,525" href="commission.html" alt="Drilldown into Commission"></area>
-                     <area shape="rect" coords="228,465,469,492" href="vouchersupplier2.html" alt="Drilldown into VoucherSupplier"></area>
-                     <area shape="rect" coords="228,432,443,459" href="paysupplier1.html" alt="Drilldown into PaySupplier"></area>
-                     <area shape="rect" coords="228,399,490,426" href="reservationsupplier.html" alt="Drilldown into ReservationSupplier"></area>
-                     <area shape="rect" coords="228,366,376,393" href="city5.html" alt="Drilldown into City"></area>
-                     <area shape="rect" coords="228,333,376,360" href="service2.html" alt="Drilldown into Service"></area>
-                     <area shape="rect" coords="228,300,392,327" href="subregion3.html" alt="Drilldown into SubRegion"></area>
-                     <area shape="rect" coords="228,267,376,294" href="region3.html" alt="Drilldown into Region"></area>
-                     <area shape="rect" coords="228,234,392,261" href="country5.html" alt="Drilldown into Country"></area>
-                     <area shape="rect" coords="228,201,376,228" href="remark9.html" alt="Drilldown into Remark"></area>
-                     <area shape="rect" coords="228,168,434,195" href="confirmationnr3.html" alt="Drilldown into ConfirmationNr"></area>
-                     <area shape="rect" coords="228,135,408,162" href="flightnumber1.html" alt="Drilldown into FlightNumber"></area>
-                     <area shape="rect" coords="228,102,406,129" href="departure3.html" alt="Drilldown into Departure"></area>
-                     <area shape="rect" coords="228,69,394,96" href="arrival3.html" alt="Drilldown into Arrival"></area>
+                     <area shape="rect" coords="228,465,392,492" href="subregion3.html" alt="Drilldown into SubRegion"></area>
+                     <area shape="rect" coords="228,432,376,459" href="region3.html" alt="Drilldown into Region"></area>
+                     <area shape="rect" coords="228,399,392,426" href="country5.html" alt="Drilldown into Country"></area>
+                     <area shape="rect" coords="228,366,469,393" href="vouchersupplier1.html" alt="Drilldown into VoucherSupplier"></area>
+                     <area shape="rect" coords="228,333,458,360" href="billingsupplier1.html" alt="Drilldown into BillingSupplier"></area>
+                     <area shape="rect" coords="228,300,434,327" href="confirmationnr3.html" alt="Drilldown into ConfirmationNr"></area>
+                     <area shape="rect" coords="228,267,406,294" href="departure3.html" alt="Drilldown into Departure"></area>
+                     <area shape="rect" coords="228,234,394,261" href="arrival3.html" alt="Drilldown into Arrival"></area>
+                     <area shape="rect" coords="228,201,401,228" href="supplierinfo.html" alt="Drilldown into SupplierInfo"></area>
+                     <area shape="rect" coords="228,168,411,195" href="voucherdetail.html" alt="Drilldown into VoucherDetail"></area>
+                     <area shape="rect" coords="228,135,402,162" href="vouchertitle.html" alt="Drilldown into VoucherTitle"></area>
+                     <area shape="rect" coords="228,102,415,129" href="itinerarydetail.html" alt="Drilldown into ItineraryDetail"></area>
+                     <area shape="rect" coords="228,69,406,96" href="itinerarytitle.html" alt="Drilldown into ItineraryTitle"></area>
                      <area shape="rect" coords="228,36,376,63" href="detail1.html" alt="Drilldown into Detail"></area>
                      <area shape="rect" coords="228,3,376,30" href="title3.html" alt="Drilldown into Title"></area></map><img src="images/miscellaneous1.png" border="0" alt="XSD Diagram of Miscellaneous" usemap="#DiagramMap"></img></td>
             </tr>
@@ -80,6 +80,23 @@
           &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
+      &lt;xs:element name="ItineraryTitle" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="ItineraryDetail" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="VoucherTitle" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="VoucherDetail" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="SupplierInfo" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;CDATA - Information for the supplier that is, for example, sent with communication about this item to the supplier. The customer does not get to see this data. The information might be sensitive in nature, but important for the supplier.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
       &lt;xs:element name="Arrival" minOccurs="0"&gt;
         &lt;xs:complexType&gt;
           &lt;xs:attribute name="Time" type="xs:time" /&gt;
@@ -92,7 +109,6 @@
           &lt;xs:attribute name="Description" type="xs:string" /&gt;
         &lt;/xs:complexType&gt;
       &lt;/xs:element&gt;
-      &lt;xs:element name="FlightNumber" type="xs:string" minOccurs="0" /&gt;
       &lt;xs:element name="ConfirmationNr" minOccurs="0"&gt;
         &lt;xs:complexType&gt;
           &lt;xs:simpleContent&gt;
@@ -102,9 +118,14 @@
           &lt;/xs:simpleContent&gt;
         &lt;/xs:complexType&gt;
       &lt;/xs:element&gt;
-      &lt;xs:element name="Remark" type="xs:string" minOccurs="0"&gt;
+      &lt;xs:element name="BillingSupplier" type="SupplierType" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+          &lt;xs:documentation&gt;Supplier that is to receive the payment for this item&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Supplier that is to be printed on a voucher for this item&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
       &lt;xs:element name="Country" minOccurs="0"&gt;
@@ -124,31 +145,6 @@
       &lt;xs:element name="SubRegion" type="xs:string" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;Subregion of the region&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="Service" type="xs:string" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Service shortdescription&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="City" type="xs:string" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;City name (length=20)&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="ReservationSupplier" type="SupplierType" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Supplier who makes the reservation&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="PaySupplier" type="SupplierType" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Supplier who makes the payment&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Supplier who makes the voucher&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
       &lt;xs:element name="Commission" type="xs:string" minOccurs="0"&gt;
@@ -225,6 +221,36 @@
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
+                        <td class="first">ItineraryTitle</td>
+                        <td><a href="itinerarytitle.html">ItineraryTitle</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ItineraryDetail</td>
+                        <td><a href="itinerarydetail.html">ItineraryDetail</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">VoucherTitle</td>
+                        <td><a href="vouchertitle.html">VoucherTitle</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">VoucherDetail</td>
+                        <td><a href="voucherdetail.html">VoucherDetail</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SupplierInfo</td>
+                        <td><a href="supplierinfo.html">SupplierInfo</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
                         <td class="first">Arrival</td>
                         <td><a href="arrival3.html">Arrival</a></td>
                         <td class="mid">0</td>
@@ -237,20 +263,20 @@
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
-                        <td class="first">FlightNumber</td>
-                        <td><a href="flightnumber1.html">FlightNumber</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
                         <td class="first">ConfirmationNr</td>
                         <td><a href="confirmationnr3.html">ConfirmationNr</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
-                        <td class="first">Remark</td>
-                        <td><a href="remark9.html">Remark</a></td>
+                        <td class="first">BillingSupplier</td>
+                        <td><a href="billingsupplier1.html">BillingSupplier</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">VoucherSupplier</td>
+                        <td><a href="vouchersupplier1.html">VoucherSupplier</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -269,36 +295,6 @@
                      <tr>
                         <td class="first">SubRegion</td>
                         <td><a href="subregion3.html">SubRegion</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">Service</td>
-                        <td><a href="service2.html">Service</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">City</td>
-                        <td><a href="city5.html">City</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">ReservationSupplier</td>
-                        <td><a href="reservationsupplier.html">ReservationSupplier</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">PaySupplier</td>
-                        <td><a href="paysupplier1.html">PaySupplier</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">VoucherSupplier</td>
-                        <td><a href="vouchersupplier2.html">VoucherSupplier</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

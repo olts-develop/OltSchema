@@ -21,6 +21,10 @@
                <td>SupplierType</td>
             </tr>
             <tr>
+               <td class="label" width="120px;"><b>Type:</b></td>
+               <td>string:http://www.w3.org/2001/XMLSchema</td>
+            </tr>
+            <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
                <td><a href="suppliertype_xsd.html">SupplierType.xsd</a></td>
             </tr>
@@ -38,13 +42,13 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="218,201,379,228" href="payableto.html" alt="Drilldown into PayableTo"></area>
-                     <area shape="rect" coords="218,168,366,195" href="broker.html" alt="Drilldown into Broker"></area>
-                     <area shape="rect" coords="218,135,367,162" href="apicode.html" alt="Drilldown into ApiCode"></area>
-                     <area shape="rect" coords="218,102,366,129" href="code8.html" alt="Drilldown into Code"></area>
-                     <area shape="rect" coords="218,69,366,96" href="service.html" alt="Drilldown into Service"></area>
-                     <area shape="rect" coords="218,36,371,63" href="airlinenr.html" alt="Drilldown into AirlineNr"></area>
-                     <area shape="rect" coords="218,3,366,30" href="seq4.html" alt="Drilldown into Seq"></area></map><img src="images/suppliertype.png" border="0" alt="XSD Diagram of SupplierType" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="216,201,377,228" href="payableto.html" alt="Drilldown into PayableTo"></area>
+                     <area shape="rect" coords="216,168,364,195" href="broker.html" alt="Drilldown into Broker"></area>
+                     <area shape="rect" coords="216,135,365,162" href="apicode.html" alt="Drilldown into ApiCode"></area>
+                     <area shape="rect" coords="216,102,364,129" href="code8.html" alt="Drilldown into Code"></area>
+                     <area shape="rect" coords="216,69,364,96" href="service.html" alt="Drilldown into Service"></area>
+                     <area shape="rect" coords="216,36,369,63" href="airlinenr.html" alt="Drilldown into AirlineNr"></area>
+                     <area shape="rect" coords="216,3,364,30" href="seq4.html" alt="Drilldown into Seq"></area></map><img src="images/suppliertype.png" border="0" alt="XSD Diagram of SupplierType" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -57,68 +61,77 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:complexType name="SupplierType"&gt;
-  &lt;xs:attribute name="Seq" type="xs:string" use="optional"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Supplier Sequence&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="AirlineNr" type="xs:string" use="optional" /&gt;
-  &lt;xs:attribute name="Service" type="xs:string" use="optional"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Bsp: 060 oder 010&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="Code" type="xs:string" use="optional"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Bsp: IMHO oder KUON&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="ApiCode" use="optional"&gt;
-    &lt;xs:simpleType&gt;
-      &lt;xs:restriction base="xs:string"&gt;
-        &lt;xs:enumeration value="AL" /&gt;
-        &lt;xs:enumeration value="ZL" /&gt;
-        &lt;xs:enumeration value="FTI" /&gt;
-        &lt;xs:enumeration value="ZE" /&gt;
-        &lt;xs:enumeration value="CAIN" /&gt;
-        &lt;xs:enumeration value="AOT" /&gt;
-        &lt;xs:enumeration value="JV" /&gt;
-        &lt;xs:enumeration value="ATP" /&gt;
-        &lt;xs:enumeration value="TIO" /&gt;
-        &lt;xs:enumeration value="BON" /&gt;
-        &lt;xs:enumeration value="TUICTSPEG" /&gt;
-        &lt;xs:enumeration value="SIHA" /&gt;
-        &lt;xs:enumeration value="BLUMAR" /&gt;
-        &lt;xs:enumeration value="PRONTO" /&gt;
-        &lt;xs:enumeration value="pronto" /&gt;
-        &lt;xs:enumeration value="TUICTS" /&gt;
-        &lt;xs:enumeration value="tuicts" /&gt;
-        &lt;xs:enumeration value="TICO" /&gt;
-        &lt;xs:enumeration value="COMRES" /&gt;
-        &lt;xs:enumeration value="comres" /&gt;
-        &lt;xs:enumeration value="TOURICO" /&gt;
-        &lt;xs:enumeration value="tourico" /&gt;
-        &lt;xs:enumeration value="GTA" /&gt;
-        &lt;xs:enumeration value="HOTELBEDS" /&gt;
-      &lt;/xs:restriction&gt;
-    &lt;/xs:simpleType&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="Broker" use="optional"&gt;
-    &lt;xs:simpleType&gt;
-      &lt;xs:restriction base="xs:string"&gt;
-        &lt;xs:enumeration value="PEG" /&gt;
-        &lt;xs:enumeration value="Hotelbeds" /&gt;
-        &lt;xs:enumeration value="IRIS" /&gt;
-        &lt;xs:enumeration value="HOTELBEDS" /&gt;
-        &lt;xs:enumeration value="TOURICO" /&gt;
-        &lt;xs:enumeration value="COMRES" /&gt;
-        &lt;xs:enumeration value="comres" /&gt;
-        &lt;xs:enumeration value="PRONTO" /&gt;
-        &lt;xs:enumeration value="pronto" /&gt;
-      &lt;/xs:restriction&gt;
-    &lt;/xs:simpleType&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="PayableTo" type="xs:string" use="optional" /&gt;
+  &lt;xs:simpleContent&gt;
+    &lt;xs:extension base="xs:string"&gt;
+      &lt;xs:attribute name="Seq" type="xs:string" use="optional"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Supplier Sequence&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:attribute&gt;
+      &lt;xs:attribute name="AirlineNr" type="xs:string" use="optional"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;If a supplier is an airline, this node would contain the airline number&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:attribute&gt;
+      &lt;xs:attribute name="Service" type="xs:string" use="optional"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Bsp: 060 oder 010&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:attribute&gt;
+      &lt;xs:attribute name="Code" type="xs:string" use="optional"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Bsp: IMHO oder KUON&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:attribute&gt;
+      &lt;xs:attribute name="ApiCode" use="optional"&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:enumeration value="AL" /&gt;
+            &lt;xs:enumeration value="ZL" /&gt;
+            &lt;xs:enumeration value="FTI" /&gt;
+            &lt;xs:enumeration value="ZE" /&gt;
+            &lt;xs:enumeration value="CAIN" /&gt;
+            &lt;xs:enumeration value="AOT" /&gt;
+            &lt;xs:enumeration value="JV" /&gt;
+            &lt;xs:enumeration value="ATP" /&gt;
+            &lt;xs:enumeration value="TIO" /&gt;
+            &lt;xs:enumeration value="BON" /&gt;
+            &lt;xs:enumeration value="TUICTSPEG" /&gt;
+            &lt;xs:enumeration value="SIHA" /&gt;
+            &lt;xs:enumeration value="BLUMAR" /&gt;
+            &lt;xs:enumeration value="PRONTO" /&gt;
+            &lt;xs:enumeration value="pronto" /&gt;
+            &lt;xs:enumeration value="TUICTS" /&gt;
+            &lt;xs:enumeration value="tuicts" /&gt;
+            &lt;xs:enumeration value="TICO" /&gt;
+            &lt;xs:enumeration value="COMRES" /&gt;
+            &lt;xs:enumeration value="comres" /&gt;
+            &lt;xs:enumeration value="TOURICO" /&gt;
+            &lt;xs:enumeration value="tourico" /&gt;
+            &lt;xs:enumeration value="GTA" /&gt;
+            &lt;xs:enumeration value="HOTELBEDS" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:attribute&gt;
+      &lt;xs:attribute name="Broker" use="optional"&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:enumeration value="PEG" /&gt;
+            &lt;xs:enumeration value="Hotelbeds" /&gt;
+            &lt;xs:enumeration value="IRIS" /&gt;
+            &lt;xs:enumeration value="HOTELBEDS" /&gt;
+            &lt;xs:enumeration value="TOURICO" /&gt;
+            &lt;xs:enumeration value="COMRES" /&gt;
+            &lt;xs:enumeration value="comres" /&gt;
+            &lt;xs:enumeration value="PRONTO" /&gt;
+            &lt;xs:enumeration value="pronto" /&gt;
+            &lt;xs:enumeration value="GTA" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:attribute&gt;
+      &lt;xs:attribute name="PayableTo" type="xs:string" use="optional" /&gt;
+    &lt;/xs:extension&gt;
+  &lt;/xs:simpleContent&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -202,25 +215,16 @@
                         <li><a href="bookingsupplier.html">BookingSupplier</a></li>
                      </ul>
                      <ul>
-                        <li><a href="paysupplier.html">PaySupplier</a></li>
+                        <li><a href="billingsupplier.html">BillingSupplier</a></li>
                      </ul>
                      <ul>
                         <li><a href="vouchersupplier.html">VoucherSupplier</a></li>
                      </ul>
                      <ul>
-                        <li><a href="billingsupplier.html">BillingSupplier</a></li>
+                        <li><a href="billingsupplier1.html">BillingSupplier</a></li>
                      </ul>
                      <ul>
                         <li><a href="vouchersupplier1.html">VoucherSupplier</a></li>
-                     </ul>
-                     <ul>
-                        <li><a href="paysupplier1.html">PaySupplier</a></li>
-                     </ul>
-                     <ul>
-                        <li><a href="reservationsupplier.html">ReservationSupplier</a></li>
-                     </ul>
-                     <ul>
-                        <li><a href="vouchersupplier2.html">VoucherSupplier</a></li>
                      </ul>
                      <ul>
                         <li><a href="supplier1.html">Supplier</a></li>
@@ -229,13 +233,13 @@
                         <li><a href="supplier2.html">Supplier</a></li>
                      </ul>
                      <ul>
-                        <li><a href="paysupplier2.html">PaySupplier</a></li>
+                        <li><a href="paysupplier.html">PaySupplier</a></li>
                      </ul>
                      <ul>
                         <li><a href="supplier3.html">Supplier</a></li>
                      </ul>
                      <ul>
-                        <li><a href="vouchersupplier3.html">VoucherSupplier</a></li>
+                        <li><a href="vouchersupplier2.html">VoucherSupplier</a></li>
                      </ul>
                   </ul>
                </td>
@@ -249,7 +253,7 @@
             </tr>
             <tr id="references_body_id">
                <td width="120px;"></td>
-               <td><a href="billingsupplier.html">BillingSupplier</a>, <a href="bookingsupplier.html">BookingSupplier</a>, <a href="paysupplier.html">PaySupplier</a>, <a href="paysupplier1.html">PaySupplier</a>, <a href="paysupplier2.html">PaySupplier</a>, <a href="reservationsupplier.html">ReservationSupplier</a>, <a href="supplier.html">Supplier</a>, <a href="supplier1.html">Supplier</a>, <a href="supplier2.html">Supplier</a>, <a href="supplier3.html">Supplier</a>, <a href="vouchersupplier.html">VoucherSupplier</a>, <a href="vouchersupplier1.html">VoucherSupplier</a>, <a href="vouchersupplier2.html">VoucherSupplier</a>, <a href="vouchersupplier3.html">VoucherSupplier</a></td>
+               <td><a href="billingsupplier.html">BillingSupplier</a>, <a href="billingsupplier1.html">BillingSupplier</a>, <a href="bookingsupplier.html">BookingSupplier</a>, <a href="paysupplier.html">PaySupplier</a>, <a href="supplier.html">Supplier</a>, <a href="supplier1.html">Supplier</a>, <a href="supplier2.html">Supplier</a>, <a href="supplier3.html">Supplier</a>, <a href="vouchersupplier.html">VoucherSupplier</a>, <a href="vouchersupplier1.html">VoucherSupplier</a>, <a href="vouchersupplier2.html">VoucherSupplier</a></td>
             </tr>
          </tbody>
       </table>

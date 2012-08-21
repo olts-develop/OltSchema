@@ -44,6 +44,10 @@
                <td class="label" width="120px;"><b>ContentType</b></td>
                <td>Restriction</td>
             </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Documentation:</b></td>
+               <td><pre>We advise against sending 'c' for 'child' or 'i' for 'infant', but this can be sent in the XML, is interpreted appropriately and some users of the interface send data in this way. Better is sending the Child or Baby nodes for a Child or a Baby. If the child or baby is a male or female, an 'm' or 'f' can then be sent. If the gender is unknown, then the Gender node should not be sent.</pre></td>
+            </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
@@ -65,7 +69,10 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element minOccurs="0" name="Gender"&gt;
+&lt;xs:element name="Gender" minOccurs="0"&gt;
+  &lt;xs:annotation&gt;
+    &lt;xs:documentation&gt;We advise against sending 'c' for 'child' or 'i' for 'infant', but this can be sent in the XML, is interpreted appropriately and some users of the interface send data in this way. Better is sending the Child or Baby nodes for a Child or a Baby. If the child or baby is a male or female, an 'm' or 'f' can then be sent. If the gender is unknown, then the Gender node should not be sent.&lt;/xs:documentation&gt;
+  &lt;/xs:annotation&gt;
   &lt;xs:simpleType&gt;
     &lt;xs:restriction base="xs:string"&gt;
       &lt;xs:enumeration value="m" /&gt;

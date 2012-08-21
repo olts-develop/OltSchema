@@ -42,7 +42,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>End date of this dossier item</pre></td>
+               <td><pre>End date of this dossier item. If an item has a BeginDate=EndDate, then the EndDate an Duration Nodes will normally not be sent in Response. Implementers of the interface cannot expect an EndDate or Duration XML node to be sent in the XML if the StartDate and EndDate are the same.</pre></td>
             </tr>
          </tbody>
       </table>
@@ -67,7 +67,7 @@
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element name="EndDate" type="xs:date" minOccurs="0"&gt;
   &lt;xs:annotation&gt;
-    &lt;xs:documentation&gt;End date of this dossier item&lt;/xs:documentation&gt;
+    &lt;xs:documentation&gt;End date of this dossier item. If an item has a BeginDate=EndDate, then the EndDate an Duration Nodes will normally not be sent in Response. Implementers of the interface cannot expect an EndDate or Duration XML node to be sent in the XML if the StartDate and EndDate are the same.&lt;/xs:documentation&gt;
   &lt;/xs:annotation&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>

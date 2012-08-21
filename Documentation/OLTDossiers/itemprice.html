@@ -42,19 +42,23 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="139,762,361,789" href="basedataproductseq1.html" alt="Drilldown into BaseDataProductSeq"></area>
-                     <area shape="rect" coords="139,729,297,756" href="pricetype2.html" alt="Drilldown into PriceType"></area>
-                     <area shape="rect" coords="139,696,399,723" href="internalpricetype2.html" alt="Drilldown into InternalPriceType"></area>
-                     <area shape="rect" coords="204,663,349,690" href="pricetravellers.html" alt="Drilldown into PriceTravellers"></area>
-                     <area shape="rect" coords="204,630,352,657" href="infants.html" alt="Drilldown into Infants"></area>
-                     <area shape="rect" coords="204,597,354,624" href="children.html" alt="Drilldown into Children"></area>
-                     <area shape="rect" coords="204,564,352,591" href="adults.html" alt="Drilldown into Adults"></area>
-                     <area shape="rect" coords="204,531,318,558" href="vatsplits.html" alt="Drilldown into VATSplits"></area>
-                     <area shape="rect" coords="204,498,390,525" href="vatdescription.html" alt="Drilldown into VatDescription"></area>
-                     <area shape="rect" coords="204,465,369,492" href="vatpercent.html" alt="Drilldown into VatPercent"></area>
-                     <area shape="rect" coords="204,432,400,459" href="vatinternalcode.html" alt="Drilldown into VatInternalCode"></area>
-                     <area shape="rect" coords="204,399,395,426" href="vatprintedcode.html" alt="Drilldown into VatPrintedCode"></area>
-                     <area shape="rect" coords="204,366,354,393" href="vatcode.html" alt="Drilldown into VatCode"></area>
+                     <area shape="rect" coords="139,894,361,921" href="basedataproductseq1.html" alt="Drilldown into BaseDataProductSeq"></area>
+                     <area shape="rect" coords="139,861,297,888" href="pricetype2.html" alt="Drilldown into PriceType"></area>
+                     <area shape="rect" coords="139,828,399,855" href="internalpricetype2.html" alt="Drilldown into InternalPriceType"></area>
+                     <area shape="rect" coords="204,795,374,822" href="supplierseq.html" alt="Drilldown into SupplierSeq"></area>
+                     <area shape="rect" coords="204,762,436,789" href="dossieritemsourceseq.html" alt="Drilldown into DossierItemSourceSeq"></area>
+                     <area shape="rect" coords="204,729,416,756" href="specialcommission.html" alt="Drilldown into SpecialCommission"></area>
+                     <area shape="rect" coords="204,696,349,723" href="pricetravellers.html" alt="Drilldown into PriceTravellers"></area>
+                     <area shape="rect" coords="204,663,352,690" href="infants.html" alt="Drilldown into Infants"></area>
+                     <area shape="rect" coords="204,630,354,657" href="children.html" alt="Drilldown into Children"></area>
+                     <area shape="rect" coords="204,597,352,624" href="adults.html" alt="Drilldown into Adults"></area>
+                     <area shape="rect" coords="204,564,318,591" href="vatsplits.html" alt="Drilldown into VATSplits"></area>
+                     <area shape="rect" coords="204,531,390,558" href="vatdescription.html" alt="Drilldown into VatDescription"></area>
+                     <area shape="rect" coords="204,498,369,525" href="vatpercent.html" alt="Drilldown into VatPercent"></area>
+                     <area shape="rect" coords="204,465,400,492" href="vatinternalcode.html" alt="Drilldown into VatInternalCode"></area>
+                     <area shape="rect" coords="204,432,395,459" href="vatprintedcode.html" alt="Drilldown into VatPrintedCode"></area>
+                     <area shape="rect" coords="204,399,354,426" href="vatcode.html" alt="Drilldown into VatCode"></area>
+                     <area shape="rect" coords="204,366,392,393" href="extrapricetype.html" alt="Drilldown into ExtraPriceType"></area>
                      <area shape="rect" coords="204,333,438,360" href="pricereferenceposition.html" alt="Drilldown into PriceReferencePosition"></area>
                      <area shape="rect" coords="204,300,381,327" href="priceposition.html" alt="Drilldown into PricePosition"></area>
                      <area shape="rect" coords="204,267,429,294" href="pricecommissiongive.html" alt="Drilldown into PriceCommissionGive"></area>
@@ -179,9 +183,9 @@
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;This node identifies a hidden priceline.
 
-              This is a number that adds the price of the current item to that of the referenced price identified by the position number.
+             This is a number that adds the price of the current item to that of the referenced price identified by the position number.
 
-              The rule for using this type of constuct is, that the "UnitNr" of the current item is the same as the "UnitNr" of the referenced item.
+             The rule for using this type of constuct is, that the "UnitNr" of the current item is the same as the "UnitNr" of the referenced item.
 
             &lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
@@ -190,6 +194,13 @@
             &lt;xs:minInclusive value="1" /&gt;
           &lt;/xs:restriction&gt;
         &lt;/xs:simpleType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="ExtraPriceType" type="xs:integer" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;This Node contains the internal Pricetype and is, until further notice, for internal use only
+
+            &lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
       &lt;xs:element name="VatCode" type="xs:integer" minOccurs="0" /&gt;
       &lt;xs:element name="VatPrintedCode" minOccurs="0"&gt;
@@ -218,9 +229,7 @@
 
               N Eigenverbrauch 2.4
 
-              Q Bezug Dienstleistungen aus dem Ausland 0.0
-
-              Vorsteuer
+              Q Bezug Dienstleistungen aus dem Ausland 0.0 Vorsteuer
 
               O Material und Dienstleistungen 100.0
 
@@ -234,7 +243,7 @@
 
               U Investitionen und Betriebsaufwand 2.4
 
-              VT Invest. und Betriebsaufw. Normalsatz zu 50 % 7.6 zu 50 %
+              VT Invest. und Betriebsaufw. Normalsatz zu 50% 7.6 zu 50 %
 
               VU Invest. und Betriebsaufw. reduzierter Satz zu 50 %2.4 zu 50 %
 
@@ -354,7 +363,9 @@
       &lt;/xs:element&gt;
       &lt;xs:element name="PriceTravellers" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Listet die Travellers auf welche mit dieser Leistung verknuepft sind.&lt;/xs:documentation&gt;
+          &lt;xs:documentation&gt;Listet die Travellers auf welche mit dieser Leistung verknuepft sind.
+
+            &lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
         &lt;xs:complexType&gt;
           &lt;xs:sequence&gt;
@@ -362,12 +373,35 @@
           &lt;/xs:sequence&gt;
         &lt;/xs:complexType&gt;
       &lt;/xs:element&gt;
+      &lt;xs:element name="SpecialCommission" type="xs:boolean" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;When true, this price item has a special commission that overrides the automated commission calculation for the agent
+
+            &lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="DossierItemSourceSeq" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;This Node contains the internal DossierItemSeq for this Itemprice and is, until further notice, for internal use only
+
+            &lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="SupplierSeq" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;This Node contains the SupplierSeq and is, until further notice, for internal use only
+
+            &lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
     &lt;/xs:all&gt;
     &lt;xs:attribute name="InternalPriceType" type="InternalPriceType" use="optional" /&gt;
     &lt;xs:attribute name="PriceType" type="xs:string" use="optional" /&gt;
     &lt;xs:attribute name="BaseDataProductSeq" type="xs:string" use="optional"&gt;
       &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;Internal unique key for the fixed pricetype. Ex.: Customerfees&lt;/xs:documentation&gt;
+        &lt;xs:documentation&gt;Internal unique key for the fixed pricetype. Ex.:  Customerfees
+
+          &lt;/xs:documentation&gt;
       &lt;/xs:annotation&gt;
     &lt;/xs:attribute&gt;
   &lt;/xs:complexType&gt;
@@ -457,6 +491,12 @@
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
+                        <td class="first">ExtraPriceType</td>
+                        <td><a href="extrapricetype.html">ExtraPriceType</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
                         <td class="first">VatCode</td>
                         <td><a href="vatcode.html">VatCode</a></td>
                         <td class="mid">0</td>
@@ -513,6 +553,24 @@
                      <tr>
                         <td class="first">PriceTravellers</td>
                         <td><a href="pricetravellers.html">PriceTravellers</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SpecialCommission</td>
+                        <td><a href="specialcommission.html">SpecialCommission</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DossierItemSourceSeq</td>
+                        <td><a href="dossieritemsourceseq.html">DossierItemSourceSeq</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SupplierSeq</td>
+                        <td><a href="supplierseq.html">SupplierSeq</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

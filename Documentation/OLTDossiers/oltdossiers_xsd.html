@@ -28,35 +28,34 @@
                <td><pre><code>
 &lt;!--Created with Liquid XML Studio Designer Edition 8.1.2.2399 (http://www.liquid-technologies.com)--&gt;
 &lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
-    &lt;xs:include schemaLocation="..\Common\Dossier\Dossiers.xsd" /&gt;
-    &lt;xs:element name="OLTDossiers"&gt;
+  &lt;xs:include schemaLocation="..\Common\Dossier\Dossiers.xsd" /&gt;
+  &lt;xs:element name="OLTDossiers"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;OLTDossiers is used to send Dossiers to the Agent Online and TO Online Web Services. At present only one "Dossier" can be sent in the request, but it is planned at a later stage, if needed, to allow the XML to contain more than one Dossier. Each dossier is mapped to one dossier in the back office.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+    &lt;xs:complexType&gt;
+      &lt;xs:sequence&gt;
+        &lt;xs:element ref="Dossiers"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Currently one one Dossier node can be sent using the dossier import.&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+      &lt;/xs:sequence&gt;
+      &lt;xs:attribute name="System" use="optional"&gt;
         &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;OLTDossiers is used to send Dossiers to the Agent Online and TO Online Web Services. At present only one "Dossier" can be sent in the request, but it is planned at a later stage, if needed, to allow the XML to contain more than one Dossier. Each dossier is mapped to one dossier in the back office.&lt;/xs:documentation&gt;
+          &lt;xs:documentation&gt;Defines which system the service needs to access. The system code (Prod, Educ or Test) must match the receiving system, or an error will be returned.
+            @TODO: this still needs to be implemented&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
-        &lt;xs:complexType&gt;
-            &lt;xs:sequence&gt;
-                &lt;xs:element ref="Dossiers"&gt;
-                    &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;Currently one one Dossier node can be sent using the dossier import.&lt;/xs:documentation&gt;
-                    &lt;/xs:annotation&gt;
-                &lt;/xs:element&gt;
-            &lt;/xs:sequence&gt;
-            &lt;xs:attribute name="System" use="optional"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;Defines which system the service needs to access. The system code (Prod, Educ or Test) must match the receiving system, or an error will be returned.
-
-@TODO: this still needs to be implemented&lt;/xs:documentation&gt;
-                &lt;/xs:annotation&gt;
-                &lt;xs:simpleType&gt;
-                    &lt;xs:restriction base="xs:string"&gt;
-                        &lt;xs:enumeration value="Prod" /&gt;
-                        &lt;xs:enumeration value="Educ" /&gt;
-                        &lt;xs:enumeration value="Test" /&gt;
-                    &lt;/xs:restriction&gt;
-                &lt;/xs:simpleType&gt;
-            &lt;/xs:attribute&gt;
-        &lt;/xs:complexType&gt;
-    &lt;/xs:element&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:enumeration value="Prod" /&gt;
+            &lt;xs:enumeration value="Educ" /&gt;
+            &lt;xs:enumeration value="Test" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
+  &lt;/xs:element&gt;
 &lt;/xs:schema&gt;
 </code></pre></td>
             </tr>

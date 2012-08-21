@@ -26,7 +26,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="dossieritem_xsd.html">DossierItem.xsd</a></td>
+               <td><a href="room_xsd.html">Room.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MinOccurs</b></td>
@@ -39,6 +39,10 @@
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
                <td>False</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Documentation:</b></td>
+               <td><pre>Paysupliername</pre></td>
             </tr>
          </tbody>
       </table>
@@ -69,12 +73,10 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="PaySupplier" minOccurs="0"&gt;
-  &lt;xs:complexType&gt;
-    &lt;xs:complexContent&gt;
-      &lt;xs:extension base="SupplierType" /&gt;
-    &lt;/xs:complexContent&gt;
-  &lt;/xs:complexType&gt;
+&lt;xs:element name="PaySupplier" type="SupplierType" minOccurs="0"&gt;
+  &lt;xs:annotation&gt;
+    &lt;xs:documentation&gt;Paysupliername&lt;/xs:documentation&gt;
+  &lt;/xs:annotation&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
