@@ -59,6 +59,11 @@
             <xs:documentation>CDATA, describes what amenities are included in this booking.</xs:documentation>
           </xs:annotation>
         </xs:element>
+        <xs:element name="Remark" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>CDATA: Wish to be displayed on the invoice and itinerary</xs:documentation>
+          </xs:annotation>
+        </xs:element>
         <xs:element name="RoomVoucher" type="xs:string" minOccurs="0">
           <xs:annotation>
             <xs:documentation>CDATA - Text string to be displayed on the voucher regarding room information. Is normally sent in english.</xs:documentation>
