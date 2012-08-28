@@ -270,7 +270,13 @@ LHL_APICLIENT</xs:documentation>
         </xs:element>
         <xs:element name="SourceDossierSeq" type="xs:string" minOccurs="0">
           <xs:annotation>
-            <xs:documentation>Referenze to an existing Dossier</xs:documentation>
+            <xs:documentation>Reference to an existing Dossier</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ItemNotOnInvoice" type="xs:boolean" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>If true, set the 'not-on-invoice' flag for this item in the dossier. The item will not be printed on the invoice. The debit information will also not be transferred to the bookkeeping interface.
+LHL_NOINV</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:choice>
