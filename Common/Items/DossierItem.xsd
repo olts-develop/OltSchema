@@ -98,7 +98,19 @@
         </xs:element>
         <xs:element name="ApiBookingNr" type="xs:string" minOccurs="0">
           <xs:annotation>
-            <xs:documentation>If this is an external API booking, the effective bookng number is displayed here. Note, this must also be sent in the HotelItem, or CarItem, but there are some cases where the values can differ.</xs:documentation>
+            <xs:documentation>If this is an external API booking, the effective booking number is displayed here. Note, this must also be sent in the HotelItem, or CarItem, but there are some cases where the values can differ.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ApiSubSystem" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>If this is an external API booking, the API subsystem, if the supplier has more than one system in the background in which a booking can be made, and the ApiBookingNr is therefore not necessarily unique. Davinci has this type of architecture.
+LHL_APISUBSYSTEM</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ApiClient" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>If this is an external API booking, the API client in our data center over which the booking was made. A cancellation must be made over the same connection as the original booking.
+LHL_APICLIENT</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="GdsSource" minOccurs="0">
