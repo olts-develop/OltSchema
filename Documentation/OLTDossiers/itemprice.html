@@ -97,45 +97,25 @@
       &lt;xs:element name="PriceType" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;Price type for this Priceline
-
               0 = Default
-
               1 = Ticket
-
               2 = Tax
-
               3 = Dossier Fee
-
               4 = Give Commission
-
               5 = Segment Fee
-
               6 = Cancellation Insurance
-
               7 = Not turnover relevant
-
               8 = Family Insurance
-
               9 = Ticket Fee
-
               10 = Processing Fee
-
               11 = Amendment Fee
-
               12 = Cancellation Fee
-
               13 = Discount not Turnover relevant
-
               14 = Discount Turnover relevant
-
               15 = TUFIS - super commission relevant
-
               16 = St. No Insurance
-
               17 = Manual Price
-
               20 = B2B2CFee
-
             &lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
         &lt;xs:simpleType&gt;
@@ -182,11 +162,8 @@
       &lt;xs:element name="PriceReferencePosition" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;This node identifies a hidden priceline.
-
-             This is a number that adds the price of the current item to that of the referenced price identified by the position number.
-
-             The rule for using this type of constuct is, that the "UnitNr" of the current item is the same as the "UnitNr" of the referenced item.
-
+              This is a number that adds the price of the current item to that of the referenced price identified by the position number.
+              The rule for using this type of constuct is, that the "UnitNr" of the current item is the same as the "UnitNr" of the referenced item.
             &lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
         &lt;xs:simpleType&gt;
@@ -198,7 +175,6 @@
       &lt;xs:element name="ExtraPriceType" type="xs:integer" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;This Node contains the internal Pricetype and is, until further notice, for internal use only
-
             &lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
@@ -206,55 +182,30 @@
       &lt;xs:element name="VatPrintedCode" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;Type of Code:
-
               Umsatzsteuer
-
               A Exportlieferung 0.0
-
               B Dienstleistung ins Ausland 0.0
-
               C Ankaufswert Occasionen/Sonderregelung 0.0
-
               D ausgenommene Umsätze 0.0
-
               E Normalsatz 7.6
-
               F reduzierter Satz 2.4
-
               G Hotelleistung 3.6
-
               I Entgeltsminderungen 7.6
-
               M Eigenverbrauch 7.6
-
               N Eigenverbrauch 2.4
-
               Q Bezug Dienstleistungen aus dem Ausland 0.0 Vorsteuer
-
               O Material und Dienstleistungen 100.0
-
               P Investitionen und Betriebsaufwand 100.0
-
               R Material und Dienstleistungen 7.6
-
               S Material und Dienstleistungen 2.4
-
               T Investitionen und Betriebsaufwand 7.6
-
               U Investitionen und Betriebsaufwand 2.4
-
               VT Invest. und Betriebsaufw. Normalsatz zu 50% 7.6 zu 50 %
-
               VU Invest. und Betriebsaufw. reduzierter Satz zu 50 %2.4 zu 50 %
-
               W Landwirtschaft 2.4
-
               X nicht berechtigt 0.0
-
               Y Hotelleistung 3.6
-
               Z keine Vorsteuer 0.0
-
             &lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
         &lt;xs:simpleType&gt;
@@ -364,7 +315,6 @@
       &lt;xs:element name="PriceTravellers" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;Listet die Travellers auf welche mit dieser Leistung verknuepft sind.
-
             &lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
         &lt;xs:complexType&gt;
@@ -376,21 +326,18 @@
       &lt;xs:element name="SpecialCommission" type="xs:boolean" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;When true, this price item has a special commission that overrides the automated commission calculation for the agent
-
             &lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
       &lt;xs:element name="DossierItemSourceSeq" type="xs:string" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;This Node contains the internal DossierItemSeq for this Itemprice and is, until further notice, for internal use only
-
             &lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
       &lt;xs:element name="SupplierSeq" type="xs:string" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;This Node contains the SupplierSeq and is, until further notice, for internal use only
-
             &lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
@@ -400,7 +347,6 @@
     &lt;xs:attribute name="BaseDataProductSeq" type="xs:string" use="optional"&gt;
       &lt;xs:annotation&gt;
         &lt;xs:documentation&gt;Internal unique key for the fixed pricetype. Ex.:  Customerfees
-
           &lt;/xs:documentation&gt;
       &lt;/xs:annotation&gt;
     &lt;/xs:attribute&gt;
@@ -618,7 +564,7 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema to HTML</a>Doc Generation
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.3.4172</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema to HTML</a>Doc Generation
       </div>
    </body>
 </html>

@@ -43,17 +43,17 @@
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
                <td><pre>Status of the dossier. The textdata contains the full name of the dossier status. It does not need to be sent when importing a dossier, but a DossierStatusCode attribute code ought to be sent, so that the dossier will habe a corrent status. Example values for a Dossier Status are
-                    OK
-                    OFF - Offer
-                    HOLD - On Hold
-                    OP - Option
-                    RQ - Request
-                    XX - Cancellation
-                    VORRES - Pre booking
-                    If a dossier is sent from Agent Online, other states are possible:
-                    OKINV - Dossier OK and ready for invoice printing
-                    OKINVP - Dossier OK and has been printed
-                    XXINVP - Dossier cancelled and the cancelled dossier has been printed</pre></td>
+OK
+OFF - Offer
+HOLD - On Hold
+OP - Option
+RQ - Request
+XX - Cancellation
+VORRES - Pre booking
+If a dossier is sent from Agent Online, other states are possible:
+OKINV - Dossier OK and ready for invoice printing
+OKINVP - Dossier OK and has been printed
+XXINVP - Dossier cancelled and the cancelled dossier has been printed</pre></td>
             </tr>
          </tbody>
       </table>
@@ -80,29 +80,17 @@
 &lt;xs:element name="DossierStatus" minOccurs="0"&gt;
   &lt;xs:annotation&gt;
     &lt;xs:documentation&gt;Status of the dossier. The textdata contains the full name of the dossier status. It does not need to be sent when importing a dossier, but a DossierStatusCode attribute code ought to be sent, so that the dossier will habe a corrent status. Example values for a Dossier Status are
-
                     OK
-
                     OFF - Offer
-
                     HOLD - On Hold
-
                     OP - Option
-
                     RQ - Request
-
                     XX - Cancellation
-
                     VORRES - Pre booking
-
                     If a dossier is sent from Agent Online, other states are possible:
-
                     OKINV - Dossier OK and ready for invoice printing
-
                     OKINVP - Dossier OK and has been printed
-
                     XXINVP - Dossier cancelled and the cancelled dossier has been printed
-
                   &lt;/xs:documentation&gt;
   &lt;/xs:annotation&gt;
   &lt;xs:complexType&gt;
@@ -111,27 +99,16 @@
         &lt;xs:attribute name="DossierStatusCode" use="required"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;OK
-
                             OFF - Offer
-
                             HOLD - On Hold
-
                             OP - Option
-
                             RQ - Request
-
                             XX - Cancellation
-
                             VORRES - Pre booking
-
                             If a dossier is sent from Agent Online, other states are possible:
-
                             OKINV - Dossier OK and ready for invoice printing
-
                             OKINVP - Dossier OK and has been printed
-
                             XXINVP - Dossier cancelled and the cancelled dossier has been printed
-
                           &lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:simpleType&gt;
@@ -175,6 +152,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema Doc Gen</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.3.4172</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema Doc Gen</a></div>
    </body>
 </html>

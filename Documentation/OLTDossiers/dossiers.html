@@ -180,29 +180,17 @@
             &lt;xs:element name="DossierStatus" minOccurs="0"&gt;
               &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;Status of the dossier. The textdata contains the full name of the dossier status. It does not need to be sent when importing a dossier, but a DossierStatusCode attribute code ought to be sent, so that the dossier will habe a corrent status. Example values for a Dossier Status are
-
                     OK
-
                     OFF - Offer
-
                     HOLD - On Hold
-
                     OP - Option
-
                     RQ - Request
-
                     XX - Cancellation
-
                     VORRES - Pre booking
-
                     If a dossier is sent from Agent Online, other states are possible:
-
                     OKINV - Dossier OK and ready for invoice printing
-
                     OKINVP - Dossier OK and has been printed
-
                     XXINVP - Dossier cancelled and the cancelled dossier has been printed
-
                   &lt;/xs:documentation&gt;
               &lt;/xs:annotation&gt;
               &lt;xs:complexType&gt;
@@ -211,27 +199,16 @@
                     &lt;xs:attribute name="DossierStatusCode" use="required"&gt;
                       &lt;xs:annotation&gt;
                         &lt;xs:documentation&gt;OK
-
                             OFF - Offer
-
                             HOLD - On Hold
-
                             OP - Option
-
                             RQ - Request
-
                             XX - Cancellation
-
                             VORRES - Pre booking
-
                             If a dossier is sent from Agent Online, other states are possible:
-
                             OKINV - Dossier OK and ready for invoice printing
-
                             OKINVP - Dossier OK and has been printed
-
                             XXINVP - Dossier cancelled and the cancelled dossier has been printed
-
                           &lt;/xs:documentation&gt;
                       &lt;/xs:annotation&gt;
                       &lt;xs:simpleType&gt;
@@ -336,21 +313,13 @@
             &lt;xs:element name="AdditionalReference1" minOccurs="0"&gt;
               &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;A dossier can be assigned codes that reference information provided by the customer:
-
                     PK - Employee ID
-
                     DS - Dept Code
-
                     KS- Cost Account
-
                     PR - Project no
-
                     IK - Account no
-
                     AU - Order no
-
                     A dossier can have more than one customer relevant reference code. As this information is specific to the customer Agent Online supplies 4 free text fields into which the relevant information can be written. The customer profile defines which fields in the dossier contain which data.
-
                   &lt;/xs:documentation&gt;
               &lt;/xs:annotation&gt;
               &lt;xs:complexType&gt;
@@ -376,21 +345,13 @@
             &lt;xs:element name="AdditionalReference2" minOccurs="0"&gt;
               &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;A dossier can be assigned codes that reference information provided by the customer:
-
                     PK - Employee ID
-
                     DS - Dept Code
-
                     KS- Cost Account
-
                     PR - Project no
-
                     IK - Account no
-
                     AU - Order no
-
                     A dossier can have more than one customer relevant reference code. As this information is specific to the customer Agent Online supplies 4 free text fields into which the relevant information can be written. The customer profile defines which fields in the dossier contain which data.
-
                   &lt;/xs:documentation&gt;
               &lt;/xs:annotation&gt;
               &lt;xs:complexType&gt;
@@ -416,21 +377,13 @@
             &lt;xs:element name="AdditionalReference3" minOccurs="0"&gt;
               &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;A dossier can be assigned codes that reference information provided by the customer:
-
                     PK - Employee ID
-
                     DS - Dept Code
-
                     KS- Cost Account
-
                     PR - Project no
-
                     IK - Account no
-
                     AU - Order no
-
                     A dossier can have more than one customer relevant reference code. As this information is specific to the customer Agent Online supplies 4 free text fields into which the relevant information can be written. The customer profile defines which fields in the dossier contain which data.
-
                   &lt;/xs:documentation&gt;
               &lt;/xs:annotation&gt;
               &lt;xs:complexType&gt;
@@ -456,21 +409,13 @@
             &lt;xs:element name="AdditionalReference4" minOccurs="0"&gt;
               &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;A dossier can be assigned codes that reference information provided by the customer:
-
                     PK - Employee ID
-
                     DS - Dept Code
-
                     KS- Cost Account
-
                     PR - Project no
-
                     IK - Account no
-
                     AU - Order no
-
                     A dossier can have more than one customer relevant reference code. As this information is specific to the customer Agent Online supplies 4 free text fields into which the relevant information can be written. The customer profile defines which fields in the dossier contain which data.
-
                   &lt;/xs:documentation&gt;
               &lt;/xs:annotation&gt;
               &lt;xs:complexType&gt;
@@ -555,19 +500,12 @@
           &lt;xs:attribute name="Type" use="required"&gt;
             &lt;xs:annotation&gt;
               &lt;xs:documentation&gt;Type of service that is asked for:
-
                   IMPORT = Import a DossierIMPORT
-
                   BOOK = Booking
-
                   DISPLAY = Display
-
                   MODIFY = Modify
-
                   DELETE = Delete
-
                   NOTE = Notes
-
                 &lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
             &lt;xs:simpleType&gt;
@@ -586,73 +524,39 @@
           &lt;xs:attribute name="SubType" use="required"&gt;
             &lt;xs:annotation&gt;
               &lt;xs:documentation&gt;SubType of service that is asked for.
-
                   For a normal dossier import this values can be sent as empty.
-
                   Possible values:
-
                   T = Transport Availability
-
                   L = Availability of scheduled flights
-
                   H = Hotel-Availability
-
                   E = Extra-Services
-
                   V = Insurance
-
                   I = Booking-Information
-
                   C = Car
-
                   A = Land-Service (Hotel/Car)
-
                   R = Roundtrip
-
                   S = Other Land-Services
-
                   U = Cruise
-
                   CI = Touroperator-News
-
                   PI = Service-Info
-
                   Z = Additional Data
-
                   SEATMAP = Seat Reservation
-
                   PS = Package Selection
-
                   P = Package
-
                   DETAIL = Details, which are displayed on the Client (BOOK only)
-
                   PRICE = Price of a booking (BOOK only) OR Price Request of a Modification (DISPLAY only) OR Price Request of a Cancellation (DELETE only)
-
                   CHECK = Check Price and Availability
-
                   OPTION = Option Booking. Booking Status = OP TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
-
                   OR Completion of a Modification. Booking Status = OP. TO reacts with ?MODIFY FINAL? or with compulsory information. (MODIFY only)
-
                   PREBOOK = Prebooking. TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
-
                   FIX = Fixed Booking. Booking Status = OK. TO reacts with ?BOOK FINAL? or with compulsory information. (BOOK only)
-
                   OR Completion of a Modification. Booking Status = OK TO reacts with ?MODIFY FINAL? or with compulsory information. (MODIFY only)
-
                   OR Confirmation of the Cancellation (DELETE only)
-
                   DISPLAY = Display of a booking, which can?t be altered. (DISPLAY only)
-
                   MODIFY = Display of a booking for modification. (DISPLAY only)
-
                   DELETE = Display of a booking for cancellation (DISPLAY only)
-
                   SEND = Notes sent from CETS to TO (NOTE only)
-
                   DISP = Notes sent from TO to CETS NOTE only)
-
                 &lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
             &lt;xs:simpleType&gt;
@@ -705,9 +609,7 @@
           &lt;xs:attribute name="Confirm" use="optional"&gt;
             &lt;xs:annotation&gt;
               &lt;xs:documentation&gt;Values: YES, NO CETS set this attribute to ?YES?, if the Agent confirmed compulsory information (TextC elements in Fab) (Refer to booking process)
-
                   For a normal dossier import this value can be ignored.
-
                 &lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
             &lt;xs:simpleType&gt;
@@ -720,9 +622,7 @@
           &lt;xs:attribute name="Agent" type="xs:string" use="optional"&gt;
             &lt;xs:annotation&gt;
               &lt;xs:documentation&gt;Country-code (2digits)+TraviId (4digits) (refer to table Country-code)
-
                   If this is a swiss customer, the first two country code digits do not need to be sent.
-
                 &lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
           &lt;/xs:attribute&gt;
@@ -851,6 +751,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Schema-Editor.aspx">Xml Schema Editor</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.3.4172</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Schema-Editor.aspx">Xml Schema Editor</a></div>
    </body>
 </html>

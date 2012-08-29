@@ -125,7 +125,19 @@
         &lt;/xs:element&gt;
         &lt;xs:element name="ApiBookingNr" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;If this is an external API booking, the effective bookng number is displayed here. Note, this must also be sent in the HotelItem, or CarItem, but there are some cases where the values can differ.&lt;/xs:documentation&gt;
+            &lt;xs:documentation&gt;If this is an external API booking, the effective booking number is displayed here. Note, this must also be sent in the HotelItem, or CarItem, but there are some cases where the values can differ.&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="ApiSubSystem" type="xs:string" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If this is an external API booking, the API subsystem, if the supplier has more than one system in the background in which a booking can be made, and the ApiBookingNr is therefore not necessarily unique. Davinci has this type of architecture.
+LHL_APISUBSYSTEM&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="ApiClient" type="xs:string" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If this is an external API booking, the API client in our data center over which the booking was made. A cancellation must be made over the same connection as the original booking.
+LHL_APICLIENT&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
         &lt;xs:element name="GdsSource" minOccurs="0"&gt;
@@ -285,7 +297,13 @@
         &lt;/xs:element&gt;
         &lt;xs:element name="SourceDossierSeq" type="xs:string" minOccurs="0"&gt;
           &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Referenze to an existing Dossier&lt;/xs:documentation&gt;
+            &lt;xs:documentation&gt;Reference to an existing Dossier&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="ItemNotOnInvoice" type="xs:boolean" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If true, set the 'not-on-invoice' flag for this item in the dossier. The item will not be printed on the invoice. The debit information will also not be transferred to the bookkeeping interface.
+LHL_NOINV&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
         &lt;xs:choice&gt;
@@ -585,7 +603,7 @@
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label" colspan="2"><img id="Element" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Element's:</b></td>
+               <td class="label" colspan="2"><img id="Element" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Elements:</b></td>
             </tr>
             <tr id="Element_body_id">
                <td width="120px;"></td>
@@ -598,6 +616,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio Designer Edition 9.1.11.3570</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema Doc Gen</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.3.4172</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema Doc Gen</a></div>
    </body>
 </html>
