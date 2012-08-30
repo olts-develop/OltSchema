@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.3.4172 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <!--xs:include schemaLocation="..\Fifa\Projects.xsd" /-->
   <xs:include schemaLocation=".\Flight.xsd" />
@@ -88,7 +88,7 @@
         </xs:element>
         <xs:element name="ExternalSource" type="xs:string" minOccurs="0">
           <xs:annotation>
-            <xs:documentation>Source of the dossier item, e.g. MOBS, FIFA, DYNAP etc.</xs:documentation>
+            <xs:documentation>Source of the dossier item, e.g. MOBS, FIFA, DYNAPACK, OTFONLY, OTHONLY, VOEGELE, TUIINC etc.</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="ExternalDossierNr" type="xs:string" minOccurs="0">
@@ -277,6 +277,11 @@ LHL_APICLIENT</xs:documentation>
           <xs:annotation>
             <xs:documentation>If true, set the 'not-on-invoice' flag for this item in the dossier. The item will not be printed on the invoice. The debit information will also not be transferred to the bookkeeping interface.
 LHL_NOINV</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ExternalItemNr" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Unique external reference to to this DossierItem</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:choice>
@@ -512,11 +517,6 @@ LHL_NOINV</xs:documentation>
               <xs:element ref="CancellationFee" maxOccurs="unbounded" />
             </xs:sequence>
           </xs:complexType>
-        </xs:element>
-        <xs:element name="ExternalItemNr" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Unique external reference to to this DossierItem</xs:documentation>
-          </xs:annotation>
         </xs:element>
       </xs:sequence>
       <xs:attribute name="DossierItemSeq" type="xs:string" use="optional">
