@@ -143,6 +143,11 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
+         <xs:element name="ExternalItemNr" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Unique external reference to to this DossierItem</xs:documentation>
+          </xs:annotation>
+        </xs:element>
       </xs:all>
       <xs:attribute name="InternalPriceType" type="InternalPriceType" use="optional" />
     </xs:complexType>
