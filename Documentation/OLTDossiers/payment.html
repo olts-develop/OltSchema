@@ -46,8 +46,10 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="221,300,369,327" href="orderid.html" alt="Drilldown into OrderId"></area>
-                     <area shape="rect" coords="221,267,386,294" href="paymentid.html" alt="Drilldown into PaymentId"></area>
+                     <area shape="rect" coords="221,366,412,393" href="externalitemnr1.html" alt="Drilldown into ExternalItemNr"></area>
+                     <area shape="rect" coords="221,333,410,360" href="externalsource2.html" alt="Drilldown into ExternalSource"></area>
+                     <area shape="rect" coords="221,300,490,327" href="creditcardauthorizationcode.html" alt="Drilldown into CreditCardAuthorizationCode"></area>
+                     <area shape="rect" coords="221,267,482,294" href="creditcardpaymentprovider.html" alt="Drilldown into CreditCardPaymentProvider"></area>
                      <area shape="rect" coords="221,234,397,261" href="saferpayurl.html" alt="Drilldown into SaferPayURL"></area>
                      <area shape="rect" coords="221,201,392,228" href="prepayment.html" alt="Drilldown into PrePayment"></area>
                      <area shape="rect" coords="221,168,383,195" href="accountnr.html" alt="Drilldown into AccountNr"></area>
@@ -86,15 +88,49 @@
       &lt;xs:element name="AccountNr" type="xs:string" minOccurs="0" /&gt;
       &lt;xs:element name="PrePayment" type="xs:boolean" minOccurs="0" /&gt;
       &lt;xs:element name="SaferPayURL" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="PaymentId" type="xs:string" minOccurs="0"&gt;
+      &lt;xs:element name="CreditCardPaymentProvider" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;The internal Id from the payment Application&lt;/xs:documentation&gt;
+          &lt;xs:documentation&gt;
+Payment Provider
+1 = DATATRANS, 
+2 = SAFERPAY&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:integer"&gt;
+            &lt;xs:enumeration value="1" /&gt;
+            &lt;xs:enumeration value="2" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
       &lt;/xs:element&gt;
-      &lt;xs:element name="OrderId" type="xs:string" minOccurs="0"&gt;
+      &lt;xs:element name="CreditCardAuthorizationCode" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;The internal Id from the sending Application&lt;/xs:documentation&gt;
+          &lt;xs:documentation&gt;Authorization code sent by the credit card payment provider&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:maxLength value="80" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="ExternalSource" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Source of the dossier item, e.g. MOBS, FIFA, DYNAPACK, OTFONLY, OTHONLY, VOEGELE, TUIINC etc.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:maxLength value="20" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="ExternalItemNr" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Unique external id for this payment in the external system. Allows the backoffice to recognise resent payments.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:maxLength value="80" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
       &lt;/xs:element&gt;
     &lt;/xs:all&gt;
   &lt;/xs:complexType&gt;
@@ -166,14 +202,26 @@
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
-                        <td class="first">PaymentId</td>
-                        <td><a href="paymentid.html">PaymentId</a></td>
+                        <td class="first">CreditCardPaymentProvider</td>
+                        <td><a href="creditcardpaymentprovider.html">CreditCardPaymentProvider</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
-                        <td class="first">OrderId</td>
-                        <td><a href="orderid.html">OrderId</a></td>
+                        <td class="first">CreditCardAuthorizationCode</td>
+                        <td><a href="creditcardauthorizationcode.html">CreditCardAuthorizationCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ExternalSource</td>
+                        <td><a href="externalsource2.html">ExternalSource</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ExternalItemNr</td>
+                        <td><a href="externalitemnr1.html">ExternalItemNr</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

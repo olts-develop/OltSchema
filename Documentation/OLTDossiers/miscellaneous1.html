@@ -38,19 +38,20 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="163,696,328,723" href="language5.html" alt="Drilldown into Language"></area>
-                     <area shape="rect" coords="228,663,395,690" href="productitemprices3.html" alt="Drilldown into ProductItemPrices"></area>
-                     <area shape="rect" coords="228,630,414,657" href="maximumdays.html" alt="Drilldown into MaximumDays"></area>
-                     <area shape="rect" coords="228,597,411,624" href="minimumdays.html" alt="Drilldown into MinimumDays"></area>
-                     <area shape="rect" coords="228,564,431,591" href="maximumpersons.html" alt="Drilldown into MaximumPersons"></area>
-                     <area shape="rect" coords="228,531,428,558" href="minimumpersons.html" alt="Drilldown into MinimumPersons"></area>
-                     <area shape="rect" coords="228,498,399,525" href="commission.html" alt="Drilldown into Commission"></area>
-                     <area shape="rect" coords="228,465,392,492" href="subregion3.html" alt="Drilldown into SubRegion"></area>
-                     <area shape="rect" coords="228,432,376,459" href="region3.html" alt="Drilldown into Region"></area>
-                     <area shape="rect" coords="228,399,392,426" href="country5.html" alt="Drilldown into Country"></area>
-                     <area shape="rect" coords="228,366,469,393" href="vouchersupplier1.html" alt="Drilldown into VoucherSupplier"></area>
-                     <area shape="rect" coords="228,333,458,360" href="billingsupplier1.html" alt="Drilldown into BillingSupplier"></area>
-                     <area shape="rect" coords="228,300,434,327" href="confirmationnr3.html" alt="Drilldown into ConfirmationNr"></area>
+                     <area shape="rect" coords="163,729,328,756" href="language5.html" alt="Drilldown into Language"></area>
+                     <area shape="rect" coords="228,696,395,723" href="productitemprices3.html" alt="Drilldown into ProductItemPrices"></area>
+                     <area shape="rect" coords="228,663,414,690" href="maximumdays.html" alt="Drilldown into MaximumDays"></area>
+                     <area shape="rect" coords="228,630,411,657" href="minimumdays.html" alt="Drilldown into MinimumDays"></area>
+                     <area shape="rect" coords="228,597,431,624" href="maximumpersons.html" alt="Drilldown into MaximumPersons"></area>
+                     <area shape="rect" coords="228,564,428,591" href="minimumpersons.html" alt="Drilldown into MinimumPersons"></area>
+                     <area shape="rect" coords="228,531,399,558" href="commission.html" alt="Drilldown into Commission"></area>
+                     <area shape="rect" coords="228,498,392,525" href="subregion3.html" alt="Drilldown into SubRegion"></area>
+                     <area shape="rect" coords="228,465,376,492" href="region3.html" alt="Drilldown into Region"></area>
+                     <area shape="rect" coords="228,432,392,459" href="country5.html" alt="Drilldown into Country"></area>
+                     <area shape="rect" coords="228,399,469,426" href="vouchersupplier1.html" alt="Drilldown into VoucherSupplier"></area>
+                     <area shape="rect" coords="228,366,458,393" href="billingsupplier1.html" alt="Drilldown into BillingSupplier"></area>
+                     <area shape="rect" coords="228,333,434,360" href="confirmationnr3.html" alt="Drilldown into ConfirmationNr"></area>
+                     <area shape="rect" coords="228,300,424,327" href="flightnumber1.html" alt="Drilldown into FlightNumber"></area>
                      <area shape="rect" coords="228,267,406,294" href="departure3.html" alt="Drilldown into Departure"></area>
                      <area shape="rect" coords="228,234,394,261" href="arrival3.html" alt="Drilldown into Arrival"></area>
                      <area shape="rect" coords="228,201,401,228" href="supplierinfo.html" alt="Drilldown into SupplierInfo"></area>
@@ -107,6 +108,15 @@
         &lt;xs:complexType&gt;
           &lt;xs:attribute name="Time" type="xs:time" /&gt;
           &lt;xs:attribute name="Description" type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="FlightNumber" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:simpleContent&gt;
+            &lt;xs:extension base="xs:string"&gt;
+              &lt;xs:attribute name="ConfirmedBy" type="xs:string" /&gt;
+            &lt;/xs:extension&gt;
+          &lt;/xs:simpleContent&gt;
         &lt;/xs:complexType&gt;
       &lt;/xs:element&gt;
       &lt;xs:element name="ConfirmationNr" minOccurs="0"&gt;
@@ -259,6 +269,12 @@
                      <tr>
                         <td class="first">Departure</td>
                         <td><a href="departure3.html">Departure</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">FlightNumber</td>
+                        <td><a href="flightnumber1.html">FlightNumber</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

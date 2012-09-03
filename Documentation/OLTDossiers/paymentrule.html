@@ -1,0 +1,204 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType PaymentRule in OLTDossiers</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Element', 'paymentrule');
+                    </script><div class="pageheader">
+         Documentation for OLTDossiers
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>PaymentRule</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="dossiers_xsd.html">Dossiers.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>MinOccurs</b></td>
+               <td>0</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>MaxOccurs</b></td>
+               <td>(1)</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td>False</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Documentation:</b></td>
+               <td><pre>A dossier can be assigned codes that reference information provided by the customer:
+PK - Employee ID
+DS - Dept Code
+KS- Cost Account
+PR - Project no
+IK - Account no
+AU - Order no
+A dossier can have more than one customer relevant reference code. As this information is specific to the customer Agent Online supplies 4 free text fields into which the relevant information can be written. The customer profile defines which fields in the dossier contain which data.</pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="242,234,465,261" href="restpaymentamount.html" alt="Drilldown into RestPaymentAmount"></area>
+                     <area shape="rect" coords="242,201,447,228" href="restpaymentdate.html" alt="Drilldown into RestPaymentDate"></area>
+                     <area shape="rect" coords="242,168,458,195" href="prepaymentamount.html" alt="Drilldown into PrePaymentAmount"></area>
+                     <area shape="rect" coords="242,135,440,162" href="prepaymentdate.html" alt="Drilldown into PrePaymentDate"></area>
+                     <area shape="rect" coords="242,102,517,129" href="prepaymentamountperperson.html" alt="Drilldown into PrePaymentAmountPerPerson"></area>
+                     <area shape="rect" coords="242,69,472,96" href="prepaymentnrpersons.html" alt="Drilldown into PrePaymentNrPersons"></area>
+                     <area shape="rect" coords="242,36,481,63" href="nrdaysbeforedeparture.html" alt="Drilldown into NrDaysBeforeDeparture"></area>
+                     <area shape="rect" coords="242,3,442,30" href="nrdaysafterprint.html" alt="Drilldown into NrDaysAfterPrint"></area></map><img src="images/paymentrule.png" border="0" alt="XSD Diagram of PaymentRule" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:element name="PaymentRule" minOccurs="0"&gt;
+  &lt;xs:annotation&gt;
+    &lt;xs:documentation&gt;A dossier can be assigned codes that reference information provided by the customer:
+                    PK - Employee ID
+                    DS - Dept Code
+                    KS- Cost Account
+                    PR - Project no
+                    IK - Account no
+                    AU - Order no
+                    A dossier can have more than one customer relevant reference code. As this information is specific to the customer Agent Online supplies 4 free text fields into which the relevant information can be written. The customer profile defines which fields in the dossier contain which data.
+                  &lt;/xs:documentation&gt;
+  &lt;/xs:annotation&gt;
+  &lt;xs:complexType&gt;
+    &lt;xs:attribute name="NrDaysAfterPrint" type="xs:integer"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;HA_NACHRG - relevant for pre payment. The number of days after the printing of the invoice where the &lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="NrDaysBeforeDeparture" type="xs:integer" /&gt;
+    &lt;xs:attribute name="PrePaymentNrPersons" type="xs:integer"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;HA_ANZAHLPERSONEN&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="PrePaymentAmountPerPerson" type="xs:decimal"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;HA_ANZAHLUNGSBETRAG&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="PrePaymentDate" type="xs:date"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;HA_AZDATUMFAELLIG&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="PrePaymentAmount" type="xs:decimal"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;HA_AZFAELLIG&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="RestPaymentDate" type="xs:date"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;HA_RZDATUMFAELLIG, HA_FIXZAHLDAT&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="RestPaymentAmount" type="xs:decimal"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;HA_RZFAELLIG&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+  &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">NrDaysAfterPrint</td>
+                        <td><a href="nrdaysafterprint.html">NrDaysAfterPrint</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">NrDaysBeforeDeparture</td>
+                        <td><a href="nrdaysbeforedeparture.html">NrDaysBeforeDeparture</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PrePaymentNrPersons</td>
+                        <td><a href="prepaymentnrpersons.html">PrePaymentNrPersons</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PrePaymentAmountPerPerson</td>
+                        <td><a href="prepaymentamountperperson.html">PrePaymentAmountPerPerson</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PrePaymentDate</td>
+                        <td><a href="prepaymentdate.html">PrePaymentDate</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PrePaymentAmount</td>
+                        <td><a href="prepaymentamount.html">PrePaymentAmount</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">RestPaymentDate</td>
+                        <td><a href="restpaymentdate.html">RestPaymentDate</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">RestPaymentAmount</td>
+                        <td><a href="restpaymentamount.html">RestPaymentAmount</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.3.4172</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+   </body>
+</html>

@@ -38,25 +38,26 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="153,1290,309,1317" href="viewonly3.html" alt="Drilldown into ViewOnly"></area>
-                     <area shape="rect" coords="153,1257,364,1284" href="allowprojectsentry.html" alt="Drilldown into AllowProjectsEntry"></area>
-                     <area shape="rect" coords="153,1224,322,1251" href="consolidate.html" alt="Drilldown into Consolidate"></area>
-                     <area shape="rect" coords="153,1191,301,1218" href="type7.html" alt="Drilldown into Type"></area>
-                     <area shape="rect" coords="153,1158,301,1185" href="position.html" alt="Drilldown into Position"></area>
-                     <area shape="rect" coords="153,1125,375,1152" href="basedataproductseq.html" alt="Drilldown into BaseDataProductSeq"></area>
-                     <area shape="rect" coords="153,1092,346,1119" href="dossieritemseq.html" alt="Drilldown into DossierItemSeq"></area>
-                     <area shape="rect" coords="218,1059,374,1086" href="cancellationfees.html" alt="Drilldown into CancellationFees"></area>
-                     <area shape="rect" coords="218,1026,365,1053" href="purchaseprices.html" alt="Drilldown into PurchasePrices"></area>
-                     <area shape="rect" coords="218,993,340,1020" href="itemprices.html" alt="Drilldown into ItemPrices"></area>
-                     <area shape="rect" coords="260,960,368,987" href="package.html" alt="Drilldown into Package"></area>
-                     <area shape="rect" coords="260,927,424,954" href="text.html" alt="Drilldown into Text"></area>
-                     <area shape="rect" coords="260,894,424,921" href="ship.html" alt="Drilldown into Ship"></area>
-                     <area shape="rect" coords="260,861,424,888" href="train.html" alt="Drilldown into Train"></area>
-                     <area shape="rect" coords="260,828,424,855" href="bus.html" alt="Drilldown into Bus"></area>
-                     <area shape="rect" coords="260,795,458,822" href="miscellaneous1.html" alt="Drilldown into Miscellaneous"></area>
-                     <area shape="rect" coords="260,762,424,789" href="hotel.html" alt="Drilldown into Hotel"></area>
-                     <area shape="rect" coords="260,729,424,756" href="car.html" alt="Drilldown into Car"></area>
-                     <area shape="rect" coords="260,696,424,723" href="flight1.html" alt="Drilldown into Flight"></area>
+                     <area shape="rect" coords="153,1323,309,1350" href="viewonly3.html" alt="Drilldown into ViewOnly"></area>
+                     <area shape="rect" coords="153,1290,364,1317" href="allowprojectsentry.html" alt="Drilldown into AllowProjectsEntry"></area>
+                     <area shape="rect" coords="153,1257,322,1284" href="consolidate.html" alt="Drilldown into Consolidate"></area>
+                     <area shape="rect" coords="153,1224,301,1251" href="type7.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="153,1191,301,1218" href="position.html" alt="Drilldown into Position"></area>
+                     <area shape="rect" coords="153,1158,375,1185" href="basedataproductseq.html" alt="Drilldown into BaseDataProductSeq"></area>
+                     <area shape="rect" coords="153,1125,346,1152" href="dossieritemseq.html" alt="Drilldown into DossierItemSeq"></area>
+                     <area shape="rect" coords="218,1092,374,1119" href="cancellationfees.html" alt="Drilldown into CancellationFees"></area>
+                     <area shape="rect" coords="218,1059,365,1086" href="purchaseprices.html" alt="Drilldown into PurchasePrices"></area>
+                     <area shape="rect" coords="218,1026,340,1053" href="itemprices.html" alt="Drilldown into ItemPrices"></area>
+                     <area shape="rect" coords="260,993,368,1020" href="package.html" alt="Drilldown into Package"></area>
+                     <area shape="rect" coords="260,960,424,987" href="text.html" alt="Drilldown into Text"></area>
+                     <area shape="rect" coords="260,927,424,954" href="ship.html" alt="Drilldown into Ship"></area>
+                     <area shape="rect" coords="260,894,424,921" href="train.html" alt="Drilldown into Train"></area>
+                     <area shape="rect" coords="260,861,424,888" href="bus.html" alt="Drilldown into Bus"></area>
+                     <area shape="rect" coords="260,828,458,855" href="miscellaneous1.html" alt="Drilldown into Miscellaneous"></area>
+                     <area shape="rect" coords="260,795,424,822" href="hotel.html" alt="Drilldown into Hotel"></area>
+                     <area shape="rect" coords="260,762,424,789" href="car.html" alt="Drilldown into Car"></area>
+                     <area shape="rect" coords="260,729,424,756" href="flight1.html" alt="Drilldown into Flight"></area>
+                     <area shape="rect" coords="218,696,409,723" href="externalitemnr.html" alt="Drilldown into ExternalItemNr"></area>
                      <area shape="rect" coords="218,663,427,690" href="itemnotoninvoice.html" alt="Drilldown into ItemNotOnInvoice"></area>
                      <area shape="rect" coords="218,630,423,657" href="sourcedossierseq1.html" alt="Drilldown into SourceDossierSeq"></area>
                      <area shape="rect" coords="218,597,334,624" href="travellers2.html" alt="Drilldown into Travellers"></area>
@@ -157,10 +158,23 @@
           &lt;/xs:restriction&gt;
         &lt;/xs:simpleType&gt;
       &lt;/xs:element&gt;
-      &lt;xs:element name="ExternalSource" type="xs:string" minOccurs="0"&gt;
+      &lt;xs:element name="ExternalSource" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Source of the dossier item, e.g. MOBS, FIFA, DYNAP etc.&lt;/xs:documentation&gt;
+          &lt;xs:documentation&gt;Source of the dossier item, e.g. MOBS, FIFA, DYNAPACK, OTFONLY, OTHONLY, VOEGELE, TUIINC etc.&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:enumeration value="DYNAP" /&gt;
+            &lt;xs:enumeration value="TOURO" /&gt;
+            &lt;xs:enumeration value="MOBS" /&gt;
+            &lt;xs:enumeration value="OTHONLY" /&gt;
+            &lt;xs:enumeration value="OTFONLY" /&gt;
+            &lt;xs:enumeration value="OLTZUG" /&gt;
+            &lt;xs:enumeration value="CHRTR" /&gt;
+            &lt;xs:enumeration value="VOEGELE" /&gt;
+            &lt;xs:enumeration value="TUIINC" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
       &lt;/xs:element&gt;
       &lt;xs:element name="ExternalDossierNr" type="xs:string" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
@@ -348,6 +362,11 @@ LHL_APICLIENT&lt;/xs:documentation&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;If true, set the 'not-on-invoice' flag for this item in the dossier. The item will not be printed on the invoice. The debit information will also not be transferred to the bookkeeping interface.
 LHL_NOINV&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="ExternalItemNr" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Unique external reference to to this DossierItem&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
       &lt;xs:choice&gt;
@@ -780,6 +799,12 @@ LHL_NOINV&lt;/xs:documentation&gt;
                      <tr>
                         <td class="first">ItemNotOnInvoice</td>
                         <td><a href="itemnotoninvoice.html">ItemNotOnInvoice</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ExternalItemNr</td>
+                        <td><a href="externalitemnr.html">ExternalItemNr</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

@@ -26,7 +26,7 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>
-&lt;!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)--&gt;
+&lt;!--Created with Liquid XML Studio 2012 Designer Edition 10.1.3.4172 (http://www.liquid-technologies.com)--&gt;
 &lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;xs:element name="Payments"&gt;
     &lt;xs:complexType&gt;
@@ -50,15 +50,49 @@
               &lt;xs:element name="AccountNr" type="xs:string" minOccurs="0" /&gt;
               &lt;xs:element name="PrePayment" type="xs:boolean" minOccurs="0" /&gt;
               &lt;xs:element name="SaferPayURL" type="xs:string" minOccurs="0" /&gt;
-              &lt;xs:element name="PaymentId" type="xs:string" minOccurs="0"&gt;
+              &lt;xs:element name="CreditCardPaymentProvider" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
-                  &lt;xs:documentation&gt;The internal Id from the payment Application&lt;/xs:documentation&gt;
+                  &lt;xs:documentation&gt;
+Payment Provider
+1 = DATATRANS, 
+2 = SAFERPAY&lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:integer"&gt;
+                    &lt;xs:enumeration value="1" /&gt;
+                    &lt;xs:enumeration value="2" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
               &lt;/xs:element&gt;
-              &lt;xs:element name="OrderId" type="xs:string" minOccurs="0"&gt;
+              &lt;xs:element name="CreditCardAuthorizationCode" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
-                  &lt;xs:documentation&gt;The internal Id from the sending Application&lt;/xs:documentation&gt;
+                  &lt;xs:documentation&gt;Authorization code sent by the credit card payment provider&lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="80" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+              &lt;/xs:element&gt;
+              &lt;xs:element name="ExternalSource" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                  &lt;xs:documentation&gt;Source of the dossier item, e.g. MOBS, FIFA, DYNAPACK, OTFONLY, OTHONLY, VOEGELE, TUIINC etc.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="20" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+              &lt;/xs:element&gt;
+              &lt;xs:element name="ExternalItemNr" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                  &lt;xs:documentation&gt;Unique external id for this payment in the external system. Allows the backoffice to recognise resent payments.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                  &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:maxLength value="80" /&gt;
+                  &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
               &lt;/xs:element&gt;
             &lt;/xs:all&gt;
           &lt;/xs:complexType&gt;
@@ -66,8 +100,7 @@
       &lt;/xs:sequence&gt;
     &lt;/xs:complexType&gt;
   &lt;/xs:element&gt;
-&lt;/xs:schema&gt;
-</code></pre></td>
+&lt;/xs:schema&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>

@@ -170,6 +170,11 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
+         &lt;xs:element name="ExternalItemNr" type="xs:string" minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Unique external reference to to this DossierItem&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
       &lt;/xs:all&gt;
       &lt;xs:attribute name="InternalPriceType" type="InternalPriceType" use="optional" /&gt;
     &lt;/xs:complexType&gt;

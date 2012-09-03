@@ -42,7 +42,8 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="164,597,424,624" href="internalpricetype3.html" alt="Drilldown into InternalPriceType"></area>
+                     <area shape="rect" coords="164,630,424,657" href="internalpricetype3.html" alt="Drilldown into InternalPriceType"></area>
+                     <area shape="rect" coords="229,597,420,624" href="externalitemnr2.html" alt="Drilldown into ExternalItemNr"></area>
                      <area shape="rect" coords="229,564,387,591" href="pricetype3.html" alt="Drilldown into PriceType"></area>
                      <area shape="rect" coords="229,531,406,558" href="priceposition1.html" alt="Drilldown into PricePosition"></area>
                      <area shape="rect" coords="229,498,382,525" href="airlinenr1.html" alt="Drilldown into AirlineNr"></area>
@@ -211,6 +212,11 @@
           &lt;/xs:restriction&gt;
         &lt;/xs:simpleType&gt;
       &lt;/xs:element&gt;
+      &lt;xs:element name="ExternalItemNr" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Unique external reference to to this DossierItem&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
     &lt;/xs:all&gt;
     &lt;xs:attribute name="InternalPriceType" type="InternalPriceType" use="optional" /&gt;
   &lt;/xs:complexType&gt;
@@ -338,6 +344,12 @@
                      <tr>
                         <td class="first">PriceType</td>
                         <td><a href="pricetype3.html">PriceType</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ExternalItemNr</td>
+                        <td><a href="externalitemnr2.html">ExternalItemNr</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
