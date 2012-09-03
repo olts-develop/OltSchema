@@ -23,15 +23,49 @@
               <xs:element name="AccountNr" type="xs:string" minOccurs="0" />
               <xs:element name="PrePayment" type="xs:boolean" minOccurs="0" />
               <xs:element name="SaferPayURL" type="xs:string" minOccurs="0" />
-              <xs:element name="ExternalSource" type="xs:string" minOccurs="0">
+              <xs:element name="CreditCardPaymentProvider" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+Payment Provider
+1 = DATATRANS, 
+2 = SAFERPAY</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreditCardAuthorizationCode" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Authorization code sent by the credit card payment provider</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExternalSource" minOccurs="0">
                 <xs:annotation>
                   <xs:documentation>Source of the dossier item, e.g. MOBS, FIFA, DYNAPACK, OTFONLY, OTHONLY, VOEGELE, TUIINC etc.</xs:documentation>
                 </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
               </xs:element>
-              <xs:element name="ExternalItemNr" type="xs:string" minOccurs="0">
+              <xs:element name="ExternalItemNr" minOccurs="0">
                 <xs:annotation>
                   <xs:documentation>Unique external id for this payment in the external system. Allows the backoffice to recognise resent payments.</xs:documentation>
                 </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
               </xs:element>
             </xs:all>
           </xs:complexType>
