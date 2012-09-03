@@ -124,6 +124,8 @@
                     <xs:enumeration value="OTFONLY" />
                     <xs:enumeration value="OLTZUG" />
                     <xs:enumeration value="CHRTR" />
+                    <xs:enumeration value="VOEGELE" />
+                    <xs:enumeration value="TUIINC" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -480,6 +482,7 @@
                   <xs:enumeration value="MOBS" />
                   <xs:enumeration value="OTHONLY" />
                   <xs:enumeration value="OTFONLY" />
+                  <xs:enumeration value="IOL" />
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
