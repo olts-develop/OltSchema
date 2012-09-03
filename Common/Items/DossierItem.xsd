@@ -86,10 +86,23 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="ExternalSource" type="xs:string" minOccurs="0">
+        <xs:element name="ExternalSource" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Source of the dossier item, e.g. MOBS, FIFA, DYNAPACK, OTFONLY, OTHONLY, VOEGELE, TUIINC etc.</xs:documentation>
           </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="DYNAP" />
+              <xs:enumeration value="TOURO" />
+              <xs:enumeration value="MOBS" />
+              <xs:enumeration value="OTHONLY" />
+              <xs:enumeration value="OTFONLY" />
+              <xs:enumeration value="OLTZUG" />
+              <xs:enumeration value="CHRTR" />
+              <xs:enumeration value="VOEGELE" />
+              <xs:enumeration value="TUIINC" />
+            </xs:restriction>
+          </xs:simpleType>
         </xs:element>
         <xs:element name="ExternalDossierNr" type="xs:string" minOccurs="0">
           <xs:annotation>
