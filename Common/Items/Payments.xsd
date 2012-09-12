@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.3.4172 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.5.4204 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="Payments">
     <xs:complexType>
@@ -7,7 +7,6 @@
         <xs:element name="Payment" maxOccurs="unbounded">
           <xs:complexType>
             <xs:all>
-              <xs:element name="UnitNr" type="xs:decimal" minOccurs="0" />
               <xs:element name="Amount" type="xs:decimal" />
               <xs:element name="PaymentDate" type="xs:dateTime" minOccurs="0" />
               <xs:element name="PaymentType" minOccurs="0">
