@@ -61,7 +61,7 @@
 &lt;xs:element name="VATSplits" minOccurs="0"&gt;
   &lt;xs:complexType&gt;
     &lt;xs:sequence&gt;
-      &lt;xs:element name="VATSplit" minOccurs="0"&gt;
+      &lt;xs:element name="VATSplit" maxOccurs="unbounded"&gt;
         &lt;xs:complexType&gt;
           &lt;xs:sequence&gt;
             &lt;xs:element name="Amount" type="xs:decimal" /&gt;
@@ -130,8 +130,8 @@
                      <tr>
                         <td class="first">VATSplit</td>
                         <td><a href="vatsplit.html">VATSplit</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
+                        <td class="mid">(1)</td>
+                        <td class="last">unbounded</td>
                      </tr>
                   </table>
                </td>
@@ -139,6 +139,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.3.4172</a><br></br>Featuring Sample <a href="http://www.liquid-technologies.com/XmlToXsd.aspx">XML Generator</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.5.4204</a><br></br>Featuring Sample <a href="http://www.liquid-technologies.com/XmlToXsd.aspx">XML Generator</a></div>
    </body>
 </html>

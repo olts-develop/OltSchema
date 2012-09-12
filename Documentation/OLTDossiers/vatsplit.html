@@ -26,11 +26,11 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MinOccurs</b></td>
-               <td>0</td>
+               <td>(1)</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MaxOccurs</b></td>
-               <td>(1)</td>
+               <td>unbounded</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
@@ -61,7 +61,7 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="VATSplit" minOccurs="0"&gt;
+&lt;xs:element name="VATSplit" maxOccurs="unbounded"&gt;
   &lt;xs:complexType&gt;
     &lt;xs:sequence&gt;
       &lt;xs:element name="Amount" type="xs:decimal" /&gt;
@@ -154,6 +154,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.3.4172</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.5.4204</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
    </body>
 </html>
