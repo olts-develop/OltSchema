@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.3.4172 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.5.4204 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation="..\GeneralCodes\InternalPriceType.xsd" />
   <xs:include schemaLocation="..\GeneralCodes\PriceTravellerType.xsd" />
@@ -18,7 +18,8 @@
         <xs:element name="DebiAccount" type="xs:string" minOccurs="0" />
         <xs:element name="PriceType" minOccurs="0">
           <xs:annotation>
-            <xs:documentation>Price type for this Priceline
+            <xs:documentation>
+              Price type for this Priceline
               0 = Default
               1 = Ticket
               2 = Tax
@@ -37,8 +38,9 @@
               15 = TUFIS - super commission relevant
               16 = St. No Insurance
               17 = Manual Price
-              20 = B2B2CFee
-            </xs:documentation>
+              18 = Profit Share
+              19 = OPC Optional Payment Charge (relevant for flight prices)
+              20 = B2B2CFee</xs:documentation>
           </xs:annotation>
           <xs:simpleType>
             <xs:restriction base="xs:integer">
