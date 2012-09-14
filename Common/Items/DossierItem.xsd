@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.3.4172 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.5.4204 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <!--xs:include schemaLocation="..\Fifa\Projects.xsd" /-->
   <xs:include schemaLocation=".\Flight.xsd" />
@@ -276,6 +276,12 @@ LHL_APICLIENT</xs:documentation>
                       <xs:documentation>Seatnumber for Segment5. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
+                  <xs:attribute name="OpcPrice" type="xs:decimal">
+                    <xs:annotation>
+                      <xs:documentation>Optional Payment Charge Amount</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="TicketIssueDate" type="xs:date" />
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
