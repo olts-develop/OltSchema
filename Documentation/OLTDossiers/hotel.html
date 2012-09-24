@@ -38,7 +38,8 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="194,1125,300,1152" href="rooms.html" alt="Drilldown into Rooms"></area>
+                     <area shape="rect" coords="194,1158,300,1185" href="rooms.html" alt="Drilldown into Rooms"></area>
+                     <area shape="rect" coords="194,1125,343,1152" href="infourl.html" alt="Drilldown into InfoURL"></area>
                      <area shape="rect" coords="194,1092,342,1119" href="vatnr.html" alt="Drilldown into VatNr"></area>
                      <area shape="rect" coords="194,1059,355,1086" href="payableto1.html" alt="Drilldown into PayableTo"></area>
                      <area shape="rect" coords="194,1026,435,1053" href="vouchersupplier.html" alt="Drilldown into VoucherSupplier"></area>
@@ -255,6 +256,7 @@
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
       &lt;xs:element name="VatNr" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="InfoURL" type="xs:string" minOccurs="0" /&gt;
       &lt;xs:element name="Rooms" minOccurs="0"&gt;
         &lt;xs:complexType&gt;
           &lt;xs:sequence&gt;
@@ -484,6 +486,12 @@
                      <tr>
                         <td class="first">VatNr</td>
                         <td><a href="vatnr.html">VatNr</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">InfoURL</td>
+                        <td><a href="infourl.html">InfoURL</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

@@ -46,6 +46,8 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="221,399,369,426" href="orderid.html" alt="Drilldown into OrderId"></area>
+                     <area shape="rect" coords="221,366,386,393" href="paymentid.html" alt="Drilldown into PaymentId"></area>
                      <area shape="rect" coords="221,333,412,360" href="externalitemnr1.html" alt="Drilldown into ExternalItemNr"></area>
                      <area shape="rect" coords="221,300,410,327" href="externalsource2.html" alt="Drilldown into ExternalSource"></area>
                      <area shape="rect" coords="221,267,490,294" href="creditcardauthorizationcode.html" alt="Drilldown into CreditCardAuthorizationCode"></area>
@@ -129,6 +131,16 @@ Payment Provider
             &lt;xs:maxLength value="80" /&gt;
           &lt;/xs:restriction&gt;
         &lt;/xs:simpleType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="PaymentId" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Is sent by the credit card company&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="OrderId" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Is sent by the credit card company&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
     &lt;/xs:all&gt;
   &lt;/xs:complexType&gt;
@@ -214,6 +226,18 @@ Payment Provider
                      <tr>
                         <td class="first">ExternalItemNr</td>
                         <td><a href="externalitemnr1.html">ExternalItemNr</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PaymentId</td>
+                        <td><a href="paymentid.html">PaymentId</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">OrderId</td>
+                        <td><a href="orderid.html">OrderId</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
