@@ -226,27 +226,27 @@ LHL_APICLIENT</xs:documentation>
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:attribute>
-                  <xs:attribute name="Ticket1" type="xs:integer" use="optional">
+                  <xs:attribute name="Ticket1" type="xs:string" use="optional">
                     <xs:annotation>
                       <xs:documentation>Ticketnumber for Segment1. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
-                  <xs:attribute name="Ticket2" type="xs:integer" use="optional">
+                  <xs:attribute name="Ticket2" type="xs:string" use="optional">
                     <xs:annotation>
                       <xs:documentation>Ticketnumber for Segment2. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
-                  <xs:attribute name="Ticket3" type="xs:integer" use="optional">
+                  <xs:attribute name="Ticket3" type="xs:string" use="optional">
                     <xs:annotation>
                       <xs:documentation>Ticketnumber for Segment3. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
-                  <xs:attribute name="Ticket4" type="xs:integer" use="optional">
+                  <xs:attribute name="Ticket4" type="xs:string" use="optional">
                     <xs:annotation>
                       <xs:documentation>Ticketnumber for Segment4. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
-                  <xs:attribute name="Ticket5" type="xs:integer" use="optional">
+                  <xs:attribute name="Ticket5" type="xs:string" use="optional">
                     <xs:annotation>
                       <xs:documentation>Ticketnumber for Segment5. Supply only in dossieritem of type Package if Package is Flight</xs:documentation>
                     </xs:annotation>
