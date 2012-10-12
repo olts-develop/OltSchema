@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.3.4172 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.5.4204 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation=".\Customers.xsd" />
   <xs:include schemaLocation=".\Travellers.xsd" />
@@ -262,6 +262,7 @@
                   </xs:simpleContent>
                 </xs:complexType>
               </xs:element>
+              <xs:element name="Department" type="xs:string" minOccurs="0" />
               <xs:element name="AdditionalReference1" minOccurs="0">
                 <xs:annotation>
                   <xs:documentation>A dossier can be assigned codes that reference information provided by the customer:
@@ -676,6 +677,13 @@
             <xs:attribute name="ResponseFormat" type="xs:string">
               <xs:annotation>
                 <xs:documentation>If the value CMIR is supplied, the reposonse of an OLTDossier is a CMIR and not the standard OLT XML</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="IsDeleted" type="xs:boolean">
+              <xs:annotation>
+                <xs:documentation>
+If this dossier no longer exists in the database, isDeleted="true".
+External systems that import dossiers can then know that they too have to delete this dossier.</xs:documentation>
               </xs:annotation>
             </xs:attribute>
           </xs:complexType>
