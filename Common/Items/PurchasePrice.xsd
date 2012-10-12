@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.5.4204 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
   <xs:include schemaLocation="..\GeneralCodes\InternalPriceType.xsd" />
@@ -15,8 +15,8 @@
         <xs:element name="Rate" type="xs:decimal" minOccurs="0" />
         <xs:element name="PricePerUnit" type="xs:decimal" />
         <xs:element name="TotalPrice" type="xs:decimal" />
-        <xs:element name="CrediAccount" type="xs:string" minOccurs="0" />
         <xs:element name="PriceDescription" type="xs:string" minOccurs="0" />
+        <xs:element name="CrediAccount" type="xs:string" minOccurs="0" />
         <xs:element name="Supplier" type="SupplierType" minOccurs="0" />
         <xs:element name="VatCode" type="xs:integer" minOccurs="0" />
         <xs:element name="VatPrintedCode" minOccurs="0">
@@ -143,7 +143,7 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-         <xs:element name="ExternalItemNr" type="xs:string" minOccurs="0">
+        <xs:element name="ExternalItemNr" type="xs:string" minOccurs="0">
           <xs:annotation>
             <xs:documentation>Unique external reference to to this DossierItem</xs:documentation>
           </xs:annotation>
