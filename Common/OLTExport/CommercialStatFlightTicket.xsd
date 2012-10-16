@@ -8,6 +8,7 @@
           <xs:complexType>
             <xs:all>
               <xs:element name="DossierSeq" type="xs:string" />
+              <xs:element name="CustomerSeq" type="xs:string" />
             </xs:all>
           </xs:complexType>
         </xs:element>
