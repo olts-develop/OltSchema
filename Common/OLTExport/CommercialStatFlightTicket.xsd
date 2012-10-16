@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.5.4204 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CommercialStatFlightTicket">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="Dossier">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="DossierSeq" type="xs:string" />
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tickets" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+              <xs:element name="Ticket">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="DossierSeq" type="xs:string" />
+                    <xs:element name="DossierNr" type="xs:string" />
+                    <xs:element name="DepartureDate" type="xs:date" minOccurs="0" />
+                    <xs:element name="LastPrintDate" type="xs:date" minOccurs="0" />
+                    <xs:element name="PaxTitle" type="xs:string" />
+                    <xs:element name="PaxFirstName" type="xs:string" />
+                    <xs:element name="PaxLastName" type="xs:string" />
+                    <xs:element name="PaxBirthDate" type="xs:date" minOccurs="0" />
+                    <xs:element name="Pnr" type="xs:string" />
+                    <xs:element name="Gds" type="xs:string" />
+                    <xs:element name="BeginTimeStamp" type="xs:dateTime" minOccurs="0" />
+                    <xs:element name="EndTimeStamp" type="xs:dateTime" minOccurs="0" />
+                    <xs:element name="DepIata" type="xs:string" />
+                    <xs:element name="DepCity" type="xs:string" />
+                    <xs:element name="DestIata" type="xs:string" />
+                    <xs:element name="DestCity" type="xs:string" />
+                    <xs:element name="RetIata" type="xs:string" />
+                    <xs:element name="RetCity" type="xs:string" />
+                    <xs:element name="RoutingFull" type="xs:string" />
+                    <xs:element name="RoutingShort" type="xs:string" />
+                    <xs:element name="NrSegments" type="xs:integer" />
+                    <xs:element name="TktAirline" type="xs:string" />
+                    <xs:element name="Class" type="xs:string" />
+                    <xs:element name="ClassGroup" type="xs:string" />
+                    <xs:element name="Distance" type="xs:decimal" />
+                    <xs:element name="SupplierCode" type="xs:string" />
+                    <xs:element name="SupplierName" type="xs:string" />
+                    <xs:element name="CustomerSeq" type="xs:string" />
+                    <xs:element name="Region" type="xs:string" />
+                    <xs:element name="CountryCode" type="xs:string" />
+                    <xs:element name="Country" type="xs:string" />
+                    <xs:element name="TicketNr" type="xs:string" />
+                    <xs:element name="TicketPrice" type="xs:decimal" />
+                    <xs:element name="TaxPrice" type="xs:decimal" />
+                    <xs:element name="AddFeeTicket" type="xs:decimal" />
+                    <xs:element name="AddFeeTax" type="xs:decimal" />
+                    <xs:element name="Status" type="xs:string" />
+                  </xs:all>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
