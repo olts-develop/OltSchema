@@ -40,7 +40,8 @@
               17 = Manual Price
               18 = Profit Share
               19 = OPC Optional Payment Charge (relevant for flight prices)
-              20 = B2B2CFee</xs:documentation>
+              20 = B2B2CFee
+              21 = Queb fee, fee for the sending of a CMIR</xs:documentation>
           </xs:annotation>
           <xs:simpleType>
             <xs:restriction base="xs:integer">
