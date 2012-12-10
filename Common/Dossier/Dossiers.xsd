@@ -430,14 +430,19 @@
                       <xs:documentation>HA_AZFAELLIG</xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
-                  <xs:attribute name="RestPaymentDate" type="xs:date">
+                  <xs:attribute name="PrePaymentPercent" type="xs:decimal">
                     <xs:annotation>
-                      <xs:documentation>HA_RZDATUMFAELLIG, HA_FIXZAHLDAT</xs:documentation>
+                      <xs:documentation>HA_RZFAELLIG</xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
                   <xs:attribute name="RestPaymentAmount" type="xs:decimal">
                     <xs:annotation>
                       <xs:documentation>HA_RZFAELLIG</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="RestPaymentDate" type="xs:date">
+                    <xs:annotation>
+                      <xs:documentation>HA_RZDATUMFAELLIG, HA_FIXZAHLDAT</xs:documentation>
                     </xs:annotation>
                   </xs:attribute>
                 </xs:complexType>
