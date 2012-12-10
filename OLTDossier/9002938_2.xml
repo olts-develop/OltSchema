@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1" ?>
+<OLTDossiers>
+  <Dossiers System="Test">
+    <Dossier Version="1.1" From="IOL" To="TUI" Date="2012-10-24" Time="09:59:15" Type="IMPORT" SubType="P" BookingMode="B2C" Lang="DE">
+      <Customers>
+        <Customer>
+          <Language>de-ch</Language>
+          <Gender>m</Gender>
+          <Title>Mrs</Title>
+          <FirstName>Anita</FirstName>
+          <LastName>Schäffler</LastName>
+          <Address1>Sonneggstrasse 2</Address1>
+          <Address2 />
+          <PostalCode>8406</PostalCode>
+          <City>Winterhtur</City>
+          <Country IsoCode="CH" />
+          <Email>anita.schaeffler@gmx.net</Email>
+          <Phone Number="0522020531" />
+          <Fax Number="" />
+          <Nationality IsoCode="CH" />
+        </Customer>
+      </Customers>
+      <DossierNr>9002938</DossierNr>
+      <CreateDate>2012-10-24</CreateDate>
+      <Title>Ihre Ferien mit Vögele Reisen</Title>
+      <FirstDate>2013-01-21</FirstDate>
+      <LastDate>2013-02-04</LastDate>
+      <Language>de-ch</Language>
+      <Destination DestinationCode="HKT" />
+      <ExternalSource>VOEGELE</ExternalSource>
+      <DossierStatus DossierStatusCode="OK" />
+      <PaymentRule NrDaysAfterPrint="1" NrDaysBeforeDeparture="30" PrePaymentNrPersons="1" PrePaymentAmountPerPerson="1000.05" PrePaymentAmount="1000.05" RestPaymentAmount="2333.45" />
+      <Currency>CHF</Currency>
+      <Travellers>
+        <Traveller>
+          <TravellerId>1</TravellerId>
+          <Gender>m</Gender>
+          <FirstName>Anita</FirstName>
+          <LastName>Schaeffler</LastName>
+        </Traveller>
+      </Travellers>
+      <Payments>
+        <Payment>
+          <Amount>20</Amount>
+          <PrePayment>true</PrePayment>
+          <AccountNr>KK-IOL</AccountNr>
+          <PaymentDate>2012-10-29T19:38:10.7370776+04:00</PaymentDate>
+          <PaymentType>CreditCard</PaymentType>
+          <PaymentText>Pre-Payment</PaymentText>
+          <ExternalItemNr>1000-10-10</ExternalItemNr>
+        </Payment>
+      </Payments>
+      <DossierItems>
+        <DossierItem Position="1" Type="Package">
+          <BeginDate>2013-01-21</BeginDate>
+          <EndDate>2013-02-05</EndDate>
+          <NumberOfItems>1</NumberOfItems>
+          <ShortDescription1>Holiday: CNX RTP211:Roundtrip Thailand and 1 week beach extension Khao Lak</ShortDescription1>
+          <Status>OK</Status>
+          <ExternalDossierNr>9002938</ExternalDossierNr>
+          <GdsSource>AMA</GdsSource>
+          <GdsBookingNr></GdsBookingNr>
+          <BookingSupplier Code="TG" ></BookingSupplier>
+          <CostCenter>1502</CostCenter>
+          <Travellers>
+            <Traveller TravellerId="1" TicketPrice="0.0000" TaxPrice="0.0000" TicketingAirline=""
+						 Ticket1="" TicketIssueDate="2012-10-25" />
+          </Travellers>
+          <ExternalItemNr>3658-1</ExternalItemNr>
+          <Package>
+          <FareType>P</FareType>
+          <TicketAirline>TG</TicketAirline>
+            <Title>Holiday: CNX RTP211:Roundtrip Thailand and 1 week beach extension Khao Lak</Title>
+            <Detail><![CDATA[the required package details can be added here..]]></Detail>
+            <Remark><![CDATA[the required package details can be added here..]]></Remark>
+            <PackageItems>
+              <DossierItem Position="2" Type="Miscellaneous">
+                <BeginDate>2013-01-21</BeginDate>
+                <EndDate>2013-01-21</EndDate>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>Div. Insurances</ShortDescription1>
+                <Status>OK</Status>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <BookingSupplier Code="Meeting Point Asia Co.,Ltd." />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-2</ExternalItemNr>
+                <Miscellaneous>
+                <Title>Div. Insurances</Title>
+                <Detail><![CDATA[Div. Insurances]]></Detail>
+                </Miscellaneous>             
+                <PurchasePrices>
+                  <PurchasePrice>
+                    <UnitNr>1</UnitNr>
+                    <Currency>CHF</Currency>
+                    <Rate>1.0000</Rate>
+                    <PricePerUnit>0.8000</PricePerUnit>
+                    <TotalPrice>0.8000</TotalPrice>
+                    <PriceDescription>Div. Insurances</PriceDescription>
+                    <ExternalItemNr>3658-2-B-1</ExternalItemNr>
+                  </PurchasePrice>
+                </PurchasePrices>
+              </DossierItem>
+              <DossierItem Position="3" Type="Miscellaneous">
+                <BeginDate>2013-01-21</BeginDate>
+                <EndDate>2013-01-21</EndDate>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>Logistic and Traveldocuments</ShortDescription1>
+                <Status>OK</Status>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <BookingSupplier Code="Meeting Point Asia Co.,Ltd." />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-3</ExternalItemNr>
+                <Miscellaneous>
+                <Title>Logistic and Traveldocuments</Title>
+                <Detail><![CDATA[Logistic and Traveldocuments]]></Detail>
+                </Miscellaneous>
+                <PurchasePrices>
+                  <PurchasePrice>
+                    <UnitNr>1</UnitNr>
+                    <Currency>CHF</Currency>
+                    <Rate>1.0000</Rate>
+                    <PricePerUnit>5.0000</PricePerUnit>
+                    <TotalPrice>5.0000</TotalPrice>
+                    <PriceDescription>Logistic and Traveldocuments</PriceDescription>
+                    <ExternalItemNr>3658-3-B-1</ExternalItemNr>  
+                  </PurchasePrice>
+                </PurchasePrices>
+              </DossierItem>
+              <DossierItem Position="4" Type="Miscellaneous">
+                <BeginDate>2013-01-21</BeginDate>
+                <EndDate>2013-01-29</EndDate>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>Vögele Guide from/to Switzerland (Bitte beachten Sie die Mindestteilnehmerzahl im Prospekt)</ShortDescription1>
+                <Status>OK</Status>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-4</ExternalItemNr>
+                <Miscellaneous>
+                <Title>Vögele Guide from/to Switzerland (Bitte beachten Sie die Mindestteilnehmerzahl im Prospekt)</Title>
+                <Detail><![CDATA[Vögele Guide from/to Switzerland (Bitte beachten Sie die Mindestteilnehmerzahl im Prospekt)]]></Detail>
+                </Miscellaneous>
+              </DossierItem>
+              <DossierItem Position="5" Type="Hotel">
+                <BeginDate>2013-01-22</BeginDate>
+                <EndDate>2013-01-28</EndDate>
+                <Duration>6</Duration>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>Roundtrip Thailand Select</ShortDescription1>
+                <Status>OK</Status>
+                <ExternalSource>VOEGELE</ExternalSource>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <BookingSupplier Code="Voegele Reisen" />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-5</ExternalItemNr>
+                <PurchasePrices>
+                  <PurchasePrice InternalPriceType="HOTELROOM">
+                    <UnitNr>1</UnitNr>
+                    <Currency>THB</Currency>
+                    <Rate>0.0306</Rate>
+                    <PricePerUnit>20220.0000</PricePerUnit>
+                    <TotalPrice>20220.0000</TotalPrice>
+                    <PriceDescription>Standard Single</PriceDescription>
+                    <ExternalItemNr>3658-5-B-1</ExternalItemNr>
+                  </PurchasePrice>
+                </PurchasePrices>
+              </DossierItem>
+              <DossierItem Position="6" Type="Hotel">
+                <BeginDate>2013-01-28</BeginDate>
+                <EndDate>2013-02-04</EndDate>
+                <Duration>7</Duration>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>Apsaras Beach Resort and Spa</ShortDescription1>
+                <Status>OK</Status>
+                <ExternalSource>VOEGELE</ExternalSource>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <BookingSupplier Code="Voegele Reisen" />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-6</ExternalItemNr>
+                <PurchasePrices>
+                  <PurchasePrice InternalPriceType="HOTELROOM">
+                    <UnitNr>1</UnitNr>
+                    <Currency>THB</Currency>
+                    <Rate>0.0306</Rate>
+                    <PricePerUnit>21700.0000</PricePerUnit>
+                    <TotalPrice>21700.0000</TotalPrice>
+                    <PriceDescription>Superior Room</PriceDescription>
+                    <ExternalItemNr>3658-6-B-1</ExternalItemNr>
+                  </PurchasePrice>
+                </PurchasePrices>
+              </DossierItem>
+              <DossierItem Position="7" Type="Miscellaneous">
+                <BeginDate>2013-01-28</BeginDate>
+                <EndDate>2013-01-28</EndDate>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>Arrival Transfer Airport Phuket to Khao Lak</ShortDescription1>
+                <Status>OK</Status>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <BookingSupplier Code="Meeting Point Asia Co.,Ltd." />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-7</ExternalItemNr>
+                <Miscellaneous>
+                <Title>Arrival Transfer Airport Phuket to Khao Lak</Title>
+                <Detail><![CDATA[Arrival Transfer Airport Phuket to Khao Lak]]></Detail>
+                </Miscellaneous>
+                <PurchasePrices>
+                  <PurchasePrice>
+                    <UnitNr>1</UnitNr>
+                    <Currency>THB</Currency>
+                    <Rate>0.0306</Rate>
+                    <PricePerUnit>1530.0000</PricePerUnit>
+                    <TotalPrice>1530.0000</TotalPrice>
+                    <PriceDescription>Arrival Transfer Airport Phuket to Khao Lak</PriceDescription>
+                    <ExternalItemNr>3658-7-B-1</ExternalItemNr>
+                  </PurchasePrice>
+                </PurchasePrices>
+              </DossierItem>
+              <DossierItem Position="8" Type="Miscellaneous">
+                <BeginDate>2013-02-04</BeginDate>
+                <EndDate>2013-02-04</EndDate>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>Departure Transfer from Khao Lak to Airport Phuket</ShortDescription1>
+                <Status>OK</Status>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <BookingSupplier Code="Meeting Point Asia Co.,Ltd." />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-8</ExternalItemNr>
+                <Miscellaneous>
+                <Title>Departure Transfer from Khao Lak to Airport Phuket</Title>
+                <Detail><![CDATA[Departure Transfer from Khao Lak to Airport Phuket]]></Detail>
+                </Miscellaneous>
+                <PurchasePrices>
+                  <PurchasePrice>
+                    <UnitNr>1</UnitNr>
+                    <Currency>THB</Currency>
+                    <Rate>0.0306</Rate>
+                    <PricePerUnit>1540.0000</PricePerUnit>
+                    <TotalPrice>1540.0000</TotalPrice>
+                    <PriceDescription>Arrival Transfer Airport Phuket to Khao Lak</PriceDescription>
+                    <ExternalItemNr>3658-8-B-1</ExternalItemNr>
+                  </PurchasePrice>
+                </PurchasePrices>
+              </DossierItem>
+              <DossierItem Position="9" Type="Flight">
+                <BeginDate>2013-01-21</BeginDate>
+                <EndDate>2013-01-22</EndDate>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>TG971</ShortDescription1>
+                <ShortDescription2>ZRH-BKK</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <GdsSource>AMA</GdsSource>
+                <GdsBookingNr />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-42913-1</ExternalItemNr>
+                <Flight>
+                  <Airlinecode>TG</Airlinecode>
+                  <FlightNumber>971</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Departure Code="ZRH" Time="13:15:00" CheckInTime="11:15:00" Type="departure">Zürich</Departure>
+                  <Arrival Code="BKK" Time="06:00:00" DayIndicator="1" Type="arrival">Bangkok</Arrival>
+                  <Class>V</Class>
+                  <AirplaneType />
+                  <Meal />
+                  <BookingNr />
+                  <BookingClass>Y</BookingClass>
+                </Flight>
+                <PurchasePrices>
+                  <PurchasePrice>
+                    <UnitNr>1</UnitNr>
+                    <Currency>CHF</Currency>
+                    <Rate>1</Rate>
+                    <PricePerUnit>405.0000</PricePerUnit>
+                    <TotalPrice>405.0000</TotalPrice>
+                    <PriceDescription>AdultFare</PriceDescription>
+                    <ExternalItemNr>3658-0-B-7</ExternalItemNr>
+                  </PurchasePrice>
+                  <PurchasePrice>
+                    <UnitNr>1</UnitNr>
+                    <Currency>CHF</Currency>
+                    <Rate>1</Rate>
+                    <PricePerUnit>215.0000</PricePerUnit>
+                    <TotalPrice>215.0000</TotalPrice>
+                    <PriceDescription>AdultFlightTax</PriceDescription>
+                    <ExternalItemNr>3658-0-B-8</ExternalItemNr>
+                  </PurchasePrice>
+                </PurchasePrices>
+              </DossierItem>
+              <DossierItem Position="10" Type="Flight">
+                <BeginDate>2013-01-22</BeginDate>
+                <EndDate>2013-01-22</EndDate>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>TG102</ShortDescription1>
+                <ShortDescription2>BKK-CNX</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <GdsSource>AMA</GdsSource>
+                <GdsBookingNr />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-42913-2</ExternalItemNr>
+                <Flight>
+                  <Airlinecode>TG</Airlinecode>
+                  <FlightNumber>102</FlightNumber>
+                  <FlightDirection>I</FlightDirection>
+                  <Departure Code="BKK" Time="08:00:00" CheckInTime="06:00:00" Type="departure">Bangkok</Departure>
+                  <Arrival Code="CNX" Time="09:20:00" DayIndicator="0" Type="arrival">Chiang Mai</Arrival>
+                  <Class>V</Class>
+                  <AirplaneType />
+                  <Meal />
+                  <BookingNr />
+                  <BookingClass>Y</BookingClass>
+                </Flight>
+              </DossierItem>
+              <DossierItem Position="11" Type="Flight">
+                <BeginDate>2013-01-28</BeginDate>
+                <EndDate>2013-01-28</EndDate>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>TG215</ShortDescription1>
+                <ShortDescription2>BKK-HKT</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <GdsSource>AMA</GdsSource>
+                <GdsBookingNr />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-42914-1</ExternalItemNr>
+                <Flight>
+                  <Airlinecode>TG</Airlinecode>
+                  <FlightNumber>215</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Departure Code="BKK" Time="14:30:00" CheckInTime="12:30:00" Type="departure">Bangkok</Departure>
+                  <Arrival Code="HKT" Time="15:50:00" DayIndicator="0" Type="arrival">Phuket</Arrival>
+                  <Class>Q</Class>
+                  <AirplaneType />
+                  <Meal />
+                  <BookingNr />
+                  <BookingClass>Y</BookingClass>
+                </Flight>
+                <PurchasePrices>
+                  <PurchasePrice>
+                    <UnitNr>1</UnitNr>
+                    <Currency>CHF</Currency>
+                    <Rate>1</Rate>
+                    <PricePerUnit>85.0000</PricePerUnit>
+                    <TotalPrice>85.0000</TotalPrice>
+                    <PriceDescription>AdultFare</PriceDescription>
+                    <ExternalItemNr>3658-0-B-9</ExternalItemNr>
+                  </PurchasePrice>
+                  <PurchasePrice>
+                    <UnitNr>1</UnitNr>
+                    <Currency>CHF</Currency>
+                    <Rate>1</Rate>
+                    <PricePerUnit>4.0000</PricePerUnit>
+                    <TotalPrice>4.0000</TotalPrice>
+                    <PriceDescription>AdultFlightTax</PriceDescription>
+                    <ExternalItemNr>3658-0-B-10</ExternalItemNr>
+                  </PurchasePrice>
+                </PurchasePrices>
+              </DossierItem>
+              <DossierItem Position="11" Type="Flight">
+                <BeginDate>2013-02-04</BeginDate>
+                <EndDate>2013-02-04</EndDate>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>TG222</ShortDescription1>
+                <ShortDescription2>HKT-BKK</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <GdsSource>AMA</GdsSource>
+                <GdsBookingNr />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-42915-1</ExternalItemNr>
+                <Flight>
+                  <Airlinecode>TG</Airlinecode>
+                  <FlightNumber>222</FlightNumber>
+                  <FlightDirection>O</FlightDirection>
+                  <Departure Code="HKT" Time="20:35:00" CheckInTime="18:35:00" Type="departure">Phuket</Departure>
+                  <Arrival Code="BKK" Time="22:00:00" DayIndicator="0" Type="arrival">Bangkok</Arrival>
+                  <Class>V</Class>
+                  <AirplaneType />
+                  <Meal />
+                  <BookingNr />
+                  <BookingClass>Y</BookingClass>
+                </Flight>
+                <PurchasePrices>
+                  <PurchasePrice>
+                    <UnitNr>1</UnitNr>
+                    <Currency>CHF</Currency>
+                    <Rate>1</Rate>
+                    <PricePerUnit>355.0000</PricePerUnit>
+                    <TotalPrice>355.0000</TotalPrice>
+                    <PriceDescription>AdultFare</PriceDescription>
+                    <ExternalItemNr>3658-0-B-11</ExternalItemNr>
+                  </PurchasePrice>
+                  <PurchasePrice>
+                    <UnitNr>1</UnitNr>
+                    <Currency>CHF</Currency>
+                    <Rate>1</Rate>
+                    <PricePerUnit>210.0000</PricePerUnit>
+                    <TotalPrice>210.0000</TotalPrice>
+                    <PriceDescription>AdultFlightTax</PriceDescription>
+                    <ExternalItemNr>3658-0-B-12</ExternalItemNr>
+                  </PurchasePrice>
+                </PurchasePrices>
+              </DossierItem>
+              <DossierItem Position="12" Type="Flight">
+                <BeginDate>2013-02-05</BeginDate>
+                <EndDate>2013-02-05</EndDate>
+                <NumberOfItems>1</NumberOfItems>
+                <ShortDescription1>TG970</ShortDescription1>
+                <ShortDescription2>BKK-ZRH</ShortDescription2>
+                <Status>OK</Status>
+                <ExternalDossierNr>9002938</ExternalDossierNr>
+                <GdsSource>AMA</GdsSource>
+                <GdsBookingNr />
+                <CostCenter>1502</CostCenter>
+                <Travellers>
+                  <Traveller TravellerId="1" />
+                </Travellers>
+                <ExternalItemNr>3658-42915-2</ExternalItemNr>
+                <Flight>
+                  <Airlinecode>TG</Airlinecode>
+                  <FlightNumber>970</FlightNumber>
+                  <FlightDirection>I</FlightDirection>
+                  <Departure Code="BKK" Time="00:20:00" CheckInTime="22:20:00" Type="departure">Bangkok</Departure>
+                  <Arrival Code="ZRH" Time="06:50:00" DayIndicator="0" Type="arrival">Zürich</Arrival>
+                  <Class>V</Class>
+                  <AirplaneType />
+                  <Meal />
+                  <BookingNr />
+                  <BookingClass>Y</BookingClass>
+                </Flight>
+              </DossierItem>
+            </PackageItems>
+          </Package>
+        </DossierItem>
+        <DossierItem Position="11" Type="Miscellaneous">
+          <BeginDate>2013-01-21</BeginDate>
+          <NumberOfItems>1</NumberOfItems>
+          <ShortDescription1>Booking Fee</ShortDescription1>
+          <Status>OK</Status>
+          <ExternalDossierNr>9002938</ExternalDossierNr>
+          <BookingSupplier Code="Voegele Reisen" />
+          <CostCenter>1502</CostCenter>
+          <Travellers>
+            <Traveller TravellerId="1" />
+          </Travellers>
+          <ExternalItemNr>3658-11</ExternalItemNr>
+          <Miscellaneous>
+            <Title>Booking Fee</Title>
+            <Detail><![CDATA[Booking Fee]]></Detail>
+          </Miscellaneous>
+          <ItemPrices>
+            <ItemPrice>
+              <UnitNr>1</UnitNr>
+              <Currency>CHF</Currency>
+              <PricePerUnit>30.0000</PricePerUnit>
+              <TotalPrice>30.0000</TotalPrice>
+              <PriceDescription>Booking Fee</PriceDescription>
+              <PriceCommissionGive>0.0000</PriceCommissionGive>
+              <VatCode>65</VatCode>
+              <PriceTravellers>
+                <PriceTraveller TravellerId="1" />
+              </PriceTravellers>
+            </ItemPrice>
+          </ItemPrices>
+        </DossierItem>
+      </DossierItems>
+    </Dossier>
+  </Dossiers>
+</OLTDossiers>
