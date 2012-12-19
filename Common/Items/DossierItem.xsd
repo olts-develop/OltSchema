@@ -519,14 +519,14 @@ LHL_NOINV</xs:documentation>
         <xs:element name="ItemPrices" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element ref="ItemPrice" maxOccurs="unbounded" />
+              <xs:element ref="ItemPrice" minOccurs="0" maxOccurs="unbounded" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="PurchasePrices" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element ref="PurchasePrice" maxOccurs="unbounded" />
+              <xs:element ref="PurchasePrice" minOccurs="0" maxOccurs="unbounded" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
