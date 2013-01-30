@@ -1,0 +1,152 @@
+﻿<?xml version="1.0"?>
+<!-- Created with Liquid XML Studio 2012 Designer Edition 10.1.9.4348 (http://www.liquid-technologies.com) -->
+<Response Version="2.5" OLTID="2013-01-30-09.15.13.018926" OLT-TRAID="A011" LOGINTYPE="" RAILG1="" From="OTRA" To="RAIL" TermId="000002" Window="A" Date="30012013" Time="0928" Type="BOOK" SubType="FINAL" Confirm="NO" Agent="48A011" Lang="DE" UserCode="PAC" UserType="M" UserName="Winkler" UserFirstName="Joachim" Mode="Test" REREQ="" RERES="">
+    <Fab>
+        <TOCode>RAIL</TOCode>
+        <Catalog>RT3</Catalog>
+        <Status>OK</Status>
+        <AccountNr>9110122</AccountNr>
+        <Sales>
+            <Amount>517.00</Amount>
+            <Currency>CHF</Currency>
+        </Sales>
+        <Purchase>
+            <Amount>440.38</Amount>
+            <Currency>CHF</Currency>
+        </Purchase>
+        <StartDate>12032013</StartDate>
+        <EndDate>12032013</EndDate>
+        <Fat BookingSystem="REU" ServiceType="TR" Dir="O" Key="741324312.2.SF.B-B|out|" SeatRes="Y">
+            <TextI>Stornokosten Bahn: 0.00 CHF Annullationskosten bis 15 Tag vor Abreise. 241.00 CHF Annullationskosten am Tag der Abreise.</TextI>
+            <CancelInfo>0.00 CHF f&#xFC;r &#xC4;nderungen bis 15 Tag vor Abreise. 241.00 CHF f&#xFC;r &#xC4;nderungen am Abreisetag.</CancelInfo>
+            <TextI>0.00 CHF f&#xFC;r &#xC4;nderungen bis 15 Tag vor Abreise. 241.00 CHF f&#xFC;r &#xC4;nderungen am Abreisetag.</TextI>
+            <TextI>Das Bahnticket ist ab Ihrem gew&#xE4;hlten Einsteigeort g&#xFC;ltig</TextI>
+            <SupplierCodeDep>CHAJP</SupplierCodeDep>
+            <SupplierCodeArr>FRPST</SupplierCodeArr>
+            <Avail></Avail>
+            <Status>OK</Status>
+            <Price>241.00</Price>
+            <StartDate>12032013</StartDate>
+            <Dep>8500010</Dep>
+            <Arr>8700011</Arr>
+            <DepDesc>Basel</DepDesc>
+            <ArrDesc>Paris Est</ArrDesc>
+            <Via></Via>
+            <Class>2</Class>
+            <ClassDesc>2. Klasse</ClassDesc>
+            <TrainNr>96200</TrainNr>
+            <TrainType>TER</TrainType>
+            <DepTime>0521</DepTime>
+            <ArrTime>0905</ArrTime>
+            <Leg ID="1">
+                <StartDate>12032013</StartDate>
+                <Dep>8500010</Dep>
+                <Arr>8700023</Arr>
+                <DepDesc>Basel</DepDesc>
+                <ArrDesc>Strasbourg</ArrDesc>
+                <Class>2</Class>
+                <ClassDesc>2. Klasse</ClassDesc>
+                <TrainType>TER</TrainType>
+                <TrainNr>96200</TrainNr>
+                <DepTime>0521</DepTime>
+                <ArrTime>0636</ArrTime>
+                <SupplierCodeDep>CHAJP</SupplierCodeDep>
+                <SupplierCodeArr>FRAEG</SupplierCodeArr>
+            </Leg>
+            <Leg ID="2">
+                <StartDate>12032013</StartDate>
+                <Dep>8700023</Dep>
+                <Arr>8700011</Arr>
+                <DepDesc>Strasbourg</DepDesc>
+                <ArrDesc>Paris Est</ArrDesc>
+                <Class>2</Class>
+                <ClassDesc>2. Klasse</ClassDesc>
+                <TrainType>TGD</TrainType>
+                <TrainNr>2350</TrainNr>
+                <DepTime>0646</DepTime>
+                <ArrTime>0905</ArrTime>
+                <SupplierCodeDep>FRAEG</SupplierCodeDep>
+                <SupplierCodeArr>FRPST</SupplierCodeArr>
+            </Leg>
+            <Persons>12</Persons>
+            <Detail>
+                <Amount></Amount>
+                <Persons>1</Persons>
+            </Detail>
+            <Detail>
+                <Amount></Amount>
+                <Persons>2</Persons>
+            </Detail>
+        </Fat>
+        <Fat BookingSystem="REU" ServiceType="TR" Dir="I" Key="741324320.2.SF.B-B|home|" SeatRes="Y">
+            <TextI>Stornokosten Bahn: 0.00 CHF Annullationskosten bis 15 Tag vor Abreise. 276.00 CHF Annullationskosten am Tag der Abreise.</TextI>
+            <CancelInfo>0.00 CHF f&#xFC;r &#xC4;nderungen bis 15 Tag vor Abreise. 276.00 CHF f&#xFC;r &#xC4;nderungen am Abreisetag.</CancelInfo>
+            <TextI>0.00 CHF f&#xFC;r &#xC4;nderungen bis 15 Tag vor Abreise. 276.00 CHF f&#xFC;r &#xC4;nderungen am Abreisetag.</TextI>
+            <TextI>Das Bahnticket ist ab Ihrem gew&#xE4;hlten Einsteigeort g&#xFC;ltig</TextI>
+            <SupplierCodeDep>FRPST</SupplierCodeDep>
+            <SupplierCodeArr>CHAJP</SupplierCodeArr>
+            <Avail></Avail>
+            <Status>OK</Status>
+            <Price>276.00</Price>
+            <StartDate>15032013</StartDate>
+            <Dep>8700011</Dep>
+            <Arr>8500010</Arr>
+            <DepDesc>Paris Est</DepDesc>
+            <ArrDesc>Basel</ArrDesc>
+            <Via></Via>
+            <Class>2</Class>
+            <ClassDesc>2. Klasse</ClassDesc>
+            <TrainNr>9575</TrainNr>
+            <TrainType>TGO</TrainType>
+            <DepTime>1525</DepTime>
+            <ArrTime>1909</ArrTime>
+            <Leg ID="1">
+                <StartDate>15032013</StartDate>
+                <Dep>8700011</Dep>
+                <Arr>8700023</Arr>
+                <DepDesc>Paris Est</DepDesc>
+                <ArrDesc>Strasbourg</ArrDesc>
+                <Class>2</Class>
+                <ClassDesc>2. Klasse</ClassDesc>
+                <TrainType>TGO</TrainType>
+                <TrainNr>9575</TrainNr>
+                <DepTime>1525</DepTime>
+                <ArrTime>1742</ArrTime>
+                <SupplierCodeDep>FRPST</SupplierCodeDep>
+                <SupplierCodeArr>FRAEG</SupplierCodeArr>
+            </Leg>
+            <Leg ID="2">
+                <StartDate>15032013</StartDate>
+                <Dep>8700023</Dep>
+                <Arr>8500010</Arr>
+                <DepDesc>Strasbourg</DepDesc>
+                <ArrDesc>Basel</ArrDesc>
+                <Class>2</Class>
+                <ClassDesc>2. Klasse</ClassDesc>
+                <TrainType>TER</TrainType>
+                <TrainNr>96233</TrainNr>
+                <DepTime>1751</DepTime>
+                <ArrTime>1909</ArrTime>
+                <SupplierCodeDep>FRAEG</SupplierCodeDep>
+                <SupplierCodeArr>CHAJP</SupplierCodeArr>
+            </Leg>
+            <Persons>12</Persons>
+        </Fat>
+        <Fap ID="1">
+            <FirstName>A</FirstName>
+            <Name>NTBA</Name>
+            <Birth>12121966</Birth>
+            <TicketType>H</TicketType>
+            <PricePerson></PricePerson>
+            <PersonType>M</PersonType>
+        </Fap>
+        <Fap ID="2">
+            <FirstName>B</FirstName>
+            <Name>NTBB</Name>
+            <Birth>12121966</Birth>
+            <TicketType>H</TicketType>
+            <PricePerson></PricePerson>
+            <PersonType>F</PersonType>
+        </Fap>
+    </Fab>
+</Response>
