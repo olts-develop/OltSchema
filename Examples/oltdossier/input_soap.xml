@@ -83,9 +83,9 @@
 									<FlightNumber>5010</FlightNumber>
 									<FlightDirection>O</FlightDirection>
 									<Departure Code="ZRH" Time="06:30:00" CheckInTime="05:00:00"
-										Type="departure">Z�rich</Departure>
+										Type="departure">Zürich</Departure>
 									<Arrival Code="DUS" Time="08:00:00" DayIndicator="0"
-										Type="transfer">D�sseldorf</Arrival>
+										Type="transfer">Düsseldorf</Arrival>
 									<Class>Y</Class>
 									<LogicDataProductSeq>TUIXYA13979</LogicDataProductSeq>
 									<LogicClass>Y</LogicClass>
@@ -114,7 +114,7 @@
 									<FlightNumber>5020</FlightNumber>
 									<FlightDirection>O</FlightDirection>
 									<Departure Code="DUS" Time="10:45:00" CheckInTime="08:15:00"
-										Type="transfer">D�sseldorf</Departure>
+										Type="transfer">Düsseldorf</Departure>
 									<Arrival Code="SAN" Time="14:45:00" DayIndicator="0"
 										Type="arrival">San Diego</Arrival>
 									<Class>Y</Class>
@@ -147,7 +147,7 @@
 									<Departure Code="SAN" Time="10:45:00" CheckInTime="08:15:00"
 										Type="departure">San Diego</Departure>
 									<Arrival Code="DUS" Time="14:45:00" DayIndicator="0"
-										Type="transfer">D�sseldorf</Arrival>
+										Type="transfer">Düsseldorf</Arrival>
 									<Class>Y</Class>
 									<LogicDataProductSeq>TUIXYA13983</LogicDataProductSeq>
 									<LogicClass>Y</LogicClass>
@@ -176,9 +176,9 @@
 									<FlightNumber>6020</FlightNumber>
 									<FlightDirection>I</FlightDirection>
 									<Departure Code="DUS" Time="17:00:00" CheckInTime="15:45:00"
-										Type="transfer">D�sseldorf</Departure>
+										Type="transfer">Düsseldorf</Departure>
 									<Arrival Code="ZRH" Time="18:25:00" DayIndicator="0"
-										Type="arrival">Z�rich</Arrival>
+										Type="arrival">Zürich</Arrival>
 									<Class>Y</Class>
 									<LogicDataProductSeq>TUIXYA13983</LogicDataProductSeq>
 									<LogicClass>Y</LogicClass>
