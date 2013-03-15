@@ -2,6 +2,7 @@
 <!--Created with Liquid XML Studio 2012 Designer Edition 10.1.5.4204 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation="..\GeneralCodes\InternalPriceType.xsd" />
+  <xs:include schemaLocation="..\GeneralCodes\InternalPriceSubType.xsd" />
   <xs:include schemaLocation="..\GeneralCodes\PriceTravellerType.xsd" />
   <xs:element name="ItemPrice">
     <xs:annotation>
@@ -268,6 +269,7 @@
         </xs:element>
       </xs:all>
       <xs:attribute name="InternalPriceType" type="InternalPriceType" use="optional" />
+      <xs:attribute name="InternalPriceSubType" type="InternalPriceSubType" use="optional" />
       <xs:attribute name="PriceType" type="xs:string" use="optional" />
       <xs:attribute name="BaseDataProductSeq" type="xs:string" use="optional">
         <xs:annotation>

@@ -8,4 +8,11 @@
 	</buildSpec>
 	<natures>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Examples/oltdossier/input_soap.xml</name>
+			<type>1</type>
+			<location>D:/GitHub/OltSchema/Examples/oltdossier/input_soap.xml</location>
+		</link>
+	</linkedResources>
 </projectDescription>

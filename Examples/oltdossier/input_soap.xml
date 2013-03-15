@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OLTDossiers>
+	<Dossiers>
+		<Dossier Version="1.0" From="OTFONLY" To="TUI" Date="2013-02-07"
+			Time="19:29:05" Type="BOOK" SubType="CHECK" Confirm="YES" Agent="54X123"
+			Lang="de-ch" BookingMode="B2C" Mode="PROD">
+			<CreateDate>2013-02-07</CreateDate>
+			<FirstDate></FirstDate>
+			<LastDate></LastDate>
+			<Language>de-ch</Language>
+			<ExternalSource>CHRTR</ExternalSource>
+			<Currency>CHF</Currency>
+			<Destination DestinationCode="SAN"></Destination>
+			<DossierStatus DossierStatusCode="OK"></DossierStatus>
+			<Customers>
+				<Customer>
+					<Language>de-ch</Language>
+					<Gender>m</Gender>
+					<Title>Herr</Title>
+					<FirstName>Alfred</FirstName>
+					<LastName>Neumann</LastName>
+					<Address1>Drosselgasse 99</Address1>
+					<Address2></Address2>
+					<PostalCode>8032</PostalCode>
+					<City>Zuerich</City>
+					<Email>info@onlinetravel.ch</Email>
+					<Country IsoCode="CH"></Country>
+					<Phone AreaCode="079" Number="12345"></Phone>
+					<Fax AreaCode="044" Number="12345567"></Fax>
+					<Nationality IsoCode="CH"></Nationality>
+					<Smoker></Smoker>
+					<FlightMealCode></FlightMealCode>
+					<FlightSeatCode></FlightSeatCode>
+					<TrainHalfPrice>0</TrainHalfPrice>
+					<TrainGeneralAbo>0</TrainGeneralAbo>
+					<HasSubordinates>false</HasSubordinates>
+					<HomeBase></HomeBase>
+					<AllowGroupBooking>0</AllowGroupBooking>
+				</Customer>
+			</Customers>
+			<Travellers>
+				<Traveller>
+					<TravellerId>1</TravellerId>
+					<Gender>m</Gender>
+					<Child>false</Child>
+					<Baby>false</Baby>
+					<FirstName>ForeDummy</FirstName>
+					<LastName>SurDummy</LastName>
+				</Traveller>
+			</Travellers>
+			<DossierItems>
+				<DossierItem Type="Package" Position="1">
+					<NumberOfItems>1</NumberOfItems>
+					<ShortDescription1>Flug nach San Diego</ShortDescription1>
+					<Status>OK</Status>
+					<ExternalSource>CHRTR</ExternalSource>
+					<GdsSource>TOCHARTER</GdsSource>
+					<BookingSupplier Seq="TUIXYZ1772472" Code="AB"
+						AirlineNr="5010">Air Berlin</BookingSupplier>
+					<Travellers>
+						<Traveller TravellerId="1" />
+					</Travellers>
+					<Package>
+						<Title>Flug nach San Diego</Title>
+						<PackageItems>
+							<DossierItem Type="Flight" Position="2"
+								BaseDataProductSeq="TUIXYA13963">
+								<LogicDataProductSeq>TUIXYA13979</LogicDataProductSeq>
+								<BeginDate>2013-05-31</BeginDate>
+								<NumberOfItems>1</NumberOfItems>
+								<ShortDescription1>AB5010Y</ShortDescription1>
+								<ShortDescription2>ZRH - DUS</ShortDescription2>
+								<Status>OK</Status>
+								<ExternalSource>CHRTR</ExternalSource>
+								<GdsSource>TOCHARTER</GdsSource>
+								<BookingSupplier Seq="TUIXYZ1772472" Code="AB"
+									AirlineNr="5010">Air Berlin</BookingSupplier>
+								<Travellers>
+									<Traveller TravellerId="1" />
+								</Travellers>
+								<Flight>
+									<Airlinecode>AB</Airlinecode>
+									<FlightNumber>5010</FlightNumber>
+									<FlightDirection>O</FlightDirection>
+									<Departure Code="ZRH" Time="06:30:00" CheckInTime="05:00:00"
+										Type="departure">Z�rich</Departure>
+									<Arrival Code="DUS" Time="08:00:00" DayIndicator="0"
+										Type="transfer">D�sseldorf</Arrival>
+									<Class>Y</Class>
+									<LogicDataProductSeq>TUIXYA13979</LogicDataProductSeq>
+									<LogicClass>Y</LogicClass>
+									<LogicClassDescription />
+									<LogicAirLineCode>AB</LogicAirLineCode>
+									<LogicFlightNr>5000</LogicFlightNr>
+								</Flight>
+							</DossierItem>
+							<DossierItem Type="Flight" Position="3"
+								BaseDataProductSeq="TUIXYA13967">
+								<LogicDataProductSeq>TUIXYA13979</LogicDataProductSeq>
+								<BeginDate>2013-05-31</BeginDate>
+								<NumberOfItems>1</NumberOfItems>
+								<ShortDescription1>AB5020Y</ShortDescription1>
+								<ShortDescription2>DUS - SAN</ShortDescription2>
+								<Status>OK</Status>
+								<ExternalSource>CHRTR</ExternalSource>
+								<GdsSource>TOCHARTER</GdsSource>
+								<BookingSupplier Seq="TUIXYZ1772472" Code="AB"
+									AirlineNr="5010">Air Berlin</BookingSupplier>
+								<Travellers>
+									<Traveller TravellerId="1" />
+								</Travellers>
+								<Flight>
+									<Airlinecode>AB</Airlinecode>
+									<FlightNumber>5020</FlightNumber>
+									<FlightDirection>O</FlightDirection>
+									<Departure Code="DUS" Time="10:45:00" CheckInTime="08:15:00"
+										Type="transfer">D�sseldorf</Departure>
+									<Arrival Code="SAN" Time="14:45:00" DayIndicator="0"
+										Type="arrival">San Diego</Arrival>
+									<Class>Y</Class>
+									<LogicDataProductSeq>TUIXYA13979</LogicDataProductSeq>
+									<LogicClass>Y</LogicClass>
+									<LogicClassDescription />
+									<LogicAirLineCode>AB</LogicAirLineCode>
+									<LogicFlightNr>5000</LogicFlightNr>
+								</Flight>
+							</DossierItem>
+							<DossierItem Type="Flight" Position="4"
+								BaseDataProductSeq="TUIXYA13973">
+								<LogicDataProductSeq>TUIXYA13983</LogicDataProductSeq>
+								<BeginDate>2013-06-10</BeginDate>
+								<NumberOfItems>1</NumberOfItems>
+								<ShortDescription1>AB6010Y</ShortDescription1>
+								<ShortDescription2>SAN - DUS</ShortDescription2>
+								<Status>OK</Status>
+								<ExternalSource>CHRTR</ExternalSource>
+								<GdsSource>TOCHARTER</GdsSource>
+								<BookingSupplier Seq="TUIXYZ1772472" Code="AB"
+									AirlineNr="5010">Air Berlin</BookingSupplier>
+								<Travellers>
+									<Traveller TravellerId="1" />
+								</Travellers>
+								<Flight>
+									<Airlinecode>AB</Airlinecode>
+									<FlightNumber>6010</FlightNumber>
+									<FlightDirection>I</FlightDirection>
+									<Departure Code="SAN" Time="10:45:00" CheckInTime="08:15:00"
+										Type="departure">San Diego</Departure>
+									<Arrival Code="DUS" Time="14:45:00" DayIndicator="0"
+										Type="transfer">D�sseldorf</Arrival>
+									<Class>Y</Class>
+									<LogicDataProductSeq>TUIXYA13983</LogicDataProductSeq>
+									<LogicClass>Y</LogicClass>
+									<LogicClassDescription />
+									<LogicAirLineCode>AB</LogicAirLineCode>
+									<LogicFlightNr>6000</LogicFlightNr>
+								</Flight>
+							</DossierItem>
+							<DossierItem Type="Flight" Position="5"
+								BaseDataProductSeq="TUIXYA13977">
+								<LogicDataProductSeq>TUIXYA13983</LogicDataProductSeq>
+								<BeginDate>2013-06-10</BeginDate>
+								<NumberOfItems>1</NumberOfItems>
+								<ShortDescription1>AB6020Y</ShortDescription1>
+								<ShortDescription2>DUS - ZRH</ShortDescription2>
+								<Status>OK</Status>
+								<ExternalSource>CHRTR</ExternalSource>
+								<GdsSource>TOCHARTER</GdsSource>
+								<BookingSupplier Seq="TUIXYZ1772472" Code="AB"
+									AirlineNr="5010">Air Berlin</BookingSupplier>
+								<Travellers>
+									<Traveller TravellerId="1" />
+								</Travellers>
+								<Flight>
+									<Airlinecode>AB</Airlinecode>
+									<FlightNumber>6020</FlightNumber>
+									<FlightDirection>I</FlightDirection>
+									<Departure Code="DUS" Time="17:00:00" CheckInTime="15:45:00"
+										Type="transfer">D�sseldorf</Departure>
+									<Arrival Code="ZRH" Time="18:25:00" DayIndicator="0"
+										Type="arrival">Z�rich</Arrival>
+									<Class>Y</Class>
+									<LogicDataProductSeq>TUIXYA13983</LogicDataProductSeq>
+									<LogicClass>Y</LogicClass>
+									<LogicClassDescription />
+									<LogicAirLineCode>AB</LogicAirLineCode>
+									<LogicFlightNr>6000</LogicFlightNr>
+								</Flight>
+							</DossierItem>
+						</PackageItems>
+					</Package>
+					<ItemPrices>
+						<ItemPrice InternalPriceType="FLIGHTTICKET">
+							<UnitNr>1</UnitNr>
+							<PricePerUnit>900.00</PricePerUnit>
+							<TotalPrice>900.00</TotalPrice>
+							<PriceCommissionGive>13.00</PriceCommissionGive>
+							<PriceType>1</PriceType>
+							<PriceDescription>Preis pro Person</PriceDescription>
+							<SpecialCommission>true</SpecialCommission>
+							<PriceTravellers>
+								<PriceTraveller TravellerId="1" />
+							</PriceTravellers>
+						</ItemPrice>
+					</ItemPrices>
+				</DossierItem>
+			</DossierItems>
+		</Dossier>
+	</Dossiers>
+</OLTDossiers>
