@@ -3,7 +3,6 @@
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="..\GeneralCodes\InternalPriceType.xsd" />
-    <xs:include schemaLocation="..\GeneralCodes\InternalPriceSubType.xsd" />
     <xs:include schemaLocation="..\GeneralCodes\PriceTravellerType.xsd" />
     <xs:element name="ItemPrice">
         <xs:annotation>
@@ -319,7 +318,7 @@
                           type="InternalPriceType"
                           use="optional" />
             <xs:attribute name="InternalPriceSubType"
-                          type="InternalPriceSubType"
+                          type="xs:string"
                           use="optional" />
             <xs:attribute name="PriceType"
                           type="xs:string"
