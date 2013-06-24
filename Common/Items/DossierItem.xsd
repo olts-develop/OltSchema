@@ -101,7 +101,6 @@
               <xs:enumeration value="CHRTR" />
               <xs:enumeration value="VOEGELE" />
               <xs:enumeration value="TUIINC" />
-              <xs:enumeration value="OTH" />
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
