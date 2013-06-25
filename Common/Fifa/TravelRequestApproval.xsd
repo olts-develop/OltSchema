@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xs:schema elementFormDefault="qualified"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Approvals">
+		<xs:annotation>
+			<xs:documentation>>List of Approvals</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="Approval">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="ApprovalsSeq" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>Internal key of the approuval
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="DossierSeq" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Dossier sequence - only relevant for internal
+										use.
+									</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="60" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="DossierNr" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Dossier number</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0" />
+										<xs:maxLength value="60" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Applicant" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>For- and Surname of the Applicant
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>							
+							<xs:element name="TravelReason" type="xs:string" />
+							<xs:element name="Supervisor_1" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>For- and Surname of Supervisor nr. 1
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="FastIdSupervisor_1" type="xs:integer" />
+							<xs:element name="Status_1">
+								<xs:simpleType>
+									<xs:restriction base="xs:integer">
+										<xs:enumeration value="0" />
+										<xs:enumeration value="1" />
+										<xs:enumeration value="2" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Remark_1" type="xs:string" />
+							<xs:element name="Organisation_1" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>Organisation of Supervisor nr. 1
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Supervisor_2" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>For- and Surname of Supervisor nr. 2
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="FastIdSupervisor_2" type="xs:integer" />
+							<xs:element name="Status_2">
+								<xs:simpleType>
+									<xs:restriction base="xs:integer">
+										<xs:enumeration value="0" /> <!-- Status unknown -->
+										<xs:enumeration value="1" /> <!-- approuved -->
+										<xs:enumeration value="2" /> <!-- defeated -->
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Remark_2" type="xs:string" />
+							<xs:element name="Organisation_2" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>Organisation of Supervisor nr. 2
+									</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Pax" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>Name of the first pax</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
