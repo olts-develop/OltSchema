@@ -236,6 +236,7 @@ function loadTree() {
     if ($("#ulMenu").attr('loaded') != 'true') {
         $.ajax({
             url: 'menudata_root.html',
+            dataType: 'html',
             success: function (data) {
                 $("#ulMenu").html(data);
                 $("#ulMenu").attr('loaded', 'true');
@@ -252,6 +253,7 @@ function toggleNode(itemType) {
     if (el.attr('loaded') != 'true') {
         $.ajax({
             url: 'menudata_node_' + itemType + '.html',
+            dataType: 'html',
             success: function (data) {
                 el.html(data);
                 el.attr('loaded', 'true');
@@ -283,6 +285,7 @@ function selectItem(itemType, selectedItemType) {
     if (el.attr('loaded') != 'true') {
         $.ajax({
             url: 'menudata_node_' + itemType + '.html',
+            dataType: 'html',
             success: function (data) {
                 el.html(data);
                 el.attr('loaded', 'true');

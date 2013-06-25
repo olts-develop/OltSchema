@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType Status in OLTDossiers XML Schema Documentation</title>
+      <title>Docs for complexType Status1 in OLTDossiers</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Element', 'status1');
                     </script><div class="pageheader">
-         Documentation for OLTDossiers XML Schema Documentation
+         Documentation for OLTDossiers
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -18,19 +18,19 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Name:</b></td>
-               <td>Status</td>
+               <td>Status1</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Type:</b></td>
-               <td>string:http://www.w3.org/2001/XMLSchema</td>
+               <td>integer:http://www.w3.org/2001/XMLSchema</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="dossieritem_xsd.html">DossierItem.xsd</a></td>
+               <td><a href="travelrequestapproval_xsd.html">TravelRequestApproval.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MinOccurs</b></td>
-               <td>0</td>
+               <td>(1)</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MaxOccurs</b></td>
@@ -46,25 +46,9 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>AK
-AX
-BK
-EK
-FS
-GK
-HK
-HL
-MK
-MO
-NO
-NS
-OK
-OP
-RQ
-RR
-UC
-WL
-YK</pre></td>
+               <td><pre>0: Request has not been processed
+1: approved
+2: not approved</pre></td>
             </tr>
          </tbody>
       </table>
@@ -75,7 +59,7 @@ YK</pre></td>
                </td>
             </tr>
             <tr id="xsdDiagram_body_id">
-               <td><map name="DiagramMap" id="DiagramMap"></map><img src="images/status1.png" border="0" alt="XSD Diagram of Status" usemap="#DiagramMap"></img></td>
+               <td><map name="DiagramMap" id="DiagramMap"></map><img src="images/status1.png" border="0" alt="XSD Diagram of Status1" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -87,33 +71,17 @@ YK</pre></td>
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="Status" minOccurs="0"&gt;
+&lt;xs:element name="Status1"&gt;
     &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;  AK
-              AX
-              BK
-              EK
-              FS
-              GK
-              HK
-              HL
-              MK
-              MO
-              NO
-              NS
-              OK
-              OP
-              RQ
-              RR
-              UC
-              WL
-              YK
-            &lt;/xs:documentation&gt;
+        &lt;xs:documentation&gt;0: Request has not been processed
+1: approved
+2: not approved&lt;/xs:documentation&gt;
     &lt;/xs:annotation&gt;
     &lt;xs:simpleType&gt;
-        &lt;xs:restriction base="xs:string"&gt;
-            &lt;xs:minLength value="0" /&gt;
-            &lt;xs:maxLength value="3" /&gt;
+        &lt;xs:restriction base="xs:integer"&gt;
+            &lt;xs:enumeration value="0" /&gt;
+            &lt;xs:enumeration value="1" /&gt;
+            &lt;xs:enumeration value="2" /&gt;
         &lt;/xs:restriction&gt;
     &lt;/xs:simpleType&gt;
 &lt;/xs:element&gt;</code></pre></td>
@@ -121,6 +89,6 @@ YK</pre></td>
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.9.4348</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.0.10.4574</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
    </body>
 </html>

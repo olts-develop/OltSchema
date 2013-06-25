@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType ItemPrice in OLTDossiers XML Schema Documentation</title>
+      <title>Docs for complexType ItemPrice in OLTDossiers</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Element', 'itemprice');
                     </script><div class="pageheader">
-         Documentation for OLTDossiers XML Schema Documentation
+         Documentation for OLTDossiers
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -42,8 +42,9 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="139,894,361,921" href="basedataproductseq1.html" alt="Drilldown into BaseDataProductSeq"></area>
-                     <area shape="rect" coords="139,861,297,888" href="pricetype2.html" alt="Drilldown into PriceType"></area>
+                     <area shape="rect" coords="139,927,361,954" href="basedataproductseq1.html" alt="Drilldown into BaseDataProductSeq"></area>
+                     <area shape="rect" coords="139,894,297,921" href="pricetype2.html" alt="Drilldown into PriceType"></area>
+                     <area shape="rect" coords="139,861,365,888" href="internalpricesubtype.html" alt="Drilldown into InternalPriceSubType"></area>
                      <area shape="rect" coords="139,828,399,855" href="internalpricetype2.html" alt="Drilldown into InternalPriceType"></area>
                      <area shape="rect" coords="204,795,374,822" href="supplierseq.html" alt="Drilldown into SupplierSeq"></area>
                      <area shape="rect" coords="204,762,436,789" href="dossieritemsourceseq.html" alt="Drilldown into DossierItemSourceSeq"></area>
@@ -346,6 +347,7 @@
             &lt;/xs:element&gt;
         &lt;/xs:all&gt;
         &lt;xs:attribute name="InternalPriceType" type="InternalPriceType" use="optional" /&gt;
+        &lt;xs:attribute name="InternalPriceSubType" type="xs:string" use="optional" /&gt;
         &lt;xs:attribute name="PriceType" type="xs:string" use="optional" /&gt;
         &lt;xs:attribute name="BaseDataProductSeq" type="xs:string" use="optional"&gt;
             &lt;xs:annotation&gt;
@@ -550,6 +552,12 @@
                         <td class="last">Optional</td>
                      </tr>
                      <tr>
+                        <td class="first">InternalPriceSubType</td>
+                        <td><a href="internalpricesubtype.html">InternalPriceSubType</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
                         <td class="first">PriceType</td>
                         <td><a href="pricetype2.html">PriceType</a></td>
                         <td class="mid"></td>
@@ -567,7 +575,7 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.9.4348</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema to HTML</a>Doc Generation
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.0.10.4574</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema to HTML</a>Doc Generation
       </div>
    </body>
 </html>

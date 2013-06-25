@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType CancellationFee in OLTDossiers XML Schema Documentation</title>
+      <title>Docs for complexType CancellationFee in OLTDossiers</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Element', 'cancellationfee');
                     </script><div class="pageheader">
-         Documentation for OLTDossiers XML Schema Documentation
+         Documentation for OLTDossiers
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -94,15 +94,15 @@
             &lt;xs:element name="Amount" type="xs:decimal" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
                     &lt;xs:documentation&gt;the Amout of the cancellation fee
-              only Amount or Percentage is valid not both
-            &lt;/xs:documentation&gt;
+only Amount or Percentage is valid not both
+                        &lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
             &lt;/xs:element&gt;
             &lt;xs:element name="Percent" type="xs:decimal" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
                     &lt;xs:documentation&gt;the percentage of the total Price of the cancellation fee
-              only Amount or Percentage is valid not both
-            &lt;/xs:documentation&gt;
+only Amount or Percentage is valid not both
+                        &lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
             &lt;/xs:element&gt;
             &lt;xs:element name="DayBevorDepartureBegin" type="xs:integer" minOccurs="0"&gt;
@@ -118,9 +118,9 @@
             &lt;xs:element name="ProcessFee" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
                     &lt;xs:documentation&gt;Will process fee be applied to the dossier
-              0 = No process fees
-              1 = With process fees
-            &lt;/xs:documentation&gt;
+0 = No process fees
+1 = With process fees
+                        &lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
                 &lt;xs:simpleType&gt;
                     &lt;xs:restriction base="xs:integer"&gt;
@@ -131,8 +131,8 @@
             &lt;/xs:element&gt;
             &lt;xs:element name="PriceType" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt; 0 = Change, 1 = Storno
-            &lt;/xs:documentation&gt;
+                    &lt;xs:documentation&gt;0 = Change, 1 = Storno
+                        &lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
                 &lt;xs:simpleType&gt;
                     &lt;xs:restriction base="xs:integer"&gt;
@@ -143,11 +143,11 @@
             &lt;/xs:element&gt;
             &lt;xs:element name="NrDaysFeeApply" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt; 0 = same Day
-              1 = next Day
-              2 = 2 Days
-              3 = 3 Days
-            &lt;/xs:documentation&gt;
+                    &lt;xs:documentation&gt;0 = same Day
+1 = next Day
+2 = 2 Days
+3 = 3 Days
+                        &lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
                 &lt;xs:simpleType&gt;
                     &lt;xs:restriction base="xs:integer"&gt;
@@ -159,7 +159,12 @@
                 &lt;/xs:simpleType&gt;
             &lt;/xs:element&gt;
         &lt;/xs:all&gt;
-        &lt;xs:attribute name="InternalPriceType" type="InternalPriceType" /&gt;
+        &lt;xs:attribute name="InternalPriceType" type="InternalPriceType"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;CANCELLATIONFEE -&amp;gt; PriceType = 1 = Storno
+MODIFICATIONFEE -&amp;gt; PriceType = 0 = Modification&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
     &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
@@ -272,7 +277,7 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML Studio 2012 Designer Edition 10.1.9.4348</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XSD to HTML</a>Doc Generation
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.0.10.4574</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XSD to HTML</a>Doc Generation
       </div>
    </body>
 </html>
