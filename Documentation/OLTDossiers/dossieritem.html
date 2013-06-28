@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType DossierItem in OLTDossiers</title>
+      <title>Docs for complexType DossierItem in OLTDossiers XML Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Element', 'dossieritem');
                     </script><div class="pageheader">
-         Documentation for OLTDossiers
+         Documentation for OLTDossiers XML Schema Documentation
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -38,13 +38,14 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="153,1323,309,1350" href="viewonly3.html" alt="Drilldown into ViewOnly"></area>
-                     <area shape="rect" coords="153,1290,364,1317" href="allowprojectsentry.html" alt="Drilldown into AllowProjectsEntry"></area>
-                     <area shape="rect" coords="153,1257,322,1284" href="consolidate.html" alt="Drilldown into Consolidate"></area>
-                     <area shape="rect" coords="153,1224,301,1251" href="type7.html" alt="Drilldown into Type"></area>
-                     <area shape="rect" coords="153,1191,301,1218" href="position.html" alt="Drilldown into Position"></area>
-                     <area shape="rect" coords="153,1158,375,1185" href="basedataproductseq.html" alt="Drilldown into BaseDataProductSeq"></area>
-                     <area shape="rect" coords="153,1125,346,1152" href="dossieritemseq.html" alt="Drilldown into DossierItemSeq"></area>
+                     <area shape="rect" coords="153,1356,309,1383" href="viewonly3.html" alt="Drilldown into ViewOnly"></area>
+                     <area shape="rect" coords="153,1323,364,1350" href="allowprojectsentry.html" alt="Drilldown into AllowProjectsEntry"></area>
+                     <area shape="rect" coords="153,1290,322,1317" href="consolidate.html" alt="Drilldown into Consolidate"></area>
+                     <area shape="rect" coords="153,1257,301,1284" href="type7.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="153,1224,301,1251" href="position.html" alt="Drilldown into Position"></area>
+                     <area shape="rect" coords="153,1191,375,1218" href="basedataproductseq.html" alt="Drilldown into BaseDataProductSeq"></area>
+                     <area shape="rect" coords="153,1158,346,1185" href="dossieritemseq.html" alt="Drilldown into DossierItemSeq"></area>
+                     <area shape="rect" coords="218,1125,386,1152" href="externalsystemids.html" alt="Drilldown into ExternalSystemIds"></area>
                      <area shape="rect" coords="218,1092,374,1119" href="cancellationfees.html" alt="Drilldown into CancellationFees"></area>
                      <area shape="rect" coords="218,1059,365,1086" href="purchaseprices.html" alt="Drilldown into PurchasePrices"></area>
                      <area shape="rect" coords="218,1026,340,1053" href="itemprices.html" alt="Drilldown into ItemPrices"></area>
@@ -610,6 +611,27 @@ LHL_NOINV&lt;/xs:documentation&gt;
                     &lt;/xs:sequence&gt;
                 &lt;/xs:complexType&gt;
             &lt;/xs:element&gt;
+            &lt;xs:element name="ExternalSystemIds" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Only for documentation purposes. TUI uses these fields to pass information on to TripAdvisor so that they can generate survey mails.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:sequence&gt;
+                        &lt;xs:element name="ExternalSystemId" maxOccurs="unbounded"&gt;
+                            &lt;xs:complexType&gt;
+                                &lt;xs:all&gt;
+                                    &lt;xs:element name="ExternalSystemType" type="xs:string"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;TripAdvisorId; TripAdvisorSupplierId&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:element&gt;
+                                    &lt;xs:element name="ExternalSystemId" type="xs:string" /&gt;
+                                &lt;/xs:all&gt;
+                            &lt;/xs:complexType&gt;
+                        &lt;/xs:element&gt;
+                    &lt;/xs:sequence&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
         &lt;/xs:sequence&gt;
         &lt;xs:attribute name="DossierItemSeq" type="xs:string" use="optional"&gt;
             &lt;xs:annotation&gt;
@@ -884,6 +906,12 @@ LHL_NOINV&lt;/xs:documentation&gt;
                      <tr>
                         <td class="first">CancellationFees</td>
                         <td><a href="cancellationfees.html">CancellationFees</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ExternalSystemIds</td>
+                        <td><a href="externalsystemids.html">ExternalSystemIds</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
