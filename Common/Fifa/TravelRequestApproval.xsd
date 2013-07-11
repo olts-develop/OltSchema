@@ -99,7 +99,7 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="ApplicantLastMail"
+                            <xs:element name="ApplicantMail"
                                         type="xs:string">
                                 <xs:annotation>
                                     <xs:documentation>Mail of the Applicant
@@ -142,7 +142,7 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                             <xs:element name="Supervisor1LastMail"
+                             <xs:element name="Supervisor1Mail"
                                         type="xs:string">
                                 <xs:annotation>
                                     <xs:documentation>Mail of supervisor nr. 1
@@ -203,7 +203,7 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                             <xs:element name="Supervisor2LastMail"
+                             <xs:element name="Supervisor2Mail"
                                         type="xs:string">
                                 <xs:annotation>
                                     <xs:documentation>Mail of supervisor nr. 2
