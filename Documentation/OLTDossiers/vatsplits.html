@@ -59,55 +59,55 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element name="VATSplits" minOccurs="0"&gt;
-    &lt;xs:complexType&gt;
-        &lt;xs:sequence&gt;
-            &lt;xs:element name="VATSplit" maxOccurs="unbounded"&gt;
-                &lt;xs:complexType&gt;
-                    &lt;xs:sequence&gt;
-                        &lt;xs:element name="Amount" type="xs:decimal" /&gt;
-                        &lt;xs:element name="VatSplittCode" type="xs:integer" /&gt;
-                        &lt;xs:element name="VatSplittPrintedCode" minOccurs="0"&gt;
-                            &lt;xs:simpleType&gt;
-                                &lt;xs:restriction base="xs:string"&gt;
-                                    &lt;xs:enumeration value="A" /&gt;
-                                    &lt;xs:enumeration value="B" /&gt;
-                                    &lt;xs:enumeration value="C" /&gt;
-                                    &lt;xs:enumeration value="D" /&gt;
-                                    &lt;xs:enumeration value="E" /&gt;
-                                    &lt;xs:enumeration value="F" /&gt;
-                                    &lt;xs:enumeration value="G" /&gt;
-                                    &lt;xs:enumeration value="I" /&gt;
-                                    &lt;xs:enumeration value="M" /&gt;
-                                    &lt;xs:enumeration value="N" /&gt;
-                                    &lt;xs:enumeration value="Q" /&gt;
-                                    &lt;xs:enumeration value="O" /&gt;
-                                    &lt;xs:enumeration value="P" /&gt;
-                                    &lt;xs:enumeration value="R" /&gt;
-                                    &lt;xs:enumeration value="S" /&gt;
-                                    &lt;xs:enumeration value="T" /&gt;
-                                    &lt;xs:enumeration value="U" /&gt;
-                                    &lt;xs:enumeration value="VT" /&gt;
-                                    &lt;xs:enumeration value="VU" /&gt;
-                                    &lt;xs:enumeration value="W" /&gt;
-                                    &lt;xs:enumeration value="X" /&gt;
-                                    &lt;xs:enumeration value="Y" /&gt;
-                                    &lt;xs:enumeration value="Z" /&gt;
-                                &lt;/xs:restriction&gt;
-                            &lt;/xs:simpleType&gt;
-                        &lt;/xs:element&gt;
-                        &lt;xs:element name="VatSplittPercent" minOccurs="0"&gt;
-                            &lt;xs:simpleType&gt;
-                                &lt;xs:restriction base="xs:decimal"&gt;
-                                    &lt;xs:maxInclusive value="+100" /&gt;
-                                    &lt;xs:minInclusive value="0" /&gt;
-                                &lt;/xs:restriction&gt;
-                            &lt;/xs:simpleType&gt;
-                        &lt;/xs:element&gt;
-                    &lt;/xs:sequence&gt;
-                &lt;/xs:complexType&gt;
+  &lt;xs:complexType&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name="VATSplit" maxOccurs="unbounded"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:sequence&gt;
+            &lt;xs:element name="Amount" type="xs:decimal" /&gt;
+            &lt;xs:element name="VatSplittCode" type="xs:integer" /&gt;
+            &lt;xs:element name="VatSplittPrintedCode" minOccurs="0"&gt;
+              &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:string"&gt;
+                  &lt;xs:enumeration value="A" /&gt;
+                  &lt;xs:enumeration value="B" /&gt;
+                  &lt;xs:enumeration value="C" /&gt;
+                  &lt;xs:enumeration value="D" /&gt;
+                  &lt;xs:enumeration value="E" /&gt;
+                  &lt;xs:enumeration value="F" /&gt;
+                  &lt;xs:enumeration value="G" /&gt;
+                  &lt;xs:enumeration value="I" /&gt;
+                  &lt;xs:enumeration value="M" /&gt;
+                  &lt;xs:enumeration value="N" /&gt;
+                  &lt;xs:enumeration value="Q" /&gt;
+                  &lt;xs:enumeration value="O" /&gt;
+                  &lt;xs:enumeration value="P" /&gt;
+                  &lt;xs:enumeration value="R" /&gt;
+                  &lt;xs:enumeration value="S" /&gt;
+                  &lt;xs:enumeration value="T" /&gt;
+                  &lt;xs:enumeration value="U" /&gt;
+                  &lt;xs:enumeration value="VT" /&gt;
+                  &lt;xs:enumeration value="VU" /&gt;
+                  &lt;xs:enumeration value="W" /&gt;
+                  &lt;xs:enumeration value="X" /&gt;
+                  &lt;xs:enumeration value="Y" /&gt;
+                  &lt;xs:enumeration value="Z" /&gt;
+                &lt;/xs:restriction&gt;
+              &lt;/xs:simpleType&gt;
             &lt;/xs:element&gt;
-        &lt;/xs:sequence&gt;
-    &lt;/xs:complexType&gt;
+            &lt;xs:element name="VatSplittPercent" minOccurs="0"&gt;
+              &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:decimal"&gt;
+                  &lt;xs:maxInclusive value="+100" /&gt;
+                  &lt;xs:minInclusive value="0" /&gt;
+                &lt;/xs:restriction&gt;
+              &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+          &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -139,6 +139,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.0.10.4574</a><br></br>Featuring Sample <a href="http://www.liquid-technologies.com/XmlToXsd.aspx">XML Generator</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.0.11.4603</a><br></br>Featuring Sample <a href="http://www.liquid-technologies.com/XmlToXsd.aspx">XML Generator</a></div>
    </body>
 </html>

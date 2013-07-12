@@ -54,7 +54,7 @@
                      <area shape="rect" coords="272,234,510,261" href="transportationtrains.html" alt="Drilldown into TransportationTrains"></area>
                      <area shape="rect" coords="272,201,495,228" href="transportationvip.html" alt="Drilldown into TransportationVIP"></area>
                      <area shape="rect" coords="272,168,510,195" href="transportationdriver.html" alt="Drilldown into TransportationDriver"></area>
-                     <area shape="rect" coords="295,135,511,162" href="accommodations.html" alt="Drilldown into Accommodations"></area>
+                     <area shape="rect" coords="272,135,488,162" href="accommodations.html" alt="Drilldown into Accommodations"></area>
                      <area shape="rect" coords="272,102,436,129" href="flights.html" alt="Drilldown into Flights"></area>
                      <area shape="rect" coords="253,69,369,96" href="travellers1.html" alt="Drilldown into Travellers"></area>
                      <area shape="rect" coords="253,36,360,63" href="projects1.html" alt="Drilldown into Projects"></area>
@@ -71,86 +71,86 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element name="TravelRequest" maxOccurs="unbounded"&gt;
-    &lt;xs:complexType&gt;
-        &lt;xs:sequence&gt;
-            &lt;xs:element name="Status" minOccurs="0"&gt;
-                &lt;xs:simpleType&gt;
+  &lt;xs:complexType&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name="Status" minOccurs="0"&gt;
+        &lt;xs:simpleType&gt;
+          &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:minLength value="0" /&gt;
+            &lt;xs:maxLength value="3" /&gt;
+          &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Projects" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:all&gt;
+            &lt;xs:element name="Project" type="ProjectType" /&gt;
+          &lt;/xs:all&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Travellers" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:sequence&gt;
+            &lt;xs:element name="Traveller" maxOccurs="unbounded"&gt;
+              &lt;xs:complexType&gt;
+                &lt;xs:attribute name="TravellerSeq" use="optional"&gt;
+                  &lt;xs:simpleType&gt;
                     &lt;xs:restriction base="xs:string"&gt;
-                        &lt;xs:minLength value="0" /&gt;
-                        &lt;xs:maxLength value="3" /&gt;
+                      &lt;xs:minLength value="0" /&gt;
+                      &lt;xs:maxLength value="20" /&gt;
                     &lt;/xs:restriction&gt;
-                &lt;/xs:simpleType&gt;
+                  &lt;/xs:simpleType&gt;
+                &lt;/xs:attribute&gt;
+                &lt;xs:attribute name="TravellerId" type="xs:integer" use="optional"&gt;
+                  &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Optional. This value is for display purposes only.&lt;/xs:documentation&gt;
+                  &lt;/xs:annotation&gt;
+                &lt;/xs:attribute&gt;
+                &lt;xs:attribute name="CustomerNr" type="xs:integer" use="optional"&gt;
+                  &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Optional. This value is for display purposes only.&lt;/xs:documentation&gt;
+                  &lt;/xs:annotation&gt;
+                &lt;/xs:attribute&gt;
+              &lt;/xs:complexType&gt;
             &lt;/xs:element&gt;
-            &lt;xs:element name="Projects" minOccurs="0"&gt;
-                &lt;xs:complexType&gt;
-                    &lt;xs:all&gt;
-                        &lt;xs:element name="Project" type="ProjectType" /&gt;
-                    &lt;/xs:all&gt;
-                &lt;/xs:complexType&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="Travellers" minOccurs="0"&gt;
-                &lt;xs:complexType&gt;
-                    &lt;xs:sequence&gt;
-                        &lt;xs:element name="Traveller" maxOccurs="unbounded"&gt;
-                            &lt;xs:complexType&gt;
-                                &lt;xs:attribute name="TravellerSeq" use="optional"&gt;
-                                    &lt;xs:simpleType&gt;
-                                        &lt;xs:restriction base="xs:string"&gt;
-                                            &lt;xs:minLength value="0" /&gt;
-                                            &lt;xs:maxLength value="20" /&gt;
-                                        &lt;/xs:restriction&gt;
-                                    &lt;/xs:simpleType&gt;
-                                &lt;/xs:attribute&gt;
-                                &lt;xs:attribute name="TravellerId" type="xs:integer" use="optional"&gt;
-                                    &lt;xs:annotation&gt;
-                                        &lt;xs:documentation&gt;Optional. This value is for display purposes only.&lt;/xs:documentation&gt;
-                                    &lt;/xs:annotation&gt;
-                                &lt;/xs:attribute&gt;
-                                &lt;xs:attribute name="CustomerNr" type="xs:integer" use="optional"&gt;
-                                    &lt;xs:annotation&gt;
-                                        &lt;xs:documentation&gt;Optional. This value is for display purposes only.&lt;/xs:documentation&gt;
-                                    &lt;/xs:annotation&gt;
-                                &lt;/xs:attribute&gt;
-                            &lt;/xs:complexType&gt;
-                        &lt;/xs:element&gt;
-                    &lt;/xs:sequence&gt;
-                &lt;/xs:complexType&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:choice&gt;
-                &lt;xs:element ref="Flights" /&gt;
-                &lt;xs:element ref="Accommodations" minOccurs="1" maxOccurs="1" /&gt;
-                &lt;xs:element ref="TransportationDriver" /&gt;
-                &lt;xs:element ref="TransportationVIP" /&gt;
-                &lt;xs:element ref="TransportationTrains" /&gt;
-            &lt;/xs:choice&gt;
-        &lt;/xs:sequence&gt;
-        &lt;xs:attribute name="TravelRequestSeq" type="xs:string" use="optional" /&gt;
-        &lt;xs:attribute name="Type" use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This is duplicated information, as the information is supplied in the respective node of the TravelRequest. Supplying this data might make the interpretation of the caller system a little simpler to implement.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-            &lt;xs:simpleType&gt;
-                &lt;xs:restriction base="xs:string"&gt;
-                    &lt;xs:enumeration value="Flights" /&gt;
-                    &lt;xs:enumeration value="Accommodations" /&gt;
-                    &lt;xs:enumeration value="TransportationDriver" /&gt;
-                    &lt;xs:enumeration value="TransportationVIP" /&gt;
-                    &lt;xs:enumeration value="TransportationTrains" /&gt;
-                &lt;/xs:restriction&gt;
-            &lt;/xs:simpleType&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="Action" use="optional"&gt;
-            &lt;xs:simpleType&gt;
-                &lt;xs:restriction base="xs:string"&gt;
-                    &lt;xs:enumeration value="insert" /&gt;
-                    &lt;xs:enumeration value="update" /&gt;
-                    &lt;xs:enumeration value="delete" /&gt;
-                &lt;/xs:restriction&gt;
-            &lt;/xs:simpleType&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="ViewOnly" type="xs:boolean" use="optional" /&gt;
-        &lt;xs:attribute name="CreateTimeStamp" type="xs:dateTime" /&gt;
-    &lt;/xs:complexType&gt;
+          &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:choice&gt;
+        &lt;xs:element ref="Flights" /&gt;
+        &lt;xs:element ref="Accommodations" /&gt;
+        &lt;xs:element ref="TransportationDriver" /&gt;
+        &lt;xs:element ref="TransportationVIP" /&gt;
+        &lt;xs:element ref="TransportationTrains" /&gt;
+      &lt;/xs:choice&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name="TravelRequestSeq" type="xs:string" use="optional" /&gt;
+    &lt;xs:attribute name="Type" use="required"&gt;
+      &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;This is duplicated information, as the information is supplied in the respective node of the TravelRequest. Supplying this data might make the interpretation of the caller system a little simpler to implement.&lt;/xs:documentation&gt;
+      &lt;/xs:annotation&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+          &lt;xs:enumeration value="Flights" /&gt;
+          &lt;xs:enumeration value="Accommodations" /&gt;
+          &lt;xs:enumeration value="TransportationDriver" /&gt;
+          &lt;xs:enumeration value="TransportationVIP" /&gt;
+          &lt;xs:enumeration value="TransportationTrains" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Action" use="optional"&gt;
+      &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+          &lt;xs:enumeration value="insert" /&gt;
+          &lt;xs:enumeration value="update" /&gt;
+          &lt;xs:enumeration value="delete" /&gt;
+        &lt;/xs:restriction&gt;
+      &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="ViewOnly" type="xs:boolean" use="optional" /&gt;
+    &lt;xs:attribute name="CreateTimeStamp" type="xs:dateTime" /&gt;
+  &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -197,8 +197,8 @@
                      <tr>
                         <td class="first">Accommodations</td>
                         <td><a href="accommodations.html">Accommodations</a></td>
-                        <td class="mid">1</td>
-                        <td class="last">1</td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
                      </tr>
                      <tr>
                         <td class="first">TransportationDriver</td>
@@ -274,6 +274,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.0.10.4574</a><br></br>Featuring <a href="http://www.liquid-technologies.com/XmlDataBinding/Xml-Schema-To-Silverlight.aspx">XSD to Silverlight Code Generation</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.0.11.4603</a><br></br>Featuring <a href="http://www.liquid-technologies.com/XmlDataBinding/Xml-Schema-To-Silverlight.aspx">XSD to Silverlight Code Generation</a></div>
    </body>
 </html>
