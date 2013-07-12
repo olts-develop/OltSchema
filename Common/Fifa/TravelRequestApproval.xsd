@@ -1,211 +1,222 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2013 Designer Edition 11.0.10.4574 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2013 Designer Edition 11.0.11.4603 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="TravelRequestApprovals">
-        <xs:annotation>
-            <xs:documentation>List of Approvals</xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:sequence minOccurs="0"
-                         maxOccurs="unbounded">
-                <xs:element name="TravelRequestApproval">
-                    <xs:complexType>
-                        <xs:all>
-                            <xs:element name="ApprovalSeq"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Internal key of the approuval
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="DossierSeq" minOccurs="0">
-                                <xs:annotation>
-                                    <xs:documentation>Dossier sequence - only relevant for internal
-                                        use.
-                                    </xs:documentation>
-                                </xs:annotation>
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:minLength value="0" />
-                                        <xs:maxLength value="20" />
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <xs:element name="DossierNr" minOccurs="0">
-                                <xs:annotation>
-                                    <xs:documentation>Dossier number</xs:documentation>
-                                </xs:annotation>
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:minLength value="0" />
-                                        <xs:maxLength value="20" />
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>                             
-                            <xs:element name="ApplicantTitle"
-                                        type="xs:string" minOccurs="0">
-                                <xs:annotation>
-                                    <xs:documentation>Title of the Applicant
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="ApplicantFirstName"
-                                        type="xs:string" minOccurs="0">
-                                <xs:annotation>
-                                    <xs:documentation>Firstname of the Applicant
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="ApplicantLastName"
-                                        type="xs:string" minOccurs="0">
-                                <xs:annotation>
-                                    <xs:documentation>Lastname of the Applicant
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="ApplicantMail"
-                                        type="xs:string" minOccurs="0">
-                                <xs:annotation>
-                                    <xs:documentation>Mail of the Applicant
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="OrgApplicant"
-                                        type="xs:string" minOccurs="0">
-                                <xs:annotation>
-                                    <xs:documentation>Organisation/Department name of the Applicant
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="TravelReason"
-                                        type="xs:string" minOccurs="0" />
-                            <xs:element name="Supervisor1Nr"
-                                        type="xs:integer">
-                                <xs:annotation>
-                                    <xs:documentation>CustomerNr of the supervisor 1</xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Supervisor1Title"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Title of Supervisor nr. 1
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Supervisor1FirstName"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Firstname of the supervisor nr. 1
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Supervisor1LastName"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Lastname of supervisor nr. 1
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                             <xs:element name="Supervisor1Mail"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Mail of supervisor nr. 1
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Status1">
-                                <xs:annotation>
-                                    <xs:documentation>0: Request has not been processed
+  <xs:element name="TravelRequestApprovals">
+    <xs:annotation>
+      <xs:documentation>List of Approvals</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence minOccurs="0"
+                   maxOccurs="unbounded">
+        <xs:element name="TravelRequestApproval">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="ApprovalSeq"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Internal key of the approval
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="DossierSeq"
+                          minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Dossier sequence - only relevant for internal use
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="0" />
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DossierNr"
+                          minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Dossier number</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="0" />
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApplicantTitle"
+                          type="xs:string"
+                          minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Title of the applicant
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ApplicantFirstName"
+                          type="xs:string"
+                          minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Firstname of the applicant
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ApplicantLastName"
+                          type="xs:string"
+                          minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Lastname of the applicant
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ApplicantMail"
+                          type="xs:string"
+                          minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Mail address of the applicant
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="OrgApplicant"
+                          type="xs:string"
+                          minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Organisation/Department name of the applicant
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="TravelReason"
+                          type="xs:string"
+                          minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Travel Reason of this dossier</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Supervisor1Nr"
+                          type="xs:integer">
+                <xs:annotation>
+                  <xs:documentation>CustomerNr of the supervisor 1</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Supervisor1Title"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Title of supervisor nr. 1
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Supervisor1FirstName"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Firstname of the supervisor nr. 1
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Supervisor1LastName"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Lastname of supervisor nr. 1
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Supervisor1Mail"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Mail address of supervisor nr. 1
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Status1">
+                <xs:annotation>
+                  <xs:documentation>0: Request has not been processed
 1: approved
 2: not approved</xs:documentation>
-                                </xs:annotation>
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:integer">
-                                        <xs:enumeration value="0" />
-                                        <xs:enumeration value="1" />
-                                        <xs:enumeration value="2" />
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <xs:element name="Remark1"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Optional remark that a supervisor can make when approving or declining a request</xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Organisation1"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Organisation/Department name of supervisor nr. 1
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Supervisor2Nr"
-                                        type="xs:integer">
-                                <xs:annotation>
-                                    <xs:documentation>CustomerNr of the supervisor 2</xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Supervisor2Title"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Title of Supervisor nr. 2
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Supervisor2FirstName"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Firstname of the supervisor nr. 2
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Supervisor2LastName"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Lastname of supervisor nr. 2
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                             <xs:element name="Supervisor2Mail"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Mail of supervisor nr. 2
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Status2">
-                                <xs:annotation>
-                                    <xs:documentation>0: Request has not been processed
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remark1"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Optional remark that a supervisor can make when approving or declining a request</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Organisation1"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Organisation/Department name of supervisor nr. 1
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Supervisor2Nr"
+                          type="xs:integer">
+                <xs:annotation>
+                  <xs:documentation>CustomerNr of the supervisor 2</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Supervisor2Title"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Title of supervisor nr. 2
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Supervisor2FirstName"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Firstname of the supervisor nr. 2
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Supervisor2LastName"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Lastname of supervisor nr. 2
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Supervisor2Mail"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Mail address of supervisor nr. 2
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Status2">
+                <xs:annotation>
+                  <xs:documentation>0: Request has not been processed
 1: approved
 2: not approved</xs:documentation>
-                                </xs:annotation>
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:integer">
-                                        <xs:enumeration value="0" />
-                                        <xs:enumeration value="1" />
-                                        <xs:enumeration value="2" />
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <xs:element name="Remark2"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Optional remark that a supervisor can make when approving or declining a request</xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Organisation2"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Organisation/Department name of supervisor nr. 2
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                        </xs:all>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                    <xs:enumeration value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remark2"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Optional remark that a supervisor can make when approving or declining a request</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Organisation2"
+                          type="xs:string">
+                <xs:annotation>
+                  <xs:documentation>Organisation/Department name of supervisor nr. 2
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
