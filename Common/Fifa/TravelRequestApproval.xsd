@@ -42,42 +42,7 @@
                                         <xs:maxLength value="20" />
                                     </xs:restriction>
                                 </xs:simpleType>
-                            </xs:element>
-                             <xs:element name="ProjectMgrFASTID"
-                                        type="xs:integer">
-                                <xs:annotation>
-                                    <xs:documentation>FastID of the Supervisor of the Applicant
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="ProjectMgrTitle"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Title of the ProjectMgr
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="ProjectMgrFirstName"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Firstname of the ProjectMgr
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="ProjectMgrLastName"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Lastname of the ProjectMgr
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                             <xs:element name="ProjectMgrLastMail"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Mail of the ProjectMgr
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
+                            </xs:element>                             
                             <xs:element name="ApplicantTitle"
                                         type="xs:string">
                                 <xs:annotation>
@@ -103,13 +68,6 @@
                                         type="xs:string">
                                 <xs:annotation>
                                     <xs:documentation>Mail of the Applicant
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="OrgApplicant"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Organisation/Department name of the Applicant
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
@@ -235,12 +193,6 @@
                                 <xs:annotation>
                                     <xs:documentation>Organisation/Department name of supervisor nr. 2
                                     </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Pax"
-                                        type="xs:string">
-                                <xs:annotation>
-                                    <xs:documentation>Name of the first pax in the dossier</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                         </xs:all>
