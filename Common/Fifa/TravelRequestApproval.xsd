@@ -19,7 +19,7 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="DossierSeq">
+                            <xs:element name="DossierSeq" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Dossier sequence - only relevant for internal
                                         use.
@@ -32,7 +32,7 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="DossierNr">
+                            <xs:element name="DossierNr" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Dossier number</xs:documentation>
                                 </xs:annotation>
@@ -44,35 +44,42 @@
                                 </xs:simpleType>
                             </xs:element>                             
                             <xs:element name="ApplicantTitle"
-                                        type="xs:string">
+                                        type="xs:string" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Title of the Applicant
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="ApplicantFirstName"
-                                        type="xs:string">
+                                        type="xs:string" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Firstname of the Applicant
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="ApplicantLastName"
-                                        type="xs:string">
+                                        type="xs:string" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Lastname of the Applicant
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="ApplicantMail"
-                                        type="xs:string">
+                                        type="xs:string" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Mail of the Applicant
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
+                            <xs:element name="OrgApplicant"
+                                        type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Organisation/Department name of the Applicant
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
                             <xs:element name="TravelReason"
-                                        type="xs:string" />
+                                        type="xs:string" / minOccurs="0">
                             <xs:element name="Supervisor1Nr"
                                         type="xs:integer">
                                 <xs:annotation>
