@@ -2,11 +2,11 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType IsoCode in OLTDossiers XML Schema Documentation</title>
+      <title>Docs for complexType PhoneCountryCode in OLTDossiers XML Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
-                      EnsureInFrame('Attribute', 'isocode4');
+                      EnsureInFrame('Attribute', 'phonecountrycode2');
                     </script><div class="pageheader">
          Documentation for OLTDossiers XML Schema Documentation
       </div>
@@ -18,7 +18,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Name:</b></td>
-               <td>IsoCode</td>
+               <td>PhoneCountryCode</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Type:</b></td>
@@ -26,11 +26,15 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="dossieritem_xsd.html">DossierItem.xsd</a></td>
+               <td><a href="hotel_xsd.html">Hotel.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Use</b></td>
                <td>(Optional)</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Documentation:</b></td>
+               <td><pre>International telephone country code for the specific country, e.g. +41 for Switzerland</pre></td>
             </tr>
          </tbody>
       </table>
@@ -41,7 +45,7 @@
                </td>
             </tr>
             <tr id="xsdDiagram_body_id">
-               <td><map name="DiagramMap" id="DiagramMap"></map><img src="images/isocode4.png" border="0" alt="XSD Diagram of IsoCode" usemap="#DiagramMap"></img></td>
+               <td><map name="DiagramMap" id="DiagramMap"></map><img src="images/phonecountrycode2.png" border="0" alt="XSD Diagram of PhoneCountryCode" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -53,7 +57,11 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:attribute name="IsoCode" type="xs:string" /&gt;</code></pre></td>
+&lt;xs:attribute name="PhoneCountryCode" type="xs:string"&gt;
+  &lt;xs:annotation&gt;
+    &lt;xs:documentation&gt;International telephone country code for the specific country, e.g. +41 for Switzerland&lt;/xs:documentation&gt;
+  &lt;/xs:annotation&gt;
+&lt;/xs:attribute&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>

@@ -26,7 +26,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="carcategory_xsd.html">CarCategory.xsd</a></td>
+               <td><a href="car_xsd.html">Car.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MinOccurs</b></td>
@@ -39,6 +39,10 @@
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
                <td>False</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Documentation:</b></td>
+               <td><pre>Destination code of the car company ot catalog for this company. Note: this is normally not a real destination but rather an identifier, e.g. AL1 for Alamo.</pre></td>
             </tr>
          </tbody>
       </table>
@@ -61,7 +65,11 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="Destination" type="xs:string" minOccurs="0" /&gt;</code></pre></td>
+&lt;xs:element name="Destination" type="xs:string" minOccurs="0"&gt;
+  &lt;xs:annotation&gt;
+    &lt;xs:documentation&gt;Destination code of the car company ot catalog for this company. Note: this is normally not a real destination but rather an identifier, e.g. AL1 for Alamo.&lt;/xs:documentation&gt;
+  &lt;/xs:annotation&gt;
+&lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>

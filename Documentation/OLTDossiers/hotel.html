@@ -48,7 +48,7 @@
                      <area shape="rect" coords="194,927,348,954" href="category2.html" alt="Drilldown into Category"></area>
                      <area shape="rect" coords="194,894,342,921" href="owner.html" alt="Drilldown into Owner"></area>
                      <area shape="rect" coords="194,861,355,888" href="hotelcode.html" alt="Drilldown into HotelCode"></area>
-                     <area shape="rect" coords="194,828,362,855" href="destination2.html" alt="Drilldown into Destination"></area>
+                     <area shape="rect" coords="194,828,362,855" href="destination4.html" alt="Drilldown into Destination"></area>
                      <area shape="rect" coords="194,795,345,822" href="weburl.html" alt="Drilldown into WebURL"></area>
                      <area shape="rect" coords="194,762,342,789" href="email3.html" alt="Drilldown into Email"></area>
                      <area shape="rect" coords="194,729,372,756" href="departure2.html" alt="Drilldown into Departure"></area>
@@ -70,7 +70,7 @@
                      <area shape="rect" coords="194,201,360,228" href="postalcode3.html" alt="Drilldown into PostalCode"></area>
                      <area shape="rect" coords="194,168,358,195" href="subregion2.html" alt="Drilldown into SubRegion"></area>
                      <area shape="rect" coords="194,135,342,162" href="region2.html" alt="Drilldown into Region"></area>
-                     <area shape="rect" coords="194,102,358,129" href="country4.html" alt="Drilldown into Country"></area>
+                     <area shape="rect" coords="194,102,358,129" href="country5.html" alt="Drilldown into Country"></area>
                      <area shape="rect" coords="194,69,349,96" href="address23.html" alt="Drilldown into Address2"></area>
                      <area shape="rect" coords="194,36,349,63" href="address13.html" alt="Drilldown into Address1"></area>
                      <area shape="rect" coords="194,3,360,30" href="hotelname.html" alt="Drilldown into HotelName"></area></map><img src="images/hotel.png" border="0" alt="XSD Diagram of Hotel" usemap="#DiagramMap"></img></td>
@@ -96,6 +96,11 @@
           &lt;xs:simpleContent&gt;
             &lt;xs:extension base="xs:string"&gt;
               &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
+              &lt;xs:attribute name="PhoneCountryCode" type="xs:string"&gt;
+                &lt;xs:annotation&gt;
+                  &lt;xs:documentation&gt;International telephone country code for the specific country, e.g. +41 for Switzerland&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+              &lt;/xs:attribute&gt;
             &lt;/xs:extension&gt;
           &lt;/xs:simpleContent&gt;
         &lt;/xs:complexType&gt;
@@ -305,7 +310,7 @@
                      </tr>
                      <tr>
                         <td class="first">Country</td>
-                        <td><a href="country4.html">Country</a></td>
+                        <td><a href="country5.html">Country</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -437,7 +442,7 @@
                      </tr>
                      <tr>
                         <td class="first">Destination</td>
-                        <td><a href="destination2.html">Destination</a></td>
+                        <td><a href="destination4.html">Destination</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

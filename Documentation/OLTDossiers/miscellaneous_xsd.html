@@ -26,124 +26,192 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>
-&lt;!--Created with Liquid XML Studio 2012 Designer Edition 10.1.3.4172 (http://www.liquid-technologies.com)--&gt;
-&lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+&lt;!--Created with Liquid XML 2013 Designer Edition 11.0.11.4603 (http://www.liquid-technologies.com)--&gt;
+&lt;xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;xs:include schemaLocation=".\ProductItemPrice.xsd" /&gt;
   &lt;xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" /&gt;
   &lt;xs:element name="Miscellaneous"&gt;
     &lt;xs:complexType&gt;
       &lt;xs:all&gt;
-        &lt;xs:element name="Title" type="xs:string" minOccurs="0" /&gt;
-        &lt;xs:element name="Detail" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:element name="Title"
+                    type="xs:string"
+                    minOccurs="0" /&gt;
+        &lt;xs:element name="Detail"
+                    type="xs:string"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="ItineraryTitle" type="xs:string" minOccurs="0" /&gt;
-        &lt;xs:element name="ItineraryDetail" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:element name="ItineraryTitle"
+                    type="xs:string"
+                    minOccurs="0" /&gt;
+        &lt;xs:element name="ItineraryDetail"
+                    type="xs:string"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="VoucherTitle" type="xs:string" minOccurs="0" /&gt;
-        &lt;xs:element name="VoucherDetail" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:element name="VoucherTitle"
+                    type="xs:string"
+                    minOccurs="0" /&gt;
+        &lt;xs:element name="VoucherDetail"
+                    type="xs:string"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="SupplierInfo" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:element name="SupplierInfo"
+                    type="xs:string"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;CDATA - Information for the supplier that is, for example, sent with communication about this item to the supplier. The customer does not get to see this data. The information might be sensitive in nature, but important for the supplier.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Arrival" minOccurs="0"&gt;
+        &lt;xs:element name="Arrival"
+                    minOccurs="0"&gt;
           &lt;xs:complexType&gt;
-            &lt;xs:attribute name="Time" type="xs:time" /&gt;
-            &lt;xs:attribute name="Description" type="xs:string" /&gt;
+            &lt;xs:attribute name="Time"
+                          type="xs:time" /&gt;
+            &lt;xs:attribute name="Description"
+                          type="xs:string" /&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Departure" minOccurs="0"&gt;
+        &lt;xs:element name="Departure"
+                    minOccurs="0"&gt;
           &lt;xs:complexType&gt;
-            &lt;xs:attribute name="Time" type="xs:time" /&gt;
-            &lt;xs:attribute name="Description" type="xs:string" /&gt;
+            &lt;xs:attribute name="Time"
+                          type="xs:time" /&gt;
+            &lt;xs:attribute name="Description"
+                          type="xs:string" /&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="FlightNumber" minOccurs="0"&gt;
+        &lt;xs:element name="FlightNumber"
+                    minOccurs="0"&gt;
           &lt;xs:complexType&gt;
             &lt;xs:simpleContent&gt;
               &lt;xs:extension base="xs:string"&gt;
-                &lt;xs:attribute name="ConfirmedBy" type="xs:string" /&gt;
+                &lt;xs:attribute name="ConfirmedBy"
+                              type="xs:string" /&gt;
               &lt;/xs:extension&gt;
             &lt;/xs:simpleContent&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="ConfirmationNr" minOccurs="0"&gt;
+        &lt;xs:element name="ConfirmationNr"
+                    minOccurs="0"&gt;
           &lt;xs:complexType&gt;
             &lt;xs:simpleContent&gt;
               &lt;xs:extension base="xs:string"&gt;
-                &lt;xs:attribute name="ConfirmedBy" type="xs:string" /&gt;
+                &lt;xs:attribute name="ConfirmedBy"
+                              type="xs:string" /&gt;
               &lt;/xs:extension&gt;
             &lt;/xs:simpleContent&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="BillingSupplier" type="SupplierType" minOccurs="0"&gt;
+        &lt;xs:element name="BillingSupplier"
+                    type="SupplierType"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Supplier that is to receive the payment for this item&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0"&gt;
+        &lt;xs:element name="VoucherSupplier"
+                    type="SupplierType"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Supplier that is to be printed on a voucher for this item&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Country" minOccurs="0"&gt;
+        &lt;xs:element name="Country"
+                    minOccurs="0"&gt;
           &lt;xs:complexType&gt;
             &lt;xs:simpleContent&gt;
               &lt;xs:extension base="xs:string"&gt;
-                &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
+                &lt;xs:attribute name="IsoCode"
+                              type="xs:string" /&gt;
+                &lt;xs:attribute name="PhoneCountryCode"
+                              type="xs:string"&gt;
+                  &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;International telephone country code for the specific country, e.g. +41 for Switzerland&lt;/xs:documentation&gt;
+                  &lt;/xs:annotation&gt;
+                &lt;/xs:attribute&gt;
               &lt;/xs:extension&gt;
             &lt;/xs:simpleContent&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Region" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:element name="Region"
+                    type="xs:string"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Region of the Country&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="SubRegion" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:element name="SubRegion"
+                    type="xs:string"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Subregion of the region&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Commission" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:element name="Commission"
+                    type="xs:string"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;commission&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="MinimumPersons" type="xs:integer" minOccurs="0" /&gt;
-        &lt;xs:element name="MaximumPersons" type="xs:integer" minOccurs="0" /&gt;
-        &lt;xs:element name="MinimumDays" type="xs:integer" minOccurs="0"&gt;
+        &lt;xs:element name="MinimumPersons"
+                    type="xs:integer"
+                    minOccurs="0" /&gt;
+        &lt;xs:element name="MaximumPersons"
+                    type="xs:integer"
+                    minOccurs="0" /&gt;
+        &lt;xs:element name="MinimumDays"
+                    type="xs:integer"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Minimum number of days this product can be booked.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="MaximumDays" type="xs:integer" minOccurs="0"&gt;
+        &lt;xs:element name="MaximumDays"
+                    type="xs:integer"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Maximum number of days this product can be booked.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="ProductItemPrices" minOccurs="0"&gt;
+        &lt;xs:element name="ProductItemPrices"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Only relevant for an Availability&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:complexType&gt;
             &lt;xs:sequence&gt;
-              &lt;xs:element ref="ProductItemPrice" maxOccurs="unbounded" /&gt;
+              &lt;xs:element ref="ProductItemPrice"
+                          maxOccurs="unbounded" /&gt;
             &lt;/xs:sequence&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
+        &lt;xs:element name="Destination"
+                    type="xs:string"
+                    minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;ISO code Destination of the miscellaneous item&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="MiscCode"
+                    type="xs:string"
+                    minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Miscellaneous booking code, e.g. TRANSF for a transfer, or EXC for an excursion.&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
       &lt;/xs:all&gt;
-      &lt;xs:attribute name="Language" use="optional"&gt;
+      &lt;xs:attribute name="Language"
+                    use="optional"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;Languange of the description of the itmes&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;

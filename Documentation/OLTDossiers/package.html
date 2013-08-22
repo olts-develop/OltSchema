@@ -50,7 +50,9 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="154,960,331,987" href="packagetype.html" alt="Drilldown into PackageType"></area>
+                     <area shape="rect" coords="154,1026,331,1053" href="packagetype.html" alt="Drilldown into PackageType"></area>
+                     <area shape="rect" coords="219,993,397,1020" href="packagecode.html" alt="Drilldown into PackageCode"></area>
+                     <area shape="rect" coords="219,960,387,987" href="destination3.html" alt="Drilldown into Destination"></area>
                      <area shape="rect" coords="219,927,367,954" href="pcc.html" alt="Drilldown into PCC"></area>
                      <area shape="rect" coords="219,894,476,921" href="ticketgroupsegmentstring.html" alt="Drilldown into TicketGroupSegmentString"></area>
                      <area shape="rect" coords="219,861,360,888" href="packageitems.html" alt="Drilldown into PackageItems"></area>
@@ -77,7 +79,7 @@
                      <area shape="rect" coords="219,168,367,195" href="service1.html" alt="Drilldown into Service"></area>
                      <area shape="rect" coords="219,135,383,162" href="subregion1.html" alt="Drilldown into SubRegion"></area>
                      <area shape="rect" coords="219,102,367,129" href="region1.html" alt="Drilldown into Region"></area>
-                     <area shape="rect" coords="219,69,367,96" href="county.html" alt="Drilldown into County"></area>
+                     <area shape="rect" coords="219,69,383,96" href="country4.html" alt="Drilldown into Country"></area>
                      <area shape="rect" coords="219,36,367,63" href="detail.html" alt="Drilldown into Detail"></area>
                      <area shape="rect" coords="219,3,367,30" href="title2.html" alt="Drilldown into Title"></area></map><img src="images/package.png" border="0" alt="XSD Diagram of Package" usemap="#DiagramMap"></img></td>
             </tr>
@@ -103,7 +105,20 @@
           &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
-      &lt;xs:element name="County" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Country" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:simpleContent&gt;
+            &lt;xs:extension base="xs:string"&gt;
+              &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
+              &lt;xs:attribute name="PhoneCountryCode" type="xs:string"&gt;
+                &lt;xs:annotation&gt;
+                  &lt;xs:documentation&gt;International telephone country code for the specific country, e.g. +41 for Switzerland&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+              &lt;/xs:attribute&gt;
+            &lt;/xs:extension&gt;
+          &lt;/xs:simpleContent&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
       &lt;xs:element name="Region" type="xs:string" minOccurs="0" /&gt;
       &lt;xs:element name="SubRegion" type="xs:string" minOccurs="0" /&gt;
       &lt;xs:element name="Service" type="xs:string" minOccurs="0" /&gt;
@@ -266,6 +281,16 @@
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
       &lt;xs:element name="PCC" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Destination" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;ISO code Destination of the package&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="PackageCode" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Package booking code, e.g. PACAB1. Note: a booking code can have many different types.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
     &lt;/xs:all&gt;
     &lt;xs:attribute name="PackageType" use="optional"&gt;
       &lt;xs:annotation&gt;
@@ -317,8 +342,8 @@
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
-                        <td class="first">County</td>
-                        <td><a href="county.html">County</a></td>
+                        <td class="first">Country</td>
+                        <td><a href="country4.html">Country</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -475,6 +500,18 @@
                      <tr>
                         <td class="first">PCC</td>
                         <td><a href="pcc.html">PCC</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Destination</td>
+                        <td><a href="destination3.html">Destination</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PackageCode</td>
+                        <td><a href="packagecode.html">PackageCode</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

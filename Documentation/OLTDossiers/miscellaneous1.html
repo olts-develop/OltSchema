@@ -38,7 +38,9 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="163,729,328,756" href="language5.html" alt="Drilldown into Language"></area>
+                     <area shape="rect" coords="163,795,328,822" href="language5.html" alt="Drilldown into Language"></area>
+                     <area shape="rect" coords="228,762,384,789" href="misccode.html" alt="Drilldown into MiscCode"></area>
+                     <area shape="rect" coords="228,729,396,756" href="destination5.html" alt="Drilldown into Destination"></area>
                      <area shape="rect" coords="228,696,395,723" href="productitemprices3.html" alt="Drilldown into ProductItemPrices"></area>
                      <area shape="rect" coords="228,663,414,690" href="maximumdays.html" alt="Drilldown into MaximumDays"></area>
                      <area shape="rect" coords="228,630,411,657" href="minimumdays.html" alt="Drilldown into MinimumDays"></area>
@@ -47,7 +49,7 @@
                      <area shape="rect" coords="228,531,399,558" href="commission.html" alt="Drilldown into Commission"></area>
                      <area shape="rect" coords="228,498,392,525" href="subregion3.html" alt="Drilldown into SubRegion"></area>
                      <area shape="rect" coords="228,465,376,492" href="region3.html" alt="Drilldown into Region"></area>
-                     <area shape="rect" coords="228,432,392,459" href="country5.html" alt="Drilldown into Country"></area>
+                     <area shape="rect" coords="228,432,392,459" href="country6.html" alt="Drilldown into Country"></area>
                      <area shape="rect" coords="228,399,469,426" href="vouchersupplier1.html" alt="Drilldown into VoucherSupplier"></area>
                      <area shape="rect" coords="228,366,458,393" href="billingsupplier1.html" alt="Drilldown into BillingSupplier"></area>
                      <area shape="rect" coords="228,333,434,360" href="confirmationnr3.html" alt="Drilldown into ConfirmationNr"></area>
@@ -143,6 +145,11 @@
           &lt;xs:simpleContent&gt;
             &lt;xs:extension base="xs:string"&gt;
               &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
+              &lt;xs:attribute name="PhoneCountryCode" type="xs:string"&gt;
+                &lt;xs:annotation&gt;
+                  &lt;xs:documentation&gt;International telephone country code for the specific country, e.g. +41 for Switzerland&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+              &lt;/xs:attribute&gt;
             &lt;/xs:extension&gt;
           &lt;/xs:simpleContent&gt;
         &lt;/xs:complexType&gt;
@@ -183,6 +190,16 @@
             &lt;xs:element ref="ProductItemPrice" maxOccurs="unbounded" /&gt;
           &lt;/xs:sequence&gt;
         &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Destination" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;ISO code Destination of the miscellaneous item&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="MiscCode" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Miscellaneous booking code, e.g. TRANSF for a transfer, or EXC for an excursion.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
     &lt;/xs:all&gt;
     &lt;xs:attribute name="Language" use="optional"&gt;
@@ -298,7 +315,7 @@
                      </tr>
                      <tr>
                         <td class="first">Country</td>
-                        <td><a href="country5.html">Country</a></td>
+                        <td><a href="country6.html">Country</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -347,6 +364,18 @@
                      <tr>
                         <td class="first">ProductItemPrices</td>
                         <td><a href="productitemprices3.html">ProductItemPrices</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Destination</td>
+                        <td><a href="destination5.html">Destination</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MiscCode</td>
+                        <td><a href="misccode.html">MiscCode</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

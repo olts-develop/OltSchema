@@ -26,7 +26,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="hotel_xsd.html">Hotel.xsd</a></td>
+               <td><a href="dossieritem_xsd.html">DossierItem.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MinOccurs</b></td>
@@ -50,6 +50,7 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="210,36,421,63" href="phonecountrycode1.html" alt="Drilldown into PhoneCountryCode"></area>
                      <area shape="rect" coords="210,3,359,30" href="isocode4.html" alt="Drilldown into IsoCode"></area></map><img src="images/country4.png" border="0" alt="XSD Diagram of Country" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
@@ -67,6 +68,11 @@
     &lt;xs:simpleContent&gt;
       &lt;xs:extension base="xs:string"&gt;
         &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
+        &lt;xs:attribute name="PhoneCountryCode" type="xs:string"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;International telephone country code for the specific country, e.g. +41 for Switzerland&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
       &lt;/xs:extension&gt;
     &lt;/xs:simpleContent&gt;
   &lt;/xs:complexType&gt;
@@ -92,6 +98,12 @@
                      <tr>
                         <td class="first">IsoCode</td>
                         <td><a href="isocode4.html">IsoCode</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PhoneCountryCode</td>
+                        <td><a href="phonecountrycode1.html">PhoneCountryCode</a></td>
                         <td class="mid"></td>
                         <td class="last">(Optional)</td>
                      </tr>

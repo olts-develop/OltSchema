@@ -38,7 +38,8 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="194,795,334,822" href="carcategories.html" alt="Drilldown into CarCategories"></area>
+                     <area shape="rect" coords="194,828,334,855" href="carcategories.html" alt="Drilldown into CarCategories"></area>
+                     <area shape="rect" coords="194,795,362,822" href="destination1.html" alt="Drilldown into Destination"></area>
                      <area shape="rect" coords="194,762,349,789" href="priceinfo.html" alt="Drilldown into PriceInfo"></area>
                      <area shape="rect" coords="194,729,373,756" href="supplierinfos.html" alt="Drilldown into SupplierInfos"></area>
                      <area shape="rect" coords="194,696,387,723" href="remarkvoucher.html" alt="Drilldown into RemarkVoucher"></area>
@@ -89,6 +90,11 @@
           &lt;xs:simpleContent&gt;
             &lt;xs:extension base="xs:string"&gt;
               &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
+              &lt;xs:attribute name="PhoneCountryCode" type="xs:string"&gt;
+                &lt;xs:annotation&gt;
+                  &lt;xs:documentation&gt;International telephone country code for the specific country, e.g. +41 for Switzerland&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+              &lt;/xs:attribute&gt;
             &lt;/xs:extension&gt;
           &lt;/xs:simpleContent&gt;
         &lt;/xs:complexType&gt;
@@ -178,6 +184,11 @@
         &lt;/xs:annotation&gt;
       &lt;/xs:element&gt;
       &lt;xs:element name="PriceInfo" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Destination" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Destination code of the car company ot catalog for this company. Note: this is normally not a real destination but rather an identifier, e.g. AL1 for Alamo.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
       &lt;xs:element name="CarCategories" minOccurs="0"&gt;
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;This is only used if the external developer sends an availability request&lt;/xs:documentation&gt;
@@ -350,6 +361,12 @@
                      <tr>
                         <td class="first">PriceInfo</td>
                         <td><a href="priceinfo.html">PriceInfo</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Destination</td>
+                        <td><a href="destination1.html">Destination</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
