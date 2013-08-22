@@ -172,13 +172,6 @@
             <xs:documentation>Destination code of the car company ot catalog for this company. Note: this is normally not a real destination but rather an identifier, e.g. AL1 for Alamo.</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="CarCode"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Car booking code for this car company/catalog product. Note that one catalog can have many car types.</xs:documentation>
-          </xs:annotation>
-        </xs:element>
         <xs:element name="CarCategories"
                     minOccurs="0">
           <xs:annotation>
