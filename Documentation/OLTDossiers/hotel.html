@@ -38,7 +38,10 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="194,1158,300,1185" href="rooms.html" alt="Drilldown into Rooms"></area>
+                     <area shape="rect" coords="194,1257,300,1284" href="images.html" alt="Drilldown into Images"></area>
+                     <area shape="rect" coords="194,1224,300,1251" href="rooms.html" alt="Drilldown into Rooms"></area>
+                     <area shape="rect" coords="194,1191,353,1218" href="longitude.html" alt="Drilldown into Longitude"></area>
+                     <area shape="rect" coords="194,1158,343,1185" href="latitude.html" alt="Drilldown into Latitude"></area>
                      <area shape="rect" coords="194,1125,343,1152" href="infourl.html" alt="Drilldown into InfoURL"></area>
                      <area shape="rect" coords="194,1092,342,1119" href="vatnr.html" alt="Drilldown into VatNr"></area>
                      <area shape="rect" coords="194,1059,355,1086" href="payableto1.html" alt="Drilldown into PayableTo"></area>
@@ -262,10 +265,32 @@
       &lt;/xs:element&gt;
       &lt;xs:element name="VatNr" type="xs:string" minOccurs="0" /&gt;
       &lt;xs:element name="InfoURL" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Latitude" type="xs:decimal" minOccurs="0" /&gt;
+      &lt;xs:element name="Longitude" type="xs:decimal" minOccurs="0" /&gt;
       &lt;xs:element name="Rooms" minOccurs="0"&gt;
         &lt;xs:complexType&gt;
           &lt;xs:sequence&gt;
             &lt;xs:element ref="Room" maxOccurs="unbounded" /&gt;
+          &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Images" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:sequence maxOccurs="unbounded"&gt;
+            &lt;xs:element name="Image"&gt;
+              &lt;xs:complexType&gt;
+                &lt;xs:all&gt;
+                  &lt;xs:element name="Id" type="xs:string" /&gt;
+                  &lt;xs:element name="Name" type="xs:string" /&gt;
+                  &lt;xs:element name="Type" type="xs:string" /&gt;
+                  &lt;xs:element name="Height" type="xs:integer" /&gt;
+                  &lt;xs:element name="Width" type="xs:integer" /&gt;
+                  &lt;xs:element name="Size" type="xs:integer" /&gt;
+                  &lt;xs:element name="Encoding" type="xs:string" /&gt;
+                  &lt;xs:element name="Data" type="xs:string" /&gt;
+                &lt;/xs:all&gt;
+              &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
           &lt;/xs:sequence&gt;
         &lt;/xs:complexType&gt;
       &lt;/xs:element&gt;
@@ -501,8 +526,26 @@
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
+                        <td class="first">Latitude</td>
+                        <td><a href="latitude.html">Latitude</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Longitude</td>
+                        <td><a href="longitude.html">Longitude</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
                         <td class="first">Rooms</td>
                         <td><a href="rooms.html">Rooms</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Images</td>
+                        <td><a href="images.html">Images</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

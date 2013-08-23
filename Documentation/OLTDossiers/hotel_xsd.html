@@ -26,7 +26,7 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>
-&lt;!--Created with Liquid XML Studio 2012 Designer Edition 10.1.5.4204 (http://www.liquid-technologies.com)--&gt;
+&lt;!--Created with Liquid XML 2013 Designer Edition 11.0.11.4603 (http://www.liquid-technologies.com)--&gt;
 &lt;xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;xs:include schemaLocation=".\Room.xsd" /&gt;
@@ -284,6 +284,12 @@
         &lt;xs:element name="InfoURL"
                     type="xs:string"
                     minOccurs="0" /&gt;
+        &lt;xs:element name="Latitude"
+                    type="xs:decimal"
+                    minOccurs="0" /&gt;
+        &lt;xs:element name="Longitude"
+                    type="xs:decimal"
+                    minOccurs="0" /&gt;
         &lt;xs:element name="Rooms"
                     minOccurs="0"&gt;
           &lt;xs:complexType&gt;
@@ -293,11 +299,39 @@
             &lt;/xs:sequence&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
+        &lt;xs:element name="Images"
+                    minOccurs="0"&gt;
+          &lt;xs:complexType&gt;
+            &lt;xs:sequence maxOccurs="unbounded"&gt;
+              &lt;xs:element name="Image"&gt;
+                &lt;xs:complexType&gt;
+                  &lt;xs:all&gt;
+                    &lt;xs:element name="Id"
+                                type="xs:string" /&gt;
+                    &lt;xs:element name="Name"
+                                type="xs:string" /&gt;
+                    &lt;xs:element name="Type"
+                                type="xs:string" /&gt;
+                    &lt;xs:element name="Height"
+                                type="xs:integer" /&gt;
+                    &lt;xs:element name="Width"
+                                type="xs:integer" /&gt;
+                    &lt;xs:element name="Size"
+                                type="xs:integer" /&gt;
+                    &lt;xs:element name="Encoding"
+                                type="xs:string" /&gt;
+                    &lt;xs:element name="Data"
+                                type="xs:string" /&gt;
+                  &lt;/xs:all&gt;
+                &lt;/xs:complexType&gt;
+              &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/xs:element&gt;
       &lt;/xs:all&gt;
     &lt;/xs:complexType&gt;
   &lt;/xs:element&gt;
-&lt;/xs:schema&gt;
-</code></pre></td>
+&lt;/xs:schema&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>
