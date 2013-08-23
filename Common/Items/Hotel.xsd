@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.5.4204 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2013 Designer Edition 11.0.11.4603 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation=".\Room.xsd" />
@@ -257,12 +257,47 @@
         <xs:element name="InfoURL"
                     type="xs:string"
                     minOccurs="0" />
+        <xs:element name="Latitude"
+                    type="xs:decimal"
+                    minOccurs="0" />
+        <xs:element name="Longitude"
+                    type="xs:decimal"
+                    minOccurs="0" />
         <xs:element name="Rooms"
                     minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element ref="Room"
                           maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Images"
+                    minOccurs="0">
+          <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+              <xs:element name="Image">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="Id"
+                                type="xs:string" />
+                    <xs:element name="Name"
+                                type="xs:string" />
+                    <xs:element name="Type"
+                                type="xs:string" />
+                    <xs:element name="Height"
+                                type="xs:integer" />
+                    <xs:element name="Width"
+                                type="xs:integer" />
+                    <xs:element name="Size"
+                                type="xs:integer" />
+                    <xs:element name="Encoding"
+                                type="xs:string" />
+                    <xs:element name="Data"
+                                type="xs:string" />
+                  </xs:all>
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
