@@ -21,8 +21,20 @@
                <td>Text</td>
             </tr>
             <tr>
+               <td class="label" width="120px;"><b>Type:</b></td>
+               <td>string:http://www.w3.org/2001/XMLSchema</td>
+            </tr>
+            <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="text_xsd.html">Text.xsd</a></td>
+               <td><a href="hotel_xsd.html">Hotel.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>MinOccurs</b></td>
+               <td>(1)</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>MaxOccurs</b></td>
+               <td>(1)</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
@@ -37,18 +49,7 @@
                </td>
             </tr>
             <tr id="xsdDiagram_body_id">
-               <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="129,333,289,360" href="insurance.html" alt="Drilldown into Insurance"></area>
-                     <area shape="rect" coords="194,300,386,327" href="isnocostcenter.html" alt="Drilldown into IsNoCostCenter"></area>
-                     <area shape="rect" coords="194,267,354,294" href="isendtext.html" alt="Drilldown into IsEndText"></area>
-                     <area shape="rect" coords="194,234,365,261" href="isbegintext.html" alt="Drilldown into IsBeginText"></area>
-                     <area shape="rect" coords="194,201,383,228" href="isitinerarytext.html" alt="Drilldown into IsItineraryText"></area>
-                     <area shape="rect" coords="194,168,375,195" href="isinvoicetext.html" alt="Drilldown into IsInvoiceText"></area>
-                     <area shape="rect" coords="194,135,429,162" href="internalinsurancecode.html" alt="Drilldown into InternalInsuranceCode"></area>
-                     <area shape="rect" coords="194,102,367,129" href="insurancenr.html" alt="Drilldown into InsuranceNr"></area>
-                     <area shape="rect" coords="194,69,388,96" href="internaltype.html" alt="Drilldown into InternalType"></area>
-                     <area shape="rect" coords="194,36,342,63" href="detail2.html" alt="Drilldown into Detail"></area>
-                     <area shape="rect" coords="194,3,342,30" href="title4.html" alt="Drilldown into Title"></area></map><img src="images/text.png" border="0" alt="XSD Diagram of Text" usemap="#DiagramMap"></img></td>
+               <td><map name="DiagramMap" id="DiagramMap"></map><img src="images/text.png" border="0" alt="XSD Diagram of Text" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -60,178 +61,7 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="Text"&gt;
-  &lt;xs:complexType&gt;
-    &lt;xs:sequence&gt;
-      &lt;xs:element minOccurs="0" name="Title" type="xs:string" /&gt;
-      &lt;xs:element minOccurs="0" name="Detail" type="xs:string"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;!--   &lt;xs:element minOccurs="0" name="Type" type="xs:string"/&gt; FALSCH--&gt;
-      &lt;xs:element minOccurs="0" name="InternalType"&gt;
-        &lt;xs:complexType&gt;
-          &lt;xs:attribute name="Code"&gt;
-            &lt;xs:annotation&gt;
-              &lt;xs:documentation&gt;internal number from 1 to 13&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-          &lt;/xs:attribute&gt;
-          &lt;xs:attribute name="Description"&gt;
-            &lt;xs:annotation&gt;
-              &lt;xs:documentation&gt;internal description of the type&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-          &lt;/xs:attribute&gt;
-        &lt;/xs:complexType&gt;
-      &lt;/xs:element&gt;
-      &lt;!--xs:element minOccurs="0" maxOccurs="2" name="Price" &gt;
-                    &lt;xs:complexType&gt;
-                        &lt;xs:attribute name="Amount"/&gt;
-                        &lt;xs:attribute name="Quantity"/&gt;
-                        &lt;xs:attribute name="Currency" &gt;
-                            &lt;xs:simpleType&gt;
-                                &lt;xs:restriction base="xs:string"&gt;
-                                    &lt;xs:enumeration value="CHF" /&gt;
-                                    &lt;xs:enumeration value="EUR" /&gt;
-                                &lt;/xs:restriction&gt;
-                            &lt;/xs:simpleType&gt;
-                        &lt;/xs:attribute&gt;
-                    &lt;/xs:complexType&gt;
-                &lt;/xs:element--&gt;
-      &lt;xs:element minOccurs="0" name="InsuranceNr" type="xs:string" /&gt;
-      &lt;xs:element minOccurs="0" name="InternalInsuranceCode" type="xs:string"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Internal insurance Code needed if it is a insurance&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element minOccurs="0" name="IsInvoiceText" type="xs:integer" /&gt;
-      &lt;xs:element minOccurs="0" name="IsItineraryText" type="xs:integer" /&gt;
-      &lt;xs:element minOccurs="0" name="IsBeginText" type="xs:integer" /&gt;
-      &lt;xs:element minOccurs="0" name="IsEndText" type="xs:integer" /&gt;
-      &lt;xs:element minOccurs="0" name="IsNoCostCenter" type="xs:integer" /&gt;
-    &lt;/xs:sequence&gt;
-    &lt;xs:attribute name="Insurance" use="optional"&gt;
-      &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt; is an insurance item:
-            YES
-            NO
-          &lt;/xs:documentation&gt;
-      &lt;/xs:annotation&gt;
-      &lt;xs:simpleType&gt;
-        &lt;xs:restriction base="xs:string"&gt;
-          &lt;xs:enumeration value="YES" /&gt;
-          &lt;xs:enumeration value="NO" /&gt;
-        &lt;/xs:restriction&gt;
-      &lt;/xs:simpleType&gt;
-    &lt;/xs:attribute&gt;
-  &lt;/xs:complexType&gt;
-&lt;/xs:element&gt;</code></pre></td>
-            </tr>
-         </tbody>
-      </table>
-      <table cellpadding="0" cellspacing="0" class="mainHelp2">
-         <tbody>
-            <tr>
-               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
-            </tr>
-            <tr id="childElements_body_id">
-               <td width="120px;"></td>
-               <td class="childTableHolder">
-                  <table class="childTable">
-                     <tr class="header">
-                        <td class="label first">Name</td>
-                        <td>Type</td>
-                        <td class="mid">Min Occurs</td>
-                        <td class="last">Max Occurs</td>
-                     </tr>
-                     <tr>
-                        <td class="first">Title</td>
-                        <td><a href="title4.html">Title</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">Detail</td>
-                        <td><a href="detail2.html">Detail</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">InternalType</td>
-                        <td><a href="internaltype.html">InternalType</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">InsuranceNr</td>
-                        <td><a href="insurancenr.html">InsuranceNr</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">InternalInsuranceCode</td>
-                        <td><a href="internalinsurancecode.html">InternalInsuranceCode</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">IsInvoiceText</td>
-                        <td><a href="isinvoicetext.html">IsInvoiceText</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">IsItineraryText</td>
-                        <td><a href="isitinerarytext.html">IsItineraryText</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">IsBeginText</td>
-                        <td><a href="isbegintext.html">IsBeginText</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">IsEndText</td>
-                        <td><a href="isendtext.html">IsEndText</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">IsNoCostCenter</td>
-                        <td><a href="isnocostcenter.html">IsNoCostCenter</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                  </table>
-               </td>
-            </tr>
-         </tbody>
-      </table>
-      <table cellpadding="0" cellspacing="0" class="mainHelp2">
-         <tbody>
-            <tr>
-               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
-            </tr>
-            <tr id="childAttributes_body_id">
-               <td width="120px;"></td>
-               <td class="childTableHolder">
-                  <table class="childTable">
-                     <tr class="header">
-                        <td class="label first">Name</td>
-                        <td>Type</td>
-                        <td class="mid">Default Value</td>
-                        <td class="last">Use</td>
-                     </tr>
-                     <tr>
-                        <td class="first">Insurance</td>
-                        <td><a href="insurance.html">Insurance</a></td>
-                        <td class="mid"></td>
-                        <td class="last">Optional</td>
-                     </tr>
-                  </table>
-               </td>
+&lt;xs:element name="Text" type="xs:string" /&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>

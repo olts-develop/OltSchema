@@ -80,6 +80,13 @@
         &lt;xs:element name="City"
                     type="xs:string"
                     minOccurs="0" /&gt;
+        &lt;xs:element name="Location"
+                    type="xs:string"
+                    minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Location overrides City and PostalCode if it is supplied&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
         &lt;xs:element name="Phone"
                     minOccurs="0"&gt;
           &lt;xs:complexType&gt;
@@ -299,7 +306,7 @@
             &lt;/xs:sequence&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Images"
+        &lt;xs:element name="HotelImages"
                     minOccurs="0"&gt;
           &lt;xs:complexType&gt;
             &lt;xs:sequence maxOccurs="unbounded"&gt;
@@ -307,20 +314,63 @@
                 &lt;xs:complexType&gt;
                   &lt;xs:all&gt;
                     &lt;xs:element name="Id"
-                                type="xs:string" /&gt;
+                                type="xs:string"
+                                minOccurs="0" /&gt;
                     &lt;xs:element name="Name"
-                                type="xs:string" /&gt;
+                                type="xs:string"
+                                minOccurs="0" /&gt;
                     &lt;xs:element name="Type"
-                                type="xs:string" /&gt;
+                                type="xs:string"&gt;
+                      &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;e.g. jpg, gif, png, etc.&lt;/xs:documentation&gt;
+                      &lt;/xs:annotation&gt;
+                    &lt;/xs:element&gt;
                     &lt;xs:element name="Height"
-                                type="xs:integer" /&gt;
+                                type="xs:integer"
+                                minOccurs="0"&gt;
+                      &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;height in pixel of picture&lt;/xs:documentation&gt;
+                      &lt;/xs:annotation&gt;
+                    &lt;/xs:element&gt;
                     &lt;xs:element name="Width"
-                                type="xs:integer" /&gt;
+                                type="xs:integer"
+                                minOccurs="0" /&gt;
                     &lt;xs:element name="Size"
-                                type="xs:integer" /&gt;
+                                type="xs:integer"
+                                minOccurs="0"&gt;
+                      &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Size in bytes of image&lt;/xs:documentation&gt;
+                      &lt;/xs:annotation&gt;
+                    &lt;/xs:element&gt;
                     &lt;xs:element name="Encoding"
-                                type="xs:string" /&gt;
+                                type="xs:string"&gt;
+                      &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;encoding of the image. Currently only "base64"&lt;/xs:documentation&gt;
+                      &lt;/xs:annotation&gt;
+                    &lt;/xs:element&gt;
                     &lt;xs:element name="Data"
+                                type="xs:string"&gt;
+                      &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Encoded string of the image.&lt;/xs:documentation&gt;
+                      &lt;/xs:annotation&gt;
+                    &lt;/xs:element&gt;
+                  &lt;/xs:all&gt;
+                &lt;/xs:complexType&gt;
+              &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="AddHotelInfos"
+                    minOccurs="0"&gt;
+          &lt;xs:complexType&gt;
+            &lt;xs:sequence maxOccurs="unbounded"&gt;
+              &lt;xs:element name="AddHotelInfo"&gt;
+                &lt;xs:complexType&gt;
+                  &lt;xs:all&gt;
+                    &lt;xs:element name="Type"
+                                type="xs:string"
+                                minOccurs="0" /&gt;
+                    &lt;xs:element name="Text"
                                 type="xs:string" /&gt;
                   &lt;/xs:all&gt;
                 &lt;/xs:complexType&gt;
@@ -331,7 +381,8 @@
       &lt;/xs:all&gt;
     &lt;/xs:complexType&gt;
   &lt;/xs:element&gt;
-&lt;/xs:schema&gt;</code></pre></td>
+&lt;/xs:schema&gt;
+</code></pre></td>
             </tr>
          </tbody>
       </table>

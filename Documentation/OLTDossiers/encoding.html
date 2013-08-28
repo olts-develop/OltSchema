@@ -40,6 +40,10 @@
                <td class="label" width="120px;"><b>Abstract</b></td>
                <td>False</td>
             </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Documentation:</b></td>
+               <td><pre>encoding of the image. Currently only "base64"</pre></td>
+            </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
@@ -61,7 +65,11 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="Encoding" type="xs:string" /&gt;</code></pre></td>
+&lt;xs:element name="Encoding" type="xs:string"&gt;
+  &lt;xs:annotation&gt;
+    &lt;xs:documentation&gt;encoding of the image. Currently only "base64"&lt;/xs:documentation&gt;
+  &lt;/xs:annotation&gt;
+&lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>

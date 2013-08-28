@@ -48,12 +48,12 @@
                <td><map name="DiagramMap" id="DiagramMap">
                      <area shape="rect" coords="171,234,319,261" href="data.html" alt="Drilldown into Data"></area>
                      <area shape="rect" coords="171,201,325,228" href="encoding.html" alt="Drilldown into Encoding"></area>
-                     <area shape="rect" coords="171,168,319,195" href="size.html" alt="Drilldown into Size"></area>
-                     <area shape="rect" coords="171,135,319,162" href="width.html" alt="Drilldown into Width"></area>
-                     <area shape="rect" coords="171,102,319,129" href="height.html" alt="Drilldown into Height"></area>
-                     <area shape="rect" coords="171,69,319,96" href="type10.html" alt="Drilldown into Type"></area>
-                     <area shape="rect" coords="171,36,319,63" href="name1.html" alt="Drilldown into Name"></area>
-                     <area shape="rect" coords="171,3,319,30" href="id.html" alt="Drilldown into Id"></area></map><img src="images/image.png" border="0" alt="XSD Diagram of Image" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="194,168,342,195" href="size.html" alt="Drilldown into Size"></area>
+                     <area shape="rect" coords="194,135,342,162" href="width.html" alt="Drilldown into Width"></area>
+                     <area shape="rect" coords="194,102,342,129" href="height.html" alt="Drilldown into Height"></area>
+                     <area shape="rect" coords="171,69,319,96" href="type11.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="194,36,342,63" href="name1.html" alt="Drilldown into Name"></area>
+                     <area shape="rect" coords="194,3,342,30" href="id.html" alt="Drilldown into Id"></area></map><img src="images/image.png" border="0" alt="XSD Diagram of Image" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -68,14 +68,34 @@
 &lt;xs:element name="Image"&gt;
   &lt;xs:complexType&gt;
     &lt;xs:all&gt;
-      &lt;xs:element name="Id" type="xs:string" /&gt;
-      &lt;xs:element name="Name" type="xs:string" /&gt;
-      &lt;xs:element name="Type" type="xs:string" /&gt;
-      &lt;xs:element name="Height" type="xs:integer" /&gt;
-      &lt;xs:element name="Width" type="xs:integer" /&gt;
-      &lt;xs:element name="Size" type="xs:integer" /&gt;
-      &lt;xs:element name="Encoding" type="xs:string" /&gt;
-      &lt;xs:element name="Data" type="xs:string" /&gt;
+      &lt;xs:element name="Id" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Name" type="xs:string" minOccurs="0" /&gt;
+      &lt;xs:element name="Type" type="xs:string"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;e.g. jpg, gif, png, etc.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Height" type="xs:integer" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;height in pixel of picture&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Width" type="xs:integer" minOccurs="0" /&gt;
+      &lt;xs:element name="Size" type="xs:integer" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Size in bytes of image&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Encoding" type="xs:string"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;encoding of the image. Currently only "base64"&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="Data" type="xs:string"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;Encoded string of the image.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
     &lt;/xs:all&gt;
   &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
@@ -100,37 +120,37 @@
                      <tr>
                         <td class="first">Id</td>
                         <td><a href="id.html">Id</a></td>
-                        <td class="mid">(1)</td>
+                        <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
                         <td class="first">Name</td>
                         <td><a href="name1.html">Name</a></td>
-                        <td class="mid">(1)</td>
+                        <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
                         <td class="first">Type</td>
-                        <td><a href="type10.html">Type</a></td>
+                        <td><a href="type11.html">Type</a></td>
                         <td class="mid">(1)</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
                         <td class="first">Height</td>
                         <td><a href="height.html">Height</a></td>
-                        <td class="mid">(1)</td>
+                        <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
                         <td class="first">Width</td>
                         <td><a href="width.html">Width</a></td>
-                        <td class="mid">(1)</td>
+                        <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
                         <td class="first">Size</td>
                         <td><a href="size.html">Size</a></td>
-                        <td class="mid">(1)</td>
+                        <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>

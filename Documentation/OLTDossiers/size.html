@@ -30,7 +30,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MinOccurs</b></td>
-               <td>(1)</td>
+               <td>0</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MaxOccurs</b></td>
@@ -39,6 +39,10 @@
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
                <td>False</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Documentation:</b></td>
+               <td><pre>Size in bytes of image</pre></td>
             </tr>
          </tbody>
       </table>
@@ -61,7 +65,11 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="Size" type="xs:integer" /&gt;</code></pre></td>
+&lt;xs:element name="Size" type="xs:integer" minOccurs="0"&gt;
+  &lt;xs:annotation&gt;
+    &lt;xs:documentation&gt;Size in bytes of image&lt;/xs:documentation&gt;
+  &lt;/xs:annotation&gt;
+&lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>
