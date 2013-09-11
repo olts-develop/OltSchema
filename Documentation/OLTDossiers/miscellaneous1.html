@@ -38,7 +38,8 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="163,795,328,822" href="language5.html" alt="Drilldown into Language"></area>
+                     <area shape="rect" coords="163,828,328,855" href="language5.html" alt="Drilldown into Language"></area>
+                     <area shape="rect" coords="228,795,356,822" href="miscimages.html" alt="Drilldown into MiscImages"></area>
                      <area shape="rect" coords="228,762,384,789" href="misccode.html" alt="Drilldown into MiscCode"></area>
                      <area shape="rect" coords="228,729,396,756" href="destination5.html" alt="Drilldown into Destination"></area>
                      <area shape="rect" coords="228,696,395,723" href="productitemprices3.html" alt="Drilldown into ProductItemPrices"></area>
@@ -200,6 +201,46 @@
         &lt;xs:annotation&gt;
           &lt;xs:documentation&gt;Miscellaneous booking code, e.g. TRANSF for a transfer, or EXC for an excursion.&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element name="MiscImages" minOccurs="0"&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:sequence maxOccurs="unbounded"&gt;
+            &lt;xs:element name="Image"&gt;
+              &lt;xs:complexType&gt;
+                &lt;xs:all&gt;
+                  &lt;xs:element name="Id" type="xs:string" minOccurs="0" /&gt;
+                  &lt;xs:element name="Name" type="xs:string" minOccurs="0" /&gt;
+                  &lt;xs:element name="Type" type="xs:string"&gt;
+                    &lt;xs:annotation&gt;
+                      &lt;xs:documentation&gt;e.g. jpg, gif, png, etc.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                  &lt;/xs:element&gt;
+                  &lt;xs:element name="Height" type="xs:integer" minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                      &lt;xs:documentation&gt;height in pixel of picture&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                  &lt;/xs:element&gt;
+                  &lt;xs:element name="Width" type="xs:integer" minOccurs="0" /&gt;
+                  &lt;xs:element name="Size" type="xs:integer" minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                      &lt;xs:documentation&gt;Size in bytes of image&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                  &lt;/xs:element&gt;
+                  &lt;xs:element name="Encoding" type="xs:string"&gt;
+                    &lt;xs:annotation&gt;
+                      &lt;xs:documentation&gt;encoding of the image. Currently only "base64"&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                  &lt;/xs:element&gt;
+                  &lt;xs:element name="Data" type="xs:string"&gt;
+                    &lt;xs:annotation&gt;
+                      &lt;xs:documentation&gt;Encoded string of the image.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                  &lt;/xs:element&gt;
+                &lt;/xs:all&gt;
+              &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+          &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
       &lt;/xs:element&gt;
     &lt;/xs:all&gt;
     &lt;xs:attribute name="Language" use="optional"&gt;
@@ -376,6 +417,12 @@
                      <tr>
                         <td class="first">MiscCode</td>
                         <td><a href="misccode.html">MiscCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MiscImages</td>
+                        <td><a href="miscimages.html">MiscImages</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
