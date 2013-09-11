@@ -182,6 +182,60 @@
             <xs:documentation>Miscellaneous booking code, e.g. TRANSF for a transfer, or EXC for an excursion.</xs:documentation>
           </xs:annotation>
         </xs:element>
+        <xs:element name="MiscImages"
+                    minOccurs="0">
+          <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+              <xs:element name="Image">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="Id"
+                                type="xs:string"
+                                minOccurs="0" />
+                    <xs:element name="Name"
+                                type="xs:string"
+                                minOccurs="0" />
+                    <xs:element name="Type"
+                                type="xs:string">
+                      <xs:annotation>
+                        <xs:documentation>e.g. jpg, gif, png, etc.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Height"
+                                type="xs:integer"
+                                minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>height in pixel of picture</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Width"
+                                type="xs:integer"
+                                minOccurs="0" />
+                    <xs:element name="Size"
+                                type="xs:integer"
+                                minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Size in bytes of image</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Encoding"
+                                type="xs:string">
+                      <xs:annotation>
+                        <xs:documentation>encoding of the image. Currently only "base64"</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Data"
+                                type="xs:string">
+                      <xs:annotation>
+                        <xs:documentation>Encoded string of the image.</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:all>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:all>
       <xs:attribute name="Language"
                     use="optional">
