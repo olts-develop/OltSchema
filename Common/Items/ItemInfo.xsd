@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML 2013 Designer Edition 11.1.0.4725 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ItemInfo">
+    <xs:annotation>
+      <xs:documentation>Cancellation fee for this Item</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="Title"
+                    type="xs:string"
+                    minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Title of info. Node is only sent if a value exists.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Text"
+                    type="xs:string"
+                    minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Description text of iteminfo</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:all>
+      <xs:attribute name="Seq"
+                    type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Sequence ID of item info. This can be useful if an iteminfo is only to be used once in a resulting document.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="Type"
+                    type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Type of iteminfo: Country, Destination, Item</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="Invoice"
+                    type="xs:boolean">
+        <xs:annotation>
+          <xs:documentation>If true, this is an invoice relevant iteminfo</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="Itinerary"
+                    type="xs:boolean">
+        <xs:annotation>
+          <xs:documentation>If true, this is an itinerary relevant iteminfo</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
