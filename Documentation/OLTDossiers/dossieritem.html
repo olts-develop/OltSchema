@@ -38,19 +38,20 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="153,1356,309,1383" href="viewonly3.html" alt="Drilldown into ViewOnly"></area>
-                     <area shape="rect" coords="153,1323,364,1350" href="allowprojectsentry.html" alt="Drilldown into AllowProjectsEntry"></area>
-                     <area shape="rect" coords="153,1290,322,1317" href="consolidate.html" alt="Drilldown into Consolidate"></area>
-                     <area shape="rect" coords="153,1257,301,1284" href="type7.html" alt="Drilldown into Type"></area>
-                     <area shape="rect" coords="153,1224,301,1251" href="position.html" alt="Drilldown into Position"></area>
-                     <area shape="rect" coords="153,1191,375,1218" href="basedataproductseq.html" alt="Drilldown into BaseDataProductSeq"></area>
-                     <area shape="rect" coords="153,1158,346,1185" href="dossieritemseq.html" alt="Drilldown into DossierItemSeq"></area>
+                     <area shape="rect" coords="153,1389,309,1416" href="viewonly3.html" alt="Drilldown into ViewOnly"></area>
+                     <area shape="rect" coords="153,1356,364,1383" href="allowprojectsentry.html" alt="Drilldown into AllowProjectsEntry"></area>
+                     <area shape="rect" coords="153,1323,322,1350" href="consolidate.html" alt="Drilldown into Consolidate"></area>
+                     <area shape="rect" coords="153,1290,301,1317" href="type7.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="153,1257,301,1284" href="position.html" alt="Drilldown into Position"></area>
+                     <area shape="rect" coords="153,1224,375,1251" href="basedataproductseq.html" alt="Drilldown into BaseDataProductSeq"></area>
+                     <area shape="rect" coords="153,1191,346,1218" href="dossieritemseq.html" alt="Drilldown into DossierItemSeq"></area>
+                     <area shape="rect" coords="218,1158,336,1185" href="iteminfos.html" alt="Drilldown into ItemInfos"></area>
                      <area shape="rect" coords="218,1125,386,1152" href="externalsystemids.html" alt="Drilldown into ExternalSystemIds"></area>
                      <area shape="rect" coords="218,1092,374,1119" href="cancellationfees.html" alt="Drilldown into CancellationFees"></area>
                      <area shape="rect" coords="218,1059,365,1086" href="purchaseprices.html" alt="Drilldown into PurchasePrices"></area>
                      <area shape="rect" coords="218,1026,340,1053" href="itemprices.html" alt="Drilldown into ItemPrices"></area>
                      <area shape="rect" coords="260,993,368,1020" href="package.html" alt="Drilldown into Package"></area>
-                     <area shape="rect" coords="260,960,424,987" href="text1.html" alt="Drilldown into Text"></area>
+                     <area shape="rect" coords="260,960,424,987" href="text2.html" alt="Drilldown into Text"></area>
                      <area shape="rect" coords="260,927,424,954" href="ship.html" alt="Drilldown into Ship"></area>
                      <area shape="rect" coords="260,894,424,921" href="train.html" alt="Drilldown into Train"></area>
                      <area shape="rect" coords="260,861,424,888" href="bus.html" alt="Drilldown into Bus"></area>
@@ -655,6 +656,16 @@
           &lt;/xs:sequence&gt;
         &lt;/xs:complexType&gt;
       &lt;/xs:element&gt;
+      &lt;xs:element name="ItemInfos" minOccurs="0"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:documentation&gt;ItemInfos are information stored in relation to base data, that might be useful for a customer, e.g. if there will be building activity in the travel period of this dossier item.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:complexType&gt;
+          &lt;xs:sequence&gt;
+            &lt;xs:element ref="ItemInfo" maxOccurs="unbounded" /&gt;
+          &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+      &lt;/xs:element&gt;
     &lt;/xs:sequence&gt;
     &lt;xs:attribute name="DossierItemSeq" type="xs:string" use="optional"&gt;
       &lt;xs:annotation&gt;
@@ -904,7 +915,7 @@
                      </tr>
                      <tr>
                         <td class="first">Text</td>
-                        <td><a href="text1.html">Text</a></td>
+                        <td><a href="text2.html">Text</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -935,6 +946,12 @@
                      <tr>
                         <td class="first">ExternalSystemIds</td>
                         <td><a href="externalsystemids.html">ExternalSystemIds</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ItemInfos</td>
+                        <td><a href="iteminfos.html">ItemInfos</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -1006,6 +1023,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.0.11.4603</a><br></br>by  <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.1.0.4725</a><br></br>by  <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
    </body>
 </html>
