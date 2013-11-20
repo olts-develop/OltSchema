@@ -727,7 +727,9 @@
                     <xs:element name="ExternalSystemType"
                                 type="xs:string">
                       <xs:annotation>
-                        <xs:documentation>TripAdvisorId; TripAdvisorSupplierId; AIR Remark</xs:documentation>
+                        <xs:documentation>TripAdvisorId
+TripAdvisorSupplierId
+AirRemark</xs:documentation>
                       </xs:annotation>
                     </xs:element>
                     <xs:element name="ExternalSystemTag"
