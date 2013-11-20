@@ -763,6 +763,52 @@ AirRemark</xs:documentation>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="AddInfos"
+                    minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>sLHLPREISINFO</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AddInfo"
+                          maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="Date"
+                                type="xs:date"
+                                minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation></xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Desc"
+                                type="xs:string"
+                                minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation></xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Nr"
+                                type="xs:decimal"
+                                minOccurs="0" />
+                    <xs:element name="Amount"
+                                type="xs:decimal"
+                                minOccurs="0" />
+                    <xs:element name="IsManual"
+                                type="xs:boolean"
+                                minOccurs="0" />
+                    <xs:element name="Tag"
+                                type="xs:string"
+                                minOccurs="0" />
+                    <xs:element name="Type"
+                                type="xs:string"
+                                minOccurs="0" />
+                  </xs:all>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:sequence>
       <xs:attribute name="DossierItemSeq"
                     type="xs:string"
