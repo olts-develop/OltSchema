@@ -534,8 +534,7 @@
           </xs:annotation>
           <xs:simpleType>
             <xs:restriction base="xs:boolean">
-              <xs:enumeration value="0" />
-              <xs:enumeration value="1" />
+
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
