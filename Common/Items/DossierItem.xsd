@@ -724,7 +724,7 @@
                           maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:all>
-                    <xs:element name="ExternalSystemType"
+                    <xs:element name="ExternalSystemIdType"
                                 type="xs:string">
                       <xs:annotation>
                         <xs:documentation>TripAdvisorId
@@ -732,14 +732,14 @@ TripAdvisorSupplierId
 AirRemark</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="ExternalSystemTag"
+                    <xs:element name="ExternalSystemIdTag"
                                 type="xs:string"
                                 minOccurs="0">
                       <xs:annotation>
                         <xs:documentation>Some ExternalSystemInformation need more than one identifier</xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="ExternalSystemId"
+                    <xs:element name="ExternalSystemIdCode"
                                 type="xs:string">
                       <xs:annotation>
                         <xs:documentation>Value for the External System Type/Tag</xs:documentation>
@@ -778,14 +778,14 @@ AirRemark</xs:documentation>
                                 type="xs:date"
                                 minOccurs="0">
                       <xs:annotation>
-                        <xs:documentation></xs:documentation>
+                        <xs:documentation />
                       </xs:annotation>
                     </xs:element>
                     <xs:element name="Desc"
                                 type="xs:string"
                                 minOccurs="0">
                       <xs:annotation>
-                        <xs:documentation></xs:documentation>
+                        <xs:documentation />
                       </xs:annotation>
                     </xs:element>
                     <xs:element name="Nr"
