@@ -1,0 +1,304 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType EarlyBookingAttributes in Hotel Exporter Interface</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('ComplexType', 'earlybookingattributes');
+                    </script><div class="pageheader">
+         Documentation for Hotel Exporter Interface
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>ComplexType</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>EarlyBookingAttributes</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="hotelexport_xsd.html">hotelexport.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td>False</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="275,498,487,525" href="specialcommission1.html" alt="Drilldown into SpecialCommission"></area>
+                     <area shape="rect" coords="275,465,423,492" href="descid2.html" alt="Drilldown into DescId"></area>
+                     <area shape="rect" coords="275,432,438,459" href="foralldays.html" alt="Drilldown into ForAllDays"></area>
+                     <area shape="rect" coords="275,399,450,426" href="forcedisplay.html" alt="Drilldown into ForceDisplay"></area>
+                     <area shape="rect" coords="275,366,444,393" href="addamount.html" alt="Drilldown into AddAmount"></area>
+                     <area shape="rect" coords="275,333,476,360" href="enddaterelevant.html" alt="Drilldown into EndDateRelevant"></area>
+                     <area shape="rect" coords="275,300,483,327" href="startdaterelevant.html" alt="Drilldown into StartDateRelevant"></area>
+                     <area shape="rect" coords="275,267,423,294" href="percent.html" alt="Drilldown into Percent"></area>
+                     <area shape="rect" coords="275,234,513,261" href="datebeforedepartureto.html" alt="Drilldown into DateBeforeDepartureTo"></area>
+                     <area shape="rect" coords="275,201,528,228" href="datebeforedeparturefrom.html" alt="Drilldown into DateBeforeDepartureFrom"></area>
+                     <area shape="rect" coords="275,168,514,195" href="daysbeforedepartureto.html" alt="Drilldown into DaysBeforeDepartureTo"></area>
+                     <area shape="rect" coords="275,135,529,162" href="daysbeforedeparturefrom.html" alt="Drilldown into DaysBeforeDepartureFrom"></area>
+                     <area shape="rect" coords="275,102,423,129" href="today.html" alt="Drilldown into ToDay"></area>
+                     <area shape="rect" coords="275,69,428,96" href="fromday.html" alt="Drilldown into FromDay"></area>
+                     <area shape="rect" coords="275,36,423,63" href="dateto.html" alt="Drilldown into DateTo"></area>
+                     <area shape="rect" coords="275,3,433,30" href="datefrom.html" alt="Drilldown into DateFrom"></area></map><img src="images/earlybookingattributes.png" border="0" alt="XSD Diagram of EarlyBookingAttributes" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:complexType name="EarlyBookingAttributes"&gt;
+  &lt;xs:attribute name="DateFrom" type="xs:date" use="required"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is larger or equal to this date.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="DateTo" type="xs:date" use="required"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is less than or equal to this date.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="FromDay" type="xs:integer"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;From which day is this early booking rule relavant.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="ToDay" type="xs:integer"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;To which day is this early booking rule relavant.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="DaysBeforeDepartureFrom" type="xs:integer"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;Number of days before the booking date: from&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="DaysBeforeDepartureTo" type="xs:integer"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;Number of days before the booking date: to&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="DateBeforeDepartureFrom" type="xs:date"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;Date from when the booking can be made, for this rule to be relevant
+          Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="DateBeforeDepartureTo" type="xs:date"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="Percent" type="xs:float"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;Percentage&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="StartDateRelevant" type="xs:boolean"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;If the DateFrom fits into the booking period of the hotel, this special is relevant, i.e. if the start date of the booking is greater than or equal to the DateFrom.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="EndDateRelevant" type="xs:boolean"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;If the DateTo fits into the booking period of the hotel, i.e. the last day of the booking is less than or equal to DateTo, this special is relevant&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="AddAmount" type="xs:float"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;This amount needs to be added to the calculated early booking amount. Normally this will be a negative amount. Note: one can have a percentage as well as an AddAmount. In this case, the percentage amount is calculated, and then the AddAmount is added to the result.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="ForceDisplay" type="xs:integer"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;determins whether to show a price with 0 amount
+          0 = do not show
+          1 = has to be shown
+        &lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="ForAllDays" type="xs:integer"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;if ForceDisplay =1 and ForAllDays=1 then the amount has to be shown for all relevant booking days.
+          if ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="DescId" type="xs:integer" /&gt;
+  &lt;xs:attribute name="SpecialCommission" type="xs:float"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;percentage  if the priceline has a special commission
+          Interna: P_SPEZFLAG must be 1
+          P_&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+&lt;/xs:complexType&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DateFrom</td>
+                        <td><a href="datefrom.html">DateFrom</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DateTo</td>
+                        <td><a href="dateto.html">DateTo</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">FromDay</td>
+                        <td><a href="fromday.html">FromDay</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ToDay</td>
+                        <td><a href="today.html">ToDay</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DaysBeforeDepartureFrom</td>
+                        <td><a href="daysbeforedeparturefrom.html">DaysBeforeDepartureFrom</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DaysBeforeDepartureTo</td>
+                        <td><a href="daysbeforedepartureto.html">DaysBeforeDepartureTo</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DateBeforeDepartureFrom</td>
+                        <td><a href="datebeforedeparturefrom.html">DateBeforeDepartureFrom</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DateBeforeDepartureTo</td>
+                        <td><a href="datebeforedepartureto.html">DateBeforeDepartureTo</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Percent</td>
+                        <td><a href="percent.html">Percent</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">StartDateRelevant</td>
+                        <td><a href="startdaterelevant.html">StartDateRelevant</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">EndDateRelevant</td>
+                        <td><a href="enddaterelevant.html">EndDateRelevant</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AddAmount</td>
+                        <td><a href="addamount.html">AddAmount</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ForceDisplay</td>
+                        <td><a href="forcedisplay.html">ForceDisplay</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ForAllDays</td>
+                        <td><a href="foralldays.html">ForAllDays</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DescId</td>
+                        <td><a href="descid2.html">DescId</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SpecialCommission</td>
+                        <td><a href="specialcommission1.html">SpecialCommission</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="derivationTree" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Derivation Tree:</b></td>
+            </tr>
+            <tr id="derivationTree_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><b><i>EarlyBookingAttributes</i></b></li>
+                     <ul>
+                        <li><a href="earlybooking.html">EarlyBooking</a></li>
+                     </ul>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="references" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>References:</b></td>
+            </tr>
+            <tr id="references_body_id">
+               <td width="120px;"></td>
+               <td><a href="earlybooking.html">EarlyBooking</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.1.0.4725</a><br></br>Featuring <a href="http://www.liquid-technologies.com/XmlDataBinding/Xml-Schema-To-Cs.aspx">XSD to C# Code Generation</a></div>
+   </body>
+</html>

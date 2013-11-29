@@ -1,0 +1,243 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for complexType PerDayPriceAttributes in Hotel Exporter Interface</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('ComplexType', 'perdaypriceattributes');
+                    </script><div class="pageheader">
+         Documentation for Hotel Exporter Interface
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>ComplexType</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>PerDayPriceAttributes</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="hotelexport_xsd.html">hotelexport.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td>False</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="270,267,482,294" href="specialcommission3.html" alt="Drilldown into SpecialCommission"></area>
+                     <area shape="rect" coords="270,234,484,261" href="notspecialrelevant2.html" alt="Drilldown into NotSpecialRelevant"></area>
+                     <area shape="rect" coords="270,201,418,228" href="descid4.html" alt="Drilldown into DescId"></area>
+                     <area shape="rect" coords="270,168,503,195" href="childidxnr1.html" alt="Drilldown into ChildIdxNr"></area>
+                     <area shape="rect" coords="270,135,487,162" href="ageto2.html" alt="Drilldown into AgeTo"></area>
+                     <area shape="rect" coords="270,102,492,129" href="agefrom2.html" alt="Drilldown into AgeFrom"></area>
+                     <area shape="rect" coords="270,69,418,96" href="type2.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="270,36,418,63" href="price2.html" alt="Drilldown into Price"></area>
+                     <area shape="rect" coords="270,3,418,30" href="day1.html" alt="Drilldown into Day"></area></map><img src="images/perdaypriceattributes.png" border="0" alt="XSD Diagram of PerDayPriceAttributes" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:complexType name="PerDayPriceAttributes"&gt;
+  &lt;xs:attribute name="Day" type="xs:date" use="required"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;Date for which this price is valid&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="Price" type="xs:float" use="required"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="Type"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;P = Price per person (default)
+          R = Price per Room&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+    &lt;xs:simpleType&gt;
+      &lt;xs:restriction base="xs:string"&gt;
+        &lt;xs:enumeration value="P" /&gt;
+        &lt;xs:enumeration value="R" /&gt;
+      &lt;/xs:restriction&gt;
+    &lt;/xs:simpleType&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="AgeFrom" type="xs:nonNegativeInteger"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="AgeTo" type="xs:nonNegativeInteger"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is the upper non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="ChildIdxNr" type="xs:nonNegativeInteger"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
+          ChildIndexNr=1 (first additional child in the room)
+          ChildIndexNr=2 (second additional child in the room)
+          ChildIndexNr=0 (no additional children in room)
+          If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
+          Internal: TYPE2
+          Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
+          Internal: Type3
+          Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="DescId" type="xs:integer" use="required"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;
+          In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+          &amp;lt;Descs&amp;gt;
+          &amp;lt;Desc DescId="1"&amp;gt;
+          &amp;lt;de&amp;gt;Preis pro Person/Nacht&amp;lt;/de&amp;gt;
+          &amp;lt;fr&amp;gt;Prix par personne/nuit&amp;lt;/fr&amp;gt;
+          &amp;lt;/Desc&amp;gt;
+          ...
+          &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&amp;gt;&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="NotSpecialRelevant" type="xs:integer"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;Some price lines must be ignored when calculating a special.
+          1 = NotSpecialRelevant&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+  &lt;xs:attribute name="SpecialCommission" type="xs:float"&gt;
+    &lt;xs:annotation&gt;
+      &lt;xs:documentation&gt;percentage  if he priceline has a special commission
+          Interna: P_SPEZFLAG must be 1
+          P_&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+  &lt;/xs:attribute&gt;
+&lt;/xs:complexType&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Day</td>
+                        <td><a href="day1.html">Day</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Price</td>
+                        <td><a href="price2.html">Price</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Type</td>
+                        <td><a href="type2.html">Type</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AgeFrom</td>
+                        <td><a href="agefrom2.html">AgeFrom</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AgeTo</td>
+                        <td><a href="ageto2.html">AgeTo</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ChildIdxNr</td>
+                        <td><a href="childidxnr1.html">ChildIdxNr</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DescId</td>
+                        <td><a href="descid4.html">DescId</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">NotSpecialRelevant</td>
+                        <td><a href="notspecialrelevant2.html">NotSpecialRelevant</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SpecialCommission</td>
+                        <td><a href="specialcommission3.html">SpecialCommission</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="derivationTree" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Derivation Tree:</b></td>
+            </tr>
+            <tr id="derivationTree_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><b><i>PerDayPriceAttributes</i></b></li>
+                     <ul>
+                        <li><a href="perdayprice.html">PerDayPrice</a></li>
+                     </ul>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="references" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>References:</b></td>
+            </tr>
+            <tr id="references_body_id">
+               <td width="120px;"></td>
+               <td><a href="perdayprice.html">PerDayPrice</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.1.0.4725</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+   </body>
+</html>
