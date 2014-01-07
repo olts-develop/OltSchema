@@ -51,24 +51,24 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:complexType name="Desc"&gt;
-  &lt;xs:annotation&gt;
-    &lt;xs:documentation /&gt;
-  &lt;/xs:annotation&gt;
-  &lt;xs:sequence&gt;
-    &lt;xs:element name="Desc" minOccurs="0" maxOccurs="unbounded"&gt;
-      &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line.
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation /&gt;
+    &lt;/xs:annotation&gt;
+    &lt;xs:sequence&gt;
+        &lt;xs:element name="Desc" minOccurs="0" maxOccurs="unbounded"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line.
             Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.&lt;/xs:documentation&gt;
-      &lt;/xs:annotation&gt;
-      &lt;xs:complexType&gt;
-        &lt;xs:complexContent mixed="false"&gt;
-          &lt;xs:extension base="Translation"&gt;
-            &lt;xs:attribute name="DescId" type="xs:integer" /&gt;
-          &lt;/xs:extension&gt;
-        &lt;/xs:complexContent&gt;
-      &lt;/xs:complexType&gt;
-    &lt;/xs:element&gt;
-  &lt;/xs:sequence&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:complexType&gt;
+                &lt;xs:complexContent mixed="false"&gt;
+                    &lt;xs:extension base="Translation"&gt;
+                        &lt;xs:attribute name="DescId" type="xs:integer" /&gt;
+                    &lt;/xs:extension&gt;
+                &lt;/xs:complexContent&gt;
+            &lt;/xs:complexType&gt;
+        &lt;/xs:element&gt;
+    &lt;/xs:sequence&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
          </tbody>

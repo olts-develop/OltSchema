@@ -70,8 +70,8 @@ If the Type is EndDays, and I have a valid 7/5, then the special offer will be 1
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:attribute name="Type"&gt;
-  &lt;xs:annotation&gt;
-    &lt;xs:documentation&gt;Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
           Day1 - 100 CHF
           Day2 - 110 CHF
           Day3 - 120CHF
@@ -80,16 +80,16 @@ If the Type is EndDays, and I have a valid 7/5, then the special offer will be 1
           Day6  - 150 CHF
           Day7  - 160 CHF
           If the Type is EndDays, and I have a valid 7/5, then the special offer will be 150 + 160 CHF.&lt;/xs:documentation&gt;
-  &lt;/xs:annotation&gt;
-  &lt;xs:simpleType&gt;
-    &lt;xs:restriction base="xs:string"&gt;
-      &lt;xs:enumeration value="EndDays" /&gt;
-      &lt;xs:enumeration value="StartDays" /&gt;
-      &lt;xs:enumeration value="Average" /&gt;
-      &lt;xs:enumeration value="MinValue" /&gt;
-      &lt;xs:enumeration value="MaxValue" /&gt;
-    &lt;/xs:restriction&gt;
-  &lt;/xs:simpleType&gt;
+    &lt;/xs:annotation&gt;
+    &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:enumeration value="EndDays" /&gt;
+            &lt;xs:enumeration value="StartDays" /&gt;
+            &lt;xs:enumeration value="Average" /&gt;
+            &lt;xs:enumeration value="MinValue" /&gt;
+            &lt;xs:enumeration value="MaxValue" /&gt;
+        &lt;/xs:restriction&gt;
+    &lt;/xs:simpleType&gt;
 &lt;/xs:attribute&gt;</code></pre></td>
             </tr>
          </tbody>

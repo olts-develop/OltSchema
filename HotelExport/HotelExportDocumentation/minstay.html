@@ -62,13 +62,13 @@ If the MinStayDate=2. JAN, this item cannot be booked on allotment. If the MinSt
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:attribute name="MinStay" type="xs:date"&gt;
-  &lt;xs:annotation&gt;
-    &lt;xs:documentation&gt;Minimum stay for this item.
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Minimum stay for this item.
                         If the END DATE of the booking is LESS THAN OR EQUAL TO the MinStayDate, then this item cannot be booked on allotment.
                         e.g.
                         Product Booking Dates: From=1. JAN, To=2.Jan
                         If the MinStayDate=2. JAN, this item cannot be booked on allotment. If the MinStayDate=1. JAN then this item CAN be booked on allotment.&lt;/xs:documentation&gt;
-  &lt;/xs:annotation&gt;
+    &lt;/xs:annotation&gt;
 &lt;/xs:attribute&gt;</code></pre></td>
             </tr>
          </tbody>

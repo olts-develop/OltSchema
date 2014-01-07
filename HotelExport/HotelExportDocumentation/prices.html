@@ -59,28 +59,28 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element name="Prices" minOccurs="0"&gt;
-  &lt;xs:complexType&gt;
-    &lt;xs:sequence&gt;
-      &lt;xs:element name="Currency" minOccurs="0" maxOccurs="unbounded"&gt;
-        &lt;xs:complexType&gt;
-          &lt;xs:all&gt;
-            &lt;xs:element name="PerDayPrices" type="PerDayPricesChildren" minOccurs="0" /&gt;
-            &lt;xs:element name="AddPerDayPrices" type="AddPerDayPricesChildren" minOccurs="0" /&gt;
-            &lt;xs:element name="OneTimes" type="OneTimesChildren" minOccurs="0" /&gt;
-            &lt;xs:element name="SpecialOffers" minOccurs="0"&gt;
-              &lt;xs:complexType&gt;
-                &lt;xs:complexContent mixed="false"&gt;
-                  &lt;xs:extension base="SpecialOffersChildren" /&gt;
-                &lt;/xs:complexContent&gt;
-              &lt;/xs:complexType&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="Currency" minOccurs="0" maxOccurs="unbounded"&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:all&gt;
+                        &lt;xs:element name="PerDayPrices" type="PerDayPricesChildren" minOccurs="0" /&gt;
+                        &lt;xs:element name="AddPerDayPrices" type="AddPerDayPricesChildren" minOccurs="0" /&gt;
+                        &lt;xs:element name="OneTimes" type="OneTimesChildren" minOccurs="0" /&gt;
+                        &lt;xs:element name="SpecialOffers" minOccurs="0"&gt;
+                            &lt;xs:complexType&gt;
+                                &lt;xs:complexContent mixed="false"&gt;
+                                    &lt;xs:extension base="SpecialOffersChildren" /&gt;
+                                &lt;/xs:complexContent&gt;
+                            &lt;/xs:complexType&gt;
+                        &lt;/xs:element&gt;
+                        &lt;xs:element name="EarlyBookings" type="EarlyBookingsChildren" minOccurs="0" /&gt;
+                    &lt;/xs:all&gt;
+                    &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
+                &lt;/xs:complexType&gt;
             &lt;/xs:element&gt;
-            &lt;xs:element name="EarlyBookings" type="EarlyBookingsChildren" minOccurs="0" /&gt;
-          &lt;/xs:all&gt;
-          &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
-        &lt;/xs:complexType&gt;
-      &lt;/xs:element&gt;
-    &lt;/xs:sequence&gt;
-  &lt;/xs:complexType&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>

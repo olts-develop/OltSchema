@@ -59,41 +59,41 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:complexType name="AddPerDayPriceAttributes"&gt;
-  &lt;xs:attribute name="Day" type="xs:date" use="required"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Date for which this price is valid&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="Price" type="xs:float" use="required"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="Type"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;P = Price per person (default)
+    &lt;xs:attribute name="Day" type="xs:date" use="required"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Date for which this price is valid&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Price" type="xs:float" use="required"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Type"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;P = Price per person (default)
           R = Price per Room&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-    &lt;xs:simpleType&gt;
-      &lt;xs:restriction base="xs:string"&gt;
-        &lt;xs:enumeration value="P" /&gt;
-        &lt;xs:enumeration value="R" /&gt;
-      &lt;/xs:restriction&gt;
-    &lt;/xs:simpleType&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="AgeFrom" type="xs:nonNegativeInteger"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="AgeTo" type="xs:nonNegativeInteger"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is the upper non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="ChildIdxNr" type="xs:nonNegativeInteger"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:string"&gt;
+                &lt;xs:enumeration value="P" /&gt;
+                &lt;xs:enumeration value="R" /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="AgeFrom" type="xs:nonNegativeInteger"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="AgeTo" type="xs:nonNegativeInteger"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is the upper non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="ChildIdxNr" type="xs:nonNegativeInteger"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
           ChildIndexNr=1 (first additional child in the room)
           ChildIndexNr=2 (second additional child in the room)
           ChildIndexNr=0 (no additional children in room)
@@ -102,11 +102,11 @@
           Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
           Internal: Type3
           Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DescId" type="xs:integer" use="required"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DescId" type="xs:integer" use="required"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;
           In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
           &amp;lt;Descs&amp;gt;
           &amp;lt;Desc DescId="1"&amp;gt;
@@ -115,21 +115,21 @@
           &amp;lt;/Desc&amp;gt;
           ...
           &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&amp;gt;&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="NotSpecialRelevant" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Some price lines must be ignored when calculating a special.
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="NotSpecialRelevant" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Some price lines must be ignored when calculating a special.
           1 = NotSpecialRelevant&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="SpecialCommission" type="xs:float"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;percentage  if he priceline has a special commission
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="SpecialCommission" type="xs:float"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;percentage  if he priceline has a special commission
           Interna: P_SPEZFLAG must be 1
           P_&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
          </tbody>

@@ -65,8 +65,8 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:attribute name="DescId" type="xs:integer" use="required"&gt;
-  &lt;xs:annotation&gt;
-    &lt;xs:documentation&gt;
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;
           In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
           &amp;lt;Descs&amp;gt;
           &amp;lt;Desc DescId="1"&amp;gt;
@@ -75,7 +75,7 @@
           &amp;lt;/Desc&amp;gt;
           ...
           &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&amp;gt;&lt;/xs:documentation&gt;
-  &lt;/xs:annotation&gt;
+    &lt;/xs:annotation&gt;
 &lt;/xs:attribute&gt;</code></pre></td>
             </tr>
          </tbody>

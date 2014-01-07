@@ -66,8 +66,8 @@ Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSI
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:attribute name="ChildIdxNr" type="xs:nonNegativeInteger"&gt;
-  &lt;xs:annotation&gt;
-    &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
           ChildIndexNr=1 (first additional child in the room)
           ChildIndexNr=2 (second additional child in the room)
           ChildIndexNr=0 (no additional children in room)
@@ -76,7 +76,7 @@ Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSI
           Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
           Internal: Type3
           Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)&lt;/xs:documentation&gt;
-  &lt;/xs:annotation&gt;
+    &lt;/xs:annotation&gt;
 &lt;/xs:attribute&gt;</code></pre></td>
             </tr>
          </tbody>

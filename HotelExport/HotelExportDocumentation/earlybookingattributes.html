@@ -66,89 +66,89 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:complexType name="EarlyBookingAttributes"&gt;
-  &lt;xs:attribute name="DateFrom" type="xs:date" use="required"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is larger or equal to this date.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DateTo" type="xs:date" use="required"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is less than or equal to this date.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="FromDay" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;From which day is this early booking rule relavant.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="ToDay" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;To which day is this early booking rule relavant.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DaysBeforeDepartureFrom" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Number of days before the booking date: from&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DaysBeforeDepartureTo" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Number of days before the booking date: to&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DateBeforeDepartureFrom" type="xs:date"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Date from when the booking can be made, for this rule to be relevant
+    &lt;xs:attribute name="DateFrom" type="xs:date" use="required"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is larger or equal to this date.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DateTo" type="xs:date" use="required"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is less than or equal to this date.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="FromDay" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;From which day is this early booking rule relavant.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="ToDay" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;To which day is this early booking rule relavant.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DaysBeforeDepartureFrom" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Number of days before the booking date: from&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DaysBeforeDepartureTo" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Number of days before the booking date: to&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DateBeforeDepartureFrom" type="xs:date"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Date from when the booking can be made, for this rule to be relevant
           Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DateBeforeDepartureTo" type="xs:date"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="Percent" type="xs:float"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Percentage&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="StartDateRelevant" type="xs:boolean"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;If the DateFrom fits into the booking period of the hotel, this special is relevant, i.e. if the start date of the booking is greater than or equal to the DateFrom.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="EndDateRelevant" type="xs:boolean"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;If the DateTo fits into the booking period of the hotel, i.e. the last day of the booking is less than or equal to DateTo, this special is relevant&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="AddAmount" type="xs:float"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;This amount needs to be added to the calculated early booking amount. Normally this will be a negative amount. Note: one can have a percentage as well as an AddAmount. In this case, the percentage amount is calculated, and then the AddAmount is added to the result.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="ForceDisplay" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;determins whether to show a price with 0 amount
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DateBeforeDepartureTo" type="xs:date"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Percent" type="xs:float"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Percentage&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="StartDateRelevant" type="xs:boolean"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If the DateFrom fits into the booking period of the hotel, this special is relevant, i.e. if the start date of the booking is greater than or equal to the DateFrom.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="EndDateRelevant" type="xs:boolean"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If the DateTo fits into the booking period of the hotel, i.e. the last day of the booking is less than or equal to DateTo, this special is relevant&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="AddAmount" type="xs:float"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;This amount needs to be added to the calculated early booking amount. Normally this will be a negative amount. Note: one can have a percentage as well as an AddAmount. In this case, the percentage amount is calculated, and then the AddAmount is added to the result.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="ForceDisplay" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;determins whether to show a price with 0 amount
           0 = do not show
           1 = has to be shown
         &lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="ForAllDays" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;if ForceDisplay =1 and ForAllDays=1 then the amount has to be shown for all relevant booking days.
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="ForAllDays" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;if ForceDisplay =1 and ForAllDays=1 then the amount has to be shown for all relevant booking days.
           if ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DescId" type="xs:integer" /&gt;
-  &lt;xs:attribute name="SpecialCommission" type="xs:float"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;percentage  if the priceline has a special commission
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DescId" type="xs:integer" /&gt;
+    &lt;xs:attribute name="SpecialCommission" type="xs:float"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;percentage  if the priceline has a special commission
           Interna: P_SPEZFLAG must be 1
           P_&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
          </tbody>

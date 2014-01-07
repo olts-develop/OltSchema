@@ -55,7 +55,7 @@
                      <area shape="rect" coords="223,168,373,195" href="external.html" alt="Drilldown into External"></area>
                      <area shape="rect" coords="223,135,376,162" href="itinerary.html" alt="Drilldown into Itinerary"></area>
                      <area shape="rect" coords="223,102,371,129" href="invoice.html" alt="Drilldown into Invoice"></area>
-                     <area shape="rect" coords="223,69,371,96" href="type4.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="223,69,371,96" href="type5.html" alt="Drilldown into Type"></area>
                      <area shape="rect" coords="223,36,373,63" href="enddate1.html" alt="Drilldown into EndDate"></area>
                      <area shape="rect" coords="223,3,384,30" href="begindate1.html" alt="Drilldown into BeginDate"></area></map><img src="images/iteminfo.png" border="0" alt="XSD Diagram of ItemInfo" usemap="#DiagramMap"></img></td>
             </tr>
@@ -70,94 +70,94 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element name="ItemInfo" minOccurs="0"&gt;
-  &lt;xs:annotation&gt;
-    &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
-  &lt;/xs:annotation&gt;
-  &lt;xs:complexType&gt;
-    &lt;xs:all&gt;
-      &lt;xs:element name="BeginDate" type="xs:date" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Start date when an information applies. Inclusive.&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="EndDate" type="xs:date" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;End date when an information applies. Inclusive.&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="Type" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Item
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:all&gt;
+            &lt;xs:element name="BeginDate" type="xs:date" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Start date when an information applies. Inclusive.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="EndDate" type="xs:date" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;End date when an information applies. Inclusive.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Type" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Item
 Destination
 Country&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:simpleType&gt;
-          &lt;xs:restriction base="xs:string"&gt;
-            &lt;xs:enumeration value="Item" /&gt;
-            &lt;xs:enumeration value="Destination" /&gt;
-            &lt;xs:enumeration value="Country" /&gt;
-          &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="Invoice" type="xs:boolean" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation /&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="Itinerary" type="xs:boolean" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation /&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="External" type="xs:boolean" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation /&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="Title" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Title of info. Node is only sent if a value exists.&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:complexType&gt;
-          &lt;xs:all&gt;
-            &lt;xs:element name="de" type="xs:string" minOccurs="0" /&gt;
-            &lt;xs:element name="en" type="xs:string" minOccurs="0" /&gt;
-            &lt;xs:element name="fr" type="xs:string" minOccurs="0" /&gt;
-            &lt;xs:element name="it" type="xs:string" minOccurs="0" /&gt;
-          &lt;/xs:all&gt;
-        &lt;/xs:complexType&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="Text" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Description text of iteminfo&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:complexType&gt;
-          &lt;xs:all&gt;
-            &lt;xs:element name="de" type="xs:string" minOccurs="0"&gt;
-              &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-              &lt;/xs:annotation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="Item" /&gt;
+                        &lt;xs:enumeration value="Destination" /&gt;
+                        &lt;xs:enumeration value="Country" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
             &lt;/xs:element&gt;
-            &lt;xs:element name="en" type="xs:string" minOccurs="0"&gt;
-              &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-              &lt;/xs:annotation&gt;
+            &lt;xs:element name="Invoice" type="xs:boolean" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
             &lt;/xs:element&gt;
-            &lt;xs:element name="fr" type="xs:string" minOccurs="0"&gt;
-              &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-              &lt;/xs:annotation&gt;
+            &lt;xs:element name="Itinerary" type="xs:boolean" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
             &lt;/xs:element&gt;
-            &lt;xs:element name="it" type="xs:string" minOccurs="0"&gt;
-              &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-              &lt;/xs:annotation&gt;
+            &lt;xs:element name="External" type="xs:boolean" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
             &lt;/xs:element&gt;
-          &lt;/xs:all&gt;
-        &lt;/xs:complexType&gt;
-      &lt;/xs:element&gt;
-    &lt;/xs:all&gt;
-  &lt;/xs:complexType&gt;
+            &lt;xs:element name="Title" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Title of info. Node is only sent if a value exists.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:all&gt;
+                        &lt;xs:element name="de" type="xs:string" minOccurs="0" /&gt;
+                        &lt;xs:element name="en" type="xs:string" minOccurs="0" /&gt;
+                        &lt;xs:element name="fr" type="xs:string" minOccurs="0" /&gt;
+                        &lt;xs:element name="it" type="xs:string" minOccurs="0" /&gt;
+                    &lt;/xs:all&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Text" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Description text of iteminfo&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:all&gt;
+                        &lt;xs:element name="de" type="xs:string" minOccurs="0"&gt;
+                            &lt;xs:annotation&gt;
+                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+                            &lt;/xs:annotation&gt;
+                        &lt;/xs:element&gt;
+                        &lt;xs:element name="en" type="xs:string" minOccurs="0"&gt;
+                            &lt;xs:annotation&gt;
+                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+                            &lt;/xs:annotation&gt;
+                        &lt;/xs:element&gt;
+                        &lt;xs:element name="fr" type="xs:string" minOccurs="0"&gt;
+                            &lt;xs:annotation&gt;
+                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+                            &lt;/xs:annotation&gt;
+                        &lt;/xs:element&gt;
+                        &lt;xs:element name="it" type="xs:string" minOccurs="0"&gt;
+                            &lt;xs:annotation&gt;
+                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+                            &lt;/xs:annotation&gt;
+                        &lt;/xs:element&gt;
+                    &lt;/xs:all&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:all&gt;
+    &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -191,7 +191,7 @@ Country&lt;/xs:documentation&gt;
                      </tr>
                      <tr>
                         <td class="first">Type</td>
-                        <td><a href="type4.html">Type</a></td>
+                        <td><a href="type5.html">Type</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

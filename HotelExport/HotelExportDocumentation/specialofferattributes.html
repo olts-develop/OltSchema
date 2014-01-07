@@ -74,57 +74,57 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:complexType name="SpecialOfferAttributes"&gt;
-  &lt;xs:attribute name="DateFrom" type="xs:date" use="required"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is larger or equal to this date.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DateTo" type="xs:date" use="required"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Rule is valid for bookings that have a end date that is less than or equal to this date.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="FromDayBase" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;From day number. with a 7/5, this would be 5&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="ToDayBase" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;To day number. with a 7/5, this would be 7&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DaysBeforeDepartureFrom" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Number of days before the booking date: from
+    &lt;xs:attribute name="DateFrom" type="xs:date" use="required"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is larger or equal to this date.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DateTo" type="xs:date" use="required"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Rule is valid for bookings that have a end date that is less than or equal to this date.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="FromDayBase" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;From day number. with a 7/5, this would be 5&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="ToDayBase" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;To day number. with a 7/5, this would be 7&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DaysBeforeDepartureFrom" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Number of days before the booking date: from
           Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DaysBeforeDepartureTo" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Number of days before the booking date: to
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DaysBeforeDepartureTo" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Number of days before the booking date: to
           Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DateBeforeDepartureFrom" type="xs:date"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Date from when the booking can be made, for this rule to be relevant
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DateBeforeDepartureFrom" type="xs:date"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Date from when the booking can be made, for this rule to be relevant
           Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DateBeforeDepartureTo" type="xs:date"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="PayNights" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;How many nights does the customer effectively pay. If this has a value of 5, and I have a FromDay=6, ToDay=7, then if I book 6 days the customer pays 5 nights, if I book 7 days the customer pays 5 nights. SaveNights and PayNights are mutaly exclusive. Only one of the attributes is allowed.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="Type"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DateBeforeDepartureTo" type="xs:date"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="PayNights" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;How many nights does the customer effectively pay. If this has a value of 5, and I have a FromDay=6, ToDay=7, then if I book 6 days the customer pays 5 nights, if I book 7 days the customer pays 5 nights. SaveNights and PayNights are mutaly exclusive. Only one of the attributes is allowed.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Type"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
           Day1 - 100 CHF
           Day2 - 110 CHF
           Day3 - 120CHF
@@ -133,36 +133,36 @@
           Day6  - 150 CHF
           Day7  - 160 CHF
           If the Type is EndDays, and I have a valid 7/5, then the special offer will be 150 + 160 CHF.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-    &lt;xs:simpleType&gt;
-      &lt;xs:restriction base="xs:string"&gt;
-        &lt;xs:enumeration value="EndDays" /&gt;
-        &lt;xs:enumeration value="StartDays" /&gt;
-        &lt;xs:enumeration value="Average" /&gt;
-        &lt;xs:enumeration value="MinValue" /&gt;
-        &lt;xs:enumeration value="MaxValue" /&gt;
-      &lt;/xs:restriction&gt;
-    &lt;/xs:simpleType&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="StartDateRelevant" type="xs:boolean"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;If the DateFrom fits into the booking period of the hotel, this special is relevant, i.e. if the start date of the booking is greater than or equal to the DateFrom.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="EndDateRelevant" type="xs:boolean"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;If the DateTo fits into the booking period of the hotel, i.e. the last day of the booking is less than or equal to DateTo, this special is relevant&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="AddAmount" type="xs:float"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DescId" type="xs:integer" use="required" /&gt;
-  &lt;xs:attribute name="WeekdaysValid" type="xs:string"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;A sevent character string
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:string"&gt;
+                &lt;xs:enumeration value="EndDays" /&gt;
+                &lt;xs:enumeration value="StartDays" /&gt;
+                &lt;xs:enumeration value="Average" /&gt;
+                &lt;xs:enumeration value="MinValue" /&gt;
+                &lt;xs:enumeration value="MaxValue" /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="StartDateRelevant" type="xs:boolean"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If the DateFrom fits into the booking period of the hotel, this special is relevant, i.e. if the start date of the booking is greater than or equal to the DateFrom.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="EndDateRelevant" type="xs:boolean"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If the DateTo fits into the booking period of the hotel, i.e. the last day of the booking is less than or equal to DateTo, this special is relevant&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="AddAmount" type="xs:float"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DescId" type="xs:integer" use="required" /&gt;
+    &lt;xs:attribute name="WeekdaysValid" type="xs:string"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;A sevent character string
           MoTuWeThFrSaSu
           The string 1011001 indicates
           Mo = valid
@@ -173,25 +173,25 @@
           Sa = valid
           Su = valid
         &lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="LastSpOffEndDate" type="xs:date"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;Defines the last posible booking enddate for season overlapping special offers.This date can be taken for calulating the valid special offers for a hotelbooking &lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="RuleType" type="xs:string"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;determermins how the spezial offer is to be used.
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="LastSpOffEndDate" type="xs:date"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Defines the last posible booking enddate for season overlapping special offers.This date can be taken for calulating the valid special offers for a hotelbooking &lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="RuleType" type="xs:string"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;determermins how the spezial offer is to be used.
           Always = the special offer is always valid
           Nr = the attributes DaysBeforeDepatureFrom and DaysBeforeDepatureTo are valid for the calculation
           Date = the attributes DateBeforeDepatureFrom and DateBeforeDepatureTo are valid for the calculation
         &lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="DayString" type="xs:string"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;if the special offer is a savenight (PayNights) like stay from 6 to 7 nights pay 5 and it is revolving. This string shows the sequence of the staynights.
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="DayString" type="xs:string"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;if the special offer is a savenight (PayNights) like stay from 6 to 7 nights pay 5 and it is revolving. This string shows the sequence of the staynights.
           ex:
           7-6/5 Daystring = 5
           5/5 Daystring = 5
@@ -204,44 +204,44 @@
           19/15 Daystring = 7,6,6
           18/15 Daystring = 6,6,6
         &lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="Days" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;this shows the minimum staynights of the booking.&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="Baby" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;0 = this special offer is valid only for adults
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Days" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;this shows the minimum staynights of the booking.&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Baby" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;0 = this special offer is valid only for adults
           1 = this special offer is only valid for babys&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="Child" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;0 = this special offer is valid only for adults
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Child" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;0 = this special offer is valid only for adults
           1 = this special offer is only valid for children&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="SpecialCommission" type="xs:float"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;percentage  if he priceline has a special commission
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="SpecialCommission" type="xs:float"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;percentage  if he priceline has a special commission
           Interna: P_SPEZFLAG must be 1
           P_&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="ChildChildNr" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;this special offer for a baby or child is valid for the n-th child or baby equal ChildChildNr
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="ChildChildNr" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;this special offer for a baby or child is valid for the n-th child or baby equal ChildChildNr
           for ex. first baby/child or second baby/child
         &lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
-  &lt;xs:attribute name="ChildAdultNr" type="xs:integer"&gt;
-    &lt;xs:annotation&gt;
-      &lt;xs:documentation&gt;this special offer for teh baby or child is valid if it is accompanied by number of adults equal ChildAdultNr&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-  &lt;/xs:attribute&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="ChildAdultNr" type="xs:integer"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;this special offer for teh baby or child is valid if it is accompanied by number of adults equal ChildAdultNr&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
          </tbody>

@@ -60,29 +60,29 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element name="CancellationFees" minOccurs="0"&gt;
-  &lt;xs:complexType&gt;
-    &lt;xs:sequence&gt;
-      &lt;xs:element name="CancellationFee" minOccurs="0" maxOccurs="unbounded"&gt;
-        &lt;xs:complexType&gt;
-          &lt;xs:all&gt;
-            &lt;xs:element name="BeginDate" type="xs:date" /&gt;
-            &lt;xs:element name="EndDate" type="xs:date" /&gt;
-            &lt;xs:element name="Percent" type="xs:float" minOccurs="0" /&gt;
-            &lt;xs:element name="Amount" type="xs:float" minOccurs="0" /&gt;
-            &lt;xs:element name="DaysBeforeDepartureBegin" type="xs:integer" /&gt;
-            &lt;xs:element name="DaysBeforeDepartureEnd" type="xs:integer" /&gt;
-            &lt;xs:element name="NrDaysFeeApply" type="xs:integer" /&gt;
-            &lt;xs:element name="PriceType" type="xs:integer"&gt;
-              &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;1 = Cancellation Fee&lt;/xs:documentation&gt;
-              &lt;/xs:annotation&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="CancellationFee" minOccurs="0" maxOccurs="unbounded"&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:all&gt;
+                        &lt;xs:element name="BeginDate" type="xs:date" /&gt;
+                        &lt;xs:element name="EndDate" type="xs:date" /&gt;
+                        &lt;xs:element name="Percent" type="xs:float" minOccurs="0" /&gt;
+                        &lt;xs:element name="Amount" type="xs:float" minOccurs="0" /&gt;
+                        &lt;xs:element name="DaysBeforeDepartureBegin" type="xs:integer" /&gt;
+                        &lt;xs:element name="DaysBeforeDepartureEnd" type="xs:integer" /&gt;
+                        &lt;xs:element name="NrDaysFeeApply" type="xs:integer" /&gt;
+                        &lt;xs:element name="PriceType" type="xs:integer"&gt;
+                            &lt;xs:annotation&gt;
+                                &lt;xs:documentation&gt;1 = Cancellation Fee&lt;/xs:documentation&gt;
+                            &lt;/xs:annotation&gt;
+                        &lt;/xs:element&gt;
+                    &lt;/xs:all&gt;
+                &lt;/xs:complexType&gt;
             &lt;/xs:element&gt;
-          &lt;/xs:all&gt;
-        &lt;/xs:complexType&gt;
-      &lt;/xs:element&gt;
-    &lt;/xs:sequence&gt;
-    &lt;xs:attribute name="InternalPriceType" type="xs:string" /&gt;
-  &lt;/xs:complexType&gt;
+        &lt;/xs:sequence&gt;
+        &lt;xs:attribute name="InternalPriceType" type="xs:string" /&gt;
+    &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
