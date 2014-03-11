@@ -967,8 +967,7 @@
                       type="xs:integer"
                       use="required">
             <xs:annotation>
-                <xs:documentation>In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts
-                    for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+                <xs:documentation>In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
                     &lt;Descs&gt;
                     &lt;Desc DescId="1"&gt;
                     &lt;de&gt;Preis pro Person/Nacht&lt;/de&gt;
