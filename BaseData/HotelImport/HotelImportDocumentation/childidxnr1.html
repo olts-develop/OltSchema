@@ -1,0 +1,87 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for schema item ChildIdxNr in Hotel Import</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Attribute', 'childidxnr1');
+                    </script><div class="pageheader">
+         Documentation for Hotel Import
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Attribute</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>ChildIdxNr</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Type:</b></td>
+               <td>nonNegativeInteger:http://www.w3.org/2001/XMLSchema</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="hotelimport_xsd.html">hotelimport.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Use</b></td>
+               <td>(Optional)</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Documentation:</b></td>
+               <td><pre>If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
+ChildIndexNr=1 (first additional child in the room)
+ChildIndexNr=2 (second additional child in the room)
+ChildIndexNr=0 (no additional children in room)
+If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
+Internal: TYPE2
+Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
+Internal: Type3
+Do PriceList.$search($ref.P_KINDERPREISSPEZ&gt;0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,</pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap"></map><img src="images/childidxnr1.png" border="0" alt="XSD Diagram of ChildIdxNr" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:attribute name="ChildIdxNr" type="xs:nonNegativeInteger"&gt;
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
+                    ChildIndexNr=1 (first additional child in the room)
+                    ChildIndexNr=2 (second additional child in the room)
+                    ChildIndexNr=0 (no additional children in room)
+                    If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
+                    Internal: TYPE2
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
+                    Internal: Type3
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+&lt;/xs:attribute&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.1.4994</a><br></br>Featuring Sample <a href="http://www.liquid-technologies.com/XmlToXsd.aspx">XML Generator</a></div>
+   </body>
+</html>

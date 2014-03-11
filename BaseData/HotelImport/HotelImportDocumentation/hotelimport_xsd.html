@@ -1,0 +1,1503 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs the schema hotelimport.xsd in Hotel Import</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Schema', 'hotelimport_xsd');
+                    </script><div class="pageheader">
+         Documentation for Hotel Import
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Schema Name:</b></td>
+               <td>hotelimport.xsd</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>
+&lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+    &lt;xs:element name="Hotel"&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:all&gt;
+                &lt;xs:element name="HotelName"
+                            type="Translation"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;HO_NAME&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Address1"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;HO_STRASSE&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Address2"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;HO_STRASSEZUSATZ&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="PostalCode"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;HO_PLZ&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="City"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;SC_VOLL&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Country"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:simpleContent&gt;
+                            &lt;xs:extension base="xs:string"&gt;
+                                &lt;xs:attribute name="IsoCode"
+                                              type="xs:string"&gt;
+                                    &lt;xs:annotation&gt;
+                                        &lt;xs:documentation&gt;Two letter country code of address
+                                            C_IATACODE&lt;/xs:documentation&gt;
+                                    &lt;/xs:annotation&gt;
+                                &lt;/xs:attribute&gt;
+                            &lt;/xs:extension&gt;
+                        &lt;/xs:simpleContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Region"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Region of the Country
+                            RE_VOLL&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="SubRegion"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Subregion of the region
+                            SC_VOLL&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Phone"
+                            type="PhoneAttributes"
+                            minOccurs="0" /&gt;
+                &lt;xs:element name="Fax"
+                            type="PhoneAttributes"
+                            minOccurs="0" /&gt;
+                &lt;xs:element name="Mobile"
+                            type="PhoneAttributes"
+                            minOccurs="0" /&gt;
+                &lt;xs:element name="Email"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Email address of hotel&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="WebURL"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;URL of Hotel web site&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="HotelChain"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:simpleContent&gt;
+                            &lt;xs:extension base="xs:string"&gt;
+                                &lt;xs:attribute name="ChainCode"
+                                              type="xs:string" /&gt;
+                            &lt;/xs:extension&gt;
+                        &lt;/xs:simpleContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Destination"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:complexContent mixed="false"&gt;
+                            &lt;xs:extension base="DestinationAttributes" /&gt;
+                        &lt;/xs:complexContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="HotelCode"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;HO_HOTELCODE&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="GiataId"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;HO_HOTELCODE&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Location"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Hotel location&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Longitude"
+                            type="xs:float"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Longitude of hotel
+                            HO_LON
+                            -180.000000 to +180.000000&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Latitude"
+                            type="xs:float"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Latitude of hotel
+                            HO_LAT
+                            -180.000000 to +180.000000&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="RoomType"
+                            type="Translation"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;single, doubleroom...
+                            ZI_DEUTSCH&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Description"
+                            type="Translation"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Room description
+                            ZI_BESCHRIEBDEUTSCH&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="MealCode"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;ZM_ALTCODE&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="MealDescription"
+                            type="Translation"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Description of included meal
+                            ZI_MAHLZEITDEUTSCH&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="NormalOccupancy"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Normal occupancy&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="MinimalOccupancy"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Maximal occupancy&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="MaximalOccupancy"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Minimal occupancy&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="MaxAdults"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Maximum number of adults&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="ExtraBedAdults"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Number of extra bed for adults&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="ExtraBedChildren"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Number of extra bed for Children&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="APIHotelCode"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;API Hotel Code&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="APIRoomCode"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;API Room Code&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="TourboCode"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Tourbo Code&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="TourboText"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Tourbo text for the room. Will be displayed in Tour Online / Cets.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="TourboMealCode"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Tourbo Meal Code:
+                            BB - Bed and breakfast
+                            HB - Half board
+                            FB - Full board
+                            AL - All inclusive
+                            RO - Room only
+                            MP - Meal according to program&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                    &lt;xs:simpleType&gt;
+                        &lt;xs:restriction base="xs:string"&gt;
+                            &lt;xs:enumeration value="" /&gt;
+                            &lt;xs:enumeration value="BB" /&gt;
+                            &lt;xs:enumeration value="HB" /&gt;
+                            &lt;xs:enumeration value="FB" /&gt;
+                            &lt;xs:enumeration value="AL" /&gt;
+                            &lt;xs:enumeration value="RO" /&gt;
+                            &lt;xs:enumeration value="MP" /&gt;
+                        &lt;/xs:restriction&gt;
+                    &lt;/xs:simpleType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="AutomatedFeeCode"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Automated Fee Code. Used for automated cancellation and modification fees.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Category"
+                            type="xs:float"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Category number: 0.0 to 6.0
+                            If 0.0, the category is unknown or undefined&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Passive"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;This room can no longer be booked. If a FromDate is specified, this item cannot be booked on or after the specified date.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:simpleContent&gt;
+                            &lt;xs:extension base="xs:integer"&gt;
+                                &lt;xs:attribute name="FromDate"
+                                              type="xs:date" /&gt;
+                            &lt;/xs:extension&gt;
+                        &lt;/xs:simpleContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Descs"
+                            type="Desc"
+                            minOccurs="0" /&gt;
+                &lt;xs:element name="Supplier"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:simpleContent&gt;
+                            &lt;xs:extension base="xs:string"&gt;
+                                &lt;xs:attribute name="Code"
+                                              type="xs:string"&gt;
+                                    &lt;xs:annotation&gt;
+                                        &lt;xs:documentation&gt;Reservation-Supplier-Code for this room&lt;/xs:documentation&gt;
+                                    &lt;/xs:annotation&gt;
+                                &lt;/xs:attribute&gt;
+                            &lt;/xs:extension&gt;
+                        &lt;/xs:simpleContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="PaySupplier"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:simpleContent&gt;
+                            &lt;xs:extension base="xs:string"&gt;
+                                &lt;xs:attribute name="Code"
+                                              type="xs:string"&gt;
+                                    &lt;xs:annotation&gt;
+                                        &lt;xs:documentation&gt;Payment-Supplier-Code for this room&lt;/xs:documentation&gt;
+                                    &lt;/xs:annotation&gt;
+                                &lt;/xs:attribute&gt;
+                            &lt;/xs:extension&gt;
+                        &lt;/xs:simpleContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="VoucherSupplier"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:simpleContent&gt;
+                            &lt;xs:extension base="xs:string"&gt;
+                                &lt;xs:attribute name="Code"
+                                              type="xs:string"&gt;
+                                    &lt;xs:annotation&gt;
+                                        &lt;xs:documentation&gt;Voucher-Supplier-Code for this room&lt;/xs:documentation&gt;
+                                    &lt;/xs:annotation&gt;
+                                &lt;/xs:attribute&gt;
+                            &lt;/xs:extension&gt;
+                        &lt;/xs:simpleContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Request"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;is the room bookable on request or is it free sale&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                    &lt;xs:simpleType&gt;
+                        &lt;xs:restriction base="xs:string"&gt;
+                            &lt;xs:enumeration value="" /&gt;
+                            &lt;xs:enumeration value="RQ" /&gt;
+                            &lt;xs:enumeration value="FS" /&gt;
+                        &lt;/xs:restriction&gt;
+                    &lt;/xs:simpleType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Prices"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:sequence&gt;
+                            &lt;xs:element name="Currency"
+                                        minOccurs="0"
+                                        maxOccurs="unbounded"&gt;
+                                &lt;xs:complexType&gt;
+                                    &lt;xs:all&gt;
+                                        &lt;xs:element name="PerDayPrices"
+                                                    type="PerDayPricesChildren"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="AddPerDayPrices"
+                                                    type="AddPerDayPricesChildren"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="OneTimes"
+                                                    type="OneTimesChildren"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="SpecialOffers"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:complexType&gt;
+                                                &lt;xs:complexContent mixed="false"&gt;
+                                                    &lt;xs:extension base="SpecialOffersChildren" /&gt;
+                                                &lt;/xs:complexContent&gt;
+                                            &lt;/xs:complexType&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="EarlyBookings"
+                                                    type="EarlyBookingsChildren"
+                                                    minOccurs="0" /&gt;
+                                    &lt;/xs:all&gt;
+                                    &lt;xs:attribute name="IsoCode"
+                                                  type="xs:string" /&gt;
+                                &lt;/xs:complexType&gt;
+                            &lt;/xs:element&gt;
+                        &lt;/xs:sequence&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Allotments"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:sequence&gt;
+                            &lt;xs:element name="Allotment"
+                                        minOccurs="0"
+                                        maxOccurs="unbounded"&gt;
+                                &lt;xs:complexType&gt;
+                                    &lt;xs:attribute name="Date"
+                                                  type="xs:date"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;Date for this allotment item&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:attribute&gt;
+                                    &lt;xs:attribute name="Av"
+                                                  type="xs:float"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;The rest availability of this item&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:attribute&gt;
+                                    &lt;xs:attribute name="Rel"
+                                                  type="xs:date"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;Release date.
+                                                If the current date is GREATER than the release date, then this item cannot be booked on allotment&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:attribute&gt;
+                                    &lt;xs:attribute name="MinStay"
+                                                  type="xs:date"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;Minimum stay for this item.
+                                                If the END DATE of the booking is LESS THAN OR EQUAL TO the MinStayDate, then this item cannot be booked on allotment.
+                                                e.g.
+                                                Product Booking Dates: From=1. JAN, To=2.Jan
+                                                If the MinStayDate=2. JAN, this item cannot be booked on allotment.
+                                                If the MinStayDate=1. JAN then this item CAN be booked on allotment.&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:attribute&gt;
+                                    &lt;xs:attribute name="RQ"
+                                                  type="xs:boolean"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;Indicates if this item can be booked on Request.
+                                                One always needs to first check if a product has allotment, then if it is available on Free-Sell, then look to see if it is available on Request.&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:attribute&gt;
+                                    &lt;xs:attribute name="FS"
+                                                  type="xs:boolean"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;Indicates if this item can be booked on Free-Sell.
+                                                One always needs to first check if a product has allotment, then if it is available on Free-Sell, then look to see if it is available on Request.&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:attribute&gt;
+                                &lt;/xs:complexType&gt;
+                            &lt;/xs:element&gt;
+                        &lt;/xs:sequence&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="CancellationFees"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:sequence&gt;
+                            &lt;xs:element name="CancellationFee"
+                                        minOccurs="0"
+                                        maxOccurs="unbounded"&gt;
+                                &lt;xs:complexType&gt;
+                                    &lt;xs:all&gt;
+                                        &lt;xs:element name="BeginDate"
+                                                    type="xs:date" /&gt;
+                                        &lt;xs:element name="EndDate"
+                                                    type="xs:date" /&gt;
+                                        &lt;xs:element name="Percent"
+                                                    type="xs:float"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="Amount"
+                                                    type="xs:float"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="DaysBeforeDepartureBegin"
+                                                    type="xs:integer" /&gt;
+                                        &lt;xs:element name="DaysBeforeDepartureEnd"
+                                                    type="xs:integer" /&gt;
+                                        &lt;xs:element name="NrDaysFeeApply"
+                                                    type="xs:integer" /&gt;
+                                        &lt;xs:element name="PriceType"
+                                                    type="xs:integer"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;1 = Cancellation Fee&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                    &lt;/xs:all&gt;
+                                &lt;/xs:complexType&gt;
+                            &lt;/xs:element&gt;
+                        &lt;/xs:sequence&gt;
+                        &lt;xs:attribute name="InternalPriceType"
+                                      type="xs:string" /&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="BookingSources"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:sequence&gt;
+                            &lt;xs:element name="BookingSource"
+                                        minOccurs="0"
+                                        maxOccurs="unbounded"&gt;
+                                &lt;xs:complexType&gt;
+                                    &lt;xs:attribute name="Code"
+                                                  type="xs:string"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;e.g. DYNAP or Dynapack&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:attribute&gt;
+                                    &lt;xs:attribute name="FromDate"
+                                                  type="xs:date"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;Booking Source is valid for booking made on or after this date&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:attribute&gt;
+                                    &lt;xs:attribute name="ToDate"
+                                                  type="xs:date"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;Booking Source is valid for booking made on or before this date&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:attribute&gt;
+                                    &lt;xs:attribute name="SubCode"
+                                                  type="xs:string"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;e.g. B2B, or B2C&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:attribute&gt;
+                                &lt;/xs:complexType&gt;
+                            &lt;/xs:element&gt;
+                        &lt;/xs:sequence&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="ItemInfos"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:all&gt;
+                            &lt;xs:element name="ItemInfo"
+                                        minOccurs="0"&gt;
+                                &lt;xs:annotation&gt;
+                                    &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
+                                &lt;/xs:annotation&gt;
+                                &lt;xs:complexType&gt;
+                                    &lt;xs:all&gt;
+                                        &lt;xs:element name="BeginDate"
+                                                    type="xs:date"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;Start date when an information applies. Inclusive.&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="EndDate"
+                                                    type="xs:date"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;End date when an information applies. Inclusive.&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Type"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;Item
+                                                    Destination
+                                                    Country&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                            &lt;xs:simpleType&gt;
+                                                &lt;xs:restriction base="xs:string"&gt;
+                                                    &lt;xs:enumeration value="Item" /&gt;
+                                                    &lt;xs:enumeration value="Destination" /&gt;
+                                                    &lt;xs:enumeration value="Country" /&gt;
+                                                &lt;/xs:restriction&gt;
+                                            &lt;/xs:simpleType&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Invoice"
+                                                    type="xs:boolean"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation /&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Itinerary"
+                                                    type="xs:boolean"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation /&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="External"
+                                                    type="xs:boolean"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation /&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Title"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;Title of info. Node is only sent if a value exists.&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                            &lt;xs:complexType&gt;
+                                                &lt;xs:all&gt;
+                                                    &lt;xs:element name="de"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="en"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="fr"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="it"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                &lt;/xs:all&gt;
+                                            &lt;/xs:complexType&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Text"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;Description text of item info&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                            &lt;xs:complexType&gt;
+                                                &lt;xs:all&gt;
+                                                    &lt;xs:element name="de"
+                                                                type="xs:string"
+                                                                minOccurs="0"&gt;
+                                                        &lt;xs:annotation&gt;
+                                                            &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+                                                        &lt;/xs:annotation&gt;
+                                                    &lt;/xs:element&gt;
+                                                    &lt;xs:element name="en"
+                                                                type="xs:string"
+                                                                minOccurs="0"&gt;
+                                                        &lt;xs:annotation&gt;
+                                                            &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+                                                        &lt;/xs:annotation&gt;
+                                                    &lt;/xs:element&gt;
+                                                    &lt;xs:element name="fr"
+                                                                type="xs:string"
+                                                                minOccurs="0"&gt;
+                                                        &lt;xs:annotation&gt;
+                                                            &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+                                                        &lt;/xs:annotation&gt;
+                                                    &lt;/xs:element&gt;
+                                                    &lt;xs:element name="it"
+                                                                type="xs:string"
+                                                                minOccurs="0"&gt;
+                                                        &lt;xs:annotation&gt;
+                                                            &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+                                                        &lt;/xs:annotation&gt;
+                                                    &lt;/xs:element&gt;
+                                                &lt;/xs:all&gt;
+                                            &lt;/xs:complexType&gt;
+                                        &lt;/xs:element&gt;
+                                    &lt;/xs:all&gt;
+                                &lt;/xs:complexType&gt;
+                            &lt;/xs:element&gt;
+                        &lt;/xs:all&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Images"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:sequence maxOccurs="unbounded"&gt;
+                            &lt;xs:element name="Image"&gt;
+                                &lt;xs:complexType&gt;
+                                    &lt;xs:all&gt;
+                                        &lt;xs:element name="Id"
+                                                    type="xs:string"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="Name"
+                                                    type="xs:string"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="Type"
+                                                    type="xs:string"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;e.g. jpg, gif, png, etc.&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Height"
+                                                    type="xs:integer"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;height in pixel of picture&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Width"
+                                                    type="xs:integer"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="Size"
+                                                    type="xs:integer"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;Size in bytes of image&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Encoding"
+                                                    type="xs:string"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;encoding of the image. Currently only "base64"&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Data"
+                                                    type="xs:string"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;Encoded string of the image supplied as a CDATA.&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                    &lt;/xs:all&gt;
+                                &lt;/xs:complexType&gt;
+                            &lt;/xs:element&gt;
+                        &lt;/xs:sequence&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+            &lt;/xs:all&gt;
+            &lt;xs:attribute name="Key"
+                          type="xs:string"
+                          use="required"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Primary Key of the hotel room&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="Action"&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="ADD" /&gt;
+                        &lt;xs:enumeration value="DELETE" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="System"&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="Prod" /&gt;
+                        &lt;xs:enumeration value="Educ" /&gt;
+                        &lt;xs:enumeration value="Test" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:attribute&gt;
+            &lt;xs:attribute name="Type"
+                          type="xs:string"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Value = HotelRoom per Default&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:attribute&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:complexType name="Desc"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation /&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="Desc"
+                        minOccurs="0"
+                        maxOccurs="unbounded"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line. Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:complexContent mixed="false"&gt;
+                        &lt;xs:extension base="Translation"&gt;
+                            &lt;xs:attribute name="DescId"
+                                          type="xs:integer" /&gt;
+                        &lt;/xs:extension&gt;
+                    &lt;/xs:complexContent&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="Translation"&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="de"
+                        type="xs:string"
+                        minOccurs="0" /&gt;
+            &lt;xs:element name="en"
+                        type="xs:string"
+                        minOccurs="0" /&gt;
+            &lt;xs:element name="fr"
+                        type="xs:string"
+                        minOccurs="0" /&gt;
+            &lt;xs:element name="it"
+                        type="xs:string"
+                        minOccurs="0" /&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="PhoneAttributes"&gt;
+        &lt;xs:attribute name="AreaCode"
+                      type="xs:string" /&gt;
+        &lt;xs:attribute name="Number"
+                      type="xs:string"
+                      use="required" /&gt;
+        &lt;xs:attribute name="CountryPrefix"
+                      type="xs:string" /&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="DestinationAttributes"&gt;
+        &lt;xs:attribute name="CountryCode"
+                      type="xs:string"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;2-letter country code based on the destination&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Code"
+                      type="xs:string"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;IATA Code of the destination
+                    HO_DESTINATION/DEST_CODE&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="PerDayPricesChildren"&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="PerDayPrice"
+                        minOccurs="0"
+                        maxOccurs="unbounded"&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:complexContent mixed="false"&gt;
+                        &lt;xs:extension base="PerDayPriceAttributes" /&gt;
+                    &lt;/xs:complexContent&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="PerDayPriceAttributes"&gt;
+        &lt;xs:attribute name="Day"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Date for which this price is valid&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Price"
+                      type="xs:float"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Type"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;P = Price per person (default)
+                    R = Price per Room&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:enumeration value="P" /&gt;
+                    &lt;xs:enumeration value="R" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AgeFrom"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AgeTo"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is per non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="ChildIdxNr"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
+                    ChildIndexNr=1 (first additional child in the room)
+                    ChildIndexNr=2 (second additional child in the room)
+                    ChildIndexNr=0 (no additional children in room)
+                    If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
+                    Internal: TYPE2
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
+                    Internal: Type3
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DescId"
+                      type="xs:integer"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+                    &amp;lt;Descs&amp;gt;
+                    &amp;lt;Desc
+                    DescId="1"&amp;gt;
+                    &amp;lt;de&amp;gt;Preis pro Person/Nacht&amp;lt;/de&amp;gt;
+                    &amp;lt;fr&amp;gt;Prix par personne/nuit&amp;lt;/fr&amp;gt;
+                    &amp;lt;/Desc&amp;gt;
+                    ...
+                    &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="NotSpecialRelevant"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Some price lines must be ignored when calculating a special.
+                    1 = NotSpecialRelevant&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="SpecialCommission"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;percentage if he price line has a special commission
+                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="AddPerDayPricesChildren"&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="AddPerDayPrice"
+                        type="AddPerDayPriceAttributes"
+                        minOccurs="0"
+                        maxOccurs="unbounded" /&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="AddPerDayPriceAttributes"&gt;
+        &lt;xs:attribute name="Day"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Date for which this price is valid&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Price"
+                      type="xs:float"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Type"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;P = Price per person (default)
+                    R = Price per Room&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:enumeration value="P" /&gt;
+                    &lt;xs:enumeration value="R" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AgeFrom"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AgeTo"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is the upper non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="ChildIdxNr"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allowseither two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
+                    ChildIndexNr=1 (first additional child in the room)
+                    ChildIndexNr=2 (second additional child in the room)
+                    ChildIndexNr=0 (no additional children in room)
+                    If the nodeChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
+                    Internal: TYPE2
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
+                    Internal: Type3
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DescId"
+                      type="xs:integer"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts
+                    for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+                    &amp;lt;Descs&amp;gt;
+                    &amp;lt;Desc DescId="1"&amp;gt;
+                    &amp;lt;de&amp;gt;Preis pro Person/Nacht&amp;lt;/de&amp;gt;
+                    &amp;lt;fr&amp;gt;Prix par personne/nuit&amp;lt;/fr&amp;gt;
+                    &amp;lt;/Desc&amp;gt;
+                    ...
+                    &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&amp;gt;&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="NotSpecialRelevant"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Some price lines must be ignored when calculating a special.
+                    1 = NotSpecialRelevant&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="SpecialCommission"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;percentage if he price line has a special commission
+                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="OneTimesChildren"&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="OneTime"
+                        type="OneTimeAttributes"
+                        minOccurs="0"
+                        maxOccurs="unbounded" /&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="OneTimeAttributes"&gt;
+        &lt;xs:attribute name="DateFrom"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Date from which this price is valid&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DateTo"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Date to which this price is valid&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Price"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Price&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DescId"
+                      type="xs:integer"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts
+                    for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+                    &amp;lt;Descs&amp;gt;
+                    &amp;lt;Desc DescId="1"&amp;gt;
+                    &amp;lt;de&amp;gt;Preis pro Person/Nacht&amp;lt;/de&amp;gt;
+                    &amp;lt;fr&amp;gt;Prix par personne/nuit&amp;lt;/fr&amp;gt;
+                    &amp;lt;/Desc&amp;gt;
+                    ...
+                    &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&amp;gt;&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Type"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;P = Price per person (default)
+                    R = Price per Room&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:enumeration value="P" /&gt;
+                    &lt;xs:enumeration value="R" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="StartDateRelevant"
+                      type="xs:integer"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If the start date is relevant for pricing, then a 1 will be set here&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="EndDateRelevant"
+                      type="xs:integer"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If the end date is relevant for pricing, then a 1 will be set here&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="WeekdaysValid"
+                      type="xs:string"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;A seven character string, e.g. 1000000
+                    The above example can be interpreted, that this price is only relevant for a Monday.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AgeFrom"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AgeTo"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is the upper non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12)&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Baby"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation /&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Child"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation /&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="NotSpecialRelevant"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If 1, then this price is not relevant for the calculation of specials&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="SpecialCommission"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;percentage if the price line has a special commission
+                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="SpecialOffersChildren"&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="SpecialOffer"
+                        minOccurs="0"
+                        maxOccurs="unbounded"&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:complexContent mixed="false"&gt;
+                        &lt;xs:extension base="SpecialOfferAttributes" /&gt;
+                    &lt;/xs:complexContent&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="SpecialOfferAttributes"&gt;
+        &lt;xs:attribute name="DateFrom"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is larger or equal to this date.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DateTo"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Rule is valid for bookings that have a end date that is less than or equal to this date.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="FromDayBase"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;From day number. with a 7/5, this would be 5&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="ToDayBase"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;To day number. with a 7/5, this would be 7&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DaysBeforeDepartureFrom"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Number of days before the booking date: from
+                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DaysBeforeDepartureTo"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Number of days before the booking date: to
+                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DateBeforeDepartureFrom"
+                      type="xs:date"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Date from when the booking can be made, for this rule to be relevant Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DateBeforeDepartureTo"
+                      type="xs:date"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="PayNights"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;How many nights does the customer effectively pay.
+                    If this has a value of 5, and I have a FromDay=6, ToDay=7, then if I book 6 days the customer pays 5 nights, if I book 7 days the customer pays 5 nights. SaveNights and PayNights are mutually exclusive. Only one of the attributes is allowed&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Type"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
+                    Day1 - 100 CHF
+                    Day2 - 110 CHF
+                    Day3 - 120 CHF
+                    Day4 - 130 CHF
+                    Day5 - 140 CHF
+                    Day6 - 150 CHF
+                    Day7 - 160 CHF
+                    If the Type is EndDays, and I have a valid 7/5, then the special offer will be 150 + 160 CHF.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:enumeration value="EndDays" /&gt;
+                    &lt;xs:enumeration value="StartDays" /&gt;
+                    &lt;xs:enumeration value="Average" /&gt;
+                    &lt;xs:enumeration value="MinValue" /&gt;
+                    &lt;xs:enumeration value="MaxValue" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="StartDateRelevant"
+                      type="xs:boolean"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If the DateFrom fits into the booking period of the hotel, this special is relevant, i.e. if the start date of the booking is greater than or equal to the DateFrom.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="EndDateRelevant"
+                      type="xs:boolean"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If the DateTo fits into the booking period of the hotel, i.e. the last day of the booking is less than or equal to DateTo, this special is relevan&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AddAmount"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DescId"
+                      type="xs:integer"
+                      use="required" /&gt;
+        &lt;xs:attribute name="WeekdaysValid"
+                      type="xs:string"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;A seven character string MoTuWeThFrSaSu
+                    The string 1011001 indicates
+                    Mo = valid
+                    Tu = invalid
+                    We = valid
+                    Th = valid
+                    Fr = invalid
+                    Sa = valid
+                    Su = valid&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="LastSpOffEndDate"
+                      type="xs:date"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Defines the last possible booking end date for season overlapping special offers.This date can be taken for calculating the valid special offers for a hotel bookin&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="RuleType"
+                      type="xs:string"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;determines how the special offer is to be used.
+                    Always = the special offer is always valid
+                    Nr = the attributes DaysBeforeDepartureFrom and DaysBeforeDepartureTo are valid for the calculation
+                    Date = the attributes DateBeforeDepartureFrom and DateBeforeDepartureTo are valid for the calculatio&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DayString"
+                      type="xs:string"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If the special offer is a save night (PayNights) like stay from 6 to 7 nights pay 5 and it is revolving 3.
+                    This string shows the sequence of the stay nights.
+                    e.g.:
+                    7-6/5
+                    5/5 Daystring = 5
+                    6/5 Daystring = 5
+                    14/10 Daystring = 7,7
+                    13/10 Daystring = 7,6
+                    12/10 Daystring = 6,6
+                    21/15 Daystring = 7,7,7
+                    20/15 Daystring = 7,7,6
+                    19/15 Daystring = 7,6,6
+                    18/15 Daystring = 6,6,6&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Days"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;this shows the minimum stay nights of the booking.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Baby"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;0 = this special offer is valid only for adults
+                    1 = this special offer is only valid for babies&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Child"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;0 = this special offer is valid only for adults
+                    1 = this special offer is only valid for children&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="SpecialCommission"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;percentage if he price line has a special commission
+                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="ChildChildNr"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;this special offer for a baby or child is valid for the n-th child or baby equal ChildChildNr for ex. first baby/child or second baby/child&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="ChildAdultNr"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;this special offer for the baby or child is valid if it is accompanied by number of adults equal ChildAdultNr&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="EarlyBookingsChildren"&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="EarlyBooking"
+                        type="EarlyBookingAttributes"
+                        minOccurs="0"
+                        maxOccurs="unbounded" /&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="EarlyBookingAttributes"&gt;
+        &lt;xs:attribute name="DateFrom"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is larger or equal to this date.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DateTo"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is less than or equal to this date.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="FromDay"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;From which day is this early booking rule relevant.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="ToDay"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;To which day is this early booking rule relevant.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DaysBeforeDepartureFrom"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Number of days before the booking date: from&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DaysBeforeDepartureTo"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Number of days before the booking date: to&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DateBeforeDepartureFrom"
+                      type="xs:date"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Date from when the booking can be made, for this rule to be relevant
+                    Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DateBeforeDepartureTo"
+                      type="xs:date"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Percent"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Percentage&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="StartDateRelevant"
+                      type="xs:boolean"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If the DateFrom fits into the booking period of the hotel, this special is relevant, i.e. if the start date of the booking is greater than or equal to the DateFrom&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="EndDateRelevant"
+                      type="xs:boolean"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If the DateTo fits into the booking period of the hotel, i.e. the last day of the booking is less than or equal to DateTo, this special is relevant&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AddAmount"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This amount needs to be added to the calculated early booking amount. Normally this will be a negative amount.
+                    Note: one can have a percentage as well as an AddAmount. In this case, the percentage amount is calculated, and then the AddAmount is added to the result&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="ForceDisplay"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;determines whether to show a price with 0 amount
+                    0 = do not show
+                    1 = has to be shown&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="ForAllDays"
+                      type="xs:integer"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If ForceDisplay =1 and ForAllDays=1 then the amount has to be shown for all relevant booking days.
+                    If ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DescId"
+                      type="xs:integer" /&gt;
+        &lt;xs:attribute name="SpecialCommission"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;percentage if the price line has a special commission
+                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
+&lt;/xs:schema&gt;
+</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="ComplexType" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>ComplexTypes:</b></td>
+            </tr>
+            <tr id="ComplexType_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="addperdaypriceattributes.html">AddPerDayPriceAttributes</a></li>
+                     <li><a href="addperdaypriceschildren.html">AddPerDayPricesChildren</a></li>
+                     <li><a href="desc.html">Desc</a></li>
+                     <li><a href="destinationattributes.html">DestinationAttributes</a></li>
+                     <li><a href="earlybookingattributes.html">EarlyBookingAttributes</a></li>
+                     <li><a href="earlybookingschildren.html">EarlyBookingsChildren</a></li>
+                     <li><a href="onetimeattributes.html">OneTimeAttributes</a></li>
+                     <li><a href="onetimeschildren.html">OneTimesChildren</a></li>
+                     <li><a href="perdaypriceattributes.html">PerDayPriceAttributes</a></li>
+                     <li><a href="perdaypriceschildren.html">PerDayPricesChildren</a></li>
+                     <li><a href="phoneattributes.html">PhoneAttributes</a></li>
+                     <li><a href="specialofferattributes.html">SpecialOfferAttributes</a></li>
+                     <li><a href="specialofferschildren.html">SpecialOffersChildren</a></li>
+                     <li><a href="translation.html">Translation</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="Element" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Elements:</b></td>
+            </tr>
+            <tr id="Element_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="hotel.html">Hotel</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.1.4994</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+   </body>
+</html>
