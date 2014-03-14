@@ -46,7 +46,15 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="199,1,324,46" href="iteminfo.html" alt="Drilldown into ItemInfo"></area></map><img src="images/iteminfos.png" border="0" alt="XSD Diagram of ItemInfos" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="414,384,534,429" href="text.html" alt="Drilldown into Text"></area>
+                     <area shape="rect" coords="414,331,610,376" href="title.html" alt="Drilldown into Title"></area>
+                     <area shape="rect" coords="414,299,555,324" href="external.html" alt="Drilldown into External"></area>
+                     <area shape="rect" coords="414,267,555,292" href="itinerary.html" alt="Drilldown into Itinerary"></area>
+                     <area shape="rect" coords="414,235,555,260" href="invoice.html" alt="Drilldown into Invoice"></area>
+                     <area shape="rect" coords="414,105,562,228" href="type4.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="414,53,619,98" href="enddate.html" alt="Drilldown into EndDate"></area>
+                     <area shape="rect" coords="414,1,622,46" href="begindate.html" alt="Drilldown into BeginDate"></area>
+                     <area shape="rect" coords="199,192,324,237" href="iteminfo.html" alt="Drilldown into ItemInfo"></area></map><img src="images/iteminfos.png" border="0" alt="XSD Diagram of ItemInfos" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -80,14 +88,16 @@
                         &lt;xs:element name="Type" minOccurs="0"&gt;
                             &lt;xs:annotation&gt;
                                 &lt;xs:documentation&gt;Item
-                                                    Destination
-                                                    Country&lt;/xs:documentation&gt;
+Destination
+Country
+Hotel&lt;/xs:documentation&gt;
                             &lt;/xs:annotation&gt;
                             &lt;xs:simpleType&gt;
                                 &lt;xs:restriction base="xs:string"&gt;
                                     &lt;xs:enumeration value="Item" /&gt;
                                     &lt;xs:enumeration value="Destination" /&gt;
                                     &lt;xs:enumeration value="Country" /&gt;
+                                    &lt;xs:enumeration value="Hotel" /&gt;
                                 &lt;/xs:restriction&gt;
                             &lt;/xs:simpleType&gt;
                         &lt;/xs:element&gt;

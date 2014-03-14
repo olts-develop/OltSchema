@@ -40,7 +40,7 @@
                <td><map name="DiagramMap" id="DiagramMap">
                      <area shape="rect" coords="263,788,483,843" href="specialcommission.html" alt="Drilldown into SpecialCommission"></area>
                      <area shape="rect" coords="263,726,518,781" href="notspecialrelevant.html" alt="Drilldown into NotSpecialRelevant"></area>
-                     <area shape="rect" coords="263,572,569,718" href="descid.html" alt="Drilldown into DescId"></area>
+                     <area shape="rect" coords="263,572,554,718" href="descid.html" alt="Drilldown into DescId"></area>
                      <area shape="rect" coords="263,368,570,565" href="childidxnr.html" alt="Drilldown into ChildIdxNr"></area>
                      <area shape="rect" coords="263,286,570,361" href="ageto.html" alt="Drilldown into AgeTo"></area>
                      <area shape="rect" coords="263,203,570,278" href="agefrom.html" alt="Drilldown into AgeFrom"></area>
@@ -106,8 +106,7 @@
     &lt;/xs:attribute&gt;
     &lt;xs:attribute name="DescId" type="xs:integer" use="required"&gt;
         &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts
-                    for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+            &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
                     &amp;lt;Descs&amp;gt;
                     &amp;lt;Desc DescId="1"&amp;gt;
                     &amp;lt;de&amp;gt;Preis pro Person/Nacht&amp;lt;/de&amp;gt;

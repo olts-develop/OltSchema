@@ -50,14 +50,14 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="236,363,356,408" href="text.html" alt="Drilldown into Text"></area>
-                     <area shape="rect" coords="236,310,432,355" href="title.html" alt="Drilldown into Title"></area>
-                     <area shape="rect" coords="236,278,377,303" href="external.html" alt="Drilldown into External"></area>
-                     <area shape="rect" coords="236,246,377,271" href="itinerary.html" alt="Drilldown into Itinerary"></area>
-                     <area shape="rect" coords="236,214,377,239" href="invoice.html" alt="Drilldown into Invoice"></area>
-                     <area shape="rect" coords="236,105,384,207" href="type5.html" alt="Drilldown into Type"></area>
-                     <area shape="rect" coords="236,53,441,98" href="enddate1.html" alt="Drilldown into EndDate"></area>
-                     <area shape="rect" coords="236,1,444,46" href="begindate1.html" alt="Drilldown into BeginDate"></area></map><img src="images/iteminfo.png" border="0" alt="XSD Diagram of ItemInfo" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="236,384,356,429" href="text.html" alt="Drilldown into Text"></area>
+                     <area shape="rect" coords="236,331,432,376" href="title.html" alt="Drilldown into Title"></area>
+                     <area shape="rect" coords="236,299,377,324" href="external.html" alt="Drilldown into External"></area>
+                     <area shape="rect" coords="236,267,377,292" href="itinerary.html" alt="Drilldown into Itinerary"></area>
+                     <area shape="rect" coords="236,235,377,260" href="invoice.html" alt="Drilldown into Invoice"></area>
+                     <area shape="rect" coords="236,105,384,228" href="type4.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="236,53,441,98" href="enddate.html" alt="Drilldown into EndDate"></area>
+                     <area shape="rect" coords="236,1,444,46" href="begindate.html" alt="Drilldown into BeginDate"></area></map><img src="images/iteminfo.png" border="0" alt="XSD Diagram of ItemInfo" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -88,14 +88,16 @@
             &lt;xs:element name="Type" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
                     &lt;xs:documentation&gt;Item
-                                                    Destination
-                                                    Country&lt;/xs:documentation&gt;
+Destination
+Country
+Hotel&lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
                 &lt;xs:simpleType&gt;
                     &lt;xs:restriction base="xs:string"&gt;
                         &lt;xs:enumeration value="Item" /&gt;
                         &lt;xs:enumeration value="Destination" /&gt;
                         &lt;xs:enumeration value="Country" /&gt;
+                        &lt;xs:enumeration value="Hotel" /&gt;
                     &lt;/xs:restriction&gt;
                 &lt;/xs:simpleType&gt;
             &lt;/xs:element&gt;
@@ -179,19 +181,19 @@
                      </tr>
                      <tr>
                         <td class="first">BeginDate</td>
-                        <td><a href="begindate1.html">BeginDate</a></td>
+                        <td><a href="begindate.html">BeginDate</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
                         <td class="first">EndDate</td>
-                        <td><a href="enddate1.html">EndDate</a></td>
+                        <td><a href="enddate.html">EndDate</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
                         <td class="first">Type</td>
-                        <td><a href="type5.html">Type</a></td>
+                        <td><a href="type4.html">Type</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>

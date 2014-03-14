@@ -30,7 +30,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MinOccurs</b></td>
-               <td>(1)</td>
+               <td>0</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MaxOccurs</b></td>
@@ -41,8 +41,15 @@
                <td></td>
             </tr>
             <tr>
+               <td class="label" width="120px;"><b>ContentType</b></td>
+               <td>Restriction</td>
+            </tr>
+            <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>e.g. jpg, gif, png, etc.</pre></td>
+               <td><pre>Item
+Destination
+Country
+Hotel</pre></td>
             </tr>
          </tbody>
       </table>
@@ -65,11 +72,56 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="Type" type="xs:string"&gt;
+&lt;xs:element name="Type" minOccurs="0"&gt;
     &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;e.g. jpg, gif, png, etc.&lt;/xs:documentation&gt;
+        &lt;xs:documentation&gt;Item
+Destination
+Country
+Hotel&lt;/xs:documentation&gt;
     &lt;/xs:annotation&gt;
+    &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:enumeration value="Item" /&gt;
+            &lt;xs:enumeration value="Destination" /&gt;
+            &lt;xs:enumeration value="Country" /&gt;
+            &lt;xs:enumeration value="Hotel" /&gt;
+        &lt;/xs:restriction&gt;
+    &lt;/xs:simpleType&gt;
 &lt;/xs:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="facets" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Facets:</b></td>
+            </tr>
+            <tr id="facets_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Facet</td>
+                        <td class="last">Value</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Item</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Destination</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Country</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Hotel</td>
+                     </tr>
+                  </table>
+               </td>
             </tr>
          </tbody>
       </table>
