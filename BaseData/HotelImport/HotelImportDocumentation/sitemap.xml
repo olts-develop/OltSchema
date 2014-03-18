@@ -1,1249 +1,1261 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/index.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/hotelimport_xsd.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/addperdaypriceattributes.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/agefrom.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/ageto.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/childidxnr.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/day.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/descid.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/notspecialrelevant.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/price.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/specialcommission.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/type.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/addperdaypriceschildren.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/addperdayprice.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/desc.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/desc1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/descid1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/destinationattributes.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/code.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/countrycode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/earlybookingattributes.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/addamount.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/datebeforedeparturefrom.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/datebeforedepartureto.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/datefrom.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/dateto.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/daysbeforedeparturefrom.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/daysbeforedepartureto.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/descid2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/enddaterelevant.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/foralldays.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/forcedisplay.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/fromday.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/percent.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/specialcommission1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/startdaterelevant.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/today.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/earlybookingschildren.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/earlybooking.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/onetimeattributes.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/agefrom1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/ageto1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/baby.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/child.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/datefrom1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/dateto1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/descid3.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/enddaterelevant1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/notspecialrelevant1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/price1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/specialcommission2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/startdaterelevant1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/type1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/weekdaysvalid.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/onetimeschildren.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/onetime.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/perdaypriceattributes.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/agefrom2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/ageto2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/childidxnr1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/day1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/descid4.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/notspecialrelevant2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/price2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/specialcommission3.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/type2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/perdaypriceschildren.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/perdayprice.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/phoneattributes.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/areacode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/countryprefix.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/number.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/specialofferattributes.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/addamount1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/baby1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/child1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/childadultnr.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/childchildnr.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/datebeforedeparturefrom1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/datebeforedepartureto1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/datefrom2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/dateto2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/days.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/daysbeforedeparturefrom1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/daysbeforedepartureto1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/daystring.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/descid5.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/enddaterelevant2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/fromdaybase.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/lastspoffenddate.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/paynights.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/ruletype.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/specialcommission4.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/startdaterelevant2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/todaybase.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/type3.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/weekdaysvalid1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/specialofferschildren.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/specialoffer.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/translation.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/de.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/en.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/fr.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/it.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/hotels.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/hotel.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/address1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/address2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/automatedfeecode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/category.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/city.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/country.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/isocode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/destination.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/email.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/fax.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/giataid.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/hotelchain.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/chaincode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/hotelcode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/hotelname.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/iteminfos.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/iteminfo.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/begindate.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/enddate.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/external.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/invoice.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/itinerary.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/text.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/de1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/en1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/fr1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/it1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/title.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/de2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/en2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/fr2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/it2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/type4.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/latitude.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/location.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/longitude.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/mobile.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/passive.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/fromdate.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/phone.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/postalcode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/priceinfo.html</loc>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/region.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/request.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/rooms.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/room.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/apihotelcode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/apiroomcode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/automatedfeecode1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/description.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/descs.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/extrabedadults.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/extrabedchildren.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/iteminfos1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/iteminfo1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/begindate1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/enddate1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/external1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/invoice1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/itinerary1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/text1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/de3.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/en3.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/fr3.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/it3.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/title1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/de4.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/en4.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/fr4.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/it4.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/type5.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/maxadults.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/maximaloccupancy.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/mealcode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/mealdescription.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/minimaloccupancy.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/normaloccupancy.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/passive1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/fromdate1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/paysupplier.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/code1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/prices.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/currency.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/addperdayprices.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/earlybookings.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/onetimes.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/perdayprices.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/specialoffers.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/isocode1.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/request1.html</loc>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/roomtype.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/supplier.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/code2.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/tourbomealcode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/tourbotext.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/vouchersupplier.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/code3.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/subregion.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/tourbocode.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/tourbomealcode.html</loc>
+      <lastmod>2014-03-18+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/tourbotext.html</loc>
+      <lastmod>2014-03-18+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/vouchersupplier.html</loc>
+      <lastmod>2014-03-18+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/code3.html</loc>
+      <lastmod>2014-03-18+01:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/subregion.html</loc>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/weburl.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/action.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/key.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/system.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/type6.html</loc>
-      <lastmod>2014-03-14+01:00</lastmod>
+      <lastmod>2014-03-18+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>

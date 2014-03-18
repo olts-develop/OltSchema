@@ -183,13 +183,6 @@
                             -180.000000 to +180.000000&lt;/xs:documentation&gt;
                                 &lt;/xs:annotation&gt;
                             &lt;/xs:element&gt;
-                            &lt;xs:element name="TourboCode"
-                                        type="xs:string"
-                                        minOccurs="0"&gt;
-                                &lt;xs:annotation&gt;
-                                    &lt;xs:documentation&gt;Tourbo Code&lt;/xs:documentation&gt;
-                                &lt;/xs:annotation&gt;
-                            &lt;/xs:element&gt;
                             &lt;xs:element name="AutomatedFeeCode"
                                         type="xs:string"
                                         minOccurs="0"&gt;
@@ -231,6 +224,13 @@
                                         &lt;xs:enumeration value="FS" /&gt;
                                     &lt;/xs:restriction&gt;
                                 &lt;/xs:simpleType&gt;
+                            &lt;/xs:element&gt;
+                            &lt;xs:element name="PriceInfo"
+                                        type="xs:string"
+                                        minOccurs="0"&gt;
+                                &lt;xs:annotation&gt;
+                                    &lt;xs:documentation&gt;CDATA: Price information relevant for the sales employee&lt;/xs:documentation&gt;
+                                &lt;/xs:annotation&gt;
                             &lt;/xs:element&gt;
                             &lt;xs:element name="ItemInfos"
                                         minOccurs="0"&gt;
@@ -436,6 +436,19 @@ Hotel&lt;/xs:documentation&gt;
                                                             &lt;xs:documentation&gt;Number of extra bed for Children&lt;/xs:documentation&gt;
                                                         &lt;/xs:annotation&gt;
                                                     &lt;/xs:element&gt;
+                                                    &lt;xs:element name="Request"
+                                                                minOccurs="0"&gt;
+                                                        &lt;xs:annotation&gt;
+                                                            &lt;xs:documentation&gt;is the room bookable on request or is it free sale&lt;/xs:documentation&gt;
+                                                        &lt;/xs:annotation&gt;
+                                                        &lt;xs:simpleType&gt;
+                                                            &lt;xs:restriction base="xs:string"&gt;
+                                                                &lt;xs:enumeration value="" /&gt;
+                                                                &lt;xs:enumeration value="RQ" /&gt;
+                                                                &lt;xs:enumeration value="FS" /&gt;
+                                                            &lt;/xs:restriction&gt;
+                                                        &lt;/xs:simpleType&gt;
+                                                    &lt;/xs:element&gt;
                                                     &lt;xs:element name="APIHotelCode"
                                                                 type="xs:string"
                                                                 minOccurs="0"&gt;
@@ -448,6 +461,13 @@ Hotel&lt;/xs:documentation&gt;
                                                                 minOccurs="0"&gt;
                                                         &lt;xs:annotation&gt;
                                                             &lt;xs:documentation&gt;API Room Code&lt;/xs:documentation&gt;
+                                                        &lt;/xs:annotation&gt;
+                                                    &lt;/xs:element&gt;
+                                                    &lt;xs:element name="TourboCode"
+                                                                type="xs:string"
+                                                                minOccurs="0"&gt;
+                                                        &lt;xs:annotation&gt;
+                                                            &lt;xs:documentation&gt;Tourbo Room Code&lt;/xs:documentation&gt;
                                                         &lt;/xs:annotation&gt;
                                                     &lt;/xs:element&gt;
                                                     &lt;xs:element name="TourboText"
@@ -722,7 +742,7 @@ Hotel&lt;/xs:documentation&gt;
                         &lt;/xs:all&gt;
                         &lt;xs:attribute name="Key"
                                       type="xs:string"
-                                      use="required"&gt;
+                                      use="optional"&gt;
                             &lt;xs:annotation&gt;
                                 &lt;xs:documentation&gt;Primary Key of the hotel room&lt;/xs:documentation&gt;
                             &lt;/xs:annotation&gt;
@@ -745,7 +765,8 @@ Hotel&lt;/xs:documentation&gt;
                             &lt;/xs:simpleType&gt;
                         &lt;/xs:attribute&gt;
                         &lt;xs:attribute name="Type"
-                                      type="xs:string"&gt;
+                                      type="xs:string"
+                                      use="optional"&gt;
                             &lt;xs:annotation&gt;
                                 &lt;xs:documentation&gt;Value = HotelRoom per Default&lt;/xs:documentation&gt;
                             &lt;/xs:annotation&gt;
