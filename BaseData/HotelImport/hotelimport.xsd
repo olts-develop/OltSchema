@@ -156,13 +156,6 @@
                             -180.000000 to +180.000000</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="TourboCode"
-                                        type="xs:string"
-                                        minOccurs="0">
-                                <xs:annotation>
-                                    <xs:documentation>Tourbo Code</xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
                             <xs:element name="AutomatedFeeCode"
                                         type="xs:string"
                                         minOccurs="0">
@@ -204,6 +197,13 @@
                                         <xs:enumeration value="FS" />
                                     </xs:restriction>
                                 </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="PriceInfo"
+                                        type="xs:string"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>CDATA: Price information relevant for the sales employee</xs:documentation>
+                                </xs:annotation>
                             </xs:element>
                             <xs:element name="ItemInfos"
                                         minOccurs="0">
@@ -409,6 +409,19 @@ Hotel</xs:documentation>
                                                             <xs:documentation>Number of extra bed for Children</xs:documentation>
                                                         </xs:annotation>
                                                     </xs:element>
+                                                    <xs:element name="Request"
+                                                                minOccurs="0">
+                                                        <xs:annotation>
+                                                            <xs:documentation>is the room bookable on request or is it free sale</xs:documentation>
+                                                        </xs:annotation>
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="" />
+                                                                <xs:enumeration value="RQ" />
+                                                                <xs:enumeration value="FS" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
                                                     <xs:element name="APIHotelCode"
                                                                 type="xs:string"
                                                                 minOccurs="0">
@@ -421,6 +434,13 @@ Hotel</xs:documentation>
                                                                 minOccurs="0">
                                                         <xs:annotation>
                                                             <xs:documentation>API Room Code</xs:documentation>
+                                                        </xs:annotation>
+                                                    </xs:element>
+                                                    <xs:element name="TourboCode"
+                                                                type="xs:string"
+                                                                minOccurs="0">
+                                                        <xs:annotation>
+                                                            <xs:documentation>Tourbo Room Code</xs:documentation>
                                                         </xs:annotation>
                                                     </xs:element>
                                                     <xs:element name="TourboText"
@@ -695,7 +715,7 @@ Hotel</xs:documentation>
                         </xs:all>
                         <xs:attribute name="Key"
                                       type="xs:string"
-                                      use="required">
+                                      use="optional">
                             <xs:annotation>
                                 <xs:documentation>Primary Key of the hotel room</xs:documentation>
                             </xs:annotation>
@@ -718,7 +738,8 @@ Hotel</xs:documentation>
                             </xs:simpleType>
                         </xs:attribute>
                         <xs:attribute name="Type"
-                                      type="xs:string">
+                                      type="xs:string"
+                                      use="optional">
                             <xs:annotation>
                                 <xs:documentation>Value = HotelRoom per Default</xs:documentation>
                             </xs:annotation>
