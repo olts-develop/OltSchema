@@ -44,25 +44,9 @@
         </PriceInfo>
         <ItemInfos>
             <ItemInfo>
-                <BeginDate>2011-03-01</BeginDate>
-                <EndDate>2015-12-31</EndDate>
-                <Type>Destination</Type>
-                <Invoice>true</Invoice>
-                <Itinerary>false</Itinerary>
-                <External>false</External>
-                <Title>
-                    <de>Hinweis:</de>
-                    <fr />
-                </Title>
-                <Text>
-                    <de><![CDATA[Während Feiertagen, Messezeiten oder Veranstaltungsperioden werden Zuschläge erhoben, welche nach Festlegung der Event-Daten bekannt gegeben werden und zum Zeitpunkt des Katalogdrucks tlw. noch nicht bekannt waren!]]></de>
-                    <fr />
-                </Text>
-            </ItemInfo>
-            <ItemInfo>
                 <BeginDate>2013-11-01</BeginDate>
                 <EndDate>2014-10-31</EndDate>
-                <Type>Item</Type>
+                <Type>Hotel</Type>
                 <Invoice>true</Invoice>
                 <Itinerary>true</Itinerary>
                 <External>true</External>
@@ -78,7 +62,7 @@
             <ItemInfo>
                 <BeginDate>2013-11-01</BeginDate>
                 <EndDate>2014-10-31</EndDate>
-                <Type>Item</Type>
+                <Type>Hotel</Type>
                 <Invoice>true</Invoice>
                 <Itinerary>true</Itinerary>
                 <External>true</External>
@@ -118,7 +102,7 @@
                 <TourboCode>B2</TourboCode>
                 <TourboText></TourboText>
                 <TourboMealCode></TourboMealCode>
-                <AutomatedFeeCode></AutomatedFeeCode>              
+                <AutomatedFeeCode></AutomatedFeeCode>
                 <Passive>0</Passive>
                 <Supplier></Supplier>
                 <PaySupplier></PaySupplier>
@@ -9619,6 +9603,40 @@
                         <EarlyBookings />
                     </Currency>
                 </Prices>
+                <ItemInfos>
+                    <ItemInfo>
+                        <BeginDate>2013-11-01</BeginDate>
+                        <EndDate>2014-10-31</EndDate>
+                        <Type>Item</Type>
+                        <Invoice>true</Invoice>
+                        <Itinerary>true</Itinerary>
+                        <External>true</External>
+                        <Title>
+                            <de>Hinweis:</de>
+                            <fr />
+                        </Title>
+                        <Text>
+                            <de><![CDATA[Das Zimmer kann für 24 Stunden genutzt werden. Massgeblich ist der Zeitpunkt des Checks-ins.]]></de>
+                            <fr />
+                        </Text>
+                    </ItemInfo>
+                    <ItemInfo>
+                        <BeginDate>2013-11-01</BeginDate>
+                        <EndDate>2014-10-31</EndDate>
+                        <Type>Item</Type>
+                        <Invoice>true</Invoice>
+                        <Itinerary>true</Itinerary>
+                        <External>true</External>
+                        <Title>
+                            <de>Hinweis:</de>
+                            <fr />
+                        </Title>
+                        <Text>
+                            <de><![CDATA[20% Ermässigung im Spa]]></de>
+                            <fr />
+                        </Text>
+                    </ItemInfo>
+                </ItemInfos>
             </Room>
         </Rooms>
     </Hotel>

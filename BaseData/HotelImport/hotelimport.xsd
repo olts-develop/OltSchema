@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2014 Designer Edition 12.1.1.4994 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2013 Designer Edition 11.0.11.4603 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="Hotels">
@@ -239,9 +239,6 @@
                                                         </xs:annotation>
                                                         <xs:simpleType>
                                                             <xs:restriction base="xs:string">
-                                                                <xs:enumeration value="Item" />
-                                                                <xs:enumeration value="Destination" />
-                                                                <xs:enumeration value="Country" />
                                                                 <xs:enumeration value="Hotel" />
                                                             </xs:restriction>
                                                         </xs:simpleType>
@@ -538,56 +535,14 @@
                                                             </xs:simpleContent>
                                                         </xs:complexType>
                                                     </xs:element>
-                                                    <xs:element name="Descs"
-                                                                type="Desc"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation>Description codes for use in the Prices node</xs:documentation>
-                                                        </xs:annotation>
-                                                    </xs:element>
-                                                    <xs:element name="Prices"
-                                                                minOccurs="0">
-                                                        <xs:complexType>
-                                                            <xs:sequence>
-                                                                <xs:element name="Currency"
-                                                                            minOccurs="0"
-                                                                            maxOccurs="unbounded">
-                                                                    <xs:complexType>
-                                                                        <xs:all>
-                                                                            <xs:element name="PerDayPrices"
-                                                                                        type="PerDayPricesChildren"
-                                                                                        minOccurs="0" />
-                                                                            <xs:element name="AddPerDayPrices"
-                                                                                        type="AddPerDayPricesChildren"
-                                                                                        minOccurs="0" />
-                                                                            <xs:element name="OneTimes"
-                                                                                        type="OneTimesChildren"
-                                                                                        minOccurs="0" />
-                                                                            <xs:element name="SpecialOffers"
-                                                                                        minOccurs="0">
-                                                                                <xs:complexType>
-                                                                                    <xs:complexContent mixed="false">
-                                                                                        <xs:extension base="SpecialOffersChildren" />
-                                                                                    </xs:complexContent>
-                                                                                </xs:complexType>
-                                                                            </xs:element>
-                                                                            <xs:element name="EarlyBookings"
-                                                                                        type="EarlyBookingsChildren"
-                                                                                        minOccurs="0" />
-                                                                        </xs:all>
-                                                                        <xs:attribute name="IsoCode"
-                                                                                      type="xs:string" />
-                                                                    </xs:complexType>
-                                                                </xs:element>
-                                                            </xs:sequence>
-                                                        </xs:complexType>
-                                                    </xs:element>
                                                     <xs:element name="ItemInfos"
                                                                 minOccurs="0">
                                                         <xs:complexType>
-                                                            <xs:all>
+                                                            <xs:sequence minOccurs="0"
+                                                                         maxOccurs="unbounded">
                                                                 <xs:element name="ItemInfo"
-                                                                            minOccurs="0">
+                                                                            minOccurs="0"
+                                                                            maxOccurs="unbounded">
                                                                     <xs:annotation>
                                                                         <xs:documentation>Cancellation fee for this Item</xs:documentation>
                                                                     </xs:annotation>
@@ -610,7 +565,7 @@
                                                                             <xs:element name="Type"
                                                                                         minOccurs="0">
                                                                                 <xs:annotation>
-                                                                                    <xs:documentation>Item</xs:documentation>
+                                                                                    <xs:documentation>Room</xs:documentation>
                                                                                 </xs:annotation>
                                                                                 <xs:simpleType>
                                                                                     <xs:restriction base="xs:string">
@@ -702,7 +657,51 @@
                                                                         </xs:all>
                                                                     </xs:complexType>
                                                                 </xs:element>
-                                                            </xs:all>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="Descs"
+                                                                type="Desc"
+                                                                minOccurs="0">
+                                                        <xs:annotation>
+                                                            <xs:documentation>Description codes for use in the Prices node</xs:documentation>
+                                                        </xs:annotation>
+                                                    </xs:element>
+                                                    <xs:element name="Prices"
+                                                                minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Currency"
+                                                                            minOccurs="0"
+                                                                            maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:all>
+                                                                            <xs:element name="PerDayPrices"
+                                                                                        type="PerDayPricesChildren"
+                                                                                        minOccurs="0" />
+                                                                            <xs:element name="AddPerDayPrices"
+                                                                                        type="AddPerDayPricesChildren"
+                                                                                        minOccurs="0" />
+                                                                            <xs:element name="OneTimes"
+                                                                                        type="OneTimesChildren"
+                                                                                        minOccurs="0" />
+                                                                            <xs:element name="SpecialOffers"
+                                                                                        minOccurs="0">
+                                                                                <xs:complexType>
+                                                                                    <xs:complexContent mixed="false">
+                                                                                        <xs:extension base="SpecialOffersChildren" />
+                                                                                    </xs:complexContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element name="EarlyBookings"
+                                                                                        type="EarlyBookingsChildren"
+                                                                                        minOccurs="0" />
+                                                                        </xs:all>
+                                                                        <xs:attribute name="IsoCode"
+                                                                                      type="xs:string" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:all>
