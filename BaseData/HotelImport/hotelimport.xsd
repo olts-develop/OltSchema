@@ -208,9 +208,11 @@
                             <xs:element name="ItemInfos"
                                         minOccurs="0">
                                 <xs:complexType>
-                                    <xs:all>
+                                    <xs:sequence minOccurs="0"
+                                                 maxOccurs="unbounded">
                                         <xs:element name="ItemInfo"
-                                                    minOccurs="0">
+                                                    minOccurs="0"
+                                                    maxOccurs="unbounded">
                                             <xs:annotation>
                                                 <xs:documentation>Cancellation fee for this Item</xs:documentation>
                                             </xs:annotation>
@@ -233,10 +235,7 @@
                                                     <xs:element name="Type"
                                                                 minOccurs="0">
                                                         <xs:annotation>
-                                                            <xs:documentation>Item
-Destination
-Country
-Hotel</xs:documentation>
+                                                            <xs:documentation>Hotel</xs:documentation>
                                                         </xs:annotation>
                                                         <xs:simpleType>
                                                             <xs:restriction base="xs:string">
@@ -331,7 +330,7 @@ Hotel</xs:documentation>
                                                 </xs:all>
                                             </xs:complexType>
                                         </xs:element>
-                                    </xs:all>
+                                    </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="Rooms"
