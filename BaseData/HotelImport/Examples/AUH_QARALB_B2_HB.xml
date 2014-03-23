@@ -101,7 +101,8 @@
                 <APIRoomCode>api room code</APIRoomCode>
                 <TourboCode>B2</TourboCode>
                 <TourboText></TourboText>
-                <TourboMealCode></TourboMealCode>
+                <TourboMealCode>HB</TourboMealCode>
+                <Request>RQ</Request>
                 <AutomatedFeeCode></AutomatedFeeCode>
                 <Passive>0</Passive>
                 <Supplier></Supplier>
