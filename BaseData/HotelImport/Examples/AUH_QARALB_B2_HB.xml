@@ -38,9 +38,9 @@
         <Category>5.0</Category>
         <Passive>0</Passive>
         <Request>RQ</Request>
-        <PriceInfo><![CDATA[This is a demo
-            Price Info over
-            More than one line.]]>
+        <PriceInfo><![CDATA[An Sonder-/Eventdaten gelten höhere Preise. In der Umgebung, vor allem auf der gegenüberliegenden Flusseite des Shangri La Hotels gibt es einige Baustellen. Es muss mit mittleren bis starken optischen und akustischen Einschränkungen gerechnet werden. Wir danken für Ihr Verständnis.//
+Black out: All categories
+31.10.13-04.11.13 und 31.10.14.// Keine Halpension buchbar: 24.-25.12.13 und 31.12.13.]]>
         </PriceInfo>
         <ItemInfos>
             <ItemInfo>
@@ -103,9 +103,9 @@
                 <TourboText></TourboText>
                 <TourboMealCode>HB</TourboMealCode>
                 <Request>RQ</Request>
-                <AutomatedFeeCode></AutomatedFeeCode>
+                <AutomatedFeeCode>HOTEL/MISC</AutomatedFeeCode>
                 <Passive>0</Passive>
-                <Supplier></Supplier>
+                <Supplier Code="Travco (Dubai) AED"></Supplier>
                 <PaySupplier></PaySupplier>
                 <VoucherSupplier></VoucherSupplier>
                 <Descs>
