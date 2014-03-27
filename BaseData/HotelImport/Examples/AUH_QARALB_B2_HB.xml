@@ -9608,7 +9608,7 @@ Black out: All categories
                     <ItemInfo>
                         <BeginDate>2013-11-01</BeginDate>
                         <EndDate>2014-10-31</EndDate>
-                        <Type>Item</Type>
+                        <Type>Room</Type>
                         <Invoice>true</Invoice>
                         <Itinerary>true</Itinerary>
                         <External>true</External>
@@ -9624,7 +9624,7 @@ Black out: All categories
                     <ItemInfo>
                         <BeginDate>2013-11-01</BeginDate>
                         <EndDate>2014-10-31</EndDate>
-                        <Type>Item</Type>
+                        <Type>Room</Type>
                         <Invoice>true</Invoice>
                         <Itinerary>true</Itinerary>
                         <External>true</External>
