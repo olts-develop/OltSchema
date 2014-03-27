@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2013 Designer Edition 11.0.11.4603 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.1.1.4994 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="Hotels">
@@ -1299,7 +1299,7 @@
         <xs:attribute name="SpecialCommission"
                       type="xs:float">
             <xs:annotation>
-                <xs:documentation>percentage if he price line has a special commission
+                <xs:documentation>percentage if the price line has a special commission
                     Internal: P_SPEZFLAG must be 1</xs:documentation>
             </xs:annotation>
         </xs:attribute>
