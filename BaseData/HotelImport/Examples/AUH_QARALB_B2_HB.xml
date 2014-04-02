@@ -108,45 +108,45 @@ Black out: All categories
                 <Supplier Code="Travco (Dubai) AED"></Supplier>
                 <PaySupplier></PaySupplier>
                 <VoucherSupplier></VoucherSupplier>
-                <Descs>
-                    <Desc DescId="1">
-                        <de>Preis pro Person/Nacht</de>
-                        <fr>Prix par personne/nuit</fr>
-                    </Desc>
-                    <Desc DescId="2">
-                        <de>Preis pro Kind/Nacht</de>
-                        <fr>prix par enfant/nuit</fr>
-                    </Desc>
-                    <Desc DescId="3">
-                        <de>Kind: Zuschlag Halbpension</de>
-                        <fr>Enfant: supplément demi-pension</fr>
-                    </Desc>
-                    <Desc DescId="4">
-                        <de />
-                        <fr />
-                    </Desc>
-                    <Desc DescId="5">
-                        <de>Zuschlag Halbpension</de>
-                        <fr>Supplément demi-pension</fr>
-                    </Desc>
-                    <Desc DescId="6">
-                        <de>1 Gratisnacht pro Pers.(oblig. Halbpension berücksichtigt) vom 01.09.14-31.10.14</de>
-                        <fr>Offre spéciale: 1 nuit gratuite par personne (demi-pension oblig. considéré)</fr>
-                    </Desc>
-                    <Desc DescId="7">
-                        <de>1 Gratisnacht pro Pers.(oblig. Halbpension berücksichtigt) vom 01.05.14-31.08.14</de>
-                        <fr>Offre spéciale: 1 nuit gratuite par personne (demi-pension oblig. considéré)</fr>
-                    </Desc>
-                    <Desc DescId="8">
-                        <de>1 Gratisnacht pro Pers.(oblig. Halbpension berücksichtigt) vom 01.01.14-30.04.14</de>
-                        <fr>Offre spéciale: 1 nuit gratuite par personne (demi-pension oblig. considéré)</fr>
-                    </Desc>
-                    <Desc DescId="9">
-                        <de>1 Gratisnacht pro Pers.(oblig. Halbpension berücksichtigt) vom 01.11.13-26.12.13</de>
-                        <fr>Offre spéciale: 1 nuit gratuite par personne (demi-pension oblig. considéré)</fr>
-                    </Desc>
-                </Descs>
                 <Prices>
+                    <Descs>
+                        <Desc DescId="1">
+                            <de>Preis pro Person/Nacht</de>
+                            <fr>Prix par personne/nuit</fr>
+                        </Desc>
+                        <Desc DescId="2">
+                            <de>Preis pro Kind/Nacht</de>
+                            <fr>prix par enfant/nuit</fr>
+                        </Desc>
+                        <Desc DescId="3">
+                            <de>Kind: Zuschlag Halbpension</de>
+                            <fr>Enfant: supplément demi-pension</fr>
+                        </Desc>
+                        <Desc DescId="4">
+                            <de />
+                            <fr />
+                        </Desc>
+                        <Desc DescId="5">
+                            <de>Zuschlag Halbpension</de>
+                            <fr>Supplément demi-pension</fr>
+                        </Desc>
+                        <Desc DescId="6">
+                            <de>1 Gratisnacht pro Pers.(oblig. Halbpension berücksichtigt) vom 01.09.14-31.10.14</de>
+                            <fr>Offre spéciale: 1 nuit gratuite par personne (demi-pension oblig. considéré)</fr>
+                        </Desc>
+                        <Desc DescId="7">
+                            <de>1 Gratisnacht pro Pers.(oblig. Halbpension berücksichtigt) vom 01.05.14-31.08.14</de>
+                            <fr>Offre spéciale: 1 nuit gratuite par personne (demi-pension oblig. considéré)</fr>
+                        </Desc>
+                        <Desc DescId="8">
+                            <de>1 Gratisnacht pro Pers.(oblig. Halbpension berücksichtigt) vom 01.01.14-30.04.14</de>
+                            <fr>Offre spéciale: 1 nuit gratuite par personne (demi-pension oblig. considéré)</fr>
+                        </Desc>
+                        <Desc DescId="9">
+                            <de>1 Gratisnacht pro Pers.(oblig. Halbpension berücksichtigt) vom 01.11.13-26.12.13</de>
+                            <fr>Offre spéciale: 1 nuit gratuite par personne (demi-pension oblig. considéré)</fr>
+                        </Desc>
+                    </Descs>
                     <Currency IsoCode="CHF">
                         <PerDayPrices>
                             <PerDayPrice Day="2013-11-13"
