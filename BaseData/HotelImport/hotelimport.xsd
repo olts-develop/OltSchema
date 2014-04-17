@@ -497,7 +497,7 @@
                                                             </xs:simpleContent>
                                                         </xs:complexType>
                                                     </xs:element>
-                                                    <xs:element name="FlagAllotment"
+                                                    <xs:element name="AllotmentFlag"
                                                                 type="xs:boolean"
                                                                 minOccurs="0">
                                                         <xs:annotation>
