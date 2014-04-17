@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item Hotel in Hotel Import</title>
+      <title>Docs for schema item Hotel in Hotel Price Import</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Element', 'hotel');
                     </script><div class="pageheader">
-         Documentation for Hotel Import
+         Documentation for Hotel Price Import
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -46,9 +46,35 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="175,1602,259,1627" href="rooms.html" alt="Drilldown into Rooms"></area>
-                     <area shape="rect" coords="175,1570,263,1595" href="iteminfos.html" alt="Drilldown into ItemInfos"></area>
-                     <area shape="rect" coords="175,1518,418,1563" href="priceinfo.html" alt="Drilldown into PriceInfo"></area>
+                     <area shape="rect" coords="521,3000,605,3025" href="prices.html" alt="Drilldown into Prices"></area>
+                     <area shape="rect" coords="521,2968,609,2993" href="iteminfos1.html" alt="Drilldown into ItemInfos"></area>
+                     <area shape="rect" coords="521,2936,713,2961" href="vouchersupplier.html" alt="Drilldown into VoucherSupplier"></area>
+                     <area shape="rect" coords="521,2904,688,2929" href="paysupplier.html" alt="Drilldown into PaySupplier"></area>
+                     <area shape="rect" coords="521,2872,669,2897" href="supplier.html" alt="Drilldown into Supplier"></area>
+                     <area shape="rect" coords="521,2820,691,2864" href="allotmentflag.html" alt="Drilldown into AllotmentFlag"></area>
+                     <area shape="rect" coords="521,2758,821,2813" href="passive1.html" alt="Drilldown into Passive"></area>
+                     <area shape="rect" coords="521,2695,821,2750" href="automatedfeecode1.html" alt="Drilldown into AutomatedFeeCode"></area>
+                     <area shape="rect" coords="521,2501,715,2687" href="tourbomealcode.html" alt="Drilldown into TourboMealCode"></area>
+                     <area shape="rect" coords="521,2449,790,2494" href="tourbotext.html" alt="Drilldown into TourboText"></area>
+                     <area shape="rect" coords="521,2397,683,2441" href="tourbocode.html" alt="Drilldown into TourboCode"></area>
+                     <area shape="rect" coords="521,2345,695,2389" href="apiroomcode.html" alt="Drilldown into APIRoomCode"></area>
+                     <area shape="rect" coords="521,2293,691,2337" href="apihotelcode.html" alt="Drilldown into APIHotelCode"></area>
+                     <area shape="rect" coords="521,2204,725,2286" href="request1.html" alt="Drilldown into Request"></area>
+                     <area shape="rect" coords="521,2152,711,2196" href="extrabedchildren.html" alt="Drilldown into ExtraBedChildren"></area>
+                     <area shape="rect" coords="521,2100,701,2144" href="extrabedadults.html" alt="Drilldown into ExtraBedAdults"></area>
+                     <area shape="rect" coords="521,2048,673,2092" href="maxadults.html" alt="Drilldown into MaxAdults"></area>
+                     <area shape="rect" coords="521,1996,721,2040" href="maximaloccupancy.html" alt="Drilldown into MaximalOccupancy"></area>
+                     <area shape="rect" coords="521,1944,719,1988" href="minimaloccupancy.html" alt="Drilldown into MinimalOccupancy"></area>
+                     <area shape="rect" coords="521,1892,716,1936" href="normaloccupancy.html" alt="Drilldown into NormalOccupancy"></area>
+                     <area shape="rect" coords="521,1841,669,1885" href="mealcode.html" alt="Drilldown into MealCode"></area>
+                     <area shape="rect" coords="521,1778,718,1833" href="mealdescription.html" alt="Drilldown into MealDescription"></area>
+                     <area shape="rect" coords="521,1716,693,1771" href="description.html" alt="Drilldown into Description"></area>
+                     <area shape="rect" coords="521,1654,689,1709" href="roomtype.html" alt="Drilldown into RoomType"></area>
+                     <area shape="rect" coords="347,2334,431,2359" href="room.html" alt="Drilldown into Room"></area>
+                     <area shape="rect" coords="175,2334,259,2359" href="rooms.html" alt="Drilldown into Rooms"></area>
+                     <area shape="rect" coords="175,1622,263,1647" href="iteminfos.html" alt="Drilldown into ItemInfos"></area>
+                     <area shape="rect" coords="175,1570,418,1615" href="priceinfo.html" alt="Drilldown into PriceInfo"></area>
+                     <area shape="rect" coords="175,1518,334,1562" href="catalogflag.html" alt="Drilldown into CatalogFlag"></area>
                      <area shape="rect" coords="175,1428,379,1510" href="request.html" alt="Drilldown into Request"></area>
                      <area shape="rect" coords="175,1366,475,1421" href="passive.html" alt="Drilldown into Passive"></area>
                      <area shape="rect" coords="175,1304,361,1359" href="category.html" alt="Drilldown into Category"></area>
@@ -235,6 +261,11 @@
                     &lt;/xs:restriction&gt;
                 &lt;/xs:simpleType&gt;
             &lt;/xs:element&gt;
+            &lt;xs:element name="CatalogFlag" type="xs:boolean" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;If this is a catalog hotel send true&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
             &lt;xs:element name="PriceInfo" type="xs:string" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
                     &lt;xs:documentation&gt;CDATA: Price information relevant for the sales employee&lt;/xs:documentation&gt;
@@ -242,8 +273,8 @@
             &lt;/xs:element&gt;
             &lt;xs:element name="ItemInfos" minOccurs="0"&gt;
                 &lt;xs:complexType&gt;
-                    &lt;xs:all&gt;
-                        &lt;xs:element name="ItemInfo" minOccurs="0"&gt;
+                    &lt;xs:sequence minOccurs="0" maxOccurs="unbounded"&gt;
+                        &lt;xs:element name="ItemInfo" minOccurs="0" maxOccurs="unbounded"&gt;
                             &lt;xs:annotation&gt;
                                 &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
                             &lt;/xs:annotation&gt;
@@ -261,16 +292,10 @@
                                     &lt;/xs:element&gt;
                                     &lt;xs:element name="Type" minOccurs="0"&gt;
                                         &lt;xs:annotation&gt;
-                                            &lt;xs:documentation&gt;Item
-Destination
-Country
-Hotel&lt;/xs:documentation&gt;
+                                            &lt;xs:documentation&gt;Hotel&lt;/xs:documentation&gt;
                                         &lt;/xs:annotation&gt;
                                         &lt;xs:simpleType&gt;
                                             &lt;xs:restriction base="xs:string"&gt;
-                                                &lt;xs:enumeration value="Item" /&gt;
-                                                &lt;xs:enumeration value="Destination" /&gt;
-                                                &lt;xs:enumeration value="Country" /&gt;
                                                 &lt;xs:enumeration value="Hotel" /&gt;
                                             &lt;/xs:restriction&gt;
                                         &lt;/xs:simpleType&gt;
@@ -335,7 +360,7 @@ Hotel&lt;/xs:documentation&gt;
                                 &lt;/xs:all&gt;
                             &lt;/xs:complexType&gt;
                         &lt;/xs:element&gt;
-                    &lt;/xs:all&gt;
+                    &lt;/xs:sequence&gt;
                 &lt;/xs:complexType&gt;
             &lt;/xs:element&gt;
             &lt;xs:element name="Rooms" minOccurs="0"&gt;
@@ -468,6 +493,11 @@ Hotel&lt;/xs:documentation&gt;
                                             &lt;/xs:simpleContent&gt;
                                         &lt;/xs:complexType&gt;
                                     &lt;/xs:element&gt;
+                                    &lt;xs:element name="AllotmentFlag" type="xs:boolean" minOccurs="0"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;If this room has allotment, sent true.&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:element&gt;
                                     &lt;xs:element name="Supplier" minOccurs="0"&gt;
                                         &lt;xs:complexType&gt;
                                             &lt;xs:simpleContent&gt;
@@ -507,39 +537,10 @@ Hotel&lt;/xs:documentation&gt;
                                             &lt;/xs:simpleContent&gt;
                                         &lt;/xs:complexType&gt;
                                     &lt;/xs:element&gt;
-                                    &lt;xs:element name="Descs" type="Desc" minOccurs="0"&gt;
-                                        &lt;xs:annotation&gt;
-                                            &lt;xs:documentation&gt;Description codes for use in the Prices node&lt;/xs:documentation&gt;
-                                        &lt;/xs:annotation&gt;
-                                    &lt;/xs:element&gt;
-                                    &lt;xs:element name="Prices" minOccurs="0"&gt;
-                                        &lt;xs:complexType&gt;
-                                            &lt;xs:sequence&gt;
-                                                &lt;xs:element name="Currency" minOccurs="0" maxOccurs="unbounded"&gt;
-                                                    &lt;xs:complexType&gt;
-                                                        &lt;xs:all&gt;
-                                                            &lt;xs:element name="PerDayPrices" type="PerDayPricesChildren" minOccurs="0" /&gt;
-                                                            &lt;xs:element name="AddPerDayPrices" type="AddPerDayPricesChildren" minOccurs="0" /&gt;
-                                                            &lt;xs:element name="OneTimes" type="OneTimesChildren" minOccurs="0" /&gt;
-                                                            &lt;xs:element name="SpecialOffers" minOccurs="0"&gt;
-                                                                &lt;xs:complexType&gt;
-                                                                    &lt;xs:complexContent mixed="false"&gt;
-                                                                        &lt;xs:extension base="SpecialOffersChildren" /&gt;
-                                                                    &lt;/xs:complexContent&gt;
-                                                                &lt;/xs:complexType&gt;
-                                                            &lt;/xs:element&gt;
-                                                            &lt;xs:element name="EarlyBookings" type="EarlyBookingsChildren" minOccurs="0" /&gt;
-                                                        &lt;/xs:all&gt;
-                                                        &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
-                                                    &lt;/xs:complexType&gt;
-                                                &lt;/xs:element&gt;
-                                            &lt;/xs:sequence&gt;
-                                        &lt;/xs:complexType&gt;
-                                    &lt;/xs:element&gt;
                                     &lt;xs:element name="ItemInfos" minOccurs="0"&gt;
                                         &lt;xs:complexType&gt;
-                                            &lt;xs:all&gt;
-                                                &lt;xs:element name="ItemInfo" minOccurs="0"&gt;
+                                            &lt;xs:sequence minOccurs="0" maxOccurs="unbounded"&gt;
+                                                &lt;xs:element name="ItemInfo" minOccurs="0" maxOccurs="unbounded"&gt;
                                                     &lt;xs:annotation&gt;
                                                         &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
                                                     &lt;/xs:annotation&gt;
@@ -557,11 +558,11 @@ Hotel&lt;/xs:documentation&gt;
                                                             &lt;/xs:element&gt;
                                                             &lt;xs:element name="Type" minOccurs="0"&gt;
                                                                 &lt;xs:annotation&gt;
-                                                                    &lt;xs:documentation&gt;Item&lt;/xs:documentation&gt;
+                                                                    &lt;xs:documentation&gt;Room&lt;/xs:documentation&gt;
                                                                 &lt;/xs:annotation&gt;
                                                                 &lt;xs:simpleType&gt;
                                                                     &lt;xs:restriction base="xs:string"&gt;
-                                                                        &lt;xs:enumeration value="Item" /&gt;
+                                                                        &lt;xs:enumeration value="Room" /&gt;
                                                                     &lt;/xs:restriction&gt;
                                                                 &lt;/xs:simpleType&gt;
                                                             &lt;/xs:element&gt;
@@ -625,7 +626,56 @@ Hotel&lt;/xs:documentation&gt;
                                                         &lt;/xs:all&gt;
                                                     &lt;/xs:complexType&gt;
                                                 &lt;/xs:element&gt;
-                                            &lt;/xs:all&gt;
+                                            &lt;/xs:sequence&gt;
+                                        &lt;/xs:complexType&gt;
+                                    &lt;/xs:element&gt;
+                                    &lt;xs:element name="Prices" minOccurs="0"&gt;
+                                        &lt;xs:complexType&gt;
+                                            &lt;xs:sequence&gt;
+                                                &lt;xs:element name="Descs" type="Desc"&gt;
+                                                    &lt;xs:annotation&gt;
+                                                        &lt;xs:documentation&gt;Description codes for use in the Prices node&lt;/xs:documentation&gt;
+                                                    &lt;/xs:annotation&gt;
+                                                &lt;/xs:element&gt;
+                                                &lt;xs:element name="Currencies"&gt;
+                                                    &lt;xs:complexType&gt;
+                                                        &lt;xs:sequence minOccurs="1" maxOccurs="4"&gt;
+                                                            &lt;xs:element name="Currency"&gt;
+                                                                &lt;xs:complexType&gt;
+                                                                    &lt;xs:attribute name="IdNr" use="required"&gt;
+                                                                        &lt;xs:simpleType&gt;
+                                                                            &lt;xs:restriction base="xs:integer"&gt;
+                                                                                &lt;xs:enumeration value="1" /&gt;
+                                                                                &lt;xs:enumeration value="2" /&gt;
+                                                                                &lt;xs:enumeration value="3" /&gt;
+                                                                                &lt;xs:enumeration value="4" /&gt;
+                                                                            &lt;/xs:restriction&gt;
+                                                                        &lt;/xs:simpleType&gt;
+                                                                    &lt;/xs:attribute&gt;
+                                                                    &lt;xs:attribute name="IsoCode" use="required"&gt;
+                                                                        &lt;xs:simpleType&gt;
+                                                                            &lt;xs:restriction base="xs:string"&gt;
+                                                                                &lt;xs:length value="3" /&gt;
+                                                                            &lt;/xs:restriction&gt;
+                                                                        &lt;/xs:simpleType&gt;
+                                                                    &lt;/xs:attribute&gt;
+                                                                &lt;/xs:complexType&gt;
+                                                            &lt;/xs:element&gt;
+                                                        &lt;/xs:sequence&gt;
+                                                    &lt;/xs:complexType&gt;
+                                                &lt;/xs:element&gt;
+                                                &lt;xs:element name="PerDayPrices" type="PerDayPricesChildren" minOccurs="0" /&gt;
+                                                &lt;xs:element name="AddPerDayPrices" type="AddPerDayPricesChildren" minOccurs="0" /&gt;
+                                                &lt;xs:element name="OneTimes" type="OneTimesChildren" minOccurs="0" /&gt;
+                                                &lt;xs:element name="SpecialOffers" minOccurs="0"&gt;
+                                                    &lt;xs:complexType&gt;
+                                                        &lt;xs:complexContent mixed="false"&gt;
+                                                            &lt;xs:extension base="SpecialOffersChildren" /&gt;
+                                                        &lt;/xs:complexContent&gt;
+                                                    &lt;/xs:complexType&gt;
+                                                &lt;/xs:element&gt;
+                                                &lt;xs:element name="EarlyBookings" type="EarlyBookingsChildren" minOccurs="0" /&gt;
+                                            &lt;/xs:sequence&gt;
                                         &lt;/xs:complexType&gt;
                                     &lt;/xs:element&gt;
                                 &lt;/xs:all&gt;
@@ -827,6 +877,12 @@ Hotel&lt;/xs:documentation&gt;
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
+                        <td class="first">CatalogFlag</td>
+                        <td><a href="catalogflag.html">CatalogFlag</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
                         <td class="first">PriceInfo</td>
                         <td><a href="priceinfo.html">PriceInfo</a></td>
                         <td class="mid">0</td>
@@ -894,7 +950,7 @@ Hotel&lt;/xs:documentation&gt;
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.1.4994</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema to HTML</a>Doc Generation
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.4.5047</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema to HTML</a>Doc Generation
       </div>
    </body>
 </html>
