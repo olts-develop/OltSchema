@@ -36,7 +36,7 @@
         <Rooms>
             <Room>
                 <RoomType>
-                    <de>Einzelzimmer Superior</de>
+                    <de>Einzelzimmer Superior a</de>
                     <en>Single Room Superior</en>
                     <fr>Chambre individuelle Superior</fr>
                     <it>Camera singola Superior</it>
@@ -48,6 +48,7 @@
                     <it />
                 </Description>
                 <MealCode>BB</MealCode>
+                <TourboMealCode>BB</TourboMealCode>
                 <MealDescription>
                     <de>inklusive amerikanisches Frühstück, Service und Taxen</de>
                     <en>american breakfast, service and taxes included</en>
