@@ -198,6 +198,13 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
+                            <xs:element name="CatalogFlag"
+                                        type="xs:boolean"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>If this is a catalog hotel send true</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
                             <xs:element name="PriceInfo"
                                         type="xs:string"
                                         minOccurs="0">
@@ -489,6 +496,13 @@
                                                                 </xs:extension>
                                                             </xs:simpleContent>
                                                         </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="FlagAllotment"
+                                                                type="xs:boolean"
+                                                                minOccurs="0">
+                                                        <xs:annotation>
+                                                            <xs:documentation>If this room has allotment, sent true.</xs:documentation>
+                                                        </xs:annotation>
                                                     </xs:element>
                                                     <xs:element name="Supplier"
                                                                 minOccurs="0">
