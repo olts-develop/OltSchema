@@ -221,7 +221,7 @@
                                                     minOccurs="0"
                                                     maxOccurs="unbounded">
                                             <xs:annotation>
-                                                <xs:documentation>Cancellation fee for this Item</xs:documentation>
+                                                <xs:documentation></xs:documentation>
                                             </xs:annotation>
                                             <xs:complexType>
                                                 <xs:all>
@@ -335,6 +335,105 @@
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="HotelInfo"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation></xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="Location"
+                                                    type="Translation"
+                                                    minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation></xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="Building"
+                                                    type="Translation"
+                                                    minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation></xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="Equipment"
+                                                    type="Translation"
+                                                    minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation></xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="Catering"
+                                                    type="Translation"
+                                                    minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation></xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="Entertainment"
+                                                    type="Translation"
+                                                    minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation></xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="Suitable"
+                                                    type="Translation"
+                                                    minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation></xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="Manager"
+                                                    minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:all>
+                                                    <xs:element name="Salutation"
+                                                                type="xs:string"
+                                                                minOccurs="0" />
+                                                    <xs:element name="FirstName"
+                                                                type="xs:string"
+                                                                minOccurs="0" />
+                                                    <xs:element name="LastName"
+                                                                type="xs:string"
+                                                                minOccurs="0" />
+                                                    <xs:element name="Phone"
+                                                                type="PhoneAttributes"
+                                                                minOccurs="0" />
+                                                    <xs:element name="Email"
+                                                                type="xs:string"
+                                                                minOccurs="0" />
+                                                </xs:all>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="SalesManager"
+                                                    minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:all>
+                                                    <xs:element name="Salutation"
+                                                                type="xs:string"
+                                                                minOccurs="0" />
+                                                    <xs:element name="FirstName"
+                                                                type="xs:string"
+                                                                minOccurs="0" />
+                                                    <xs:element name="LastName"
+                                                                type="xs:string"
+                                                                minOccurs="0" />
+                                                    <xs:element name="Phone"
+                                                                type="PhoneAttributes"
+                                                                minOccurs="0" />
+                                                    <xs:element name="Email"
+                                                                type="xs:string"
+                                                                minOccurs="0" />
+                                                </xs:all>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="InternalInfo"
+                                                    type="xs:string"
+                                                    minOccurs="0" />
+                                    </xs:all>
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="Rooms"
