@@ -213,134 +213,12 @@
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="ItemInfos"
-                                        minOccurs="0">
-                                <xs:complexType>
-                                    <xs:sequence minOccurs="0"
-                                                 maxOccurs="unbounded">
-                                        <xs:element name="ItemInfo"
-                                                    minOccurs="0"
-                                                    maxOccurs="unbounded">
-                                            <xs:annotation>
-                                                <xs:documentation></xs:documentation>
-                                            </xs:annotation>
-                                            <xs:complexType>
-                                                <xs:all>
-                                                    <xs:element name="BeginDate"
-                                                                type="xs:date"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation>Start date when an information applies. Inclusive.</xs:documentation>
-                                                        </xs:annotation>
-                                                    </xs:element>
-                                                    <xs:element name="EndDate"
-                                                                type="xs:date"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation>End date when an information applies. Inclusive.</xs:documentation>
-                                                        </xs:annotation>
-                                                    </xs:element>
-                                                    <xs:element name="Type"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation>Hotel</xs:documentation>
-                                                        </xs:annotation>
-                                                        <xs:simpleType>
-                                                            <xs:restriction base="xs:string">
-                                                                <xs:enumeration value="Hotel" />
-                                                            </xs:restriction>
-                                                        </xs:simpleType>
-                                                    </xs:element>
-                                                    <xs:element name="Invoice"
-                                                                type="xs:boolean"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation />
-                                                        </xs:annotation>
-                                                    </xs:element>
-                                                    <xs:element name="Itinerary"
-                                                                type="xs:boolean"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation />
-                                                        </xs:annotation>
-                                                    </xs:element>
-                                                    <xs:element name="External"
-                                                                type="xs:boolean"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation />
-                                                        </xs:annotation>
-                                                    </xs:element>
-                                                    <xs:element name="Title"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation>Title of info. Node is only sent if a value exists.</xs:documentation>
-                                                        </xs:annotation>
-                                                        <xs:complexType>
-                                                            <xs:all>
-                                                                <xs:element name="de"
-                                                                            type="xs:string"
-                                                                            minOccurs="0" />
-                                                                <xs:element name="en"
-                                                                            type="xs:string"
-                                                                            minOccurs="0" />
-                                                                <xs:element name="fr"
-                                                                            type="xs:string"
-                                                                            minOccurs="0" />
-                                                                <xs:element name="it"
-                                                                            type="xs:string"
-                                                                            minOccurs="0" />
-                                                            </xs:all>
-                                                        </xs:complexType>
-                                                    </xs:element>
-                                                    <xs:element name="Text"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation>Description text of item info</xs:documentation>
-                                                        </xs:annotation>
-                                                        <xs:complexType>
-                                                            <xs:all>
-                                                                <xs:element name="de"
-                                                                            type="xs:string"
-                                                                            minOccurs="0">
-                                                                    <xs:annotation>
-                                                                        <xs:documentation>CDATA</xs:documentation>
-                                                                    </xs:annotation>
-                                                                </xs:element>
-                                                                <xs:element name="en"
-                                                                            type="xs:string"
-                                                                            minOccurs="0">
-                                                                    <xs:annotation>
-                                                                        <xs:documentation>CDATA</xs:documentation>
-                                                                    </xs:annotation>
-                                                                </xs:element>
-                                                                <xs:element name="fr"
-                                                                            type="xs:string"
-                                                                            minOccurs="0">
-                                                                    <xs:annotation>
-                                                                        <xs:documentation>CDATA</xs:documentation>
-                                                                    </xs:annotation>
-                                                                </xs:element>
-                                                                <xs:element name="it"
-                                                                            type="xs:string"
-                                                                            minOccurs="0">
-                                                                    <xs:annotation>
-                                                                        <xs:documentation>CDATA</xs:documentation>
-                                                                    </xs:annotation>
-                                                                </xs:element>
-                                                            </xs:all>
-                                                        </xs:complexType>
-                                                    </xs:element>
-                                                </xs:all>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
+                                        type="ItemInfos"
+                                        minOccurs="0" />
                             <xs:element name="HotelInfo"
                                         minOccurs="0">
                                 <xs:annotation>
-                                    <xs:documentation></xs:documentation>
+                                    <xs:documentation />
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:all>
@@ -348,42 +226,42 @@
                                                     type="Translation"
                                                     minOccurs="0">
                                             <xs:annotation>
-                                                <xs:documentation></xs:documentation>
+                                                <xs:documentation />
                                             </xs:annotation>
                                         </xs:element>
                                         <xs:element name="Building"
                                                     type="Translation"
                                                     minOccurs="0">
                                             <xs:annotation>
-                                                <xs:documentation></xs:documentation>
+                                                <xs:documentation />
                                             </xs:annotation>
                                         </xs:element>
                                         <xs:element name="Equipment"
                                                     type="Translation"
                                                     minOccurs="0">
                                             <xs:annotation>
-                                                <xs:documentation></xs:documentation>
+                                                <xs:documentation />
                                             </xs:annotation>
                                         </xs:element>
                                         <xs:element name="Catering"
                                                     type="Translation"
                                                     minOccurs="0">
                                             <xs:annotation>
-                                                <xs:documentation></xs:documentation>
+                                                <xs:documentation />
                                             </xs:annotation>
                                         </xs:element>
                                         <xs:element name="Entertainment"
                                                     type="Translation"
                                                     minOccurs="0">
                                             <xs:annotation>
-                                                <xs:documentation></xs:documentation>
+                                                <xs:documentation />
                                             </xs:annotation>
                                         </xs:element>
                                         <xs:element name="Suitable"
                                                     type="Translation"
                                                     minOccurs="0">
                                             <xs:annotation>
-                                                <xs:documentation></xs:documentation>
+                                                <xs:documentation />
                                             </xs:annotation>
                                         </xs:element>
                                         <xs:element name="Manager"
@@ -649,130 +527,8 @@
                                                         </xs:complexType>
                                                     </xs:element>
                                                     <xs:element name="ItemInfos"
-                                                                minOccurs="0">
-                                                        <xs:complexType>
-                                                            <xs:sequence minOccurs="0"
-                                                                         maxOccurs="unbounded">
-                                                                <xs:element name="ItemInfo"
-                                                                            minOccurs="0"
-                                                                            maxOccurs="unbounded">
-                                                                    <xs:annotation>
-                                                                        <xs:documentation>ItemInfo this Item</xs:documentation>
-                                                                    </xs:annotation>
-                                                                    <xs:complexType>
-                                                                        <xs:all>
-                                                                            <xs:element name="BeginDate"
-                                                                                        type="xs:date"
-                                                                                        minOccurs="0">
-                                                                                <xs:annotation>
-                                                                                    <xs:documentation>Start date when an information applies. Inclusive.</xs:documentation>
-                                                                                </xs:annotation>
-                                                                            </xs:element>
-                                                                            <xs:element name="EndDate"
-                                                                                        type="xs:date"
-                                                                                        minOccurs="0">
-                                                                                <xs:annotation>
-                                                                                    <xs:documentation>End date when an information applies. Inclusive.</xs:documentation>
-                                                                                </xs:annotation>
-                                                                            </xs:element>
-                                                                            <xs:element name="Type"
-                                                                                        minOccurs="0">
-                                                                                <xs:annotation>
-                                                                                    <xs:documentation>Room</xs:documentation>
-                                                                                </xs:annotation>
-                                                                                <xs:simpleType>
-                                                                                    <xs:restriction base="xs:string">
-                                                                                        <xs:enumeration value="Room" />
-                                                                                    </xs:restriction>
-                                                                                </xs:simpleType>
-                                                                            </xs:element>
-                                                                            <xs:element name="Invoice"
-                                                                                        type="xs:boolean"
-                                                                                        minOccurs="0">
-                                                                                <xs:annotation>
-                                                                                    <xs:documentation />
-                                                                                </xs:annotation>
-                                                                            </xs:element>
-                                                                            <xs:element name="Itinerary"
-                                                                                        type="xs:boolean"
-                                                                                        minOccurs="0">
-                                                                                <xs:annotation>
-                                                                                    <xs:documentation />
-                                                                                </xs:annotation>
-                                                                            </xs:element>
-                                                                            <xs:element name="External"
-                                                                                        type="xs:boolean"
-                                                                                        minOccurs="0">
-                                                                                <xs:annotation>
-                                                                                    <xs:documentation />
-                                                                                </xs:annotation>
-                                                                            </xs:element>
-                                                                            <xs:element name="Title"
-                                                                                        minOccurs="0">
-                                                                                <xs:annotation>
-                                                                                    <xs:documentation>Title of info. Node is only sent if a value exists.</xs:documentation>
-                                                                                </xs:annotation>
-                                                                                <xs:complexType>
-                                                                                    <xs:all>
-                                                                                        <xs:element name="de"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0" />
-                                                                                        <xs:element name="en"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0" />
-                                                                                        <xs:element name="fr"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0" />
-                                                                                        <xs:element name="it"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0" />
-                                                                                    </xs:all>
-                                                                                </xs:complexType>
-                                                                            </xs:element>
-                                                                            <xs:element name="Text"
-                                                                                        minOccurs="0">
-                                                                                <xs:annotation>
-                                                                                    <xs:documentation>Description text of item info</xs:documentation>
-                                                                                </xs:annotation>
-                                                                                <xs:complexType>
-                                                                                    <xs:all>
-                                                                                        <xs:element name="de"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0">
-                                                                                            <xs:annotation>
-                                                                                                <xs:documentation>CDATA</xs:documentation>
-                                                                                            </xs:annotation>
-                                                                                        </xs:element>
-                                                                                        <xs:element name="en"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0">
-                                                                                            <xs:annotation>
-                                                                                                <xs:documentation>CDATA</xs:documentation>
-                                                                                            </xs:annotation>
-                                                                                        </xs:element>
-                                                                                        <xs:element name="fr"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0">
-                                                                                            <xs:annotation>
-                                                                                                <xs:documentation>CDATA</xs:documentation>
-                                                                                            </xs:annotation>
-                                                                                        </xs:element>
-                                                                                        <xs:element name="it"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0">
-                                                                                            <xs:annotation>
-                                                                                                <xs:documentation>CDATA</xs:documentation>
-                                                                                            </xs:annotation>
-                                                                                        </xs:element>
-                                                                                    </xs:all>
-                                                                                </xs:complexType>
-                                                                            </xs:element>
-                                                                        </xs:all>
-                                                                    </xs:complexType>
-                                                                </xs:element>
-                                                            </xs:sequence>
-                                                        </xs:complexType>
-                                                    </xs:element>
+                                                                type="ItemInfos"
+                                                                minOccurs="0" />
                                                     <xs:element name="Prices"
                                                                 minOccurs="0">
                                                         <xs:complexType>
@@ -900,6 +656,151 @@
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ItemInfos">
+        <xs:sequence minOccurs="0"
+                     maxOccurs="unbounded">
+            <xs:element name="ItemInfo"
+                        type="ItemInfoText"
+                        minOccurs="0"
+                        maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>ItemInfo this Item, e.g. if in a </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Request"
+                        type="ItemInfoRequest"
+                        minOccurs="0"
+                        maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ItemInfoText">
+        <xs:all>
+            <xs:element name="BeginDate"
+                        type="xs:date"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Start date when an information applies. Inclusive.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EndDate"
+                        type="xs:date"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>End date when an information applies. Inclusive.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Invoice"
+                        type="xs:boolean"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation />
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Itinerary"
+                        type="xs:boolean"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation />
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="External"
+                        type="xs:boolean"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation />
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Title"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Title of info. Node is only sent if a value exists.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="de"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="en"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="fr"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="it"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Text"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Description text of item info</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="de"
+                                    type="xs:string"
+                                    minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>CDATA</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="en"
+                                    type="xs:string"
+                                    minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>CDATA</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="fr"
+                                    type="xs:string"
+                                    minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>CDATA</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="it"
+                                    type="xs:string"
+                                    minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>CDATA</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="ItemInfoRequest">
+        <xs:all>
+            <xs:element name="Date"
+                        type="xs:date">
+                <xs:annotation>
+                    <xs:documentation>Date when the request information applies.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RQ"
+                        type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation>If this item can be booked on request, RQ = 1</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FS"
+                        type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation>If this item can be booked on freesell FS = 1</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FreeSellRelease"
+                        type="xs:integer"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>If Request = FS, then the Nr days that this item can be booked on FS before it becomes a RQ</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:all>
     </xs:complexType>
     <xs:complexType name="Translation">
         <xs:sequence>
