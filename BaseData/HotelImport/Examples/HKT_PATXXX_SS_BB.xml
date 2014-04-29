@@ -10008,6 +10008,14 @@ Junior Suite (17): chambres luxueuses de 45 m2 dans le bâtiment principal avec e
                     <it />
                 </Text>
             </ItemInfo>
+            <Request>
+                <Day>2014-12-01</Day>
+                <RQ>1</RQ>
+            </Request>
+            <Request>
+                <Day>2014-12-02</Day>
+                <FS>1</FS>
+            </Request>
         </ItemInfos>
     </Hotel>
 </Hotels>
