@@ -657,7 +657,7 @@
                                                                             minOccurs="0"
                                                                             maxOccurs="unbounded">
                                                                     <xs:annotation>
-                                                                        <xs:documentation>Cancellation fee for this Item</xs:documentation>
+                                                                        <xs:documentation>ItemInfo this Item</xs:documentation>
                                                                     </xs:annotation>
                                                                     <xs:complexType>
                                                                         <xs:all>
