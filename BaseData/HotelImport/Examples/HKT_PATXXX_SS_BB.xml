@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='ISO8859-1' ?>
+<!-- Created with Liquid XML 2014 Designer Edition 12.1.4.5047 (http://www.liquid-technologies.com) -->
 <Hotels>
     <Hotel Key="TOUWAL10779"
            Type="HotelRoom"
@@ -28,7 +29,7 @@
         <HotelChain ChainCode="" />
         <Destination Code="HKT"
                      CountryCode="TH" />
-        <HotelCode>PATBXXX</HotelCode>
+        <HotelCode>PATXXX</HotelCode>
         <GiataId>0</GiataId>
         <Location />
         <Category>3.5</Category>
@@ -9942,6 +9943,50 @@
                 </Prices>
             </Room>
         </Rooms>
+        <HotelInfo>
+            <Location>
+                <de><![CDATA[Dieses mitten in Patong gelegene Hotel versprüht eine lockere wie auch ungezwungene Urlaubs-Atmosphäre.]]></de>
+                <en />
+                <fr><![CDATA[Sympathique hôtel dégageant une atmosphère de vacances décontractée et sans contrainte situé au centre de Patong Beach avec à proximité de nombreux restaurants, bars, magasins et distractions.]]></fr>
+                <it />
+            </Location>
+            <Building>
+                <de><![CDATA[Die 245 renovierten Zimmer sind in drei Hotelflügel untergebracht, charmant eingerichtet und mit elegantem Thai-Interieur ausgestattet. Alle Zimmer verfügen über einen Balkon, Bad/Dusche, WC, Klimaanlage, Minibar, Fernseher, Kaffee-/Teekocher, Telefon, Internetzugang (gegen Gebühr) Radio, Safe und Föhn.
+Superior (110): In dreistöckigen Seitenflügeln gelegen mit Sicht in den tropischen Garten und Swimmingpool.
+Deluxe (109): Im zehnstöckigen Hauptgebäude sowie und im Parterre des einen Hotelflügels untergebracht mit schönem Blick in den Garten und den Swimmingpool. Von den oberen Stockwerken geniesst man den Blick aufs Meer.
+Junior Suite (17): 45 m² grosse, luxuriös eingerichtete Zimmer im Hauptgebäude mit zusätzlicher Sitzecke, Bad und separate Dusche, grossem Balkon mit Poolsicht.]]></de>
+                <en />
+                <fr><![CDATA[Les 245 chambres rénovées sont aménagées avec un intérieur élégant de style thaïlandais, réparties dans les trois annexes et équipées de balcon, bain/douche, WC, climatisation, minibar, TV, set à café/thé, téléphone, accès Internet payant, radio, coffre-fort et sèche-cheveux.
+Superior (110): dans l'annexe latérale de trois étages, avec vue sur le jardin ou la piscine.
+Deluxe (109): dans le bâtiment principal de 10 étages ou à plain-pied dans l'annexe. Avec une jolie vue sur le jardin et la piscine. Vue sur la mer depuis les étages du haut.
+Junior Suite (17): chambres luxueuses de 45 m2 dans le bâtiment principal avec en plus un coin salon, baignoire et douche séparée et grand balcon avec vue sur la piscine.]]></fr>
+                <it />
+            </Building>
+            <Equipment>
+                <de><![CDATA[4 beliebte Spezialitätenrestaurants. Im Banana Pub mit Live-Band stimmt man sich bei einem Drink oder bei einer Partie Billard auf den Abend ein.]]></de>
+                <en />
+                <fr><![CDATA[Les 4 restaurants renommés offrent une grande palette de spécialités thaïlandaises, italiennes, internationales et de poissons. Le «Banan Pub» propose de finir la soirée avec des cocktails, de la musique-live ou une partie de billard.]]></fr>
+                <it />
+            </Equipment>
+            <Catering>
+                <de><![CDATA[2 grosse Swimmingpools, Kinderplanschbecken, Whirlpool, Sauna, Fitnesscenter und Snookertische. Internetcorner, Beauty-Salon, Kinderspielplatz. Grosser Beliebtheit erfreut sich die zum Hotel gehörende Banana Discotheque - einer der bekanntesten Treffpunkte Phukets. Für an- oder abreisende Gäste, die (noch) kein Zimmer (mehr) haben, stehen Duschen zur Verfügung.]]></de>
+                <en />
+                <fr><![CDATA[2 vastes piscines, bassin pour enfants, whirlpool, sauna, centre de fitness, table de billard, coin Internet, salon de beauté et place de jeux pour les enfants. L'hôtel possède un des endroits les plus fréquentés de Phuket - la fameuse discothèque «Banana».]]></fr>
+                <it />
+            </Catering>
+            <Entertainment>
+                <de><![CDATA[Zentrale Lage im Herzen von Patong mit unzähligen Restaurants und Einkaufsmöglichkeiten. Die Uferstrasse trennt das Hotel vom 150 Meter entfernten Strand. Fahrzeit zum Flughafen etwa 50 Minuten.]]></de>
+                <en />
+                <fr><![CDATA[Au coeur de Patong avec ses innombrables restaurants et magasins. La route riveraine sépare l'hôtel de la plage (150 m). A env. 50 minutes de l'aéroport.]]></fr>
+                <it />
+            </Entertainment>
+            <Suitable>
+                <de><![CDATA[Ein ideales Hotel für unternehmungslustige Gäste, sind doch viele Unterhaltungsmöglichkeiten in unmittelbarer Nähe des Hotels.]]></de>
+                <en />
+                <fr><![CDATA[Un hôtel idéal pour les hôtes appréciant de l'animation. Les possibilités pour se divertir sont très variées dans les environs de l'hôtel.]]></fr>
+                <it />
+            </Suitable>
+        </HotelInfo>
         <ItemInfos>
             <ItemInfo>
                 <BeginDate>2008-11-25</BeginDate>
