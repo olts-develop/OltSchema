@@ -775,7 +775,7 @@
     </xs:complexType>
     <xs:complexType name="ItemInfoRequest">
         <xs:all>
-            <xs:element name="Date"
+            <xs:element name="Day"
                         type="xs:date">
                 <xs:annotation>
                     <xs:documentation>Date when the request information applies.</xs:documentation>
