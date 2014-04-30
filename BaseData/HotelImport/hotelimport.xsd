@@ -1340,26 +1340,26 @@
                       type="xs:nonNegativeInteger">
             <xs:annotation>
                 <xs:documentation>Number of days before the booking date: from
-                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+                    Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DaysBeforeDepartureTo"
                       type="xs:nonNegativeInteger">
             <xs:annotation>
                 <xs:documentation>Number of days before the booking date: to
-                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+                    Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DateBeforeDepartureFrom"
                       type="xs:date">
             <xs:annotation>
-                <xs:documentation>Date from when the booking can be made, for this rule to be relevant Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+                <xs:documentation>Date from when the booking can be made, for this rule to be relevant Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DateBeforeDepartureTo"
                       type="xs:date">
             <xs:annotation>
-                <xs:documentation>Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+                <xs:documentation>Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:attributeGroup>
