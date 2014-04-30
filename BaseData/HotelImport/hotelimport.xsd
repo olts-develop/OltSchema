@@ -110,13 +110,8 @@
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="Destination"
-                                        minOccurs="0">
-                                <xs:complexType>
-                                    <xs:complexContent mixed="false">
-                                        <xs:extension base="DestinationAttributes" />
-                                    </xs:complexContent>
-                                </xs:complexType>
-                            </xs:element>
+                                        type="DestinationAttributes"
+                                        minOccurs="0" />
                             <xs:element name="HotelCode"
                                         type="xs:string"
                                         minOccurs="0">
@@ -579,13 +574,8 @@
                                                                             type="OneTimesChildren"
                                                                             minOccurs="0" />
                                                                 <xs:element name="SpecialOffers"
-                                                                            minOccurs="0">
-                                                                    <xs:complexType>
-                                                                        <xs:complexContent mixed="false">
-                                                                            <xs:extension base="SpecialOffersChildren" />
-                                                                        </xs:complexContent>
-                                                                    </xs:complexType>
-                                                                </xs:element>
+                                                                            type="SpecialOffersChildren"
+                                                                            minOccurs="0" />
                                                                 <xs:element name="EarlyBookings"
                                                                             type="EarlyBookingsChildren"
                                                                             minOccurs="0" />
@@ -641,19 +631,12 @@
         </xs:annotation>
         <xs:sequence>
             <xs:element name="Desc"
+                        type="Translation"
                         minOccurs="0"
                         maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line. Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.</xs:documentation>
                 </xs:annotation>
-                <xs:complexType>
-                    <xs:complexContent mixed="false">
-                        <xs:extension base="Translation">
-                            <xs:attribute name="DescId"
-                                          type="xs:integer" />
-                        </xs:extension>
-                    </xs:complexContent>
-                </xs:complexType>
             </xs:element>
         </xs:sequence>
     </xs:complexType>
@@ -847,14 +830,9 @@
     <xs:complexType name="PerDayPricesChildren">
         <xs:sequence>
             <xs:element name="PerDayPrice"
+                        type="PerDayPriceAttributes"
                         minOccurs="0"
-                        maxOccurs="unbounded">
-                <xs:complexType>
-                    <xs:complexContent mixed="false">
-                        <xs:extension base="PerDayPriceAttributes" />
-                    </xs:complexContent>
-                </xs:complexType>
-            </xs:element>
+                        maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="PerDayPriceAttributes">
@@ -1200,14 +1178,9 @@
     <xs:complexType name="SpecialOffersChildren">
         <xs:sequence>
             <xs:element name="SpecialOffer"
+                        type="SpecialOfferAttributes"
                         minOccurs="0"
-                        maxOccurs="unbounded">
-                <xs:complexType>
-                    <xs:complexContent mixed="false">
-                        <xs:extension base="SpecialOfferAttributes" />
-                    </xs:complexContent>
-                </xs:complexType>
-            </xs:element>
+                        maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="SpecialOfferAttributes">
