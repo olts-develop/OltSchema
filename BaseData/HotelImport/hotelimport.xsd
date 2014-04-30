@@ -1005,6 +1005,7 @@
         <xs:attributeGroup ref="AddAmountAttributeGroup" />
         <xs:attributeGroup ref="DescIdAttributeGroup" />
         <xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" />
+        <xs:attributeGroup ref="AcctAttributeGroup" />
     </xs:complexType>
     <xs:complexType name="EarlyBookingsChildren">
         <xs:sequence>
@@ -1071,6 +1072,7 @@ If ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.</xs:do
         <xs:attributeGroup ref="AddAmountAttributeGroup" />
         <xs:attributeGroup ref="DescIdAttributeGroup" />
         <xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" />
+        <xs:attributeGroup ref="AcctAttributeGroup" />
     </xs:complexType>
     <xs:attributeGroup name="DateFromToAttributeGroup">
         <xs:attribute name="DateFrom"
@@ -1301,6 +1303,7 @@ If ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.</xs:do
             </xs:simpleType>
         </xs:attribute>
         <xs:attributeGroup ref="SpecialCommissionAttributeGroup" />
+        <xs:attributeGroup ref="AcctAttributeGroup" />
     </xs:attributeGroup>
     <xs:attributeGroup name="ChildIdxNrAttributeGroup">
         <xs:attribute name="ChildIdxNr">
@@ -1329,14 +1332,14 @@ If ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.</xs:do
                       type="xs:nonNegativeInteger">
             <xs:annotation>
                 <xs:documentation>Number of days before the booking date: from
-                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DaysBeforeDepartureTo"
                       type="xs:nonNegativeInteger">
             <xs:annotation>
                 <xs:documentation>Number of days before the booking date: to
-                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DateBeforeDepartureFrom"
@@ -1349,6 +1352,14 @@ If ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.</xs:do
                       type="xs:date">
             <xs:annotation>
                 <xs:documentation>Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="AcctAttributeGroup">
+        <xs:attribute name="Acct"
+                      type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Account number for this price line</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:attributeGroup>
