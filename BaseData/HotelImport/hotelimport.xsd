@@ -739,7 +739,8 @@
                     <xs:documentation>Date when the request information applies.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="RQ">
+            <xs:element name="RQ"
+                        minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>If this item can be booked on request, RQ = 1</xs:documentation>
                 </xs:annotation>
@@ -750,7 +751,8 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
-            <xs:element name="FS">
+            <xs:element name="FS"
+                        minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>If this item can be booked on freesell FS = 1</xs:documentation>
                 </xs:annotation>
