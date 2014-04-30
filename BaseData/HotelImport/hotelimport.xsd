@@ -52,7 +52,7 @@
                                                           type="xs:string">
                                                 <xs:annotation>
                                                     <xs:documentation>Two letter country code of address
-                                            C_IATACODE</xs:documentation>
+                                                        C_IATACODE</xs:documentation>
                                                 </xs:annotation>
                                             </xs:attribute>
                                         </xs:extension>
@@ -64,7 +64,7 @@
                                         minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Region of the Country
-                            RE_VOLL</xs:documentation>
+                                        RE_VOLL</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="SubRegion"
@@ -72,7 +72,7 @@
                                         minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Subregion of the region
-                            SC_VOLL</xs:documentation>
+                                        SC_VOLL</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="Phone"
@@ -138,8 +138,8 @@
                                         minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Longitude of hotel
-                            HO_LON
-                            -180.000000 to +180.000000</xs:documentation>
+                                        HO_LON
+                                        -180.000000 to +180.000000</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="Latitude"
@@ -147,8 +147,8 @@
                                         minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Latitude of hotel
-                            HO_LAT
-                            -180.000000 to +180.000000</xs:documentation>
+                                        HO_LAT
+                                        -180.000000 to +180.000000</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="AutomatedFeeCode"
@@ -163,7 +163,7 @@
                                         minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Category number: 0.0 to 6.0
-                            If 0.0, the category is unknown or undefined</xs:documentation>
+                                        If 0.0, the category is unknown or undefined</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="Passive"
@@ -322,7 +322,7 @@
                                                                 minOccurs="0">
                                                         <xs:annotation>
                                                             <xs:documentation>single, doubleroom...
-                            ZI_DEUTSCH</xs:documentation>
+                                                                ZI_DEUTSCH</xs:documentation>
                                                         </xs:annotation>
                                                     </xs:element>
                                                     <xs:element name="Description"
@@ -330,7 +330,7 @@
                                                                 minOccurs="0">
                                                         <xs:annotation>
                                                             <xs:documentation>Room description
-                            ZI_BESCHRIEBDEUTSCH</xs:documentation>
+                                                                ZI_BESCHRIEBDEUTSCH</xs:documentation>
                                                         </xs:annotation>
                                                     </xs:element>
                                                     <xs:element name="MealDescription"
@@ -338,7 +338,7 @@
                                                                 minOccurs="0">
                                                         <xs:annotation>
                                                             <xs:documentation>Description of included meal
-                            ZI_MAHLZEITDEUTSCH</xs:documentation>
+                                                                ZI_MAHLZEITDEUTSCH</xs:documentation>
                                                         </xs:annotation>
                                                     </xs:element>
                                                     <xs:element name="MealCode"
@@ -429,12 +429,12 @@
                                                                 minOccurs="0">
                                                         <xs:annotation>
                                                             <xs:documentation>Tourbo Meal Code:
-                            BB - Bed and breakfast
-                            HB - Half board
-                            FB - Full board
-                            AL - All inclusive
-                            RO - Room only
-                            MP - Meal according to program</xs:documentation>
+                                                                BB - Bed and breakfast
+                                                                HB - Half board
+                                                                FB - Full board
+                                                                AL - All inclusive
+                                                                RO - Room only
+                                                                MP - Meal according to program</xs:documentation>
                                                         </xs:annotation>
                                                         <xs:simpleType>
                                                             <xs:restriction base="xs:string">
@@ -1052,7 +1052,7 @@
         <xs:attribute name="ForAllDays">
             <xs:annotation>
                 <xs:documentation>If ForceDisplay =1 and ForAllDays=1 then the amount has to be shown for all relevant booking days.
-If ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.</xs:documentation>
+                    If ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:nonNegativeInteger">
@@ -1332,14 +1332,14 @@ If ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.</xs:do
                       type="xs:nonNegativeInteger">
             <xs:annotation>
                 <xs:documentation>Number of days before the booking date: from
-Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DaysBeforeDepartureTo"
                       type="xs:nonNegativeInteger">
             <xs:annotation>
                 <xs:documentation>Number of days before the booking date: to
-Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DateBeforeDepartureFrom"
