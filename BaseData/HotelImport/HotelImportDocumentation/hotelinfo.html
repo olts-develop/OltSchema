@@ -1,0 +1,211 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for schema item HotelInfo in Hotel Import Schema Documentation</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Element', 'hotelinfo');
+                    </script><div class="pageheader">
+         Documentation for Hotel Import Schema Documentation
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>HotelInfo</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="hotelimport_xsd.html">hotelimport.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>MinOccurs</b></td>
+               <td>0</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>MaxOccurs</b></td>
+               <td>(1)</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="197,257,353,282" href="internalinfo.html" alt="Drilldown into InternalInfo"></area>
+                     <area shape="rect" coords="197,225,310,250" href="salesmanager.html" alt="Drilldown into SalesManager"></area>
+                     <area shape="rect" coords="197,193,281,218" href="manager.html" alt="Drilldown into Manager"></area>
+                     <area shape="rect" coords="197,161,353,186" href="suitable.html" alt="Drilldown into Suitable"></area>
+                     <area shape="rect" coords="197,129,383,154" href="entertainment.html" alt="Drilldown into Entertainment"></area>
+                     <area shape="rect" coords="197,97,353,122" href="catering.html" alt="Drilldown into Catering"></area>
+                     <area shape="rect" coords="197,65,365,90" href="equipment.html" alt="Drilldown into Equipment"></area>
+                     <area shape="rect" coords="197,33,353,58" href="building.html" alt="Drilldown into Building"></area>
+                     <area shape="rect" coords="197,1,354,26" href="location.html" alt="Drilldown into Location"></area></map><img src="images/hotelinfo.png" border="0" alt="XSD Diagram of HotelInfo" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:element name="HotelInfo" minOccurs="0"&gt;
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation /&gt;
+    &lt;/xs:annotation&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:all&gt;
+            &lt;xs:element name="Location" type="Translation" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Building" type="Translation" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Equipment" type="Translation" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Catering" type="Translation" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Entertainment" type="Translation" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Suitable" type="Translation" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Manager" minOccurs="0"&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:all&gt;
+                        &lt;xs:element name="Salutation" type="xs:string" minOccurs="0" /&gt;
+                        &lt;xs:element name="FirstName" type="xs:string" minOccurs="0" /&gt;
+                        &lt;xs:element name="LastName" type="xs:string" minOccurs="0" /&gt;
+                        &lt;xs:element name="Phone" type="PhoneAttributes" minOccurs="0" /&gt;
+                        &lt;xs:element name="Email" type="xs:string" minOccurs="0" /&gt;
+                    &lt;/xs:all&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="SalesManager" minOccurs="0"&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:all&gt;
+                        &lt;xs:element name="Salutation" type="xs:string" minOccurs="0" /&gt;
+                        &lt;xs:element name="FirstName" type="xs:string" minOccurs="0" /&gt;
+                        &lt;xs:element name="LastName" type="xs:string" minOccurs="0" /&gt;
+                        &lt;xs:element name="Phone" type="PhoneAttributes" minOccurs="0" /&gt;
+                        &lt;xs:element name="Email" type="xs:string" minOccurs="0" /&gt;
+                    &lt;/xs:all&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="InternalInfo" type="xs:string" minOccurs="0" /&gt;
+        &lt;/xs:all&gt;
+    &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Location</td>
+                        <td><a href="location.html">Location</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Building</td>
+                        <td><a href="building.html">Building</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Equipment</td>
+                        <td><a href="equipment.html">Equipment</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Catering</td>
+                        <td><a href="catering.html">Catering</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Entertainment</td>
+                        <td><a href="entertainment.html">Entertainment</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Suitable</td>
+                        <td><a href="suitable.html">Suitable</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Manager</td>
+                        <td><a href="manager.html">Manager</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SalesManager</td>
+                        <td><a href="salesmanager.html">SalesManager</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">InternalInfo</td>
+                        <td><a href="internalinfo.html">InternalInfo</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.4.5047</a><br></br>Featuring <a href="http://www.liquid-technologies.com/XmlDataBinding/Xml-Schema-To-VBNet.aspx">XSD to VB Code Generation</a></div>
+   </body>
+</html>

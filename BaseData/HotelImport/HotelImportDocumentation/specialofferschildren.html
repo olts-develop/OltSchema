@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item SpecialOffersChildren in Hotel Price Import</title>
+      <title>Docs for schema item SpecialOffersChildren in Hotel Import Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('ComplexType', 'specialofferschildren');
                     </script><div class="pageheader">
-         Documentation for Hotel Price Import
+         Documentation for Hotel Import Schema Documentation
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -38,7 +38,7 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="245,1,487,45" href="specialoffer.html" alt="Drilldown into SpecialOffer"></area></map><img src="images/specialofferschildren.png" border="0" alt="XSD Diagram of SpecialOffersChildren" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="245,1,480,26" href="specialoffer.html" alt="Drilldown into SpecialOffer"></area></map><img src="images/specialofferschildren.png" border="0" alt="XSD Diagram of SpecialOffersChildren" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -52,13 +52,7 @@
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:complexType name="SpecialOffersChildren"&gt;
     &lt;xs:sequence&gt;
-        &lt;xs:element name="SpecialOffer" minOccurs="0" maxOccurs="unbounded"&gt;
-            &lt;xs:complexType&gt;
-                &lt;xs:complexContent mixed="false"&gt;
-                    &lt;xs:extension base="SpecialOfferAttributes" /&gt;
-                &lt;/xs:complexContent&gt;
-            &lt;/xs:complexType&gt;
-        &lt;/xs:element&gt;
+        &lt;xs:element name="SpecialOffer" type="SpecialOfferAttributes" minOccurs="0" maxOccurs="unbounded" /&gt;
     &lt;/xs:sequence&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>

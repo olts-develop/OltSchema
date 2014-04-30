@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item ItemInfo in Hotel Price Import</title>
+      <title>Docs for schema item ItemInfo in Hotel Import Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Element', 'iteminfo');
                     </script><div class="pageheader">
-         Documentation for Hotel Price Import
+         Documentation for Hotel Import Schema Documentation
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -19,6 +19,10 @@
             <tr>
                <td class="label" width="120px;"><b>Name:</b></td>
                <td>ItemInfo</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Type:</b></td>
+               <td><a href="iteminfotext.html">ItemInfoText</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
@@ -38,7 +42,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>Cancellation fee for this Item</pre></td>
+               <td><pre>ItemInfo this Item, e.g. if in a</pre></td>
             </tr>
          </tbody>
       </table>
@@ -50,14 +54,14 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="235,320,355,365" href="text.html" alt="Drilldown into Text"></area>
-                     <area shape="rect" coords="235,268,431,313" href="title.html" alt="Drilldown into Title"></area>
-                     <area shape="rect" coords="235,236,376,261" href="external.html" alt="Drilldown into External"></area>
-                     <area shape="rect" coords="235,204,376,229" href="itinerary.html" alt="Drilldown into Itinerary"></area>
-                     <area shape="rect" coords="235,172,376,197" href="invoice.html" alt="Drilldown into Invoice"></area>
-                     <area shape="rect" coords="235,105,383,164" href="type4.html" alt="Drilldown into Type"></area>
-                     <area shape="rect" coords="235,53,440,98" href="enddate.html" alt="Drilldown into EndDate"></area>
-                     <area shape="rect" coords="235,1,443,46" href="begindate.html" alt="Drilldown into BeginDate"></area></map><img src="images/iteminfo.png" border="0" alt="XSD Diagram of ItemInfo" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="291,279,447,323" href="text.html" alt="Drilldown into Text"></area>
+                     <area shape="rect" coords="291,227,487,272" href="title.html" alt="Drilldown into Title"></area>
+                     <area shape="rect" coords="291,195,432,220" href="external.html" alt="Drilldown into External"></area>
+                     <area shape="rect" coords="291,163,432,188" href="itinerary.html" alt="Drilldown into Itinerary"></area>
+                     <area shape="rect" coords="291,131,432,156" href="invoice.html" alt="Drilldown into Invoice"></area>
+                     <area shape="rect" coords="291,79,496,124" href="enddate.html" alt="Drilldown into EndDate"></area>
+                     <area shape="rect" coords="291,27,499,72" href="begindate.html" alt="Drilldown into BeginDate"></area>
+                     <area shape="rect" coords="206,2,507,335" href="iteminfotext.html" alt="Drilldown into ItemInfoText"></area></map><img src="images/iteminfo.png" border="0" alt="XSD Diagram of ItemInfo" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -69,91 +73,10 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="ItemInfo" minOccurs="0" maxOccurs="unbounded"&gt;
+&lt;xs:element name="ItemInfo" type="ItemInfoText" minOccurs="0" maxOccurs="unbounded"&gt;
     &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
+        &lt;xs:documentation&gt;ItemInfo this Item, e.g. if in a &lt;/xs:documentation&gt;
     &lt;/xs:annotation&gt;
-    &lt;xs:complexType&gt;
-        &lt;xs:all&gt;
-            &lt;xs:element name="BeginDate" type="xs:date" minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;Start date when an information applies. Inclusive.&lt;/xs:documentation&gt;
-                &lt;/xs:annotation&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="EndDate" type="xs:date" minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;End date when an information applies. Inclusive.&lt;/xs:documentation&gt;
-                &lt;/xs:annotation&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="Type" minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;Hotel&lt;/xs:documentation&gt;
-                &lt;/xs:annotation&gt;
-                &lt;xs:simpleType&gt;
-                    &lt;xs:restriction base="xs:string"&gt;
-                        &lt;xs:enumeration value="Hotel" /&gt;
-                    &lt;/xs:restriction&gt;
-                &lt;/xs:simpleType&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="Invoice" type="xs:boolean" minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation /&gt;
-                &lt;/xs:annotation&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="Itinerary" type="xs:boolean" minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation /&gt;
-                &lt;/xs:annotation&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="External" type="xs:boolean" minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation /&gt;
-                &lt;/xs:annotation&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="Title" minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;Title of info. Node is only sent if a value exists.&lt;/xs:documentation&gt;
-                &lt;/xs:annotation&gt;
-                &lt;xs:complexType&gt;
-                    &lt;xs:all&gt;
-                        &lt;xs:element name="de" type="xs:string" minOccurs="0" /&gt;
-                        &lt;xs:element name="en" type="xs:string" minOccurs="0" /&gt;
-                        &lt;xs:element name="fr" type="xs:string" minOccurs="0" /&gt;
-                        &lt;xs:element name="it" type="xs:string" minOccurs="0" /&gt;
-                    &lt;/xs:all&gt;
-                &lt;/xs:complexType&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="Text" minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;Description text of item info&lt;/xs:documentation&gt;
-                &lt;/xs:annotation&gt;
-                &lt;xs:complexType&gt;
-                    &lt;xs:all&gt;
-                        &lt;xs:element name="de" type="xs:string" minOccurs="0"&gt;
-                            &lt;xs:annotation&gt;
-                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                            &lt;/xs:annotation&gt;
-                        &lt;/xs:element&gt;
-                        &lt;xs:element name="en" type="xs:string" minOccurs="0"&gt;
-                            &lt;xs:annotation&gt;
-                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                            &lt;/xs:annotation&gt;
-                        &lt;/xs:element&gt;
-                        &lt;xs:element name="fr" type="xs:string" minOccurs="0"&gt;
-                            &lt;xs:annotation&gt;
-                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                            &lt;/xs:annotation&gt;
-                        &lt;/xs:element&gt;
-                        &lt;xs:element name="it" type="xs:string" minOccurs="0"&gt;
-                            &lt;xs:annotation&gt;
-                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                            &lt;/xs:annotation&gt;
-                        &lt;/xs:element&gt;
-                    &lt;/xs:all&gt;
-                &lt;/xs:complexType&gt;
-            &lt;/xs:element&gt;
-        &lt;/xs:all&gt;
-    &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -182,12 +105,6 @@
                      <tr>
                         <td class="first">EndDate</td>
                         <td><a href="enddate.html">EndDate</a></td>
-                        <td class="mid">0</td>
-                        <td class="last">(1)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">Type</td>
-                        <td><a href="type4.html">Type</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -222,6 +139,21 @@
                         <td class="last">(1)</td>
                      </tr>
                   </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="derivationTree" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Derivation Tree:</b></td>
+            </tr>
+            <tr id="derivationTree_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul><li><a href="iteminfotext.html">ItemInfoText</a><ul>
+                     <li><b><i>ItemInfo</i></b></li></ul></li>
+                  </ul>
                </td>
             </tr>
          </tbody>

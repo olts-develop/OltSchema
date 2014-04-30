@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs the schema hotelimport.xsd in Hotel Price Import</title>
+      <title>Docs the schema hotelimport.xsd in Hotel Import Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Schema', 'hotelimport_xsd');
                     </script><div class="pageheader">
-         Documentation for Hotel Price Import
+         Documentation for Hotel Import Schema Documentation
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -79,7 +79,7 @@
                                                           type="xs:string"&gt;
                                                 &lt;xs:annotation&gt;
                                                     &lt;xs:documentation&gt;Two letter country code of address
-                                            C_IATACODE&lt;/xs:documentation&gt;
+                                                        C_IATACODE&lt;/xs:documentation&gt;
                                                 &lt;/xs:annotation&gt;
                                             &lt;/xs:attribute&gt;
                                         &lt;/xs:extension&gt;
@@ -91,7 +91,7 @@
                                         minOccurs="0"&gt;
                                 &lt;xs:annotation&gt;
                                     &lt;xs:documentation&gt;Region of the Country
-                            RE_VOLL&lt;/xs:documentation&gt;
+                                        RE_VOLL&lt;/xs:documentation&gt;
                                 &lt;/xs:annotation&gt;
                             &lt;/xs:element&gt;
                             &lt;xs:element name="SubRegion"
@@ -99,7 +99,7 @@
                                         minOccurs="0"&gt;
                                 &lt;xs:annotation&gt;
                                     &lt;xs:documentation&gt;Subregion of the region
-                            SC_VOLL&lt;/xs:documentation&gt;
+                                        SC_VOLL&lt;/xs:documentation&gt;
                                 &lt;/xs:annotation&gt;
                             &lt;/xs:element&gt;
                             &lt;xs:element name="Phone"
@@ -137,13 +137,8 @@
                                 &lt;/xs:complexType&gt;
                             &lt;/xs:element&gt;
                             &lt;xs:element name="Destination"
-                                        minOccurs="0"&gt;
-                                &lt;xs:complexType&gt;
-                                    &lt;xs:complexContent mixed="false"&gt;
-                                        &lt;xs:extension base="DestinationAttributes" /&gt;
-                                    &lt;/xs:complexContent&gt;
-                                &lt;/xs:complexType&gt;
-                            &lt;/xs:element&gt;
+                                        type="DestinationAttributes"
+                                        minOccurs="0" /&gt;
                             &lt;xs:element name="HotelCode"
                                         type="xs:string"
                                         minOccurs="0"&gt;
@@ -170,8 +165,8 @@
                                         minOccurs="0"&gt;
                                 &lt;xs:annotation&gt;
                                     &lt;xs:documentation&gt;Longitude of hotel
-                            HO_LON
-                            -180.000000 to +180.000000&lt;/xs:documentation&gt;
+                                        HO_LON
+                                        -180.000000 to +180.000000&lt;/xs:documentation&gt;
                                 &lt;/xs:annotation&gt;
                             &lt;/xs:element&gt;
                             &lt;xs:element name="Latitude"
@@ -179,8 +174,8 @@
                                         minOccurs="0"&gt;
                                 &lt;xs:annotation&gt;
                                     &lt;xs:documentation&gt;Latitude of hotel
-                            HO_LAT
-                            -180.000000 to +180.000000&lt;/xs:documentation&gt;
+                                        HO_LAT
+                                        -180.000000 to +180.000000&lt;/xs:documentation&gt;
                                 &lt;/xs:annotation&gt;
                             &lt;/xs:element&gt;
                             &lt;xs:element name="AutomatedFeeCode"
@@ -195,7 +190,7 @@
                                         minOccurs="0"&gt;
                                 &lt;xs:annotation&gt;
                                     &lt;xs:documentation&gt;Category number: 0.0 to 6.0
-                            If 0.0, the category is unknown or undefined&lt;/xs:documentation&gt;
+                                        If 0.0, the category is unknown or undefined&lt;/xs:documentation&gt;
                                 &lt;/xs:annotation&gt;
                             &lt;/xs:element&gt;
                             &lt;xs:element name="Passive"
@@ -240,128 +235,105 @@
                                 &lt;/xs:annotation&gt;
                             &lt;/xs:element&gt;
                             &lt;xs:element name="ItemInfos"
+                                        type="ItemInfos"
+                                        minOccurs="0" /&gt;
+                            &lt;xs:element name="HotelInfo"
                                         minOccurs="0"&gt;
+                                &lt;xs:annotation&gt;
+                                    &lt;xs:documentation /&gt;
+                                &lt;/xs:annotation&gt;
                                 &lt;xs:complexType&gt;
-                                    &lt;xs:sequence minOccurs="0"
-                                                 maxOccurs="unbounded"&gt;
-                                        &lt;xs:element name="ItemInfo"
-                                                    minOccurs="0"
-                                                    maxOccurs="unbounded"&gt;
+                                    &lt;xs:all&gt;
+                                        &lt;xs:element name="Location"
+                                                    type="Translation"
+                                                    minOccurs="0"&gt;
                                             &lt;xs:annotation&gt;
-                                                &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
+                                                &lt;xs:documentation /&gt;
                                             &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Building"
+                                                    type="Translation"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation /&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Equipment"
+                                                    type="Translation"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation /&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Catering"
+                                                    type="Translation"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation /&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Entertainment"
+                                                    type="Translation"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation /&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Suitable"
+                                                    type="Translation"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation /&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Manager"
+                                                    minOccurs="0"&gt;
                                             &lt;xs:complexType&gt;
                                                 &lt;xs:all&gt;
-                                                    &lt;xs:element name="BeginDate"
-                                                                type="xs:date"
-                                                                minOccurs="0"&gt;
-                                                        &lt;xs:annotation&gt;
-                                                            &lt;xs:documentation&gt;Start date when an information applies. Inclusive.&lt;/xs:documentation&gt;
-                                                        &lt;/xs:annotation&gt;
-                                                    &lt;/xs:element&gt;
-                                                    &lt;xs:element name="EndDate"
-                                                                type="xs:date"
-                                                                minOccurs="0"&gt;
-                                                        &lt;xs:annotation&gt;
-                                                            &lt;xs:documentation&gt;End date when an information applies. Inclusive.&lt;/xs:documentation&gt;
-                                                        &lt;/xs:annotation&gt;
-                                                    &lt;/xs:element&gt;
-                                                    &lt;xs:element name="Type"
-                                                                minOccurs="0"&gt;
-                                                        &lt;xs:annotation&gt;
-                                                            &lt;xs:documentation&gt;Hotel&lt;/xs:documentation&gt;
-                                                        &lt;/xs:annotation&gt;
-                                                        &lt;xs:simpleType&gt;
-                                                            &lt;xs:restriction base="xs:string"&gt;
-                                                                &lt;xs:enumeration value="Hotel" /&gt;
-                                                            &lt;/xs:restriction&gt;
-                                                        &lt;/xs:simpleType&gt;
-                                                    &lt;/xs:element&gt;
-                                                    &lt;xs:element name="Invoice"
-                                                                type="xs:boolean"
-                                                                minOccurs="0"&gt;
-                                                        &lt;xs:annotation&gt;
-                                                            &lt;xs:documentation /&gt;
-                                                        &lt;/xs:annotation&gt;
-                                                    &lt;/xs:element&gt;
-                                                    &lt;xs:element name="Itinerary"
-                                                                type="xs:boolean"
-                                                                minOccurs="0"&gt;
-                                                        &lt;xs:annotation&gt;
-                                                            &lt;xs:documentation /&gt;
-                                                        &lt;/xs:annotation&gt;
-                                                    &lt;/xs:element&gt;
-                                                    &lt;xs:element name="External"
-                                                                type="xs:boolean"
-                                                                minOccurs="0"&gt;
-                                                        &lt;xs:annotation&gt;
-                                                            &lt;xs:documentation /&gt;
-                                                        &lt;/xs:annotation&gt;
-                                                    &lt;/xs:element&gt;
-                                                    &lt;xs:element name="Title"
-                                                                minOccurs="0"&gt;
-                                                        &lt;xs:annotation&gt;
-                                                            &lt;xs:documentation&gt;Title of info. Node is only sent if a value exists.&lt;/xs:documentation&gt;
-                                                        &lt;/xs:annotation&gt;
-                                                        &lt;xs:complexType&gt;
-                                                            &lt;xs:all&gt;
-                                                                &lt;xs:element name="de"
-                                                                            type="xs:string"
-                                                                            minOccurs="0" /&gt;
-                                                                &lt;xs:element name="en"
-                                                                            type="xs:string"
-                                                                            minOccurs="0" /&gt;
-                                                                &lt;xs:element name="fr"
-                                                                            type="xs:string"
-                                                                            minOccurs="0" /&gt;
-                                                                &lt;xs:element name="it"
-                                                                            type="xs:string"
-                                                                            minOccurs="0" /&gt;
-                                                            &lt;/xs:all&gt;
-                                                        &lt;/xs:complexType&gt;
-                                                    &lt;/xs:element&gt;
-                                                    &lt;xs:element name="Text"
-                                                                minOccurs="0"&gt;
-                                                        &lt;xs:annotation&gt;
-                                                            &lt;xs:documentation&gt;Description text of item info&lt;/xs:documentation&gt;
-                                                        &lt;/xs:annotation&gt;
-                                                        &lt;xs:complexType&gt;
-                                                            &lt;xs:all&gt;
-                                                                &lt;xs:element name="de"
-                                                                            type="xs:string"
-                                                                            minOccurs="0"&gt;
-                                                                    &lt;xs:annotation&gt;
-                                                                        &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                                                                    &lt;/xs:annotation&gt;
-                                                                &lt;/xs:element&gt;
-                                                                &lt;xs:element name="en"
-                                                                            type="xs:string"
-                                                                            minOccurs="0"&gt;
-                                                                    &lt;xs:annotation&gt;
-                                                                        &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                                                                    &lt;/xs:annotation&gt;
-                                                                &lt;/xs:element&gt;
-                                                                &lt;xs:element name="fr"
-                                                                            type="xs:string"
-                                                                            minOccurs="0"&gt;
-                                                                    &lt;xs:annotation&gt;
-                                                                        &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                                                                    &lt;/xs:annotation&gt;
-                                                                &lt;/xs:element&gt;
-                                                                &lt;xs:element name="it"
-                                                                            type="xs:string"
-                                                                            minOccurs="0"&gt;
-                                                                    &lt;xs:annotation&gt;
-                                                                        &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                                                                    &lt;/xs:annotation&gt;
-                                                                &lt;/xs:element&gt;
-                                                            &lt;/xs:all&gt;
-                                                        &lt;/xs:complexType&gt;
-                                                    &lt;/xs:element&gt;
+                                                    &lt;xs:element name="Salutation"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="FirstName"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="LastName"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="Phone"
+                                                                type="PhoneAttributes"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="Email"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
                                                 &lt;/xs:all&gt;
                                             &lt;/xs:complexType&gt;
                                         &lt;/xs:element&gt;
-                                    &lt;/xs:sequence&gt;
+                                        &lt;xs:element name="SalesManager"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:complexType&gt;
+                                                &lt;xs:all&gt;
+                                                    &lt;xs:element name="Salutation"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="FirstName"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="LastName"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="Phone"
+                                                                type="PhoneAttributes"
+                                                                minOccurs="0" /&gt;
+                                                    &lt;xs:element name="Email"
+                                                                type="xs:string"
+                                                                minOccurs="0" /&gt;
+                                                &lt;/xs:all&gt;
+                                            &lt;/xs:complexType&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="InternalInfo"
+                                                    type="xs:string"
+                                                    minOccurs="0" /&gt;
+                                    &lt;/xs:all&gt;
                                 &lt;/xs:complexType&gt;
                             &lt;/xs:element&gt;
                             &lt;xs:element name="Rooms"
@@ -377,7 +349,7 @@
                                                                 minOccurs="0"&gt;
                                                         &lt;xs:annotation&gt;
                                                             &lt;xs:documentation&gt;single, doubleroom...
-                            ZI_DEUTSCH&lt;/xs:documentation&gt;
+                                                                ZI_DEUTSCH&lt;/xs:documentation&gt;
                                                         &lt;/xs:annotation&gt;
                                                     &lt;/xs:element&gt;
                                                     &lt;xs:element name="Description"
@@ -385,7 +357,7 @@
                                                                 minOccurs="0"&gt;
                                                         &lt;xs:annotation&gt;
                                                             &lt;xs:documentation&gt;Room description
-                            ZI_BESCHRIEBDEUTSCH&lt;/xs:documentation&gt;
+                                                                ZI_BESCHRIEBDEUTSCH&lt;/xs:documentation&gt;
                                                         &lt;/xs:annotation&gt;
                                                     &lt;/xs:element&gt;
                                                     &lt;xs:element name="MealDescription"
@@ -393,7 +365,7 @@
                                                                 minOccurs="0"&gt;
                                                         &lt;xs:annotation&gt;
                                                             &lt;xs:documentation&gt;Description of included meal
-                            ZI_MAHLZEITDEUTSCH&lt;/xs:documentation&gt;
+                                                                ZI_MAHLZEITDEUTSCH&lt;/xs:documentation&gt;
                                                         &lt;/xs:annotation&gt;
                                                     &lt;/xs:element&gt;
                                                     &lt;xs:element name="MealCode"
@@ -484,12 +456,12 @@
                                                                 minOccurs="0"&gt;
                                                         &lt;xs:annotation&gt;
                                                             &lt;xs:documentation&gt;Tourbo Meal Code:
-                            BB - Bed and breakfast
-                            HB - Half board
-                            FB - Full board
-                            AL - All inclusive
-                            RO - Room only
-                            MP - Meal according to program&lt;/xs:documentation&gt;
+                                                                BB - Bed and breakfast
+                                                                HB - Half board
+                                                                FB - Full board
+                                                                AL - All inclusive
+                                                                RO - Room only
+                                                                MP - Meal according to program&lt;/xs:documentation&gt;
                                                         &lt;/xs:annotation&gt;
                                                         &lt;xs:simpleType&gt;
                                                             &lt;xs:restriction base="xs:string"&gt;
@@ -577,130 +549,8 @@
                                                         &lt;/xs:complexType&gt;
                                                     &lt;/xs:element&gt;
                                                     &lt;xs:element name="ItemInfos"
-                                                                minOccurs="0"&gt;
-                                                        &lt;xs:complexType&gt;
-                                                            &lt;xs:sequence minOccurs="0"
-                                                                         maxOccurs="unbounded"&gt;
-                                                                &lt;xs:element name="ItemInfo"
-                                                                            minOccurs="0"
-                                                                            maxOccurs="unbounded"&gt;
-                                                                    &lt;xs:annotation&gt;
-                                                                        &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
-                                                                    &lt;/xs:annotation&gt;
-                                                                    &lt;xs:complexType&gt;
-                                                                        &lt;xs:all&gt;
-                                                                            &lt;xs:element name="BeginDate"
-                                                                                        type="xs:date"
-                                                                                        minOccurs="0"&gt;
-                                                                                &lt;xs:annotation&gt;
-                                                                                    &lt;xs:documentation&gt;Start date when an information applies. Inclusive.&lt;/xs:documentation&gt;
-                                                                                &lt;/xs:annotation&gt;
-                                                                            &lt;/xs:element&gt;
-                                                                            &lt;xs:element name="EndDate"
-                                                                                        type="xs:date"
-                                                                                        minOccurs="0"&gt;
-                                                                                &lt;xs:annotation&gt;
-                                                                                    &lt;xs:documentation&gt;End date when an information applies. Inclusive.&lt;/xs:documentation&gt;
-                                                                                &lt;/xs:annotation&gt;
-                                                                            &lt;/xs:element&gt;
-                                                                            &lt;xs:element name="Type"
-                                                                                        minOccurs="0"&gt;
-                                                                                &lt;xs:annotation&gt;
-                                                                                    &lt;xs:documentation&gt;Room&lt;/xs:documentation&gt;
-                                                                                &lt;/xs:annotation&gt;
-                                                                                &lt;xs:simpleType&gt;
-                                                                                    &lt;xs:restriction base="xs:string"&gt;
-                                                                                        &lt;xs:enumeration value="Room" /&gt;
-                                                                                    &lt;/xs:restriction&gt;
-                                                                                &lt;/xs:simpleType&gt;
-                                                                            &lt;/xs:element&gt;
-                                                                            &lt;xs:element name="Invoice"
-                                                                                        type="xs:boolean"
-                                                                                        minOccurs="0"&gt;
-                                                                                &lt;xs:annotation&gt;
-                                                                                    &lt;xs:documentation /&gt;
-                                                                                &lt;/xs:annotation&gt;
-                                                                            &lt;/xs:element&gt;
-                                                                            &lt;xs:element name="Itinerary"
-                                                                                        type="xs:boolean"
-                                                                                        minOccurs="0"&gt;
-                                                                                &lt;xs:annotation&gt;
-                                                                                    &lt;xs:documentation /&gt;
-                                                                                &lt;/xs:annotation&gt;
-                                                                            &lt;/xs:element&gt;
-                                                                            &lt;xs:element name="External"
-                                                                                        type="xs:boolean"
-                                                                                        minOccurs="0"&gt;
-                                                                                &lt;xs:annotation&gt;
-                                                                                    &lt;xs:documentation /&gt;
-                                                                                &lt;/xs:annotation&gt;
-                                                                            &lt;/xs:element&gt;
-                                                                            &lt;xs:element name="Title"
-                                                                                        minOccurs="0"&gt;
-                                                                                &lt;xs:annotation&gt;
-                                                                                    &lt;xs:documentation&gt;Title of info. Node is only sent if a value exists.&lt;/xs:documentation&gt;
-                                                                                &lt;/xs:annotation&gt;
-                                                                                &lt;xs:complexType&gt;
-                                                                                    &lt;xs:all&gt;
-                                                                                        &lt;xs:element name="de"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0" /&gt;
-                                                                                        &lt;xs:element name="en"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0" /&gt;
-                                                                                        &lt;xs:element name="fr"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0" /&gt;
-                                                                                        &lt;xs:element name="it"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0" /&gt;
-                                                                                    &lt;/xs:all&gt;
-                                                                                &lt;/xs:complexType&gt;
-                                                                            &lt;/xs:element&gt;
-                                                                            &lt;xs:element name="Text"
-                                                                                        minOccurs="0"&gt;
-                                                                                &lt;xs:annotation&gt;
-                                                                                    &lt;xs:documentation&gt;Description text of item info&lt;/xs:documentation&gt;
-                                                                                &lt;/xs:annotation&gt;
-                                                                                &lt;xs:complexType&gt;
-                                                                                    &lt;xs:all&gt;
-                                                                                        &lt;xs:element name="de"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0"&gt;
-                                                                                            &lt;xs:annotation&gt;
-                                                                                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                                                                                            &lt;/xs:annotation&gt;
-                                                                                        &lt;/xs:element&gt;
-                                                                                        &lt;xs:element name="en"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0"&gt;
-                                                                                            &lt;xs:annotation&gt;
-                                                                                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                                                                                            &lt;/xs:annotation&gt;
-                                                                                        &lt;/xs:element&gt;
-                                                                                        &lt;xs:element name="fr"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0"&gt;
-                                                                                            &lt;xs:annotation&gt;
-                                                                                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                                                                                            &lt;/xs:annotation&gt;
-                                                                                        &lt;/xs:element&gt;
-                                                                                        &lt;xs:element name="it"
-                                                                                                    type="xs:string"
-                                                                                                    minOccurs="0"&gt;
-                                                                                            &lt;xs:annotation&gt;
-                                                                                                &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-                                                                                            &lt;/xs:annotation&gt;
-                                                                                        &lt;/xs:element&gt;
-                                                                                    &lt;/xs:all&gt;
-                                                                                &lt;/xs:complexType&gt;
-                                                                            &lt;/xs:element&gt;
-                                                                        &lt;/xs:all&gt;
-                                                                    &lt;/xs:complexType&gt;
-                                                                &lt;/xs:element&gt;
-                                                            &lt;/xs:sequence&gt;
-                                                        &lt;/xs:complexType&gt;
-                                                    &lt;/xs:element&gt;
+                                                                type="ItemInfos"
+                                                                minOccurs="0" /&gt;
                                                     &lt;xs:element name="Prices"
                                                                 minOccurs="0"&gt;
                                                         &lt;xs:complexType&gt;
@@ -751,13 +601,8 @@
                                                                             type="OneTimesChildren"
                                                                             minOccurs="0" /&gt;
                                                                 &lt;xs:element name="SpecialOffers"
-                                                                            minOccurs="0"&gt;
-                                                                    &lt;xs:complexType&gt;
-                                                                        &lt;xs:complexContent mixed="false"&gt;
-                                                                            &lt;xs:extension base="SpecialOffersChildren" /&gt;
-                                                                        &lt;/xs:complexContent&gt;
-                                                                    &lt;/xs:complexType&gt;
-                                                                &lt;/xs:element&gt;
+                                                                            type="SpecialOffersChildren"
+                                                                            minOccurs="0" /&gt;
                                                                 &lt;xs:element name="EarlyBookings"
                                                                             type="EarlyBookingsChildren"
                                                                             minOccurs="0" /&gt;
@@ -819,30 +664,171 @@
                     &lt;xs:documentation&gt;Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line. Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.&lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
                 &lt;xs:complexType&gt;
-                    &lt;xs:complexContent mixed="false"&gt;
+                    &lt;xs:complexContent&gt;
                         &lt;xs:extension base="Translation"&gt;
-                            &lt;xs:attribute name="DescId"
-                                          type="xs:integer" /&gt;
+                            &lt;xs:attributeGroup ref="DescIdAttributeGroup" /&gt;
                         &lt;/xs:extension&gt;
                     &lt;/xs:complexContent&gt;
                 &lt;/xs:complexType&gt;
             &lt;/xs:element&gt;
         &lt;/xs:sequence&gt;
     &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="ItemInfos"&gt;
+        &lt;xs:sequence minOccurs="0"
+                     maxOccurs="unbounded"&gt;
+            &lt;xs:element name="ItemInfo"
+                        type="ItemInfoText"
+                        minOccurs="0"
+                        maxOccurs="unbounded"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;ItemInfo this Item, e.g. if in a &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Request"
+                        type="ItemInfoRequest"
+                        minOccurs="0"
+                        maxOccurs="unbounded" /&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="ItemInfoText"&gt;
+        &lt;xs:all&gt;
+            &lt;xs:element name="BeginDate"
+                        type="xs:date"
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Start date when an information applies. Inclusive.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="EndDate"
+                        type="xs:date"
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;End date when an information applies. Inclusive.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Invoice"
+                        type="xs:boolean"
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Itinerary"
+                        type="xs:boolean"
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="External"
+                        type="xs:boolean"
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation /&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Title"
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Title of info. Node is only sent if a value exists.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:all&gt;
+                        &lt;xs:element name="de"
+                                    type="xs:string"
+                                    minOccurs="0" /&gt;
+                        &lt;xs:element name="en"
+                                    type="xs:string"
+                                    minOccurs="0" /&gt;
+                        &lt;xs:element name="fr"
+                                    type="xs:string"
+                                    minOccurs="0" /&gt;
+                        &lt;xs:element name="it"
+                                    type="xs:string"
+                                    minOccurs="0" /&gt;
+                    &lt;/xs:all&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Text"
+                        type="Translation"
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Description text of item info&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:all&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="ItemInfoRequest"&gt;
+        &lt;xs:all&gt;
+            &lt;xs:element name="Day"
+                        type="xs:date"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Date when the request information applies.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="RQ"
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;If this item can be booked on request, RQ = 1&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                        &lt;xs:enumeration value="0" /&gt;
+                        &lt;xs:enumeration value="1" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="FS"
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;If this item can be booked on freesell FS = 1&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                        &lt;xs:enumeration value="0" /&gt;
+                        &lt;xs:enumeration value="1" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="FreeSellRelease"
+                        type="xs:nonNegativeInteger"
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;If Request = FS, then the Nr days that this item can be booked on FS before it becomes a RQ&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:all&gt;
+    &lt;/xs:complexType&gt;
     &lt;xs:complexType name="Translation"&gt;
         &lt;xs:sequence&gt;
             &lt;xs:element name="de"
                         type="xs:string"
-                        minOccurs="0" /&gt;
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;German. Can be a CDATA.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
             &lt;xs:element name="en"
                         type="xs:string"
-                        minOccurs="0" /&gt;
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;English. Can be a CDATA.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
             &lt;xs:element name="fr"
                         type="xs:string"
-                        minOccurs="0" /&gt;
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;French. Can be a CDATA.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
             &lt;xs:element name="it"
                         type="xs:string"
-                        minOccurs="0" /&gt;
+                        minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Italian. Can be a CDATA.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
         &lt;/xs:sequence&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="PhoneAttributes"&gt;
@@ -874,120 +860,16 @@
     &lt;xs:complexType name="PerDayPricesChildren"&gt;
         &lt;xs:sequence&gt;
             &lt;xs:element name="PerDayPrice"
+                        type="PerDayPriceAttributes"
                         minOccurs="0"
-                        maxOccurs="unbounded"&gt;
-                &lt;xs:complexType&gt;
-                    &lt;xs:complexContent mixed="false"&gt;
-                        &lt;xs:extension base="PerDayPriceAttributes" /&gt;
-                    &lt;/xs:complexContent&gt;
-                &lt;/xs:complexType&gt;
-            &lt;/xs:element&gt;
+                        maxOccurs="unbounded" /&gt;
         &lt;/xs:sequence&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="PerDayPriceAttributes"&gt;
-        &lt;xs:attribute name="Day"
-                      type="xs:date"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Date for which this price is valid&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P1"
-                      type="xs:float"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P2"
-                      type="xs:float"
-                      use="optional"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P3"
-                      type="xs:float"
-                      use="optional"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P4"
-                      type="xs:float"
-                      use="optional"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="Type"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;P = Price per person (default)
-                    R = Price per Room&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-            &lt;xs:simpleType&gt;
-                &lt;xs:restriction base="xs:string"&gt;
-                    &lt;xs:enumeration value="P" /&gt;
-                    &lt;xs:enumeration value="R" /&gt;
-                &lt;/xs:restriction&gt;
-            &lt;/xs:simpleType&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AgeFrom"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AgeTo"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is per non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="ChildIdxNr"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
-                    ChildIndexNr=1 (first additional child in the room)
-                    ChildIndexNr=2 (second additional child in the room)
-                    ChildIndexNr=0 (no additional children in room)
-                    If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
-                    Internal: TYPE2
-                    Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
-                    Internal: Type3
-                    Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DescId"
-                      type="xs:integer"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
-                    &amp;lt;Descs&amp;gt;
-                    &amp;lt;Desc
-                    DescId="1"&amp;gt;
-                    &amp;lt;de&amp;gt;Preis pro Person/Nacht&amp;lt;/de&amp;gt;
-                    &amp;lt;fr&amp;gt;Prix par personne/nuit&amp;lt;/fr&amp;gt;
-                    &amp;lt;/Desc&amp;gt;
-                    ...
-                    &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="NotSpecialRelevant"
-                      type="xs:integer"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Some price lines must be ignored when calculating a special.
-                    1 = NotSpecialRelevant&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="SpecialCommission"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;percentage if he price line has a special commission
-                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attributeGroup ref="BuyAttributes" /&gt;
+        &lt;xs:attributeGroup ref="BuyAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="SellGeneralAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="DayAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="AddPerDayPricesChildren"&gt;
         &lt;xs:sequence&gt;
@@ -998,108 +880,10 @@
         &lt;/xs:sequence&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="AddPerDayPriceAttributes"&gt;
-        &lt;xs:attribute name="Day"
-                      type="xs:date"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Date for which this price is valid&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P1"
-                      type="xs:float"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P2"
-                      type="xs:float"
-                      use="optional"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P3"
-                      type="xs:float"
-                      use="optional"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P4"
-                      type="xs:float"
-                      use="optional"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="Type"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;P = Price per person (default)
-                    R = Price per Room&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-            &lt;xs:simpleType&gt;
-                &lt;xs:restriction base="xs:string"&gt;
-                    &lt;xs:enumeration value="P" /&gt;
-                    &lt;xs:enumeration value="R" /&gt;
-                &lt;/xs:restriction&gt;
-            &lt;/xs:simpleType&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AgeFrom"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AgeTo"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is the upper non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="ChildIdxNr"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allowseither two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
-                    ChildIndexNr=1 (first additional child in the room)
-                    ChildIndexNr=2 (second additional child in the room)
-                    ChildIndexNr=0 (no additional children in room)
-                    If the nodeChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
-                    Internal: TYPE2
-                    Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
-                    Internal: Type3
-                    Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DescId"
-                      type="xs:integer"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
-                    &amp;lt;Descs&amp;gt;
-                    &amp;lt;Desc DescId="1"&amp;gt;
-                    &amp;lt;de&amp;gt;Preis pro Person/Nacht&amp;lt;/de&amp;gt;
-                    &amp;lt;fr&amp;gt;Prix par personne/nuit&amp;lt;/fr&amp;gt;
-                    &amp;lt;/Desc&amp;gt;
-                    ...
-                    &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&amp;gt;&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="NotSpecialRelevant"
-                      type="xs:integer"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Some price lines must be ignored when calculating a special.
-                    1 = NotSpecialRelevant&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="SpecialCommission"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;percentage if he price line has a special commission
-                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attributeGroup ref="BuyAttributes" /&gt;
+        &lt;xs:attributeGroup ref="BuyAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="SellGeneralAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="DayAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="OneTimesChildren"&gt;
         &lt;xs:sequence&gt;
@@ -1110,189 +894,37 @@
         &lt;/xs:sequence&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="OneTimeAttributes"&gt;
-        &lt;xs:attribute name="DateFrom"
-                      type="xs:date"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Date from which this price is valid&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DateTo"
-                      type="xs:date"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Date to which this price is valid&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P1"
-                      type="xs:float"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Price&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P2"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Price&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P3"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Price&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="P4"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Price&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DescId"
-                      type="xs:integer"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts
-                    for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
-                    &amp;lt;Descs&amp;gt;
-                    &amp;lt;Desc DescId="1"&amp;gt;
-                    &amp;lt;de&amp;gt;Preis pro Person/Nacht&amp;lt;/de&amp;gt;
-                    &amp;lt;fr&amp;gt;Prix par personne/nuit&amp;lt;/fr&amp;gt;
-                    &amp;lt;/Desc&amp;gt;
-                    ...
-                    &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&amp;gt;&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="Type"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;P = Price per person (default)
-                    R = Price per Room&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-            &lt;xs:simpleType&gt;
-                &lt;xs:restriction base="xs:string"&gt;
-                    &lt;xs:enumeration value="P" /&gt;
-                    &lt;xs:enumeration value="R" /&gt;
-                &lt;/xs:restriction&gt;
-            &lt;/xs:simpleType&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attributeGroup ref="DateRelevantAttributes" /&gt;
-        &lt;xs:attribute name="WeekdaysValid"
-                      type="xs:string"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;A seven character string, e.g. 1000000
-                    The above example can be interpreted, that this price is only relevant for a Monday.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AgeFrom"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AgeTo"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is the upper non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12)&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="Baby"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation /&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="Child"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation /&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="NotSpecialRelevant"
-                      type="xs:nonNegativeInteger"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If 1, then this price is not relevant for the calculation of specials&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="SpecialCommission"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;percentage if the price line has a special commission
-                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attributeGroup ref="BuyAttributes" /&gt;
+        &lt;xs:attributeGroup ref="DateRelevantAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="BuyAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="SellGeneralAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="DateFromToAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="WeekdaysValidAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="BabyChildAttributeGroup" /&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="SpecialOffersChildren"&gt;
         &lt;xs:sequence&gt;
             &lt;xs:element name="SpecialOffer"
+                        type="SpecialOfferAttributes"
                         minOccurs="0"
-                        maxOccurs="unbounded"&gt;
-                &lt;xs:complexType&gt;
-                    &lt;xs:complexContent mixed="false"&gt;
-                        &lt;xs:extension base="SpecialOfferAttributes" /&gt;
-                    &lt;/xs:complexContent&gt;
-                &lt;/xs:complexType&gt;
-            &lt;/xs:element&gt;
+                        maxOccurs="unbounded" /&gt;
         &lt;/xs:sequence&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="SpecialOfferAttributes"&gt;
-        &lt;xs:attributeGroup ref="BuyAttributes" /&gt;
-        &lt;xs:attribute name="DateFrom"
-                      type="xs:date"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is larger or equal to this date.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DateTo"
-                      type="xs:date"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Rule is valid for bookings that have a end date that is less than or equal to this date.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
+        &lt;xs:attributeGroup ref="BuyAttributeGroup" /&gt;
         &lt;xs:attribute name="FromDayBase"
-                      type="xs:integer"&gt;
+                      type="xs:nonNegativeInteger"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;From day number. with a 7/5, this would be 5&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
         &lt;xs:attribute name="ToDayBase"
-                      type="xs:integer"&gt;
+                      type="xs:nonNegativeInteger"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;To day number. with a 7/5, this would be 7&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DaysBeforeDepartureFrom"
-                      type="xs:integer"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Number of days before the booking date: from
-                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DaysBeforeDepartureTo"
-                      type="xs:integer"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Number of days before the booking date: to
-                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DateBeforeDepartureFrom"
-                      type="xs:date"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Date from when the booking can be made, for this rule to be relevant Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DateBeforeDepartureTo"
-                      type="xs:date"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
         &lt;xs:attribute name="PayNights"
-                      type="xs:integer"&gt;
+                      type="xs:nonNegativeInteger"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;How many nights does the customer effectively pay.
                     If this has a value of 5, and I have a FromDay=6, ToDay=7, then if I book 6 days the customer pays 5 nights, if I book 7 days the customer pays 5 nights. SaveNights and PayNights are mutually exclusive. Only one of the attributes is allowed&lt;/xs:documentation&gt;
@@ -1320,60 +952,7 @@
                 &lt;/xs:restriction&gt;
             &lt;/xs:simpleType&gt;
         &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AddAmount1"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AddAmount2"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AddAmount3"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AddAmount4"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attributeGroup ref="DateRelevantAttributes" /&gt;
-        &lt;xs:attribute name="WeekdaysValid"
-                      type="xs:string"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;A seven character string MoTuWeThFrSaSu
-                    The string 1011001 indicates
-                    Mo = valid
-                    Tu = invalid
-                    We = valid
-                    Th = valid
-                    Fr = invalid
-                    Sa = valid
-                    Su = valid&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DescId"
-                      type="xs:integer"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
-                    &amp;lt;Descs&amp;gt;
-                    &amp;lt;Desc
-                    DescId="1"&amp;gt;
-                    &amp;lt;de&amp;gt;Preis pro Person/Nacht&amp;lt;/de&amp;gt;
-                    &amp;lt;fr&amp;gt;Prix par personne/nuit&amp;lt;/fr&amp;gt;
-                    &amp;lt;/Desc&amp;gt;
-                    ...
-                    &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
+        &lt;xs:attributeGroup ref="DateRelevantAttributeGroup" /&gt;
         &lt;xs:attribute name="LastSpOffEndDate"
                       type="xs:date"&gt;
             &lt;xs:annotation&gt;
@@ -1408,24 +987,34 @@
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
         &lt;xs:attribute name="Days"
-                      type="xs:integer"&gt;
+                      type="xs:nonNegativeInteger"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;this shows the minimum stay nights of the booking.&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="Baby"
-                      type="xs:integer"&gt;
+        &lt;xs:attribute name="Baby"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;0 = this special offer is valid only for adults
                     1 = this special offer is only valid for babies&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:enumeration value="0" /&gt;
+                    &lt;xs:enumeration value="1" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
         &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="Child"
-                      type="xs:integer"&gt;
+        &lt;xs:attribute name="Child"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;0 = this special offer is valid only for adults
                     1 = this special offer is only valid for children&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:enumeration value="0" /&gt;
+                    &lt;xs:enumeration value="1" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
         &lt;/xs:attribute&gt;
         &lt;xs:attribute name="SpecialCommission"
                       type="xs:float"&gt;
@@ -1435,17 +1024,23 @@
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
         &lt;xs:attribute name="ChildChildNr"
-                      type="xs:integer"&gt;
+                      type="xs:nonNegativeInteger"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;this special offer for a baby or child is valid for the n-th child or baby equal ChildChildNr for ex. first baby/child or second baby/child&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
         &lt;xs:attribute name="ChildAdultNr"
-                      type="xs:integer"&gt;
+                      type="xs:nonNegativeInteger"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;this special offer for the baby or child is valid if it is accompanied by number of adults equal ChildAdultNr&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
+        &lt;xs:attributeGroup ref="DateFromToAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="WeekdaysValidAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="AddAmountAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="DescIdAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="AcctAttributeGroup" /&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="EarlyBookingsChildren"&gt;
         &lt;xs:sequence&gt;
@@ -1456,56 +1051,17 @@
         &lt;/xs:sequence&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="EarlyBookingAttributes"&gt;
-        &lt;xs:attributeGroup ref="BuyAttributes" /&gt;
-        &lt;xs:attribute name="DateFrom"
-                      type="xs:date"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is larger or equal to this date.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DateTo"
-                      type="xs:date"
-                      use="required"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Rule is valid for bookings that have a start date that is less than or equal to this date.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
+        &lt;xs:attributeGroup ref="BuyAttributeGroup" /&gt;
         &lt;xs:attribute name="FromDay"
-                      type="xs:integer"&gt;
+                      type="xs:nonNegativeInteger"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;From which day is this early booking rule relevant.&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
         &lt;xs:attribute name="ToDay"
-                      type="xs:integer"&gt;
+                      type="xs:nonNegativeInteger"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;To which day is this early booking rule relevant.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DaysBeforeDepartureFrom"
-                      type="xs:integer"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Number of days before the booking date: from&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DaysBeforeDepartureTo"
-                      type="xs:integer"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Number of days before the booking date: to&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DateBeforeDepartureFrom"
-                      type="xs:date"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Date from when the booking can be made, for this rule to be relevant
-                    Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="DateBeforeDepartureTo"
-                      type="xs:date"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
         &lt;xs:attribute name="Percent"
@@ -1514,52 +1070,88 @@
                 &lt;xs:documentation&gt;Percentage&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
-        &lt;xs:attributeGroup ref="DateRelevantAttributes" /&gt;
-        &lt;xs:attribute name="AddAmount1"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This amount needs to be added to the calculated early booking amount. Normally this will be a negative amount.
-                    Note: one can have a percentage as well as an AddAmount. In this case, the percentage amount is calculated, and then the AddAmount is added to the result&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AddAmount2"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This amount needs to be added to the calculated early booking amount. Normally this will be a negative amount.
-                    Note: one can have a percentage as well as an AddAmount. In this case, the percentage amount is calculated, and then the AddAmount is added to the result&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AddAmount3"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This amount needs to be added to the calculated early booking amount. Normally this will be a negative amount.
-                    Note: one can have a percentage as well as an AddAmount. In this case, the percentage amount is calculated, and then the AddAmount is added to the result&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AddAmount4"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;This amount needs to be added to the calculated early booking amount. Normally this will be a negative amount.
-                    Note: one can have a percentage as well as an AddAmount. In this case, the percentage amount is calculated, and then the AddAmount is added to the result&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="ForceDisplay"
-                      type="xs:integer"&gt;
+        &lt;xs:attributeGroup ref="DateRelevantAttributeGroup" /&gt;
+        &lt;xs:attribute name="ForceDisplay"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;determines whether to show a price with 0 amount
                     0 = do not show
                     1 = has to be shown&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:enumeration value="0" /&gt;
+                    &lt;xs:enumeration value="1" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
         &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="ForAllDays"
-                      type="xs:integer"&gt;
+        &lt;xs:attribute name="ForAllDays"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;If ForceDisplay =1 and ForAllDays=1 then the amount has to be shown for all relevant booking days.
                     If ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:enumeration value="0" /&gt;
+                    &lt;xs:enumeration value="1" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
         &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="SpecialCommission"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;percentage if the price line has a special commission
+                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attributeGroup ref="DateFromToAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="AddAmountAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="DescIdAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="AcctAttributeGroup" /&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:attributeGroup name="DateFromToAttributeGroup"&gt;
+        &lt;xs:attribute name="DateFrom"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Date from which this price is valid&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DateTo"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Date to which this price is valid&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="WeekdaysValidAttributeGroup"&gt;
+        &lt;xs:attribute name="WeekdaysValid"
+                      type="xs:string"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;A seven character string, e.g. 1000000
+                    The above example can be interpreted, that this price is only relevant for a Monday.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="BabyChildAttributeGroup"&gt;
+        &lt;xs:attribute name="Baby"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation /&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Child"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation /&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="DescIdAttributeGroup"&gt;
         &lt;xs:attribute name="DescId"
-                      type="xs:integer"
+                      type="xs:nonNegativeInteger"
                       use="required"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
@@ -1573,32 +1165,45 @@
                     &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="SpecialCommission"
-                      type="xs:float"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;percentage if the price line has a special commission
-                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-        &lt;/xs:attribute&gt;
-    &lt;/xs:complexType&gt;
-    &lt;xs:attributeGroup name="BuyAttributes"&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="BuyAttributeGroup"&gt;
         &lt;xs:attribute name="BuyGross"
                       type="xs:float"
-                      use="required" /&gt;
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Gross buy amount in the buying currency. Is normally equal to BuyNet.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
         &lt;xs:attribute name="BuyNet"
                       type="xs:float"
-                      use="required" /&gt;
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Net buy amount in the buying currency&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
         &lt;xs:attribute name="BuyAcct"
                       type="xs:string"
-                      use="required" /&gt;
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Account number of the buying price amount&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
         &lt;xs:attribute name="BuyCurr"
                       type="xs:string"
-                      use="required" /&gt;
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Buying currency&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
         &lt;xs:attribute name="BuyAmtBaseCurr"
                       type="xs:float"
-                      use="required" /&gt;
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Buy amount in the base currency of TO Online&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
     &lt;/xs:attributeGroup&gt;
-    &lt;xs:attributeGroup name="DateRelevantAttributes"&gt;
+    &lt;xs:attributeGroup name="DateRelevantAttributeGroup"&gt;
         &lt;xs:attribute name="StartDateRelevant"
                       type="xs:boolean"&gt;
             &lt;xs:annotation&gt;
@@ -1609,6 +1214,187 @@
                       type="xs:boolean"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;If the DateTo fits into the booking period of the hotel, i.e. the last day of the booking is less than or equal to DateTo, this special is relevant&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="DayAttributeGroup"&gt;
+        &lt;xs:attribute name="Day"
+                      type="xs:date"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Specific date for which this price is valid&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="SpecialCommissionAttributeGroup"&gt;
+        &lt;xs:attribute name="SpecialCommission"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;percentage if the price line has a special commission
+                    Internal: P_SPEZFLAG must be 1&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="AddAmountAttributeGroup"&gt;
+        &lt;xs:attribute name="AddAmount1"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AddAmount2"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AddAmount3"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AddAmount4"
+                      type="xs:float"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="SellGeneralAttributeGroup"&gt;
+        &lt;xs:attributeGroup ref="DescIdAttributeGroup" /&gt;
+        &lt;xs:attribute name="P1"
+                      type="xs:float"
+                      use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="P2"
+                      type="xs:float"
+                      use="optional"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="P3"
+                      type="xs:float"
+                      use="optional"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="P4"
+                      type="xs:float"
+                      use="optional"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Type"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;P = Price per person (default)
+                    R = Price per Room&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:enumeration value="P" /&gt;
+                    &lt;xs:enumeration value="R" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AgeFrom"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:minInclusive value="0" /&gt;
+                    &lt;xs:maxInclusive value="150" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AgeTo"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is per non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:minInclusive value="0" /&gt;
+                    &lt;xs:maxInclusive value="150" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="NotSpecialRelevant"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Some price lines must be ignored when calculating a special.
+                    1 = NotSpecialRelevant&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:enumeration value="0" /&gt;
+                    &lt;xs:enumeration value="1" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attributeGroup ref="SpecialCommissionAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="AcctAttributeGroup" /&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="ChildIdxNrAttributeGroup"&gt;
+        &lt;xs:attribute name="ChildIdxNr"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
+                    ChildIndexNr=1 (first additional child in the room)
+                    ChildIndexNr=2 (second additional child in the room)
+                    ChildIndexNr=0 (no additional children in room)
+                    If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
+                    Internal: TYPE2
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
+                    Internal: Type3
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ&amp;gt;0&amp;amp;$ref.P_PROZERMAESSIG=0,1,1,1,&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:enumeration value="0" /&gt;
+                    &lt;xs:enumeration value="1" /&gt;
+                    &lt;xs:enumeration value="2" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="DaysDateBeforeDepartureAttributeGroup"&gt;
+        &lt;xs:attribute name="DaysBeforeDepartureFrom"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Number of days before the booking date: from
+                    Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DaysBeforeDepartureTo"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Number of days before the booking date: to
+                    Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DateBeforeDepartureFrom"
+                      type="xs:date"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Date from when the booking can be made, for this rule to be relevant Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="DateBeforeDepartureTo"
+                      type="xs:date"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="AcctAttributeGroup"&gt;
+        &lt;xs:attribute name="Acct"
+                      type="xs:string"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Account number for this price line&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
     &lt;/xs:attributeGroup&gt;
@@ -1625,8 +1411,19 @@
                <td width="120px;"></td>
                <td>
                   <ul>
-                     <li><a href="buyattributes.html">BuyAttributes</a></li>
-                     <li><a href="daterelevantattributes.html">DateRelevantAttributes</a></li>
+                     <li><a href="acctattributegroup.html">AcctAttributeGroup</a></li>
+                     <li><a href="addamountattributegroup.html">AddAmountAttributeGroup</a></li>
+                     <li><a href="babychildattributegroup.html">BabyChildAttributeGroup</a></li>
+                     <li><a href="buyattributegroup.html">BuyAttributeGroup</a></li>
+                     <li><a href="childidxnrattributegroup.html">ChildIdxNrAttributeGroup</a></li>
+                     <li><a href="datefromtoattributegroup.html">DateFromToAttributeGroup</a></li>
+                     <li><a href="daterelevantattributegroup.html">DateRelevantAttributeGroup</a></li>
+                     <li><a href="dayattributegroup.html">DayAttributeGroup</a></li>
+                     <li><a href="daysdatebeforedepartureattributegroup.html">DaysDateBeforeDepartureAttributeGroup</a></li>
+                     <li><a href="descidattributegroup.html">DescIdAttributeGroup</a></li>
+                     <li><a href="sellgeneralattributegroup.html">SellGeneralAttributeGroup</a></li>
+                     <li><a href="specialcommissionattributegroup.html">SpecialCommissionAttributeGroup</a></li>
+                     <li><a href="weekdaysvalidattributegroup.html">WeekdaysValidAttributeGroup</a></li>
                   </ul>
                </td>
             </tr>
@@ -1647,6 +1444,9 @@
                      <li><a href="destinationattributes.html">DestinationAttributes</a></li>
                      <li><a href="earlybookingattributes.html">EarlyBookingAttributes</a></li>
                      <li><a href="earlybookingschildren.html">EarlyBookingsChildren</a></li>
+                     <li><a href="iteminforequest.html">ItemInfoRequest</a></li>
+                     <li><a href="iteminfotext.html">ItemInfoText</a></li>
+                     <li><a href="iteminfos.html">ItemInfos</a></li>
                      <li><a href="onetimeattributes.html">OneTimeAttributes</a></li>
                      <li><a href="onetimeschildren.html">OneTimesChildren</a></li>
                      <li><a href="perdaypriceattributes.html">PerDayPriceAttributes</a></li>

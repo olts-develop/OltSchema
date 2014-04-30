@@ -1,0 +1,225 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for schema item SellGeneralAttributeGroup in Hotel Import Schema Documentation</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('AttributeGroup', 'sellgeneralattributegroup');
+                    </script><div class="pageheader">
+         Documentation for Hotel Import Schema Documentation
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>AttributeGroup</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>SellGeneralAttributeGroup</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="hotelimport_xsd.html">hotelimport.xsd</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="227,956,372,1001" href="acct.html" alt="Drilldown into Acct"></area>
+                     <area shape="rect" coords="207,931,407,1011" href="acctattributegroup.html" alt="Drilldown into AcctAttributeGroup"></area>
+                     <area shape="rect" coords="227,858,450,913" href="specialcommission.html" alt="Drilldown into SpecialCommission"></area>
+                     <area shape="rect" coords="207,833,490,923" href="specialcommissionattributegroup.html" alt="Drilldown into SpecialCommissionAttributeGroup"></area>
+                     <area shape="rect" coords="207,744,467,825" href="notspecialrelevant.html" alt="Drilldown into NotSpecialRelevant"></area>
+                     <area shape="rect" coords="207,646,514,737" href="ageto.html" alt="Drilldown into AgeTo"></area>
+                     <area shape="rect" coords="207,537,514,638" href="agefrom.html" alt="Drilldown into AgeFrom"></area>
+                     <area shape="rect" coords="207,449,348,530" href="type.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="207,387,513,442" href="p4.html" alt="Drilldown into P4"></area>
+                     <area shape="rect" coords="207,324,513,379" href="p3.html" alt="Drilldown into P3"></area>
+                     <area shape="rect" coords="207,262,513,317" href="p2.html" alt="Drilldown into P2"></area>
+                     <area shape="rect" coords="207,200,513,255" href="p1.html" alt="Drilldown into P1"></area>
+                     <area shape="rect" coords="227,27,518,183" href="descid.html" alt="Drilldown into DescId"></area>
+                     <area shape="rect" coords="207,2,526,193" href="descidattributegroup.html" alt="Drilldown into DescIdAttributeGroup"></area></map><img src="images/sellgeneralattributegroup.png" border="0" alt="XSD Diagram of SellGeneralAttributeGroup" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:attributeGroup name="SellGeneralAttributeGroup"&gt;
+    &lt;xs:attributeGroup ref="DescIdAttributeGroup" /&gt;
+    &lt;xs:attribute name="P1" type="xs:float" use="required"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="P2" type="xs:float" use="optional"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="P3" type="xs:float" use="optional"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="P4" type="xs:float" use="optional"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="Type"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;P = Price per person (default)
+                    R = Price per Room&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:string"&gt;
+                &lt;xs:enumeration value="P" /&gt;
+                &lt;xs:enumeration value="R" /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="AgeFrom"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                &lt;xs:minInclusive value="0" /&gt;
+                &lt;xs:maxInclusive value="150" /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="AgeTo"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is per non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                &lt;xs:minInclusive value="0" /&gt;
+                &lt;xs:maxInclusive value="150" /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="NotSpecialRelevant"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Some price lines must be ignored when calculating a special.
+                    1 = NotSpecialRelevant&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                &lt;xs:enumeration value="0" /&gt;
+                &lt;xs:enumeration value="1" /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attributeGroup ref="SpecialCommissionAttributeGroup" /&gt;
+    &lt;xs:attributeGroup ref="AcctAttributeGroup" /&gt;
+&lt;/xs:attributeGroup&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DescId</td>
+                        <td><a href="descid.html">DescId</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">P1</td>
+                        <td><a href="p1.html">P1</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">P2</td>
+                        <td><a href="p2.html">P2</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">P3</td>
+                        <td><a href="p3.html">P3</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">P4</td>
+                        <td><a href="p4.html">P4</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Type</td>
+                        <td><a href="type.html">Type</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AgeFrom</td>
+                        <td><a href="agefrom.html">AgeFrom</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AgeTo</td>
+                        <td><a href="ageto.html">AgeTo</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">NotSpecialRelevant</td>
+                        <td><a href="notspecialrelevant.html">NotSpecialRelevant</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SpecialCommission</td>
+                        <td><a href="specialcommission.html">SpecialCommission</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Acct</td>
+                        <td><a href="acct.html">Acct</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.4.5047</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Data-Binding.aspx">XML Data Binding</a></div>
+   </body>
+</html>

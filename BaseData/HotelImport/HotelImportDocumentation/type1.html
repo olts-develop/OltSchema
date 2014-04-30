@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item Type in Hotel Price Import</title>
+      <title>Docs for schema item Type in Hotel Import Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Attribute', 'type1');
                     </script><div class="pageheader">
-         Documentation for Hotel Price Import
+         Documentation for Hotel Import Schema Documentation
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -38,8 +38,15 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>P = Price per person (default)
-R = Price per Room</pre></td>
+               <td><pre>Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
+Day1 - 100 CHF
+Day2 - 110 CHF
+Day3 - 120 CHF
+Day4 - 130 CHF
+Day5 - 140 CHF
+Day6 - 150 CHF
+Day7 - 160 CHF
+If the Type is EndDays, and I have a valid 7/5, then the special offer will be 150 + 160 CHF.</pre></td>
             </tr>
          </tbody>
       </table>
@@ -64,13 +71,23 @@ R = Price per Room</pre></td>
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:attribute name="Type"&gt;
     &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;P = Price per person (default)
-                    R = Price per Room&lt;/xs:documentation&gt;
+        &lt;xs:documentation&gt;Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
+                    Day1 - 100 CHF
+                    Day2 - 110 CHF
+                    Day3 - 120 CHF
+                    Day4 - 130 CHF
+                    Day5 - 140 CHF
+                    Day6 - 150 CHF
+                    Day7 - 160 CHF
+                    If the Type is EndDays, and I have a valid 7/5, then the special offer will be 150 + 160 CHF.&lt;/xs:documentation&gt;
     &lt;/xs:annotation&gt;
     &lt;xs:simpleType&gt;
         &lt;xs:restriction base="xs:string"&gt;
-            &lt;xs:enumeration value="P" /&gt;
-            &lt;xs:enumeration value="R" /&gt;
+            &lt;xs:enumeration value="EndDays" /&gt;
+            &lt;xs:enumeration value="StartDays" /&gt;
+            &lt;xs:enumeration value="Average" /&gt;
+            &lt;xs:enumeration value="MinValue" /&gt;
+            &lt;xs:enumeration value="MaxValue" /&gt;
         &lt;/xs:restriction&gt;
     &lt;/xs:simpleType&gt;
 &lt;/xs:attribute&gt;</code></pre></td>
@@ -92,11 +109,23 @@ R = Price per Room</pre></td>
                      </tr>
                      <tr>
                         <td class="label" width="120px;"><b>Enumeration</b></td>
-                        <td>P</td>
+                        <td>EndDays</td>
                      </tr>
                      <tr>
                         <td class="label" width="120px;"><b>Enumeration</b></td>
-                        <td>R</td>
+                        <td>StartDays</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Average</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>MinValue</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>MaxValue</td>
                      </tr>
                   </table>
                </td>

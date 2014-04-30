@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item Prices in Hotel Price Import</title>
+      <title>Docs for schema item Prices in Hotel Import Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Element', 'prices');
                     </script><div class="pageheader">
-         Documentation for Hotel Price Import
+         Documentation for Hotel Import Schema Documentation
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -46,13 +46,15 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="195,233,448,258" href="earlybookings.html" alt="Drilldown into EarlyBookings"></area>
-                     <area shape="rect" coords="195,181,442,225" href="specialoffers.html" alt="Drilldown into SpecialOffers"></area>
-                     <area shape="rect" coords="195,149,399,174" href="onetimes.html" alt="Drilldown into OneTimes"></area>
-                     <area shape="rect" coords="195,117,479,142" href="addperdayprices.html" alt="Drilldown into AddPerDayPrices"></area>
-                     <area shape="rect" coords="195,85,435,110" href="perdayprices.html" alt="Drilldown into PerDayPrices"></area>
-                     <area shape="rect" coords="175,53,271,78" href="currencies.html" alt="Drilldown into Currencies"></area>
-                     <area shape="rect" coords="175,1,363,46" href="descs.html" alt="Drilldown into Descs"></area></map><img src="images/prices.png" border="0" alt="XSD Diagram of Prices" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="195,288,448,313" href="earlybookings.html" alt="Drilldown into EarlyBookings"></area>
+                     <area shape="rect" coords="195,256,435,281" href="specialoffers.html" alt="Drilldown into SpecialOffers"></area>
+                     <area shape="rect" coords="195,224,399,249" href="onetimes.html" alt="Drilldown into OneTimes"></area>
+                     <area shape="rect" coords="195,192,479,217" href="addperdayprices.html" alt="Drilldown into AddPerDayPrices"></area>
+                     <area shape="rect" coords="195,160,435,185" href="perdayprices.html" alt="Drilldown into PerDayPrices"></area>
+                     <area shape="rect" coords="175,128,271,153" href="currencies.html" alt="Drilldown into Currencies"></area>
+                     <area shape="rect" coords="471,27,765,112" href="desc1.html" alt="Drilldown into Desc"></area>
+                     <area shape="rect" coords="388,2,779,122" href="desc.html" alt="Drilldown into Desc"></area>
+                     <area shape="rect" coords="175,39,363,84" href="descs.html" alt="Drilldown into Descs"></area></map><img src="images/prices.png" border="0" alt="XSD Diagram of Prices" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -102,13 +104,7 @@
             &lt;xs:element name="PerDayPrices" type="PerDayPricesChildren" minOccurs="0" /&gt;
             &lt;xs:element name="AddPerDayPrices" type="AddPerDayPricesChildren" minOccurs="0" /&gt;
             &lt;xs:element name="OneTimes" type="OneTimesChildren" minOccurs="0" /&gt;
-            &lt;xs:element name="SpecialOffers" minOccurs="0"&gt;
-                &lt;xs:complexType&gt;
-                    &lt;xs:complexContent mixed="false"&gt;
-                        &lt;xs:extension base="SpecialOffersChildren" /&gt;
-                    &lt;/xs:complexContent&gt;
-                &lt;/xs:complexType&gt;
-            &lt;/xs:element&gt;
+            &lt;xs:element name="SpecialOffers" type="SpecialOffersChildren" minOccurs="0" /&gt;
             &lt;xs:element name="EarlyBookings" type="EarlyBookingsChildren" minOccurs="0" /&gt;
         &lt;/xs:sequence&gt;
     &lt;/xs:complexType&gt;
