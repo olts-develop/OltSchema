@@ -631,12 +631,18 @@
         </xs:annotation>
         <xs:sequence>
             <xs:element name="Desc"
-                        type="Translation"
                         minOccurs="0"
                         maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line. Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.</xs:documentation>
                 </xs:annotation>
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="Translation">
+                            <xs:attributeGroup ref="DescIdAttributeGroup" />
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
             </xs:element>
         </xs:sequence>
     </xs:complexType>
