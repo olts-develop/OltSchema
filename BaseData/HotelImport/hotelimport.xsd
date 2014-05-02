@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2014 Designer Edition 12.1.4.5047 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.1.6.5068 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="Hotels">
@@ -487,6 +487,12 @@
                                                                             <xs:documentation>Reservation-Supplier-Code for this room</xs:documentation>
                                                                         </xs:annotation>
                                                                     </xs:attribute>
+                                                                    <xs:attribute name="Nr"
+                                                                                  type="xs:nonNegativeInteger">
+                                                                        <xs:annotation>
+                                                                            <xs:documentation>TO Online customer nr for this supplier</xs:documentation>
+                                                                        </xs:annotation>
+                                                                    </xs:attribute>
                                                                 </xs:extension>
                                                             </xs:simpleContent>
                                                         </xs:complexType>
@@ -502,6 +508,12 @@
                                                                             <xs:documentation>Payment-Supplier-Code for this room</xs:documentation>
                                                                         </xs:annotation>
                                                                     </xs:attribute>
+                                                                    <xs:attribute name="Nr"
+                                                                                  type="xs:nonNegativeInteger">
+                                                                        <xs:annotation>
+                                                                            <xs:documentation>TO Online customer nr for this supplier</xs:documentation>
+                                                                        </xs:annotation>
+                                                                    </xs:attribute>
                                                                 </xs:extension>
                                                             </xs:simpleContent>
                                                         </xs:complexType>
@@ -515,6 +527,12 @@
                                                                                   type="xs:string">
                                                                         <xs:annotation>
                                                                             <xs:documentation>Voucher-Supplier-Code for this room</xs:documentation>
+                                                                        </xs:annotation>
+                                                                    </xs:attribute>
+                                                                    <xs:attribute name="Nr"
+                                                                                  type="xs:nonNegativeInteger">
+                                                                        <xs:annotation>
+                                                                            <xs:documentation>TO Online customer nr for this supplier</xs:documentation>
                                                                         </xs:annotation>
                                                                     </xs:attribute>
                                                                 </xs:extension>
