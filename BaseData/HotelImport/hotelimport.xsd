@@ -1221,9 +1221,20 @@
         <xs:attribute name="SpecialCommission"
                       type="xs:float">
             <xs:annotation>
-                <xs:documentation>percentage if the price line has a special commission
-                    Internal: P_SPEZFLAG must be 1</xs:documentation>
+                <xs:documentation>Percentage if the price line has a special commission. Note this can be supplied in combination with SpecialCommissionFlag. Normally a supplier sets the commission for a price line to a fixed value, then SpecialCommission and SpecialCommissionFlag both need to be supplied. The meal, for example, can have a fixed commission which differs to the normal commission given to the travel agent. 
+</xs:documentation>
             </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="SpecialCommissionFlag">
+            <xs:annotation>
+                <xs:documentation>Internal: P_SPEZFLAG</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
         </xs:attribute>
     </xs:attributeGroup>
     <xs:attributeGroup name="AddAmountAttributeGroup">
