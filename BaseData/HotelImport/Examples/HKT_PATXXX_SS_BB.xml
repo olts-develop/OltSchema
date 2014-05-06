@@ -9988,33 +9988,56 @@ Junior Suite (17): chambres luxueuses de 45 m2 dans le bâtiment principal avec e
             </Suitable>
         </HotelInfo>
         <ItemInfos>
-            <ItemInfo>
-                <BeginDate>2008-11-25</BeginDate>
-                <EndDate>2024-12-31</EndDate>
-                <Invoice>true</Invoice>
-                <Itinerary>true</Itinerary>
-                <External>true</External>
-                <Title>
-                    <de>Information</de>
-                    <en />
-                    <fr>Information</fr>
-                    <it />
-                </Title>
-                <Text>
-                    <de><![CDATA[Das Hotel verbietet ab 18.00 Uhr Gäste auf den Zimmern. Für nicht im voraus gebuchte und registrierte Zimmergäste verlangt das Hotel vor Ort Gebühren in der Höhe eines Zimmerpreises.]]></de>
-                    <en />
-                    <fr><![CDATA[L'hôtel interdit toute visite dans les chambres à partir de 18h00. Pour les visites qui n'ont pas été annoncées à l'avance, l'hôtel facturera sur place des frais à la hauteur du prix de la chambre.]]></fr>
-                    <it />
-                </Text>
-            </ItemInfo>
-            <Request>
-                <Day>2014-12-01</Day>
-                <RQ>1</RQ>
-            </Request>
-            <Request>
-                <Day>2014-12-02</Day>
-                <FS>1</FS>
-            </Request>
+            <ItemInfoTexts>
+                <ItemInfoText>
+                    <BeginDate>2008-11-25</BeginDate>
+                    <EndDate>2024-12-31</EndDate>
+                    <Invoice>true</Invoice>
+                    <Itinerary>true</Itinerary>
+                    <External>true</External>
+                    <Title>
+                        <de>Information</de>
+                        <en />
+                        <fr>Information</fr>
+                        <it />
+                    </Title>
+                    <Text>
+                        <de><![CDATA[Das Hotel verbietet ab 18.00 Uhr Gäste auf den Zimmern. Für nicht im voraus gebuchte und registrierte Zimmergäste verlangt das Hotel vor Ort Gebühren in der Höhe eines Zimmerpreises.]]></de>
+                        <en />
+                        <fr><![CDATA[L'hôtel interdit toute visite dans les chambres à partir de 18h00. Pour les visites qui n'ont pas été annoncées à l'avance, l'hôtel facturera sur place des frais à la hauteur du prix de la chambre.]]></fr>
+                        <it />
+                    </Text>
+                </ItemInfoText>
+                <ItemInfoText>
+                    <BeginDate>2008-11-25</BeginDate>
+                    <EndDate>2024-12-31</EndDate>
+                    <Invoice>true</Invoice>
+                    <Itinerary>true</Itinerary>
+                    <External>true</External>
+                    <Title>
+                        <de>Information</de>
+                        <en />
+                        <fr>Information</fr>
+                        <it />
+                    </Title>
+                    <Text>
+                        <de><![CDATA[Das Hotel verbietet ab 18.00 Uhr Gäste auf den Zimmern. Für nicht im voraus gebuchte und registrierte Zimmergäste verlangt das Hotel vor Ort Gebühren in der Höhe eines Zimmerpreises.]]></de>
+                        <en />
+                        <fr><![CDATA[L'hôtel interdit toute visite dans les chambres à partir de 18h00. Pour les visites qui n'ont pas été annoncées à l'avance, l'hôtel facturera sur place des frais à la hauteur du prix de la chambre.]]></fr>
+                        <it />
+                    </Text>
+                </ItemInfoText>
+            </ItemInfoTexts>
+            <ItemInfoRequests>
+                <ItemInfoRequest>
+                    <Day>2014-12-01</Day>
+                    <RQ>1</RQ>
+                </ItemInfoRequest>
+                <ItemInfoRequest>
+                    <Day>2014-12-02</Day>
+                    <FS>1</FS>
+                </ItemInfoRequest>
+            </ItemInfoRequests>
         </ItemInfos>
     </Hotel>
 </Hotels>

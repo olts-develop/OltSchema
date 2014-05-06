@@ -665,21 +665,38 @@
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="ItemInfos">
-        <xs:sequence minOccurs="0"
-                     maxOccurs="unbounded">
-            <xs:element name="ItemInfo"
-                        type="ItemInfoText"
-                        minOccurs="0"
-                        maxOccurs="unbounded">
-                <xs:annotation>
-                    <xs:documentation>ItemInfo this Item, e.g. if in a </xs:documentation>
-                </xs:annotation>
+        <xs:all>
+            <xs:element name="ItemInfoTexts"
+                        minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ItemInfoText"
+                                    type="ItemInfoText"
+                                    minOccurs="0"
+                                    maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:documentation>ItemInfo this Item, e.g. if in a </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
             </xs:element>
-            <xs:element name="Request"
-                        type="ItemInfoRequest"
-                        minOccurs="0"
-                        maxOccurs="unbounded" />
-        </xs:sequence>
+            <xs:element name="ItemInfoRequests"
+                        minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ItemInfoRequest"
+                                    type="ItemInfoRequest"
+                                    minOccurs="0"
+                                    maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:documentation>ItemInfo this Item, e.g. if in a </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
     </xs:complexType>
     <xs:complexType name="ItemInfoText">
         <xs:all>
