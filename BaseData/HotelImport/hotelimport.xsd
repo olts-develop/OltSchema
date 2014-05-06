@@ -1099,6 +1099,12 @@
         <xs:attributeGroup ref="DescIdAttributeGroup" />
         <xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" />
         <xs:attributeGroup ref="AcctAttributeGroup" />
+        <xs:attribute name="MaxNrNights"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>A special offer can be connected to the number of stay nights. If one stays 7 nights the special offer can be different to a stay of 14 nights. The value in this field identified the maximum number of nights for which this rule is relevant.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
     </xs:complexType>
     <xs:attributeGroup name="DateFromToAttributeGroup">
         <xs:attribute name="DateFrom"
