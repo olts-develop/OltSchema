@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2014 Designer Edition 12.1.6.5068 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.1.7.5079 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="Hotels">
@@ -938,6 +938,13 @@
                     If this has a value of 5, and I have a FromDay=6, ToDay=7, then if I book 6 days the customer pays 5 nights, if I book 7 days the customer pays 5 nights. SaveNights and PayNights are mutually exclusive. Only one of the attributes is allowed</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="SaveNights"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>How many nights does the customer effectively save,
+                    If this has a value of 2, and I have a FromDay=6, ToDay=7, then if I book 6 days the customer pays 4 nights, if I book 7 days the customer pays 5 nights. SaveNights and PayNights are mutually exclusive. Only one of the attributes is allowed</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="Type">
             <xs:annotation>
                 <xs:documentation>Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
@@ -974,30 +981,6 @@
                     Always = the special offer is always valid
                     Nr = the attributes DaysBeforeDepartureFrom and DaysBeforeDepartureTo are valid for the calculation
                     Date = the attributes DateBeforeDepartureFrom and DateBeforeDepartureTo are valid for the calculatio</xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-        <xs:attribute name="DayString"
-                      type="xs:string">
-            <xs:annotation>
-                <xs:documentation>If the special offer is a save night (PayNights) like stay from 6 to 7 nights pay 5 and it is revolving 3.
-                    This string shows the sequence of the stay nights.
-                    e.g.:
-                    7-6/5
-                    5/5 Daystring = 5
-                    6/5 Daystring = 5
-                    14/10 Daystring = 7,7
-                    13/10 Daystring = 7,6
-                    12/10 Daystring = 6,6
-                    21/15 Daystring = 7,7,7
-                    20/15 Daystring = 7,7,6
-                    19/15 Daystring = 7,6,6
-                    18/15 Daystring = 6,6,6</xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-        <xs:attribute name="Days"
-                      type="xs:nonNegativeInteger">
-            <xs:annotation>
-                <xs:documentation>this shows the minimum stay nights of the booking.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="Baby">
