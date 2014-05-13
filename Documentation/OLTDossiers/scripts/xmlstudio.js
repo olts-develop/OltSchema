@@ -2,9 +2,13 @@
     hljs.tabReplace = ' ';
     hljs.initHighlightingOnLoad();
 
-    if (window.name != 'contentFrame') {
+    if (window.name != 'ContentFrame') {
         /* if were not open in a frame - load the frame */
-        document.location = 'index.html?url=' + document.location.pathname;
+        var url = document.location.pathname;
+        if (url.length > 0 && url[0] == '/')
+            url = url.substring(1, url.length);
+
+        document.location = 'index.html?url=' + url;
     }
     else {
         $(function () {
@@ -16,8 +20,8 @@
             });
 
             if ($.urlParam('sync') == '') {
-                if (window.parent.frames["_Menu"] != null && itemType != null && selectedItemType != null) {
-                    window.parent.frames["_Menu"].selectItem(itemType, selectedItemType);
+                if (window.parent.frames["MenuFrame"] != null && itemType != null && selectedItemType != null) {
+                    window.parent.frames["MenuFrame"].selectItem(itemType, selectedItemType);
                 }
             }
         });

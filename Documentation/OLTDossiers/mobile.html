@@ -2,7 +2,7 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType Mobile in OLTDossiers XML Schema Documentation</title>
+      <title>Docs for schema item Mobile in OLTDossiers XML Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
-               <td>False</td>
+               <td></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
@@ -50,8 +50,8 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="212,36,360,63" href="number2.html" alt="Drilldown into Number"></area>
-                     <area shape="rect" coords="212,3,369,30" href="areacode2.html" alt="Drilldown into AreaCode"></area></map><img src="images/mobile.png" border="0" alt="XSD Diagram of Mobile" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="349,63,490,118" href="number2.html" alt="Drilldown into Number"></area>
+                     <area shape="rect" coords="349,1,497,56" href="areacode2.html" alt="Drilldown into AreaCode"></area></map><img src="images/mobile.png" border="0" alt="XSD Diagram of Mobile" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -64,27 +64,27 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element name="Mobile" minOccurs="0"&gt;
-  &lt;xs:annotation&gt;
-    &lt;xs:documentation&gt;Mobile phone number of the customer. A complete telephne number can be sent as textdata, but it is also possible to send only the phone number in the textdata, and send the AreaCode separately as an attribute. It is advisable to send all phone or fax numbers as a complete string as the textdata or the relevant node and leave the AreaCode empty.&lt;/xs:documentation&gt;
-  &lt;/xs:annotation&gt;
-  &lt;xs:complexType&gt;
-    &lt;xs:attribute name="AreaCode" use="optional"&gt;
-      &lt;xs:simpleType&gt;
-        &lt;xs:restriction base="xs:string"&gt;
-          &lt;xs:minLength value="0" /&gt;
-          &lt;xs:maxLength value="6" /&gt;
-        &lt;/xs:restriction&gt;
-      &lt;/xs:simpleType&gt;
-    &lt;/xs:attribute&gt;
-    &lt;xs:attribute name="Number" use="required"&gt;
-      &lt;xs:simpleType&gt;
-        &lt;xs:restriction base="xs:string"&gt;
-          &lt;xs:minLength value="0" /&gt;
-          &lt;xs:maxLength value="20" /&gt;
-        &lt;/xs:restriction&gt;
-      &lt;/xs:simpleType&gt;
-    &lt;/xs:attribute&gt;
-  &lt;/xs:complexType&gt;
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Mobile phone number of the customer. A complete telephne number can be sent as textdata, but it is also possible to send only the phone number in the textdata, and send the AreaCode separately as an attribute. It is advisable to send all phone or fax numbers as a complete string as the textdata or the relevant node and leave the AreaCode empty.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:attribute name="AreaCode" use="optional"&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:minLength value="0" /&gt;
+                    &lt;xs:maxLength value="6" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Number" use="required"&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:string"&gt;
+                    &lt;xs:minLength value="0" /&gt;
+                    &lt;xs:maxLength value="20" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -122,6 +122,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.1.0.4725</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Data-Binding.aspx">XML Data Binder</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.7.5079</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Data-Binding.aspx">XML Data Binder</a></div>
    </body>
 </html>

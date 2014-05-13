@@ -2,7 +2,7 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType Payment in OLTDossiers XML Schema Documentation</title>
+      <title>Docs for schema item Payment in OLTDossiers XML Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
-               <td>False</td>
+               <td></td>
             </tr>
          </tbody>
       </table>
@@ -46,19 +46,19 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="221,399,369,426" href="orderid.html" alt="Drilldown into OrderId"></area>
-                     <area shape="rect" coords="221,366,386,393" href="paymentid.html" alt="Drilldown into PaymentId"></area>
-                     <area shape="rect" coords="221,333,412,360" href="externalitemnr1.html" alt="Drilldown into ExternalItemNr"></area>
-                     <area shape="rect" coords="221,300,410,327" href="externalsource2.html" alt="Drilldown into ExternalSource"></area>
-                     <area shape="rect" coords="221,267,490,294" href="creditcardauthorizationcode.html" alt="Drilldown into CreditCardAuthorizationCode"></area>
-                     <area shape="rect" coords="221,234,482,261" href="creditcardpaymentprovider.html" alt="Drilldown into CreditCardPaymentProvider"></area>
-                     <area shape="rect" coords="221,201,397,228" href="saferpayurl.html" alt="Drilldown into SaferPayURL"></area>
-                     <area shape="rect" coords="221,168,392,195" href="prepayment.html" alt="Drilldown into PrePayment"></area>
-                     <area shape="rect" coords="221,135,383,162" href="accountnr.html" alt="Drilldown into AccountNr"></area>
-                     <area shape="rect" coords="221,102,399,129" href="paymenttext.html" alt="Drilldown into PaymentText"></area>
-                     <area shape="rect" coords="221,69,401,96" href="paymenttype.html" alt="Drilldown into PaymentType"></area>
-                     <area shape="rect" coords="221,36,407,63" href="paymentdate.html" alt="Drilldown into PaymentDate"></area>
-                     <area shape="rect" coords="198,3,346,30" href="amount2.html" alt="Drilldown into Amount"></area></map><img src="images/payment.png" border="0" alt="XSD Diagram of Payment" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="194,638,342,683" href="orderid.html" alt="Drilldown into OrderId"></area>
+                     <area shape="rect" coords="194,586,346,631" href="paymentid.html" alt="Drilldown into PaymentId"></area>
+                     <area shape="rect" coords="194,509,481,579" href="externalitemnr1.html" alt="Drilldown into ExternalItemNr"></area>
+                     <area shape="rect" coords="194,432,486,502" href="externalsource2.html" alt="Drilldown into ExternalSource"></area>
+                     <area shape="rect" coords="194,365,455,424" href="creditcardauthorizationcode.html" alt="Drilldown into CreditCardAuthorizationCode"></area>
+                     <area shape="rect" coords="194,266,447,357" href="creditcardpaymentprovider.html" alt="Drilldown into CreditCardPaymentProvider"></area>
+                     <area shape="rect" coords="194,234,360,259" href="saferpayurl.html" alt="Drilldown into SaferPayURL"></area>
+                     <area shape="rect" coords="194,202,354,227" href="prepayment.html" alt="Drilldown into PrePayment"></area>
+                     <area shape="rect" coords="194,170,347,195" href="accountnr.html" alt="Drilldown into AccountNr"></area>
+                     <area shape="rect" coords="194,138,359,163" href="paymenttext.html" alt="Drilldown into PaymentText"></area>
+                     <area shape="rect" coords="194,65,369,131" href="paymenttype.html" alt="Drilldown into PaymentType"></area>
+                     <area shape="rect" coords="194,33,364,58" href="paymentdate.html" alt="Drilldown into PaymentDate"></area>
+                     <area shape="rect" coords="174,1,315,26" href="amount3.html" alt="Drilldown into Amount"></area></map><img src="images/payment.png" border="0" alt="XSD Diagram of Payment" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -71,79 +71,79 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element name="Payment" maxOccurs="unbounded"&gt;
-  &lt;xs:complexType&gt;
-    &lt;xs:all&gt;
-      &lt;xs:element name="Amount" type="xs:decimal" /&gt;
-      &lt;xs:element name="PaymentDate" type="xs:dateTime" minOccurs="0" /&gt;
-      &lt;xs:element name="PaymentType" minOccurs="0"&gt;
-        &lt;xs:simpleType&gt;
-          &lt;xs:restriction base="xs:string"&gt;
-            &lt;xs:enumeration value="DefaultBank" /&gt;
-            &lt;xs:enumeration value="CreditCard" /&gt;
-            &lt;xs:enumeration value="Saferpay" /&gt;
-          &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="PaymentText" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="AccountNr" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="PrePayment" type="xs:boolean" minOccurs="0" /&gt;
-      &lt;xs:element name="SaferPayURL" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="CreditCardPaymentProvider" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:all&gt;
+            &lt;xs:element name="Amount" type="xs:decimal" /&gt;
+            &lt;xs:element name="PaymentDate" type="xs:dateTime" minOccurs="0" /&gt;
+            &lt;xs:element name="PaymentType" minOccurs="0"&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="DefaultBank" /&gt;
+                        &lt;xs:enumeration value="CreditCard" /&gt;
+                        &lt;xs:enumeration value="Saferpay" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="PaymentText" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="AccountNr" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="PrePayment" type="xs:boolean" minOccurs="0" /&gt;
+            &lt;xs:element name="SaferPayURL" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="CreditCardPaymentProvider" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;
 Payment Provider
 1 = DATATRANS, 
 2 = SAFERPAY&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:simpleType&gt;
-          &lt;xs:restriction base="xs:integer"&gt;
-            &lt;xs:enumeration value="1" /&gt;
-            &lt;xs:enumeration value="2" /&gt;
-          &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="CreditCardAuthorizationCode" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Authorization code sent by the credit card payment provider&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:simpleType&gt;
-          &lt;xs:restriction base="xs:string"&gt;
-            &lt;xs:maxLength value="80" /&gt;
-          &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="ExternalSource" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Source of the dossier item, e.g. MOBS, FIFA, DYNAPACK, OTFONLY, OTHONLY, VOEGELE, TUIINC etc.&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:simpleType&gt;
-          &lt;xs:restriction base="xs:string"&gt;
-            &lt;xs:maxLength value="20" /&gt;
-          &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="ExternalItemNr" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Unique external id for this payment in the external system. Allows the backoffice to recognise resent payments.&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:simpleType&gt;
-          &lt;xs:restriction base="xs:string"&gt;
-            &lt;xs:maxLength value="80" /&gt;
-          &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="PaymentId" type="xs:string" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Is sent by the credit card company&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="OrderId" type="xs:string" minOccurs="0"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Is sent by the credit card company&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-    &lt;/xs:all&gt;
-  &lt;/xs:complexType&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:integer"&gt;
+                        &lt;xs:enumeration value="1" /&gt;
+                        &lt;xs:enumeration value="2" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="CreditCardAuthorizationCode" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Authorization code sent by the credit card payment provider&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:maxLength value="80" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="ExternalSource" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Source of the dossier item, e.g. MOBS, FIFA, DYNAPACK, OTFONLY, OTHONLY, VOEGELE, TUIINC etc.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:maxLength value="20" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="ExternalItemNr" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Unique external id for this payment in the external system. Allows the backoffice to recognise resent payments.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:maxLength value="80" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="PaymentId" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Is sent by the credit card company&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="OrderId" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Is sent by the credit card company&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:all&gt;
+    &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -165,7 +165,7 @@ Payment Provider
                      </tr>
                      <tr>
                         <td class="first">Amount</td>
-                        <td><a href="amount2.html">Amount</a></td>
+                        <td><a href="amount3.html">Amount</a></td>
                         <td class="mid">(1)</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -247,6 +247,6 @@ Payment Provider
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.1.0.4725</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.7.5079</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
    </body>
 </html>

@@ -25,14 +25,14 @@
 
                           function PopulateMainFrame() {
                           if (getURLParam('url') != '') {
-                          window.frames['contentFrame'].location = getURLParam('url');
+                          window.frames['ContentFrame'].location = getURLParam('url');
                           }
                           }
                         --></script></head>
    <frameset>
       <frameset cols="300,*" onload="PopulateMainFrame()">
-         <frame src="menu.html" name="_Menu"></frame>
-         <frame src="defaultpage.html" name="contentFrame"></frame>
+         <frame src="menu.html" name="MenuFrame"></frame>
+         <frame src="defaultpage.html" name="ContentFrame"></frame>
          <noframes>
             <body></body>
          </noframes>

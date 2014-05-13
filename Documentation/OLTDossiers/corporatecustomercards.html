@@ -2,7 +2,7 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType CorporateCustomerCards in OLTDossiers XML Schema Documentation</title>
+      <title>Docs for schema item CorporateCustomerCards in OLTDossiers XML Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
@@ -26,7 +26,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
-               <td>False</td>
+               <td></td>
             </tr>
          </tbody>
       </table>
@@ -38,7 +38,7 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="292,3,550,30" href="corporatecustomercard.html" alt="Drilldown into CorporateCustomerCard"></area></map><img src="images/corporatecustomercards.png" border="0" alt="XSD Diagram of CorporateCustomerCards" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="265,1,492,26" href="corporatecustomercard.html" alt="Drilldown into CorporateCustomerCard"></area></map><img src="images/corporatecustomercards.png" border="0" alt="XSD Diagram of CorporateCustomerCards" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -51,45 +51,45 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element name="CorporateCustomerCards"&gt;
-  &lt;xs:complexType&gt;
-    &lt;xs:sequence&gt;
-      &lt;xs:element maxOccurs="unbounded" name="CorporateCustomerCard"&gt;
-        &lt;xs:complexType&gt;
-          &lt;xs:attribute name="Seq" type="xs:string" use="required" /&gt;
-          &lt;xs:attribute name="Code" type="xs:string" use="required" /&gt;
-          &lt;xs:attribute name="Type" use="required"&gt;
-            &lt;xs:annotation&gt;
-              &lt;xs:documentation&gt;Type of card: airline, car, cc or hotel&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-            &lt;xs:simpleType&gt;
-              &lt;xs:restriction base="xs:string"&gt;
-                &lt;xs:enumeration value="airline" /&gt;
-                &lt;xs:enumeration value="car" /&gt;
-                &lt;xs:enumeration value="cc" /&gt;
-                &lt;xs:enumeration value="hotel" /&gt;
-              &lt;/xs:restriction&gt;
-            &lt;/xs:simpleType&gt;
-          &lt;/xs:attribute&gt;
-          &lt;xs:attribute name="Expiry" use="required"&gt;
-            &lt;xs:annotation&gt;
-              &lt;xs:documentation&gt;e.g. '0309' für end March 2009&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-            &lt;xs:simpleType&gt;
-              &lt;xs:restriction base="xs:string" /&gt;
-            &lt;/xs:simpleType&gt;
-          &lt;/xs:attribute&gt;
-          &lt;xs:attribute name="Number" use="required"&gt;
-            &lt;xs:annotation&gt;
-              &lt;xs:documentation&gt;Card number&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-            &lt;xs:simpleType&gt;
-              &lt;xs:restriction base="xs:string" /&gt;
-            &lt;/xs:simpleType&gt;
-          &lt;/xs:attribute&gt;
-        &lt;/xs:complexType&gt;
-      &lt;/xs:element&gt;
-    &lt;/xs:sequence&gt;
-  &lt;/xs:complexType&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element maxOccurs="unbounded" name="CorporateCustomerCard"&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:attribute name="Seq" type="xs:string" use="required" /&gt;
+                    &lt;xs:attribute name="Code" type="xs:string" use="required" /&gt;
+                    &lt;xs:attribute name="Type" use="required"&gt;
+                        &lt;xs:annotation&gt;
+                            &lt;xs:documentation&gt;Type of card: airline, car, cc or hotel&lt;/xs:documentation&gt;
+                        &lt;/xs:annotation&gt;
+                        &lt;xs:simpleType&gt;
+                            &lt;xs:restriction base="xs:string"&gt;
+                                &lt;xs:enumeration value="airline" /&gt;
+                                &lt;xs:enumeration value="car" /&gt;
+                                &lt;xs:enumeration value="cc" /&gt;
+                                &lt;xs:enumeration value="hotel" /&gt;
+                            &lt;/xs:restriction&gt;
+                        &lt;/xs:simpleType&gt;
+                    &lt;/xs:attribute&gt;
+                    &lt;xs:attribute name="Expiry" use="required"&gt;
+                        &lt;xs:annotation&gt;
+                            &lt;xs:documentation&gt;e.g. '0309' für end March 2009&lt;/xs:documentation&gt;
+                        &lt;/xs:annotation&gt;
+                        &lt;xs:simpleType&gt;
+                            &lt;xs:restriction base="xs:string" /&gt;
+                        &lt;/xs:simpleType&gt;
+                    &lt;/xs:attribute&gt;
+                    &lt;xs:attribute name="Number" use="required"&gt;
+                        &lt;xs:annotation&gt;
+                            &lt;xs:documentation&gt;Card number&lt;/xs:documentation&gt;
+                        &lt;/xs:annotation&gt;
+                        &lt;xs:simpleType&gt;
+                            &lt;xs:restriction base="xs:string" /&gt;
+                        &lt;/xs:simpleType&gt;
+                    &lt;/xs:attribute&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -121,6 +121,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.1.0.4725</a><br></br>Featuring <a href="http://www.liquid-technologies.com/XmlDataBinding/Xml-Schema-To-VBNet.aspx">XSD to VB Code Generation</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.7.5079</a><br></br>Featuring <a href="http://www.liquid-technologies.com/XmlDataBinding/Xml-Schema-To-VBNet.aspx">XSD to VB Code Generation</a></div>
    </body>
 </html>

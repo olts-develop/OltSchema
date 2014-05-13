@@ -1,154 +1,233 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio Designer Edition 9.1.11.3570 (http://www.liquid-technologies.com)-->
-<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="Travellers">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="Traveller" maxOccurs="unbounded">
-          <xs:complexType>
-            <xs:all>
-              <xs:element name="TravellerSeq" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="0" />
-                    <xs:maxLength value="20" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="TravellerId" type="xs:integer" />
-              <xs:element name="CustomerNr" type="xs:integer" minOccurs="0" />
-              <xs:element name="Language" type="xs:language" minOccurs="0" />
-              <xs:element name="Gender" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>We advise against sending 'c' for 'child' or 'i' for 'infant', but this can be sent in the XML, is interpreted appropriately and some users of the interface send data in this way. Better is sending the Child or Baby nodes for a Child or a Baby. If the child or baby is a male or female, an 'm' or 'f' can then be sent. If the gender is unknown, then the Gender node should not be sent.</xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:enumeration value="m" />
-                    <xs:enumeration value="f" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Child" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:boolean" />
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Baby" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:boolean" />
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="FirstName" type="xs:string" />
-              <xs:element name="LastName" type="xs:string" />
-              <xs:element name="DateOfBirth" type="xs:date" minOccurs="0" />
-              <xs:element name="Email" type="xs:string" minOccurs="0" />
-              <xs:element name="Mobile" minOccurs="0">
-                <xs:complexType>
-                  <xs:attribute name="AreaCode" type="xs:string" />
-                  <xs:attribute name="Number" type="xs:string" />
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="Phone" minOccurs="0">
-                <xs:complexType>
-                  <xs:attribute name="AreaCode" type="xs:string" />
-                  <xs:attribute name="Number" type="xs:string" />
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="Passport" minOccurs="0">
-                <xs:complexType>
-                  <xs:attribute name="PassportNumber" type="xs:string" />
-                  <xs:attribute name="ValidUntil" type="xs:date" />
-                  <xs:attribute name="Nationality" type="xs:string" />
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="TrainCardType" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>
+<!--Created with Liquid XML 2014 Designer Edition 12.1.7.5079 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Travellers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Traveller"
+                            maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="TravellerSeq"
+                                        minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="20" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TravellerId"
+                                        type="xs:integer" />
+                            <xs:element name="CustomerNr"
+                                        type="xs:integer"
+                                        minOccurs="0" />
+                            <xs:element name="Language"
+                                        type="xs:language"
+                                        minOccurs="0" />
+                            <xs:element name="Gender"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>We advise against sending 'c' for 'child' or 'i' for 'infant', but this can be sent in the XML, is interpreted appropriately and some users of the interface send data in this way. Better is sending the Child or Baby nodes for a Child or a Baby. If the child or baby is a male or female, an 'm' or 'f' can then be sent. If the gender is unknown, then the Gender node should not be sent.</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="m" />
+                                        <xs:enumeration value="f" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Child"
+                                        minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Baby"
+                                        minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:boolean" />
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="FirstName"
+                                        type="xs:string" />
+                            <xs:element name="LastName"
+                                        type="xs:string" />
+                            <xs:element name="DateOfBirth"
+                                        type="xs:date"
+                                        minOccurs="0" />
+                            <xs:element name="Email"
+                                        type="xs:string"
+                                        minOccurs="0" />
+                            <xs:element name="Mobile"
+                                        minOccurs="0">
+                                <xs:complexType>
+                                    <xs:attribute name="AreaCode"
+                                                  type="xs:string" />
+                                    <xs:attribute name="Number"
+                                                  type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Phone"
+                                        minOccurs="0">
+                                <xs:complexType>
+                                    <xs:attribute name="AreaCode"
+                                                  type="xs:string" />
+                                    <xs:attribute name="Number"
+                                                  type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Passport"
+                                        minOccurs="0">
+                                <xs:complexType>
+                                    <xs:attribute name="PassportNumber"
+                                                  type="xs:string" />
+                                    <xs:attribute name="ValidUntil"
+                                                  type="xs:date" />
+                                    <xs:attribute name="Nationality"
+                                                  type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="TrainCardType"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>
                     Y - Keine Karte vorhanden
                     H - Halbtax
                     G1 - Generalabo first Klass
                     G2 - Generalabo Second Klass
                     Can be empty
                   </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="0" />
-                    <xs:maxLength value="2" />
-                    <xs:enumeration value="Y" />
-                    <xs:enumeration value="H" />
-                    <xs:enumeration value="G1" />
-                    <xs:enumeration value="G2" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="TrainSeatReservation" minOccurs="0">
-                <xs:complexType>
-                  <xs:simpleContent>
-                    <xs:extension base="xs:boolean" />
-                  </xs:simpleContent>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="FlightSeatCode" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>  A - Aisle
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="2" />
+                                        <xs:enumeration value="Y" />
+                                        <xs:enumeration value="H" />
+                                        <xs:enumeration value="G1" />
+                                        <xs:enumeration value="G2" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TrainSeatReservation"
+                                        minOccurs="0">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:boolean" />
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="FlightSeatCode"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>  A - Aisle
                     W - Window
                   </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:enumeration value="A" />
-                    <xs:enumeration value="W" />
-                    <xs:minLength value="0" />
-                    <xs:maxLength value="1" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="FlightMealCode" type="xs:string" minOccurs="0" />
-              <xs:element name="HomeBase" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>Three letter airport code of the home base of this traveller, if the traveller is associated with a customer in the customer database and has a home base entered.</xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="0" />
-                    <xs:maxLength value="3" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Country" minOccurs="0">
-                <xs:complexType>
-                  <xs:simpleContent>
-                    <xs:extension base="xs:string">
-                      <xs:attribute name="IsoCode" type="xs:string" />
-                    </xs:extension>
-                  </xs:simpleContent>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="SourceDossierSeq" type="xs:string" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>Referenze to an existing Dossier</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-            </xs:all>
-            <xs:attribute name="ViewOnly" type="xs:boolean" use="optional">
-              <xs:annotation>
-                <xs:documentation>If this customer is not from the customer database then a modification of this traveller is not possible. Only a view is possible.</xs:documentation>
-              </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="Action" use="optional">
-              <xs:simpleType>
-                <xs:restriction base="xs:string">
-                  <xs:enumeration value="insert" />
-                  <xs:enumeration value="update" />
-                  <xs:enumeration value="delete" />
-                </xs:restriction>
-              </xs:simpleType>
-            </xs:attribute>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="A" />
+                                        <xs:enumeration value="W" />
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="1" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="FlightMealCode"
+                                        type="xs:string"
+                                        minOccurs="0" />
+                            <xs:element name="HomeBase"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Three letter airport code of the home base of this traveller, if the traveller is associated with a customer in the customer database and has a home base entered.</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="0" />
+                                        <xs:maxLength value="3" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Country"
+                                        minOccurs="0">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="IsoCode"
+                                                          type="xs:string" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="SourceDossierSeq"
+                                        type="xs:string"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Referenze to an existing Dossier</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="Address1"
+                                        type="xs:string"
+                                        minOccurs="0" />
+                            <xs:element name="Address2"
+                                        type="xs:string"
+                                        minOccurs="0" />
+                            <xs:element name="City"
+                                        type="xs:string"
+                                        minOccurs="0" />
+                            <xs:element name="Passports"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>&lt;Passports&gt;
+                    &lt;Passport IssueDate=""
+                              ExpiryDate=""
+                              IssuePlace=""
+                              Nationality="SC"
+                              PassportNumber="A094801" /&gt;
+                &lt;/Passports&gt;</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Passport">
+                                            <xs:complexType>
+                                                <xs:attribute name="IssueDate"
+                                                              type="xs:date" />
+                                                <xs:attribute name="ExpiryDate"
+                                                              type="xs:date" />
+                                                <xs:attribute name="IssuePlace"
+                                                              type="xs:string" />
+                                                <xs:attribute name="Nationality"
+                                                              type="xs:string" />
+                                                <xs:attribute name="PassportNumber"
+                                                              type="xs:string" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:all>
+                        <xs:attribute name="ViewOnly"
+                                      type="xs:boolean"
+                                      use="optional">
+                            <xs:annotation>
+                                <xs:documentation>If this customer is not from the customer database then a modification of this traveller is not possible. Only a view is possible.</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="Action"
+                                      use="optional">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="insert" />
+                                    <xs:enumeration value="update" />
+                                    <xs:enumeration value="delete" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>

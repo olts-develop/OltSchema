@@ -2,7 +2,7 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType Accommodation in OLTDossiers XML Schema Documentation</title>
+      <title>Docs for schema item Accommodation in OLTDossiers XML Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
@@ -34,7 +34,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
-               <td>False</td>
+               <td></td>
             </tr>
          </tbody>
       </table>
@@ -46,18 +46,18 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="240,366,388,393" href="remark.html" alt="Drilldown into Remark"></area>
-                     <area shape="rect" coords="240,333,422,360" href="latecheckout.html" alt="Drilldown into LateCheckOut"></area>
-                     <area shape="rect" coords="240,300,418,327" href="earlycheckin.html" alt="Drilldown into EarlyCheckIn"></area>
-                     <area shape="rect" coords="240,267,431,294" href="normalcheckin.html" alt="Drilldown into NormalCheckIn"></area>
-                     <area shape="rect" coords="240,234,428,261" href="departuretime.html" alt="Drilldown into DepartureTime"></area>
-                     <area shape="rect" coords="240,201,427,228" href="departuredate1.html" alt="Drilldown into DepartureDate"></area>
-                     <area shape="rect" coords="240,168,408,195" href="arrivaltime.html" alt="Drilldown into ArrivalTime"></area>
-                     <area shape="rect" coords="240,135,407,162" href="arrivaldate.html" alt="Drilldown into ArrivalDate"></area>
-                     <area shape="rect" coords="240,102,391,129" href="location.html" alt="Drilldown into Location"></area>
-                     <area shape="rect" coords="240,69,388,96" href="city1.html" alt="Drilldown into City"></area>
-                     <area shape="rect" coords="240,36,388,63" href="smoker1.html" alt="Drilldown into Smoker"></area>
-                     <area shape="rect" coords="240,3,403,30" href="roomtype.html" alt="Drilldown into RoomType"></area></map><img src="images/accommodation.png" border="0" alt="XSD Diagram of Accommodation" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="215,403,356,428" href="remark.html" alt="Drilldown into Remark"></area>
+                     <area shape="rect" coords="215,371,386,396" href="latecheckout.html" alt="Drilldown into LateCheckOut"></area>
+                     <area shape="rect" coords="215,339,381,364" href="earlycheckin.html" alt="Drilldown into EarlyCheckIn"></area>
+                     <area shape="rect" coords="215,307,393,332" href="normalcheckin.html" alt="Drilldown into NormalCheckIn"></area>
+                     <area shape="rect" coords="215,275,390,300" href="departuretime.html" alt="Drilldown into DepartureTime"></area>
+                     <area shape="rect" coords="215,243,388,268" href="departuredate1.html" alt="Drilldown into DepartureDate"></area>
+                     <area shape="rect" coords="215,211,372,236" href="arrivaltime.html" alt="Drilldown into ArrivalTime"></area>
+                     <area shape="rect" coords="215,179,370,204" href="arrivaldate.html" alt="Drilldown into ArrivalDate"></area>
+                     <area shape="rect" coords="215,116,511,171" href="location.html" alt="Drilldown into Location"></area>
+                     <area shape="rect" coords="215,65,356,109" href="city2.html" alt="Drilldown into City"></area>
+                     <area shape="rect" coords="215,33,356,58" href="smoker1.html" alt="Drilldown into Smoker"></area>
+                     <area shape="rect" coords="215,1,368,26" href="roomtype.html" alt="Drilldown into RoomType"></area></map><img src="images/accommodation.png" border="0" alt="XSD Diagram of Accommodation" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -70,30 +70,30 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element maxOccurs="unbounded" name="Accommodation"&gt;
-  &lt;xs:complexType&gt;
-    &lt;xs:all&gt;
-      &lt;xs:element name="RoomType" type="xs:string" /&gt;
-      &lt;xs:element name="Smoker" type="xs:boolean" /&gt;
-      &lt;xs:element name="City" type="xs:string"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Free text&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="Location" type="xs:string"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Here a dropdown list with possible location information probably makes sense, as the user is unlikely to know what to enter here.&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="ArrivalDate" type="xs:date" /&gt;
-      &lt;xs:element name="ArrivalTime" type="xs:time" /&gt;
-      &lt;xs:element name="DepartureDate" type="xs:date" /&gt;
-      &lt;xs:element name="DepartureTime" type="xs:time" /&gt;
-      &lt;xs:element name="NormalCheckIn" type="xs:boolean" /&gt;
-      &lt;xs:element name="EarlyCheckIn" type="xs:boolean" /&gt;
-      &lt;xs:element name="LateCheckOut" type="xs:boolean" /&gt;
-      &lt;xs:element name="Remark" type="xs:string" /&gt;
-    &lt;/xs:all&gt;
-  &lt;/xs:complexType&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:all&gt;
+            &lt;xs:element name="RoomType" type="xs:string" /&gt;
+            &lt;xs:element name="Smoker" type="xs:boolean" /&gt;
+            &lt;xs:element name="City" type="xs:string"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Free text&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Location" type="xs:string"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Here a dropdown list with possible location information probably makes sense, as the user is unlikely to know what to enter here.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="ArrivalDate" type="xs:date" /&gt;
+            &lt;xs:element name="ArrivalTime" type="xs:time" /&gt;
+            &lt;xs:element name="DepartureDate" type="xs:date" /&gt;
+            &lt;xs:element name="DepartureTime" type="xs:time" /&gt;
+            &lt;xs:element name="NormalCheckIn" type="xs:boolean" /&gt;
+            &lt;xs:element name="EarlyCheckIn" type="xs:boolean" /&gt;
+            &lt;xs:element name="LateCheckOut" type="xs:boolean" /&gt;
+            &lt;xs:element name="Remark" type="xs:string" /&gt;
+        &lt;/xs:all&gt;
+    &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -127,7 +127,7 @@
                      </tr>
                      <tr>
                         <td class="first">City</td>
-                        <td><a href="city1.html">City</a></td>
+                        <td><a href="city2.html">City</a></td>
                         <td class="mid">(1)</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -191,6 +191,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.1.0.4725</a><br></br>Featuring an <a href="http://www.liquid-technologies.com/XmlToXsd.aspx">XML Sample Builder</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.7.5079</a><br></br>Featuring an <a href="http://www.liquid-technologies.com/XmlToXsd.aspx">XML Sample Builder</a></div>
    </body>
 </html>

@@ -2,7 +2,7 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType Customer.xsd in OLTDossiers XML Schema Documentation</title>
+      <title>Docs the schema Customer.xsd in OLTDossiers XML Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
@@ -26,8 +26,9 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>
-&lt;!--Created with Liquid XML Studio Designer Edition 9.1.9.3503 (http://www.liquid-technologies.com)--&gt;
-&lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+&lt;!--Created with Liquid XML 2013 Designer Edition 11.1.0.4725 (http://www.liquid-technologies.com)--&gt;
+&lt;xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;xs:include schemaLocation="..\fifa\CorporateCustomerCards.xsd" /&gt;
   &lt;xs:include schemaLocation="..\Fifa\Visas.xsd" /&gt;
   &lt;!--xs:include schemaLocation="..\Fifa\Projects.xsd" /--&gt;
@@ -39,12 +40,15 @@
     &lt;/xs:annotation&gt;
     &lt;xs:complexType&gt;
       &lt;xs:all&gt;
-        &lt;xs:element name="CustomerSeq" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:element name="CustomerSeq"
+                    type="xs:string"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Sequence string used in Agent Online to identify the customer&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="CustomerNr" minOccurs="0"&gt;
+        &lt;xs:element name="CustomerNr"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Customer number in Agent Online. Corresponds to the FAST ID in the FIFA database.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -54,7 +58,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="AgentCode" minOccurs="0"&gt;
+        &lt;xs:element name="AgentCode"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Agent TravID or RBId, e.g 54A111 or 541234.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -65,7 +70,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="UserId" minOccurs="0"&gt;
+        &lt;xs:element name="UserId"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Customer number in Agent Online. Corresponds to the FAST ID in the FIFA database, or the Agent Online logon code for travel agent employees that have been entered in the Agent Online backend.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -76,7 +82,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Password" minOccurs="0"&gt;
+        &lt;xs:element name="Password"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Password that allows an Agent Online user to log on to Agent Online. Can alos be used in specific interactive workflows to allow a user to logon to the interactive workflow. The password is irrelevant if a dossier is imported.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -87,12 +94,16 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="LastWebServiceModifyProfileDateTime" type="xs:dateTime" minOccurs="0"&gt;
+        &lt;xs:element name="LastWebServiceModifyProfileDateTime"
+                    type="xs:dateTime"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Last dateTime when the customer modified their profile using the the SetCustomer web service.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Language" minOccurs="0" default="de-ch"&gt;
+        &lt;xs:element name="Language"
+                    minOccurs="0"
+                    default="de-ch"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Correspondace language for this customer, e.g. de-ch, en-us, fr-ch or it-ch.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -105,7 +116,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="InternalCustomerType" minOccurs="0"&gt;
+        &lt;xs:element name="InternalCustomerType"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Short Description of the customertype
               Will be checked against existing customer type
@@ -118,7 +130,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Gender" minOccurs="0"&gt;
+        &lt;xs:element name="Gender"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Male or Female, Child or Infant (M/F/C/I)&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -135,7 +148,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Title" minOccurs="0"&gt;
+        &lt;xs:element name="Title"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;e.g. Dr., Prof.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -146,7 +160,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="FirstName" minOccurs="0"&gt;
+        &lt;xs:element name="FirstName"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;First name of the invoice receiver or traveller&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -157,7 +172,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="LastName" minOccurs="0"&gt;
+        &lt;xs:element name="LastName"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Last name of the invoice receiver or the traveller&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -168,12 +184,15 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="DateOfBirth" type="xs:date" minOccurs="0"&gt;
+        &lt;xs:element name="DateOfBirth"
+                    type="xs:date"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Date of birth in ISO format: y-M-D.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Address1" minOccurs="0"&gt;
+        &lt;xs:element name="Address1"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Street name incl. house number&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -184,7 +203,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Address2" minOccurs="0"&gt;
+        &lt;xs:element name="Address2"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Additional street information&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -195,7 +215,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="PostalCode" minOccurs="0"&gt;
+        &lt;xs:element name="PostalCode"
+                    minOccurs="0"&gt;
           &lt;xs:simpleType&gt;
             &lt;xs:restriction base="xs:string"&gt;
               &lt;xs:minLength value="0" /&gt;
@@ -203,7 +224,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="City" minOccurs="0"&gt;
+        &lt;xs:element name="City"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;City name&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -214,14 +236,16 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Country" minOccurs="0"&gt;
+        &lt;xs:element name="Country"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Country name&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:complexType&gt;
             &lt;xs:simpleContent&gt;
               &lt;xs:extension base="xs:string"&gt;
-                &lt;xs:attribute name="IsoCode" use="required"&gt;
+                &lt;xs:attribute name="IsoCode"
+                              use="required"&gt;
                   &lt;xs:simpleType&gt;
                     &lt;xs:restriction base="xs:string"&gt;
                       &lt;xs:minLength value="0" /&gt;
@@ -233,7 +257,8 @@
             &lt;/xs:simpleContent&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Email" minOccurs="0"&gt;
+        &lt;xs:element name="Email"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Email address of the customer&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -244,7 +269,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Email2" minOccurs="0"&gt;
+        &lt;xs:element name="Email2"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Additional email address of the customer&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -255,12 +281,14 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Mobile" minOccurs="0"&gt;
+        &lt;xs:element name="Mobile"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Mobile phone number of the customer. A complete telephne number can be sent as textdata, but it is also possible to send only the phone number in the textdata, and send the AreaCode separately as an attribute. It is advisable to send all phone or fax numbers as a complete string as the textdata or the relevant node and leave the AreaCode empty.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:complexType&gt;
-            &lt;xs:attribute name="AreaCode" use="optional"&gt;
+            &lt;xs:attribute name="AreaCode"
+                          use="optional"&gt;
               &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:string"&gt;
                   &lt;xs:minLength value="0" /&gt;
@@ -268,7 +296,8 @@
                 &lt;/xs:restriction&gt;
               &lt;/xs:simpleType&gt;
             &lt;/xs:attribute&gt;
-            &lt;xs:attribute name="Number" use="required"&gt;
+            &lt;xs:attribute name="Number"
+                          use="required"&gt;
               &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:string"&gt;
                   &lt;xs:minLength value="0" /&gt;
@@ -278,12 +307,14 @@
             &lt;/xs:attribute&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Phone" minOccurs="0"&gt;
+        &lt;xs:element name="Phone"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Phone number of the customer. ??? How to format the phone number ???&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:complexType&gt;
-            &lt;xs:attribute name="AreaCode" use="optional"&gt;
+            &lt;xs:attribute name="AreaCode"
+                          use="optional"&gt;
               &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:string"&gt;
                   &lt;xs:minLength value="0" /&gt;
@@ -291,7 +322,8 @@
                 &lt;/xs:restriction&gt;
               &lt;/xs:simpleType&gt;
             &lt;/xs:attribute&gt;
-            &lt;xs:attribute name="Number" use="required"&gt;
+            &lt;xs:attribute name="Number"
+                          use="required"&gt;
               &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:string"&gt;
                   &lt;xs:minLength value="0" /&gt;
@@ -301,12 +333,14 @@
             &lt;/xs:attribute&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="BusinessPhone" minOccurs="0"&gt;
+        &lt;xs:element name="BusinessPhone"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Business phone number of the customer. ??? How to format the phone number ???&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:complexType&gt;
-            &lt;xs:attribute name="AreaCode" use="optional"&gt;
+            &lt;xs:attribute name="AreaCode"
+                          use="optional"&gt;
               &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:string"&gt;
                   &lt;xs:minLength value="0" /&gt;
@@ -314,7 +348,8 @@
                 &lt;/xs:restriction&gt;
               &lt;/xs:simpleType&gt;
             &lt;/xs:attribute&gt;
-            &lt;xs:attribute name="Number" use="required"&gt;
+            &lt;xs:attribute name="Number"
+                          use="required"&gt;
               &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:string"&gt;
                   &lt;xs:minLength value="0" /&gt;
@@ -324,12 +359,14 @@
             &lt;/xs:attribute&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Fax" minOccurs="0"&gt;
+        &lt;xs:element name="Fax"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Fax number of the customer. ??? How to format the faxnumber ???&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:complexType&gt;
-            &lt;xs:attribute name="AreaCode" use="optional"&gt;
+            &lt;xs:attribute name="AreaCode"
+                          use="optional"&gt;
               &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:string"&gt;
                   &lt;xs:minLength value="0" /&gt;
@@ -337,7 +374,8 @@
                 &lt;/xs:restriction&gt;
               &lt;/xs:simpleType&gt;
             &lt;/xs:attribute&gt;
-            &lt;xs:attribute name="Number" use="required"&gt;
+            &lt;xs:attribute name="Number"
+                          use="required"&gt;
               &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:string"&gt;
                   &lt;xs:minLength value="0" /&gt;
@@ -347,24 +385,28 @@
             &lt;/xs:attribute&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Nationality" minOccurs="0"&gt;
+        &lt;xs:element name="Nationality"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Country name for the nationality&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:complexType&gt;
             &lt;xs:simpleContent&gt;
               &lt;xs:extension base="xs:string"&gt;
-                &lt;xs:attribute name="IsoCode" type="xs:string" /&gt;
+                &lt;xs:attribute name="IsoCode"
+                              type="xs:string" /&gt;
               &lt;/xs:extension&gt;
             &lt;/xs:simpleContent&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Passport" minOccurs="0"&gt;
+        &lt;xs:element name="Passport"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Customer passport information. The textdata must be empty. All data is sent in attributes.,&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:complexType&gt;
-            &lt;xs:attribute name="PassportNumber" use="required"&gt;
+            &lt;xs:attribute name="PassportNumber"
+                          use="required"&gt;
               &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:string"&gt;
                   &lt;xs:minLength value="0" /&gt;
@@ -372,16 +414,24 @@
                 &lt;/xs:restriction&gt;
               &lt;/xs:simpleType&gt;
             &lt;/xs:attribute&gt;
-            &lt;xs:attribute name="ValidUntil" type="xs:date" use="required" /&gt;
-            &lt;xs:attribute name="Nationality" type="xs:string" use="required" /&gt;
+            &lt;xs:attribute name="ValidUntil"
+                          type="xs:date"
+                          use="required" /&gt;
+            &lt;xs:attribute name="Nationality"
+                          type="xs:string"
+                          use="required" /&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Smoker" type="xs:boolean" minOccurs="0"&gt;
+        &lt;xs:element name="Smoker"
+                    type="xs:boolean"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Specifies if this customer is a smoker or not. This can be important for hotels that allow smoking in rooms.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="FlightMealCode" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:element name="FlightMealCode"
+                    type="xs:string"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Flight Meal Code:
               can be empty, then the passenger is offered the standard meal
@@ -414,20 +464,26 @@
             &lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="FlightSeatCode" type="xs:string" minOccurs="0"&gt;
+        &lt;xs:element name="FlightSeatCode"
+                    type="xs:string"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Flight seat code. Here the GDS seat code needs to be used.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="TrainHalfPrice" minOccurs="0"&gt;
+        &lt;xs:element name="TrainHalfPrice"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;"SBB Halbtax"&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:complexType&gt;
             &lt;xs:simpleContent&gt;
               &lt;xs:extension base="xs:boolean"&gt;
-                &lt;xs:attribute name="ExpiryDate" type="xs:date" use="optional" /&gt;
-                &lt;xs:attribute name="NrYears" use="optional"&gt;
+                &lt;xs:attribute name="ExpiryDate"
+                              type="xs:date"
+                              use="optional" /&gt;
+                &lt;xs:attribute name="NrYears"
+                              use="optional"&gt;
                   &lt;xs:simpleType&gt;
                     &lt;xs:restriction base="xs:integer"&gt;
                       &lt;xs:enumeration value="1" /&gt;
@@ -440,15 +496,19 @@
             &lt;/xs:simpleContent&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="TrainGeneralAbo" minOccurs="0"&gt;
+        &lt;xs:element name="TrainGeneralAbo"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;"SBB General Abbonnement"&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
           &lt;xs:complexType&gt;
             &lt;xs:simpleContent&gt;
               &lt;xs:extension base="xs:boolean"&gt;
-                &lt;xs:attribute name="ExpiryDate" type="xs:date" use="optional" /&gt;
-                &lt;xs:attribute name="Class" use="optional"&gt;
+                &lt;xs:attribute name="ExpiryDate"
+                              type="xs:date"
+                              use="optional" /&gt;
+                &lt;xs:attribute name="Class"
+                              use="optional"&gt;
                   &lt;xs:simpleType&gt;
                     &lt;xs:restriction base="xs:integer"&gt;
                       &lt;xs:enumeration value="1" /&gt;
@@ -456,17 +516,22 @@
                     &lt;/xs:restriction&gt;
                   &lt;/xs:simpleType&gt;
                 &lt;/xs:attribute&gt;
-                &lt;xs:attribute name="Transferable" type="xs:boolean" use="optional" /&gt;
+                &lt;xs:attribute name="Transferable"
+                              type="xs:boolean"
+                              use="optional" /&gt;
               &lt;/xs:extension&gt;
             &lt;/xs:simpleContent&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="HasSubordinates" type="xs:boolean" minOccurs="0"&gt;
+        &lt;xs:element name="HasSubordinates"
+                    type="xs:boolean"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;If true, then this customer is a manager and has subordinates.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="HomeBase" minOccurs="0"&gt;
+        &lt;xs:element name="HomeBase"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Three letter airport code of the home base of this customer.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -477,7 +542,8 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="AllowGroupBooking" minOccurs="0"&gt;
+        &lt;xs:element name="AllowGroupBooking"
+                    minOccurs="0"&gt;
           &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;Three letter airport code of the home base of this customer.&lt;/xs:documentation&gt;
           &lt;/xs:annotation&gt;
@@ -488,25 +554,44 @@
             &lt;/xs:restriction&gt;
           &lt;/xs:simpleType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element ref="Visas" minOccurs="0" /&gt;
-        &lt;xs:element ref="Passports" minOccurs="0" /&gt;
-        &lt;xs:element ref="CorporateCustomerCards" minOccurs="0" /&gt;
-        &lt;xs:element name="Superior" minOccurs="0"&gt;
+        &lt;xs:element name="IsAgent"
+                    minOccurs="0"&gt;
+          &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If true, then the customer is an agent&lt;/xs:documentation&gt;
+          &lt;/xs:annotation&gt;
+          &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:boolean"&gt;
+
+            &lt;/xs:restriction&gt;
+          &lt;/xs:simpleType&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element ref="Visas"
+                    minOccurs="0" /&gt;
+        &lt;xs:element ref="Passports"
+                    minOccurs="0" /&gt;
+        &lt;xs:element ref="CorporateCustomerCards"
+                    minOccurs="0" /&gt;
+        &lt;xs:element name="Superior"
+                    minOccurs="0"&gt;
           &lt;xs:complexType&gt;
             &lt;xs:all&gt;
-              &lt;xs:element name="SuperiorCustomerNr" type="xs:integer" /&gt;
+              &lt;xs:element name="SuperiorCustomerNr"
+                          type="xs:integer" /&gt;
             &lt;/xs:all&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
-        &lt;xs:element name="Projects" minOccurs="0"&gt;
+        &lt;xs:element name="Projects"
+                    minOccurs="0"&gt;
           &lt;xs:complexType&gt;
             &lt;xs:all&gt;
-              &lt;xs:element name="Project" type="ProjectType" /&gt;
+              &lt;xs:element name="Project"
+                          type="ProjectType" /&gt;
             &lt;/xs:all&gt;
           &lt;/xs:complexType&gt;
         &lt;/xs:element&gt;
       &lt;/xs:all&gt;
-      &lt;xs:attribute name="CustomerType" use="optional"&gt;
+      &lt;xs:attribute name="CustomerType"
+                    use="optional"&gt;
         &lt;xs:simpleType&gt;
           &lt;xs:restriction base="xs:string"&gt;
             &lt;xs:enumeration value="" /&gt;
@@ -537,6 +622,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.1.0.4725</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema Doc Gen</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.7.5079</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XML Schema Doc Gen</a></div>
    </body>
 </html>

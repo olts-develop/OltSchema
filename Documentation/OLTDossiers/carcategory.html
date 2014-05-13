@@ -2,7 +2,7 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for complexType CarCategory in OLTDossiers XML Schema Documentation</title>
+      <title>Docs for schema item CarCategory in OLTDossiers XML Schema Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
@@ -26,7 +26,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
-               <td>False</td>
+               <td></td>
             </tr>
          </tbody>
       </table>
@@ -38,19 +38,19 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="154,399,304,426" href="key1.html" alt="Drilldown into Key"></area>
-                     <area shape="rect" coords="219,366,386,393" href="productitemprices1.html" alt="Drilldown into ProductItemPrices"></area>
-                     <area shape="rect" coords="196,333,390,360" href="supplier.html" alt="Drilldown into Supplier"></area>
-                     <area shape="rect" coords="219,300,436,327" href="includeddescription.html" alt="Drilldown into IncludedDescription"></area>
-                     <area shape="rect" coords="219,267,426,294" href="tourbodescription.html" alt="Drilldown into TourboDescription"></area>
-                     <area shape="rect" coords="219,234,387,261" href="destination2.html" alt="Drilldown into Destination"></area>
-                     <area shape="rect" coords="219,201,374,228" href="plancode.html" alt="Drilldown into PlanCode"></area>
-                     <area shape="rect" coords="219,168,401,195" href="miscellaneous.html" alt="Drilldown into Miscellaneous"></area>
-                     <area shape="rect" coords="219,135,367,162" href="camper.html" alt="Drilldown into Camper"></area>
-                     <area shape="rect" coords="219,102,390,129" href="tourbocode.html" alt="Drilldown into TourboCode"></area>
-                     <area shape="rect" coords="219,69,367,96" href="type5.html" alt="Drilldown into Type"></area>
-                     <area shape="rect" coords="219,36,373,63" href="crscode.html" alt="Drilldown into CRSCode"></area>
-                     <area shape="rect" coords="219,3,373,30" href="category1.html" alt="Drilldown into Category"></area></map><img src="images/carcategory.png" border="0" alt="XSD Diagram of CarCategory" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="196,466,333,491" href="productitemprices1.html" alt="Drilldown into ProductItemPrices"></area>
+                     <area shape="rect" coords="176,434,342,459" href="supplier.html" alt="Drilldown into Supplier"></area>
+                     <area shape="rect" coords="196,402,400,427" href="includeddescription.html" alt="Drilldown into IncludedDescription"></area>
+                     <area shape="rect" coords="196,370,392,395" href="tourbodescription.html" alt="Drilldown into TourboDescription"></area>
+                     <area shape="rect" coords="196,338,352,363" href="destination2.html" alt="Drilldown into Destination"></area>
+                     <area shape="rect" coords="196,306,343,331" href="plancode.html" alt="Drilldown into PlanCode"></area>
+                     <area shape="rect" coords="196,243,375,298" href="miscellaneous.html" alt="Drilldown into Miscellaneous"></area>
+                     <area shape="rect" coords="196,181,344,236" href="camper.html" alt="Drilldown into Camper"></area>
+                     <area shape="rect" coords="196,149,358,174" href="tourbocode.html" alt="Drilldown into TourboCode"></area>
+                     <area shape="rect" coords="196,117,337,142" href="type6.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="196,85,343,110" href="crscode.html" alt="Drilldown into CRSCode"></area>
+                     <area shape="rect" coords="196,53,340,78" href="category1.html" alt="Drilldown into Category"></area>
+                     <area shape="rect" coords="131,1,354,46" href="key1.html" alt="Drilldown into Key"></area></map><img src="images/carcategory.png" border="0" alt="XSD Diagram of CarCategory" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -63,47 +63,47 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;xs:element name="CarCategory"&gt;
-  &lt;xs:complexType&gt;
-    &lt;xs:all&gt;
-      &lt;xs:element name="Category" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="CRSCode" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="Type" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="TourboCode" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="Camper" minOccurs="0"&gt;
-        &lt;xs:simpleType&gt;
-          &lt;xs:restriction base="xs:string"&gt;
-            &lt;xs:enumeration value="YES" /&gt;
-            &lt;xs:enumeration value="NO" /&gt;
-          &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="Miscellaneous" minOccurs="0"&gt;
-        &lt;xs:simpleType&gt;
-          &lt;xs:restriction base="xs:string"&gt;
-            &lt;xs:enumeration value="YES" /&gt;
-            &lt;xs:enumeration value="NO" /&gt;
-          &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="PlanCode" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="Destination" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="TourboDescription" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="IncludedDescription" type="xs:string" minOccurs="0" /&gt;
-      &lt;xs:element name="Supplier" type="SupplierType" /&gt;
-      &lt;xs:element name="ProductItemPrices" minOccurs="0"&gt;
-        &lt;xs:complexType&gt;
-          &lt;xs:sequence&gt;
-            &lt;xs:element ref="ProductItemPrice" maxOccurs="unbounded" /&gt;
-          &lt;/xs:sequence&gt;
-        &lt;/xs:complexType&gt;
-      &lt;/xs:element&gt;
-    &lt;/xs:all&gt;
-    &lt;xs:attribute name="Key" use="required"&gt;
-      &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt; Primary Key of the Item used in Database of reciever&lt;/xs:documentation&gt;
-      &lt;/xs:annotation&gt;
-    &lt;/xs:attribute&gt;
-  &lt;/xs:complexType&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:all&gt;
+            &lt;xs:element name="Category" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="CRSCode" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="Type" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="TourboCode" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="Camper" minOccurs="0"&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="YES" /&gt;
+                        &lt;xs:enumeration value="NO" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Miscellaneous" minOccurs="0"&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="YES" /&gt;
+                        &lt;xs:enumeration value="NO" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="PlanCode" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="Destination" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="TourboDescription" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="IncludedDescription" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="Supplier" type="SupplierType" /&gt;
+            &lt;xs:element name="ProductItemPrices" minOccurs="0"&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:sequence&gt;
+                        &lt;xs:element ref="ProductItemPrice" maxOccurs="unbounded" /&gt;
+                    &lt;/xs:sequence&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:all&gt;
+        &lt;xs:attribute name="Key" use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt; Primary Key of the Item used in Database of reciever&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -137,7 +137,7 @@
                      </tr>
                      <tr>
                         <td class="first">Type</td>
-                        <td><a href="type5.html">Type</a></td>
+                        <td><a href="type6.html">Type</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -227,6 +227,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2013 Designer Edition 11.1.0.4725</a><br></br>Featuring a validating <a href="http://www.liquid-technologies.com/XML-Editor.aspx">XML Editor</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.7.5079</a><br></br>Featuring a validating <a href="http://www.liquid-technologies.com/XML-Editor.aspx">XML Editor</a></div>
    </body>
 </html>
