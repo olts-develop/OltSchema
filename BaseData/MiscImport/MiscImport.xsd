@@ -8,6 +8,21 @@
 					<xs:complexType>
 						<xs:all>
 							<xs:element name="Title" type="xs:string" minOccurs="0" />
+							<xs:element name="Country" minOccurs="0">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="IsoCode" type="xs:string">
+												<xs:annotation>
+													<xs:documentation>Two letter country code of address
+														C_IATACODE
+													</xs:documentation>
+												</xs:annotation>
+											</xs:attribute>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
 							<xs:element name="Region" type="xs:string" minOccurs="0">
 								<xs:annotation>
 									<xs:documentation>Region of the Country
@@ -25,21 +40,7 @@
 							</xs:element>
 							<xs:element name="Destination" type="DestinationAttributes"
 								minOccurs="0" />
-							<xs:element name="Country" minOccurs="0">
-								<xs:complexType>
-									<xs:simpleContent>
-										<xs:extension base="xs:string">
-											<xs:attribute name="IsoCode" type="xs:string">
-												<xs:annotation>
-													<xs:documentation>Two letter country code of address
-														C_IATACODE
-													</xs:documentation>
-												</xs:annotation>
-											</xs:attribute>
-										</xs:extension>
-									</xs:simpleContent>
-								</xs:complexType>
-							</xs:element>
+
 							<xs:element name="Request" minOccurs="0">
 								<xs:annotation>
 									<xs:documentation>is the room bookable on request or is it free
@@ -186,21 +187,15 @@
 									<xs:documentation>CDATA</xs:documentation>
 								</xs:annotation>
 							</xs:element>
-							<xs:element name="SupplierInfo" type="xs:string"
+							<xs:element name="InvoiceTitle" type="xs:string"
+								minOccurs="0" />
+							<xs:element name="InvoiceDetail" type="xs:string"
 								minOccurs="0">
 								<xs:annotation>
-									<xs:documentation>CDATA - Information for the supplier that
-										is,
-										for example, sent with communication about this item to
-										the
-										supplier. The customer does not get to see this data. The
-										information might be sensitive in nature, but important for
-										the supplier.
-									</xs:documentation>
+									<xs:documentation>CDATA</xs:documentation>
 								</xs:annotation>
 							</xs:element>
-							<xs:element name="ItemInfos" type="ItemInfos"
-								minOccurs="0" />
+							
 
 							<xs:element name="Prices" minOccurs="0">
 								<xs:complexType>
@@ -253,6 +248,35 @@
 								</xs:complexType>
 							</xs:element>
 						</xs:all>
+						<xs:attribute name="Key" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Primary Key of the hotel room
+								</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="Action">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="ADD" />
+									<xs:enumeration value="DELETE" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="System">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="Prod" />
+									<xs:enumeration value="Educ" />
+									<xs:enumeration value="Test" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="Type" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Value = HotelRoom per Default
+								</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
@@ -260,158 +284,174 @@
 	</xs:element>
 
 
-<xs:complexType name="Desc">
-    <xs:annotation>
-      <xs:documentation />
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Desc">
-        <xs:annotation>
-          <xs:documentation>Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line. Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.</xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-          <xs:complexContent mixed="false">
-            <xs:extension base="Translation">
-              <xs:attributeGroup ref="DescIdAttributeGroup" />
-            </xs:extension>
-          </xs:complexContent>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ItemInfos">
-    <xs:all>
-      <xs:element minOccurs="0" name="ItemInfoTexts">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="ItemInfoText" type="ItemInfoText">
-              <xs:annotation>
-                <xs:documentation>ItemInfo this Item, e.g. if in a </xs:documentation>
-              </xs:annotation>
-            </xs:element>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element minOccurs="0" name="ItemInfoRequests">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="ItemInfoRequest" type="ItemInfoRequest">
-              <xs:annotation>
-                <xs:documentation>ItemInfo this Item, e.g. if in a </xs:documentation>
-              </xs:annotation>
-            </xs:element>
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-    </xs:all>
-  </xs:complexType>
-  <xs:complexType name="ItemInfoText">
-    <xs:all>
-      <xs:element minOccurs="0" name="BeginDate" type="xs:date">
-        <xs:annotation>
-          <xs:documentation>Start date when an information applies. Inclusive.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="0" name="EndDate" type="xs:date">
-        <xs:annotation>
-          <xs:documentation>End date when an information applies. Inclusive.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="0" name="Invoice" type="xs:boolean">
-        <xs:annotation>
-          <xs:documentation />
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="0" name="Itinerary" type="xs:boolean">
-        <xs:annotation>
-          <xs:documentation />
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="0" name="External" type="xs:boolean">
-        <xs:annotation>
-          <xs:documentation />
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="0" name="Title">
-        <xs:annotation>
-          <xs:documentation>Title of info. Node is only sent if a value exists.</xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-          <xs:all>
-            <xs:element minOccurs="0" name="de" type="xs:string" />
-            <xs:element minOccurs="0" name="en" type="xs:string" />
-            <xs:element minOccurs="0" name="fr" type="xs:string" />
-            <xs:element minOccurs="0" name="it" type="xs:string" />
-          </xs:all>
-        </xs:complexType>
-      </xs:element>
-      <xs:element minOccurs="0" name="Text" type="Translation">
-        <xs:annotation>
-          <xs:documentation>Description text of item info</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:all>
-  </xs:complexType>
-  <xs:complexType name="ItemInfoRequest">
-    <xs:all>
-      <xs:element name="Day" type="xs:date">
-        <xs:annotation>
-          <xs:documentation>Date when the request information applies.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="0" name="RQ">
-        <xs:annotation>
-          <xs:documentation>If this item can be booked on request, RQ = 1</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="xs:nonNegativeInteger">
-            <xs:enumeration value="0" />
-            <xs:enumeration value="1" />
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element minOccurs="0" name="FS">
-        <xs:annotation>
-          <xs:documentation>If this item can be booked on freesell FS = 1</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="xs:nonNegativeInteger">
-            <xs:enumeration value="0" />
-            <xs:enumeration value="1" />
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element minOccurs="0" name="FreeSellRelease" type="xs:nonNegativeInteger">
-        <xs:annotation>
-          <xs:documentation>If Request = FS, then the Nr days that this item can be booked on FS before it becomes a RQ</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:all>
-  </xs:complexType>
-  <xs:complexType name="Translation">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="de" type="xs:string">
-        <xs:annotation>
-          <xs:documentation>German. Can be a CDATA.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="0" name="en" type="xs:string">
-        <xs:annotation>
-          <xs:documentation>English. Can be a CDATA.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="0" name="fr" type="xs:string">
-        <xs:annotation>
-          <xs:documentation>French. Can be a CDATA.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="0" name="it" type="xs:string">
-        <xs:annotation>
-          <xs:documentation>Italian. Can be a CDATA.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
+	<xs:complexType name="Desc">
+		<xs:annotation>
+			<xs:documentation />
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element minOccurs="0" maxOccurs="unbounded" name="Desc">
+				<xs:annotation>
+					<xs:documentation>Every "Desc" has a DescId and the translations
+						for this DescId. A price line has a DescId attribute which
+						identifies which text is appropriate for the price line. Placing
+						the text in a reference list reduces the size of the XML
+						dramatically. The XML is also built 30% faster than if the text is
+						added to each appropriate node.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:complexContent mixed="false">
+						<xs:extension base="Translation">
+							<xs:attributeGroup ref="DescIdAttributeGroup" />
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ItemInfos">
+		<xs:all>
+			<xs:element minOccurs="0" name="ItemInfoTexts">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" maxOccurs="unbounded" name="ItemInfoText"
+							type="ItemInfoText">
+							<xs:annotation>
+								<xs:documentation>ItemInfo this Item, e.g. if in a
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element minOccurs="0" name="ItemInfoRequests">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" maxOccurs="unbounded" name="ItemInfoRequest"
+							type="ItemInfoRequest">
+							<xs:annotation>
+								<xs:documentation>ItemInfo this Item, e.g. if in a
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="ItemInfoText">
+		<xs:all>
+			<xs:element minOccurs="0" name="BeginDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Start date when an information applies.
+						Inclusive.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" name="EndDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>End date when an information applies. Inclusive.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" name="Invoice" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation />
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" name="Itinerary" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation />
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" name="External" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation />
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" name="Title">
+				<xs:annotation>
+					<xs:documentation>Title of info. Node is only sent if a value
+						exists.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element minOccurs="0" name="de" type="xs:string" />
+						<xs:element minOccurs="0" name="en" type="xs:string" />
+						<xs:element minOccurs="0" name="fr" type="xs:string" />
+						<xs:element minOccurs="0" name="it" type="xs:string" />
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element minOccurs="0" name="Text" type="Translation">
+				<xs:annotation>
+					<xs:documentation>Description text of item info</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="ItemInfoRequest">
+		<xs:all>
+			<xs:element name="Day" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date when the request information applies.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" name="RQ">
+				<xs:annotation>
+					<xs:documentation>If this item can be booked on request, RQ = 1
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:nonNegativeInteger">
+						<xs:enumeration value="0" />
+						<xs:enumeration value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element minOccurs="0" name="FS">
+				<xs:annotation>
+					<xs:documentation>If this item can be booked on freesell FS = 1
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:nonNegativeInteger">
+						<xs:enumeration value="0" />
+						<xs:enumeration value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element minOccurs="0" name="FreeSellRelease" type="xs:nonNegativeInteger">
+				<xs:annotation>
+					<xs:documentation>If Request = FS, then the Nr days that this item
+						can be booked on FS before it becomes a RQ</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="Translation">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="de" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>German. Can be a CDATA.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" name="en" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>English. Can be a CDATA.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" name="fr" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>French. Can be a CDATA.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" name="it" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Italian. Can be a CDATA.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
   <xs:complexType name="DestinationAttributes">
     <xs:attribute name="CountryCode" type="xs:string" use="required">
       <xs:annotation>
