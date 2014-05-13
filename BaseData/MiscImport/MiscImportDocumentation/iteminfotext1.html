@@ -22,7 +22,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="miscimport_xsd.html">miscimport.xsd</a></td>
+               <td><a href="basedataimport_xsd.html">BasedataImport.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
@@ -38,13 +38,22 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="196,273,352,317" href="text.html" alt="Drilldown into Text"></area>
-                     <area shape="rect" coords="196,211,364,266" href="title.html" alt="Drilldown into Title"></area>
-                     <area shape="rect" coords="196,179,337,204" href="external.html" alt="Drilldown into External"></area>
-                     <area shape="rect" coords="196,147,337,172" href="itinerary.html" alt="Drilldown into Itinerary"></area>
-                     <area shape="rect" coords="196,115,337,140" href="invoice.html" alt="Drilldown into Invoice"></area>
-                     <area shape="rect" coords="196,63,401,108" href="enddate.html" alt="Drilldown into EndDate"></area>
-                     <area shape="rect" coords="196,1,364,56" href="begindate.html" alt="Drilldown into BeginDate"></area></map><img src="images/iteminfotext1.png" border="0" alt="XSD Diagram of ItemInfoText" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="462,512,603,556" href="it1.html" alt="Drilldown into it"></area>
+                     <area shape="rect" coords="462,460,603,504" href="fr1.html" alt="Drilldown into fr"></area>
+                     <area shape="rect" coords="462,408,603,452" href="en1.html" alt="Drilldown into en"></area>
+                     <area shape="rect" coords="462,357,603,401" href="de1.html" alt="Drilldown into de"></area>
+                     <area shape="rect" coords="377,332,611,568" href="translation.html" alt="Drilldown into Translation"></area>
+                     <area shape="rect" coords="196,427,352,471" href="text.html" alt="Drilldown into Text"></area>
+                     <area shape="rect" coords="482,297,623,322" href="it.html" alt="Drilldown into it"></area>
+                     <area shape="rect" coords="482,265,623,290" href="fr.html" alt="Drilldown into fr"></area>
+                     <area shape="rect" coords="482,233,623,258" href="en.html" alt="Drilldown into en"></area>
+                     <area shape="rect" coords="482,201,623,226" href="de.html" alt="Drilldown into de"></area>
+                     <area shape="rect" coords="196,240,392,285" href="title.html" alt="Drilldown into Title"></area>
+                     <area shape="rect" coords="196,169,337,194" href="external.html" alt="Drilldown into External"></area>
+                     <area shape="rect" coords="196,137,337,162" href="itinerary.html" alt="Drilldown into Itinerary"></area>
+                     <area shape="rect" coords="196,105,337,130" href="invoice.html" alt="Drilldown into Invoice"></area>
+                     <area shape="rect" coords="196,53,401,98" href="enddate.html" alt="Drilldown into EndDate"></area>
+                     <area shape="rect" coords="196,1,404,46" href="begindate.html" alt="Drilldown into BeginDate"></area></map><img src="images/iteminfotext1.png" border="0" alt="XSD Diagram of ItemInfoText" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -60,14 +69,12 @@
     &lt;xs:all&gt;
         &lt;xs:element name="BeginDate" type="xs:date" minOccurs="0"&gt;
             &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Start date when an information applies.
-						Inclusive.&lt;/xs:documentation&gt;
+                &lt;xs:documentation&gt;Start date when an information applies. Inclusive.&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
         &lt;xs:element name="EndDate" type="xs:date" minOccurs="0"&gt;
             &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;End date when an information applies. Inclusive.
-					&lt;/xs:documentation&gt;
+                &lt;xs:documentation&gt;End date when an information applies. Inclusive.&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
         &lt;xs:element name="Invoice" type="xs:boolean" minOccurs="0"&gt;
@@ -87,8 +94,7 @@
         &lt;/xs:element&gt;
         &lt;xs:element name="Title" minOccurs="0"&gt;
             &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Title of info. Node is only sent if a value
-						exists.&lt;/xs:documentation&gt;
+                &lt;xs:documentation&gt;Title of info. Node is only sent if a value exists.&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
             &lt;xs:complexType&gt;
                 &lt;xs:all&gt;

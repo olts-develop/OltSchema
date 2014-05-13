@@ -22,7 +22,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="miscimport_xsd.html">miscimport.xsd</a></td>
+               <td><a href="basedataimport_xsd.html">BasedataImport.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
@@ -38,7 +38,14 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="173,1,434,111" href="desc1.html" alt="Drilldown into Desc"></area></map><img src="images/desc.png" border="0" alt="XSD Diagram of Desc" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="578,381,719,425" href="it1.html" alt="Drilldown into it"></area>
+                     <area shape="rect" coords="578,329,719,373" href="fr1.html" alt="Drilldown into fr"></area>
+                     <area shape="rect" coords="578,277,719,321" href="en1.html" alt="Drilldown into en"></area>
+                     <area shape="rect" coords="578,226,719,270" href="de1.html" alt="Drilldown into de"></area>
+                     <area shape="rect" coords="493,201,727,437" href="translation.html" alt="Drilldown into Translation"></area>
+                     <area shape="rect" coords="513,27,804,183" href="descid.html" alt="Drilldown into DescId"></area>
+                     <area shape="rect" coords="493,2,812,193" href="descidattributegroup.html" alt="Drilldown into DescIdAttributeGroup"></area>
+                     <area shape="rect" coords="173,166,467,251" href="desc1.html" alt="Drilldown into Desc"></area></map><img src="images/desc.png" border="0" alt="XSD Diagram of Desc" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -57,15 +64,10 @@
     &lt;xs:sequence&gt;
         &lt;xs:element name="Desc" minOccurs="0" maxOccurs="unbounded"&gt;
             &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Every "Desc" has a DescId and the translations
-						for this DescId. A price line has a DescId attribute which
-						identifies which text is appropriate for the price line. Placing
-						the text in a reference list reduces the size of the XML
-						dramatically. The XML is also built 30% faster than if the text is
-						added to each appropriate node.&lt;/xs:documentation&gt;
+                &lt;xs:documentation&gt;Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line. Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
             &lt;xs:complexType&gt;
-                &lt;xs:complexContent mixed="false"&gt;
+                &lt;xs:complexContent&gt;
                     &lt;xs:extension base="Translation"&gt;
                         &lt;xs:attributeGroup ref="DescIdAttributeGroup" /&gt;
                     &lt;/xs:extension&gt;

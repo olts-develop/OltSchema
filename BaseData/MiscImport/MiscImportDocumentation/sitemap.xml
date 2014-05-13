@@ -6,7 +6,7 @@
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/miscimport_xsd.html</loc>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/basedataimport_xsd.html</loc>
       <lastmod>2014-05-13+02:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
@@ -570,6 +570,30 @@
       <priority>0.5</priority>
    </url>
    <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/phoneattributes.html</loc>
+      <lastmod>2014-05-13+02:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/areacode.html</loc>
+      <lastmod>2014-05-13+02:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/countryprefix.html</loc>
+      <lastmod>2014-05-13+02:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/number.html</loc>
+      <lastmod>2014-05-13+02:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/specialofferattributes.html</loc>
       <lastmod>2014-05-13+02:00</lastmod>
       <changefreq>monthly</changefreq>
@@ -685,6 +709,12 @@
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/it1.html</loc>
+      <lastmod>2014-05-13+02:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/miscimport_xsd.html</loc>
       <lastmod>2014-05-13+02:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
@@ -871,6 +901,12 @@
    </url>
    <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/prices.html</loc>
+      <lastmod>2014-05-13+02:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>http://schema.liquid-technologies.com/LibraryDocs/keepdatabeforedate.html</loc>
       <lastmod>2014-05-13+02:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>

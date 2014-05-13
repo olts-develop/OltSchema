@@ -22,7 +22,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="miscimport_xsd.html">miscimport.xsd</a></td>
+               <td><a href="basedataimport_xsd.html">BasedataImport.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
@@ -38,7 +38,7 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="217,208,458,263" href="freesellrelease.html" alt="Drilldown into FreeSellRelease"></area>
+                     <area shape="rect" coords="217,208,505,263" href="freesellrelease.html" alt="Drilldown into FreeSellRelease"></area>
                      <area shape="rect" coords="217,131,424,201" href="fs.html" alt="Drilldown into FS"></area>
                      <area shape="rect" coords="217,53,424,123" href="rq.html" alt="Drilldown into RQ"></area>
                      <area shape="rect" coords="197,1,380,46" href="day1.html" alt="Drilldown into Day"></area></map><img src="images/iteminforequest.png" border="0" alt="XSD Diagram of ItemInfoRequest" usemap="#DiagramMap"></img></td>
@@ -57,14 +57,12 @@
     &lt;xs:all&gt;
         &lt;xs:element name="Day" type="xs:date"&gt;
             &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;Date when the request information applies.
-					&lt;/xs:documentation&gt;
+                &lt;xs:documentation&gt;Date when the request information applies.&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
         &lt;xs:element name="RQ" minOccurs="0"&gt;
             &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If this item can be booked on request, RQ = 1
-					&lt;/xs:documentation&gt;
+                &lt;xs:documentation&gt;If this item can be booked on request, RQ = 1&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
             &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
@@ -75,8 +73,7 @@
         &lt;/xs:element&gt;
         &lt;xs:element name="FS" minOccurs="0"&gt;
             &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If this item can be booked on freesell FS = 1
-					&lt;/xs:documentation&gt;
+                &lt;xs:documentation&gt;If this item can be booked on freesell FS = 1&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
             &lt;xs:simpleType&gt;
                 &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
@@ -87,8 +84,7 @@
         &lt;/xs:element&gt;
         &lt;xs:element name="FreeSellRelease" type="xs:nonNegativeInteger" minOccurs="0"&gt;
             &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If Request = FS, then the Nr days that this item
-						can be booked on FS before it becomes a RQ&lt;/xs:documentation&gt;
+                &lt;xs:documentation&gt;If Request = FS, then the Nr days that this item can be booked on FS before it becomes a RQ&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
     &lt;/xs:all&gt;

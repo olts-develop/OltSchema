@@ -22,7 +22,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="miscimport_xsd.html">miscimport.xsd</a></td>
+               <td><a href="basedataimport_xsd.html">BasedataImport.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MinOccurs</b></td>
@@ -46,7 +46,15 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="220,1,403,45" href="iteminfotext.html" alt="Drilldown into ItemInfoText"></area></map><img src="images/iteminfotexts.png" border="0" alt="XSD Diagram of ItemInfoTexts" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="514,279,670,323" href="text.html" alt="Drilldown into Text"></area>
+                     <area shape="rect" coords="514,227,710,272" href="title.html" alt="Drilldown into Title"></area>
+                     <area shape="rect" coords="514,195,655,220" href="external.html" alt="Drilldown into External"></area>
+                     <area shape="rect" coords="514,163,655,188" href="itinerary.html" alt="Drilldown into Itinerary"></area>
+                     <area shape="rect" coords="514,131,655,156" href="invoice.html" alt="Drilldown into Invoice"></area>
+                     <area shape="rect" coords="514,79,719,124" href="enddate.html" alt="Drilldown into EndDate"></area>
+                     <area shape="rect" coords="514,27,722,72" href="begindate.html" alt="Drilldown into BeginDate"></area>
+                     <area shape="rect" coords="429,2,730,335" href="iteminfotext1.html" alt="Drilldown into ItemInfoText"></area>
+                     <area shape="rect" coords="220,146,403,190" href="iteminfotext.html" alt="Drilldown into ItemInfoText"></area></map><img src="images/iteminfotexts.png" border="0" alt="XSD Diagram of ItemInfoTexts" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -63,8 +71,7 @@
         &lt;xs:sequence&gt;
             &lt;xs:element name="ItemInfoText" type="ItemInfoText" minOccurs="0" maxOccurs="unbounded"&gt;
                 &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;ItemInfo this Item, e.g. if in a
-								&lt;/xs:documentation&gt;
+                    &lt;xs:documentation&gt;ItemInfo this Item, e.g. if in a &lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
             &lt;/xs:element&gt;
         &lt;/xs:sequence&gt;

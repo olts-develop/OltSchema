@@ -22,7 +22,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="miscimport_xsd.html">miscimport.xsd</a></td>
+               <td><a href="miscimport_xsd.html">MiscImport.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MinOccurs</b></td>
@@ -46,13 +46,14 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="195,223,448,248" href="earlybookings.html" alt="Drilldown into EarlyBookings"></area>
-                     <area shape="rect" coords="195,191,435,216" href="specialoffers.html" alt="Drilldown into SpecialOffers"></area>
-                     <area shape="rect" coords="195,159,399,184" href="onetimes.html" alt="Drilldown into OneTimes"></area>
-                     <area shape="rect" coords="195,127,479,152" href="addperdayprices.html" alt="Drilldown into AddPerDayPrices"></area>
-                     <area shape="rect" coords="195,95,435,120" href="perdayprices.html" alt="Drilldown into PerDayPrices"></area>
-                     <area shape="rect" coords="175,63,271,88" href="currencies.html" alt="Drilldown into Currencies"></area>
-                     <area shape="rect" coords="175,1,340,56" href="descs.html" alt="Drilldown into Descs"></area></map><img src="images/prices.png" border="0" alt="XSD Diagram of Prices" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="195,335,448,360" href="earlybookings.html" alt="Drilldown into EarlyBookings"></area>
+                     <area shape="rect" coords="195,303,435,328" href="specialoffers.html" alt="Drilldown into SpecialOffers"></area>
+                     <area shape="rect" coords="195,271,399,296" href="onetimes.html" alt="Drilldown into OneTimes"></area>
+                     <area shape="rect" coords="195,239,479,264" href="addperdayprices.html" alt="Drilldown into AddPerDayPrices"></area>
+                     <area shape="rect" coords="195,207,435,232" href="perdayprices.html" alt="Drilldown into PerDayPrices"></area>
+                     <area shape="rect" coords="175,175,271,200" href="currencies.html" alt="Drilldown into Currencies"></area>
+                     <area shape="rect" coords="175,113,340,168" href="descs.html" alt="Drilldown into Descs"></area>
+                     <area shape="rect" coords="130,1,434,106" href="keepdatabeforedate.html" alt="Drilldown into KeepDataBeforeDate"></area></map><img src="images/prices.png" border="0" alt="XSD Diagram of Prices" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -107,6 +108,11 @@
             &lt;xs:element name="SpecialOffers" type="SpecialOffersChildren" minOccurs="0" /&gt;
             &lt;xs:element name="EarlyBookings" type="EarlyBookingsChildren" minOccurs="0" /&gt;
         &lt;/xs:sequence&gt;
+        &lt;xs:attribute name="KeepDataBeforeDate" type="xs:date" use="optional"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Generally all prices for a product are deleted, updated or new prices inserted. There is however a use case where prices are already entered in TO Online and the external system contains prices for the new season. In this case a date can be supplied as an attribute to the "Prices" node, and all prices whose end date is smaller than this date will not be deleted but remain in TO Online. If the date supplied is 2015-01-01 then all prices up until and including 2014-12-31 will not be deleted in Agent Online.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
     &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
@@ -168,6 +174,32 @@
                         <td><a href="earlybookings.html">EarlyBookings</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">KeepDataBeforeDate</td>
+                        <td><a href="keepdatabeforedate.html">KeepDataBeforeDate</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
                      </tr>
                   </table>
                </td>

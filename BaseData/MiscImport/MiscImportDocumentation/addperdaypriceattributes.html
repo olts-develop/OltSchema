@@ -22,7 +22,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="miscimport_xsd.html">miscimport.xsd</a></td>
+               <td><a href="basedataimport_xsd.html">BasedataImport.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
@@ -38,10 +38,11 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="283,1582,590,1815" href="childidxnr.html" alt="Drilldown into ChildIdxNr"></area>
-                     <area shape="rect" coords="263,1557,598,1825" href="childidxnrattributegroup.html" alt="Drilldown into ChildIdxNrAttributeGroup"></area>
-                     <area shape="rect" coords="283,1494,453,1539" href="day.html" alt="Drilldown into Day"></area>
-                     <area shape="rect" coords="263,1469,461,1549" href="dayattributegroup.html" alt="Drilldown into DayAttributeGroup"></area>
+                     <area shape="rect" coords="283,1634,590,1867" href="childidxnr.html" alt="Drilldown into ChildIdxNr"></area>
+                     <area shape="rect" coords="263,1609,598,1877" href="childidxnrattributegroup.html" alt="Drilldown into ChildIdxNrAttributeGroup"></area>
+                     <area shape="rect" coords="283,1546,424,1590" href="dateto.html" alt="Drilldown into DateTo"></area>
+                     <area shape="rect" coords="283,1494,430,1539" href="datefrom.html" alt="Drilldown into DateFrom"></area>
+                     <area shape="rect" coords="263,1469,506,1601" href="datefromtoattributegroup.html" alt="Drilldown into DateFromToAttributeGroup"></area>
                      <area shape="rect" coords="303,1396,448,1441" href="acct.html" alt="Drilldown into Acct"></area>
                      <area shape="rect" coords="283,1371,483,1451" href="acctattributegroup.html" alt="Drilldown into AcctAttributeGroup"></area>
                      <area shape="rect" coords="303,1282,588,1352" href="specialcommissionflag.html" alt="Drilldown into SpecialCommissionFlag"></area>
@@ -78,7 +79,7 @@
 &lt;xs:complexType name="AddPerDayPriceAttributes"&gt;
     &lt;xs:attributeGroup ref="BuyAttributeGroup" /&gt;
     &lt;xs:attributeGroup ref="SellGeneralAttributeGroup" /&gt;
-    &lt;xs:attributeGroup ref="DayAttributeGroup" /&gt;
+    &lt;xs:attributeGroup ref="DateFromToAttributeGroup" /&gt;
     &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
@@ -202,8 +203,14 @@
                         <td class="last">(Optional)</td>
                      </tr>
                      <tr>
-                        <td class="first">Day</td>
-                        <td><a href="day.html">Day</a></td>
+                        <td class="first">DateFrom</td>
+                        <td><a href="datefrom.html">DateFrom</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DateTo</td>
+                        <td><a href="dateto.html">DateTo</a></td>
                         <td class="mid"></td>
                         <td class="last">Required</td>
                      </tr>
