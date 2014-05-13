@@ -182,44 +182,6 @@
                                     <xs:documentation>MI_FIXNODAYSMAX</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="NumberOfPersons"
-                                        minOccurs="0">
-                                <xs:complexType>
-                                    <xs:attribute name="Minimum"
-                                                  type="xs:nonNegativeInteger">
-                                        <xs:annotation>
-                                            <xs:documentation>Min number of Person for this Misc.
-											</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Maximum"
-                                                  type="xs:nonNegativeInteger">
-                                        <xs:annotation>
-                                            <xs:documentation>Max number of Person for this Misc.
-											</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                </xs:complexType>
-                            </xs:element>
-                            <xs:element name="NumberOfDays"
-                                        minOccurs="0">
-                                <xs:complexType>
-                                    <xs:attribute name="Minimum"
-                                                  type="xs:nonNegativeInteger">
-                                        <xs:annotation>
-                                            <xs:documentation>Min number of days for this Misc.
-											</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Maximum"
-                                                  type="xs:nonNegativeInteger">
-                                        <xs:annotation>
-                                            <xs:documentation>Min number of days for this Misc.
-											</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                </xs:complexType>
-                            </xs:element>
                             <xs:element name="InvoiceTitle"
                                         type="Translation"
                                         minOccurs="0" />

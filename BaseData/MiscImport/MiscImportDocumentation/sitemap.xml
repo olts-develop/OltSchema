@@ -828,42 +828,6 @@
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/numberofdays.html</loc>
-      <lastmod>2014-05-13+02:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/maximum.html</loc>
-      <lastmod>2014-05-13+02:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/minimum.html</loc>
-      <lastmod>2014-05-13+02:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/numberofpersons.html</loc>
-      <lastmod>2014-05-13+02:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/maximum1.html</loc>
-      <lastmod>2014-05-13+02:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>http://schema.liquid-technologies.com/LibraryDocs/minimum1.html</loc>
-      <lastmod>2014-05-13+02:00</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
       <loc>http://schema.liquid-technologies.com/LibraryDocs/outbound.html</loc>
       <lastmod>2014-05-13+02:00</lastmod>
       <changefreq>monthly</changefreq>
