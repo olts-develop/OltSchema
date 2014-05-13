@@ -2,7 +2,7 @@
 <!--Created with Liquid XML 2014 Designer Edition 12.1.7.5079 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:include schemaLocation="..\basedataimport.xsd" />
+    <xs:include schemaLocation="..\BasedataImport.xsd" />
     <xs:element name="Hotels">
         <xs:complexType>
             <xs:sequence minOccurs="0"
@@ -599,6 +599,13 @@
                                                                             type="EarlyBookingsChildren"
                                                                             minOccurs="0" />
                                                             </xs:sequence>
+                                                            <xs:attribute name="KeepDataBeforeDate"
+                                                                          type="xs:date"
+                                                                          use="optional">
+                                                                <xs:annotation>
+                                                                    <xs:documentation>Generally all prices for a product are deleted, updated or new prices inserted. There is however a use case where prices are already entered in TO Online and the external system contains prices for the new season. In this case a date can be supplied as an attribute to the "Prices" node, and all prices whose end date is smaller than this date will not be deleted but remain in TO Online. If the date supplied is 2015-01-01 then all prices up until and including 2014-12-31 will not be deleted in Agent Online.</xs:documentation>
+                                                                </xs:annotation>
+                                                            </xs:attribute>
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:all>
@@ -643,5 +650,5 @@
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
-    </xs:element>    
+    </xs:element>
 </xs:schema>
