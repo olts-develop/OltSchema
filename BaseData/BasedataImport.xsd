@@ -41,20 +41,8 @@
                 </xs:complexType>
             </xs:element>
             <xs:element name="ItemInfoRequests"
-                        minOccurs="0">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="ItemInfoRequest"
-                                    type="ItemInfoRequest"
-                                    minOccurs="0"
-                                    maxOccurs="unbounded">
-                            <xs:annotation>
-                                <xs:documentation>ItemInfo this Item, e.g. if in a </xs:documentation>
-                            </xs:annotation>
-                        </xs:element>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
+                        type="ItemInfoRequestAttributes"
+                        minOccurs="0" />
         </xs:all>
     </xs:complexType>
     <xs:complexType name="ItemInfoText">
@@ -125,46 +113,41 @@
             </xs:element>
         </xs:all>
     </xs:complexType>
-    <xs:complexType name="ItemInfoRequest">
-        <xs:all>
-            <xs:element name="Day"
-                        type="xs:date">
-                <xs:annotation>
-                    <xs:documentation>Date when the request information applies.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="RQ"
-                        minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>If this item can be booked on request, RQ = 1</xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                    <xs:restriction base="xs:nonNegativeInteger">
-                        <xs:enumeration value="0" />
-                        <xs:enumeration value="1" />
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="FS"
-                        minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>If this item can be booked on freesell FS = 1</xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                    <xs:restriction base="xs:nonNegativeInteger">
-                        <xs:enumeration value="0" />
-                        <xs:enumeration value="1" />
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="FreeSellRelease"
-                        type="xs:nonNegativeInteger"
-                        minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>If Request = FS, then the Nr days that this item can be booked on FS before it becomes a RQ</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-        </xs:all>
+    <xs:complexType name="ItemInfoRequestAttributes">
+        <xs:attribute name="Day"
+                      type="xs:date">
+            <xs:annotation>
+                <xs:documentation>Date when the request information applies.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="RQ">
+            <xs:annotation>
+                <xs:documentation>If this item can be booked on request, RQ = 1</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="FS">
+            <xs:annotation>
+                <xs:documentation>If this item can be booked on freesell FS = 1</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="FreeSellRelease"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>If Request = FS, then the Nr days that this item can be booked on FS before it becomes a RQ</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
     </xs:complexType>
     <xs:complexType name="Translation">
         <xs:sequence>
