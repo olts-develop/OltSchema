@@ -11,7 +11,11 @@
                         <xs:all>
                             <xs:element name="Title"
                                         type="xs:string"
-                                        minOccurs="0" />
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>TO Online internal name for this item</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
                             <xs:element name="Country"
                                         minOccurs="0">
                                 <xs:complexType>
@@ -138,8 +142,7 @@
                                         type="xs:float"
                                         minOccurs="0">
                                 <xs:annotation>
-                                    <xs:documentation>
-									</xs:documentation>
+                                    <xs:documentation>Fixed commission for this item.								</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="AutomatedFeeCode"
@@ -149,6 +152,34 @@
                                     <xs:documentation>Automated Fee Code. Used for automated
 										cancellation and modification fees.
 									</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="MinimumPersons"
+                                        type="xs:nonNegativeInteger"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>MI_MINPERS</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="MaximumPersons"
+                                        type="xs:nonNegativeInteger"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>MI_MAXPERS</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="MinimumDays"
+                                        type="xs:nonNegativeInteger"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>MI_FIXNODAYSMIN</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="MaximumDays"
+                                        type="xs:nonNegativeInteger"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>MI_FIXNODAYSMAX</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="NumberOfPersons"
@@ -219,6 +250,81 @@
                                     <xs:documentation>CDATA</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
+                            <xs:element name="Passive"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>This item can no longer be booked. If a FromDate is specified, this item cannot be booked on or after the specified date.</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:integer">
+                                            <xs:attribute name="FromDate"
+                                                          type="xs:date" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="StartDateRelevant"
+                                        type="xs:boolean"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>An excursion is normally start date relevant and does not require allotment on every day, but only on the first day.
+MI_FIRSTDAYONLY</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="Outbound"
+                                        type="xs:boolean"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>MI_HIN</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="Inbound"
+                                        type="xs:boolean"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>MI_RUECK</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="TourboTitle"
+                                        type="xs:string"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Tourbo title of item group. A group of items have the same Tourbo Code, e.g. TRABOE</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="MiscCode"
+                                        type="xs:string"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Tourbo Code
+MI_TOURBOCODE</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="MiscItemCode"
+                                        type="xs:string"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Tourbo Item Code
+MI_TOURBOITEMCODE</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="SupplierCode"
+                                        type="xs:string"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>API Supplier Code
+MI_SUPPLIERBOOKCODE</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="PriceInfo"
+                                        type="xs:string"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>CDATA
+MI_PREISINFO</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
                             <xs:element name="ItemInfos"
                                         type="ItemInfos"
                                         minOccurs="0" />
@@ -279,6 +385,28 @@
                                         <xs:element name="EarlyBookings"
                                                     type="EarlyBookingsChildren"
                                                     minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Hotels"
+                                        minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>A transfer could be connected to one or more hotel rooms</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Hotel"
+                                                    minOccurs="0"
+                                                    maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="DestCode"
+                                                              type="xs:string"
+                                                              use="required" />
+                                                <xs:attribute name="HotelCode"
+                                                              type="xs:string"
+                                                              use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
