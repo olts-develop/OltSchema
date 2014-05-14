@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs the schema BasedataImport.xsd in Misc Import</title>
+      <title>Docs the schema BasedataImport.xsd in Misc BaseData Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Schema', 'basedataimport_xsd');
                     </script><div class="pageheader">
-         Documentation for Misc Import
+         Documentation for Misc BaseData Documentation
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -72,13 +72,9 @@
                 &lt;xs:complexType&gt;
                     &lt;xs:sequence&gt;
                         &lt;xs:element name="ItemInfoRequest"
-                                    type="ItemInfoRequest"
+                                    type="ItemInfoRequestAttributes"
                                     minOccurs="0"
-                                    maxOccurs="unbounded"&gt;
-                            &lt;xs:annotation&gt;
-                                &lt;xs:documentation&gt;ItemInfo this Item, e.g. if in a &lt;/xs:documentation&gt;
-                            &lt;/xs:annotation&gt;
-                        &lt;/xs:element&gt;
+                                    maxOccurs="unbounded" /&gt;
                     &lt;/xs:sequence&gt;
                 &lt;/xs:complexType&gt;
             &lt;/xs:element&gt;
@@ -152,46 +148,41 @@
             &lt;/xs:element&gt;
         &lt;/xs:all&gt;
     &lt;/xs:complexType&gt;
-    &lt;xs:complexType name="ItemInfoRequest"&gt;
-        &lt;xs:all&gt;
-            &lt;xs:element name="Day"
-                        type="xs:date"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;Date when the request information applies.&lt;/xs:documentation&gt;
-                &lt;/xs:annotation&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="RQ"
-                        minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;If this item can be booked on request, RQ = 1&lt;/xs:documentation&gt;
-                &lt;/xs:annotation&gt;
-                &lt;xs:simpleType&gt;
-                    &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
-                        &lt;xs:enumeration value="0" /&gt;
-                        &lt;xs:enumeration value="1" /&gt;
-                    &lt;/xs:restriction&gt;
-                &lt;/xs:simpleType&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="FS"
-                        minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;If this item can be booked on freesell FS = 1&lt;/xs:documentation&gt;
-                &lt;/xs:annotation&gt;
-                &lt;xs:simpleType&gt;
-                    &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
-                        &lt;xs:enumeration value="0" /&gt;
-                        &lt;xs:enumeration value="1" /&gt;
-                    &lt;/xs:restriction&gt;
-                &lt;/xs:simpleType&gt;
-            &lt;/xs:element&gt;
-            &lt;xs:element name="FreeSellRelease"
-                        type="xs:nonNegativeInteger"
-                        minOccurs="0"&gt;
-                &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;If Request = FS, then the Nr days that this item can be booked on FS before it becomes a RQ&lt;/xs:documentation&gt;
-                &lt;/xs:annotation&gt;
-            &lt;/xs:element&gt;
-        &lt;/xs:all&gt;
+    &lt;xs:complexType name="ItemInfoRequestAttributes"&gt;
+        &lt;xs:attribute name="Day"
+                      type="xs:date"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Date when the request information applies.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="RQ"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this item can be booked on request, RQ = 1&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:enumeration value="0" /&gt;
+                    &lt;xs:enumeration value="1" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="FS"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this item can be booked on freesell FS = 1&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:enumeration value="0" /&gt;
+                    &lt;xs:enumeration value="1" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="FreeSellRelease"
+                      type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If Request = FS, then the Nr days that this item can be booked on FS before it becomes a RQ&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="Translation"&gt;
         &lt;xs:sequence&gt;
@@ -278,6 +269,7 @@
         &lt;xs:attributeGroup ref="SellGeneralAttributeGroup" /&gt;
         &lt;xs:attributeGroup ref="DateFromToAttributeGroup" /&gt;
         &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="WeekdaysValidAttributeGroup" /&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="OneTimesChildren"&gt;
         &lt;xs:sequence&gt;
@@ -511,7 +503,7 @@
     &lt;xs:attributeGroup name="WeekdaysValidAttributeGroup"&gt;
         &lt;xs:attribute name="WeekdaysValid"
                       type="xs:string"
-                      use="required"&gt;
+                      use="optional"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;A seven character string, e.g. 1000000
                     The above example can be interpreted, that this price is only relevant for a Monday.&lt;/xs:documentation&gt;
@@ -792,8 +784,7 @@
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
     &lt;/xs:attributeGroup&gt;
-&lt;/xs:schema&gt;
-</code></pre></td>
+&lt;/xs:schema&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>
@@ -839,7 +830,7 @@
                      <li><a href="destinationattributes.html">DestinationAttributes</a></li>
                      <li><a href="earlybookingattributes.html">EarlyBookingAttributes</a></li>
                      <li><a href="earlybookingschildren.html">EarlyBookingsChildren</a></li>
-                     <li><a href="iteminforequest.html">ItemInfoRequest</a></li>
+                     <li><a href="iteminforequestattributes.html">ItemInfoRequestAttributes</a></li>
                      <li><a href="iteminfotext1.html">ItemInfoText</a></li>
                      <li><a href="iteminfos.html">ItemInfos</a></li>
                      <li><a href="onetimeattributes.html">OneTimeAttributes</a></li>
