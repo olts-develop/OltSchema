@@ -242,6 +242,7 @@
         <xs:attributeGroup ref="SellGeneralAttributeGroup" />
         <xs:attributeGroup ref="DateFromToAttributeGroup" />
         <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
+        <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
     </xs:complexType>
     <xs:complexType name="OneTimesChildren">
         <xs:sequence>
@@ -475,7 +476,7 @@
     <xs:attributeGroup name="WeekdaysValidAttributeGroup">
         <xs:attribute name="WeekdaysValid"
                       type="xs:string"
-                      use="required">
+                      use="optional">
             <xs:annotation>
                 <xs:documentation>A seven character string, e.g. 1000000
                     The above example can be interpreted, that this price is only relevant for a Monday.</xs:documentation>
