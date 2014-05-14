@@ -517,7 +517,7 @@
     <xs:attributeGroup name="BuyAttributeGroup">
         <xs:attribute name="BuyGross"
                       type="xs:float"
-                      use="required">
+                      use="optional">
             <xs:annotation>
                 <xs:documentation>Gross buy amount in the buying currency. Is normally equal to BuyNet.</xs:documentation>
             </xs:annotation>
