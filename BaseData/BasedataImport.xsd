@@ -41,8 +41,16 @@
                 </xs:complexType>
             </xs:element>
             <xs:element name="ItemInfoRequests"
-                        type="ItemInfoRequestAttributes"
-                        minOccurs="0" />
+                        minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ItemInfoRequest"
+                                    type="ItemInfoRequestAttributes"
+                                    minOccurs="0"
+                                    maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
         </xs:all>
     </xs:complexType>
     <xs:complexType name="ItemInfoText">
