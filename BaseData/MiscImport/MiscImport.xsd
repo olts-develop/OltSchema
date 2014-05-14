@@ -143,7 +143,7 @@
                                         type="xs:float"
                                         minOccurs="0">
                                 <xs:annotation>
-                                    <xs:documentation>Fixed commission for this item.								</xs:documentation>
+                                    <xs:documentation>Fixed commission for this item.</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="AutomatedFeeCode"
@@ -210,7 +210,8 @@
                                         type="xs:string"
                                         minOccurs="0">
                                 <xs:annotation>
-                                    <xs:documentation>CDATA</xs:documentation>
+                                    <xs:documentation>Voucher information is in the language that the supplier understands and is thus not available in more than one language.
+CDATA</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
                             <xs:element name="Passive"
