@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<Miscellaneous>
+	<Misc>
+		<Title>EXC BUS EXPLORER</Title>
+		<Country IsoCode="TH">THAILAND</Country>
+		<Region>ALLE</Region>
+		<SubRegion>Bangkok</SubRegion>
+		<Destination CountryCode="TH" Code="BKK" />
+		<Request>RQ</Request>
+		<Supplier Code="" Nr="155554">AAE All Asia Exclusive Ltd. BKK</Supplier>
+		<PaySupplier Code="" Nr="155554">AAE All Asia Exclusive Ltd. BKK</PaySupplier>
+		<VoucherSupplier Code="" Nr="155554">AAE All Asia Exclusive Ltd. BKK</VoucherSupplier>
+		<Commission>1</Commission>
+		<AutomatedFeeCode>GENERELL</AutomatedFeeCode>
+		<MinimumPersons>1</MinimumPersons>
+		<MaximumPersons>9</MaximumPersons>
+		<MinimumDays>0</MinimumDays>
+		<MaximumDays>0</MaximumDays>
+		<InvoiceTitle>
+			<de>Bangkok GAGA Gruppe ganztägig</de>
+			<en></en>
+			<fr>Bangkok GAGA en groupe d'une journée</fr>
+			<it></it>
+		</InvoiceTitle>
+		<InvoiceDetail>
+			<de><![CDATA[Mit deutschsprechender Reiseleitung, ab/bis Hotel.]]></de>
+			<en></en>
+			<fr><![CDATA[Avec guide parlant français, de/à hôtel]]></fr>
+			<it></it>
+		</InvoiceDetail>
+		<ItineraryTitle>
+			<de>Bangkok Explorer Gruppe ganztägig</de>
+			<en></en>
+			<fr>Bangkok Explorer en groupe d'une journée</fr>
+			<it></it>
+		</ItineraryTitle>
+		<ItineraryDetail>
+			<de><![CDATA[Mit deutschsprechender Reiseleitung
+ab/bis Hotel
+mit Mittagessen
+Dauer der Tour: 9 bis 17 Uhr
+
+Als erstes besichtigen Sie den Wat Saket, der auch als «Golden Mount» bekannt ist. Der kurze, steile Aufstieg wird mit einer schönen Sicht auf die Stadt belohnt. Weiter geht es zum exotischen und farbenfrohen Blumen- und Früchtemarkt. Per Tuk-Tuk erreichen Sie den Wat Po, bekannt für seinen 45 m langen und 15 m hohen, ruhenden Buddha. Zu Fuss schlendern wir durch einen lokalen Markt. Auf einer Bootsfahrt durch die Klongs von Thonburi gewinnen Sie den Eindruck vom Leben entlang der vielen Wasserstrassen. Unterwegs Halt beim beeindruckenden Wat Arun (Tempel der Morgenröte). Wenn Sie schwindelfrei sind, können Sie die sehr steilen Stufen erklimmen, um die Aussicht auf den Fluss zu geniessen. Mittagessen in einem hübschen Restaurant am Flussufer. Frisch gestärkt besuchen wir den geschäftigen Amulettmarkt, eine Besonderheit Bangkoks. Als Krönung des Tages besuchen wir den Königspalast (Thronsaal sonntags geschlossen). mit dem Wat Phra Keo. Auf der Rückfahrt besuchen Sie noch den zauberhaften Marmortempel, bevor Sie Ihr Hotel erreichen.]]></de>
+			<en>
+			</en>
+			<fr><![CDATA[Avec guide parlant français
+de/à hotel
+déjeuner inclus
+Durée du tour: de 9h00 à 17h00
+
+La visite débute par le Wat Saket connu également sous le nom de «montagne dorée». La brève ascension mais raide est récompensée par un beau panorama sur la ville. Ensuite, vous vous rendrez sur le marché des fruits et légumes exotiques haut en couleur. En tuk-tuk, vous rejoindrez le Wat Po, connu pour son Bouddha de 45 m de long et 15 m de haut. Ensuite, à pied vous flânerez à travers les stands d'un petit marché local. Lors du tour en bateau dans les klongs du quartier de Thonburi, vous pourrez faire vos impressions de ce que c'est la vie au bord de l'eau. En route, vous vous arrêterez devant l'impressionnant Wat Arun (temple de l'Aube). Si vous n'avez pas le vertige, vous pourrez grimper les raides escaliers et admirer la vue sur le fleuve. Le déjeuner vous sera servi dans un joli restaurant au bord de l'eau. La journée sera couronné par le palais royal (la salle du trône est fermée le dimanche) avec le Wat Phra Kea. Sur le chemin du retour, vous visiterez encore le superbe temple en marbre avant de rentrer à l'hôtel.]]></fr>
+		</ItineraryDetail>
+		<Passive FromDate="">0</Passive>
+		<StartDateRelevant>0</StartDateRelevant>
+		<Outbound>false</Outbound>
+		<Inbound>false</Inbound>
+		<TourboTitle>BANGKOK EXPLORER</TourboTitle>
+		<MiscCode>EXCXXX</MiscCode>
+		<MiscItemCode>B</MiscItemCode>
+		<SupplierCode>
+		</SupplierCode>
+		<PriceInfo>
+		</PriceInfo>
+		<ItemInfos>
+			<ItemInfoTexts>
+				<ItemInfoText>
+					<BeginDate>2014-01-13</BeginDate>
+					<EndDate>2014-12-31</EndDate>
+					<Type>Miscellaneous</Type>
+					<Invoice>true</Invoice>
+					<Itinerary>true</Itinerary>
+					<External>
+					</External>
+					<Title>
+						<de>Annullierungsbedingungen</de>
+						<fr>Conditions d’annulation</fr>
+					</Title>
+					<Text>
+						<de><![CDATA[Für Bhutan Reisen gelten die folgenden speziellen, von den allgemeinen Bedingungen abweichenden Annullierungskosten:
+60–0 Tage vor Abreise: 100%
+Flüge mit Druk Air: 100% nach Buchungsbestätigung]]></de>
+						<fr><![CDATA[Pour un voyage au Bhoutan, des conditions spéciales qui diffèrent de nos conditions générales sont en vigueur:
+60 à 0 jours avant le départ: 100%
+Vols avec Druk Air: 100% après la confirmation]]></fr>
+					</Text>
+				</ItemInfoText>
+			</ItemInfoTexts>
+		</ItemInfos>
+		<Hotels>
+			<Hotel DestCode="BKK" HotelCode="BANMAR" />
+			<Hotel DestCode="BKK" HotelCode="BANTRE" />
+		</Hotels>
+	</Misc>
+</Miscellaneous>

@@ -1,354 +1,280 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Created with Liquid XML 2014 Designer Edition 12.1.7.5079 (http://www.liquid-technologies.com) -->
 <Miscellaneous>
-    <Misc">
-        <Title>string</Title>
-        <Country IsoCode="string">string</Country>
-        <Region>string</Region>
-        <SubRegion>string</SubRegion>
-        <Destination CountryCode="string"
-                     Code="string" />
-        <Request></Request>
-        <Supplier Code="string"
-                  Nr="3487229976">string</Supplier>
-        <PaySupplier Code="string"
-                     Nr="1612751629">string</PaySupplier>
-        <VoucherSupplier Code="string"
-                         Nr="3189597332">string</VoucherSupplier>
-        <Commission>9935.87491</Commission>
-        <AutomatedFeeCode>string</AutomatedFeeCode>
-        <MinimumPersons>2256408313</MinimumPersons>
-        <MaximumPersons>3276922607</MaximumPersons>
-        <MinimumDays>3331567476</MinimumDays>
-        <MaximumDays>3363461903</MaximumDays>
-        <InvoiceTitle>
-            <de>string</de>
-            <en>string</en>
-            <fr>string</fr>
-            <it>string</it>
-        </InvoiceTitle>
-        <InvoiceDetail>
-            <de>string</de>
-            <en>string</en>
-            <fr>string</fr>
-            <it>string</it>
-        </InvoiceDetail>
-        <ItineraryTitle>
-            <de>string</de>
-            <en>string</en>
-            <fr>string</fr>
-            <it>string</it>
-        </ItineraryTitle>
-        <ItineraryDetail>
-            <de>string</de>
-            <en>string</en>
-            <fr>string</fr>
-            <it>string</it>
-        </ItineraryDetail>
-        <VoucherTitle>string</VoucherTitle>
-        <VoucherDetail>string</VoucherDetail>
-        <Passive FromDate="1971-04-20">-6688</Passive>
-        <StartDateRelevant>0</StartDateRelevant>
-        <Outbound>false</Outbound>
-        <Inbound>true</Inbound>
-        <TourboTitle>string</TourboTitle>
-        <MiscCode>string</MiscCode>
-        <MiscItemCode>string</MiscItemCode>
-        <SupplierCode>string</SupplierCode>
-        <PriceInfo>string</PriceInfo>
-        <ItemInfos>
-            <ItemInfoTexts>
-                <ItemInfoText>
-                    <BeginDate>1986-01-02</BeginDate>
-                    <External>false</External>
-                </ItemInfoText>
-                <ItemInfoText>
-                    <BeginDate>1979-03-06</BeginDate>
-                    <EndDate>1999-04-18</EndDate>
-                    <Invoice>false</Invoice>
-                </ItemInfoText>
-                <ItemInfoText>
-                    <BeginDate>2004-02-08</BeginDate>
-                    <Invoice>1</Invoice>
-                    <Itinerary>1</Itinerary>
-                    <External>false</External>
-                    <Title />
-                </ItemInfoText>
-            </ItemInfoTexts>
-            <ItemInfoRequests />
-        </ItemInfos>
-        <Prices KeepDataBeforeDate="1989-07-19">
-            <Descs>
-                <Desc DescId="293951857" />
-            </Descs>
-            <Currencies>
-                <Currency IdNr="4"
-                          IsoCode="ABC" />
-                <Currency IdNr="4"
-                          IsoCode="ABC" />
-                <Currency IdNr="1"
-                          IsoCode="ABC" />
-                <Currency IdNr="3"
-                          IsoCode="ABC" />
-            </Currencies>
-            <PerDayPrices>
-                <PerDayPrice BuyGross="745.33491"
-                             BuyNet="-4759.18509"
-                             BuyAcct="string"
-                             BuyCurr="string"
-                             BuyAmtBaseCurr="8968.85491"
-                             DescId="1676626383"
-                             P1="-5107.36509"
-                             P3="-924.06509"
-                             P4="-5040.70509"
-                             Type="P"
-                             NotSpecialRelevant="0"
-                             SpecialCommissionFlag="1"
-                             Day="1999-08-02"
-                             ChildIdxNr="1" />
-                <PerDayPrice BuyNet="-6550.30509"
-                             BuyAcct="string"
-                             BuyCurr="string"
-                             BuyAmtBaseCurr="-3305.00509"
-                             DescId="2612104620"
-                             P1="-4624.16509"
-                             P4="2644.41491"
-                             SpecialCommissionFlag="0"
-                             Day="1988-12-05" />
-                <PerDayPrice BuyNet="-3119.76509"
-                             BuyAcct="string"
-                             BuyCurr="string"
-                             BuyAmtBaseCurr="5662.49491"
-                             DescId="3084946159"
-                             P1="8849.21491"
-                             P4="-5644.40509"
-                             Type="P"
-                             NotSpecialRelevant="0"
-                             SpecialCommission="9583.69491"
-                             SpecialCommissionFlag="1"
-                             Day="1999-03-13" />
-                <PerDayPrice BuyNet="-1088.30509"
-                             BuyAcct="string"
-                             BuyCurr="string"
-                             BuyAmtBaseCurr="-4583.14509"
-                             DescId="3241974458"
-                             P1="3612.45491"
-                             P2="-5896.08509"
-                             P3="-6471.58509"
-                             AgeTo="95"
-                             SpecialCommission="4051.71491"
-                             SpecialCommissionFlag="0"
-                             Acct="string"
-                             Day="1986-05-16"
-                             ChildIdxNr="1" />
-            </PerDayPrices>
-            <AddPerDayPrices>
-                <AddPerDayPrice BuyGross="8116.75491"
-                                BuyNet="-1695.34509"
-                                BuyAcct="string"
-                                BuyCurr="string"
-                                BuyAmtBaseCurr="-4351.08509"
-                                DescId="1266525726"
-                                P1="-9283.04509"
-                                P4="2864.97491"
-                                AgeFrom="115"
-                                SpecialCommission="-1426.52509"
-                                Acct="string"
-                                DateFrom="2010-11-18"
-                                DateTo="1985-08-03"
-                                ChildIdxNr="2"
-                                WeekdaysValid="string" />
-                <AddPerDayPrice BuyNet="9250.93491"
-                                BuyAcct="string"
-                                BuyCurr="string"
-                                BuyAmtBaseCurr="8942.53491"
-                                DescId="550009217"
-                                P1="-2708.70509"
-                                P2="-8301.54509"
-                                P4="-3258.08509"
-                                NotSpecialRelevant="0"
-                                SpecialCommission="2980.43491"
-                                SpecialCommissionFlag="0"
-                                DateFrom="2005-12-04"
-                                DateTo="1973-09-26" />
-            </AddPerDayPrices>
-            <OneTimes />
-            <SpecialOffers>
-                <SpecialOffer BuyNet="-2003.68509"
-                              BuyAcct="string"
-                              BuyCurr="string"
-                              BuyAmtBaseCurr="-8475.12509"
-                              FromDayBase="186388696"
-                              ToDayBase="1084174299"
-                              PayNights="689715913"
-                              SaveNights="3191276664"
-                              Type="Average"
-                              StartDateRelevant="1"
-                              LastSpOffEndDate="2011-08-13"
-                              RuleType="string"
-                              Baby="1"
-                              Child="1"
-                              SpecialCommission="9605.59491"
-                              ChildChildNr="2947215148"
-                              ChildAdultNr="1461671860"
-                              DateFrom="2010-11-12"
-                              DateTo="1992-01-14"
-                              AddAmount1="-3557.74509"
-                              AddAmount3="4847.17491"
-                              AddAmount4="5982.89491"
-                              DescId="233341278"
-                              DaysBeforeDepartureFrom="874008665"
-                              DateBeforeDepartureFrom="1992-10-12" />
-                <SpecialOffer BuyNet="5109.47491"
-                              BuyAcct="string"
-                              BuyCurr="string"
-                              BuyAmtBaseCurr="-6897.56509"
-                              FromDayBase="3139341920"
-                              ToDayBase="1453331033"
-                              PayNights="1728647027"
-                              SaveNights="4154886937"
-                              Type="EndDays"
-                              StartDateRelevant="false"
-                              EndDateRelevant="0"
-                              LastSpOffEndDate="2017-01-16"
-                              RuleType="string"
-                              Baby="1"
-                              Child="0"
-                              SpecialCommission="-1581.26509"
-                              ChildChildNr="4114071862"
-                              ChildAdultNr="4244939516"
-                              DateFrom="2001-10-02"
-                              DateTo="2000-05-14"
-                              WeekdaysValid="string"
-                              AddAmount1="-5290.72509"
-                              AddAmount3="-4159.36509"
-                              AddAmount4="7826.55491"
-                              DescId="1737524724"
-                              DaysBeforeDepartureFrom="1883673871"
-                              DaysBeforeDepartureTo="4225049522"
-                              DateBeforeDepartureTo="2002-11-27"
-                              Acct="string" />
-                <SpecialOffer BuyGross="-8273.28509"
-                              BuyNet="-229.40509"
-                              BuyAcct="string"
-                              BuyCurr="string"
-                              BuyAmtBaseCurr="5840.37491"
-                              FromDayBase="3094674260"
-                              ToDayBase="4203123714"
-                              PayNights="2655260451"
-                              SaveNights="3486091809"
-                              Type="MaxValue"
-                              StartDateRelevant="true"
-                              EndDateRelevant="1"
-                              LastSpOffEndDate="2013-10-01"
-                              RuleType="string"
-                              Baby="1"
-                              Child="0"
-                              SpecialCommission="-1193.50509"
-                              ChildChildNr="3107572047"
-                              ChildAdultNr="2370147637"
-                              DateFrom="1973-08-23"
-                              DateTo="1981-09-13"
-                              AddAmount2="7087.71491"
-                              DescId="1827130627"
-                              DateBeforeDepartureTo="2011-06-19"
-                              Acct="string" />
-            </SpecialOffers>
-            <EarlyBookings>
-                <EarlyBooking BuyGross="-2617.68509"
-                              BuyNet="8882.37491"
-                              BuyAcct="string"
-                              BuyCurr="string"
-                              BuyAmtBaseCurr="5587.39491"
-                              FromDay="2365015151"
-                              ToDay="2139245900"
-                              Percent="-3695.14509"
-                              StartDateRelevant="0"
-                              EndDateRelevant="true"
-                              ForceDisplay="1"
-                              ForAllDays="0"
-                              SpecialCommission="828.45491"
-                              DateFrom="2010-10-27"
-                              DateTo="1972-08-28"
-                              AddAmount3="1416.73491"
-                              AddAmount4="621.09491"
-                              DescId="4288550614"
-                              DaysBeforeDepartureFrom="3264991188"
-                              DaysBeforeDepartureTo="437901980"
-                              Acct="string"
-                              MaxNrNights="1369050890" />
-                <EarlyBooking BuyNet="-5996.84509"
-                              BuyAcct="string"
-                              BuyCurr="string"
-                              BuyAmtBaseCurr="-3925.24509"
-                              FromDay="2575481433"
-                              ToDay="1085398365"
-                              Percent="-9161.30509"
-                              ForceDisplay="1"
-                              ForAllDays="1"
-                              SpecialCommission="6475.33491"
-                              DateFrom="2015-11-28"
-                              DateTo="1970-06-12"
-                              AddAmount3="-7230.78509"
-                              AddAmount4="-2819.06509"
-                              DescId="84198539"
-                              DateBeforeDepartureFrom="1974-05-25"
-                              DateBeforeDepartureTo="1983-03-10"
-                              MaxNrNights="3229158276" />
-                <EarlyBooking BuyGross="4554.91491"
-                              BuyNet="8057.31491"
-                              BuyAcct="string"
-                              BuyCurr="string"
-                              BuyAmtBaseCurr="2068.79491"
-                              FromDay="710585159"
-                              ToDay="3413786035"
-                              Percent="974.65491"
-                              StartDateRelevant="0"
-                              EndDateRelevant="false"
-                              ForceDisplay="0"
-                              ForAllDays="1"
-                              SpecialCommission="-2133.72509"
-                              DateFrom="1991-09-24"
-                              DateTo="1985-09-24"
-                              AddAmount1="-7998.26509"
-                              AddAmount2="-1627.26509"
-                              AddAmount3="3792.69491"
-                              DescId="2704708409"
-                              DaysBeforeDepartureTo="2209129313"
-                              DateBeforeDepartureFrom="1982-09-11"
-                              Acct="string"
-                              MaxNrNights="3752573055" />
-                <EarlyBooking BuyGross="6206.49491"
-                              BuyNet="-3753.44509"
-                              BuyAcct="string"
-                              BuyCurr="string"
-                              BuyAmtBaseCurr="-1970.50509"
-                              FromDay="372292060"
-                              ToDay="3704366342"
-                              Percent="9749.63491"
-                              StartDateRelevant="1"
-                              EndDateRelevant="true"
-                              ForceDisplay="0"
-                              ForAllDays="0"
-                              SpecialCommission="-9700.32509"
-                              DateFrom="2015-06-26"
-                              DateTo="2007-06-19"
-                              AddAmount1="8115.79491"
-                              AddAmount2="-7012.24509"
-                              AddAmount4="-431.66509"
-                              DescId="3605294332"
-                              DaysBeforeDepartureFrom="74977244"
-                              DaysBeforeDepartureTo="2395861606"
-                              DateBeforeDepartureFrom="1986-02-01"
-                              DateBeforeDepartureTo="2004-11-16"
-                              MaxNrNights="4091050838" />
-            </EarlyBookings>
-        </Prices>
-        <Hotels>
-            <Hotel DestCode="string"
-                   HotelCode="string" />
-            <Hotel DestCode="string"
-                   HotelCode="string" />
-        </Hotels>
-    </Misc>
+	<Misc ">
+		<Title>RTP PVT AMANKORA / DBL</Title>
+		<Country IsoCode="BT">BHUTAN</Country>
+		<Region>ALLE</Region>
+		<SubRegion>Paro</SubRegion>
+		<Destination CountryCode="PBH" Code="" />
+		<Request>RQ</Request>
+		<Supplier Code="" Nr="154379">Aman Resorts International</Supplier>
+		<PaySupplier Code="string" Nr="154379">Aman Resorts International
+		</PaySupplier>
+		<VoucherSupplier Code="string" Nr="154379">Aman Resorts
+			International
+		</VoucherSupplier>
+		<Commission>0</Commission>
+		<AutomatedFeeCode>GENERELL</AutomatedFeeCode>
+		<MinimumPersons></MinimumPersons>
+		<MaximumPersons></MaximumPersons>
+		<MinimumDays>0</MinimumDays>
+		<MaximumDays>0</MaximumDays>
+		<InvoiceTitle>
+			<de>8 Tage / 7 Nächte</de>
+			<en></en>
+			<fr>8 jours / 7 nuits</fr>
+			<it></it>
+		</InvoiceTitle>
+		<InvoiceDetail>
+			<de><![CDATA[Unterkunft im Doppel-/Zweibettzimmer in den Amankora Lodges
+				Reiseverlauf wie beschrieben, ab/bis Flughafen Paro
+				Englisch
+				sprechende Lokalreiseleitung
+				Mahlzeiten wie beschrieben
+				1 Massage (60
+				Minuten)
+				Sämtliche Eintrittsgelder
+				Visum für Bhutan
+
+				NICHT INBEGRIFFEN:
+				Abflugstaxen (US$ 20.-)
+				Flüge nach/von Paro mit Druk Air
+
+				MAHLZEITEN
+				Die eingeschlossenen Mahlzeiten sind beim jeweiligen Tagestitel
+				vermerkt:
+				F = Frühstück / M = Mittagessen / A = Abendessen]]>
+			</de>
+			<en></en>
+			<fr><![CDATA[Logement dans une chambre double/à deux lits dans les Amankora
+				Lodges
+				Circuit selon descriptif de/à l'aéroport de Paro
+				Guide local
+				parlant anglais
+				Logement dans les Amankora Lodges
+				Repas selon
+				programme
+				1 massage de 60 minutes
+				Toutes les entrées
+				Visa pour le
+				Bhoutan
+
+				A VOS FRAIS:
+				Taxes d'aéroport (US$ 20.-)
+				Vols de/à Paro avec
+				Druk Air
+
+				REPAS
+				Repas sont inclus selon description du jour:
+				Pd=petit
+				déjeuner / D=déjeuner / S=dîner]]>
+			</fr>
+			<it></it>
+		</InvoiceDetail>
+		<ItineraryTitle>
+			<de>8 Tage / 7 Nächte</de>
+			<en></en>
+			<fr>8 jours / 7 nuits</fr>
+			<it></it>
+		</ItineraryTitle>
+		<ItineraryDetail>
+			<de><![CDATA[Unterkunft im Doppel-/Zweibettzimmer in den Amankora Lodges
+				Reiseverlauf wie beschrieben, ab/bis Flughafen Paro
+				Englisch
+				sprechende Lokalreiseleitung
+				Mahlzeiten wie beschrieben
+				1 Massage (60
+				Minuten)
+				Sämtliche Eintrittsgelder
+				Visum für Bhutan
+
+				NICHT INBEGRIFFEN:
+				Abflugstaxen (US$ 20.-)
+				Flüge nach/von Paro mit Druk Air
+
+				WICHTIG
+				Bei
+				Fragen oder Problemen wenden Sie sich an unsere lokale Vertretung
+				(Adresse und Telefonnummer im Anhang).
+
+				HINWEISE
+				Flugzeiten können
+				kurzfristig ändern.
+
+				In Bhutan kann es je nach Region und Jahreszeit
+				kalt werden. Bitte
+				Regenschutz und auch warme Kleidung mitnehmen.
+
+				TIPPS ZUR AUSRÜSTUNG
+				Bitte denken Sie bei der Zusammenstellung Ihres
+				Reisegepäcks an folgende
+				wichtige Gegenstände:
+				- warmer Pullover oder
+				Windjacke
+				- bequemes und festes Schuhwerk
+				- Sonnencrème mit hohem
+				Schutzfaktor (>20), Kopfbedeckung,
+				Sonnenbrille
+				- Reisepass mit
+				gültigem Visum
+				- Alle nötigen Flugtickets
+				- Geld
+				- Taschenlampe
+
+				MAHLZEITEN
+				Die eingeschlossenen Mahlzeiten sind beim jeweiligen
+				Tagestitel
+				vermerkt:
+				F = Frühstück / M = Mittagessen / A = Abendessen
+
+				Die renommierte Aman Hotelkette, weltweit bekannt für seine
+				exklusiven,
+				luxuriösen Hotels und Resorts, führt an fünf Orten in
+				Bhutan die
+				einzigartigen Amankora Lodges. Reisende können sich am
+				Ende eines
+				ereignisreichen Tages mit all den neuen Eindrücken in die
+				Behaglichkeit und den Komfort eines erstklassigen Hotels
+				zurückziehen, ausruhen und sich auf die kommenden Abenteuer freuen.
+				An jedem Etappenziel erwartet Sie eine wohltuende Amankora
+				Unterkunft mit einem Spa. Die Reise kann auch mit einer anderen
+				Route und länger als 8 Tage geplant werden. Auf der Amankora Bhutan
+				Rundreise erleben Sie dieses einzigartige Land auf exklusivste,
+				bequemste und luxuriöseste Weise.]]>
+			</de>
+			<en></en>
+			<fr><![CDATA[Logement dans une chambre double/à deux lits dans les Amankora
+				Lodges
+				Circuit selon descriptif de/à l'aéroport de Paro
+				Guide local
+				parlant anglais
+				Logement dans les Amankora Lodges
+				Repas selon
+				programme
+				1 massage de 60 minutes
+				Toutes les entrées
+				Visa pour le
+				Bhoutan
+
+				A VOS FRAIS:
+				Taxes d'aéroport (US$ 20.-)
+				Vols de/à Paro avec
+				Druk Air
+
+				IMPORTANT
+				En cas de problèmes ou questions veuillez contacter
+				notre agent local
+				(Adresse et numéro de téléphone voir vos documents
+				de voyage).
+
+				REMARQUE
+				Les heures de départ des avions peuvent être
+				modifiés à court terme.
+
+				En Bhutan il peut faire froid pendant
+				quelques mois. N'oubliez pas de
+				prendre avec vous des habits chauds
+				ainsi qu'une protection contre
+				la pluie.
+
+				A PRENDRE
+				N'oubliez pas de
+				prendre dans vos bagages les objets suivants:
+				- un pull chaud et
+				protection contre le vent
+				- chaussures de marche solides et
+				confortables
+				- crème solaire de haute protection (>20), chapeau
+				contre le soleil,
+				lunettes de soleil
+				- passeport et visa valables
+				- les
+				billets d’avions nécessaires
+				- argent
+				- lampe de poche
+
+				REPAS
+				Repas sont
+				inclus selon description du jour:
+				Pd=petit déjeuner / D=déjeuner /
+				S=dîner
+
+				La chaîne hôtelière renommée Aman, mondialement connue pour
+				ses hôtels
+				exclusifs et luxueux, a ouvert dans cinq endroits du
+				Bhoutan les
+				exceptionnels Amankora Lodges. A la fin d'un voyage riche
+				en
+				expériences, le voyageur sera reçu dans un hôtel de première
+				classe
+				et aura tout le temps de passer en revue toutes les nouvelles
+				impressions rencontrées, se reposer et se réjouir des nouvelles
+				aventures à venir. Au bout de chaque étape, vous attend un agréable
+				logement Amankora avec un spa. Ce programme peut avoir un autre
+				itinéraire ou être prolongé sur 8 jours. Ce circuit vous emmène à
+				découvrir ce pays unique de manière la plus exclusive, la plus
+				confortable et la plus luxueuse.]]>
+			</fr>
+			<it></it>
+		</ItineraryDetail>
+		<VoucherTitle>7 NIGHTS AMANKORA THIMPHU-GANGTEY-PUNAKHA-PARO
+			PACKAGE,private
+		</VoucherTitle>
+		<VoucherDetail><![CDATA[1st &amp; 2nd night in Thimphu, 3rd night in Gangtey,
+			4th &amp; 5th night in Punakha, 6th &amp; 7th night in Paro
+
+			7 nights
+			accommodation in mentioned Amankora Lodges in double room
+			Full board
+			starting with dinner on Day 1 and terminating with
+			breakfast on Day 8
+			Entrance to all monuments, road taxes, parking fees, fuel charges
+			English speaking guide
+			1 Wellness program
+			FIT surcharge
+			Government
+			Royalties
+			Tourism Development Fund
+			Bhutan Visa Fee
+			Service and taxes]]>
+		</VoucherDetail>
+		<Passive FromDate="">0</Passive>
+		<StartDateRelevant>0</StartDateRelevant>
+		<Outbound>false</Outbound>
+		<Inbound>false</Inbound>
+		<TourboTitle></TourboTitle>
+		<MiscCode></MiscCode>
+		<MiscItemCode></MiscItemCode>
+		<SupplierCode></SupplierCode>
+		<PriceInfo></PriceInfo>
+		<ItemInfos>
+			<ItemInfoTexts>
+				<ItemInfoText>
+					<BeginDate>2014-01-13</BeginDate>
+					<EndDate>2014-12-31</EndDate>
+					<Type>Miscellaneous</Type>
+					<Invoice>true</Invoice>
+					<Itinerary>true</Itinerary>
+					<External></External>
+					<Title>
+						<de>Annullierungsbedingungen</de>
+						<fr>Conditions d’annulation</fr>
+					</Title>
+					<Text>
+						<de><![CDATA[Für Bhutan Reisen gelten die folgenden speziellen, von den allgemeinen Bedingungen abweichenden Annullierungskosten:
+60–0 Tage vor Abreise: 100%
+Flüge mit Druk Air: 100% nach Buchungsbestätigung]]></de>
+						<fr><![CDATA[Pour un voyage au Bhoutan, des conditions spéciales qui diffèrent de nos conditions générales sont en vigueur:
+60 à 0 jours avant le départ: 100%
+Vols avec Druk Air: 100% après la confirmation]]>
+						</fr>
+					</Text>
+				</ItemInfoText>			
+			</ItemInfoTexts>
+		</ItemInfos>
+		<Hotels>
+			<Hotel DestCode="PBH" HotelCode="ABCDE" />
+			<Hotel DestCode="PBH" HotelCode="FGHIJ" />
+		</Hotels>
+	</Misc>
 </Miscellaneous>
