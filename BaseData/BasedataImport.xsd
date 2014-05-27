@@ -228,6 +228,7 @@
         <xs:attributeGroup ref="SellGeneralAttributeGroup" />
         <xs:attributeGroup ref="DayAttributeGroup" />
         <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
+        <xs:attributeGroup ref="BabyChildAttributeGroup" />
     </xs:complexType>
     <xs:complexType name="AddPerDayPricesChildren">
         <xs:sequence>
@@ -243,6 +244,7 @@
         <xs:attributeGroup ref="DateFromToAttributeGroup" />
         <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
         <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
+        <xs:attributeGroup ref="BabyChildAttributeGroup" />
     </xs:complexType>
     <xs:complexType name="OneTimesChildren">
         <xs:sequence>
@@ -334,30 +336,6 @@
                     Date = the attributes DateBeforeDepartureFrom and DateBeforeDepartureTo are valid for the calculatio</xs:documentation>
             </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="Baby">
-            <xs:annotation>
-                <xs:documentation>0 = this special offer is valid only for adults
-                    1 = this special offer is only valid for babies</xs:documentation>
-            </xs:annotation>
-            <xs:simpleType>
-                <xs:restriction base="xs:nonNegativeInteger">
-                    <xs:enumeration value="0" />
-                    <xs:enumeration value="1" />
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
-        <xs:attribute name="Child">
-            <xs:annotation>
-                <xs:documentation>0 = this special offer is valid only for adults
-                    1 = this special offer is only valid for children</xs:documentation>
-            </xs:annotation>
-            <xs:simpleType>
-                <xs:restriction base="xs:nonNegativeInteger">
-                    <xs:enumeration value="0" />
-                    <xs:enumeration value="1" />
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
         <xs:attribute name="SpecialCommission"
                       type="xs:float">
             <xs:annotation>
@@ -383,6 +361,7 @@
         <xs:attributeGroup ref="DescIdAttributeGroup" />
         <xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" />
         <xs:attributeGroup ref="AcctAttributeGroup" />
+        <xs:attributeGroup ref="BabyChildAttributeGroup" />
     </xs:complexType>
     <xs:complexType name="EarlyBookingsChildren">
         <xs:sequence>
@@ -456,6 +435,7 @@
                 <xs:documentation>A special offer can be connected to the number of stay nights. If one stays 7 nights the special offer can be different to a stay of 14 nights. The value in this field identified the maximum number of nights for which this rule is relevant.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attributeGroup ref="BabyChildAttributeGroup" />
     </xs:complexType>
     <xs:attributeGroup name="DateFromToAttributeGroup">
         <xs:attribute name="DateFrom"
@@ -484,17 +464,29 @@
         </xs:attribute>
     </xs:attributeGroup>
     <xs:attributeGroup name="BabyChildAttributeGroup">
-        <xs:attribute name="Baby"
-                      type="xs:nonNegativeInteger">
+        <xs:attribute name="Baby">
             <xs:annotation>
-                <xs:documentation />
+                <xs:documentation>0 = this special offer is valid only for babies
+1 = this special offer is only valid for children</xs:documentation>
             </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
         </xs:attribute>
-        <xs:attribute name="Child"
-                      type="xs:nonNegativeInteger">
+        <xs:attribute name="Child">
             <xs:annotation>
-                <xs:documentation />
+                <xs:documentation>0 = this special offer is valid only for adults
+1 = this special offer is only valid for children</xs:documentation>
             </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
         </xs:attribute>
     </xs:attributeGroup>
     <xs:attributeGroup name="DescIdAttributeGroup">
