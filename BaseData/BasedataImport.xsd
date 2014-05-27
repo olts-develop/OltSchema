@@ -298,7 +298,7 @@
                     If this has a value of 2, and I have a FromDay=6, ToDay=7, then if I book 6 days the customer pays 4 nights, if I book 7 days the customer pays 5 nights. SaveNights and PayNights are mutually exclusive. Only one of the attributes is allowed</xs:documentation>
             </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="Type">
+        <xs:attribute name="SaveDayType">
             <xs:annotation>
                 <xs:documentation>Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
                     Day1 - 100 CHF
@@ -311,7 +311,7 @@
                     If the Type is EndDays, and I have a valid 7/5, then the special offer will be 150 + 160 CHF.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
-                <xs:restriction base="xs:string">
+                <xs:restriction base="xs:short">
                     <xs:enumeration value="EndDays" />
                     <xs:enumeration value="StartDays" />
                     <xs:enumeration value="Average" />
@@ -362,6 +362,18 @@
         <xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" />
         <xs:attributeGroup ref="AcctAttributeGroup" />
         <xs:attributeGroup ref="BabyChildAttributeGroup" />
+        <xs:attribute name="Type">
+            <xs:annotation>
+                <xs:documentation>P = Price per person (default)
+                    R = Price per Room</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="P" />
+                    <xs:enumeration value="R" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
     </xs:complexType>
     <xs:complexType name="EarlyBookingsChildren">
         <xs:sequence>
