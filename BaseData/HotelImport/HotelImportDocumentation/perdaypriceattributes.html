@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item PerDayPriceAttributes in Hotel BaseData Import</title>
+      <title>Docs for schema item PerDayPriceAttributes in Hotel Export</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('ComplexType', 'perdaypriceattributes');
                     </script><div class="pageheader">
-         Documentation for Hotel BaseData Import
+         Documentation for Hotel Export
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -38,6 +38,9 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="261,1946,461,2027" href="child.html" alt="Drilldown into Child"></area>
+                     <area shape="rect" coords="261,1858,461,1939" href="baby.html" alt="Drilldown into Baby"></area>
+                     <area shape="rect" coords="241,1833,473,2037" href="babychildattributegroup.html" alt="Drilldown into BabyChildAttributeGroup"></area>
                      <area shape="rect" coords="261,1582,568,1815" href="childidxnr.html" alt="Drilldown into ChildIdxNr"></area>
                      <area shape="rect" coords="241,1557,576,1825" href="childidxnrattributegroup.html" alt="Drilldown into ChildIdxNrAttributeGroup"></area>
                      <area shape="rect" coords="261,1494,431,1539" href="day.html" alt="Drilldown into Day"></area>
@@ -80,6 +83,7 @@
     &lt;xs:attributeGroup ref="SellGeneralAttributeGroup" /&gt;
     &lt;xs:attributeGroup ref="DayAttributeGroup" /&gt;
     &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
+    &lt;xs:attributeGroup ref="BabyChildAttributeGroup" /&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -103,7 +107,7 @@
                         <td class="first">BuyGross</td>
                         <td><a href="buygross.html">BuyGross</a></td>
                         <td class="mid"></td>
-                        <td class="last">Required</td>
+                        <td class="last">Optional</td>
                      </tr>
                      <tr>
                         <td class="first">BuyNet</td>
@@ -210,6 +214,18 @@
                      <tr>
                         <td class="first">ChildIdxNr</td>
                         <td><a href="childidxnr.html">ChildIdxNr</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Baby</td>
+                        <td><a href="baby.html">Baby</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Child</td>
+                        <td><a href="child.html">Child</a></td>
                         <td class="mid"></td>
                         <td class="last">(Optional)</td>
                      </tr>
