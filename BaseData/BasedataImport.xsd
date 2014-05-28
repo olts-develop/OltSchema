@@ -311,7 +311,7 @@
                     If the Type is EndDays, and I have a valid 7/5, then the special offer will be 150 + 160 CHF.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
-                <xs:restriction base="xs:short">
+                <xs:restriction base="xs:string">
                     <xs:enumeration value="EndDays" />
                     <xs:enumeration value="StartDays" />
                     <xs:enumeration value="Average" />
