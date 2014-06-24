@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2014 Designer Edition 12.2.0.5183 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.1.7.5079 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:complexType name="Desc">
@@ -448,7 +448,6 @@
             </xs:annotation>
         </xs:attribute>
         <xs:attributeGroup ref="BabyChildAttributeGroup" />
-        <xs:attributeGroup ref="ShowPriceWhenZeroGroup" />
     </xs:complexType>
     <xs:attributeGroup name="DateFromToAttributeGroup">
         <xs:attribute name="DateFrom"
@@ -759,14 +758,6 @@
                       type="xs:string">
             <xs:annotation>
                 <xs:documentation>Account number for this price line</xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-    </xs:attributeGroup>
-    <xs:attributeGroup name="ShowPriceWhenZeroGroup">
-        <xs:attribute name="ShowPriceWhenZero"
-                      type="xs:boolean">
-            <xs:annotation>
-                <xs:documentation>Normally prices with a 0 amount are removed from the price list. This flag tells the price calculator to display the price. This can be useful when there is an early booking service that the customer can take advantage of that has no price, e.g. if you book more than 30 days in advance you get a voucher for a free sauna visit.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:attributeGroup>
