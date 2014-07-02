@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2014 Designer Edition 12.1.7.5079 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.2.0.5183 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:complexType name="Desc">
@@ -717,11 +717,7 @@
                     Do PriceList.$search($ref.P_KINDERPREISSPEZ&gt;0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
-                <xs:restriction base="xs:nonNegativeInteger">
-                    <xs:enumeration value="0" />
-                    <xs:enumeration value="1" />
-                    <xs:enumeration value="2" />
-                </xs:restriction>
+                <xs:restriction base="xs:nonNegativeInteger" />
             </xs:simpleType>
         </xs:attribute>
     </xs:attributeGroup>
