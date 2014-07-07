@@ -554,6 +554,13 @@
                 <xs:documentation>Buy amount in the base currency of TO Online</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="BuyExchgRate"
+                      type="xs:float"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>Sometimes BuyNet and BuyAmtBaseCurr are zero, e.g. SpecialOffer. In this case the interface needs to be informed explicitly what the exchange rate for this currency is.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
     </xs:attributeGroup>
     <xs:attributeGroup name="DateRelevantAttributeGroup">
         <xs:attribute name="StartDateRelevant"
