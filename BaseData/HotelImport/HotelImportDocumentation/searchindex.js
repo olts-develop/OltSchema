@@ -18,209 +18,210 @@ fr[12]=['BuyAttributeGroup', 'buyattributegroup.html'];
 fr[13]=['BuyAcct', 'buyacct.html'];
 fr[14]=['BuyAmtBaseCurr', 'buyamtbasecurr.html'];
 fr[15]=['BuyCurr', 'buycurr.html'];
-fr[16]=['BuyGross', 'buygross.html'];
-fr[17]=['BuyNet', 'buynet.html'];
-fr[18]=['ChildIdxNrAttributeGroup', 'childidxnrattributegroup.html'];
-fr[19]=['ChildIdxNr', 'childidxnr.html'];
-fr[20]=['DateFromToAttributeGroup', 'datefromtoattributegroup.html'];
-fr[21]=['DateFrom', 'datefrom.html'];
-fr[22]=['DateTo', 'dateto.html'];
-fr[23]=['DateRelevantAttributeGroup', 'daterelevantattributegroup.html'];
-fr[24]=['EndDateRelevant', 'enddaterelevant.html'];
-fr[25]=['StartDateRelevant', 'startdaterelevant.html'];
-fr[26]=['DayAttributeGroup', 'dayattributegroup.html'];
-fr[27]=['Day', 'day.html'];
-fr[28]=['DaysDateBeforeDepartureAttributeGroup', 'daysdatebeforedepartureattributegroup.html'];
-fr[29]=['DateBeforeDepartureFrom', 'datebeforedeparturefrom.html'];
-fr[30]=['DateBeforeDepartureTo', 'datebeforedepartureto.html'];
-fr[31]=['DaysBeforeDepartureFrom', 'daysbeforedeparturefrom.html'];
-fr[32]=['DaysBeforeDepartureTo', 'daysbeforedepartureto.html'];
-fr[33]=['DescIdAttributeGroup', 'descidattributegroup.html'];
-fr[34]=['DescId', 'descid.html'];
-fr[35]=['SellGeneralAttributeGroup', 'sellgeneralattributegroup.html'];
-fr[36]=['AgeFrom', 'agefrom.html'];
-fr[37]=['AgeTo', 'ageto.html'];
-fr[38]=['NotSpecialRelevant', 'notspecialrelevant.html'];
-fr[39]=['P1', 'p1.html'];
-fr[40]=['P2', 'p2.html'];
-fr[41]=['P3', 'p3.html'];
-fr[42]=['P4', 'p4.html'];
-fr[43]=['Type', 'type.html'];
-fr[44]=['SpecialCommissionAttributeGroup', 'specialcommissionattributegroup.html'];
-fr[45]=['SpecialCommission', 'specialcommission.html'];
-fr[46]=['SpecialCommissionFlag', 'specialcommissionflag.html'];
-fr[47]=['WeekdaysValidAttributeGroup', 'weekdaysvalidattributegroup.html'];
-fr[48]=['WeekdaysValid', 'weekdaysvalid.html'];
-fr[49]=['AddPerDayPriceAttributes', 'addperdaypriceattributes.html'];
-fr[50]=['AddPerDayPricesChildren', 'addperdaypriceschildren.html'];
-fr[51]=['AddPerDayPrice', 'addperdayprice.html'];
-fr[52]=['Desc', 'desc.html'];
-fr[53]=['Desc', 'desc1.html'];
-fr[54]=['DestinationAttributes', 'destinationattributes.html'];
-fr[55]=['Code', 'code.html'];
-fr[56]=['CountryCode', 'countrycode.html'];
-fr[57]=['EarlyBookingAttributes', 'earlybookingattributes.html'];
-fr[58]=['ForAllDays', 'foralldays.html'];
-fr[59]=['ForceDisplay', 'forcedisplay.html'];
-fr[60]=['FromDay', 'fromday.html'];
-fr[61]=['MaxNrNights', 'maxnrnights.html'];
-fr[62]=['Percent', 'percent.html'];
-fr[63]=['SpecialCommission', 'specialcommission1.html'];
-fr[64]=['ToDay', 'today.html'];
-fr[65]=['EarlyBookingsChildren', 'earlybookingschildren.html'];
-fr[66]=['EarlyBooking', 'earlybooking.html'];
-fr[67]=['ItemInfoRequestAttributes', 'iteminforequestattributes.html'];
-fr[68]=['Day', 'day1.html'];
-fr[69]=['FreeSellRelease', 'freesellrelease.html'];
-fr[70]=['FS', 'fs.html'];
-fr[71]=['RQ', 'rq.html'];
-fr[72]=['ItemInfos', 'iteminfos.html'];
-fr[73]=['ItemInfoRequests', 'iteminforequests.html'];
-fr[74]=['ItemInfoRequest', 'iteminforequest.html'];
-fr[75]=['ItemInfoTexts', 'iteminfotexts.html'];
-fr[76]=['ItemInfoText', 'iteminfotext.html'];
-fr[77]=['ItemInfoText', 'iteminfotext1.html'];
-fr[78]=['BeginDate', 'begindate.html'];
-fr[79]=['EndDate', 'enddate.html'];
-fr[80]=['External', 'external.html'];
-fr[81]=['Invoice', 'invoice.html'];
-fr[82]=['Itinerary', 'itinerary.html'];
-fr[83]=['Text', 'text.html'];
-fr[84]=['Title', 'title.html'];
-fr[85]=['de', 'de.html'];
-fr[86]=['en', 'en.html'];
-fr[87]=['fr', 'fr.html'];
-fr[88]=['it', 'it.html'];
-fr[89]=['OneTimeAttributes', 'onetimeattributes.html'];
-fr[90]=['OneTimesChildren', 'onetimeschildren.html'];
-fr[91]=['OneTime', 'onetime.html'];
-fr[92]=['PerDayPriceAttributes', 'perdaypriceattributes.html'];
-fr[93]=['PerDayPricesChildren', 'perdaypriceschildren.html'];
-fr[94]=['PerDayPrice', 'perdayprice.html'];
-fr[95]=['PhoneAttributes', 'phoneattributes.html'];
-fr[96]=['AreaCode', 'areacode.html'];
-fr[97]=['CountryPrefix', 'countryprefix.html'];
-fr[98]=['Number', 'number.html'];
-fr[99]=['SpecialOfferAttributes', 'specialofferattributes.html'];
-fr[100]=['ChildAdultNr', 'childadultnr.html'];
-fr[101]=['ChildChildNr', 'childchildnr.html'];
-fr[102]=['FromDayBase', 'fromdaybase.html'];
-fr[103]=['LastSpOffEndDate', 'lastspoffenddate.html'];
-fr[104]=['PayNights', 'paynights.html'];
-fr[105]=['RuleType', 'ruletype.html'];
-fr[106]=['SaveDayType', 'savedaytype.html'];
-fr[107]=['SaveNights', 'savenights.html'];
-fr[108]=['SpecialCommission', 'specialcommission2.html'];
-fr[109]=['ToDayBase', 'todaybase.html'];
-fr[110]=['Type', 'type1.html'];
-fr[111]=['SpecialOffersChildren', 'specialofferschildren.html'];
-fr[112]=['SpecialOffer', 'specialoffer.html'];
-fr[113]=['Translation', 'translation.html'];
-fr[114]=['de', 'de1.html'];
-fr[115]=['en', 'en1.html'];
-fr[116]=['fr', 'fr1.html'];
-fr[117]=['it', 'it1.html'];
-fr[118]=['HotelImport.xsd', 'hotelimport_xsd.html'];
-fr[119]=['Hotels', 'hotels.html'];
-fr[120]=['Hotel', 'hotel.html'];
-fr[121]=['Address1', 'address1.html'];
-fr[122]=['Address2', 'address2.html'];
-fr[123]=['AutomatedFeeCode', 'automatedfeecode.html'];
-fr[124]=['CatalogFlag', 'catalogflag.html'];
-fr[125]=['Category', 'category.html'];
-fr[126]=['City', 'city.html'];
-fr[127]=['Country', 'country.html'];
-fr[128]=['IsoCode', 'isocode.html'];
-fr[129]=['Destination', 'destination.html'];
-fr[130]=['Email', 'email.html'];
-fr[131]=['Fax', 'fax.html'];
-fr[132]=['GiataId', 'giataid.html'];
-fr[133]=['HotelChain', 'hotelchain.html'];
-fr[134]=['ChainCode', 'chaincode.html'];
-fr[135]=['HotelCode', 'hotelcode.html'];
-fr[136]=['HotelInfo', 'hotelinfo.html'];
-fr[137]=['Building', 'building.html'];
-fr[138]=['Catering', 'catering.html'];
-fr[139]=['Entertainment', 'entertainment.html'];
-fr[140]=['Equipment', 'equipment.html'];
-fr[141]=['InternalInfo', 'internalinfo.html'];
-fr[142]=['Location', 'location.html'];
-fr[143]=['Manager', 'manager.html'];
-fr[144]=['Email', 'email1.html'];
-fr[145]=['FirstName', 'firstname.html'];
-fr[146]=['LastName', 'lastname.html'];
-fr[147]=['Phone', 'phone.html'];
-fr[148]=['Salutation', 'salutation.html'];
-fr[149]=['SalesManager', 'salesmanager.html'];
-fr[150]=['Email', 'email2.html'];
-fr[151]=['FirstName', 'firstname1.html'];
-fr[152]=['LastName', 'lastname1.html'];
-fr[153]=['Phone', 'phone1.html'];
-fr[154]=['Salutation', 'salutation1.html'];
-fr[155]=['Suitable', 'suitable.html'];
-fr[156]=['HotelName', 'hotelname.html'];
-fr[157]=['ItemInfos', 'iteminfos1.html'];
-fr[158]=['Latitude', 'latitude.html'];
-fr[159]=['Location', 'location1.html'];
-fr[160]=['Longitude', 'longitude.html'];
-fr[161]=['Mobile', 'mobile.html'];
-fr[162]=['Passive', 'passive.html'];
-fr[163]=['FromDate', 'fromdate.html'];
-fr[164]=['Phone', 'phone2.html'];
-fr[165]=['PostalCode', 'postalcode.html'];
-fr[166]=['PriceInfo', 'priceinfo.html'];
-fr[167]=['Region', 'region.html'];
-fr[168]=['Request', 'request.html'];
-fr[169]=['Rooms', 'rooms.html'];
-fr[170]=['Room', 'room.html'];
-fr[171]=['AllotmentFlag', 'allotmentflag.html'];
-fr[172]=['APIHotelCode', 'apihotelcode.html'];
-fr[173]=['APIRoomCode', 'apiroomcode.html'];
-fr[174]=['AutomatedFeeCode', 'automatedfeecode1.html'];
-fr[175]=['Description', 'description.html'];
-fr[176]=['ExtraBedAdults', 'extrabedadults.html'];
-fr[177]=['ExtraBedChildren', 'extrabedchildren.html'];
-fr[178]=['ItemInfos', 'iteminfos2.html'];
-fr[179]=['MaxAdults', 'maxadults.html'];
-fr[180]=['MaximalOccupancy', 'maximaloccupancy.html'];
-fr[181]=['MealCode', 'mealcode.html'];
-fr[182]=['MealDescription', 'mealdescription.html'];
-fr[183]=['MinimalOccupancy', 'minimaloccupancy.html'];
-fr[184]=['NormalOccupancy', 'normaloccupancy.html'];
-fr[185]=['Passive', 'passive1.html'];
-fr[186]=['FromDate', 'fromdate1.html'];
-fr[187]=['PaySupplier', 'paysupplier.html'];
-fr[188]=['Code', 'code1.html'];
-fr[189]=['Nr', 'nr.html'];
-fr[190]=['Prices', 'prices.html'];
-fr[191]=['KeepDataBeforeDate', 'keepdatabeforedate.html'];
-fr[192]=['AddPerDayPrices', 'addperdayprices.html'];
-fr[193]=['Currencies', 'currencies.html'];
-fr[194]=['Currency', 'currency.html'];
-fr[195]=['IdNr', 'idnr.html'];
-fr[196]=['IsoCode', 'isocode1.html'];
-fr[197]=['Descs', 'descs.html'];
-fr[198]=['EarlyBookings', 'earlybookings.html'];
-fr[199]=['OneTimes', 'onetimes.html'];
-fr[200]=['PerDayPrices', 'perdayprices.html'];
-fr[201]=['SpecialOffers', 'specialoffers.html'];
-fr[202]=['Request', 'request1.html'];
-fr[203]=['RoomType', 'roomtype.html'];
-fr[204]=['Supplier', 'supplier.html'];
-fr[205]=['Code', 'code2.html'];
-fr[206]=['Nr', 'nr1.html'];
-fr[207]=['TourboCode', 'tourbocode.html'];
-fr[208]=['TourboMealCode', 'tourbomealcode.html'];
-fr[209]=['TourboText', 'tourbotext.html'];
-fr[210]=['VoucherSupplier', 'vouchersupplier.html'];
-fr[211]=['Code', 'code3.html'];
-fr[212]=['Nr', 'nr2.html'];
-fr[213]=['SubRegion', 'subregion.html'];
-fr[214]=['WebURL', 'weburl.html'];
-fr[215]=['Action', 'action.html'];
-fr[216]=['Key', 'key.html'];
-fr[217]=['System', 'system.html'];
-fr[218]=['Type', 'type2.html'];    
+fr[16]=['BuyExchgRate', 'buyexchgrate.html'];
+fr[17]=['BuyGross', 'buygross.html'];
+fr[18]=['BuyNet', 'buynet.html'];
+fr[19]=['ChildIdxNrAttributeGroup', 'childidxnrattributegroup.html'];
+fr[20]=['ChildIdxNr', 'childidxnr.html'];
+fr[21]=['DateFromToAttributeGroup', 'datefromtoattributegroup.html'];
+fr[22]=['DateFrom', 'datefrom.html'];
+fr[23]=['DateTo', 'dateto.html'];
+fr[24]=['DateRelevantAttributeGroup', 'daterelevantattributegroup.html'];
+fr[25]=['EndDateRelevant', 'enddaterelevant.html'];
+fr[26]=['StartDateRelevant', 'startdaterelevant.html'];
+fr[27]=['DayAttributeGroup', 'dayattributegroup.html'];
+fr[28]=['Day', 'day.html'];
+fr[29]=['DaysDateBeforeDepartureAttributeGroup', 'daysdatebeforedepartureattributegroup.html'];
+fr[30]=['DateBeforeDepartureFrom', 'datebeforedeparturefrom.html'];
+fr[31]=['DateBeforeDepartureTo', 'datebeforedepartureto.html'];
+fr[32]=['DaysBeforeDepartureFrom', 'daysbeforedeparturefrom.html'];
+fr[33]=['DaysBeforeDepartureTo', 'daysbeforedepartureto.html'];
+fr[34]=['DescIdAttributeGroup', 'descidattributegroup.html'];
+fr[35]=['DescId', 'descid.html'];
+fr[36]=['SellGeneralAttributeGroup', 'sellgeneralattributegroup.html'];
+fr[37]=['AgeFrom', 'agefrom.html'];
+fr[38]=['AgeTo', 'ageto.html'];
+fr[39]=['NotSpecialRelevant', 'notspecialrelevant.html'];
+fr[40]=['P1', 'p1.html'];
+fr[41]=['P2', 'p2.html'];
+fr[42]=['P3', 'p3.html'];
+fr[43]=['P4', 'p4.html'];
+fr[44]=['Type', 'type.html'];
+fr[45]=['SpecialCommissionAttributeGroup', 'specialcommissionattributegroup.html'];
+fr[46]=['SpecialCommission', 'specialcommission.html'];
+fr[47]=['SpecialCommissionFlag', 'specialcommissionflag.html'];
+fr[48]=['WeekdaysValidAttributeGroup', 'weekdaysvalidattributegroup.html'];
+fr[49]=['WeekdaysValid', 'weekdaysvalid.html'];
+fr[50]=['AddPerDayPriceAttributes', 'addperdaypriceattributes.html'];
+fr[51]=['AddPerDayPricesChildren', 'addperdaypriceschildren.html'];
+fr[52]=['AddPerDayPrice', 'addperdayprice.html'];
+fr[53]=['Desc', 'desc.html'];
+fr[54]=['Desc', 'desc1.html'];
+fr[55]=['DestinationAttributes', 'destinationattributes.html'];
+fr[56]=['Code', 'code.html'];
+fr[57]=['CountryCode', 'countrycode.html'];
+fr[58]=['EarlyBookingAttributes', 'earlybookingattributes.html'];
+fr[59]=['ForAllDays', 'foralldays.html'];
+fr[60]=['ForceDisplay', 'forcedisplay.html'];
+fr[61]=['FromDay', 'fromday.html'];
+fr[62]=['MaxNrNights', 'maxnrnights.html'];
+fr[63]=['Percent', 'percent.html'];
+fr[64]=['SpecialCommission', 'specialcommission1.html'];
+fr[65]=['ToDay', 'today.html'];
+fr[66]=['EarlyBookingsChildren', 'earlybookingschildren.html'];
+fr[67]=['EarlyBooking', 'earlybooking.html'];
+fr[68]=['ItemInfoRequestAttributes', 'iteminforequestattributes.html'];
+fr[69]=['Day', 'day1.html'];
+fr[70]=['FreeSellRelease', 'freesellrelease.html'];
+fr[71]=['FS', 'fs.html'];
+fr[72]=['RQ', 'rq.html'];
+fr[73]=['ItemInfos', 'iteminfos.html'];
+fr[74]=['ItemInfoRequests', 'iteminforequests.html'];
+fr[75]=['ItemInfoRequest', 'iteminforequest.html'];
+fr[76]=['ItemInfoTexts', 'iteminfotexts.html'];
+fr[77]=['ItemInfoText', 'iteminfotext.html'];
+fr[78]=['ItemInfoText', 'iteminfotext1.html'];
+fr[79]=['BeginDate', 'begindate.html'];
+fr[80]=['EndDate', 'enddate.html'];
+fr[81]=['External', 'external.html'];
+fr[82]=['Invoice', 'invoice.html'];
+fr[83]=['Itinerary', 'itinerary.html'];
+fr[84]=['Text', 'text.html'];
+fr[85]=['Title', 'title.html'];
+fr[86]=['de', 'de.html'];
+fr[87]=['en', 'en.html'];
+fr[88]=['fr', 'fr.html'];
+fr[89]=['it', 'it.html'];
+fr[90]=['OneTimeAttributes', 'onetimeattributes.html'];
+fr[91]=['OneTimesChildren', 'onetimeschildren.html'];
+fr[92]=['OneTime', 'onetime.html'];
+fr[93]=['PerDayPriceAttributes', 'perdaypriceattributes.html'];
+fr[94]=['PerDayPricesChildren', 'perdaypriceschildren.html'];
+fr[95]=['PerDayPrice', 'perdayprice.html'];
+fr[96]=['PhoneAttributes', 'phoneattributes.html'];
+fr[97]=['AreaCode', 'areacode.html'];
+fr[98]=['CountryPrefix', 'countryprefix.html'];
+fr[99]=['Number', 'number.html'];
+fr[100]=['SpecialOfferAttributes', 'specialofferattributes.html'];
+fr[101]=['ChildAdultNr', 'childadultnr.html'];
+fr[102]=['ChildChildNr', 'childchildnr.html'];
+fr[103]=['FromDayBase', 'fromdaybase.html'];
+fr[104]=['LastSpOffEndDate', 'lastspoffenddate.html'];
+fr[105]=['PayNights', 'paynights.html'];
+fr[106]=['RuleType', 'ruletype.html'];
+fr[107]=['SaveDayType', 'savedaytype.html'];
+fr[108]=['SaveNights', 'savenights.html'];
+fr[109]=['SpecialCommission', 'specialcommission2.html'];
+fr[110]=['ToDayBase', 'todaybase.html'];
+fr[111]=['Type', 'type1.html'];
+fr[112]=['SpecialOffersChildren', 'specialofferschildren.html'];
+fr[113]=['SpecialOffer', 'specialoffer.html'];
+fr[114]=['Translation', 'translation.html'];
+fr[115]=['de', 'de1.html'];
+fr[116]=['en', 'en1.html'];
+fr[117]=['fr', 'fr1.html'];
+fr[118]=['it', 'it1.html'];
+fr[119]=['HotelImport.xsd', 'hotelimport_xsd.html'];
+fr[120]=['Hotels', 'hotels.html'];
+fr[121]=['Hotel', 'hotel.html'];
+fr[122]=['Address1', 'address1.html'];
+fr[123]=['Address2', 'address2.html'];
+fr[124]=['AutomatedFeeCode', 'automatedfeecode.html'];
+fr[125]=['CatalogFlag', 'catalogflag.html'];
+fr[126]=['Category', 'category.html'];
+fr[127]=['City', 'city.html'];
+fr[128]=['Country', 'country.html'];
+fr[129]=['IsoCode', 'isocode.html'];
+fr[130]=['Destination', 'destination.html'];
+fr[131]=['Email', 'email.html'];
+fr[132]=['Fax', 'fax.html'];
+fr[133]=['GiataId', 'giataid.html'];
+fr[134]=['HotelChain', 'hotelchain.html'];
+fr[135]=['ChainCode', 'chaincode.html'];
+fr[136]=['HotelCode', 'hotelcode.html'];
+fr[137]=['HotelInfo', 'hotelinfo.html'];
+fr[138]=['Building', 'building.html'];
+fr[139]=['Catering', 'catering.html'];
+fr[140]=['Entertainment', 'entertainment.html'];
+fr[141]=['Equipment', 'equipment.html'];
+fr[142]=['InternalInfo', 'internalinfo.html'];
+fr[143]=['Location', 'location.html'];
+fr[144]=['Manager', 'manager.html'];
+fr[145]=['Email', 'email1.html'];
+fr[146]=['FirstName', 'firstname.html'];
+fr[147]=['LastName', 'lastname.html'];
+fr[148]=['Phone', 'phone.html'];
+fr[149]=['Salutation', 'salutation.html'];
+fr[150]=['SalesManager', 'salesmanager.html'];
+fr[151]=['Email', 'email2.html'];
+fr[152]=['FirstName', 'firstname1.html'];
+fr[153]=['LastName', 'lastname1.html'];
+fr[154]=['Phone', 'phone1.html'];
+fr[155]=['Salutation', 'salutation1.html'];
+fr[156]=['Suitable', 'suitable.html'];
+fr[157]=['HotelName', 'hotelname.html'];
+fr[158]=['ItemInfos', 'iteminfos1.html'];
+fr[159]=['Latitude', 'latitude.html'];
+fr[160]=['Location', 'location1.html'];
+fr[161]=['Longitude', 'longitude.html'];
+fr[162]=['Mobile', 'mobile.html'];
+fr[163]=['Passive', 'passive.html'];
+fr[164]=['FromDate', 'fromdate.html'];
+fr[165]=['Phone', 'phone2.html'];
+fr[166]=['PostalCode', 'postalcode.html'];
+fr[167]=['PriceInfo', 'priceinfo.html'];
+fr[168]=['Region', 'region.html'];
+fr[169]=['Request', 'request.html'];
+fr[170]=['Rooms', 'rooms.html'];
+fr[171]=['Room', 'room.html'];
+fr[172]=['AllotmentFlag', 'allotmentflag.html'];
+fr[173]=['APIHotelCode', 'apihotelcode.html'];
+fr[174]=['APIRoomCode', 'apiroomcode.html'];
+fr[175]=['AutomatedFeeCode', 'automatedfeecode1.html'];
+fr[176]=['Description', 'description.html'];
+fr[177]=['ExtraBedAdults', 'extrabedadults.html'];
+fr[178]=['ExtraBedChildren', 'extrabedchildren.html'];
+fr[179]=['ItemInfos', 'iteminfos2.html'];
+fr[180]=['MaxAdults', 'maxadults.html'];
+fr[181]=['MaximalOccupancy', 'maximaloccupancy.html'];
+fr[182]=['MealCode', 'mealcode.html'];
+fr[183]=['MealDescription', 'mealdescription.html'];
+fr[184]=['MinimalOccupancy', 'minimaloccupancy.html'];
+fr[185]=['NormalOccupancy', 'normaloccupancy.html'];
+fr[186]=['Passive', 'passive1.html'];
+fr[187]=['FromDate', 'fromdate1.html'];
+fr[188]=['PaySupplier', 'paysupplier.html'];
+fr[189]=['Code', 'code1.html'];
+fr[190]=['Nr', 'nr.html'];
+fr[191]=['Prices', 'prices.html'];
+fr[192]=['KeepDataBeforeDate', 'keepdatabeforedate.html'];
+fr[193]=['AddPerDayPrices', 'addperdayprices.html'];
+fr[194]=['Currencies', 'currencies.html'];
+fr[195]=['Currency', 'currency.html'];
+fr[196]=['IdNr', 'idnr.html'];
+fr[197]=['IsoCode', 'isocode1.html'];
+fr[198]=['Descs', 'descs.html'];
+fr[199]=['EarlyBookings', 'earlybookings.html'];
+fr[200]=['OneTimes', 'onetimes.html'];
+fr[201]=['PerDayPrices', 'perdayprices.html'];
+fr[202]=['SpecialOffers', 'specialoffers.html'];
+fr[203]=['Request', 'request1.html'];
+fr[204]=['RoomType', 'roomtype.html'];
+fr[205]=['Supplier', 'supplier.html'];
+fr[206]=['Code', 'code2.html'];
+fr[207]=['Nr', 'nr1.html'];
+fr[208]=['TourboCode', 'tourbocode.html'];
+fr[209]=['TourboMealCode', 'tourbomealcode.html'];
+fr[210]=['TourboText', 'tourbotext.html'];
+fr[211]=['VoucherSupplier', 'vouchersupplier.html'];
+fr[212]=['Code', 'code3.html'];
+fr[213]=['Nr', 'nr2.html'];
+fr[214]=['SubRegion', 'subregion.html'];
+fr[215]=['WebURL', 'weburl.html'];
+fr[216]=['Action', 'action.html'];
+fr[217]=['Key', 'key.html'];
+fr[218]=['System', 'system.html'];
+fr[219]=['Type', 'type2.html'];    
  return fr;          
 }
 
@@ -228,506 +229,514 @@ function CreateWordIndex()
 {
 var w=[
             
-['--created',[1,118]],
-['with',[1,44,45,57,59,99,102,109,118]],
-['liquid',[1,118]],
-['designer',[1,118]],
-['edition',[1,118]],
-['http',[1,118]],
-['liquid-technologies',[1,118]],
-['schema',[1,118]],
-['elementformdefault',[1,118]],
-['qualified',[1,118]],
-['xmlns',[1,118]],
-['xmlschema',[1,118]],
-['complextype',[1,49,50,52,53,54,57,65,67,72,73,75,77,84,89,90,92,93,95,99,111,113,118,119,120,127,133,136,143,149,162,169,170,185,187,190,193,194,204,210]],
-['name',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218]],
-['desc',[1,33,34,52,53,118,119,120,169,170,190,197]],
-['annotation',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,52,53,54,55,56,57,58,59,60,61,62,63,64,67,68,69,70,71,72,75,76,77,78,79,80,81,82,83,84,99,100,101,102,103,104,105,106,107,108,109,110,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,132,135,136,137,138,139,140,142,155,156,158,159,160,162,165,166,167,168,169,170,171,172,173,174,175,176,177,179,180,181,182,183,184,185,187,188,189,190,191,197,202,203,204,205,206,207,208,209,210,211,212,213,214,216,218]],
-['documentation',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,52,53,54,55,56,57,58,59,60,61,62,63,64,67,68,69,70,71,72,75,76,77,78,79,80,81,82,83,84,99,100,101,102,103,104,105,106,107,108,109,110,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,132,135,136,137,138,139,140,142,155,156,158,159,160,162,165,166,167,168,169,170,171,172,173,174,175,176,177,179,180,181,182,183,184,185,187,188,189,190,191,197,202,203,204,205,206,207,208,209,210,211,212,213,214,216,218]],
-['sequence',[1,50,52,65,72,73,75,90,93,111,113,118,119,120,169,170,190,193]],
-['element',[1,50,51,52,53,65,66,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,90,91,93,94,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,129,130,131,132,133,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,187,190,192,193,194,197,198,199,200,201,202,203,204,207,208,209,210,213,214]],
-['minoccurs',[1,50,51,52,53,65,66,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,90,91,93,94,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,129,130,131,132,133,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,157,158,159,160,161,162,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,187,190,192,193,198,199,200,201,202,203,204,207,208,209,210,213,214]],
-['maxoccurs',[1,50,51,52,53,65,66,72,73,74,75,76,90,91,93,94,111,112,118,119,120,169,170,190,193]],
-['unbounded',[1,50,51,52,53,65,66,72,73,74,75,76,90,91,93,94,111,112,118,119,120,169,192,197,198,199,200,201]],
-['every',[1,52,53]],
-['descid',[1,33,34,35,49,51,52,53,57,66,89,91,92,94,99,112]],
-['translations',[1,52,53]],
-['this',[1,2,3,4,5,6,7,8,9,10,11,18,19,20,21,22,23,24,25,26,27,28,29,35,36,37,39,40,41,42,44,45,47,48,52,53,57,60,61,64,67,69,70,71,72,75,76,99,100,101,102,103,104,107,109,118,119,120,124,162,169,170,171,185,187,188,189,190,191,204,205,206,210,211,212]],
-['price',[1,2,3,12,13,18,19,20,21,22,26,27,33,34,35,36,37,38,39,40,41,42,43,44,45,47,48,52,53,57,59,63,99,108,110,118,119,120,166]],
-['line',[1,2,3,35,36,37,44,45,52,53,57,63,99,108]],
-['attribute',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,52,53,54,55,56,57,58,59,60,61,62,63,64,67,68,69,70,71,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,118,119,120,127,128,133,134,162,163,169,170,185,186,187,188,189,190,191,193,194,195,196,204,205,206,210,211,212,215,216,217,218]],
-['which',[1,20,21,22,26,27,33,34,35,36,37,44,45,52,53,57,60,61,64,99,106]],
-['identifies',[1,52,53]],
-['text',[1,52,53,76,77,83,118,119,120,169,170,209]],
-['appropriate',[1,52,53]],
-['placing',[1,52,53]],
-['reference',[1,52,53]],
-['list',[1,52,53]],
-['reduces',[1,52,53]],
-['size',[1,33,34,52,53]],
-['dramatically',[1,52,53]],
-['also',[1,52,53]],
-['built',[1,52,53]],
-['faster',[1,52,53]],
-['than',[1,23,24,25,52,53,118,119,120,169,170,190,191]],
-['added',[1,4,5,6,7,8,52,53]],
-['each',[1,52,53]],
-['node',[1,18,19,33,34,52,53,77,84,118,119,120,169,170,190,191,197]],
-['complexcontent',[1,52,53]],
-['extension',[1,52,53,118,119,120,127,133,162,169,170,185,187,204,210]],
-['base',[1,9,10,11,12,14,18,19,35,36,37,38,43,44,46,52,53,57,58,59,67,70,71,99,106,110,118,119,120,127,133,162,168,169,170,185,187,190,193,194,195,196,202,204,208,210,215,217]],
-['translation',[1,52,53,77,83,113,118,119,120,136,137,138,139,140,142,155,156,169,170,175,182,203]],
-['attributegroup',[1,2,4,9,12,18,20,23,26,28,33,35,44,47,49,52,53,57,89,92,99]],
-['descidattributegroup',[1,33,35,52,53,57,99]],
-['iteminfos',[1,72,118,119,120,157,169,170,178]],
-['iteminfotexts',[1,72,75,157,178]],
-['iteminfotext',[1,72,75,76,77]],
-['type',[1,2,3,4,5,6,7,8,12,13,14,15,16,17,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,39,40,41,42,43,44,45,47,48,49,50,51,54,55,56,57,60,61,62,63,64,65,66,67,68,69,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,169,170,171,172,173,174,175,178,181,182,185,186,187,188,189,190,191,192,197,198,199,200,201,203,204,205,206,207,209,210,211,212,213,214,216,218]],
-['iteminfo',[1,72,75,76]],
-['item',[1,67,69,70,71,72,75,76,77,83,118,119,120,162,169,170,185]],
-['iteminforequests',[1,72,73,157,178]],
-['iteminforequest',[1,72,73,74]],
-['iteminforequestattributes',[1,67,72,73,74]],
-['begindate',[1,76,77,78]],
-['date',[1,20,21,22,23,25,26,27,28,29,30,31,32,67,68,77,78,79,99,103,105,118,119,120,162,163,169,170,185,186,190,191]],
-['start',[1,23,25,77,78]],
-['when',[1,4,5,6,7,8,28,29,35,38,67,68,77,78,79,99,106]],
-['information',[1,67,68,77,78,79,118,119,120,166]],
-['applies',[1,67,68,77,78,79]],
-['inclusive',[1,35,36,77,78,79,118,119,120,169,170,208]],
-['enddate',[1,76,77,79]],
-['invoice',[1,76,77,81]],
-['boolean',[1,23,24,25,77,80,81,82,118,119,120,124,169,170,171]],
-['itinerary',[1,76,77,82]],
-['external',[1,76,77,80,118,119,120,169,170,190,191]],
-['title',[1,76,77,84]],
-['info',[1,77,83,84]],
-['only',[1,9,10,11,47,48,77,84,99,104,107,118,119,120,169,170,208]],
-['sent',[1,77,84,118,119,120,169,170,171]],
-['value',[1,9,10,11,18,19,35,36,37,38,43,44,45,46,57,58,59,61,67,70,71,77,84,99,104,106,107,110,118,119,120,168,169,170,190,193,194,195,196,202,208,215,217,218]],
-['exists',[1,77,84]],
-['string',[1,2,3,12,13,15,35,43,47,48,54,55,56,77,84,85,86,87,88,95,96,97,98,99,105,110,113,114,115,116,117,118,119,120,121,122,123,126,127,128,130,132,133,134,135,136,141,143,144,145,146,148,149,150,151,152,154,159,165,166,167,168,169,170,172,173,174,181,187,188,190,193,194,196,202,204,205,207,208,209,210,211,213,214,215,216,217,218]],
-['description',[1,77,83,118,119,120,169,170,175,182,190,197]],
-['request',[1,67,68,69,71,118,119,120,168,169,170,202]],
-['booked',[1,67,69,70,71,118,119,120,162,169,170,185]],
-['simpletype',[1,9,10,11,18,19,35,36,37,38,43,44,46,57,58,59,67,70,71,99,106,110,118,119,120,168,169,170,190,193,194,195,196,202,208,215,217]],
-['restriction',[1,9,10,11,18,19,35,36,37,38,43,44,46,57,58,59,67,70,71,99,106,110,118,119,120,168,169,170,190,193,194,195,196,202,208,215,217]],
-['nonnegativeinteger',[1,9,10,11,18,19,28,31,32,33,34,35,36,37,38,44,46,57,58,59,60,61,64,67,69,70,71,99,100,101,102,104,107,109,118,119,120,169,170,187,189,204,206,210,212]],
-['enumeration',[1,9,10,11,18,19,35,38,43,44,46,57,58,59,67,70,71,99,106,110,118,119,120,168,169,170,190,193,194,195,202,208,215,217]],
-['freesell',[1,67,70]],
-['freesellrelease',[1,67,69,74]],
-['then',[1,18,19,35,36,37,39,40,41,42,44,45,57,58,67,69,99,104,106,107,118,119,120,169,170,190,191]],
-['days',[1,28,31,32,57,58,67,69,99,104,107]],
-['that',[1,18,19,47,48,67,69]],
-['before',[1,28,31,32,67,69]],
-['becomes',[1,67,69]],
-['german',[1,113,114]],
-['cdata',[1,113,114,115,116,117,118,119,120,166]],
-['english',[1,113,115]],
-['french',[1,113,116]],
-['italian',[1,113,117]],
-['phoneattributes',[1,95,118,119,120,131,136,143,147,149,153,161,164]],
-['areacode',[1,95,96,131,147,153,161,164]],
-['number',[1,2,3,12,13,28,31,32,57,61,95,98,99,100,102,109,118,119,120,125,131,147,153,161,164,169,170,176,177,179]],
-['required',[1,12,13,14,15,17,20,21,22,26,27,33,34,35,39,49,51,53,54,55,56,57,66,89,91,92,94,95,98,99,112,118,119,120,129,131,147,153,161,164,169,170,190,193,194,195,196]],
-['countryprefix',[1,95,97,131,147,153,161,164]],
-['destinationattributes',[1,54,118,119,120,129]],
-['countrycode',[1,54,56,129]],
-['2-letter',[1,54,56]],
-['country',[1,54,56,118,119,120,127,128,167]],
-['code',[1,54,55,56,118,119,120,123,127,128,129,169,170,172,173,174,187,188,204,205,207,208,210,211]],
-['based',[1,54,56]],
-['destination',[1,54,55,56,118,119,120,129]],
-['iata',[1,54,55]],
-['dest',[1,54,55]],
-['perdaypriceschildren',[1,93,118,119,120,169,170,190,200]],
-['perdayprice',[1,33,34,93,94,200]],
-['perdaypriceattributes',[1,92,93,94]],
-['buyattributegroup',[1,12,49,57,89,92,99]],
-['sellgeneralattributegroup',[1,35,49,89,92]],
-['dayattributegroup',[1,26,92]],
-['childidxnrattributegroup',[1,18,49,92]],
-['babychildattributegroup',[1,9,49,57,89,92,99]],
-['addperdaypriceschildren',[1,50,118,119,120,169,170,190,192]],
-['addperdayprice',[1,50,51,192]],
-['addperdaypriceattributes',[1,49,50,51]],
-['datefromtoattributegroup',[1,20,49,57,89,99]],
-['weekdaysvalidattributegroup',[1,47,49,89,99]],
-['onetimeschildren',[1,90,118,119,120,169,170,190,199]],
-['onetime',[1,90,91,199]],
-['onetimeattributes',[1,89,90,91]],
-['daterelevantattributegroup',[1,23,57,89,99]],
-['specialofferschildren',[1,111,118,119,120,169,170,190,201]],
-['specialoffer',[1,4,5,6,7,8,111,112,201]],
-['specialofferattributes',[1,99,111,112]],
-['fromdaybase',[1,99,102,112]],
-['from',[1,20,21,28,29,31,35,36,37,57,60,99,102]],
-['would',[1,18,19,33,34,99,102,109]],
-['todaybase',[1,99,109,112]],
-['paynights',[1,99,104,107,112]],
-['many',[1,99,104,107]],
-['nights',[1,57,61,99,104,107]],
-['does',[1,99,104,107]],
-['customer',[1,99,104,107,118,119,120,169,170,187,189,204,206,210,212]],
-['effectively',[1,99,104,107]],
-['have',[1,18,19,44,45,99,104,106,107]],
-['fromday',[1,57,60,66,99,104,107]],
-['today',[1,57,64,66,99,104,107]],
-['book',[1,99,104,107]],
-['pays',[1,99,104,107]],
-['savenights',[1,99,104,107,112]],
-['mutually',[1,28,29,30,31,32,99,104,107]],
-['exclusive',[1,28,29,30,31,32,99,104,107]],
-['attributes',[1,99,104,105,107]],
-['allowed',[1,99,104,107]],
-['save',[1,99,107]],
-['savedaytype',[1,99,106,112]],
-['describes',[1,99,106]],
-['amounts',[1,99,106]],
-['prices',[1,99,106,118,119,120,169,170,190,191,197]],
-['need',[1,44,45,99,106]],
-['used',[1,99,105,106,118,119,120,123,169,170,174]],
-['determining',[1,99,106]],
-['special',[1,4,5,6,7,8,9,10,11,23,24,25,28,29,30,31,32,35,38,44,45,57,61,63,99,100,101,103,105,106,108]],
-['offer',[1,4,5,6,7,8,9,10,11,28,29,30,31,32,57,61,99,100,101,105,106]],
-['amount',[1,4,5,6,7,8,12,13,14,16,17,57,58,59,99,106]],
-['day1',[1,99,106]],
-['day2',[1,99,106]],
-['day3',[1,99,106]],
-['day4',[1,99,106]],
-['day5',[1,99,106]],
-['day6',[1,99,106]],
-['day7',[1,99,106]],
-['enddays',[1,99,106]],
-['valid',[1,9,10,11,18,19,20,21,22,26,27,35,36,37,99,100,101,103,105,106]],
-['will',[1,4,5,6,7,8,99,106,118,119,120,169,170,190,191,209]],
-['short',[1,99,106]],
-['startdays',[1,99,106]],
-['average',[1,99,106]],
-['minvalue',[1,99,106]],
-['maxvalue',[1,99,106]],
-['lastspoffenddate',[1,99,103,112]],
-['defines',[1,99,103]],
-['last',[1,23,24,99,103]],
-['possible',[1,99,103]],
-['booking',[1,23,24,25,28,29,30,31,32,57,58,60,64,99,103]],
-['season',[1,99,103,118,119,120,169,170,190,191]],
-['overlapping',[1,99,103]],
-['offers',[1,99,103]],
-['taken',[1,99,103]],
-['calculating',[1,35,38,99,103]],
-['hotel',[1,23,24,25,99,103,118,119,120,124,130,158,159,160,169,170,172,214,216]],
-['bookin',[1,99,103]],
-['ruletype',[1,99,105,112]],
-['determines',[1,57,59,99,105]],
-['always',[1,99,105]],
-['daysbeforedeparturefrom',[1,28,29,30,31,32,57,66,99,105,112]],
-['daysbeforedepartureto',[1,28,29,30,31,32,57,66,99,105,112]],
-['calculation',[1,99,105]],
-['datebeforedeparturefrom',[1,28,29,30,31,32,57,66,99,105,112]],
-['datebeforedepartureto',[1,28,29,30,31,32,57,66,99,105,112]],
-['calculatio',[1,99,105]],
-['specialcommission',[1,35,44,45,49,51,57,63,66,89,91,92,94,99,108,112]],
-['float',[1,4,5,6,7,8,12,14,16,17,35,39,40,41,42,44,45,57,62,63,99,108,118,119,120,125,158,160]],
-['percentage',[1,18,19,44,45,57,62,63,99,108]],
-['commission',[1,44,45,57,63,99,108]],
-['internal',[1,18,19,44,46,57,63,99,108]],
-['spezflag',[1,44,46,57,63,99,108]],
-['must',[1,35,38,57,63,99,108]],
-['childchildnr',[1,99,101,112]],
-['baby',[1,9,10,49,51,57,66,89,91,92,94,99,100,101,112]],
-['child',[1,9,11,18,19,49,51,57,66,89,91,92,94,99,100,101,112]],
-['n-th',[1,99,101]],
-['equal',[1,12,16,23,24,25,99,100,101]],
-['first',[1,18,19,99,101]],
-['second',[1,18,19,99,101]],
-['childadultnr',[1,99,100,112]],
-['accompanied',[1,99,100]],
-['adults',[1,9,11,18,19,99,100,118,119,120,169,170,176,179]],
-['addamountattributegroup',[1,4,57,99]],
-['daysdatebeforedepartureattributegroup',[1,28,57,99]],
-['acctattributegroup',[1,2,35,57,99]],
-['person',[1,33,34,35,39,40,41,42,43,99,110]],
-['default',[1,35,39,40,41,42,43,99,110,118,119,120,218]],
-['room',[1,18,19,35,43,99,110,118,119,120,162,168,169,170,171,173,175,185,187,188,202,204,205,207,208,209,210,211,216]],
-['earlybookingschildren',[1,65,118,119,120,169,170,190,198]],
-['earlybooking',[1,65,66,198]],
-['earlybookingattributes',[1,57,65,66]],
-['early',[1,28,29,30,31,32,57,60,64]],
-['rule',[1,28,29,57,60,61,64]],
-['relevant',[1,23,24,25,28,29,35,36,37,47,48,57,58,60,61,64,118,119,120,166]],
-['percent',[1,57,62,66]],
-['forcedisplay',[1,57,58,59,66]],
-['whether',[1,57,59]],
-['show',[1,57,59]],
-['shown',[1,57,58,59]],
-['foralldays',[1,57,58,66]],
-['once',[1,57,58]],
-['maxnrnights',[1,57,61,66]],
-['connected',[1,57,61]],
-['stay',[1,57,61]],
-['stays',[1,57,61]],
-['different',[1,57,61]],
-['field',[1,57,61]],
-['identified',[1,57,61]],
-['maximum',[1,18,19,57,61,118,119,120,169,170,179]],
-['datefrom',[1,20,21,23,25,49,51,57,66,89,91,99,112]],
-['dateto',[1,20,22,23,24,49,51,57,66,89,91,99,112]],
-['weekdaysvalid',[1,47,48,49,51,89,91,99,112]],
-['optional',[1,2,3,4,5,6,7,8,9,10,11,12,16,18,19,23,24,25,28,29,30,31,32,35,36,37,38,40,41,42,43,44,45,46,47,48,49,51,57,58,59,60,61,62,63,64,66,67,68,69,70,71,74,89,91,92,94,95,96,97,99,100,101,102,103,104,105,106,107,108,109,110,112,118,119,120,127,128,131,133,134,147,153,161,162,163,164,169,170,185,186,187,188,189,190,191,204,205,206,210,211,212,215,216,217,218]],
-['seven',[1,47,48]],
-['character',[1,47,48]],
-['above',[1,47,48]],
-['example',[1,44,45,47,48]],
-['interpreted',[1,47,48]],
-['monday',[1,47,48]],
+['--created',[1,119]],
+['with',[1,45,46,58,60,100,103,110,119]],
+['liquid',[1,119]],
+['designer',[1,119]],
+['edition',[1,119]],
+['http',[1,119]],
+['liquid-technologies',[1,119]],
+['schema',[1,119]],
+['elementformdefault',[1,119]],
+['qualified',[1,119]],
+['xmlns',[1,119]],
+['xmlschema',[1,119]],
+['complextype',[1,50,51,53,54,55,58,66,68,73,74,76,78,85,90,91,93,94,96,100,112,114,119,120,121,128,134,137,144,150,163,170,171,186,188,191,194,195,205,211]],
+['name',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219]],
+['desc',[1,34,35,53,54,119,120,121,170,171,191,198]],
+['annotation',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,53,54,55,56,57,58,59,60,61,62,63,64,65,68,69,70,71,72,73,76,77,78,79,80,81,82,83,84,85,100,101,102,103,104,105,106,107,108,109,110,111,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,131,133,136,137,138,139,140,141,143,156,157,159,160,161,163,166,167,168,169,170,171,172,173,174,175,176,177,178,180,181,182,183,184,185,186,188,189,190,191,192,198,203,204,205,206,207,208,209,210,211,212,213,214,215,217,219]],
+['documentation',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,53,54,55,56,57,58,59,60,61,62,63,64,65,68,69,70,71,72,73,76,77,78,79,80,81,82,83,84,85,100,101,102,103,104,105,106,107,108,109,110,111,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,131,133,136,137,138,139,140,141,143,156,157,159,160,161,163,166,167,168,169,170,171,172,173,174,175,176,177,178,180,181,182,183,184,185,186,188,189,190,191,192,198,203,204,205,206,207,208,209,210,211,212,213,214,215,217,219]],
+['sequence',[1,51,53,66,73,74,76,91,94,112,114,119,120,121,170,171,191,194]],
+['element',[1,51,52,53,54,66,67,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,91,92,94,95,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,188,191,193,194,195,198,199,200,201,202,203,204,205,208,209,210,211,214,215]],
+['minoccurs',[1,51,52,53,54,66,67,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,91,92,94,95,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,158,159,160,161,162,163,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,188,191,193,194,199,200,201,202,203,204,205,208,209,210,211,214,215]],
+['maxoccurs',[1,51,52,53,54,66,67,73,74,75,76,77,91,92,94,95,112,113,119,120,121,170,171,191,194]],
+['unbounded',[1,51,52,53,54,66,67,73,74,75,76,77,91,92,94,95,112,113,119,120,121,170,193,198,199,200,201,202]],
+['every',[1,53,54]],
+['descid',[1,34,35,36,50,52,53,54,58,67,90,92,93,95,100,113]],
+['translations',[1,53,54]],
+['this',[1,2,3,4,5,6,7,8,9,10,11,12,16,19,20,21,22,23,24,25,26,27,28,29,30,36,37,38,40,41,42,43,45,46,48,49,53,54,58,61,62,65,68,70,71,72,73,76,77,100,101,102,103,104,105,108,110,119,120,121,125,163,170,171,172,186,188,189,190,191,192,205,206,207,211,212,213]],
+['price',[1,2,3,12,13,19,20,21,22,23,27,28,34,35,36,37,38,39,40,41,42,43,44,45,46,48,49,53,54,58,60,64,100,109,111,119,120,121,167]],
+['line',[1,2,3,36,37,38,45,46,53,54,58,64,100,109]],
+['attribute',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,53,54,55,56,57,58,59,60,61,62,63,64,65,68,69,70,71,72,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,119,120,121,128,129,134,135,163,164,170,171,186,187,188,189,190,191,192,194,195,196,197,205,206,207,211,212,213,216,217,218,219]],
+['which',[1,21,22,23,27,28,34,35,36,37,38,45,46,53,54,58,61,62,65,100,107]],
+['identifies',[1,53,54]],
+['text',[1,53,54,77,78,84,119,120,121,170,171,210]],
+['appropriate',[1,53,54]],
+['placing',[1,53,54]],
+['reference',[1,53,54]],
+['list',[1,53,54]],
+['reduces',[1,53,54]],
+['size',[1,34,35,53,54]],
+['dramatically',[1,53,54]],
+['also',[1,53,54]],
+['built',[1,53,54]],
+['faster',[1,53,54]],
+['than',[1,24,25,26,53,54,119,120,121,170,171,191,192]],
+['added',[1,4,5,6,7,8,53,54]],
+['each',[1,53,54]],
+['node',[1,19,20,34,35,53,54,78,85,119,120,121,170,171,191,192,198]],
+['complexcontent',[1,53,54]],
+['extension',[1,53,54,119,120,121,128,134,163,170,171,186,188,205,211]],
+['base',[1,9,10,11,12,14,19,20,36,37,38,39,44,45,47,53,54,58,59,60,68,71,72,100,107,111,119,120,121,128,134,163,169,170,171,186,188,191,194,195,196,197,203,205,209,211,216,218]],
+['translation',[1,53,54,78,84,114,119,120,121,137,138,139,140,141,143,156,157,170,171,176,183,204]],
+['attributegroup',[1,2,4,9,12,19,21,24,27,29,34,36,45,48,50,53,54,58,90,93,100]],
+['descidattributegroup',[1,34,36,53,54,58,100]],
+['iteminfos',[1,73,119,120,121,158,170,171,179]],
+['iteminfotexts',[1,73,76,158,179]],
+['iteminfotext',[1,73,76,77,78]],
+['type',[1,2,3,4,5,6,7,8,12,13,14,15,16,17,18,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,40,41,42,43,44,45,46,48,49,50,51,52,55,56,57,58,61,62,63,64,65,66,67,68,69,70,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,170,171,172,173,174,175,176,179,182,183,186,187,188,189,190,191,192,193,198,199,200,201,202,204,205,206,207,208,210,211,212,213,214,215,217,219]],
+['iteminfo',[1,73,76,77]],
+['item',[1,68,70,71,72,73,76,77,78,84,119,120,121,163,170,171,186]],
+['iteminforequests',[1,73,74,158,179]],
+['iteminforequest',[1,73,74,75]],
+['iteminforequestattributes',[1,68,73,74,75]],
+['begindate',[1,77,78,79]],
+['date',[1,21,22,23,24,26,27,28,29,30,31,32,33,68,69,78,79,80,100,104,106,119,120,121,163,164,170,171,186,187,191,192]],
+['start',[1,24,26,78,79]],
+['when',[1,4,5,6,7,8,29,30,36,39,68,69,78,79,80,100,107]],
+['information',[1,68,69,78,79,80,119,120,121,167]],
+['applies',[1,68,69,78,79,80]],
+['inclusive',[1,36,37,78,79,80,119,120,121,170,171,209]],
+['enddate',[1,77,78,80]],
+['invoice',[1,77,78,82]],
+['boolean',[1,24,25,26,78,81,82,83,119,120,121,125,170,171,172]],
+['itinerary',[1,77,78,83]],
+['external',[1,77,78,81,119,120,121,170,171,191,192]],
+['title',[1,77,78,85]],
+['info',[1,78,84,85]],
+['only',[1,9,10,11,48,49,78,85,100,105,108,119,120,121,170,171,209]],
+['sent',[1,78,85,119,120,121,170,171,172]],
+['value',[1,9,10,11,36,37,38,39,44,45,46,47,58,59,60,62,68,71,72,78,85,100,105,107,108,111,119,120,121,169,170,171,191,194,195,196,197,203,209,216,218,219]],
+['exists',[1,78,85]],
+['string',[1,2,3,12,13,15,36,44,48,49,55,56,57,78,85,86,87,88,89,96,97,98,99,100,106,107,111,114,115,116,117,118,119,120,121,122,123,124,127,128,129,131,133,134,135,136,137,142,144,145,146,147,149,150,151,152,153,155,160,166,167,168,169,170,171,173,174,175,182,188,189,191,194,195,197,203,205,206,208,209,210,211,212,214,215,216,217,218,219]],
+['description',[1,78,84,119,120,121,170,171,176,183,191,198]],
+['request',[1,68,69,70,72,119,120,121,169,170,171,203]],
+['booked',[1,68,70,71,72,119,120,121,163,170,171,186]],
+['simpletype',[1,9,10,11,19,20,36,37,38,39,44,45,47,58,59,60,68,71,72,100,107,111,119,120,121,169,170,171,191,194,195,196,197,203,209,216,218]],
+['restriction',[1,9,10,11,19,20,36,37,38,39,44,45,47,58,59,60,68,71,72,100,107,111,119,120,121,169,170,171,191,194,195,196,197,203,209,216,218]],
+['nonnegativeinteger',[1,9,10,11,19,20,29,32,33,34,35,36,37,38,39,45,47,58,59,60,61,62,65,68,70,71,72,100,101,102,103,105,108,110,119,120,121,170,171,188,190,205,207,211,213]],
+['enumeration',[1,9,10,11,36,39,44,45,47,58,59,60,68,71,72,100,107,111,119,120,121,169,170,171,191,194,195,196,203,209,216,218]],
+['freesell',[1,68,71]],
+['freesellrelease',[1,68,70,75]],
+['then',[1,19,20,36,37,38,40,41,42,43,45,46,58,59,68,70,100,105,107,108,119,120,121,170,171,191,192]],
+['days',[1,29,32,33,58,59,68,70,100,105,108]],
+['that',[1,19,20,48,49,68,70]],
+['before',[1,29,32,33,68,70]],
+['becomes',[1,68,70]],
+['german',[1,114,115]],
+['cdata',[1,114,115,116,117,118,119,120,121,167]],
+['english',[1,114,116]],
+['french',[1,114,117]],
+['italian',[1,114,118]],
+['phoneattributes',[1,96,119,120,121,132,137,144,148,150,154,162,165]],
+['areacode',[1,96,97,132,148,154,162,165]],
+['number',[1,2,3,12,13,29,32,33,58,62,96,99,100,101,103,110,119,120,121,126,132,148,154,162,165,170,171,177,178,180]],
+['required',[1,12,13,14,15,16,18,21,22,23,27,28,34,35,36,40,50,52,54,55,56,57,58,67,90,92,93,95,96,99,100,113,119,120,121,130,132,148,154,162,165,170,171,191,194,195,196,197]],
+['countryprefix',[1,96,98,132,148,154,162,165]],
+['destinationattributes',[1,55,119,120,121,130]],
+['countrycode',[1,55,57,130]],
+['2-letter',[1,55,57]],
+['country',[1,55,57,119,120,121,128,129,168]],
+['code',[1,55,56,57,119,120,121,124,128,129,130,170,171,173,174,175,188,189,205,206,208,209,211,212]],
+['based',[1,55,57]],
+['destination',[1,55,56,57,119,120,121,130]],
+['iata',[1,55,56]],
+['dest',[1,55,56]],
+['perdaypriceschildren',[1,94,119,120,121,170,171,191,201]],
+['perdayprice',[1,34,35,94,95,201]],
+['perdaypriceattributes',[1,93,94,95]],
+['buyattributegroup',[1,12,50,58,90,93,100]],
+['sellgeneralattributegroup',[1,36,50,90,93]],
+['dayattributegroup',[1,27,93]],
+['childidxnrattributegroup',[1,19,50,93]],
+['babychildattributegroup',[1,9,50,58,90,93,100]],
+['addperdaypriceschildren',[1,51,119,120,121,170,171,191,193]],
+['addperdayprice',[1,51,52,193]],
+['addperdaypriceattributes',[1,50,51,52]],
+['datefromtoattributegroup',[1,21,50,58,90,100]],
+['weekdaysvalidattributegroup',[1,48,50,90,100]],
+['onetimeschildren',[1,91,119,120,121,170,171,191,200]],
+['onetime',[1,91,92,200]],
+['onetimeattributes',[1,90,91,92]],
+['daterelevantattributegroup',[1,24,58,90,100]],
+['specialofferschildren',[1,112,119,120,121,170,171,191,202]],
+['specialoffer',[1,4,5,6,7,8,12,16,112,113,202]],
+['specialofferattributes',[1,100,112,113]],
+['fromdaybase',[1,100,103,113]],
+['from',[1,21,22,29,30,32,36,37,38,58,61,100,103]],
+['would',[1,19,20,34,35,100,103,110]],
+['todaybase',[1,100,110,113]],
+['paynights',[1,100,105,108,113]],
+['many',[1,100,105,108]],
+['nights',[1,58,62,100,105,108]],
+['does',[1,100,105,108]],
+['customer',[1,100,105,108,119,120,121,170,171,188,190,205,207,211,213]],
+['effectively',[1,100,105,108]],
+['have',[1,19,20,45,46,100,105,107,108]],
+['fromday',[1,58,61,67,100,105,108]],
+['today',[1,58,65,67,100,105,108]],
+['book',[1,100,105,108]],
+['pays',[1,100,105,108]],
+['savenights',[1,100,105,108,113]],
+['mutually',[1,29,30,31,32,33,100,105,108]],
+['exclusive',[1,29,30,31,32,33,100,105,108]],
+['attributes',[1,100,105,106,108]],
+['allowed',[1,100,105,108]],
+['save',[1,100,108]],
+['savedaytype',[1,100,107,113]],
+['describes',[1,100,107]],
+['amounts',[1,100,107]],
+['prices',[1,100,107,119,120,121,170,171,191,192,198]],
+['need',[1,45,46,100,107]],
+['used',[1,100,106,107,119,120,121,124,170,171,175]],
+['determining',[1,100,107]],
+['special',[1,4,5,6,7,8,9,10,11,24,25,26,29,30,31,32,33,36,39,45,46,58,62,64,100,101,102,104,106,107,109]],
+['offer',[1,4,5,6,7,8,9,10,11,29,30,31,32,33,58,62,100,101,102,106,107]],
+['amount',[1,4,5,6,7,8,12,13,14,17,18,58,59,60,100,107]],
+['day1',[1,100,107]],
+['day2',[1,100,107]],
+['day3',[1,100,107]],
+['day4',[1,100,107]],
+['day5',[1,100,107]],
+['day6',[1,100,107]],
+['day7',[1,100,107]],
+['enddays',[1,100,107]],
+['valid',[1,9,10,11,19,20,21,22,23,27,28,36,37,38,100,101,102,104,106,107]],
+['will',[1,4,5,6,7,8,100,107,119,120,121,170,171,191,192,210]],
+['startdays',[1,100,107]],
+['average',[1,100,107]],
+['minvalue',[1,100,107]],
+['maxvalue',[1,100,107]],
+['lastspoffenddate',[1,100,104,113]],
+['defines',[1,100,104]],
+['last',[1,24,25,100,104]],
+['possible',[1,100,104]],
+['booking',[1,24,25,26,29,30,31,32,33,58,59,61,65,100,104]],
+['season',[1,100,104,119,120,121,170,171,191,192]],
+['overlapping',[1,100,104]],
+['offers',[1,100,104]],
+['taken',[1,100,104]],
+['calculating',[1,36,39,100,104]],
+['hotel',[1,24,25,26,100,104,119,120,121,125,131,159,160,161,170,171,173,215,217]],
+['bookin',[1,100,104]],
+['ruletype',[1,100,106,113]],
+['determines',[1,58,60,100,106]],
+['always',[1,100,106]],
+['daysbeforedeparturefrom',[1,29,30,31,32,33,58,67,100,106,113]],
+['daysbeforedepartureto',[1,29,30,31,32,33,58,67,100,106,113]],
+['calculation',[1,100,106]],
+['datebeforedeparturefrom',[1,29,30,31,32,33,58,67,100,106,113]],
+['datebeforedepartureto',[1,29,30,31,32,33,58,67,100,106,113]],
+['calculatio',[1,100,106]],
+['specialcommission',[1,36,45,46,50,52,58,64,67,90,92,93,95,100,109,113]],
+['float',[1,4,5,6,7,8,12,14,16,17,18,36,40,41,42,43,45,46,58,63,64,100,109,119,120,121,126,159,161]],
+['percentage',[1,19,20,45,46,58,63,64,100,109]],
+['commission',[1,45,46,58,64,100,109]],
+['internal',[1,19,20,45,47,58,64,100,109]],
+['spezflag',[1,45,47,58,64,100,109]],
+['must',[1,36,39,58,64,100,109]],
+['childchildnr',[1,100,102,113]],
+['baby',[1,9,10,50,52,58,67,90,92,93,95,100,101,102,113]],
+['child',[1,9,11,19,20,50,52,58,67,90,92,93,95,100,101,102,113]],
+['n-th',[1,100,102]],
+['equal',[1,12,17,24,25,26,100,101,102]],
+['first',[1,19,20,100,102]],
+['second',[1,19,20,100,102]],
+['childadultnr',[1,100,101,113]],
+['accompanied',[1,100,101]],
+['adults',[1,9,11,19,20,100,101,119,120,121,170,171,177,180]],
+['addamountattributegroup',[1,4,58,100]],
+['daysdatebeforedepartureattributegroup',[1,29,58,100]],
+['acctattributegroup',[1,2,36,58,100]],
+['person',[1,34,35,36,40,41,42,43,44,100,111]],
+['default',[1,36,40,41,42,43,44,100,111,119,120,121,219]],
+['room',[1,19,20,36,44,100,111,119,120,121,163,169,170,171,172,174,176,186,188,189,203,205,206,208,209,210,211,212,217]],
+['earlybookingschildren',[1,66,119,120,121,170,171,191,199]],
+['earlybooking',[1,66,67,199]],
+['earlybookingattributes',[1,58,66,67]],
+['early',[1,29,30,31,32,33,58,61,65]],
+['rule',[1,29,30,58,61,62,65]],
+['relevant',[1,24,25,26,29,30,36,37,38,48,49,58,59,61,62,65,119,120,121,167]],
+['percent',[1,58,63,67]],
+['forcedisplay',[1,58,59,60,67]],
+['whether',[1,58,60]],
+['show',[1,58,60]],
+['shown',[1,58,59,60]],
+['foralldays',[1,58,59,67]],
+['once',[1,58,59]],
+['maxnrnights',[1,58,62,67]],
+['connected',[1,58,62]],
+['stay',[1,58,62]],
+['stays',[1,58,62]],
+['different',[1,58,62]],
+['field',[1,58,62]],
+['identified',[1,58,62]],
+['maximum',[1,19,20,58,62,119,120,121,170,171,180]],
+['datefrom',[1,21,22,24,26,50,52,58,67,90,92,100,113]],
+['dateto',[1,21,23,24,25,50,52,58,67,90,92,100,113]],
+['weekdaysvalid',[1,48,49,50,52,90,92,100,113]],
+['optional',[1,2,3,4,5,6,7,8,9,10,11,12,17,19,20,24,25,26,29,30,31,32,33,36,37,38,39,41,42,43,44,45,46,47,48,49,50,52,58,59,60,61,62,63,64,65,67,68,69,70,71,72,75,90,92,93,95,96,97,98,100,101,102,103,104,105,106,107,108,109,110,111,113,119,120,121,128,129,132,134,135,148,154,162,163,164,165,170,171,186,187,188,189,190,191,192,205,206,207,211,212,213,216,217,218,219]],
+['seven',[1,48,49]],
+['character',[1,48,49]],
+['above',[1,48,49]],
+['example',[1,45,46,48,49]],
+['interpreted',[1,48,49]],
+['monday',[1,48,49]],
 ['babies',[1,9,10]],
-['children',[1,9,10,11,18,19,118,119,120,169,170,177]],
-['order',[1,33,34]],
-['prevent',[1,33,34]],
-['duplication',[1,33,34]],
-['data',[1,33,34]],
-['export',[1,33,34]],
-['exponentially',[1,33,34]],
-['increase',[1,33,34]],
-['file',[1,33,34]],
-['common',[1,33,34]],
-['texts',[1,33,34]],
-['lines',[1,18,19,33,34,35,38]],
-['stored',[1,33,34]],
-['referenced',[1,33,34]],
-['descs',[1,33,34,118,119,120,169,170,190,197]],
-['preis',[1,33,34]],
-['nacht',[1,33,34]],
-['prix',[1,33,34]],
-['personne',[1,33,34]],
-['nuit',[1,33,34]],
-['2013-02-01',[1,33,34]],
-['buygross',[1,12,16,49,51,57,66,89,91,92,94,99,112]],
-['gross',[1,12,16]],
-['buying',[1,12,13,15,16,17]],
-['currency',[1,12,14,15,16,17,118,119,120,169,170,190,193,194]],
-['normally',[1,4,5,6,7,8,12,16,44,45]],
-['buynet',[1,12,16,17,49,51,57,66,89,91,92,94,99,112]],
-['buyacct',[1,12,13,49,51,57,66,89,91,92,94,99,112]],
+['children',[1,9,10,11,19,20,119,120,121,170,171,178]],
+['order',[1,34,35]],
+['prevent',[1,34,35]],
+['duplication',[1,34,35]],
+['data',[1,34,35]],
+['export',[1,34,35]],
+['exponentially',[1,34,35]],
+['increase',[1,34,35]],
+['file',[1,34,35]],
+['common',[1,34,35]],
+['texts',[1,34,35]],
+['lines',[1,19,20,34,35,36,39]],
+['stored',[1,34,35]],
+['referenced',[1,34,35]],
+['descs',[1,34,35,119,120,121,170,171,191,198]],
+['preis',[1,34,35]],
+['nacht',[1,34,35]],
+['prix',[1,34,35]],
+['personne',[1,34,35]],
+['nuit',[1,34,35]],
+['2013-02-01',[1,34,35]],
+['buygross',[1,12,17,50,52,58,67,90,92,93,95,100,113]],
+['gross',[1,12,17]],
+['buying',[1,12,13,15,17,18]],
+['currency',[1,12,14,15,16,17,18,119,120,121,170,171,191,194,195]],
+['normally',[1,4,5,6,7,8,12,17,45,46]],
+['buynet',[1,12,16,17,18,50,52,58,67,90,92,93,95,100,113]],
+['buyacct',[1,12,13,50,52,58,67,90,92,93,95,100,113]],
 ['account',[1,2,3,12,13]],
-['buycurr',[1,12,15,49,51,57,66,89,91,92,94,99,112]],
-['buyamtbasecurr',[1,12,14,49,51,57,66,89,91,92,94,99,112]],
-['online',[1,12,14,118,119,120,169,170,187,189,190,191,204,206,209,210,212]],
-['startdaterelevant',[1,23,25,57,66,89,91,99,112]],
-['fits',[1,23,24,25]],
-['into',[1,23,24,25]],
-['period',[1,23,24,25]],
-['greater',[1,23,25]],
-['enddaterelevant',[1,23,24,57,66,89,91,99,112]],
-['less',[1,23,24]],
-['specific',[1,26,27]],
-['specialcommissionattributegroup',[1,35,44]],
-['note',[1,44,45]],
-['supplied',[1,18,19,35,39,40,41,42,44,45,118,119,120,169,170,190,191]],
-['combination',[1,44,45]],
-['specialcommissionflag',[1,35,44,45,46,49,51,89,91,92,94]],
-['supplier',[1,44,45,118,119,120,169,170,187,189,204,206,210,212]],
-['sets',[1,44,45]],
-['fixed',[1,44,45]],
-['both',[1,44,45]],
-['meal',[1,44,45,118,119,120,169,170,182,208]],
-['differs',[1,44,45]],
-['normal',[1,44,45,118,119,120,169,170,184]],
-['given',[1,44,45]],
-['travel',[1,44,45]],
-['agent',[1,44,45,118,119,120,169,170,190,191]],
-['addamount1',[1,4,5,57,66,99,112]],
-['needs',[1,4,5,6,7,8]],
+['buycurr',[1,12,15,50,52,58,67,90,92,93,95,100,113]],
+['buyamtbasecurr',[1,12,14,16,50,52,58,67,90,92,93,95,100,113]],
+['online',[1,12,14,119,120,121,170,171,188,190,191,192,205,207,210,211,213]],
+['buyexchgrate',[1,12,16,50,52,58,67,90,92,93,95,100,113]],
+['sometimes',[1,12,16]],
+['zero',[1,12,16]],
+['case',[1,12,16,119,120,121,170,171,191,192]],
+['interface',[1,12,16]],
+['needs',[1,4,5,6,7,8,12,16]],
+['informed',[1,12,16]],
+['explicitly',[1,12,16]],
+['what',[1,12,16]],
+['exchange',[1,12,16]],
+['rate',[1,12,16]],
+['startdaterelevant',[1,24,26,58,67,90,92,100,113]],
+['fits',[1,24,25,26]],
+['into',[1,24,25,26]],
+['period',[1,24,25,26]],
+['greater',[1,24,26]],
+['enddaterelevant',[1,24,25,58,67,90,92,100,113]],
+['less',[1,24,25]],
+['specific',[1,27,28]],
+['specialcommissionattributegroup',[1,36,45]],
+['note',[1,45,46]],
+['supplied',[1,19,20,36,40,41,42,43,45,46,119,120,121,170,171,191,192]],
+['combination',[1,45,46]],
+['specialcommissionflag',[1,36,45,46,47,50,52,90,92,93,95]],
+['supplier',[1,45,46,119,120,121,170,171,188,190,205,207,211,213]],
+['sets',[1,45,46]],
+['fixed',[1,45,46]],
+['both',[1,45,46]],
+['meal',[1,45,46,119,120,121,170,171,183,209]],
+['differs',[1,45,46]],
+['normal',[1,45,46,119,120,121,170,171,185]],
+['given',[1,45,46]],
+['travel',[1,45,46]],
+['agent',[1,45,46,119,120,121,170,171,191,192]],
+['addamount1',[1,4,5,58,67,100,113]],
 ['calculated',[1,4,5,6,7,8]],
 ['negative',[1,4,5,6,7,8]],
 ['cost',[1,4,5,6,7,8]],
-['breakfast',[1,4,5,6,7,8,118,119,120,169,170,208]],
-['included',[1,4,5,6,7,8,118,119,120,169,170,182]],
-['addamount2',[1,4,6,57,66,99,112]],
-['addamount3',[1,4,7,57,66,99,112]],
-['addamount4',[1,4,8,57,66,99,112]],
-['agefrom',[1,18,19,35,36,37,49,51,89,91,92,94]],
-['lower',[1,35,36]],
-['bound',[1,35,36,37]],
-['ageto',[1,18,19,35,36,37,49,51,89,91,92,94]],
-['persons',[1,18,19,35,36,37]],
-['incl',[1,35,36,37]],
-['mininclusive',[1,35,36,37]],
-['maxinclusive',[1,35,36,37]],
-['non-inclusive',[1,35,37]],
-['notspecialrelevant',[1,35,38,49,51,89,91,92,94]],
-['some',[1,35,38]],
-['ignored',[1,35,38]],
-['childidxnr',[1,18,19,49,51,92,94]],
-['childindexnr',[1,18,19]],
-['cannot',[1,18,19,118,119,120,162,169,170,185]],
-['effective',[1,18,19]],
-['additional',[1,18,19]],
-['double',[1,18,19]],
-['optionally',[1,18,19]],
-['allows',[1,18,19]],
-['either',[1,18,19,28,29,30,31,32]],
-['extra',[1,18,19,118,119,120,169,170,176,177]],
-['following',[1,18,19]],
-['range',[1,18,19]],
-['type2',[1,18,19]],
-['pricelist',[1,18,19]],
-['search',[1,18,19]],
-['kinderpreisspez',[1,18,19]],
-['prozermaessig',[1,18,19]],
-['type3',[1,18,19]],
-['they',[1,28,29,30,31,32]],
-['made',[1,28,29]],
-['acct',[1,2,3,35,49,51,57,66,89,91,92,94,99,112]],
-['version',[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218]],
-['encoding',[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218]],
-['utf-16',[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218]],
-['include',[118]],
-['schemalocation',[118]],
-['\basedataimport',[118]],
-['hotels',[118,119]],
-['hotelname',[118,119,120,156]],
-['address1',[118,119,120,121]],
-['strasse',[118,119,120,121]],
-['address2',[118,119,120,122]],
-['strassezusatz',[118,119,120,122]],
-['postalcode',[118,119,120,165]],
-['city',[118,119,120,126]],
-['voll',[118,119,120,126,167,213]],
-['simplecontent',[118,119,120,127,133,162,169,170,185,187,204,210]],
-['isocode',[118,119,120,127,128,169,170,190,193,194,196]],
-['letter',[118,119,120,127,128]],
-['address',[118,119,120,127,128,130]],
-['iatacode',[118,119,120,127,128]],
-['region',[118,119,120,167,213]],
-['subregion',[118,119,120,213]],
-['phone',[118,119,120,136,143,147,149,153,164]],
-['mobile',[118,119,120,161]],
-['email',[118,119,120,130,136,143,144,149,150]],
-['weburl',[118,119,120,214]],
-['site',[118,119,120,214]],
-['hotelchain',[118,119,120,133]],
-['chaincode',[118,119,120,133,134]],
-['hotelcode',[118,119,120,132,135]],
-['giataid',[118,119,120,132]],
-['location',[118,119,120,136,142,159]],
-['longitude',[118,119,120,160]],
-['latitude',[118,119,120,158]],
-['automatedfeecode',[118,119,120,123,169,170,174]],
-['automated',[118,119,120,123,169,170,174]],
-['cancellation',[118,119,120,123,169,170,174]],
-['modification',[118,119,120,123,169,170,174]],
-['fees',[118,119,120,123,169,170,174]],
-['category',[118,119,120,125]],
-['unknown',[118,119,120,125]],
-['undefined',[118,119,120,125]],
-['passive',[118,119,120,162,169,170,185]],
-['longer',[118,119,120,162,169,170,185]],
-['fromdate',[118,119,120,162,163,169,170,185,186]],
-['specified',[118,119,120,162,169,170,185]],
-['after',[118,119,120,162,169,170,185]],
-['integer',[118,119,120,162,169,170,185,190,193,194,195]],
-['bookable',[118,119,120,168,169,170,202]],
-['free',[118,119,120,168,169,170,202]],
-['sale',[118,119,120,168,169,170,202]],
-['catalogflag',[118,119,120,124]],
-['catalog',[118,119,120,124]],
-['send',[118,119,120,124]],
-['true',[118,119,120,124,169,170,171]],
-['priceinfo',[118,119,120,166]],
-['sales',[118,119,120,166]],
-['employee',[118,119,120,166]],
-['hotelinfo',[118,119,120,136]],
-['building',[118,119,120,136,137]],
-['equipment',[118,119,120,136,140]],
-['catering',[118,119,120,136,138]],
-['entertainment',[118,119,120,136,139]],
-['suitable',[118,119,120,136,155]],
-['manager',[118,119,120,136,143]],
-['salutation',[118,119,120,136,143,148,149,154]],
-['firstname',[118,119,120,136,143,145,149,151]],
-['lastname',[118,119,120,136,143,146,149,152]],
-['salesmanager',[118,119,120,136,149]],
-['internalinfo',[118,119,120,136,141]],
-['rooms',[118,119,120,169]],
-['roomtype',[118,119,120,169,170,203]],
-['single',[118,119,120,169,170,203]],
-['doubleroom',[118,119,120,169,170,203]],
-['deutsch',[118,119,120,169,170,203]],
-['beschriebdeutsch',[118,119,120,169,170,175]],
-['mealdescription',[118,119,120,169,170,182]],
-['mahlzeitdeutsch',[118,119,120,169,170,182]],
-['mealcode',[118,119,120,169,170,181]],
-['altcode',[118,119,120,169,170,181]],
-['normaloccupancy',[118,119,120,169,170,184]],
-['occupancy',[118,119,120,169,170,180,183,184]],
-['minimaloccupancy',[118,119,120,169,170,183]],
-['maximal',[118,119,120,169,170,183]],
-['maximaloccupancy',[118,119,120,169,170,180]],
-['minimal',[118,119,120,169,170,180]],
-['maxadults',[118,119,120,169,170,179]],
-['extrabedadults',[118,119,120,169,170,176]],
-['extrabedchildren',[118,119,120,169,170,177]],
-['apihotelcode',[118,119,120,169,170,172]],
-['apiroomcode',[118,119,120,169,170,173]],
-['tourbocode',[118,119,120,169,170,207]],
-['tourbo',[118,119,120,169,170,207,208,209]],
-['tourbotext',[118,119,120,169,170,209]],
-['displayed',[118,119,120,169,170,209]],
-['tour',[118,119,120,169,170,209]],
-['cets',[118,119,120,169,170,209]],
-['tourbomealcode',[118,119,120,169,170,208]],
-['half',[118,119,120,169,170,208]],
-['board',[118,119,120,169,170,208]],
-['full',[118,119,120,169,170,208]],
-['according',[118,119,120,169,170,208]],
-['program',[118,119,120,169,170,208]],
-['allotmentflag',[118,119,120,169,170,171]],
-['allotment',[118,119,120,169,170,171]],
-['reservation-supplier-code',[118,119,120,169,170,204,205]],
-['paysupplier',[118,119,120,169,170,187]],
-['payment-supplier-code',[118,119,120,169,170,187,188]],
-['vouchersupplier',[118,119,120,169,170,210]],
-['voucher-supplier-code',[118,119,120,169,170,210,211]],
-['codes',[118,119,120,169,170,190,197]],
-['currencies',[118,119,120,169,170,190,193]],
-['idnr',[118,119,120,169,170,190,193,194,195]],
-['length',[118,119,120,169,170,190,193,194,196]],
-['perdayprices',[118,119,120,169,170,190,200]],
-['addperdayprices',[118,119,120,169,170,190,192]],
-['onetimes',[118,119,120,169,170,190,199]],
-['specialoffers',[118,119,120,169,170,190,201]],
-['earlybookings',[118,119,120,169,170,190,198]],
-['keepdatabeforedate',[118,119,120,169,170,190,191]],
-['generally',[118,119,120,169,170,190,191]],
-['product',[118,119,120,169,170,190,191]],
-['deleted',[118,119,120,169,170,190,191]],
-['updated',[118,119,120,169,170,190,191]],
-['inserted',[118,119,120,169,170,190,191]],
-['there',[118,119,120,169,170,190,191]],
-['however',[118,119,120,169,170,190,191]],
-['case',[118,119,120,169,170,190,191]],
-['where',[118,119,120,169,170,190,191]],
-['already',[118,119,120,169,170,190,191]],
-['entered',[118,119,120,169,170,190,191]],
-['system',[118,119,120,169,170,190,191,217]],
-['contains',[118,119,120,169,170,190,191]],
-['whose',[118,119,120,169,170,190,191]],
-['smaller',[118,119,120,169,170,190,191]],
-['remain',[118,119,120,169,170,190,191]],
-['2015-01-01',[118,119,120,169,170,190,191]],
-['until',[118,119,120,169,170,190,191]],
-['including',[118,119,120,169,170,190,191]],
-['2014-12-31',[118,119,120,169,170,190,191]],
-['primary',[118,119,120,216]],
-['action',[118,119,120,215]],
-['delete',[118,119,120,215]],
-['prod',[118,119,120,217]],
-['educ',[118,119,120,217]],
-['test',[118,119,120,217]],
-['hotelroom',[118,119,120,218]]
+['breakfast',[1,4,5,6,7,8,119,120,121,170,171,209]],
+['included',[1,4,5,6,7,8,119,120,121,170,171,183]],
+['addamount2',[1,4,6,58,67,100,113]],
+['addamount3',[1,4,7,58,67,100,113]],
+['addamount4',[1,4,8,58,67,100,113]],
+['agefrom',[1,19,20,36,37,38,50,52,90,92,93,95]],
+['lower',[1,36,37]],
+['bound',[1,36,37,38]],
+['ageto',[1,19,20,36,37,38,50,52,90,92,93,95]],
+['persons',[1,19,20,36,37,38]],
+['incl',[1,36,37,38]],
+['mininclusive',[1,36,37,38]],
+['maxinclusive',[1,36,37,38]],
+['non-inclusive',[1,36,38]],
+['notspecialrelevant',[1,36,39,50,52,90,92,93,95]],
+['some',[1,36,39]],
+['ignored',[1,36,39]],
+['childidxnr',[1,19,20,50,52,93,95]],
+['childindexnr',[1,19,20]],
+['cannot',[1,19,20,119,120,121,163,170,171,186]],
+['effective',[1,19,20]],
+['additional',[1,19,20]],
+['double',[1,19,20]],
+['optionally',[1,19,20]],
+['allows',[1,19,20]],
+['either',[1,19,20,29,30,31,32,33]],
+['extra',[1,19,20,119,120,121,170,171,177,178]],
+['following',[1,19,20]],
+['range',[1,19,20]],
+['type2',[1,19,20]],
+['pricelist',[1,19,20]],
+['search',[1,19,20]],
+['kinderpreisspez',[1,19,20]],
+['prozermaessig',[1,19,20]],
+['type3',[1,19,20]],
+['they',[1,29,30,31,32,33]],
+['made',[1,29,30]],
+['acct',[1,2,3,36,50,52,58,67,90,92,93,95,100,113]],
+['version',[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219]],
+['encoding',[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219]],
+['utf-16',[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219]],
+['include',[119]],
+['schemalocation',[119]],
+['\basedataimport',[119]],
+['hotels',[119,120]],
+['hotelname',[119,120,121,157]],
+['address1',[119,120,121,122]],
+['strasse',[119,120,121,122]],
+['address2',[119,120,121,123]],
+['strassezusatz',[119,120,121,123]],
+['postalcode',[119,120,121,166]],
+['city',[119,120,121,127]],
+['voll',[119,120,121,127,168,214]],
+['simplecontent',[119,120,121,128,134,163,170,171,186,188,205,211]],
+['isocode',[119,120,121,128,129,170,171,191,194,195,197]],
+['letter',[119,120,121,128,129]],
+['address',[119,120,121,128,129,131]],
+['iatacode',[119,120,121,128,129]],
+['region',[119,120,121,168,214]],
+['subregion',[119,120,121,214]],
+['phone',[119,120,121,137,144,148,150,154,165]],
+['mobile',[119,120,121,162]],
+['email',[119,120,121,131,137,144,145,150,151]],
+['weburl',[119,120,121,215]],
+['site',[119,120,121,215]],
+['hotelchain',[119,120,121,134]],
+['chaincode',[119,120,121,134,135]],
+['hotelcode',[119,120,121,133,136]],
+['giataid',[119,120,121,133]],
+['location',[119,120,121,137,143,160]],
+['longitude',[119,120,121,161]],
+['latitude',[119,120,121,159]],
+['automatedfeecode',[119,120,121,124,170,171,175]],
+['automated',[119,120,121,124,170,171,175]],
+['cancellation',[119,120,121,124,170,171,175]],
+['modification',[119,120,121,124,170,171,175]],
+['fees',[119,120,121,124,170,171,175]],
+['category',[119,120,121,126]],
+['unknown',[119,120,121,126]],
+['undefined',[119,120,121,126]],
+['passive',[119,120,121,163,170,171,186]],
+['longer',[119,120,121,163,170,171,186]],
+['fromdate',[119,120,121,163,164,170,171,186,187]],
+['specified',[119,120,121,163,170,171,186]],
+['after',[119,120,121,163,170,171,186]],
+['integer',[119,120,121,163,170,171,186,191,194,195,196]],
+['bookable',[119,120,121,169,170,171,203]],
+['free',[119,120,121,169,170,171,203]],
+['sale',[119,120,121,169,170,171,203]],
+['catalogflag',[119,120,121,125]],
+['catalog',[119,120,121,125]],
+['send',[119,120,121,125]],
+['true',[119,120,121,125,170,171,172]],
+['priceinfo',[119,120,121,167]],
+['sales',[119,120,121,167]],
+['employee',[119,120,121,167]],
+['hotelinfo',[119,120,121,137]],
+['building',[119,120,121,137,138]],
+['equipment',[119,120,121,137,141]],
+['catering',[119,120,121,137,139]],
+['entertainment',[119,120,121,137,140]],
+['suitable',[119,120,121,137,156]],
+['manager',[119,120,121,137,144]],
+['salutation',[119,120,121,137,144,149,150,155]],
+['firstname',[119,120,121,137,144,146,150,152]],
+['lastname',[119,120,121,137,144,147,150,153]],
+['salesmanager',[119,120,121,137,150]],
+['internalinfo',[119,120,121,137,142]],
+['rooms',[119,120,121,170]],
+['roomtype',[119,120,121,170,171,204]],
+['single',[119,120,121,170,171,204]],
+['doubleroom',[119,120,121,170,171,204]],
+['deutsch',[119,120,121,170,171,204]],
+['beschriebdeutsch',[119,120,121,170,171,176]],
+['mealdescription',[119,120,121,170,171,183]],
+['mahlzeitdeutsch',[119,120,121,170,171,183]],
+['mealcode',[119,120,121,170,171,182]],
+['altcode',[119,120,121,170,171,182]],
+['normaloccupancy',[119,120,121,170,171,185]],
+['occupancy',[119,120,121,170,171,181,184,185]],
+['minimaloccupancy',[119,120,121,170,171,184]],
+['maximal',[119,120,121,170,171,184]],
+['maximaloccupancy',[119,120,121,170,171,181]],
+['minimal',[119,120,121,170,171,181]],
+['maxadults',[119,120,121,170,171,180]],
+['extrabedadults',[119,120,121,170,171,177]],
+['extrabedchildren',[119,120,121,170,171,178]],
+['apihotelcode',[119,120,121,170,171,173]],
+['apiroomcode',[119,120,121,170,171,174]],
+['tourbocode',[119,120,121,170,171,208]],
+['tourbo',[119,120,121,170,171,208,209,210]],
+['tourbotext',[119,120,121,170,171,210]],
+['displayed',[119,120,121,170,171,210]],
+['tour',[119,120,121,170,171,210]],
+['cets',[119,120,121,170,171,210]],
+['tourbomealcode',[119,120,121,170,171,209]],
+['half',[119,120,121,170,171,209]],
+['board',[119,120,121,170,171,209]],
+['full',[119,120,121,170,171,209]],
+['according',[119,120,121,170,171,209]],
+['program',[119,120,121,170,171,209]],
+['allotmentflag',[119,120,121,170,171,172]],
+['allotment',[119,120,121,170,171,172]],
+['reservation-supplier-code',[119,120,121,170,171,205,206]],
+['paysupplier',[119,120,121,170,171,188]],
+['payment-supplier-code',[119,120,121,170,171,188,189]],
+['vouchersupplier',[119,120,121,170,171,211]],
+['voucher-supplier-code',[119,120,121,170,171,211,212]],
+['codes',[119,120,121,170,171,191,198]],
+['currencies',[119,120,121,170,171,191,194]],
+['idnr',[119,120,121,170,171,191,194,195,196]],
+['length',[119,120,121,170,171,191,194,195,197]],
+['perdayprices',[119,120,121,170,171,191,201]],
+['addperdayprices',[119,120,121,170,171,191,193]],
+['onetimes',[119,120,121,170,171,191,200]],
+['specialoffers',[119,120,121,170,171,191,202]],
+['earlybookings',[119,120,121,170,171,191,199]],
+['keepdatabeforedate',[119,120,121,170,171,191,192]],
+['generally',[119,120,121,170,171,191,192]],
+['product',[119,120,121,170,171,191,192]],
+['deleted',[119,120,121,170,171,191,192]],
+['updated',[119,120,121,170,171,191,192]],
+['inserted',[119,120,121,170,171,191,192]],
+['there',[119,120,121,170,171,191,192]],
+['however',[119,120,121,170,171,191,192]],
+['where',[119,120,121,170,171,191,192]],
+['already',[119,120,121,170,171,191,192]],
+['entered',[119,120,121,170,171,191,192]],
+['system',[119,120,121,170,171,191,192,218]],
+['contains',[119,120,121,170,171,191,192]],
+['whose',[119,120,121,170,171,191,192]],
+['smaller',[119,120,121,170,171,191,192]],
+['remain',[119,120,121,170,171,191,192]],
+['2015-01-01',[119,120,121,170,171,191,192]],
+['until',[119,120,121,170,171,191,192]],
+['including',[119,120,121,170,171,191,192]],
+['2014-12-31',[119,120,121,170,171,191,192]],
+['primary',[119,120,121,217]],
+['action',[119,120,121,216]],
+['delete',[119,120,121,216]],
+['prod',[119,120,121,218]],
+['educ',[119,120,121,218]],
+['test',[119,120,121,218]],
+['hotelroom',[119,120,121,219]]
  ];
  return w;
 }
