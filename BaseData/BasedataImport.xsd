@@ -229,6 +229,12 @@
         <xs:attributeGroup ref="DayAttributeGroup" />
         <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
         <xs:attributeGroup ref="BabyChildAttributeGroup" />
+        <xs:attribute name="MaxNrNights"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>number of stay nights for a package.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
     </xs:complexType>
     <xs:complexType name="AddPerDayPricesChildren">
         <xs:sequence>
