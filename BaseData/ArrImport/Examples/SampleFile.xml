@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML 2014 Designer Edition 12.2.4.5273 (http://www.liquid-technologies.com) -->
+<Arrangements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\dev\github\OltSchema\BaseData\ArrImport\ArrImport.xsd">
+    <Arrangement Key="string" Action="DELETE" System="Test" Type="string">
+        <Title>string</Title>
+        <Country IsoCode="string">string</Country>
+        <SubRegion>string</SubRegion>
+        <Request>RQ</Request>
+        <Supplier Code="string" Nr="4268823829">string</Supplier>
+        <PaySupplier Code="string" Nr="30975304">string</PaySupplier>
+        <Commission>4159.51491</Commission>
+        <MaximumPersons>3730084606</MaximumPersons>
+        <MinimumDays>2955220967</MinimumDays>
+        <InvoiceTitle>
+            <de>string</de>
+            <en>string</en>
+            <it>string</it>
+        </InvoiceTitle>
+        <ItineraryTitle>
+            <de>string</de>
+            <fr>string</fr>
+            <it>string</it>
+        </ItineraryTitle>
+        <ItineraryDetail>
+            <de>string</de>
+            <en>string</en>
+            <fr>string</fr>
+            <it>string</it>
+        </ItineraryDetail>
+        <VoucherTitle>string</VoucherTitle>
+        <VoucherDetail>string</VoucherDetail>
+        <Passive FromDate="1997-01-18">777221577</Passive>
+        <StartDateRelevant>1</StartDateRelevant>
+        <Outbound>0</Outbound>
+        <ItemInfos>
+            <ItemInfoRequests />
+        </ItemInfos>
+        <ArrangementItems />
+    </Arrangement>
+    <Arrangement Key="string" Action="DELETE" System="Prod" Type="string">
+        <Title>string</Title>
+        <Country IsoCode="string">string</Country>
+        <Destination CountryCode="string" Code="string" />
+        <PaySupplier Code="string" Nr="761471932">string</PaySupplier>
+        <AutomatedFeeCode>string</AutomatedFeeCode>
+        <MaximumPersons>2887115670</MaximumPersons>
+        <MinimumDays>1451840680</MinimumDays>
+        <MaximumDays>260747464</MaximumDays>
+        <ItineraryTitle>
+            <de>string</de>
+            <it>string</it>
+        </ItineraryTitle>
+        <ItineraryDetail>
+            <de>string</de>
+            <it>string</it>
+        </ItineraryDetail>
+        <VoucherTitle>string</VoucherTitle>
+        <VoucherDetail>string</VoucherDetail>
+        <Outbound>1</Outbound>
+        <Inbound>false</Inbound>
+        <Prices KeepDataBeforeDate="2011-10-01">
+            <Descs />
+            <Currencies>
+                <Currency IdNr="3" IsoCode="ABC" />
+            </Currencies>
+            <PerDayPrices />
+            <AddPerDayPrices />
+            <SpecialOffers />
+        </Prices>
+        <ArrangementItems>
+            <DossierItem Type="Text" Consolidate="1" AllowProjectsEntry="1" ViewOnly="true">
+                <EndDate>2006-08-09</EndDate>
+                <Duration>-685</Duration>
+                <NumberOfItems>-5873</NumberOfItems>
+                <ShortDescription2>string</ShortDescription2>
+                <Status>A</Status>
+                <ExternalDossierNr>string</ExternalDossierNr>
+                <GdsBookingNr>string</GdsBookingNr>
+                <BookingSupplier Service="string" Code="string" Broker="comres" PayableTo="string">string</BookingSupplier>
+                <CostCenter>string</CostCenter>
+                <ItemNotOnInvoice>false</ItemNotOnInvoice>
+                <ExternalItemNr>string</ExternalItemNr>
+                <CancellationFees>
+                    <CancellationFee />
+                </CancellationFees>
+                <ExternalSystemIds>
+                    <ExternalSystemId>
+                        <ExternalSystemIdType>string</ExternalSystemIdType>
+                        <ExternalSystemIdCode>string</ExternalSystemIdCode>
+                    </ExternalSystemId>
+                </ExternalSystemIds>
+                <ItemInfos>
+                    <ItemInfo Invoice="true" Itinerary="0" External="1" />
+                </ItemInfos>
+            </DossierItem>
+            <DossierItem DossierItemSeq="string" BaseDataProductSeq="string" Type="Package">
+                <BeginDate>2005-02-04</BeginDate>
+                <EndDate>2004-01-22</EndDate>
+                <NumberOfItems>-4324</NumberOfItems>
+                <Status>AB</Status>
+                <ExternalDossierNr>string</ExternalDossierNr>
+                <ApiBookingNr>string</ApiBookingNr>
+                <ApiSubSystem>string</ApiSubSystem>
+                <ApiClient>string</ApiClient>
+                <CostCenter>string</CostCenter>
+                <Projects System="Prod">
+                    <Project Code="string" Description="string" />
+                </Projects>
+                <SourceDossierSeq>string</SourceDossierSeq>
+                <ExternalItemNr>string</ExternalItemNr>
+                <PurchasePrices />
+                <CancellationFees>
+                    <CancellationFee />
+                </CancellationFees>
+                <ExternalSystemIds>
+                    <ExternalSystemId>
+                        <ExternalSystemIdType>string</ExternalSystemIdType>
+                        <ExternalSystemIdCode>string</ExternalSystemIdCode>
+                    </ExternalSystemId>
+                </ExternalSystemIds>
+                <ItemInfos>
+                    <ItemInfo Seq="string" Type="string" />
+                </ItemInfos>
+                <AddInfos>
+                    <AddInfo />
+                </AddInfos>
+            </DossierItem>
+            <DossierItem DossierItemSeq="string" Type="Car" ViewOnly="1">
+                <BeginDate>1984-08-22</BeginDate>
+                <EndDate>2019-11-07</EndDate>
+                <ShortDescription2>string</ShortDescription2>
+                <ApiSubSystem>string</ApiSubSystem>
+                <GdsSource>AMA</GdsSource>
+                <ItemNotOnInvoice>true</ItemNotOnInvoice>
+                <ItemPrices />
+                <PurchasePrices />
+                <CancellationFees>
+                    <CancellationFee InternalPriceType="CANCELLATIONFEE" />
+                </CancellationFees>
+                <ExternalSystemIds>
+                    <ExternalSystemId>
+                        <ExternalSystemIdType>string</ExternalSystemIdType>
+                        <ExternalSystemIdCode>string</ExternalSystemIdCode>
+                    </ExternalSystemId>
+                </ExternalSystemIds>
+                <ItemInfos>
+                    <ItemInfo Invoice="0" Itinerary="0" External="1" />
+                </ItemInfos>
+                <AddInfos>
+                    <AddInfo />
+                </AddInfos>
+            </DossierItem>
+            <DossierItem DossierItemSeq="string" BaseDataProductSeq="string" Position="9244" Type="Ship" AllowProjectsEntry="0">
+                <LogicDataProductSeq>string</LogicDataProductSeq>
+                <BeginDate>1983-02-23</BeginDate>
+                <EndDate>1979-03-05</EndDate>
+                <Duration>3146</Duration>
+                <NumberOfItems>-4902</NumberOfItems>
+                <ShortDescription2>string</ShortDescription2>
+                <ExternalSource>OTFONLY</ExternalSource>
+                <ApiClient>string</ApiClient>
+                <BookingSupplier AirlineNr="string" Service="string" ApiCode="TICO">string</BookingSupplier>
+                <CostCenter>string</CostCenter>
+                <Projects System="Prod">
+                    <Project Code="string" Description="string" Percentage="13.739805803945093" />
+                </Projects>
+                <Travellers>
+                    <Traveller TravellerSeq="string" TravellerId="-1325" TicketPrice="4596.754905803945093" TicketingAirline="AB" Ticket2="string" Ticket4="string" Seat5="string" OpcPrice="-28.285094196054907" />
+                </Travellers>
+                <SourceDossierSeq>string</SourceDossierSeq>
+                <ItemNotOnInvoice>true</ItemNotOnInvoice>
+                <ItemPrices />
+                <ExternalSystemIds>
+                    <ExternalSystemId>
+                        <ExternalSystemIdType>string</ExternalSystemIdType>
+                        <ExternalSystemIdCode>string</ExternalSystemIdCode>
+                    </ExternalSystemId>
+                </ExternalSystemIds>
+                <ItemInfos>
+                    <ItemInfo />
+                </ItemInfos>
+                <AddInfos>
+                    <AddInfo />
+                </AddInfos>
+            </DossierItem>
+        </ArrangementItems>
+    </Arrangement>
+</Arrangements>
