@@ -310,7 +310,9 @@ ARR_SUBCODE</xs:documentation>
                                         minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="TravelDate">
+                                        <xs:element name="TravelDate"
+                                                    minOccurs="0"
+                                                    maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:attribute name="FromDate"
                                                               type="xs:date" />
