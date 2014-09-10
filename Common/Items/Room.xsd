@@ -1,142 +1,182 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com)-->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-  <xs:include schemaLocation=".\ProductItemPrice.xsd" />
-  <xs:include schemaLocation=".\Meal.xsd" />
-  <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
-  <xs:element name="Room">
-    <xs:complexType>
-      <xs:all>
-        <xs:element name="RoomType" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>singel, doubleroom...</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="Description" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Room description</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="MealDescription" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Description of included meal</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="Supplier" type="SupplierType" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Supliername</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="PaySupplier" type="SupplierType" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Paysupliername</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Vouchersuppliername</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="NormalOccupancy" type="xs:integer" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Normal occupancy</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="MinimalOccupancy" type="xs:integer" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Maximal occupancy</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="MaximalOccupancy" type="xs:integer" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Minimal occupancy</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="MaxAdults" type="xs:integer" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Maximun number of adults</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="ExtraBedAdults" type="xs:integer" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Number of extra bed for adults</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="ExtraBedChildren" type="xs:integer" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Number of extra bed for Children</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="APIHotelCode" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>API Hotel Code</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="APIRoomCode" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>API Room Code</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="TourboCode" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Tourbo Code</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="BookingCode" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>BookingCode
+<!--Created with Liquid XML 2014 Designer Edition 12.2.4.5273 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation=".\ProductItemPrice.xsd" />
+    <xs:include schemaLocation=".\Meal.xsd" />
+    <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
+    <xs:element name="Room">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="RoomType"
+                            type="xs:string"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>singel, doubleroom...</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Description"
+                            type="xs:string"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Room description</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MealDescription"
+                            type="xs:string"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Description of included meal</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Supplier"
+                            type="SupplierType"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Supliername</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="PaySupplier"
+                            type="SupplierType"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Paysupliername</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="VoucherSupplier"
+                            type="SupplierType"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Vouchersuppliername</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NormalOccupancy"
+                            type="xs:integer"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Normal occupancy</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MinimalOccupancy"
+                            type="xs:integer"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Maximal occupancy</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MaximalOccupancy"
+                            type="xs:integer"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Minimal occupancy</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MaxAdults"
+                            type="xs:integer"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Maximun number of adults</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ExtraBedAdults"
+                            type="xs:integer"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Number of extra bed for adults</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ExtraBedChildren"
+                            type="xs:integer"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Number of extra bed for Children</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="APIHotelCode"
+                            type="xs:string"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>API Hotel Code</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="APIRoomCode"
+                            type="xs:string"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>API Room Code</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TourboCode"
+                            type="xs:string"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Tourbo Code</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="BookingCode"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>BookingCode
               FSRQ = Freesale or Request
               FS   = Freesale
               RQ   = request
             </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:enumeration value="FSRQ" />
-              <xs:enumeration value="FS" />
-              <xs:enumeration value="RQ" />
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="Condingent" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Room hase Condingent
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="FSRQ" />
+                            <xs:enumeration value="FS" />
+                            <xs:enumeration value="RQ" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Condingent"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Room hase Condingent
               YES
               NO
             </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:enumeration value="YES" />
-              <xs:enumeration value="NO" />
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="PasiveDate" type="xs:date" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Room is not available after this date </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="Meals" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element ref="Meal" maxOccurs="unbounded" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="ProductItemPrices" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element ref="ProductItemPrice" maxOccurs="unbounded" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:all>
-      <xs:attribute name="Key" use="optional">
-        <xs:annotation>
-          <xs:documentation> Primary Key of the Item used in Database of reciever</xs:documentation>
-        </xs:annotation>
-      </xs:attribute>
-    </xs:complexType>
-  </xs:element>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="YES" />
+                            <xs:enumeration value="NO" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="PasiveDate"
+                            type="xs:date"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Room is not available after this date </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Meals"
+                            minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="Meal"
+                                        maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ProductItemPrices"
+                            minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="ProductItemPrice"
+                                        maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+            <xs:attribute name="Key"
+                          use="optional">
+                <xs:annotation>
+                    <xs:documentation> Primary Key of the Item used in Database of reciever</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>

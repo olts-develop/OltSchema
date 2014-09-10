@@ -531,7 +531,7 @@
                                 <xs:element name="PackageOfferDescription"
                                             minOccurs="0">
                                     <xs:annotation>
-                                        <xs:documentation>A more detail description of the package</xs:documentation>
+                                        <xs:documentation>A more detailed description of the package</xs:documentation>
                                     </xs:annotation>
                                     <xs:complexType>
                                         <xs:sequence />
