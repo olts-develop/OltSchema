@@ -1,187 +1,310 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Created with Liquid XML 2014 Designer Edition 12.2.4.5273 (http://www.liquid-technologies.com) -->
 <Arrangements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\dev\github\OltSchema\BaseData\ArrImport\ArrImport.xsd">
-    <Arrangement Key="string" Action="DELETE" System="Test" Type="string">
-        <Title>string</Title>
-        <Country IsoCode="string">string</Country>
-        <SubRegion>string</SubRegion>
-        <Request>RQ</Request>
-        <Supplier Code="string" Nr="4268823829">string</Supplier>
-        <PaySupplier Code="string" Nr="30975304">string</PaySupplier>
-        <Commission>4159.51491</Commission>
-        <MaximumPersons>3730084606</MaximumPersons>
-        <MinimumDays>2955220967</MinimumDays>
-        <InvoiceTitle>
-            <de>string</de>
-            <en>string</en>
-            <it>string</it>
-        </InvoiceTitle>
-        <ItineraryTitle>
-            <de>string</de>
-            <fr>string</fr>
-            <it>string</it>
-        </ItineraryTitle>
-        <ItineraryDetail>
-            <de>string</de>
-            <en>string</en>
-            <fr>string</fr>
-            <it>string</it>
-        </ItineraryDetail>
-        <VoucherTitle>string</VoucherTitle>
-        <VoucherDetail>string</VoucherDetail>
-        <Passive FromDate="1997-01-18">777221577</Passive>
-        <StartDateRelevant>1</StartDateRelevant>
-        <Outbound>0</Outbound>
-        <ItemInfos>
-            <ItemInfoRequests />
-        </ItemInfos>
-        <ArrangementItems />
-    </Arrangement>
     <Arrangement Key="string" Action="DELETE" System="Prod" Type="string">
         <Title>string</Title>
         <Country IsoCode="string">string</Country>
+        <Region>string</Region>
+        <SubRegion>string</SubRegion>
+        <Supplier Code="string" Nr="2659379325">string</Supplier>
+        <Commission>2202.23491</Commission>
+        <AccountNr>string</AccountNr>
         <Destination CountryCode="string" Code="string" />
-        <PaySupplier Code="string" Nr="761471932">string</PaySupplier>
+        <CostCenter>string</CostCenter>
+        <ArrCode>string</ArrCode>
+        <ArrItemCode>string</ArrItemCode>
+        <NormalOccupancy>-2296</NormalOccupancy>
+        <ExtraBedAdults>9606</ExtraBedAdults>
+        <ExtraBedChildren>3009</ExtraBedChildren>
+        <Currency>string</Currency>
         <AutomatedFeeCode>string</AutomatedFeeCode>
-        <MaximumPersons>2887115670</MaximumPersons>
-        <MinimumDays>1451840680</MinimumDays>
-        <MaximumDays>260747464</MaximumDays>
-        <ItineraryTitle>
-            <de>string</de>
-            <it>string</it>
-        </ItineraryTitle>
-        <ItineraryDetail>
-            <de>string</de>
-            <it>string</it>
-        </ItineraryDetail>
-        <VoucherTitle>string</VoucherTitle>
-        <VoucherDetail>string</VoucherDetail>
-        <Outbound>1</Outbound>
-        <Inbound>false</Inbound>
-        <Prices KeepDataBeforeDate="2011-10-01">
+        <ArrType>BusPackage</ArrType>
+        <PaymentCondition>string</PaymentCondition>
+        <Language>it-ch</Language>
+        <TourboTitle>string</TourboTitle>
+        <TourboText>string</TourboText>
+        <MinimumHotelStay>3068238736</MinimumHotelStay>
+        <MinimumTotalStay>370840361</MinimumTotalStay>
+        <MaximumTotalStay>1643641034</MaximumTotalStay>
+        <Request>RQ</Request>
+        <FixedDate>true</FixedDate>
+        <InternetBookable>false</InternetBookable>
+        <ExportOffer>0</ExportOffer>
+        <IsSpecialOffer FromDate="1982-09-13" ToDate="1980-03-23" SoldOut="false">false</IsSpecialOffer>
+        <Passive FromDate="2018-11-17">2985783954</Passive>
+        <InvoiceTitle>string</InvoiceTitle>
+        <InvoiceDetail>string</InvoiceDetail>
+        <PriceInfo>string</PriceInfo>
+        <TravelDates>
+            <TravelDate FromDate="1993-01-10" ToDate="1983-05-18" Mo="true" Tu="1" We="0" Th="1" Fr="true" Sa="false" Su="false" Inactive="true" Exclude="0" />
+            <TravelDate FromDate="1990-06-14" ToDate="1985-07-05" Mo="1" Tu="false" We="1" Th="0" Fr="false" Sa="1" Su="1" Inactive="0" Exclude="false" />
+        </TravelDates>
+        <ItemInfos>
+            <ItemInfoTexts>
+                <ItemInfoText />
+                <ItemInfoText />
+                <ItemInfoText />
+            </ItemInfoTexts>
+            <ItemInfoRequests>
+                <ItemInfoRequest FreeSellRelease="3845709421" />
+                <ItemInfoRequest FS="1" FreeSellRelease="3006923783" />
+                <ItemInfoRequest Day="1977-01-17" RQ="1" FS="0" />
+                <ItemInfoRequest RQ="0" FreeSellRelease="2889821500" />
+            </ItemInfoRequests>
+        </ItemInfos>
+        <Prices KeepDataBeforeDate="2008-05-07">
             <Descs />
             <Currencies>
+                <Currency IdNr="1" IsoCode="ABC" />
+                <Currency IdNr="2" IsoCode="ABC" />
                 <Currency IdNr="3" IsoCode="ABC" />
             </Currencies>
-            <PerDayPrices />
-            <AddPerDayPrices />
-            <SpecialOffers />
+            <PerDayPrices>
+                <PerDayPrice BuyNet="2007.83491" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="2196.41491" BuyExchgRate="3573.35491" DescId="2521111442" P1="-6704.24509" P2="-8227.78509" P3="8258.21491" P4="804.03491" AgeFrom="14" Day="1989-08-22" ChildIdxNr="3419519816" Baby="1" MaxNrNights="3225748072" />
+            </PerDayPrices>
+            <AddPerDayPrices>
+                <AddPerDayPrice BuyNet="9539.83491" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="-2335.96509" BuyExchgRate="7703.25491" DescId="2178420297" P1="-7480.64509" DateFrom="2005-10-21" DateTo="2002-05-23" ChildIdxNr="3790252803" WeekdaysValid="string" Baby="0" Child="1" />
+            </AddPerDayPrices>
+            <OneTimes>
+                <OneTime StartDateRelevant="0" EndDateRelevant="1" BuyGross="-1842.16509" BuyNet="7219.63491" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="-8930.16509" BuyExchgRate="-7113.88509" DescId="335063284" P1="8315.93491" P2="4656.89491" P4="1323.79491" Type="P" AgeTo="111" NotSpecialRelevant="0" SpecialCommissionFlag="1" Acct="string" DateFrom="1996-09-16" DateTo="1976-04-10" WeekdaysValid="string" Baby="1" Child="0" />
+            </OneTimes>
+            <SpecialOffers>
+                <SpecialOffer BuyNet="9334.25491" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="5318.43491" BuyExchgRate="6954.09491" PayNights="4201543166" EndDateRelevant="0" ChildAdultNr="1407009811" DateFrom="1988-08-27" DateTo="2001-03-23" AddAmount3="498.49491" DescId="3544945746" DaysBeforeDepartureFrom="3606290764" DateBeforeDepartureFrom="2007-01-07" />
+            </SpecialOffers>
+            <EarlyBookings>
+                <EarlyBooking BuyNet="-4929.74509" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="5158.73491" BuyExchgRate="-646.84509" ToDay="3854930716" Percent="323.23491" StartDateRelevant="true" SpecialCommission="848.49491" DateFrom="2012-10-12" DateTo="2009-09-03" AddAmount1="-2643.24509" AddAmount2="9196.71491" AddAmount4="4855.57491" DescId="2464821601" DaysBeforeDepartureTo="578733958" DateBeforeDepartureFrom="1981-04-03" Acct="string" Child="0" />
+                <EarlyBooking BuyGross="-6671.36509" BuyNet="-4580.54509" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="-3044.18509" BuyExchgRate="6953.77491" FromDay="3577342685" Percent="7383.45491" StartDateRelevant="1" ForAllDays="0" DateFrom="2003-08-27" DateTo="1971-01-19" AddAmount4="-295.10509" DescId="1407851625" DaysBeforeDepartureFrom="2084351923" DaysBeforeDepartureTo="3563710458" DateBeforeDepartureTo="1980-09-20" MaxNrNights="3182446212" Baby="1" />
+                <EarlyBooking BuyGross="-5242.02509" BuyNet="4154.69491" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="-4759.96509" BuyExchgRate="-1522.82509" FromDay="2712757178" ToDay="1292570407" StartDateRelevant="true" ForceDisplay="0" DateFrom="2003-05-11" DateTo="2011-08-24" AddAmount1="7805.09491" AddAmount2="-2707.30509" AddAmount3="-6080.08509" DescId="45019847" MaxNrNights="958821384" />
+            </EarlyBookings>
         </Prices>
         <ArrangementItems>
-            <DossierItem Type="Text" Consolidate="1" AllowProjectsEntry="1" ViewOnly="true">
-                <EndDate>2006-08-09</EndDate>
-                <Duration>-685</Duration>
-                <NumberOfItems>-5873</NumberOfItems>
-                <ShortDescription2>string</ShortDescription2>
-                <Status>A</Status>
-                <ExternalDossierNr>string</ExternalDossierNr>
-                <GdsBookingNr>string</GdsBookingNr>
-                <BookingSupplier Service="string" Code="string" Broker="comres" PayableTo="string">string</BookingSupplier>
-                <CostCenter>string</CostCenter>
-                <ItemNotOnInvoice>false</ItemNotOnInvoice>
-                <ExternalItemNr>string</ExternalItemNr>
-                <CancellationFees>
-                    <CancellationFee />
-                </CancellationFees>
-                <ExternalSystemIds>
-                    <ExternalSystemId>
-                        <ExternalSystemIdType>string</ExternalSystemIdType>
-                        <ExternalSystemIdCode>string</ExternalSystemIdCode>
-                    </ExternalSystemId>
-                </ExternalSystemIds>
-                <ItemInfos>
-                    <ItemInfo Invoice="true" Itinerary="0" External="1" />
-                </ItemInfos>
-            </DossierItem>
-            <DossierItem DossierItemSeq="string" BaseDataProductSeq="string" Type="Package">
-                <BeginDate>2005-02-04</BeginDate>
-                <EndDate>2004-01-22</EndDate>
-                <NumberOfItems>-4324</NumberOfItems>
-                <Status>AB</Status>
-                <ExternalDossierNr>string</ExternalDossierNr>
+            <DossierItem DossierItemSeq="string" BaseDataProductSeq="string" Position="3872" Type="Bus" Consolidate="0" AllowProjectsEntry="0" ViewOnly="1">
+                <EndDate>2012-03-12</EndDate>
                 <ApiBookingNr>string</ApiBookingNr>
-                <ApiSubSystem>string</ApiSubSystem>
-                <ApiClient>string</ApiClient>
-                <CostCenter>string</CostCenter>
-                <Projects System="Prod">
-                    <Project Code="string" Description="string" />
+                <GdsSource>SAB</GdsSource>
+                <GdsBookingNr>string</GdsBookingNr>
+                <Projects System="Test">
+                    <Project Seq="string" Code="string" Description="string" ExtCostManagement="0" />
+                    <Project Seq="string" Code="string" Description="string" Percentage="81.035005803945093" ExtCostManagement="1" />
+                    <Project Seq="string" Code="string" Description="string" ExtCostManagement="false" />
+                    <Project Code="string" Description="string" ExtCostManagement="true" />
                 </Projects>
-                <SourceDossierSeq>string</SourceDossierSeq>
-                <ExternalItemNr>string</ExternalItemNr>
-                <PurchasePrices />
-                <CancellationFees>
-                    <CancellationFee />
-                </CancellationFees>
+                <Travellers>
+                    <Traveller TravellerSeq="string" TravellerId="-6364" CustomerNr="4630" TaxPrice="-3324.265094196054907" TicketingAirline="A" Ticket2="string" Seat1="string" Seat2="string" Seat3="string" Seat4="string" OpcPrice="-4166.645094196054907" TicketIssueDate="1999-08-06" />
+                    <Traveller TravellerId="8202" TicketPrice="9391.414905803945093" TicketingAirline="A" Ticket1="string" Ticket2="string" Ticket4="string" Seat1="string" Seat4="string" Seat5="string" OpcPrice="-6886.785094196054907" />
+                    <Traveller TravellerSeq="string" TravellerId="-5962" TaxPrice="-4588.905094196054907" Ticket2="string" Ticket4="string" Ticket5="string" Seat2="string" />
+                </Travellers>
+                <ItemNotOnInvoice>1</ItemNotOnInvoice>
                 <ExternalSystemIds>
+                    <ExternalSystemId>
+                        <ExternalSystemIdType>string</ExternalSystemIdType>
+                        <ExternalSystemIdCode>string</ExternalSystemIdCode>
+                    </ExternalSystemId>
+                    <ExternalSystemId>
+                        <ExternalSystemIdType>string</ExternalSystemIdType>
+                        <ExternalSystemIdCode>string</ExternalSystemIdCode>
+                    </ExternalSystemId>
+                    <ExternalSystemId>
+                        <ExternalSystemIdType>string</ExternalSystemIdType>
+                        <ExternalSystemIdCode>string</ExternalSystemIdCode>
+                    </ExternalSystemId>
                     <ExternalSystemId>
                         <ExternalSystemIdType>string</ExternalSystemIdType>
                         <ExternalSystemIdCode>string</ExternalSystemIdCode>
                     </ExternalSystemId>
                 </ExternalSystemIds>
                 <ItemInfos>
-                    <ItemInfo Seq="string" Type="string" />
+                    <ItemInfo Invoice="true" />
+                    <ItemInfo Type="string" Itinerary="false" />
+                    <ItemInfo Type="string" Invoice="false" External="false" />
                 </ItemInfos>
                 <AddInfos>
                     <AddInfo />
+                    <AddInfo />
+                    <AddInfo />
+                    <AddInfo />
+                    <AddInfo />
                 </AddInfos>
+                <BeginDay>-9925</BeginDay>
+                <EndDay>4027</EndDay>
             </DossierItem>
-            <DossierItem DossierItemSeq="string" Type="Car" ViewOnly="1">
-                <BeginDate>1984-08-22</BeginDate>
-                <EndDate>2019-11-07</EndDate>
+            <DossierItem DossierItemSeq="string" BaseDataProductSeq="string" Position="7969" Type="Train" Consolidate="0" AllowProjectsEntry="1" ViewOnly="true">
+                <LogicDataProductSeq>string</LogicDataProductSeq>
+                <EndDate>1970-03-12</EndDate>
+                <NumberOfItems>-3113</NumberOfItems>
+                <ShortDescription1>string</ShortDescription1>
+                <ShortDescription2>string</ShortDescription2>
+                <Status></Status>
+                <ExternalDossierNr>string</ExternalDossierNr>
+                <ApiSubSystem>string</ApiSubSystem>
+                <GdsBookingNr>string</GdsBookingNr>
+                <CostCenter>string</CostCenter>
+                <Projects>
+                    <Project Code="string" Description="string" />
+                    <Project Seq="string" Code="string" Description="string" />
+                    <Project Seq="string" Code="string" Description="string" />
+                    <Project Seq="string" Code="string" Description="string" Percentage="71.288905803945093" ExtCostManagement="false" />
+                </Projects>
+                <SourceDossierSeq>string</SourceDossierSeq>
+                <ItemNotOnInvoice>0</ItemNotOnInvoice>
+                <BeginDay>7113</BeginDay>
+                <EndDay>2395</EndDay>
+            </DossierItem>
+            <DossierItem DossierItemSeq="string" BaseDataProductSeq="string" Position="-586" Type="Package" Consolidate="1" AllowProjectsEntry="false" ViewOnly="1">
+                <BeginDate>1980-05-27</BeginDate>
+                <Duration>3669</Duration>
+                <NumberOfItems>-544</NumberOfItems>
                 <ShortDescription2>string</ShortDescription2>
                 <ApiSubSystem>string</ApiSubSystem>
-                <GdsSource>AMA</GdsSource>
-                <ItemNotOnInvoice>true</ItemNotOnInvoice>
-                <ItemPrices />
-                <PurchasePrices />
+                <GdsBookingNr>string</GdsBookingNr>
+                <BookingSupplier Service="string" Code="string" ApiCode="TICO">string</BookingSupplier>
+                <CostCenter>string</CostCenter>
+                <Projects System="Prod">
+                    <Project Seq="string" Code="string" Description="string" Percentage="92.728605803945093" />
+                    <Project Code="string" Description="string" />
+                    <Project Seq="string" Code="string" Description="string" />
+                    <Project Code="string" Description="string" Percentage="27.482105803945093" />
+                </Projects>
+                <SourceDossierSeq>string</SourceDossierSeq>
+                <ItemNotOnInvoice>1</ItemNotOnInvoice>
                 <CancellationFees>
                     <CancellationFee InternalPriceType="CANCELLATIONFEE" />
                 </CancellationFees>
-                <ExternalSystemIds>
-                    <ExternalSystemId>
-                        <ExternalSystemIdType>string</ExternalSystemIdType>
-                        <ExternalSystemIdCode>string</ExternalSystemIdCode>
-                    </ExternalSystemId>
-                </ExternalSystemIds>
                 <ItemInfos>
-                    <ItemInfo Invoice="0" Itinerary="0" External="1" />
+                    <ItemInfo Type="string" Invoice="1" />
+                    <ItemInfo Type="string" External="1" />
                 </ItemInfos>
-                <AddInfos>
-                    <AddInfo />
-                </AddInfos>
             </DossierItem>
-            <DossierItem DossierItemSeq="string" BaseDataProductSeq="string" Position="9244" Type="Ship" AllowProjectsEntry="0">
-                <LogicDataProductSeq>string</LogicDataProductSeq>
-                <BeginDate>1983-02-23</BeginDate>
-                <EndDate>1979-03-05</EndDate>
-                <Duration>3146</Duration>
-                <NumberOfItems>-4902</NumberOfItems>
-                <ShortDescription2>string</ShortDescription2>
-                <ExternalSource>OTFONLY</ExternalSource>
+        </ArrangementItems>
+    </Arrangement>
+    <Arrangement Key="string" Action="DELETE" System="Educ" Type="string">
+        <Title>string</Title>
+        <Country IsoCode="string">string</Country>
+        <Region>string</Region>
+        <SubRegion>string</SubRegion>
+        <Supplier Code="string" Nr="3586490965">string</Supplier>
+        <Commission>-3246.30509</Commission>
+        <AccountNr>string</AccountNr>
+        <Destination CountryCode="string" Code="string" />
+        <CostCenter>string</CostCenter>
+        <ArrCode>string</ArrCode>
+        <ArrItemCode>string</ArrItemCode>
+        <NormalOccupancy>-7799</NormalOccupancy>
+        <ExtraBedAdults>-1055</ExtraBedAdults>
+        <ExtraBedChildren>2296</ExtraBedChildren>
+        <Currency>string</Currency>
+        <AutomatedFeeCode>string</AutomatedFeeCode>
+        <ArrType>CityPackage</ArrType>
+        <PaymentCondition>string</PaymentCondition>
+        <Language>it-ch</Language>
+        <TourboTitle>string</TourboTitle>
+        <TourboText>string</TourboText>
+        <MinimumHotelStay>3052416077</MinimumHotelStay>
+        <MinimumTotalStay>4206959120</MinimumTotalStay>
+        <MaximumTotalStay>2031214588</MaximumTotalStay>
+        <Request>RQ</Request>
+        <FixedDate>false</FixedDate>
+        <InternetBookable>true</InternetBookable>
+        <ExportOffer>0</ExportOffer>
+        <IsSpecialOffer FromDate="1978-09-18" ToDate="1984-05-25" SoldOut="1">false</IsSpecialOffer>
+        <Passive FromDate="2018-01-26">335488485</Passive>
+        <InvoiceTitle>string</InvoiceTitle>
+        <InvoiceDetail>string</InvoiceDetail>
+        <PriceInfo>string</PriceInfo>
+        <TravelDates>
+            <TravelDate FromDate="1991-06-05" ToDate="1975-05-13" Mo="1" Tu="false" We="0" Th="true" Fr="false" Sa="0" Su="true" Inactive="false" Exclude="true" />
+            <TravelDate FromDate="2007-07-08" ToDate="2010-05-27" Mo="0" Tu="1" We="false" Th="true" Fr="1" Sa="true" Su="false" Inactive="0" Exclude="1" />
+        </TravelDates>
+        <ItemInfos>
+            <ItemInfoTexts>
+                <ItemInfoText />
+                <ItemInfoText />
+                <ItemInfoText />
+                <ItemInfoText />
+            </ItemInfoTexts>
+            <ItemInfoRequests>
+                <ItemInfoRequest Day="1986-06-25" />
+                <ItemInfoRequest Day="1981-06-06" FreeSellRelease="3852577074" />
+                <ItemInfoRequest Day="1970-05-09" FS="0" />
+            </ItemInfoRequests>
+        </ItemInfos>
+        <Prices KeepDataBeforeDate="1990-03-12">
+            <Descs>
+                <Desc DescId="1816887130" />
+            </Descs>
+            <Currencies>
+                <Currency IdNr="4" IsoCode="ABC" />
+                <Currency IdNr="4" IsoCode="ABC" />
+                <Currency IdNr="4" IsoCode="ABC" />
+                <Currency IdNr="4" IsoCode="ABC" />
+            </Currencies>
+            <PerDayPrices>
+                <PerDayPrice BuyGross="-5375.98509" BuyNet="-4426.16509" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="9875.53491" BuyExchgRate="-8620.82509" DescId="2557124743" P1="7649.53491" P4="-4773.18509" Type="R" AgeFrom="107" SpecialCommission="5864.31491" SpecialCommissionFlag="0" Day="2009-04-12" Baby="1" MaxNrNights="1367474637" />
+            </PerDayPrices>
+            <AddPerDayPrices />
+            <OneTimes>
+                <OneTime StartDateRelevant="0" BuyNet="6765.45491" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="9051.41491" BuyExchgRate="-1061.82509" DescId="3852504059" P1="-8284.80509" P2="8116.35491" P3="-2550.36509" Type="P" AgeFrom="143" AgeTo="100" NotSpecialRelevant="0" DateFrom="2002-10-23" DateTo="1979-05-19" WeekdaysValid="string" Baby="0" Child="0" />
+            </OneTimes>
+            <SpecialOffers>
+                <SpecialOffer BuyGross="4776.29491" BuyNet="-8795.12509" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="-3088.80509" BuyExchgRate="5811.59491" FromDayBase="3525923336" PayNights="3940215881" SaveDayType="MinValue" StartDateRelevant="1" ChildChildNr="2806451890" ChildAdultNr="3128162120" DateFrom="1977-07-02" DateTo="2014-09-23" WeekdaysValid="string" AddAmount1="-768.48509" AddAmount3="7236.25491" DescId="1647519390" DaysBeforeDepartureFrom="752529810" Baby="1" Child="1" Type="P" />
+                <SpecialOffer BuyGross="-241.00509" BuyNet="-3914.10509" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="-4658.24509" BuyExchgRate="-3996.28509" SaveNights="3151479497" EndDateRelevant="1" LastSpOffEndDate="1994-03-26" RuleType="string" DateFrom="2019-10-08" DateTo="1992-07-09" AddAmount1="-5740.84509" AddAmount2="1438.27491" DescId="1268875073" DaysBeforeDepartureFrom="3636321175" DateBeforeDepartureFrom="1985-06-06" DateBeforeDepartureTo="1973-11-13" Baby="0" Child="1" Type="P" />
+            </SpecialOffers>
+            <EarlyBookings>
+                <EarlyBooking BuyNet="-6705.60509" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="4443.25491" BuyExchgRate="-865.20509" FromDay="2236879097" ToDay="2185210640" DateFrom="1971-10-22" DateTo="1999-07-20" AddAmount4="-4745.80509" DescId="2649535260" DaysBeforeDepartureTo="2015623857" DateBeforeDepartureFrom="1975-10-18" DateBeforeDepartureTo="1997-12-17" Acct="string" MaxNrNights="3954097216" Child="1" />
+                <EarlyBooking BuyGross="7036.13491" BuyNet="49.93491" BuyAcct="string" BuyCurr="string" BuyAmtBaseCurr="-1321.74509" BuyExchgRate="-4729.80509" FromDay="3466270535" ToDay="4047465510" Percent="1958.41491" StartDateRelevant="1" EndDateRelevant="0" ForceDisplay="0" ForAllDays="0" DateFrom="1983-01-21" DateTo="1995-12-02" AddAmount1="4769.61491" AddAmount3="752.61491" DescId="1340863020" DaysBeforeDepartureTo="1764810651" DateBeforeDepartureFrom="2012-11-04" DateBeforeDepartureTo="2011-11-22" MaxNrNights="2536792368" Child="0" />
+            </EarlyBookings>
+        </Prices>
+        <ArrangementItems>
+            <DossierItem DossierItemSeq="string" BaseDataProductSeq="string" Position="-1404" Type="Car" Consolidate="1" AllowProjectsEntry="1" ViewOnly="0">
+                <BeginDate>1985-04-16</BeginDate>
+                <EndDate>1970-03-22</EndDate>
+                <Duration>-2162</Duration>
+                <NumberOfItems>8314</NumberOfItems>
+                <ShortDescription1>string</ShortDescription1>
+                <ExternalSource>MOBS</ExternalSource>
                 <ApiClient>string</ApiClient>
-                <BookingSupplier AirlineNr="string" Service="string" ApiCode="TICO">string</BookingSupplier>
+                <GdsSource>OTH</GdsSource>
+                <BookingSupplier ApiCode="tuicts" Broker="COMRES" PayableTo="string">string</BookingSupplier>
                 <CostCenter>string</CostCenter>
-                <Projects System="Prod">
-                    <Project Code="string" Description="string" Percentage="13.739805803945093" />
-                </Projects>
                 <Travellers>
-                    <Traveller TravellerSeq="string" TravellerId="-1325" TicketPrice="4596.754905803945093" TicketingAirline="AB" Ticket2="string" Ticket4="string" Seat5="string" OpcPrice="-28.285094196054907" />
+                    <Traveller TravellerId="-9257" TicketPrice="445.234905803945093" TicketingAirline="AB" Ticket1="string" Ticket2="string" Seat3="string" Seat4="string" Seat5="string" OpcPrice="2946.314905803945093" />
+                    <Traveller TravellerId="68" TicketPrice="-5768.505094196054907" TaxPrice="-9722.585094196054907" Ticket2="string" Ticket3="string" Seat1="string" Seat3="string" Seat5="string" OpcPrice="-8556.845094196054907" TicketIssueDate="2011-02-12" />
+                    <Traveller TravellerId="7850" TicketPrice="-3811.805094196054907" TicketingAirline="AB" Ticket1="string" Ticket2="string" Ticket3="string" Ticket4="string" Ticket5="string" Seat1="string" Seat2="string" Seat3="string" OpcPrice="4641.874905803945093" />
+                </Travellers>
+                <ItemNotOnInvoice>0</ItemNotOnInvoice>
+                <Ship>
+                    <Arrival Harbor="string">string</Arrival>
+                    <Seat>string</Seat>
+                    <Address1>string</Address1>
+                    <Address2>string</Address2>
+                </Ship>
+                <ItemPrices />
+                <ItemInfos>
+                    <ItemInfo Seq="string" Type="string" Invoice="true" Itinerary="true" External="0" />
+                    <ItemInfo Seq="string" Invoice="true" Itinerary="false" />
+                    <ItemInfo Seq="string" Itinerary="1" />
+                    <ItemInfo Type="string" Itinerary="0" />
+                    <ItemInfo />
+                </ItemInfos>
+            </DossierItem>
+            <DossierItem DossierItemSeq="string" BaseDataProductSeq="string" Position="2707" Type="Text" Consolidate="0" AllowProjectsEntry="0" ViewOnly="0">
+                <EndDate>2004-10-05</EndDate>
+                <Duration>-8301</Duration>
+                <ShortDescription1>string</ShortDescription1>
+                <ExternalDossierNr>string</ExternalDossierNr>
+                <ApiSubSystem>string</ApiSubSystem>
+                <GdsSource>TOCHARTER</GdsSource>
+                <GdsBookingNr>string</GdsBookingNr>
+                <CostCenter>string</CostCenter>
+                <Travellers>
+                    <Traveller TravellerSeq="string" TravellerId="2945" CustomerNr="-5988" Ticket1="string" Ticket4="string" Ticket5="string" Seat1="string" Seat2="string" OpcPrice="-9291.085094196054907" />
+                    <Traveller TravellerSeq="string" TravellerId="-4649" TicketingAirline="A" Ticket1="string" Ticket3="string" Ticket5="string" Seat1="string" Seat2="string" Seat3="string" Seat4="string" Seat5="string" />
+                    <Traveller TravellerSeq="string" TravellerId="4967" TaxPrice="5284.794905803945093" Ticket2="string" Ticket3="string" Ticket4="string" Ticket5="string" Seat3="string" Seat5="string" OpcPrice="-9686.265094196054907" />
+                    <Traveller TravellerSeq="string" TravellerId="-2751" TaxPrice="-831.285094196054907" Ticket1="string" Seat1="string" Seat4="string" Seat5="string" OpcPrice="-6899.765094196054907" TicketIssueDate="1975-03-21" />
+                    <Traveller TravellerSeq="string" TravellerId="-6122" TicketPrice="-9857.685094196054907" TaxPrice="-9518.025094196054907" Ticket1="string" Ticket4="string" Seat1="string" Seat2="string" />
                 </Travellers>
                 <SourceDossierSeq>string</SourceDossierSeq>
                 <ItemNotOnInvoice>true</ItemNotOnInvoice>
-                <ItemPrices />
-                <ExternalSystemIds>
-                    <ExternalSystemId>
-                        <ExternalSystemIdType>string</ExternalSystemIdType>
-                        <ExternalSystemIdCode>string</ExternalSystemIdCode>
-                    </ExternalSystemId>
-                </ExternalSystemIds>
-                <ItemInfos>
-                    <ItemInfo />
-                </ItemInfos>
-                <AddInfos>
-                    <AddInfo />
-                </AddInfos>
             </DossierItem>
         </ArrangementItems>
     </Arrangement>
