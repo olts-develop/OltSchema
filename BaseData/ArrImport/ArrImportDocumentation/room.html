@@ -1,0 +1,381 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs for schema item Room in Arrangement Basedata Import</title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Element', 'room');
+                    </script><div class="pageheader">
+         Documentation for Arrangement Basedata Import
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Room</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="room_xsd.html">Room.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="175,1134,312,1159" href="productitemprices4.html" alt="Drilldown into ProductItemPrices"></area>
+                     <area shape="rect" coords="175,1102,259,1127" href="meals.html" alt="Drilldown into Meals"></area>
+                     <area shape="rect" coords="175,1049,330,1094" href="pasivedate.html" alt="Drilldown into PasiveDate"></area>
+                     <area shape="rect" coords="175,951,340,1042" href="condingent.html" alt="Drilldown into Condingent"></area>
+                     <area shape="rect" coords="175,831,350,943" href="bookingcode.html" alt="Drilldown into BookingCode"></area>
+                     <area shape="rect" coords="175,780,337,824" href="tourbocode1.html" alt="Drilldown into TourboCode"></area>
+                     <area shape="rect" coords="175,728,349,772" href="apiroomcode.html" alt="Drilldown into APIRoomCode"></area>
+                     <area shape="rect" coords="175,676,345,720" href="apihotelcode.html" alt="Drilldown into APIHotelCode"></area>
+                     <area shape="rect" coords="175,624,365,668" href="extrabedchildren1.html" alt="Drilldown into ExtraBedChildren"></area>
+                     <area shape="rect" coords="175,572,355,616" href="extrabedadults1.html" alt="Drilldown into ExtraBedAdults"></area>
+                     <area shape="rect" coords="175,520,327,564" href="maxadults.html" alt="Drilldown into MaxAdults"></area>
+                     <area shape="rect" coords="175,468,375,512" href="maximaloccupancy.html" alt="Drilldown into MaximalOccupancy"></area>
+                     <area shape="rect" coords="175,416,373,460" href="minimaloccupancy.html" alt="Drilldown into MinimalOccupancy"></area>
+                     <area shape="rect" coords="175,364,370,408" href="normaloccupancy1.html" alt="Drilldown into NormalOccupancy"></area>
+                     <area shape="rect" coords="175,312,386,356" href="vouchersupplier2.html" alt="Drilldown into VoucherSupplier"></area>
+                     <area shape="rect" coords="175,260,361,304" href="paysupplier.html" alt="Drilldown into PaySupplier"></area>
+                     <area shape="rect" coords="175,208,341,252" href="supplier4.html" alt="Drilldown into Supplier"></area>
+                     <area shape="rect" coords="175,156,357,200" href="mealdescription1.html" alt="Drilldown into MealDescription"></area>
+                     <area shape="rect" coords="175,104,332,148" href="description10.html" alt="Drilldown into Description"></area>
+                     <area shape="rect" coords="175,53,328,97" href="roomtype1.html" alt="Drilldown into RoomType"></area>
+                     <area shape="rect" coords="110,1,333,46" href="key3.html" alt="Drilldown into Key"></area></map><img src="images/room.png" border="0" alt="XSD Diagram of Room" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;xs:element name="Room"&gt;
+    &lt;xs:complexType&gt;
+        &lt;xs:all&gt;
+            &lt;xs:element name="RoomType" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;singel, doubleroom...&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Description" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Room description&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="MealDescription" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Description of included meal&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Supplier" type="SupplierType" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Supliername&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="PaySupplier" type="SupplierType" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Paysupliername&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="VoucherSupplier" type="SupplierType" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Vouchersuppliername&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="NormalOccupancy" type="xs:integer" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Normal occupancy&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="MinimalOccupancy" type="xs:integer" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Maximal occupancy&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="MaximalOccupancy" type="xs:integer" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Minimal occupancy&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="MaxAdults" type="xs:integer" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Maximun number of adults&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="ExtraBedAdults" type="xs:integer" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Number of extra bed for adults&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="ExtraBedChildren" type="xs:integer" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Number of extra bed for Children&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="APIHotelCode" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;API Hotel Code&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="APIRoomCode" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;API Room Code&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="TourboCode" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Tourbo Code&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="BookingCode" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;BookingCode
+              FSRQ = Freesale or Request
+              FS   = Freesale
+              RQ   = request
+            &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="FSRQ" /&gt;
+                        &lt;xs:enumeration value="FS" /&gt;
+                        &lt;xs:enumeration value="RQ" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Condingent" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Room hase Condingent
+              YES
+              NO
+            &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:enumeration value="YES" /&gt;
+                        &lt;xs:enumeration value="NO" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="PasiveDate" type="xs:date" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Room is not available after this date &lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="Meals" minOccurs="0"&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:sequence&gt;
+                        &lt;xs:element ref="Meal" maxOccurs="unbounded" /&gt;
+                    &lt;/xs:sequence&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="ProductItemPrices" minOccurs="0"&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:sequence&gt;
+                        &lt;xs:element ref="ProductItemPrice" maxOccurs="unbounded" /&gt;
+                    &lt;/xs:sequence&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:all&gt;
+        &lt;xs:attribute name="Key" use="optional"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt; Primary Key of the Item used in Database of reciever&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
+&lt;/xs:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">RoomType</td>
+                        <td><a href="roomtype1.html">RoomType</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Description</td>
+                        <td><a href="description10.html">Description</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MealDescription</td>
+                        <td><a href="mealdescription1.html">MealDescription</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Supplier</td>
+                        <td><a href="supplier4.html">Supplier</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PaySupplier</td>
+                        <td><a href="paysupplier.html">PaySupplier</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">VoucherSupplier</td>
+                        <td><a href="vouchersupplier2.html">VoucherSupplier</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">NormalOccupancy</td>
+                        <td><a href="normaloccupancy1.html">NormalOccupancy</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MinimalOccupancy</td>
+                        <td><a href="minimaloccupancy.html">MinimalOccupancy</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MaximalOccupancy</td>
+                        <td><a href="maximaloccupancy.html">MaximalOccupancy</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MaxAdults</td>
+                        <td><a href="maxadults.html">MaxAdults</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ExtraBedAdults</td>
+                        <td><a href="extrabedadults1.html">ExtraBedAdults</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ExtraBedChildren</td>
+                        <td><a href="extrabedchildren1.html">ExtraBedChildren</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">APIHotelCode</td>
+                        <td><a href="apihotelcode.html">APIHotelCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">APIRoomCode</td>
+                        <td><a href="apiroomcode.html">APIRoomCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TourboCode</td>
+                        <td><a href="tourbocode1.html">TourboCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">BookingCode</td>
+                        <td><a href="bookingcode.html">BookingCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Condingent</td>
+                        <td><a href="condingent.html">Condingent</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PasiveDate</td>
+                        <td><a href="pasivedate.html">PasiveDate</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Meals</td>
+                        <td><a href="meals.html">Meals</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ProductItemPrices</td>
+                        <td><a href="productitemprices4.html">ProductItemPrices</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Key</td>
+                        <td><a href="key3.html">Key</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.2.4.5273</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XSD to HTML</a>Doc Generation
+      </div>
+   </body>
+</html>
