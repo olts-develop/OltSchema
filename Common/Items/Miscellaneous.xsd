@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2014 Designer Edition 12.2.4.5273 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.2.5.5293 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\ProductItemPrice.xsd" />
@@ -180,6 +180,13 @@
                             minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>Miscellaneous booking code, e.g. TRANSF for a transfer, or EXC for an excursion.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MiscItemCode"
+                            type="xs:string"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Miscellaneous item code.</xs:documentation>
                     </xs:annotation>
                 </xs:element>
                 <xs:element name="MiscImages"
