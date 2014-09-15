@@ -265,7 +265,7 @@
                     <AirplaneType>AIRBUS INDUSTRIE A321</AirplaneType>
                 </Flight>
             </DossierItem>
-            <DossierItem Type="Misc"
+            <DossierItem Type="Miscellaneous"
                          Position="1"
                          DossierItemSeq="TOUWAL2974081"
                          BaseDataProductSeq="TOUWAL16254">
@@ -274,7 +274,7 @@
                 <ShortDescription1>3 Tage / 2 Nächte</ShortDescription1>
                 <Status>OK</Status>
                 <BookingSupplier Seq="TOUWAL1733542" />
-                <Misc>
+                <Miscellaneous>
                     <Title>3 Tage / 2 Nächte</Title>
                     <Detail><![CDATA[Unterkunft im Doppel-/Zweibettzimmer im Taman Negara Resort in den klimatisierten Superior Chalets
 Reiseverlauf wie beschrieben ab/bis Kuala Lumpur Stadthotel
@@ -316,7 +316,7 @@ ex/to hotel in Kuala Lumpur]]></VoucherDetail>
                     <Country IsoCode="MY"
                              PhoneCountryCode="+60">MALAYSIA</Country>
                     <Destination>KUL</Destination>
-                </Misc>
+                </Miscellaneous>
             </DossierItem>
             <DossierItem Type="Hotel"
                          Position="2"
