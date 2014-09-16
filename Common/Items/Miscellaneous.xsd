@@ -7,14 +7,25 @@
     <xs:element name="Miscellaneous">
         <xs:complexType>
             <xs:all>
+                <xs:element name="ShortTitle"
+                            type="xs:string"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Identifier for this miscellaneous element that is only visible in TO Online/Agent Online</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
                 <xs:element name="Title"
                             type="xs:string"
-                            minOccurs="0" />
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Invoice title</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
                 <xs:element name="Detail"
                             type="xs:string"
                             minOccurs="0">
                     <xs:annotation>
-                        <xs:documentation>CDATA</xs:documentation>
+                        <xs:documentation>CDATA Invoice detail text</xs:documentation>
                     </xs:annotation>
                 </xs:element>
                 <xs:element name="ItineraryTitle"
