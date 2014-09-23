@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2014 Designer Edition 12.2.4.5273 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.2.5.5293 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\ProductItemPrice.xsd" />
@@ -130,22 +130,14 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
-                <xs:element name="Condingent"
+                <xs:element name="HasAllotment"
+                            type="xs:boolean"
                             minOccurs="0">
                     <xs:annotation>
-                        <xs:documentation>Room hase Condingent
-              YES
-              NO
-            </xs:documentation>
+                        <xs:documentation>This room has allotment</xs:documentation>
                     </xs:annotation>
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="YES" />
-                            <xs:enumeration value="NO" />
-                        </xs:restriction>
-                    </xs:simpleType>
                 </xs:element>
-                <xs:element name="PasiveDate"
+                <xs:element name="PassiveDate"
                             type="xs:date"
                             minOccurs="0">
                     <xs:annotation>
