@@ -144,14 +144,23 @@
                         <xs:documentation>Room is not available after this date </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="Meals"
+                <xs:element name="MealCode"
                             minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element ref="Meal"
-                                        maxOccurs="unbounded" />
-                        </xs:sequence>
-                    </xs:complexType>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="0" />
+                            <xs:maxLength value="10" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="TourboMealCode"
+                            minOccurs="0">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="0" />
+                            <xs:maxLength value="10" />
+                        </xs:restriction>
+                    </xs:simpleType>
                 </xs:element>
                 <xs:element name="ProductItemPrices"
                             minOccurs="0">
