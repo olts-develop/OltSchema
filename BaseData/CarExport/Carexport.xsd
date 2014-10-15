@@ -24,30 +24,14 @@
                         <xs:simpleContent>
                             <xs:extension base="xs:string">
                                 <xs:attribute name="IsoCode"
-                                              type="xs:string" />
-                                <xs:attribute name="PhoneCountryCode"
                                               type="xs:string">
                                     <xs:annotation>
-                                        <xs:documentation>International telephone country code for the specific country, e.g. +41 for Switzerland</xs:documentation>
+                                        <xs:documentation>Two letter country code of address</xs:documentation>
                                     </xs:annotation>
                                 </xs:attribute>
                             </xs:extension>
                         </xs:simpleContent>
                     </xs:complexType>
-                </xs:element>
-                <xs:element name="Region"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Region of the Country</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="SubRegion"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Subregion of the region</xs:documentation>
-                    </xs:annotation>
                 </xs:element>
                 <xs:element name="PostalCode"
                             type="xs:string"
@@ -55,37 +39,69 @@
                 <xs:element name="City"
                             type="xs:string"
                             minOccurs="0" />
-                <xs:element name="Phone"
+                <xs:element name="Region"
+                            type="xs:string"
                             minOccurs="0">
-                    <xs:complexType>
-                        <xs:attribute name="AreaCode"
-                                      type="xs:string" />
-                        <xs:attribute name="Number"
-                                      type="xs:string" />
-                    </xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>Region of the Country
+                            RE_VOLLy</xs:documentation>
+                    </xs:annotation>
                 </xs:element>
-                <xs:element name="Fax"
+                <xs:element name="SubRegion"
+                            type="xs:string"
                             minOccurs="0">
-                    <xs:complexType>
-                        <xs:attribute name="AreaCode"
-                                      type="xs:string" />
-                        <xs:attribute name="Number"
-                                      type="xs:string" />
-                    </xs:complexType>
+                    <xs:annotation>
+                        <xs:documentation>Subregion of the region: SC_VOLL</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Phone"
+                            type="PhoneAttributes"
+                            minOccurs="0" />
+                <xs:element name="Fax"
+                            type="PhoneAttributes"
+                            minOccurs="0" />
+                <xs:element name="Natel"
+                            type="PhoneAttributes"
+                            minOccurs="0" />
+                <xs:element name="Mail"
+                            type="xs:string"
+                            minOccurs="0" />
+                <xs:element name="Internet"
+                            type="xs:string"
+                            minOccurs="0" />
+                <xs:element name="Vendor"
+                            type="xs:string"
+                            minOccurs="0" />
+                <xs:element name="Destination"
+                            type="DestinationAttributes"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Destination code of the car company or catalog for this company. Note: this is normally not a real destination but rather an identifier, e.g. AL1 for Alamo.</xs:documentation>
+                    </xs:annotation>
                 </xs:element>
                 <xs:element name="CarCode"
                             type="xs:string"
                             minOccurs="0" />
-                <xs:element name="Category"
+                <xs:element name="CompanyReferenz"
                             type="xs:string"
                             minOccurs="0" />
-                <xs:element name="Included"
+                <xs:element name="Text"
                             type="xs:string"
                             minOccurs="0">
                     <xs:annotation>
-                        <xs:documentation>CDATA, describes what amenities are included in this booking.</xs:documentation>
+                        <xs:documentation>CDATA</xs:documentation>
                     </xs:annotation>
                 </xs:element>
+                <xs:element name="PriceInfo"
+                            type="xs:string"
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Category"
+                            type="xs:string"
+                            minOccurs="0" />
                 <xs:element name="Type"
                             type="xs:string"
                             minOccurs="0" />
@@ -99,17 +115,10 @@
                 <xs:element name="PriceInfo"
                             type="xs:string"
                             minOccurs="0" />
-                <xs:element name="Destination"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Destination code of the car company ot catalog for this company. Note: this is normally not a real destination but rather an identifier, e.g. AL1 for Alamo.</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
                 <xs:element name="Passive"
                             minOccurs="0">
                     <xs:annotation>
-                        <xs:documentation>This room can no longer be booked. If a FromDate is specified, this item cannot be booked on or after the specified date.</xs:documentation>
+                        <xs:documentation>This car can no longer be booked. If a FromDate is specified, this item cannot be booked on or after the specified date.</xs:documentation>
                     </xs:annotation>
                     <xs:complexType>
                         <xs:simpleContent>
@@ -128,63 +137,52 @@
                             minOccurs="0" />
                 <xs:element name="Type"
                             type="xs:string"
-                            minOccurs="0" />
+                            minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
                 <xs:element name="TourboCode"
                             type="xs:string"
                             minOccurs="0" />
                 <xs:element name="Camper"
-                            minOccurs="0">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="YES" />
-                            <xs:enumeration value="NO" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-                <xs:element name="Miscellaneous"
-                            minOccurs="0">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="YES" />
-                            <xs:enumeration value="NO" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-                <xs:element name="PlanCode"
-                            type="xs:string"
+                            type="xs:boolean"
                             minOccurs="0" />
-                <xs:element name="Destination"
+                <xs:element name="Miscellaneous"
+                            type="xs:boolean"
+                            minOccurs="0" />
+                <xs:element name="PlanCode"
                             type="xs:string"
                             minOccurs="0" />
                 <xs:element name="TourboDescription"
                             type="xs:string"
                             minOccurs="0" />
                 <xs:element name="IncludedDescription"
-                            type="xs:string"
+                            type="Translation"
                             minOccurs="0" />
                 <xs:element name="Supplier"
-                                        minOccurs="0">
-                                <xs:complexType>
-                                    <xs:simpleContent>
-                                        <xs:extension base="xs:string">
-                                            <xs:attribute name="Code"
-                                                          type="xs:string">
-                                                <xs:annotation>
-                                                    <xs:documentation>Reservation-Supplier-Code for this room
-                                                    </xs:documentation>
-                                                </xs:annotation>
-                                            </xs:attribute>
-                                            <xs:attribute name="Nr"
-                                                          type="xs:nonNegativeInteger">
-                                                <xs:annotation>
-                                                    <xs:documentation>TO Online customer nr for this supplier
-                                                    </xs:documentation>
-                                                </xs:annotation>
-                                            </xs:attribute>
-                                        </xs:extension>
-                                    </xs:simpleContent>
-                                </xs:complexType>
-                            </xs:element>
+                            minOccurs="0">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="Code"
+                                              type="xs:string">
+                                    <xs:annotation>
+                                        <xs:documentation>Reservation-Supplier-Code for this room
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                                <xs:attribute name="Nr"
+                                              type="xs:nonNegativeInteger">
+                                    <xs:annotation>
+                                        <xs:documentation>TO Online customer nr for this supplier
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
             </xs:all>
             <xs:attribute name="Key"
                           type="xs:string"
@@ -228,7 +226,7 @@
                         maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line.
-            Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.</xs:documentation>
+                        Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
                     <xs:complexContent mixed="false">
@@ -309,7 +307,7 @@
                       type="xs:date">
             <xs:annotation>
                 <xs:documentation>Date from when the booking can be made, for this rule to be relevant
-          Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+                    Either a early booking rule has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DateBeforeDepartureTo"
@@ -346,16 +344,16 @@
                       type="xs:integer">
             <xs:annotation>
                 <xs:documentation>determins whether to show a price with 0 amount
-          0 = do not show
-          1 = has to be shown
-        </xs:documentation>
+                    0 = do not show
+                    1 = has to be shown
+                </xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="ForAllDays"
                       type="xs:integer">
             <xs:annotation>
                 <xs:documentation>if ForceDisplay =1 and ForAllDays=1 then the amount has to be shown for all relevant booking days.
-          if ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.</xs:documentation>
+                    if ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DescId"
@@ -364,8 +362,8 @@
                       type="xs:float">
             <xs:annotation>
                 <xs:documentation>percentage  if the priceline has a special commission
-          Interna: P_SPEZFLAG must be 1
-          P_</xs:documentation>
+                    Interna: P_SPEZFLAG must be 1
+                    P_</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:complexType>
@@ -408,21 +406,21 @@
                       type="xs:integer">
             <xs:annotation>
                 <xs:documentation>Number of days before the booking date: from
-          Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DaysBeforeDepartureTo"
                       type="xs:integer">
             <xs:annotation>
                 <xs:documentation>Number of days before the booking date: to
-          Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DateBeforeDepartureFrom"
                       type="xs:date">
             <xs:annotation>
                 <xs:documentation>Date from when the booking can be made, for this rule to be relevant
-          Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
+                    Either a special offer has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DateBeforeDepartureTo"
@@ -440,14 +438,14 @@
         <xs:attribute name="Type">
             <xs:annotation>
                 <xs:documentation>Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
-          Day1 - 100 CHF
-          Day2 - 110 CHF
-          Day3 - 120CHF
-          Day4 - 130 CHF
-          Day5  - 140 CHF
-          Day6  - 150 CHF
-          Day7  - 160 CHF
-          If the Type is EndDays, and I have a valid 7/5, then the special offer will be 150 + 160 CHF.</xs:documentation>
+                    Day1 - 100 CHF
+                    Day2 - 110 CHF
+                    Day3 - 120CHF
+                    Day4 - 130 CHF
+                    Day5  - 140 CHF
+                    Day6  - 150 CHF
+                    Day7  - 160 CHF
+                    If the Type is EndDays, and I have a valid 7/5, then the special offer will be 150 + 160 CHF.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:string">
@@ -484,16 +482,16 @@
                       type="xs:string">
             <xs:annotation>
                 <xs:documentation>A sevent character string
-          MoTuWeThFrSaSu
-          The string 1011001 indicates
-          Mo = valid
-          Tu = invalid
-          We = valid
-          Th = valid
-          Fr = invalid
-          Sa = valid
-          Su = valid
-        </xs:documentation>
+                    MoTuWeThFrSaSu
+                    The string 1011001 indicates
+                    Mo = valid
+                    Tu = invalid
+                    We = valid
+                    Th = valid
+                    Fr = invalid
+                    Sa = valid
+                    Su = valid
+                </xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="LastSpOffEndDate"
@@ -506,28 +504,28 @@
                       type="xs:string">
             <xs:annotation>
                 <xs:documentation>determermins how the spezial offer is to be used.
-          Always = the special offer is always valid
-          Nr = the attributes DaysBeforeDepatureFrom and DaysBeforeDepatureTo are valid for the calculation
-          Date = the attributes DateBeforeDepatureFrom and DateBeforeDepatureTo are valid for the calculation
-        </xs:documentation>
+                    Always = the special offer is always valid
+                    Nr = the attributes DaysBeforeDepatureFrom and DaysBeforeDepatureTo are valid for the calculation
+                    Date = the attributes DateBeforeDepatureFrom and DateBeforeDepatureTo are valid for the calculation
+                </xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DayString"
                       type="xs:string">
             <xs:annotation>
                 <xs:documentation>if the special offer is a savenight (PayNights) like stay from 6 to 7 nights pay 5 and it is revolving. This string shows the sequence of the staynights.
-          ex:
-          7-6/5 Daystring = 5
-          5/5 Daystring = 5
-          6/5 Daystring = 5
-          14/10 Daystring = 7,7
-          13/10 Daystring = 7,6
-          12/10 Daystring = 6,6
-          21/15 Daystring = 7,7,7
-          20/15 Daystring = 7,7,6
-          19/15 Daystring = 7,6,6
-          18/15 Daystring = 6,6,6
-        </xs:documentation>
+                    ex:
+                    7-6/5 Daystring = 5
+                    5/5 Daystring = 5
+                    6/5 Daystring = 5
+                    14/10 Daystring = 7,7
+                    13/10 Daystring = 7,6
+                    12/10 Daystring = 6,6
+                    21/15 Daystring = 7,7,7
+                    20/15 Daystring = 7,7,6
+                    19/15 Daystring = 7,6,6
+                    18/15 Daystring = 6,6,6
+                </xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="Days"
@@ -540,30 +538,30 @@
                       type="xs:integer">
             <xs:annotation>
                 <xs:documentation>0 = this special offer is valid only for adults
-          1 = this special offer is only valid for babys</xs:documentation>
+                    1 = this special offer is only valid for babys</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="Child"
                       type="xs:integer">
             <xs:annotation>
                 <xs:documentation>0 = this special offer is valid only for adults
-          1 = this special offer is only valid for children</xs:documentation>
+                    1 = this special offer is only valid for children</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="SpecialCommission"
                       type="xs:float">
             <xs:annotation>
                 <xs:documentation>percentage  if he priceline has a special commission
-          Interna: P_SPEZFLAG must be 1
-          P_</xs:documentation>
+                    Interna: P_SPEZFLAG must be 1
+                    P_</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="ChildChildNr"
                       type="xs:integer">
             <xs:annotation>
                 <xs:documentation>this special offer for a baby or child is valid for the n-th child or baby equal ChildChildNr
-          for ex. first baby/child or second baby/child
-        </xs:documentation>
+                    for ex. first baby/child or second baby/child
+                </xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="ChildAdultNr"
@@ -612,20 +610,20 @@
                       use="required">
             <xs:annotation>
                 <xs:documentation>
-          In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
-          &lt;Descs&gt;
-          &lt;Desc DescId="1"&gt;
-          &lt;de&gt;Preis pro Person/Nacht&lt;/de&gt;
-          &lt;fr&gt;Prix par personne/nuit&lt;/fr&gt;
-          &lt;/Desc&gt;
-          ...
-          &lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&gt;</xs:documentation>
+                    In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+                    &lt;Descs&gt;
+                    &lt;Desc DescId="1"&gt;
+                    &lt;de&gt;Preis pro Person/Nacht&lt;/de&gt;
+                    &lt;fr&gt;Prix par personne/nuit&lt;/fr&gt;
+                    &lt;/Desc&gt;
+                    ...
+                    &lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&gt;</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="Type">
             <xs:annotation>
                 <xs:documentation>P = Price per person (default)
-          R = Price per Room</xs:documentation>
+                    R = Price per Room</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:string">
@@ -653,7 +651,7 @@
                       use="required">
             <xs:annotation>
                 <xs:documentation>A seven character string, e.g. 1000000
-          The above example can be interpreted, that this price is only relevant for a monday</xs:documentation>
+                    The above example can be interpreted, that this price is only relevant for a monday</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="AgeFrom"
@@ -690,8 +688,8 @@
                       type="xs:float">
             <xs:annotation>
                 <xs:documentation>percentage  if the priceline has a special commission
-          Interna: P_SPEZFLAG must be 1
-          P_</xs:documentation>
+                    Interna: P_SPEZFLAG must be 1
+                    P_</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:complexType>
@@ -721,7 +719,7 @@
         <xs:attribute name="Type">
             <xs:annotation>
                 <xs:documentation>P = Price per person (default)
-          R = Price per Room</xs:documentation>
+                    R = Price per Room</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:string">
@@ -746,14 +744,14 @@
                       type="xs:nonNegativeInteger">
             <xs:annotation>
                 <xs:documentation>If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
-          ChildIndexNr=1 (first additional child in the room)
-          ChildIndexNr=2 (second additional child in the room)
-          ChildIndexNr=0 (no additional children in room)
-          If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
-          Internal: TYPE2
-          Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
-          Internal: Type3
-          Do PriceList.$search($ref.P_KINDERPREISSPEZ&gt;0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)</xs:documentation>
+                    ChildIndexNr=1 (first additional child in the room)
+                    ChildIndexNr=2 (second additional child in the room)
+                    ChildIndexNr=0 (no additional children in room)
+                    If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
+                    Internal: TYPE2
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
+                    Internal: Type3
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ&gt;0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DescId"
@@ -761,29 +759,29 @@
                       use="required">
             <xs:annotation>
                 <xs:documentation>
-          In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
-          &lt;Descs&gt;
-          &lt;Desc DescId="1"&gt;
-          &lt;de&gt;Preis pro Person/Nacht&lt;/de&gt;
-          &lt;fr&gt;Prix par personne/nuit&lt;/fr&gt;
-          &lt;/Desc&gt;
-          ...
-          &lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&gt;</xs:documentation>
+                    In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+                    &lt;Descs&gt;
+                    &lt;Desc DescId="1"&gt;
+                    &lt;de&gt;Preis pro Person/Nacht&lt;/de&gt;
+                    &lt;fr&gt;Prix par personne/nuit&lt;/fr&gt;
+                    &lt;/Desc&gt;
+                    ...
+                    &lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&gt;</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="NotSpecialRelevant"
                       type="xs:integer">
             <xs:annotation>
                 <xs:documentation>Some price lines must be ignored when calculating a special.
-          1 = NotSpecialRelevant</xs:documentation>
+                    1 = NotSpecialRelevant</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="SpecialCommission"
                       type="xs:float">
             <xs:annotation>
                 <xs:documentation>percentage  if he priceline has a special commission
-          Interna: P_SPEZFLAG must be 1
-          P_</xs:documentation>
+                    Interna: P_SPEZFLAG must be 1
+                    P_</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:complexType>
@@ -813,7 +811,7 @@
         <xs:attribute name="Type">
             <xs:annotation>
                 <xs:documentation>P = Price per person (default)
-          R = Price per Room</xs:documentation>
+                    R = Price per Room</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:string">
@@ -838,14 +836,14 @@
                       type="xs:nonNegativeInteger">
             <xs:annotation>
                 <xs:documentation>If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
-          ChildIndexNr=1 (first additional child in the room)
-          ChildIndexNr=2 (second additional child in the room)
-          ChildIndexNr=0 (no additional children in room)
-          If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
-          Internal: TYPE2
-          Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
-          Internal: Type3
-          Do PriceList.$search($ref.P_KINDERPREISSPEZ&gt;0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)</xs:documentation>
+                    ChildIndexNr=1 (first additional child in the room)
+                    ChildIndexNr=2 (second additional child in the room)
+                    ChildIndexNr=0 (no additional children in room)
+                    If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
+                    Internal: TYPE2
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
+                    Internal: Type3
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ&gt;0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="DescId"
@@ -853,29 +851,29 @@
                       use="required">
             <xs:annotation>
                 <xs:documentation>
-          In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
-          &lt;Descs&gt;
-          &lt;Desc DescId="1"&gt;
-          &lt;de&gt;Preis pro Person/Nacht&lt;/de&gt;
-          &lt;fr&gt;Prix par personne/nuit&lt;/fr&gt;
-          &lt;/Desc&gt;
-          ...
-          &lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&gt;</xs:documentation>
+                    In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+                    &lt;Descs&gt;
+                    &lt;Desc DescId="1"&gt;
+                    &lt;de&gt;Preis pro Person/Nacht&lt;/de&gt;
+                    &lt;fr&gt;Prix par personne/nuit&lt;/fr&gt;
+                    &lt;/Desc&gt;
+                    ...
+                    &lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&gt;</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="NotSpecialRelevant"
                       type="xs:integer">
             <xs:annotation>
                 <xs:documentation>Some price lines must be ignored when calculating a special.
-          1 = NotSpecialRelevant</xs:documentation>
+                    1 = NotSpecialRelevant</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="SpecialCommission"
                       type="xs:float">
             <xs:annotation>
                 <xs:documentation>percentage  if he priceline has a special commission
-          Interna: P_SPEZFLAG must be 1
-          P_</xs:documentation>
+                    Interna: P_SPEZFLAG must be 1
+                    P_</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:complexType>
@@ -905,7 +903,7 @@
                       use="required">
             <xs:annotation>
                 <xs:documentation>IATA Code of the destination
-          HO_DESTINATION</xs:documentation>
+                    HO_DESTINATION</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:complexType>
