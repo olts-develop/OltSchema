@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2014 Designer Edition 12.1.7.5079 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.2.5.5293 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="..\BasedataImport.xsd" />
@@ -607,6 +607,13 @@
                                                                 </xs:annotation>
                                                             </xs:attribute>
                                                         </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="Included"
+                                                                type="Translation"
+                                                                minOccurs="0">
+                                                        <xs:annotation>
+                                                            <xs:documentation>CDATA, describes what amenities are included in this booking.</xs:documentation>
+                                                        </xs:annotation>
                                                     </xs:element>
                                                 </xs:all>
                                             </xs:complexType>
