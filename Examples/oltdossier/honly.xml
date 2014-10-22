@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='ISO8859-1' ?><!-- Created with Liquid XML 2014 Designer Edition 12.2.6.5324 (http://www.liquid-technologies.com) -->
+<OLTDossiers>
+    <Dossiers>
+        <Dossier Version="1.0"
+                 From="OTHONLY"
+                 To="TUI"
+                 Date="2014-10-22"
+                 Time="10:40:00"
+                 Type="IMPORT"
+                 SubType="P"
+                 Lang="DE"
+                 Agent="542296"
+                 AgentUsercode="6315"
+                 BookingMode="B2B"
+                 Mode="PROD">
+            <CreateDate>2014-10-22</CreateDate>
+            <FirstDate>2014-10-30</FirstDate>
+            <LastDate>2014-10-31</LastDate>
+            <Language>de-ch</Language>
+            <ExternalSource>OTHONLY</ExternalSource>
+            <DossierStatus DossierStatusCode="OK" />
+            <Currency>CHF</Currency>
+            <Customers>
+                <Customer>
+                    <AgentCode>542296</AgentCode>
+                </Customer>
+            </Customers>
+            <Travellers>
+                <Traveller>
+                    <TravellerId>1</TravellerId>
+                    <Gender>m</Gender>
+                    <Child>false</Child>
+                    <Baby>false</Baby>
+                    <FirstName>Rudolf</FirstName>
+                    <LastName>Bargholz</LastName>
+                </Traveller>
+            </Travellers>
+            <DossierItems>
+                <DossierItem Type="Hotel"
+                             Consolidate="0">
+                    <BeginDate>2014-10-30</BeginDate>
+                    <EndDate>2014-10-31</EndDate>
+                    <Duration>1</Duration>
+                    <ShortDescription1>Welcome Inn</ShortDescription1>
+                    <ShortDescription2>Standard Einzelzimmer</ShortDescription2>
+                    <Status>OK</Status>
+                    <ExternalSource>OTHONLY</ExternalSource>
+                    <ApiBookingNr>13411210</ApiBookingNr>
+                    <ApiClient>TUIFTDB2B</ApiClient>
+                    <BookingSupplier ApiCode="GTA"
+                                     Broker="GTA" />
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <ExternalSystemIds>
+                        <ExternalSystemId>
+                            <ExternalSystemIdType>TripAdvisorId</ExternalSystemIdType>
+                            <ExternalSystemIdCode>266700</ExternalSystemIdCode>
+                        </ExternalSystemId>
+                        <ExternalSystemId>
+                            <ExternalSystemIdType>TripAdvisorSupplierID</ExternalSystemIdType>
+                            <ExternalSystemIdCode>GTAWEL</ExternalSystemIdCode>
+                        </ExternalSystemId>
+                    </ExternalSystemIds>
+                    <Hotel>
+                        <HotelName>Welcome Inn</HotelName>
+                        <Address1>Holbergstrasse 1</Address1>
+                        <PostalCode></PostalCode>
+                        <City>Zürich Flughafen</City>
+                        <Country IsoCode="CH">Switzerland</Country>
+                        <Phone Number="41-44-8047575" />
+                        <Fax Number="41-44-8047574" />
+                        <NrRooms>1</NrRooms>
+                        <RoomType>Standard Einzelzimmer</RoomType>
+                        <RoomVoucher><![CDATA[Standard Einzelzimmer]]></RoomVoucher>
+                        <Included><![CDATA[No Meal]]></Included>
+                        <MealVoucher><![CDATA[No Meal]]></MealVoucher>
+                        <Category>3</Category>
+                        <ConfirmationNr>13411210</ConfirmationNr>
+                        <PayableTo>GTA</PayableTo>
+                        <InfoURL>http://montreal.onlinetravel.ch/hotel/session/default/hotel_details.cgi?Client=tts&amp;System=GTA&amp;HotelCode=WEL&amp;Language=DE</InfoURL>
+                    </Hotel>
+                    <ItemPrices>
+                        <ItemPrice InternalPriceType="HOTELROOM">
+                            <PriceType>0</PriceType>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>127.00</PricePerUnit>
+                            <TotalPrice>127.00</TotalPrice>
+                            <Currency>CHF</Currency>
+                            <PriceCommissionGive>11.00</PriceCommissionGive>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                    <PurchasePrices>
+                        <PurchasePrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Rate>1.000</Rate>
+                            <Currency>CHF</Currency>
+                            <PricePerUnit>99.00</PricePerUnit>
+                            <TotalPrice>99.00</TotalPrice>
+                            <Supplier ApiCode="GTA"
+                                      Broker="GTA" />
+                        </PurchasePrice>
+                    </PurchasePrices>
+                    <CancellationFees>
+                        <CancellationFee InternalPriceType="CANCELLATIONFEE">
+                            <BeginDate>2014-10-22</BeginDate>
+                            <EndDate>2014-10-30</EndDate>
+                            <Amount>127.00</Amount>
+                            <DayBevorDepartureBegin>1</DayBevorDepartureBegin>
+                            <DayBevorDepartureEnd>0</DayBevorDepartureEnd>
+                            <NrDaysFeeApply>0</NrDaysFeeApply>
+                            <ProcessFee>0</ProcessFee>
+                            <PriceType>1</PriceType>
+                        </CancellationFee>
+                    </CancellationFees>
+                </DossierItem>
+            </DossierItems>
+        </Dossier>
+    </Dossiers>
+</OLTDossiers>

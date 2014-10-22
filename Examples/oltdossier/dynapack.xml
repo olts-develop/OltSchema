@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="ISO8859-1"?>
+<OLTDossiers>
+    <Dossiers>
+        <Dossier Version="1.0"
+                 From="DYNAPACK"
+                 To="TUI"
+                 Date="2014-10-22"
+                 Time="08:07:00"
+                 Type="IMPORT"
+                 SubType="P"
+                 Lang="de"
+                 Agent="542363"
+                 AgentUsercode="B2C"
+                 BookingMode="B2C"
+                 Mode="PROD">
+            <CreateDate>2014-10-22</CreateDate>
+            <FirstDate>2014-10-31</FirstDate>
+            <LastDate>2014-11-02</LastDate>
+            <Language>de-ch</Language>
+            <ExternalSource>DYNAP</ExternalSource>
+            <Destination DestinationCode="AMS" />
+            <DossierStatus DossierStatusCode="OK" />
+            <Currency>CHF</Currency>
+            <Customers>
+                <Customer>
+                    <Language>de-ch</Language>
+                    <Gender>M</Gender>
+                    <Title>MR</Title>
+                    <FirstName>Rudolf</FirstName>
+                    <LastName>Bargholz</LastName>
+                    <Address1>geissweg</Address1>
+                    <PostalCode>8000</PostalCode>
+                    <City>Schaffhausen</City>
+                    <Country IsoCode="CH" />
+                    <Email>info@onlinetravel.ch</Email>
+                    <Phone Number="0769999999" />
+                </Customer>
+            </Customers>
+            <Travellers>
+                <Traveller>
+                    <TravellerId>1</TravellerId>
+                    <Gender>m</Gender>
+                    <Child>false</Child>
+                    <Baby>false</Baby>
+                    <FirstName>Rudolf</FirstName>
+                    <LastName>Bargholz</LastName>
+                    <DateOfBirth>1994-07-21</DateOfBirth>
+                </Traveller>
+                <Traveller>
+                    <TravellerId>2</TravellerId>
+                    <Gender>f</Gender>
+                    <Child>false</Child>
+                    <Baby>false</Baby>
+                    <FirstName>Sandra</FirstName>
+                    <LastName>Bargholz</LastName>
+                    <DateOfBirth>1995-09-24</DateOfBirth>
+                </Traveller>
+            </Travellers>
+            <Payments>
+                <Payment>
+                    <Amount>615.00</Amount>
+                    <PaymentType>CreditCard</PaymentType>
+                    <OrderId>7034180</OrderId>
+                </Payment>
+            </Payments>
+            <DossierItems>
+                <DossierItem Type="Hotel"
+                             Consolidate="1">
+                    <BeginDate>2014-10-31</BeginDate>
+                    <EndDate>2014-11-02</EndDate>
+                    <Duration>2</Duration>
+                    <ShortDescription1>Wow Amsterdam</ShortDescription1>
+                    <ShortDescription2>BED IN SHARED ROOM SHARED BATHROOM</ShortDescription2>
+                    <Status>OK</Status>
+                    <ExternalSource>DYNAP</ExternalSource>
+                    <ApiBookingNr>221-613559</ApiBookingNr>
+                    <ApiClient>tui2</ApiClient>
+                    <BookingSupplier ApiCode="HOTELBEDS"
+                                     Broker="HOTELBEDS" />
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ExternalSystemIds>
+                        <ExternalSystemId>
+                            <ExternalSystemIdType>TripAdvisorSupplierID</ExternalSystemIdType>
+                            <ExternalSystemIdCode>HOTELBEDS367771</ExternalSystemIdCode>
+                        </ExternalSystemId>
+                    </ExternalSystemIds>
+                    <Hotel>
+                        <HotelName>Wow Amsterdam</HotelName>
+                        <Address1>WILTZANGHLAAN 60      </Address1>
+                        <PostalCode>1061 HC</PostalCode>
+                        <City>AMSTERDAM</City>
+                        <Country IsoCode="NL" />
+                        <Phone Number="0031207059410" />
+                        <Fax Number="0031207059411" />
+                        <NrRooms>1</NrRooms>
+                        <RoomType>BED IN SHARED ROOM SHARED BATHROOM</RoomType>
+                        <RoomVoucher><![CDATA[BED IN SHARED ROOM SHARED BATHROOM]]></RoomVoucher>
+                        <Included><![CDATA[BED AND BREAKFAST]]></Included>
+                        <MealVoucher><![CDATA[BED AND BREAKFAST]]></MealVoucher>
+                        <Category>3</Category>
+                        <WishVoucher><![CDATA[Accommodation is bed in a shared Dorm with shared bathroom facilities.. Estimated total amount of taxes n fees for this booking: 5.50% payable on arrival . ]]></WishVoucher>
+                        <ConfirmationNr>221-613559</ConfirmationNr>
+                        <PayableTo>HOTELBEDS PRODUCT,S.L.U.</PayableTo>
+                        <VatNr>B38877676</VatNr>
+                        <InfoURL>http://montreal.onlinetravel.ch/hotel/session/default/hotel_details.cgi?Client=tts&amp;System=HOTELBEDS&amp;HotelCode=367771&amp;Language=de</InfoURL>
+                    </Hotel>
+                    <ItemPrices>
+                        <ItemPrice InternalPriceType="HOTELROOM">
+                            <PriceType>0</PriceType>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>152.00</PricePerUnit>
+                            <TotalPrice>152.00</TotalPrice>
+                            <Currency>CHF</Currency>
+                            <PriceCommissionGive>0.00</PriceCommissionGive>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                    <PurchasePrices>
+                        <PurchasePrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Rate>1.235</Rate>
+                            <Currency>EUR</Currency>
+                            <PricePerUnit>103.04</PricePerUnit>
+                            <TotalPrice>103.04</TotalPrice>
+                            <Supplier ApiCode="HOTELBEDS"
+                                      Broker="HOTELBEDS" />
+                        </PurchasePrice>
+                    </PurchasePrices>
+                    <CancellationFees>
+                        <CancellationFee InternalPriceType="CANCELLATIONFEE">
+                            <BeginDate>2014-10-22</BeginDate>
+                            <EndDate>2014-10-31</EndDate>
+                            <Amount>151.43</Amount>
+                            <DayBevorDepartureBegin>1</DayBevorDepartureBegin>
+                            <DayBevorDepartureEnd>0</DayBevorDepartureEnd>
+                            <NrDaysFeeApply>0</NrDaysFeeApply>
+                            <ProcessFee>0</ProcessFee>
+                            <PriceType>1</PriceType>
+                        </CancellationFee>
+                    </CancellationFees>
+                </DossierItem>
+                <DossierItem Type="Package"
+                             Consolidate="1">
+                    <NumberOfItems>2</NumberOfItems>
+                    <ExternalSource>DYNAP</ExternalSource>
+                    <GdsSource>SAB</GdsSource>
+                    <GdsBookingNr>PONEFL</GdsBookingNr>
+                    <BookingSupplier Code="LX" />
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <Package>
+                        <FareType>P</FareType>
+                        <TicketAirline>LX</TicketAirline>
+                        <PackageItems>
+                            <DossierItem Type="Flight">
+                                <BeginDate>2014-10-31</BeginDate>
+                                <EndDate>2014-10-31</EndDate>
+                                <ShortDescription1>LX724</ShortDescription1>
+                                <ShortDescription2>ZRH-AMS</ShortDescription2>
+                                <Status>OK</Status>
+                                <Travellers>
+                                    <Traveller TravellerId="1" />
+                                    <Traveller TravellerId="2" />
+                                </Travellers>
+                                <Flight>
+                                    <Departure Code="ZRH"
+                                               Time="07:20">ZÜRICH /ZRH</Departure>
+                                    <Arrival Code="AMS"
+                                             Time="09:10"
+                                             DayIndicator="0">AMSTERDAM /AMS</Arrival>
+                                    <Airlinecode>LX</Airlinecode>
+                                    <FlightNumber>724</FlightNumber>
+                                    <FlightDirection>O</FlightDirection>
+                                    <Class>T</Class>
+                                    <BookingClass>Y</BookingClass>
+                                    <BookingNr>PONEFL</BookingNr>
+                                    <AirplaneType />
+                                </Flight>
+                            </DossierItem>
+                            <DossierItem Type="Flight">
+                                <BeginDate>2014-11-02</BeginDate>
+                                <EndDate>2014-11-02</EndDate>
+                                <ShortDescription1>LX737</ShortDescription1>
+                                <ShortDescription2>AMS-ZRH</ShortDescription2>
+                                <Status>OK</Status>
+                                <Travellers>
+                                    <Traveller TravellerId="1" />
+                                    <Traveller TravellerId="2" />
+                                </Travellers>
+                                <Flight>
+                                    <Departure Code="AMS"
+                                               Time="07:00">AMSTERDAM /AMS</Departure>
+                                    <Arrival Code="ZRH"
+                                             Time="08:25"
+                                             DayIndicator="0">ZÜRICH /ZRH</Arrival>
+                                    <Airlinecode>LX</Airlinecode>
+                                    <FlightNumber>737</FlightNumber>
+                                    <FlightDirection>I</FlightDirection>
+                                    <Class>K</Class>
+                                    <BookingClass>Y</BookingClass>
+                                    <BookingNr>PONEFL</BookingNr>
+                                    <AirplaneType>AIRBUS INDUSTRIE A320-100/200</AirplaneType>
+                                </Flight>
+                            </DossierItem>
+                        </PackageItems>
+                    </Package>
+                    <ItemPrices>
+                        <ItemPrice InternalPriceType="FLIGHTTICKET">
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>45.00</PricePerUnit>
+                            <TotalPrice>90.00</TotalPrice>
+                            <PriceType>1</PriceType>
+                            <PriceCommissionGive>0.00</PriceCommissionGive>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice InternalPriceType="FLIGHTTAX">
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>162.00</PricePerUnit>
+                            <TotalPrice>324.00</TotalPrice>
+                            <PriceType>2</PriceType>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                    <PurchasePrices>
+                        <PurchasePrice InternalPriceType="FLIGHTTICKET">
+                            <Supplier Code="LX" />
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>41.00</PricePerUnit>
+                            <TotalPrice>82.00</TotalPrice>
+                            <PriceType>1</PriceType>
+                        </PurchasePrice>
+                        <PurchasePrice InternalPriceType="FLIGHTTAX">
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>161.90</PricePerUnit>
+                            <TotalPrice>323.80</TotalPrice>
+                            <PriceType>2</PriceType>
+                        </PurchasePrice>
+                    </PurchasePrices>
+                </DossierItem>
+                <DossierItem Type="Text">
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <Text Insurance="YES">
+                        <InternalInsuranceCode>ELVASS</InternalInsuranceCode>
+                    </Text>
+                    <ItemPrices>
+                        <ItemPrice InternalPriceType="INSURANCE">
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>49.00</PricePerUnit>
+                            <TotalPrice>49.00</TotalPrice>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+            </DossierItems>
+        </Dossier>
+    </Dossiers>
+</OLTDossiers>

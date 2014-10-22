@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="ISO8859-1"?>
+<OLTDossiers>
+    <Dossiers System="Test">
+        <Dossier Version="1.1"
+                 From="IOL"
+                 To="TUI"
+                 Date="2014-05-25"
+                 Time="13:55:12"
+                 Type="IMPORT"
+                 SubType="P"
+                 BookingMode="B2B"
+                 Lang="DE">
+            <Customers>
+                <Customer>
+                    <CustomerNr>427742</CustomerNr>
+                    <Language>de-ch</Language>
+                </Customer>
+            </Customers>
+            <DossierNr>8001853</DossierNr>
+            <CreateDate>2014-05-25</CreateDate>
+            <Title>Your Switzerland Booking</Title>
+            <FirstDate>2014-06-26</FirstDate>
+            <LastDate>2014-06-29</LastDate>
+            <Language>de-ch</Language>
+            <Destination DestinationCode="SMV" />
+            <ExternalSource>TUIINC</ExternalSource>
+            <DossierStatus DossierStatusCode="OK" />
+            <Department>CHX</Department>
+            <Currency>CHF</Currency>
+            <Travellers>
+                <Traveller>
+                    <TravellerId>1</TravellerId>
+                    <Gender>m</Gender>
+                    <FirstName>Rudolf</FirstName>
+                    <LastName>Bargholz</LastName>
+                </Traveller>
+                <Traveller>
+                    <TravellerId>2</TravellerId>
+                    <Gender>m</Gender>
+                    <FirstName>Sandra</FirstName>
+                    <LastName>Bargholz</LastName>
+                </Traveller>
+            </Travellers>
+            <DossierItems>
+                <DossierItem Position="1"
+                             Type="Hotel">
+                    <BeginDate>2014-06-26</BeginDate>
+                    <EndDate>2014-06-29</EndDate>
+                    <Duration>3</Duration>
+                    <NumberOfItems>1</NumberOfItems>
+                    <ShortDescription1>Hotel San Gian</ShortDescription1>
+                    <ShortDescription2>Double Standard</ShortDescription2>
+                    <Status>OK</Status>
+                    <ExternalSource>TUIINC</ExternalSource>
+                    <ExternalDossierNr>8001853</ExternalDossierNr>
+                    <BookingSupplier Code="ZKH SANGIA" />
+                    <CostCenter>1303</CostCenter>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ExternalItemNr>11200-1</ExternalItemNr>
+                    <Hotel>
+                        <HotelName>Hotel San Gian</HotelName>
+                        <Address1>Via San Gian</Address1>
+                        <Country IsoCode="CH" />
+                        <PostalCode>7500</PostalCode>
+                        <City>St. Moritz</City>
+                        <Phone Number="+41 (0)81 837 09 09" />
+                        <Fax Number="+41 (0)81 837 09 10" />
+                        <NrRooms>1</NrRooms>
+                        <RoomType>Double Standard</RoomType>
+                        <Included><![CDATA[Buffet Breakfast]]></Included>
+                        <RoomVoucher>Double Standard</RoomVoucher>
+                        <MealVoucher>Buffet Breakfast</MealVoucher>
+                        <ConfirmationNr />
+                        <Category>4</Category>
+                        <HotelChain />
+                    </Hotel>
+                    <ItemPrices>
+                        <ItemPrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Currency>CHF</Currency>
+                            <PricePerUnit>6.0000</PricePerUnit>
+                            <TotalPrice>6.0000</TotalPrice>
+                            <PriceDescription>price match</PriceDescription>
+                            <PriceCommissionGive>0.0000</PriceCommissionGive>
+                            <VatCode>30</VatCode>
+                            <DebiAccount>800111</DebiAccount>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Currency>CHF</Currency>
+                            <PricePerUnit>696.0000</PricePerUnit>
+                            <TotalPrice>696.0000</TotalPrice>
+                            <PriceDescription>Double Standard</PriceDescription>
+                            <PriceCommissionGive>0.0000</PriceCommissionGive>
+                            <VatCode>30</VatCode>
+                            <DebiAccount>800111</DebiAccount>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Currency>CHF</Currency>
+                            <PricePerUnit>156.0000</PricePerUnit>
+                            <TotalPrice>156.0000</TotalPrice>
+                            <PriceDescription>Half Board</PriceDescription>
+                            <PriceCommissionGive>0.0000</PriceCommissionGive>
+                            <VatCode>30</VatCode>
+                            <DebiAccount>800111</DebiAccount>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                    <PurchasePrices>
+                        <PurchasePrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Currency>CHF</Currency>
+                            <Rate>1.0000</Rate>
+                            <PricePerUnit>-3.3000</PricePerUnit>
+                            <TotalPrice>-3.3000</TotalPrice>
+                            <PriceDescription>Price Match Hotel</PriceDescription>
+                            <ExternalItemNr>287517-201410220902</ExternalItemNr>
+                            <CrediAccount>610100</CrediAccount>
+                        </PurchasePrice>
+                        <PurchasePrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Currency>CHF</Currency>
+                            <Rate>1.0000</Rate>
+                            <PricePerUnit>323.5500</PricePerUnit>
+                            <TotalPrice>323.5500</TotalPrice>
+                            <PriceDescription>Double Standard</PriceDescription>
+                            <ExternalItemNr>282701-201405251355</ExternalItemNr>
+                            <CrediAccount>610100</CrediAccount>
+                        </PurchasePrice>
+                        <PurchasePrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Currency>CHF</Currency>
+                            <Rate>1.0000</Rate>
+                            <PricePerUnit>323.5500</PricePerUnit>
+                            <TotalPrice>323.5500</TotalPrice>
+                            <PriceDescription>Double Standard</PriceDescription>
+                            <ExternalItemNr>282705-201405251355</ExternalItemNr>
+                            <CrediAccount>610100</CrediAccount>
+                        </PurchasePrice>
+                        <PurchasePrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Currency>CHF</Currency>
+                            <Rate>1.0000</Rate>
+                            <PricePerUnit>75.0000</PricePerUnit>
+                            <TotalPrice>75.0000</TotalPrice>
+                            <PriceDescription>Half Board</PriceDescription>
+                            <ExternalItemNr>282702-201405251355</ExternalItemNr>
+                            <CrediAccount>610100</CrediAccount>
+                        </PurchasePrice>
+                        <PurchasePrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Currency>CHF</Currency>
+                            <Rate>1.0000</Rate>
+                            <PricePerUnit>75.0000</PricePerUnit>
+                            <TotalPrice>75.0000</TotalPrice>
+                            <PriceDescription>Half Board</PriceDescription>
+                            <ExternalItemNr>282703-201405251355</ExternalItemNr>
+                            <CrediAccount>610100</CrediAccount>
+                        </PurchasePrice>
+                    </PurchasePrices>
+                </DossierItem>
+            </DossierItems>
+        </Dossier>
+    </Dossiers>
+</OLTDossiers>
