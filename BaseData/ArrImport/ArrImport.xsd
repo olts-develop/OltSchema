@@ -2,7 +2,7 @@
 <!--Created with Liquid XML 2014 Designer Edition 12.2.4.5273 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:include schemaLocation="..\BasedataImport.xsd" />
+    <xs:include schemaLocation="..\BaseData.xsd" />
     <xs:include schemaLocation="..\..\Common\Items\DossierItem.xsd" />
     <xs:element name="Arrangements">
         <xs:complexType>

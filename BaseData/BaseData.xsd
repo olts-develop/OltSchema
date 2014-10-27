@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML 2014 Designer Edition 12.2.2.5231 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="Desc">
+        <xs:annotation>
+            <xs:documentation />
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Desc"
+                        minOccurs="0"
+                        maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line. Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="Translation">
+                            <xs:attributeGroup ref="DescIdAttributeGroup" />
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ItemInfos">
+        <xs:all>
+            <xs:element name="ItemInfoTexts"
+                        minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ItemInfoText"
+                                    type="ItemInfoText"
+                                    minOccurs="0"
+                                    maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:documentation>ItemInfo this Item, e.g. if in a </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="ItemInfoRequests"
+                        minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ItemInfoRequest"
+                                    type="ItemInfoRequestAttributes"
+                                    minOccurs="0"
+                                    maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="ItemInfoText">
+        <xs:all>
+            <xs:element name="BeginDate"
+                        type="xs:date"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Start date when an information applies. Inclusive.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EndDate"
+                        type="xs:date"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>End date when an information applies. Inclusive.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Invoice"
+                        type="xs:boolean"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation />
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Itinerary"
+                        type="xs:boolean"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation />
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="External"
+                        type="xs:boolean"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation />
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Title"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Title of info. Node is only sent if a value exists.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="de"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="en"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="fr"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="it"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Text"
+                        type="Translation"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Description text of item info</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="ItemInfoRequestAttributes">
+        <xs:attribute name="Day"
+                      type="xs:date">
+            <xs:annotation>
+                <xs:documentation>Date when the request information applies.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="RQ">
+            <xs:annotation>
+                <xs:documentation>If this item can be booked on request, RQ = 1</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="FS">
+            <xs:annotation>
+                <xs:documentation>If this item can be booked on freesell FS = 1</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="FreeSellRelease"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>If Request = FS, then the Nr days that this item can be booked on FS before it becomes a RQ</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="Translation">
+        <xs:sequence>
+            <xs:element name="de"
+                        type="xs:string"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>German. Can be a CDATA.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="en"
+                        type="xs:string"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>English. Can be a CDATA.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="fr"
+                        type="xs:string"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>French. Can be a CDATA.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="it"
+                        type="xs:string"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Italian. Can be a CDATA.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PhoneAttributes">
+        <xs:attribute name="AreaCode"
+                      type="xs:string" />
+        <xs:attribute name="Number"
+                      type="xs:string"
+                      use="required" />
+        <xs:attribute name="CountryPrefix"
+                      type="xs:string" />
+    </xs:complexType>
+    <xs:complexType name="DestinationAttributes">
+        <xs:attribute name="CountryCode"
+                      type="xs:string"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>2-letter country code based on the destination</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Code"
+                      type="xs:string"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>IATA Code of the destination
+                    HO_DESTINATION/DEST_CODE</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="PerDayPricesChildren">
+        <xs:sequence>
+            <xs:element name="PerDayPrice"
+                        type="PerDayPriceAttributes"
+                        minOccurs="0"
+                        maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PerDayPriceAttributes">
+        <xs:attributeGroup ref="BuyAttributeGroup" />
+        <xs:attributeGroup ref="SellGeneralAttributeGroup" />
+        <xs:attributeGroup ref="DayAttributeGroup" />
+        <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
+        <xs:attributeGroup ref="BabyChildAttributeGroup" />
+        <xs:attribute name="MaxNrNights"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>number of stay nights for a package.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="AddPerDayPricesChildren">
+        <xs:sequence>
+            <xs:element name="AddPerDayPrice"
+                        type="AddPerDayPriceAttributes"
+                        minOccurs="0"
+                        maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AddPerDayPriceAttributes">
+        <xs:attributeGroup ref="BuyAttributeGroup" />
+        <xs:attributeGroup ref="SellGeneralAttributeGroup" />
+        <xs:attributeGroup ref="DateFromToAttributeGroup" />
+        <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
+        <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
+        <xs:attributeGroup ref="BabyChildAttributeGroup" />
+    </xs:complexType>
+    <xs:complexType name="OneTimesChildren">
+        <xs:sequence>
+            <xs:element name="OneTime"
+                        type="OneTimeAttributes"
+                        minOccurs="0"
+                        maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OneTimeAttributes">
+        <xs:attributeGroup ref="DateRelevantAttributeGroup" />
+        <xs:attributeGroup ref="BuyAttributeGroup" />
+        <xs:attributeGroup ref="SellGeneralAttributeGroup" />
+        <xs:attributeGroup ref="DateFromToAttributeGroup" />
+        <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
+        <xs:attributeGroup ref="BabyChildAttributeGroup" />
+    </xs:complexType>
+    <xs:complexType name="SpecialOffersChildren">
+        <xs:sequence>
+            <xs:element name="SpecialOffer"
+                        type="SpecialOfferAttributes"
+                        minOccurs="0"
+                        maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SpecialOfferAttributes">
+        <xs:attributeGroup ref="BuyAttributeGroup" />
+        <xs:attribute name="FromDayBase"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>From day number. with a 7/5, this would be 5</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ToDayBase"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>To day number. with a 7/5, this would be 7</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="PayNights"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>How many nights does the customer effectively pay.
+                    If this has a value of 5, and I have a FromDay=6, ToDay=7, then if I book 6 days the customer pays 5 nights, if I book 7 days the customer pays 5 nights. SaveNights and PayNights are mutually exclusive. Only one of the attributes is allowed</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="SaveNights"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>How many nights does the customer effectively save,
+                    If this has a value of 2, and I have a FromDay=6, ToDay=7, then if I book 6 days the customer pays 4 nights, if I book 7 days the customer pays 5 nights. SaveNights and PayNights are mutually exclusive. Only one of the attributes is allowed</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="SaveDayType">
+            <xs:annotation>
+                <xs:documentation>Describes which amounts for the day prices need to be used when determining the special offer amount, e.g.
+                    Day1 - 100 CHF
+                    Day2 - 110 CHF
+                    Day3 - 120 CHF
+                    Day4 - 130 CHF
+                    Day5 - 140 CHF
+                    Day6 - 150 CHF
+                    Day7 - 160 CHF
+                    If the Type is EndDays, and I have a valid 7/5, then the special offer will be 150 + 160 CHF.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="EndDays" />
+                    <xs:enumeration value="StartDays" />
+                    <xs:enumeration value="Average" />
+                    <xs:enumeration value="MinValue" />
+                    <xs:enumeration value="MaxValue" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attributeGroup ref="DateRelevantAttributeGroup" />
+        <xs:attribute name="LastSpOffEndDate"
+                      type="xs:date">
+            <xs:annotation>
+                <xs:documentation>Defines the last possible booking end date for season overlapping special offers.This date can be taken for calculating the valid special offers for a hotel bookin</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="RuleType"
+                      type="xs:string">
+            <xs:annotation>
+                <xs:documentation>determines how the special offer is to be used.
+                    Always = the special offer is always valid
+                    Nr = the attributes DaysBeforeDepartureFrom and DaysBeforeDepartureTo are valid for the calculation
+                    Date = the attributes DateBeforeDepartureFrom and DateBeforeDepartureTo are valid for the calculatio</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="SpecialCommission"
+                      type="xs:float">
+            <xs:annotation>
+                <xs:documentation>percentage if the price line has a special commission
+                    Internal: P_SPEZFLAG must be 1</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ChildChildNr"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>this special offer for a baby or child is valid for the n-th child or baby equal ChildChildNr for ex. first baby/child or second baby/child</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ChildAdultNr"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>this special offer for the baby or child is valid if it is accompanied by number of adults equal ChildAdultNr</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attributeGroup ref="DateFromToAttributeGroup" />
+        <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
+        <xs:attributeGroup ref="AddAmountAttributeGroup" />
+        <xs:attributeGroup ref="DescIdAttributeGroup" />
+        <xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" />
+        <xs:attributeGroup ref="AcctAttributeGroup" />
+        <xs:attributeGroup ref="BabyChildAttributeGroup" />
+        <xs:attribute name="Type">
+            <xs:annotation>
+                <xs:documentation>P = Price per person (default)
+                    R = Price per Room</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="P" />
+                    <xs:enumeration value="R" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="EarlyBookingsChildren">
+        <xs:sequence>
+            <xs:element name="EarlyBooking"
+                        type="EarlyBookingAttributes"
+                        minOccurs="0"
+                        maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EarlyBookingAttributes">
+        <xs:attributeGroup ref="BuyAttributeGroup" />
+        <xs:attribute name="FromDay"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>From which day is this early booking rule relevant.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ToDay"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>To which day is this early booking rule relevant.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Percent"
+                      type="xs:float">
+            <xs:annotation>
+                <xs:documentation>Percentage</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attributeGroup ref="DateRelevantAttributeGroup" />
+        <xs:attribute name="ForceDisplay">
+            <xs:annotation>
+                <xs:documentation>determines whether to show a price with 0 amount
+                    0 = do not show
+                    1 = has to be shown</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="ForAllDays">
+            <xs:annotation>
+                <xs:documentation>If ForceDisplay =1 and ForAllDays=1 then the amount has to be shown for all relevant booking days.
+                    If ForceDisplay =1 and ForAllDays=0 then the amount has to be shown once.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="SpecialCommission"
+                      type="xs:float">
+            <xs:annotation>
+                <xs:documentation>percentage if the price line has a special commission
+                    Internal: P_SPEZFLAG must be 1</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attributeGroup ref="DateFromToAttributeGroup" />
+        <xs:attributeGroup ref="AddAmountAttributeGroup" />
+        <xs:attributeGroup ref="DescIdAttributeGroup" />
+        <xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" />
+        <xs:attributeGroup ref="AcctAttributeGroup" />
+        <xs:attribute name="MaxNrNights"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>A special offer can be connected to the number of stay nights. If one stays 7 nights the special offer can be different to a stay of 14 nights. The value in this field identified the maximum number of nights for which this rule is relevant.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attributeGroup ref="BabyChildAttributeGroup" />
+    </xs:complexType>
+    <xs:attributeGroup name="DateFromToAttributeGroup">
+        <xs:attribute name="DateFrom"
+                      type="xs:date"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>Date from which this price is valid</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="DateTo"
+                      type="xs:date"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>Date to which this price is valid</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="WeekdaysValidAttributeGroup">
+        <xs:attribute name="WeekdaysValid"
+                      type="xs:string"
+                      use="optional">
+            <xs:annotation>
+                <xs:documentation>A seven character string, e.g. 1000000
+                    The above example can be interpreted, that this price is only relevant for a Monday.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="BabyChildAttributeGroup">
+        <xs:attribute name="Baby">
+            <xs:annotation>
+                <xs:documentation>0 = this special offer is valid only for babies
+1 = this special offer is only valid for children</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="Child">
+            <xs:annotation>
+                <xs:documentation>0 = this special offer is valid only for adults
+1 = this special offer is only valid for children</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="DescIdAttributeGroup">
+        <xs:attribute name="DescId"
+                      type="xs:nonNegativeInteger"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+                    &lt;Descs&gt;
+                    &lt;Desc
+                    DescId="1"&gt;
+                    &lt;de&gt;Preis pro Person/Nacht&lt;/de&gt;
+                    &lt;fr&gt;Prix par personne/nuit&lt;/fr&gt;
+                    &lt;/Desc&gt;
+                    ...
+                    &lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="BuyAttributeGroup">
+        <xs:attribute name="BuyGross"
+                      type="xs:float"
+                      use="optional">
+            <xs:annotation>
+                <xs:documentation>Gross buy amount in the buying currency. Is normally equal to BuyNet.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="BuyNet"
+                      type="xs:float"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>Net buy amount in the buying currency</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="BuyAcct"
+                      type="xs:string"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>Account number of the buying price amount</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="BuyCurr"
+                      type="xs:string"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>Buying currency</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="BuyAmtBaseCurr"
+                      type="xs:float"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>Buy amount in the base currency of TO Online</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="BuyExchgRate"
+                      type="xs:float"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>Sometimes BuyNet and BuyAmtBaseCurr are zero, e.g. SpecialOffer. In this case the interface needs to be informed explicitly what the exchange rate for this currency is.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="DateRelevantAttributeGroup">
+        <xs:attribute name="StartDateRelevant"
+                      type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation>If the DateFrom fits into the booking period of the hotel, this special is relevant, i.e. if the start date of the booking is greater than or equal to the DateFrom</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="EndDateRelevant"
+                      type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation>If the DateTo fits into the booking period of the hotel, i.e. the last day of the booking is less than or equal to DateTo, this special is relevant</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="DayAttributeGroup">
+        <xs:attribute name="Day"
+                      type="xs:date"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>Specific date for which this price is valid</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="SpecialCommissionAttributeGroup">
+        <xs:attribute name="SpecialCommission"
+                      type="xs:float">
+            <xs:annotation>
+                <xs:documentation>Percentage if the price line has a special commission. Note this can be supplied in combination with SpecialCommissionFlag. Normally a supplier sets the commission for a price line to a fixed value, then SpecialCommission and SpecialCommissionFlag both need to be supplied. The meal, for example, can have a fixed commission which differs to the normal commission given to the travel agent. 
+</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="SpecialCommissionFlag">
+            <xs:annotation>
+                <xs:documentation>Internal: P_SPEZFLAG</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="AddAmountAttributeGroup">
+        <xs:attribute name="AddAmount1"
+                      type="xs:float">
+            <xs:annotation>
+                <xs:documentation>This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="AddAmount2"
+                      type="xs:float">
+            <xs:annotation>
+                <xs:documentation>This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="AddAmount3"
+                      type="xs:float">
+            <xs:annotation>
+                <xs:documentation>This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="AddAmount4"
+                      type="xs:float">
+            <xs:annotation>
+                <xs:documentation>This amount needs to be added to the calculated SpecialOffer amount. Normally this will be a negative amount, e.g. when the special offer is calculated, but the cost for Breakfast is not included in special offer</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="SellGeneralAttributeGroup">
+        <xs:attributeGroup ref="DescIdAttributeGroup" />
+        <xs:attribute name="P1"
+                      type="xs:float"
+                      use="required">
+            <xs:annotation>
+                <xs:documentation>This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="P2"
+                      type="xs:float"
+                      use="optional">
+            <xs:annotation>
+                <xs:documentation>This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="P3"
+                      type="xs:float"
+                      use="optional">
+            <xs:annotation>
+                <xs:documentation>This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="P4"
+                      type="xs:float"
+                      use="optional">
+            <xs:annotation>
+                <xs:documentation>This can be a price per person (default) or a price per day. If this is a price per day, then a Type = R is supplied as an attribute</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Type">
+            <xs:annotation>
+                <xs:documentation>P = Price per person (default)
+                    R = Price per Room</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="P" />
+                    <xs:enumeration value="R" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="AgeFrom">
+            <xs:annotation>
+                <xs:documentation>If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:minInclusive value="0" />
+                    <xs:maxInclusive value="150" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="AgeTo">
+            <xs:annotation>
+                <xs:documentation>If this is an age relevant price, then it AgeTo is per non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:minInclusive value="0" />
+                    <xs:maxInclusive value="150" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="NotSpecialRelevant">
+            <xs:annotation>
+                <xs:documentation>Some price lines must be ignored when calculating a special.
+                    1 = NotSpecialRelevant</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attributeGroup ref="SpecialCommissionAttributeGroup" />
+        <xs:attributeGroup ref="AcctAttributeGroup" />
+    </xs:attributeGroup>
+    <xs:attributeGroup name="ChildIdxNrAttributeGroup">
+        <xs:attribute name="ChildIdxNr">
+            <xs:annotation>
+                <xs:documentation>If an ChildIndexNr is supplied, the price cannot be a Percentage price, but is an effective price for the additional child in the room. If this is a double room that optionally allows either two additional adults or two additional children (maximum two extra persons in room), then the following additional price lines would have to be supplied:
+                    ChildIndexNr=1 (first additional child in the room)
+                    ChildIndexNr=2 (second additional child in the room)
+                    ChildIndexNr=0 (no additional children in room)
+                    If the node ChildIndexNr is not supplied, or 0, then the price is valid for all children in the AgeFrom/AgeTo range
+                    Internal: TYPE2
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ=0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,1)
+                    Internal: Type3
+                    Do PriceList.$search($ref.P_KINDERPREISSPEZ&gt;0&amp;$ref.P_PROZERMAESSIG=0,1,1,1,</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger" />
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="DaysDateBeforeDepartureAttributeGroup">
+        <xs:attribute name="DaysBeforeDepartureFrom"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>Number of days before the booking date: from
+Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.
+
+NOTE: this number is mapped to a DateBeforeDepartureFrom date, i.e. current date minus "from" number of days, so the value of DaysBeforeDepartureFrom must be larger than the value of DaysBeforeDepartureTo.
+
+current date - "DaysBeforeDepartureFrom" days &lt; current date - "DaysBeforeDepartureTo", so DaysBeforeDepartureFrom &gt; DaysBeforeDeparture</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="DaysBeforeDepartureTo"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>Number of days before the booking date: to
+Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.
+
+NOTE: this number is mapped to a DateBeforeDepartureTo date, i.e. current date minus "to" number of days, so the value of DaysBeforeDepartureFrom must be larger than the value of DaysBeforeDepartureTo.
+
+current date - "DaysBeforeDepartureFrom" days &lt; current date - "DaysBeforeDepartureTo", so DaysBeforeDepartureFrom &gt; DaysBeforeDeparture</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="DateBeforeDepartureFrom"
+                      type="xs:date">
+            <xs:annotation>
+                <xs:documentation>Date from when the booking can be made, for this rule to be relevant Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.
+
+DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="DateBeforeDepartureTo"
+                      type="xs:date">
+            <xs:annotation>
+                <xs:documentation>Either a special offer/early booking has a DaysBeforeDepartureFrom and DaysBeforeDepartureTo, or it has DateBeforeDepartureFrom and DateBeforeDepartureTo. They are mutually exclusive.
+
+DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="AcctAttributeGroup">
+        <xs:attribute name="Acct"
+                      type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Account number for this price line</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+</xs:schema>
