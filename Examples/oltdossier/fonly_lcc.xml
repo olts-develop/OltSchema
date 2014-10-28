@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="ISO8859-1"?>
+<OLTDossiers>
+    <Dossiers>
+        <Dossier Version="1.0"
+                 From="OTFONLY"
+                 To="TUI"
+                 Date="2014-10-22"
+                 Time="11:38:00"
+                 Type="IMPORT"
+                 SubType="P"
+                 Lang="DE"
+                 Agent="542363"
+                 AgentUsercode="XX"
+                 BookingMode="B2C"
+                 Mode="PROD">
+            <CreateDate>2014-10-22</CreateDate>
+            <FirstDate>2015-01-31</FirstDate>
+            <LastDate>2015-02-07</LastDate>
+            <Language>de-ch</Language>
+            <ExternalSource>OTFONLY</ExternalSource>
+            <Destination DestinationCode="LCA" />
+            <DossierStatus DossierStatusCode="OK" />
+            <Currency>CHF</Currency>
+            <Customers>
+                <Customer>
+                    <Language>de-ch</Language>
+                    <Gender>m</Gender>
+                    <Title>MR</Title>
+                    <FirstName>Rudolf</FirstName>
+                    <LastName>Bargholz</LastName>
+                    <Address1>Rütistrasse 52</Address1>
+                    <PostalCode>8044</PostalCode>
+                    <City>Gockhausen</City>
+                    <Email>info@onlinetravel.ch</Email>
+                    <Phone Number="079 999 99 99" />
+                </Customer>
+            </Customers>
+            <Travellers>
+                <Traveller>
+                    <TravellerId>1</TravellerId>
+                    <Gender>m</Gender>
+                    <Child>false</Child>
+                    <Baby>false</Baby>
+                    <FirstName>Rudolf</FirstName>
+                    <LastName>Bargholz</LastName>
+                    <DateOfBirth>1952-02-05</DateOfBirth>
+                </Traveller>
+            </Travellers>
+            <Payments>
+                <Payment>
+                    <Amount>289.40</Amount>
+                    <PaymentType>CreditCard</PaymentType>
+                    <OrderId></OrderId>
+                </Payment>
+            </Payments>
+            <DossierItems>
+                <DossierItem Type="Package"
+                             Consolidate="0">
+                    <NumberOfItems>4</NumberOfItems>
+                    <ExternalSource>OTFONLY</ExternalSource>
+                    <GdsSource>SAB</GdsSource>
+                    <GdsBookingNr>QGYZXX</GdsBookingNr>
+                    <BookingSupplier Code="A3" />
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <Package>
+                        <FareType>P</FareType>
+                        <TicketAirline>A3</TicketAirline>
+                        <PackageItems>
+                            <DossierItem Type="Flight">
+                                <BeginDate>2015-01-31</BeginDate>
+                                <EndDate>2015-01-31</EndDate>
+                                <ShortDescription1>A3829</ShortDescription1>
+                                <ShortDescription2>ZRH-ATH</ShortDescription2>
+                                <Status>OK</Status>
+                                <Travellers>
+                                    <Traveller TravellerId="1" />
+                                </Travellers>
+                                <Flight>
+                                    <Departure Code="ZRH"
+                                               Time="11:00">ZÜRICH /ZRH</Departure>
+                                    <Arrival Code="ATH"
+                                             Time="14:40"
+                                             DayIndicator="0">ATHEN /ATH</Arrival>
+                                    <Airlinecode>A3</Airlinecode>
+                                    <FlightNumber>829</FlightNumber>
+                                    <FlightDirection>O</FlightDirection>
+                                    <Class>T</Class>
+                                    <BookingClass>Y</BookingClass>
+                                    <BookingNr>QGYZXX</BookingNr>
+                                </Flight>
+                            </DossierItem>
+                            <DossierItem Type="Flight">
+                                <BeginDate>2015-01-31</BeginDate>
+                                <EndDate>2015-01-31</EndDate>
+                                <ShortDescription1>A3906</ShortDescription1>
+                                <ShortDescription2>ATH-LCA</ShortDescription2>
+                                <Status>OK</Status>
+                                <Travellers>
+                                    <Traveller TravellerId="1" />
+                                </Travellers>
+                                <Flight>
+                                    <Departure Code="ATH"
+                                               Time="16:45">ATHEN /ATH</Departure>
+                                    <Arrival Code="LCA"
+                                             Time="18:25"
+                                             DayIndicator="0">LARNACA /LCA</Arrival>
+                                    <Airlinecode>A3</Airlinecode>
+                                    <FlightNumber>906</FlightNumber>
+                                    <FlightDirection>O</FlightDirection>
+                                    <Class>T</Class>
+                                    <BookingClass>Y</BookingClass>
+                                    <BookingNr>QGYZXX</BookingNr>
+                                </Flight>
+                            </DossierItem>
+                            <DossierItem Type="Flight">
+                                <BeginDate>2015-02-07</BeginDate>
+                                <EndDate>2015-02-07</EndDate>
+                                <ShortDescription1>A3901</ShortDescription1>
+                                <ShortDescription2>LCA-ATH</ShortDescription2>
+                                <Status>OK</Status>
+                                <Travellers>
+                                    <Traveller TravellerId="1" />
+                                </Travellers>
+                                <Flight>
+                                    <Departure Code="LCA"
+                                               Time="05:30">LARNACA /LCA</Departure>
+                                    <Arrival Code="ATH"
+                                             Time="07:15"
+                                             DayIndicator="0">ATHEN /ATH</Arrival>
+                                    <Airlinecode>A3</Airlinecode>
+                                    <FlightNumber>901</FlightNumber>
+                                    <FlightDirection>I</FlightDirection>
+                                    <Class>T</Class>
+                                    <BookingClass>Y</BookingClass>
+                                    <BookingNr>QGYZXX</BookingNr>
+                                </Flight>
+                            </DossierItem>
+                            <DossierItem Type="Flight">
+                                <BeginDate>2015-02-07</BeginDate>
+                                <EndDate>2015-02-07</EndDate>
+                                <ShortDescription1>A3828</ShortDescription1>
+                                <ShortDescription2>ATH-ZRH</ShortDescription2>
+                                <Status>OK</Status>
+                                <Travellers>
+                                    <Traveller TravellerId="1" />
+                                </Travellers>
+                                <Flight>
+                                    <Departure Code="ATH"
+                                               Time="08:30">ATHEN /ATH</Departure>
+                                    <Arrival Code="ZRH"
+                                             Time="10:15"
+                                             DayIndicator="0">ZÜRICH /ZRH</Arrival>
+                                    <Airlinecode>A3</Airlinecode>
+                                    <FlightNumber>828</FlightNumber>
+                                    <FlightDirection>I</FlightDirection>
+                                    <Class>T</Class>
+                                    <BookingClass>Y</BookingClass>
+                                    <BookingNr>QGYZXX</BookingNr>
+                                </Flight>
+                            </DossierItem>
+                        </PackageItems>
+                    </Package>
+                    <ItemPrices>
+                        <ItemPrice InternalPriceType="FLIGHTTICKET">
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>154.00</PricePerUnit>
+                            <TotalPrice>154.00</TotalPrice>
+                            <PriceType>1</PriceType>
+                            <PriceCommissionGive>0.00</PriceCommissionGive>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice InternalPriceType="FLIGHTTAX">
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>135.40</PricePerUnit>
+                            <TotalPrice>135.40</TotalPrice>
+                            <PriceType>2</PriceType>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                    <PurchasePrices>
+                        <PurchasePrice InternalPriceType="FLIGHTTICKET">
+                            <Supplier Code="A3" />
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>140.00</PricePerUnit>
+                            <TotalPrice>140.00</TotalPrice>
+                            <PriceType>1</PriceType>
+                        </PurchasePrice>
+                        <PurchasePrice InternalPriceType="FLIGHTTAX">
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>135.40</PricePerUnit>
+                            <TotalPrice>135.40</TotalPrice>
+                            <PriceType>2</PriceType>
+                        </PurchasePrice>
+                    </PurchasePrices>
+                </DossierItem>
+                <DossierItem Type="Text">
+                    <BeginDate>2014-05-18</BeginDate>
+                    <ShortDescription1>Bearbeitungsgebühr</ShortDescription1>
+                    <CostCenter>1201</CostCenter>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <Text>
+                        <Title>Cancellation/Bearbeitungsgebühr</Title>
+                        <Detail><![CDATA[Bearbeitungsgebühr]]></Detail>
+                        <IsInvoiceText>1</IsInvoiceText>
+                    </Text>
+                    <ItemPrices>
+                        <ItemPrice PriceType="ProcessingFee">
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>100.00</PricePerUnit>
+                            <TotalPrice>200.00</TotalPrice>
+                            <PriceDescription>Dossiergebühr</PriceDescription>
+                            <PriceType>3</PriceType>
+                            <PricePosition>1</PricePosition>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Text">
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice InternalPriceType="INSURANCE">
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>80.00</PricePerUnit>
+                            <TotalPrice>80.00</TotalPrice>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+            </DossierItems>
+        </Dossier>
+    </Dossiers>
+</OLTDossiers>
