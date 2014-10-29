@@ -231,7 +231,7 @@
                             <Currency>EUR</Currency>
                             <Rate>1.20</Rate>
                             <PricePerUnit>83.30</PricePerUnit>
-                            <TotalPrice>83.3</TotalPrice>
+                            <TotalPrice>83.30</TotalPrice>
                         </PurchasePrice>
                     </PurchasePrices>
                 </DossierItem>
