@@ -68,7 +68,7 @@
                             <xs:enumeration value="GTA" />
                             <xs:enumeration value="HOTELBEDS" />
                             <xs:enumeration value="IVECTOR" />
-                             <xs:enumeration value="TRAVELFUSION" />
+                             <xs:enumeration value="TRAVELFUSN" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>

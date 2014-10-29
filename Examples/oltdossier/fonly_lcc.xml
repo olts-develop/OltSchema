@@ -80,9 +80,9 @@
                                 </Travellers>
                                 <Flight>
                                     <Departure Code="ZRH"
-                                               Time="11:00">ZÜRICH /ZRH</Departure>
+                                               Time="11:00:00">ZÜRICH /ZRH</Departure>
                                     <Arrival Code="ATH"
-                                             Time="14:40"
+                                             Time="14:40:00"
                                              DayIndicator="0">ATHEN /ATH</Arrival>
                                     <Airlinecode>A3</Airlinecode>
                                     <FlightNumber>829</FlightNumber>
@@ -103,9 +103,9 @@
                                 </Travellers>
                                 <Flight>
                                     <Departure Code="ATH"
-                                               Time="16:45">ATHEN /ATH</Departure>
+                                               Time="16:45:00">ATHEN /ATH</Departure>
                                     <Arrival Code="LCA"
-                                             Time="18:25"
+                                             Time="18:25:00"
                                              DayIndicator="0">LARNACA /LCA</Arrival>
                                     <Airlinecode>A3</Airlinecode>
                                     <FlightNumber>906</FlightNumber>
@@ -126,9 +126,9 @@
                                 </Travellers>
                                 <Flight>
                                     <Departure Code="LCA"
-                                               Time="05:30">LARNACA /LCA</Departure>
+                                               Time="05:30:00">LARNACA /LCA</Departure>
                                     <Arrival Code="ATH"
-                                             Time="07:15"
+                                             Time="07:15:00"
                                              DayIndicator="0">ATHEN /ATH</Arrival>
                                     <Airlinecode>A3</Airlinecode>
                                     <FlightNumber>901</FlightNumber>
@@ -149,9 +149,9 @@
                                 </Travellers>
                                 <Flight>
                                     <Departure Code="ATH"
-                                               Time="08:30">ATHEN /ATH</Departure>
+                                               Time="08:30:00">ATHEN /ATH</Departure>
                                     <Arrival Code="ZRH"
-                                             Time="10:15"
+                                             Time="10:15:00"
                                              DayIndicator="0">ZÜRICH /ZRH</Arrival>
                                     <Airlinecode>A3</Airlinecode>
                                     <FlightNumber>828</FlightNumber>
