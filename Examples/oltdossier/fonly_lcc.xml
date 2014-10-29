@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="ISO8859-1"?>
+<!-- Created with Liquid XML 2014 Designer Edition 12.2.7.5382 (http://www.liquid-technologies.com) -->
 <OLTDossiers>
     <Dossiers>
         <Dossier Version="1.0"
@@ -58,9 +59,9 @@
                              Consolidate="0">
                     <NumberOfItems>4</NumberOfItems>
                     <ExternalSource>OTFONLY</ExternalSource>
-                    <GdsSource>SAB</GdsSource>
-                    <GdsBookingNr>QGYZXX</GdsBookingNr>
-                    <BookingSupplier Code="A3" />
+                    <GdsSource>LCC</GdsSource>
+                    <GdsBookingNr>LCCXYZ</GdsBookingNr>
+                    <BookingSupplier ApiCode="TRAVELFUSN" />
                     <Travellers>
                         <Traveller TravellerId="1" />
                     </Travellers>
@@ -88,7 +89,7 @@
                                     <FlightDirection>O</FlightDirection>
                                     <Class>T</Class>
                                     <BookingClass>Y</BookingClass>
-                                    <BookingNr>QGYZXX</BookingNr>
+                                    <BookingNr>LCCXYZ</BookingNr>
                                 </Flight>
                             </DossierItem>
                             <DossierItem Type="Flight">
@@ -111,7 +112,7 @@
                                     <FlightDirection>O</FlightDirection>
                                     <Class>T</Class>
                                     <BookingClass>Y</BookingClass>
-                                    <BookingNr>QGYZXX</BookingNr>
+                                    <BookingNr>LCCXYZ</BookingNr>
                                 </Flight>
                             </DossierItem>
                             <DossierItem Type="Flight">
@@ -134,7 +135,7 @@
                                     <FlightDirection>I</FlightDirection>
                                     <Class>T</Class>
                                     <BookingClass>Y</BookingClass>
-                                    <BookingNr>QGYZXX</BookingNr>
+                                    <BookingNr>LCCXYZ</BookingNr>
                                 </Flight>
                             </DossierItem>
                             <DossierItem Type="Flight">
@@ -157,7 +158,7 @@
                                     <FlightDirection>I</FlightDirection>
                                     <Class>T</Class>
                                     <BookingClass>Y</BookingClass>
-                                    <BookingNr>QGYZXX</BookingNr>
+                                    <BookingNr>LCCXYZ</BookingNr>
                                 </Flight>
                             </DossierItem>
                         </PackageItems>
@@ -165,8 +166,8 @@
                     <ItemPrices>
                         <ItemPrice InternalPriceType="FLIGHTTICKET">
                             <UnitNr>1</UnitNr>
-                            <PricePerUnit>154.00</PricePerUnit>
-                            <TotalPrice>154.00</TotalPrice>
+                            <PricePerUnit>168.00</PricePerUnit>
+                            <TotalPrice>168.00</TotalPrice>
                             <PriceType>1</PriceType>
                             <PriceCommissionGive>0.00</PriceCommissionGive>
                             <PriceTravellers>
@@ -175,8 +176,8 @@
                         </ItemPrice>
                         <ItemPrice InternalPriceType="FLIGHTTAX">
                             <UnitNr>1</UnitNr>
-                            <PricePerUnit>135.40</PricePerUnit>
-                            <TotalPrice>135.40</TotalPrice>
+                            <PricePerUnit>162.50</PricePerUnit>
+                            <TotalPrice>162.50</TotalPrice>
                             <PriceType>2</PriceType>
                             <PriceTravellers>
                                 <PriceTraveller TravellerId="1" />
@@ -187,58 +188,52 @@
                         <PurchasePrice InternalPriceType="FLIGHTTICKET">
                             <Supplier Code="A3" />
                             <UnitNr>1</UnitNr>
+                            <Currency>EUR</Currency>
+                            <Rate>1.20</Rate>
                             <PricePerUnit>140.00</PricePerUnit>
                             <TotalPrice>140.00</TotalPrice>
                             <PriceType>1</PriceType>
                         </PurchasePrice>
                         <PurchasePrice InternalPriceType="FLIGHTTAX">
                             <UnitNr>1</UnitNr>
+                            <Currency>EUR</Currency>
+                            <Rate>1.20</Rate>
                             <PricePerUnit>135.40</PricePerUnit>
                             <TotalPrice>135.40</TotalPrice>
                             <PriceType>2</PriceType>
                         </PurchasePrice>
                     </PurchasePrices>
                 </DossierItem>
-                <DossierItem Type="Text">
+                <DossierItem Type="Text"
+                             InternalItemType="DOSSIERFEE">
                     <BeginDate>2014-05-18</BeginDate>
-                    <ShortDescription1>Bearbeitungsgebühr</ShortDescription1>
                     <CostCenter>1201</CostCenter>
                     <Travellers>
                         <Traveller TravellerId="1" />
                     </Travellers>
                     <Text>
-                        <Title>Cancellation/Bearbeitungsgebühr</Title>
-                        <Detail><![CDATA[Bearbeitungsgebühr]]></Detail>
                         <IsInvoiceText>1</IsInvoiceText>
                     </Text>
                     <ItemPrices>
-                        <ItemPrice PriceType="ProcessingFee">
-                            <UnitNr>2</UnitNr>
+                        <ItemPrice InternalPriceType="DOSSIERFEE">
+                            <UnitNr>1</UnitNr>
                             <PricePerUnit>100.00</PricePerUnit>
                             <TotalPrice>200.00</TotalPrice>
-                            <PriceDescription>Dossiergebühr</PriceDescription>
-                            <PriceType>3</PriceType>
                             <PricePosition>1</PricePosition>
                             <PriceTravellers>
                                 <PriceTraveller TravellerId="1" />
                             </PriceTravellers>
                         </ItemPrice>
                     </ItemPrices>
-                </DossierItem>
-                <DossierItem Type="Text">
-                    <Travellers>
-                        <Traveller TravellerId="1" />
-                    </Travellers>
-                    <ItemPrices>
-                        <ItemPrice InternalPriceType="INSURANCE">
-                            <UnitNr>1</UnitNr>
-                            <PricePerUnit>80.00</PricePerUnit>
-                            <TotalPrice>80.00</TotalPrice>
-                            <PriceTravellers>
-                                <PriceTraveller TravellerId="1" />
-                            </PriceTravellers>
-                        </ItemPrice>
-                    </ItemPrices>
+                    <PurchasePrices>
+                        <PurchasePrice InternalPriceType="DOSSIERFEE">  
+                            <UnitNr>1   </UnitNr>
+                            <Currency>EUR</Currency>
+                            <Rate>1.20</Rate>
+                            <PricePerUnit>83.30</PricePerUnit>
+                            <TotalPrice>83.3</TotalPrice>
+                        </PurchasePrice>
+                    </PurchasePrices>
                 </DossierItem>
             </DossierItems>
         </Dossier>

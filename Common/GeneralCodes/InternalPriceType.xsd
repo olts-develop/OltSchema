@@ -12,7 +12,7 @@
             <xs:enumeration value="CANCELLATIONFEE" />
             <xs:enumeration value="MODIFICATIONFEE" />
             <xs:enumeration value="CREDITNOTE" />
-            <xs:enumeration value="CUSTOMERDOSSIERFEE" />
+            <xs:enumeration value="DOSSIERFEE" />
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>

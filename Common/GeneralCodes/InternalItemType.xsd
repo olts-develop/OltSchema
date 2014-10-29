@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="InternalItemType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="DOSSIERFEE" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
