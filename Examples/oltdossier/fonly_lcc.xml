@@ -186,7 +186,6 @@
                     </ItemPrices>
                     <PurchasePrices>
                         <PurchasePrice InternalPriceType="FLIGHTTICKET">
-                            <Supplier Code="A3" />
                             <UnitNr>1</UnitNr>
                             <Currency>EUR</Currency>
                             <Rate>1.20</Rate>
@@ -203,6 +202,12 @@
                             <PriceType>2</PriceType>
                         </PurchasePrice>
                     </PurchasePrices>
+                    <AddInfos>
+                        <AddInfo>
+                            <Desc>1.12</Desc>
+                            <Tag>MARKUP</Tag>
+                        </AddInfo>
+                    </AddInfos>
                 </DossierItem>
                 <DossierItem Type="Text"
                              InternalItemType="DOSSIERFEE">
@@ -222,15 +227,6 @@
                             </PriceTravellers>
                         </ItemPrice>
                     </ItemPrices>
-                    <PurchasePrices>
-                        <PurchasePrice InternalPriceType="DOSSIERFEE">  
-                            <UnitNr>1   </UnitNr>
-                            <Currency>EUR</Currency>
-                            <Rate>1.20</Rate>
-                            <PricePerUnit>83.30</PricePerUnit>
-                            <TotalPrice>83.30</TotalPrice>
-                        </PurchasePrice>
-                    </PurchasePrices>
                 </DossierItem>
             </DossierItems>
         </Dossier>
