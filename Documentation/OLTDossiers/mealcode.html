@@ -26,7 +26,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="ship_xsd.html">Ship.xsd</a></td>
+               <td><a href="room_xsd.html">Room.xsd</a></td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MinOccurs</b></td>
@@ -41,8 +41,8 @@
                <td></td>
             </tr>
             <tr>
-               <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>Meal code</pre></td>
+               <td class="label" width="120px;"><b>ContentType</b></td>
+               <td>Restriction</td>
             </tr>
          </tbody>
       </table>
@@ -65,15 +65,44 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element minOccurs="0" name="MealCode" type="xs:string"&gt;
-    &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;Meal code&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
+&lt;xs:element name="MealCode" minOccurs="0"&gt;
+    &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:minLength value="0" /&gt;
+            &lt;xs:maxLength value="10" /&gt;
+        &lt;/xs:restriction&gt;
+    &lt;/xs:simpleType&gt;
 &lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="facets" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Facets:</b></td>
+            </tr>
+            <tr id="facets_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Facet</td>
+                        <td class="last">Value</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>MaxLength</b></td>
+                        <td>10</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>MinLength</b></td>
+                        <td>0</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.7.5079</a><br></br>Featuring a validating <a href="http://www.liquid-technologies.com/XML-Editor.aspx">XML Editor</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.2.7.5382</a><br></br>Featuring a validating <a href="http://www.liquid-technologies.com/XML-Editor.aspx">XML Editor</a></div>
    </body>
 </html>

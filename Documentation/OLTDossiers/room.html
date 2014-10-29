@@ -38,10 +38,11 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="175,1134,312,1159" href="productitemprices4.html" alt="Drilldown into ProductItemPrices"></area>
-                     <area shape="rect" coords="175,1102,259,1127" href="meals.html" alt="Drilldown into Meals"></area>
-                     <area shape="rect" coords="175,1049,330,1094" href="pasivedate.html" alt="Drilldown into PasiveDate"></area>
-                     <area shape="rect" coords="175,951,340,1042" href="condingent.html" alt="Drilldown into Condingent"></area>
+                     <area shape="rect" coords="175,1181,312,1206" href="productitemprices4.html" alt="Drilldown into ProductItemPrices"></area>
+                     <area shape="rect" coords="175,1118,369,1173" href="tourbomealcode.html" alt="Drilldown into TourboMealCode"></area>
+                     <area shape="rect" coords="175,1055,330,1110" href="mealcode.html" alt="Drilldown into MealCode"></area>
+                     <area shape="rect" coords="175,1003,336,1047" href="passivedate1.html" alt="Drilldown into PassiveDate"></area>
+                     <area shape="rect" coords="175,951,343,995" href="hasallotment.html" alt="Drilldown into HasAllotment"></area>
                      <area shape="rect" coords="175,831,350,943" href="bookingcode.html" alt="Drilldown into BookingCode"></area>
                      <area shape="rect" coords="175,780,337,824" href="tourbocode1.html" alt="Drilldown into TourboCode"></area>
                      <area shape="rect" coords="175,728,349,772" href="apiroomcode.html" alt="Drilldown into APIRoomCode"></area>
@@ -164,31 +165,31 @@
                     &lt;/xs:restriction&gt;
                 &lt;/xs:simpleType&gt;
             &lt;/xs:element&gt;
-            &lt;xs:element name="Condingent" minOccurs="0"&gt;
+            &lt;xs:element name="HasAllotment" type="xs:boolean" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;Room hase Condingent
-              YES
-              NO
-            &lt;/xs:documentation&gt;
+                    &lt;xs:documentation&gt;This room has allotment&lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
-                &lt;xs:simpleType&gt;
-                    &lt;xs:restriction base="xs:string"&gt;
-                        &lt;xs:enumeration value="YES" /&gt;
-                        &lt;xs:enumeration value="NO" /&gt;
-                    &lt;/xs:restriction&gt;
-                &lt;/xs:simpleType&gt;
             &lt;/xs:element&gt;
-            &lt;xs:element name="PasiveDate" type="xs:date" minOccurs="0"&gt;
+            &lt;xs:element name="PassiveDate" type="xs:date" minOccurs="0"&gt;
                 &lt;xs:annotation&gt;
                     &lt;xs:documentation&gt;Room is not available after this date &lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
             &lt;/xs:element&gt;
-            &lt;xs:element name="Meals" minOccurs="0"&gt;
-                &lt;xs:complexType&gt;
-                    &lt;xs:sequence&gt;
-                        &lt;xs:element ref="Meal" maxOccurs="unbounded" /&gt;
-                    &lt;/xs:sequence&gt;
-                &lt;/xs:complexType&gt;
+            &lt;xs:element name="MealCode" minOccurs="0"&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:minLength value="0" /&gt;
+                        &lt;xs:maxLength value="10" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="TourboMealCode" minOccurs="0"&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:string"&gt;
+                        &lt;xs:minLength value="0" /&gt;
+                        &lt;xs:maxLength value="10" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
             &lt;/xs:element&gt;
             &lt;xs:element name="ProductItemPrices" minOccurs="0"&gt;
                 &lt;xs:complexType&gt;
@@ -320,20 +321,26 @@
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
-                        <td class="first">Condingent</td>
-                        <td><a href="condingent.html">Condingent</a></td>
+                        <td class="first">HasAllotment</td>
+                        <td><a href="hasallotment.html">HasAllotment</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
-                        <td class="first">PasiveDate</td>
-                        <td><a href="pasivedate.html">PasiveDate</a></td>
+                        <td class="first">PassiveDate</td>
+                        <td><a href="passivedate1.html">PassiveDate</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
                      <tr>
-                        <td class="first">Meals</td>
-                        <td><a href="meals.html">Meals</a></td>
+                        <td class="first">MealCode</td>
+                        <td><a href="mealcode.html">MealCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TourboMealCode</td>
+                        <td><a href="tourbomealcode.html">TourboMealCode</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -375,7 +382,7 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.7.5079</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XSD to HTML</a>Doc Generation
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.2.7.5382</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xsd-To-Html.aspx">XSD to HTML</a>Doc Generation
       </div>
    </body>
 </html>

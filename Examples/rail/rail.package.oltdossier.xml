@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<OLTDossiers>
+    <Dossiers>
+        <Dossier BookingMode="B2B"
+                 Mode="Prod"
+                 Lang="de-ch"
+                 Agent="48A550"
+                 Time="12:32"
+                 Date="24102014"
+                 SubType="FIX"
+                 Type="BOOK"
+                 To="STC"
+                 From="DYNAPACK"
+                 Version="1.0"
+                 AgentUsercode="BN03">
+            <Customers>
+                <Customer>
+                    <AgentCode>48A210</AgentCode>
+                </Customer>
+            </Customers>
+            <Travellers>
+                <Traveller>
+                    <TravellerId>1</TravellerId>
+                    <Language>de-ch</Language>
+                    <Gender>f</Gender>
+                    <FirstName>Sandra</FirstName>
+                    <LastName>Bargholz</LastName>
+                </Traveller>
+                <Traveller>
+                    <TravellerId>2</TravellerId>
+                    <Language>de-ch</Language>
+                    <Gender>m</Gender>
+                    <FirstName>Rudolf</FirstName>
+                    <LastName>Bargholz</LastName>
+                </Traveller>
+            </Travellers>
+            <DossierItems>
+                <DossierItem Type="Package"
+                             BaseDataProductSeq="STCPRO10457"
+                             Position="1">
+                    <BeginDate>2014-10-25</BeginDate>
+                    <EndDate>2014-10-27</EndDate>
+                    <Externalsource>OLTZUG</Externalsource>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice BaseDataProductSeq="STCPRO15288">
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice BaseDataProductSeq="STCPRO11621">
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice BaseDataProductSeq="STCPRO11625">
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice BaseDataProductSeq="STCPRO11624">
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+            </DossierItems>
+            <Externalsource>OLTZUG</Externalsource>
+            <DossierNr>1000014524</DossierNr>
+            <Destination DestinationCode="ZER" />
+        </Dossier>
+    </Dossiers>
+</OLTDossiers>

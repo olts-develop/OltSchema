@@ -26,260 +26,278 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>
-&lt;!--Created with Liquid XML 2013 Designer Edition 11.0.11.4603 (http://www.liquid-technologies.com)--&gt;
+&lt;!--Created with Liquid XML 2014 Designer Edition 12.2.5.5293 (http://www.liquid-technologies.com)--&gt;
 &lt;xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;xs:include schemaLocation=".\ProductItemPrice.xsd" /&gt;
-  &lt;xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" /&gt;
-  &lt;xs:element name="Miscellaneous"&gt;
-    &lt;xs:complexType&gt;
-      &lt;xs:all&gt;
-        &lt;xs:element name="Title"
-                    type="xs:string"
-                    minOccurs="0" /&gt;
-        &lt;xs:element name="Detail"
-                    type="xs:string"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="ItineraryTitle"
-                    type="xs:string"
-                    minOccurs="0" /&gt;
-        &lt;xs:element name="ItineraryDetail"
-                    type="xs:string"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="VoucherTitle"
-                    type="xs:string"
-                    minOccurs="0" /&gt;
-        &lt;xs:element name="VoucherDetail"
-                    type="xs:string"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="SupplierInfo"
-                    type="xs:string"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;CDATA - Information for the supplier that is, for example, sent with communication about this item to the supplier. The customer does not get to see this data. The information might be sensitive in nature, but important for the supplier.&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="Arrival"
-                    minOccurs="0"&gt;
-          &lt;xs:complexType&gt;
-            &lt;xs:attribute name="Time"
-                          type="xs:time" /&gt;
-            &lt;xs:attribute name="Description"
-                          type="xs:string" /&gt;
-          &lt;/xs:complexType&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="Departure"
-                    minOccurs="0"&gt;
-          &lt;xs:complexType&gt;
-            &lt;xs:attribute name="Time"
-                          type="xs:time" /&gt;
-            &lt;xs:attribute name="Description"
-                          type="xs:string" /&gt;
-          &lt;/xs:complexType&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="FlightNumber"
-                    minOccurs="0"&gt;
-          &lt;xs:complexType&gt;
-            &lt;xs:simpleContent&gt;
-              &lt;xs:extension base="xs:string"&gt;
-                &lt;xs:attribute name="ConfirmedBy"
-                              type="xs:string" /&gt;
-              &lt;/xs:extension&gt;
-            &lt;/xs:simpleContent&gt;
-          &lt;/xs:complexType&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="ConfirmationNr"
-                    minOccurs="0"&gt;
-          &lt;xs:complexType&gt;
-            &lt;xs:simpleContent&gt;
-              &lt;xs:extension base="xs:string"&gt;
-                &lt;xs:attribute name="ConfirmedBy"
-                              type="xs:string" /&gt;
-              &lt;/xs:extension&gt;
-            &lt;/xs:simpleContent&gt;
-          &lt;/xs:complexType&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="BillingSupplier"
-                    type="SupplierType"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Supplier that is to receive the payment for this item&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="VoucherSupplier"
-                    type="SupplierType"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Supplier that is to be printed on a voucher for this item&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="Country"
-                    minOccurs="0"&gt;
-          &lt;xs:complexType&gt;
-            &lt;xs:simpleContent&gt;
-              &lt;xs:extension base="xs:string"&gt;
-                &lt;xs:attribute name="IsoCode"
-                              type="xs:string" /&gt;
-                &lt;xs:attribute name="PhoneCountryCode"
-                              type="xs:string"&gt;
-                  &lt;xs:annotation&gt;
-                    &lt;xs:documentation&gt;International telephone country code for the specific country, e.g. +41 for Switzerland&lt;/xs:documentation&gt;
-                  &lt;/xs:annotation&gt;
-                &lt;/xs:attribute&gt;
-              &lt;/xs:extension&gt;
-            &lt;/xs:simpleContent&gt;
-          &lt;/xs:complexType&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="Region"
-                    type="xs:string"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Region of the Country&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="SubRegion"
-                    type="xs:string"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Subregion of the region&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="Commission"
-                    type="xs:string"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;commission&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="MinimumPersons"
-                    type="xs:integer"
-                    minOccurs="0" /&gt;
-        &lt;xs:element name="MaximumPersons"
-                    type="xs:integer"
-                    minOccurs="0" /&gt;
-        &lt;xs:element name="MinimumDays"
-                    type="xs:integer"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Minimum number of days this product can be booked.&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="MaximumDays"
-                    type="xs:integer"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Maximum number of days this product can be booked.&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="ProductItemPrices"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Only relevant for an Availability&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-          &lt;xs:complexType&gt;
-            &lt;xs:sequence&gt;
-              &lt;xs:element ref="ProductItemPrice"
-                          maxOccurs="unbounded" /&gt;
-            &lt;/xs:sequence&gt;
-          &lt;/xs:complexType&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="Destination"
-                    type="xs:string"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;ISO code Destination of the miscellaneous item&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="MiscCode"
-                    type="xs:string"
-                    minOccurs="0"&gt;
-          &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;Miscellaneous booking code, e.g. TRANSF for a transfer, or EXC for an excursion.&lt;/xs:documentation&gt;
-          &lt;/xs:annotation&gt;
-        &lt;/xs:element&gt;
-        &lt;xs:element name="MiscImages"
-                    minOccurs="0"&gt;
-          &lt;xs:complexType&gt;
-            &lt;xs:sequence maxOccurs="unbounded"&gt;
-              &lt;xs:element name="Image"&gt;
-                &lt;xs:complexType&gt;
-                  &lt;xs:all&gt;
-                    &lt;xs:element name="Id"
-                                type="xs:string"
-                                minOccurs="0" /&gt;
-                    &lt;xs:element name="Name"
-                                type="xs:string"
-                                minOccurs="0" /&gt;
-                    &lt;xs:element name="Type"
-                                type="xs:string"&gt;
-                      &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;e.g. jpg, gif, png, etc.&lt;/xs:documentation&gt;
-                      &lt;/xs:annotation&gt;
-                    &lt;/xs:element&gt;
-                    &lt;xs:element name="Height"
-                                type="xs:integer"
-                                minOccurs="0"&gt;
-                      &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;height in pixel of picture&lt;/xs:documentation&gt;
-                      &lt;/xs:annotation&gt;
-                    &lt;/xs:element&gt;
-                    &lt;xs:element name="Width"
-                                type="xs:integer"
-                                minOccurs="0" /&gt;
-                    &lt;xs:element name="Size"
-                                type="xs:integer"
-                                minOccurs="0"&gt;
-                      &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;Size in bytes of image&lt;/xs:documentation&gt;
-                      &lt;/xs:annotation&gt;
-                    &lt;/xs:element&gt;
-                    &lt;xs:element name="Encoding"
-                                type="xs:string"&gt;
-                      &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;encoding of the image. Currently only "base64"&lt;/xs:documentation&gt;
-                      &lt;/xs:annotation&gt;
-                    &lt;/xs:element&gt;
-                    &lt;xs:element name="Data"
-                                type="xs:string"&gt;
-                      &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;Encoded string of the image.&lt;/xs:documentation&gt;
-                      &lt;/xs:annotation&gt;
-                    &lt;/xs:element&gt;
-                  &lt;/xs:all&gt;
-                &lt;/xs:complexType&gt;
-              &lt;/xs:element&gt;
-            &lt;/xs:sequence&gt;
-          &lt;/xs:complexType&gt;
-        &lt;/xs:element&gt;
-      &lt;/xs:all&gt;
-      &lt;xs:attribute name="Language"
-                    use="optional"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;Languange of the description of the itmes&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:simpleType&gt;
-          &lt;xs:restriction base="xs:language"&gt;
-            &lt;xs:enumeration value="de-ch" /&gt;
-            &lt;xs:enumeration value="en-us" /&gt;
-            &lt;xs:enumeration value="fr-ch" /&gt;
-            &lt;xs:enumeration value="it-ch" /&gt;
-          &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-      &lt;/xs:attribute&gt;
-    &lt;/xs:complexType&gt;
-  &lt;/xs:element&gt;
+    &lt;xs:include schemaLocation=".\ProductItemPrice.xsd" /&gt;
+    &lt;xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" /&gt;
+    &lt;xs:element name="Miscellaneous"&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:all&gt;
+                &lt;xs:element name="ShortTitle"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Identifier for this miscellaneous element that is only visible in TO Online/Agent Online&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Title"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Invoice title&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Detail"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;CDATA Invoice detail text&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="ItineraryTitle"
+                            type="xs:string"
+                            minOccurs="0" /&gt;
+                &lt;xs:element name="ItineraryDetail"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="VoucherTitle"
+                            type="xs:string"
+                            minOccurs="0" /&gt;
+                &lt;xs:element name="VoucherDetail"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="SupplierInfo"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;CDATA - Information for the supplier that is, for example, sent with communication about this item to the supplier. The customer does not get to see this data. The information might be sensitive in nature, but important for the supplier.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Arrival"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:attribute name="Time"
+                                      type="xs:time" /&gt;
+                        &lt;xs:attribute name="Description"
+                                      type="xs:string" /&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Departure"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:attribute name="Time"
+                                      type="xs:time" /&gt;
+                        &lt;xs:attribute name="Description"
+                                      type="xs:string" /&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="FlightNumber"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:simpleContent&gt;
+                            &lt;xs:extension base="xs:string"&gt;
+                                &lt;xs:attribute name="ConfirmedBy"
+                                              type="xs:string" /&gt;
+                            &lt;/xs:extension&gt;
+                        &lt;/xs:simpleContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="ConfirmationNr"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:simpleContent&gt;
+                            &lt;xs:extension base="xs:string"&gt;
+                                &lt;xs:attribute name="ConfirmedBy"
+                                              type="xs:string" /&gt;
+                            &lt;/xs:extension&gt;
+                        &lt;/xs:simpleContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="BillingSupplier"
+                            type="SupplierType"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Supplier that is to receive the payment for this item&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="VoucherSupplier"
+                            type="SupplierType"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Supplier that is to be printed on a voucher for this item&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Country"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:simpleContent&gt;
+                            &lt;xs:extension base="xs:string"&gt;
+                                &lt;xs:attribute name="IsoCode"
+                                              type="xs:string" /&gt;
+                                &lt;xs:attribute name="PhoneCountryCode"
+                                              type="xs:string"&gt;
+                                    &lt;xs:annotation&gt;
+                                        &lt;xs:documentation&gt;International telephone country code for the specific country, e.g. +41 for Switzerland&lt;/xs:documentation&gt;
+                                    &lt;/xs:annotation&gt;
+                                &lt;/xs:attribute&gt;
+                            &lt;/xs:extension&gt;
+                        &lt;/xs:simpleContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Region"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Region of the Country&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="SubRegion"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Subregion of the region&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Commission"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;commission&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="MinimumPersons"
+                            type="xs:integer"
+                            minOccurs="0" /&gt;
+                &lt;xs:element name="MaximumPersons"
+                            type="xs:integer"
+                            minOccurs="0" /&gt;
+                &lt;xs:element name="MinimumDays"
+                            type="xs:integer"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Minimum number of days this product can be booked.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="MaximumDays"
+                            type="xs:integer"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Maximum number of days this product can be booked.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="ProductItemPrices"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Only relevant for an Availability&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:sequence&gt;
+                            &lt;xs:element ref="ProductItemPrice"
+                                        maxOccurs="unbounded" /&gt;
+                        &lt;/xs:sequence&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="Destination"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;ISO code Destination of the miscellaneous item&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="MiscCode"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Miscellaneous booking code, e.g. TRANSF for a transfer, or EXC for an excursion.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="MiscItemCode"
+                            type="xs:string"
+                            minOccurs="0"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Miscellaneous item code.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="MiscImages"
+                            minOccurs="0"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:sequence maxOccurs="unbounded"&gt;
+                            &lt;xs:element name="Image"&gt;
+                                &lt;xs:complexType&gt;
+                                    &lt;xs:all&gt;
+                                        &lt;xs:element name="Id"
+                                                    type="xs:string"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="Name"
+                                                    type="xs:string"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="Type"
+                                                    type="xs:string"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;e.g. jpg, gif, png, etc.&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Height"
+                                                    type="xs:integer"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;height in pixel of picture&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Width"
+                                                    type="xs:integer"
+                                                    minOccurs="0" /&gt;
+                                        &lt;xs:element name="Size"
+                                                    type="xs:integer"
+                                                    minOccurs="0"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;Size in bytes of image&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Encoding"
+                                                    type="xs:string"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;encoding of the image. Currently only "base64"&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                        &lt;xs:element name="Data"
+                                                    type="xs:string"&gt;
+                                            &lt;xs:annotation&gt;
+                                                &lt;xs:documentation&gt;Encoded string of the image.&lt;/xs:documentation&gt;
+                                            &lt;/xs:annotation&gt;
+                                        &lt;/xs:element&gt;
+                                    &lt;/xs:all&gt;
+                                &lt;/xs:complexType&gt;
+                            &lt;/xs:element&gt;
+                        &lt;/xs:sequence&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+            &lt;/xs:all&gt;
+            &lt;xs:attribute name="Language"
+                          use="optional"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Languange of the description of the itmes&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:simpleType&gt;
+                    &lt;xs:restriction base="xs:language"&gt;
+                        &lt;xs:enumeration value="de-ch" /&gt;
+                        &lt;xs:enumeration value="en-us" /&gt;
+                        &lt;xs:enumeration value="fr-ch" /&gt;
+                        &lt;xs:enumeration value="it-ch" /&gt;
+                    &lt;/xs:restriction&gt;
+                &lt;/xs:simpleType&gt;
+            &lt;/xs:attribute&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
 &lt;/xs:schema&gt;
 </code></pre></td>
             </tr>
@@ -301,6 +319,6 @@
          </tbody>
       </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.1.7.5079</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.2.7.5382</a><br></br>by <a href="http://www.liquid-technologies.com/">Liquid Technologies Ltd</a></div>
    </body>
 </html>
