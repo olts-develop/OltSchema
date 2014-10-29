@@ -211,9 +211,6 @@
                     <Travellers>
                         <Traveller TravellerId="1" />
                     </Travellers>
-                    <Text>
-                        <IsInvoiceText>1</IsInvoiceText>
-                    </Text>
                     <ItemPrices>
                         <ItemPrice InternalPriceType="DOSSIERFEE">
                             <UnitNr>1</UnitNr>
