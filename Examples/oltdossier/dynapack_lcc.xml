@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!-- Created with Liquid XML 2014 Designer Edition 12.2.7.5382 (http://www.liquid-technologies.com) -->
+<OLTDossiers>
+    <Dossiers>
+        <Dossier Version="1.0"
+                 From="DYNAPACK"
+                 To="TUI"
+                 Date="2014-10-30"
+                 Time="09:25:00"
+                 Type="IMPORT"
+                 SubType="P"
+                 Lang="FR"
+                 Agent="48A011"
+                 AgentUsercode="JW"
+                 BookingMode="B2B"
+                 Mode="TEST">
+            <CreateDate>2014-10-30</CreateDate>
+            <FirstDate>2015-01-15</FirstDate>
+            <LastDate>2015-01-17</LastDate>
+            <Language>fr-ch</Language>
+            <ExternalSource>DYNAP</ExternalSource>
+            <Destination DestinationCode="LON" />
+            <DossierStatus DossierStatusCode="OK" />
+            <Currency>CHF</Currency>
+            <Customers>
+                <Customer>
+                    <AgentCode>48A011</AgentCode>
+                </Customer>
+            </Customers>
+            <Travellers>
+                <Traveller>
+                    <TravellerId>1</TravellerId>
+                    <Gender>m</Gender>
+                    <Child>false</Child>
+                    <Baby>false</Baby>
+                    <FirstName>gabriel</FirstName>
+                    <LastName>onlinetravel</LastName>
+                    <DateOfBirth>1970-03-22</DateOfBirth>
+                </Traveller>
+            </Travellers>
+            <DossierItems>
+                <DossierItem Type="Hotel"
+                             Consolidate="1">
+                    <BeginDate>2015-01-15</BeginDate>
+                    <EndDate>2015-01-17</EndDate>
+                    <Duration>2</Duration>
+                    <ShortDescription1>Clink 261 (ex. Ashlee House)</ShortDescription1>
+                    <ShortDescription2>Shared room (Dormitory max.18 beds) - Shared bath</ShortDescription2>
+                    <Status>OK</Status>
+                    <ExternalSource>DYNAP</ExternalSource>
+                    <ApiBookingNr>SH3151187</ApiBookingNr>
+                    <ApiClient>TUIFTDB2B</ApiClient>
+                    <BookingSupplier ApiCode="SUN"
+                                     Broker="SUNHOTELS" />
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <Hotel>
+                        <HotelName>Clink 261 (ex. Ashlee House)</HotelName>
+                        <Address1>261-265 Gray&amp;#39;s Inn Road, , London WC1X 7QT, , United Kingdom</Address1>
+                        <City>London</City>
+                        <Country IsoCode="GB">United Kingdom</Country>
+                        <Phone Number="0044 020 78339400" />
+                        <NrRooms>1</NrRooms>
+                        <RoomType>Shared room (Dormitory max.18 beds) - Shared bath</RoomType>
+                        <RoomVoucher><![CDATA[Shared room (Dormitory max.18 beds) - Shared bath]]></RoomVoucher>
+                        <Included><![CDATA[Breakfast]]></Included>
+                        <MealVoucher><![CDATA[Breakfast]]></MealVoucher>
+                        <Category>1</Category>
+                        <WishVoucher><![CDATA[TEST BOOKING, VOUCHER NOT VALID FOR USE. SunHotels T: 0034 971 425588 Booking reference: TESTXML]]></WishVoucher>
+                        <ConfirmationNr>SH3151187</ConfirmationNr>
+                        <PayableTo>TEST BOOKING, VOUCHER NOT VALID FOR USE. SUNHOTELS </PayableTo>
+                        <InfoURL>http://montreal.onlinetravel.ch/hotel/session/default/hotel_details.cgi?Client=tts&amp;System=SUN&amp;HotelCode=2134&amp;Language=FR</InfoURL>
+                    </Hotel>
+                    <ItemPrices>
+                        <ItemPrice InternalPriceType="HOTELROOM">
+                            <PriceType>0</PriceType>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>57.00</PricePerUnit>
+                            <TotalPrice>57.00</TotalPrice>
+                            <Currency>CHF</Currency>
+                            <PriceCommissionGive>9.00</PriceCommissionGive>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                    <PurchasePrices>
+                        <PurchasePrice InternalPriceType="HOTELROOM">
+                            <UnitNr>1</UnitNr>
+                            <Rate>1.000</Rate>
+                            <Currency>CHF</Currency>
+                            <PricePerUnit>52.00</PricePerUnit>
+                            <TotalPrice>52.00</TotalPrice>
+                            <Supplier ApiCode="SUN"
+                                      Broker="SUNHOTELS" />
+                        </PurchasePrice>
+                    </PurchasePrices>
+                    <CancellationFees>
+                        <CancellationFee InternalPriceType="CANCELLATIONFEE">
+                            <BeginDate>2014-10-30</BeginDate>
+                            <EndDate>2015-01-15</EndDate>
+                            <Amount>57.00</Amount>
+                            <DayBevorDepartureBegin>1</DayBevorDepartureBegin>
+                            <DayBevorDepartureEnd>0</DayBevorDepartureEnd>
+                            <NrDaysFeeApply>0</NrDaysFeeApply>
+                            <ProcessFee>0</ProcessFee>
+                            <PriceType>1</PriceType>
+                        </CancellationFee>
+                    </CancellationFees>
+                    <ExternalSystemIds>
+                        <ExternalSystemId>
+                            <ExternalSystemIdType>TripAdvisorId</ExternalSystemIdType>
+                            <ExternalSystemIdCode>209147</ExternalSystemIdCode>
+                        </ExternalSystemId>
+                        <ExternalSystemId>
+                            <ExternalSystemIdType>TripAdvisorSupplierID</ExternalSystemIdType>
+                            <ExternalSystemIdCode>SUN2134</ExternalSystemIdCode>
+                        </ExternalSystemId>
+                    </ExternalSystemIds>
+                </DossierItem>
+                <DossierItem Type="Package"
+                             Consolidate="1">
+                    <NumberOfItems>2</NumberOfItems>
+                    <ExternalSource>DYNAP</ExternalSource>
+                    <GdsSource>LCC</GdsSource>
+                    <GdsBookingNr>VP0HLCG</GdsBookingNr>
+                    <BookingSupplier ApiCode="TRAVELFUSN" />
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <Package>
+                        <FareType>L</FareType>
+                        <TicketAirline>U2</TicketAirline>
+                        <PackageItems>
+                            <DossierItem Type="Flight">
+                                <BeginDate>2015-01-15</BeginDate>
+                                <EndDate>2015-01-15</EndDate>
+                                <ShortDescription1>U28434</ShortDescription1>
+                                <ShortDescription2>BSL-LGW</ShortDescription2>
+                                <Status>OK</Status>
+                                <Travellers>
+                                    <Traveller TravellerId="1" />
+                                </Travellers>
+                                <Flight>
+                                    <Departure Code="BSL"
+                                               Time="17:05:00">BASEL /BSL</Departure>
+                                    <Arrival Code="LGW"
+                                             Time="17:35:00"
+                                             DayIndicator="0">LONDON (GATWICK AIRPORT) /LGW</Arrival>
+                                    <Airlinecode>U2</Airlinecode>
+                                    <FlightNumber>8434</FlightNumber>
+                                    <FlightDirection>O</FlightDirection>
+                                    <Class>Y</Class>
+                                    <BookingNr>VP0HLCG</BookingNr>
+                                </Flight>
+                            </DossierItem>
+                            <DossierItem Type="Flight">
+                                <BeginDate>2015-01-17</BeginDate>
+                                <EndDate>2015-01-17</EndDate>
+                                <ShortDescription1>U28431</ShortDescription1>
+                                <ShortDescription2>LGW-BSL</ShortDescription2>
+                                <Status>OK</Status>
+                                <Travellers>
+                                    <Traveller TravellerId="1" />
+                                </Travellers>
+                                <Flight>
+                                    <Departure Code="LGW"
+                                               Time="08:10:00">LONDON (GATWICK AIRPORT) /LGW</Departure>
+                                    <Arrival Code="BSL"
+                                             Time="10:45:00"
+                                             DayIndicator="0">BASEL /BSL</Arrival>
+                                    <Airlinecode>U2</Airlinecode>
+                                    <FlightNumber>8431</FlightNumber>
+                                    <FlightDirection>I</FlightDirection>
+                                    <Class>Y</Class>
+                                    <BookingNr>VP0HLCG</BookingNr>
+                                </Flight>
+                            </DossierItem>
+                        </PackageItems>
+                    </Package>
+                    <ItemPrices>
+                        <ItemPrice InternalPriceType="FLIGHTTICKET">
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>63.00</PricePerUnit>
+                            <TotalPrice>63.00</TotalPrice>
+                            <PriceType>1</PriceType>
+                            <PriceCommissionGive>9.00</PriceCommissionGive>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice InternalPriceType="FLIGHTTAX">
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>21.00</PricePerUnit>
+                            <TotalPrice>21.00</TotalPrice>
+                            <PriceType>2</PriceType>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                    <PurchasePrices>
+                        <PurchasePrice InternalPriceType="FLIGHTTICKET">
+                            <UnitNr>1</UnitNr>
+                            <Currency>EUR</Currency>
+                            <Rate>1.00</Rate>
+                            <PricePerUnit>63.10</PricePerUnit>
+                            <TotalPrice>63.10</TotalPrice>
+                            <PriceType>1</PriceType>
+                        </PurchasePrice>
+                        <PurchasePrice InternalPriceType="FLIGHTTAX">
+                            <UnitNr>1</UnitNr>
+                            <Currency>EUR</Currency>
+                            <Rate>1.00</Rate>
+                            <PricePerUnit>20.74</PricePerUnit>
+                            <TotalPrice>20.74</TotalPrice>
+                            <PriceType>2</PriceType>
+                        </PurchasePrice>
+                    </PurchasePrices>
+                    <AddInfos>
+                        <AddInfo>
+                            <Desc>0.00</Desc>
+                            <Tag>MARKUP</Tag>
+                        </AddInfo>
+                    </AddInfos>
+                </DossierItem>
+            </DossierItems>
+        </Dossier>
+    </Dossiers>
+</OLTDossiers>
