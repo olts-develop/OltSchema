@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2014 Designer Edition 12.2.5.5293 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.2.7.5382 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:complexType name="SupplierType">
@@ -68,8 +68,8 @@
                             <xs:enumeration value="GTA" />
                             <xs:enumeration value="HOTELBEDS" />
                             <xs:enumeration value="IVECTOR" />
-                             <xs:enumeration value="TRAVELFUSN" />
-                             <xs:enumeration value="SUN" />
+                            <xs:enumeration value="TRAVELFUSN" />
+                            <xs:enumeration value="SUN" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>
@@ -88,6 +88,7 @@
                             <xs:enumeration value="pronto" />
                             <xs:enumeration value="GTA" />
                             <xs:enumeration value="SUNHOTELS" />
+                            <xs:enumeration value="EXCLUSIVELY HOTELS" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>
