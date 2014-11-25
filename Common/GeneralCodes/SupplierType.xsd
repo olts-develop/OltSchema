@@ -89,6 +89,7 @@
                             <xs:enumeration value="GTA" />
                             <xs:enumeration value="SUNHOTELS" />
                             <xs:enumeration value="EXCLUSIVELY HOTELS" />
+                            <xs:enumeration value="JACOB ONLINE" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>
