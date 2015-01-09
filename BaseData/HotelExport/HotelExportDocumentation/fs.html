@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item FS in Hotel Exporter Interface</title>
+      <title>Docs for schema item FS in Hotel Export Documentation</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Attribute', 'fs');
                     </script><div class="pageheader">
-         Documentation for Hotel Exporter Interface
+         Documentation for Hotel Export Documentation
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -22,11 +22,15 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Type:</b></td>
-               <td>boolean:http://www.w3.org/2001/XMLSchema</td>
+               <td>nonNegativeInteger:http://www.w3.org/2001/XMLSchema</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
-               <td><a href="hotelexport_xsd.html">hotelexport.xsd</a></td>
+               <td><a href="basedata_xsd.html">BaseData.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>ContentType</b></td>
+               <td>Restriction</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Use</b></td>
@@ -34,8 +38,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>Indicates if this item can be booked on Free-Sell.
-One always needs to frst check if a product has allotment, then if it is available on Free-Sell, then look to see if it is available on Request.</pre></td>
+               <td><pre>If this item can be booked on freesell FS = 1</pre></td>
             </tr>
          </tbody>
       </table>
@@ -58,16 +61,47 @@ One always needs to frst check if a product has allotment, then if it is availab
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:attribute name="FS" type="xs:boolean"&gt;
+&lt;xs:attribute name="FS"&gt;
     &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;Indicates if this item can be booked on Free-Sell.
-                        One always needs to frst check if a product has allotment, then if it is available on Free-Sell, then look to see if it is available on Request.&lt;/xs:documentation&gt;
+        &lt;xs:documentation&gt;If this item can be booked on freesell FS = 1&lt;/xs:documentation&gt;
     &lt;/xs:annotation&gt;
+    &lt;xs:simpleType&gt;
+        &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+            &lt;xs:enumeration value="0" /&gt;
+            &lt;xs:enumeration value="1" /&gt;
+        &lt;/xs:restriction&gt;
+    &lt;/xs:simpleType&gt;
 &lt;/xs:attribute&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="facets" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Facets:</b></td>
+            </tr>
+            <tr id="facets_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Facet</td>
+                        <td class="last">Value</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>1</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
       <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.2.3.5240</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Schema-Editor.aspx">Xml Schema Editor</a></div>
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.2.8.5459</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Schema-Editor.aspx">Xml Schema Editor</a></div>
    </body>
 </html>
