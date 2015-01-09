@@ -23163,9 +23163,9 @@
             <BeginDate>2001-01-01</BeginDate>
             <EndDate>2020-12-31</EndDate>
             <Type>Destination</Type>
-            <Invoice>true</Invoice>
-            <Itinerary>false</Itinerary>
-            <External>false</External>
+            <Invoice>1</Invoice>
+            <Itinerary>0</Itinerary>
+            <External>0</External>
             <Title>
                 <de>RESERVATIONSGEBÜHR</de>
                 <en />
@@ -23183,9 +23183,9 @@
             <BeginDate>2013-12-28</BeginDate>
             <EndDate>2014-01-10</EndDate>
             <Type>Item</Type>
-            <Invoice>true</Invoice>
-            <Itinerary>false</Itinerary>
-            <External>false</External>
+            <Invoice>1</Invoice>
+            <Itinerary>0</Itinerary>
+            <External>0</External>
             <Title>
                 <de>Stornobedingungen:</de>
                 <en />
@@ -23203,9 +23203,9 @@
             <BeginDate>2014-07-15</BeginDate>
             <EndDate>2014-08-31</EndDate>
             <Type>Item</Type>
-            <Invoice>true</Invoice>
-            <Itinerary>false</Itinerary>
-            <External>false</External>
+            <Invoice>1</Invoice>
+            <Itinerary>0</Itinerary>
+            <External>0</External>
             <Title>
                 <de>Stornobedingungen:</de>
                 <en />

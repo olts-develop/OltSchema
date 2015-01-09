@@ -2862,9 +2862,9 @@
             <BeginDate>2013-12-20</BeginDate>
             <EndDate>2014-01-07</EndDate>
             <Type>Item</Type>
-            <Invoice>true</Invoice>
-            <Itinerary>false</Itinerary>
-            <External>false</External>
+            <Invoice>1</Invoice>
+            <Itinerary>0</Itinerary>
+            <External>0</External>
             <Title>
                 <de>Hinweis:</de>
                 <fr />
@@ -2879,9 +2879,9 @@
             <BeginDate>2014-02-27</BeginDate>
             <EndDate>2014-03-11</EndDate>
             <Type>Item</Type>
-            <Invoice>true</Invoice>
-            <Itinerary>false</Itinerary>
-            <External>false</External>
+            <Invoice>1</Invoice>
+            <Itinerary>0</Itinerary>
+            <External>0</External>
             <Title>
                 <de>Hinweis:</de>
                 <fr />
@@ -2896,9 +2896,9 @@
             <BeginDate>2014-04-16</BeginDate>
             <EndDate>2014-04-23</EndDate>
             <Type>Item</Type>
-            <Invoice>true</Invoice>
-            <Itinerary>false</Itinerary>
-            <External>false</External>
+            <Invoice>1</Invoice>
+            <Itinerary>0</Itinerary>
+            <External>0</External>
             <Title>
                 <de>Hinweis:</de>
                 <fr />
@@ -2913,9 +2913,9 @@
             <BeginDate>2014-06-28</BeginDate>
             <EndDate>2014-07-15</EndDate>
             <Type>Item</Type>
-            <Invoice>true</Invoice>
-            <Itinerary>false</Itinerary>
-            <External>false</External>
+            <Invoice>1</Invoice>
+            <Itinerary>0</Itinerary>
+            <External>0</External>
             <Title>
                 <de>Hinweis:</de>
                 <fr />
