@@ -3,7 +3,7 @@
 <xs:schema xmlns:ns0="http://xml.netbeans.org/schema/Descriptions"
            elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:include schemaLocation="..\BaseData.xsd" />
+    <xs:include schemaLocation="..\BaseDataExport.xsd" />
     <xs:element name="Hotel">
         <xs:complexType>
             <xs:all>

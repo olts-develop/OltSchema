@@ -2,7 +2,7 @@
 <!--Created with Liquid XML 2014 Designer Edition 12.2.6.5324 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:include schemaLocation="..\BaseData.xsd" />
+    <xs:include schemaLocation="..\BaseDataImport.xsd" />
     <xs:element name="Miscellaneous">
         <xs:complexType>
             <xs:sequence minOccurs="0"
