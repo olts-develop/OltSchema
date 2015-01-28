@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2014 Designer Edition 12.2.6.5324 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.2.8.5459 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="..\BaseData.xsd" />
@@ -220,7 +220,8 @@
                     <xs:annotation>
                         <xs:documentation>This item can no longer be booked. If a FromDate
 							is specified, this item cannot be booked on or after the
-							specified date.</xs:documentation>
+							specified date.
+						</xs:documentation>
                     </xs:annotation>
                     <xs:complexType>
                         <xs:simpleContent>
@@ -261,7 +262,8 @@
                             minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>Tourbo title of item group. A group of items
-							have the same Tourbo Code, e.g. TRABOE</xs:documentation>
+							have the same Tourbo Code, e.g. TRABOE
+						</xs:documentation>
                     </xs:annotation>
                 </xs:element>
                 <xs:element name="MiscCode"
@@ -303,87 +305,12 @@
                 <xs:element name="ItemInfos"
                             type="ItemInfos"
                             minOccurs="0" />
-                <xs:element name="Prices"
-                            minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Descs"
-                                        type="Desc">
-                                <xs:annotation>
-                                    <xs:documentation>Description codes for use in the Prices
-										node
-									</xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="Currencies">
-                                <xs:complexType>
-                                    <xs:sequence minOccurs="1"
-                                                 maxOccurs="4">
-                                        <xs:element name="Currency">
-                                            <xs:complexType>
-                                                <xs:attribute name="IdNr"
-                                                              use="required">
-                                                    <xs:simpleType>
-                                                        <xs:restriction base="xs:integer">
-                                                            <xs:enumeration value="1" />
-                                                            <xs:enumeration value="2" />
-                                                            <xs:enumeration value="3" />
-                                                            <xs:enumeration value="4" />
-                                                        </xs:restriction>
-                                                    </xs:simpleType>
-                                                </xs:attribute>
-                                                <xs:attribute name="IsoCode"
-                                                              use="required">
-                                                    <xs:simpleType>
-                                                        <xs:restriction base="xs:string">
-                                                            <xs:length value="3" />
-                                                        </xs:restriction>
-                                                    </xs:simpleType>
-                                                </xs:attribute>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                            <xs:element name="PerDayPrices"
-                                        type="PerDayPricesChildren"
-                                        minOccurs="0" />
-                            <xs:element name="AddPerDayPrices"
-                                        type="AddPerDayPricesChildren"
-                                        minOccurs="0" />
-                            <xs:element name="OneTimes"
-                                        type="OneTimesChildren"
-                                        minOccurs="0" />
-                            <xs:element name="SpecialOffers"
-                                        type="SpecialOffersChildren"
-                                        minOccurs="0" />
-                            <xs:element name="EarlyBookings"
-                                        type="EarlyBookingsChildren"
-                                        minOccurs="0" />
-                        </xs:sequence>
-                        <xs:attribute name="KeepDataBeforeDate"
-                                      type="xs:date"
-                                      use="optional">
-                            <xs:annotation>
-                                <xs:documentation>Generally all prices for a product are
-									deleted, updated or new prices inserted. There is however a use
-									case where prices are already entered in TO Online and the
-									external system contains prices for the new season. In this
-									case a date can be supplied as an attribute to the "Prices"
-									node, and all prices whose end date is smaller than this date
-									will not be deleted but remain in TO Online. If the date
-									supplied is 2015-01-01 then all prices up until and including
-									2014-12-31 will not be deleted in Agent Online.
-								</xs:documentation>
-                            </xs:annotation>
-                        </xs:attribute>
-                    </xs:complexType>
-                </xs:element>
                 <xs:element name="Hotels"
                             minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>A transfer could be connected to one or more
-							hotel rooms</xs:documentation>
+							hotel rooms
+						</xs:documentation>
                     </xs:annotation>
                     <xs:complexType>
                         <xs:sequence>
@@ -397,6 +324,52 @@
                                     <xs:attribute name="HotelCode"
                                                   type="xs:string"
                                                   use="required" />
+                                    <xs:attribute name="HotelName"
+                                                  type="xs:string"
+                                                  use="required" />
+                                    <xs:attribute name="HotelKey"
+                                                  type="xs:string"
+                                                  use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Descs"
+                            type="Desc"
+                            minOccurs="0" />
+                <xs:element name="Prices"
+                            minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Currency"
+                                        minOccurs="0"
+                                        maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="PerDayPrices"
+                                                    type="PerDayPricesChildren"
+                                                    minOccurs="0" />
+                                        <xs:element name="AddPerDayPrices"
+                                                    type="AddPerDayPricesChildren"
+                                                    minOccurs="0" />
+                                        <xs:element name="OneTimes"
+                                                    type="OneTimesChildren"
+                                                    minOccurs="0" />
+                                        <xs:element name="SpecialOffers"
+                                                    minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:complexContent mixed="false">
+                                                    <xs:extension base="SpecialOffersChildren" />
+                                                </xs:complexContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="EarlyBookings"
+                                                    type="EarlyBookingsChildren"
+                                                    minOccurs="0" />
+                                    </xs:all>
+                                    <xs:attribute name="IsoCode"
+                                                  type="xs:string" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
