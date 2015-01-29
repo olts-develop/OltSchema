@@ -1,628 +1,577 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2014 Designer Edition 12.2.6.5324 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2014 Designer Edition 12.2.6.5324 (http://www.liquid-technologies.com) -->
 <xs:schema xmlns:ns0="http://xml.netbeans.org/schema/Descriptions"
-           elementFormDefault="qualified"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:include schemaLocation="..\BaseDataExport.xsd" />
-    <xs:element name="Hotel">
-        <xs:complexType>
-            <xs:all>
-                <xs:element name="HotelName"
-                            type="Translation">
-                    <xs:annotation>
-                        <xs:documentation>HO_NAME</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Address1"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>HO_STRASSE</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Address2"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>HO_STRASSEZUSATZ</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="PostalCode"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>HO_PLZ</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="City"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>SC_VOLL</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Country"
-                            minOccurs="0">
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute name="IsoCode"
-                                              type="xs:string">
-                                    <xs:annotation>
-                                        <xs:documentation>Two letter country code of address
-C_IATACODE</xs:documentation>
-                                    </xs:annotation>
-                                </xs:attribute>
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="Region"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Region of the Country
-              RE_VOLL</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="SubRegion"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Subregion of the region: SC_VOLL</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Phone"
-                            type="PhoneAttributes"
-                            minOccurs="0" />
-                <xs:element name="Fax"
-                            type="PhoneAttributes"
-                            minOccurs="0" />
-                <xs:element name="Mobile"
-                            type="PhoneAttributes"
-                            minOccurs="0" />
-                <xs:element name="HotelChain"
-                            minOccurs="0">
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute name="ChainCode"
-                                              type="xs:string" />
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="Destination"
-                            minOccurs="0">
-                    <xs:complexType>
-                        <xs:complexContent mixed="false">
-                            <xs:extension base="DestinationAttributes" />
-                        </xs:complexContent>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="HotelCode"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>HO_HOTELCODE</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="GiataId"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>HO_HOTELCODE</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Longitude"
-                            type="xs:float"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Longitude of hotel
-              HO_LON
-              -180.000000 to +180.000000</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Latitude"
-                            type="xs:float"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Latitude of hotel
-              HO_LAT
-              -180.000000 to +180.000000</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="RoomType"
-                            type="Translation"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>singel, doubleroom...
-              ZI_DEUTSCH</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Description"
-                            type="Translation"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Room description
-              ZI_BESCHRIEBDEUTSCH</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="MealCode"
-                            type="xs:string"
-                            minOccurs="0" />
-                <xs:element name="MealDescription"
-                            type="Translation"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Description of included meal
-              ZI_MAHLZEITDEUTSCH</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="NormalOccupancy"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Normal occupancy</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="MinimalOccupancy"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Maximal occupancy</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="MaximalOccupancy"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Minimal occupancy</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="MaxAdults"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Maximum number of adults</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="ExtraBedAdults"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Number of extra bed for adults</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="ExtraBedChildren"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Number of extra bed for Children</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="APIHotelCode"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>API Hotel Code</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="APIRoomCode"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>API Room Code</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="TourboCode"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Tourbo Code</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Category"
-                            type="xs:float"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>
-              Category number: 0.0 to 6.0
-              If 0.0 the category is unknown or undefined</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Passive"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>This room can no longer be booked. If a FromDate is specified, this item cannot be booked on or after the specified date.</xs:documentation>
-                    </xs:annotation>
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:integer">
-                                <xs:attribute name="FromDate"
-                                              type="xs:date" />
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="Descs"
-                            type="Desc"
-                            minOccurs="0" />
-                <xs:element name="Prices"
-                            minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Currency"
-                                        minOccurs="0"
-                                        maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:all>
-                                        <xs:element name="PerDayPrices"
-                                                    type="PerDayPricesChildren"
-                                                    minOccurs="0" />
-                                        <xs:element name="AddPerDayPrices"
-                                                    type="AddPerDayPricesChildren"
-                                                    minOccurs="0" />
-                                        <xs:element name="OneTimes"
-                                                    type="OneTimesChildren"
-                                                    minOccurs="0" />
-                                        <xs:element name="SpecialOffers"
-                                                    minOccurs="0">
-                                            <xs:complexType>
-                                                <xs:complexContent mixed="false">
-                                                    <xs:extension base="SpecialOffersChildren" />
-                                                </xs:complexContent>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="EarlyBookings"
-                                                    type="EarlyBookingsChildren"
-                                                    minOccurs="0" />
-                                    </xs:all>
-                                    <xs:attribute name="IsoCode"
-                                                  type="xs:string" />
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="Allotments"
-                            minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Allotment"
-                                        minOccurs="0"
-                                        maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:attribute name="Date"
-                                                  type="xs:date">
-                                        <xs:annotation>
-                                            <xs:documentation>Date for this allotment item</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Av"
-                                                  type="xs:float">
-                                        <xs:annotation>
-                                            <xs:documentation>The rest availability of this item</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Rel"
-                                                  type="xs:date">
-                                        <xs:annotation>
-                                            <xs:documentation>Release date.
-                        If the current date is GREATER than the release date, then this item cannot be booked on allotment. </xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="MinStay"
-                                                  type="xs:date">
-                                        <xs:annotation>
-                                            <xs:documentation>Minimum stay for this item.
-                        If the END DATE of the booking is LESS THAN OR EQUAL TO the MinStayDate, then this item cannot be booked on allotment.
-                        e.g.
-                        Product Booking Dates: From=1. JAN, To=2.Jan
-                        If the MinStayDate=2. JAN, this item cannot be booked on allotment. If the MinStayDate=1. JAN then this item CAN be booked on allotment.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="RQ"
-                                                  type="xs:boolean">
-                                        <xs:annotation>
-                                            <xs:documentation>Indicates if this item can be booked on Request.
-                        One always needs to frst check if a product has allotment, then if it is available on Free-Sell, then look to see if it is available on Request.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="FS"
-                                                  type="xs:boolean">
-                                        <xs:annotation>
-                                            <xs:documentation>Indicates if this item can be booked on Free-Sell.
-                        One always needs to frst check if a product has allotment, then if it is available on Free-Sell, then look to see if it is available on Request.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="CancellationFees"
-                            minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="CancellationFee"
-                                        minOccurs="0"
-                                        maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:all>
-                                        <xs:element name="BeginDate"
-                                                    type="xs:date" />
-                                        <xs:element name="EndDate"
-                                                    type="xs:date" />
-                                        <xs:element name="Percent"
-                                                    type="xs:float"
-                                                    minOccurs="0" />
-                                        <xs:element name="Amount"
-                                                    type="xs:float"
-                                                    minOccurs="0" />
-                                        <xs:element name="DaysBeforeDepartureBegin"
-                                                    type="xs:integer" />
-                                        <xs:element name="DaysBeforeDepartureEnd"
-                                                    type="xs:integer" />
-                                        <xs:element name="NrDaysFeeApply"
-                                                    type="xs:integer" />
-                                        <xs:element name="PriceType"
-                                                    type="xs:integer">
-                                            <xs:annotation>
-                                                <xs:documentation>1 = Cancellation Fee</xs:documentation>
-                                            </xs:annotation>
-                                        </xs:element>
-                                    </xs:all>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                        <xs:attribute name="InternalPriceType"
-                                      type="xs:string" />
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="BookingSources"
-                            minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="BookingSource"
-                                        minOccurs="0"
-                                        maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:attribute name="Code"
-                                                  type="xs:string">
-                                        <xs:annotation>
-                                            <xs:documentation>e.g. DYNAP ofr Dynapack</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="FromDate"
-                                                  type="xs:date">
-                                        <xs:annotation>
-                                            <xs:documentation>Booking Source is valid for booking made on or after this date</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="ToDate"
-                                                  type="xs:date">
-                                        <xs:annotation>
-                                            <xs:documentation>Booking Source is valid for booking made on or before this date</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="SubCode"
-                                                  type="xs:string">
-                                        <xs:annotation>
-                                            <xs:documentation>e.g. B2B, or B2C</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="ItemInfos"
-                            minOccurs="0">
-                    <xs:complexType>
-                        <xs:all>
-                            <xs:element name="ItemInfo"
-                                        minOccurs="0">
-                                <xs:annotation>
-                                    <xs:documentation>Cancellation fee for this Item</xs:documentation>
-                                </xs:annotation>
-                                <xs:complexType>
-                                    <xs:all>
-                                        <xs:element name="BeginDate"
-                                                    type="xs:date"
-                                                    minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>Start date when an information applies. Inclusive.</xs:documentation>
-                                            </xs:annotation>
-                                        </xs:element>
-                                        <xs:element name="EndDate"
-                                                    type="xs:date"
-                                                    minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>End date when an information applies. Inclusive.</xs:documentation>
-                                            </xs:annotation>
-                                        </xs:element>
-                                        <xs:element name="Type"
-                                                    minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>Item
-Destination
-Country</xs:documentation>
-                                            </xs:annotation>
-                                            <xs:simpleType>
-                                                <xs:restriction base="xs:string">
-                                                    <xs:enumeration value="Item" />
-                                                    <xs:enumeration value="Destination" />
-                                                    <xs:enumeration value="Country" />
-                                                </xs:restriction>
-                                            </xs:simpleType>
-                                        </xs:element>
-                                        <xs:element name="Invoice"
-                                                    type="xs:boolean"
-                                                    minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation />
-                                            </xs:annotation>
-                                        </xs:element>
-                                        <xs:element name="Itinerary"
-                                                    type="xs:boolean"
-                                                    minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation />
-                                            </xs:annotation>
-                                        </xs:element>
-                                        <xs:element name="External"
-                                                    type="xs:boolean"
-                                                    minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation />
-                                            </xs:annotation>
-                                        </xs:element>
-                                        <xs:element name="Title"
-                                                    minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>Title of info. Node is only sent if a value exists.</xs:documentation>
-                                            </xs:annotation>
-                                            <xs:complexType>
-                                                <xs:all>
-                                                    <xs:element name="de"
-                                                                type="xs:string"
-                                                                minOccurs="0" />
-                                                    <xs:element name="en"
-                                                                type="xs:string"
-                                                                minOccurs="0" />
-                                                    <xs:element name="fr"
-                                                                type="xs:string"
-                                                                minOccurs="0" />
-                                                    <xs:element name="it"
-                                                                type="xs:string"
-                                                                minOccurs="0" />
-                                                </xs:all>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="Text"
-                                                    minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>Description text of iteminfo</xs:documentation>
-                                            </xs:annotation>
-                                            <xs:complexType>
-                                                <xs:all>
-                                                    <xs:element name="de"
-                                                                type="xs:string"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation>CDATA</xs:documentation>
-                                                        </xs:annotation>
-                                                    </xs:element>
-                                                    <xs:element name="en"
-                                                                type="xs:string"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation>CDATA</xs:documentation>
-                                                        </xs:annotation>
-                                                    </xs:element>
-                                                    <xs:element name="fr"
-                                                                type="xs:string"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation>CDATA</xs:documentation>
-                                                        </xs:annotation>
-                                                    </xs:element>
-                                                    <xs:element name="it"
-                                                                type="xs:string"
-                                                                minOccurs="0">
-                                                        <xs:annotation>
-                                                            <xs:documentation>CDATA</xs:documentation>
-                                                        </xs:annotation>
-                                                    </xs:element>
-                                                </xs:all>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:all>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:all>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="Images"
-                            minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence maxOccurs="unbounded">
-                            <xs:element name="Image">
-                                <xs:complexType>
-                                    <xs:all>
-                                        <xs:element name="Id"
-                                                    type="xs:string"
-                                                    minOccurs="0" />
-                                        <xs:element name="Name"
-                                                    type="xs:string"
-                                                    minOccurs="0" />
-                                        <xs:element name="Type"
-                                                    type="xs:string">
-                                            <xs:annotation>
-                                                <xs:documentation>e.g. jpg, gif, png, etc.</xs:documentation>
-                                            </xs:annotation>
-                                        </xs:element>
-                                        <xs:element name="Height"
-                                                    type="xs:integer"
-                                                    minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>height in pixel of picture</xs:documentation>
-                                            </xs:annotation>
-                                        </xs:element>
-                                        <xs:element name="Width"
-                                                    type="xs:integer"
-                                                    minOccurs="0" />
-                                        <xs:element name="Size"
-                                                    type="xs:integer"
-                                                    minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>Size in bytes of image</xs:documentation>
-                                            </xs:annotation>
-                                        </xs:element>
-                                        <xs:element name="Encoding"
-                                                    type="xs:string">
-                                            <xs:annotation>
-                                                <xs:documentation>encoding of the image. Currently only "base64"</xs:documentation>
-                                            </xs:annotation>
-                                        </xs:element>
-                                        <xs:element name="Data"
-                                                    type="xs:string">
-                                            <xs:annotation>
-                                                <xs:documentation>Encoded string of the image supplied as a CDATA.</xs:documentation>
-                                            </xs:annotation>
-                                        </xs:element>
-                                    </xs:all>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:all>
-            <xs:attribute name="Key"
-                          type="xs:string"
-                          use="required">
-                <xs:annotation>
-                    <xs:documentation> Primary Key of the hotel room</xs:documentation>
-                </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="Action">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="ADD" />
-                        <xs:enumeration value="DELETE" />
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
-            <xs:attribute name="System">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="Prod" />
-                        <xs:enumeration value="Educ" />
-                        <xs:enumeration value="Test" />
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
-            <xs:attribute name="Type"
-                          type="xs:string">
-                <xs:annotation>
-                    <xs:documentation>Value = HotelRoom per Default</xs:documentation>
-                </xs:annotation>
-            </xs:attribute>
-        </xs:complexType>
-    </xs:element>
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include schemaLocation="..\BaseDataExport.xsd" />
+	<xs:element name="Hotel">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="HotelName" type="Translation">
+					<xs:annotation>
+						<xs:documentation>HO_NAME</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Address1" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>HO_STRASSE</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Address2" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>HO_STRASSEZUSATZ</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="PostalCode" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>HO_PLZ</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="City" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>SC_VOLL</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Country" minOccurs="0">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attribute name="IsoCode" type="xs:string">
+									<xs:annotation>
+										<xs:documentation>Two letter country code of address
+											C_IATACODE
+										</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Region" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Region of the Country
+							RE_VOLL
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="SubRegion" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Subregion of the region: SC_VOLL
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Phone" type="PhoneAttributes"
+					minOccurs="0" />
+				<xs:element name="Fax" type="PhoneAttributes" minOccurs="0" />
+				<xs:element name="Mobile" type="PhoneAttributes"
+					minOccurs="0" />
+				<xs:element name="HotelChain" minOccurs="0">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attribute name="ChainCode" type="xs:string" />
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Destination" minOccurs="0">
+					<xs:complexType>
+						<xs:complexContent mixed="false">
+							<xs:extension base="DestinationAttributes" />
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="HotelCode" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>HO_HOTELCODE</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="GiataId" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>HO_HOTELCODE</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Longitude" type="xs:float" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Longitude of hotel
+							HO_LON
+							-180.000000 to
+							+180.000000
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Latitude" type="xs:float" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Latitude of hotel
+							HO_LAT
+							-180.000000 to
+							+180.000000
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="RoomType" type="Translation" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>singel, doubleroom...
+							ZI_DEUTSCH
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Description" type="Translation"
+					minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Room description
+							ZI_BESCHRIEBDEUTSCH
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="MealCode" type="xs:string" minOccurs="0" />
+				<xs:element name="TourboMealCode" type="xs:string" minOccurs="0" />
+				<xs:element name="MealDescription" type="Translation"
+					minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Description of included meal
+							ZI_MAHLZEITDEUTSCH
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="NormalOccupancy" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Normal occupancy</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="MinimalOccupancy" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Maximal occupancy</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="MaximalOccupancy" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Minimal occupancy</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="MaxAdults" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Maximum number of adults</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ExtraBedAdults" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Number of extra bed for adults
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ExtraBedChildren" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Number of extra bed for Children
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="APIHotelCode" type="xs:string"
+					minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>API Hotel Code</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="APIRoomCode" type="xs:string"
+					minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>API Room Code</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TourboCode" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Tourbo Code</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Category" type="xs:float" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>
+							Category number: 0.0 to 6.0
+							If 0.0 the category
+							is unknown or undefined
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Passive" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>This room can no longer be booked. If a FromDate
+							is specified, this item cannot be booked on or after the
+							specified date.
+						</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:integer">
+								<xs:attribute name="FromDate" type="xs:date" />
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Descs" type="Desc" minOccurs="0" />
+				<xs:element name="Prices" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Currency" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="PerDayPrices" type="PerDayPricesChildren"
+											minOccurs="0" />
+										<xs:element name="AddPerDayPrices" type="AddPerDayPricesChildren"
+											minOccurs="0" />
+										<xs:element name="OneTimes" type="OneTimesChildren"
+											minOccurs="0" />
+										<xs:element name="SpecialOffers" minOccurs="0">
+											<xs:complexType>
+												<xs:complexContent mixed="false">
+													<xs:extension base="SpecialOffersChildren" />
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="EarlyBookings" type="EarlyBookingsChildren"
+											minOccurs="0" />
+									</xs:all>
+									<xs:attribute name="IsoCode" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Allotments" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Allotment" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="Date" type="xs:date">
+										<xs:annotation>
+											<xs:documentation>Date for this allotment item
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="Av" type="xs:float">
+										<xs:annotation>
+											<xs:documentation>The rest availability of this item
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="Rel" type="xs:date">
+										<xs:annotation>
+											<xs:documentation>Release date.
+												If the current date is GREATER
+												than the release date, then
+												this item cannot be booked on
+												allotment.
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="MinStay" type="xs:date">
+										<xs:annotation>
+											<xs:documentation>Minimum stay for this item.
+												If the END DATE
+												of the booking is LESS THAN OR EQUAL TO the
+												MinStayDate, then
+												this item cannot be booked on allotment.
+												e.g.
+												Product Booking
+												Dates: From=1. JAN, To=2.Jan
+												If the MinStayDate=2. JAN, this
+												item cannot be booked on
+												allotment. If the MinStayDate=1. JAN
+												then this item CAN be
+												booked on allotment.
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="RQ" type="xs:boolean">
+										<xs:annotation>
+											<xs:documentation>Indicates if this item can be booked on
+												Request.
+												One always needs to frst check if a product has
+												allotment, then
+												if it is available on Free-Sell, then look to
+												see if it is
+												available on Request.
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="FS" type="xs:boolean">
+										<xs:annotation>
+											<xs:documentation>Indicates if this item can be booked on
+												Free-Sell.
+												One always needs to frst check if a product has
+												allotment, then
+												if it is available on Free-Sell, then look to
+												see if it is
+												available on Request.
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CancellationFees" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CancellationFee" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="BeginDate" type="xs:date" />
+										<xs:element name="EndDate" type="xs:date" />
+										<xs:element name="Percent" type="xs:float"
+											minOccurs="0" />
+										<xs:element name="Amount" type="xs:float"
+											minOccurs="0" />
+										<xs:element name="DaysBeforeDepartureBegin" type="xs:integer" />
+										<xs:element name="DaysBeforeDepartureEnd" type="xs:integer" />
+										<xs:element name="NrDaysFeeApply" type="xs:integer" />
+										<xs:element name="PriceType" type="xs:integer">
+											<xs:annotation>
+												<xs:documentation>1 = Cancellation Fee</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="InternalPriceType" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BookingSources" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="BookingSource" minOccurs="0"
+								maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="Code" type="xs:string">
+										<xs:annotation>
+											<xs:documentation>e.g. DYNAP ofr Dynapack</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="FromDate" type="xs:date">
+										<xs:annotation>
+											<xs:documentation>Booking Source is valid for booking made on
+												or after this date
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="ToDate" type="xs:date">
+										<xs:annotation>
+											<xs:documentation>Booking Source is valid for booking made on
+												or before this date
+											</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="SubCode" type="xs:string">
+										<xs:annotation>
+											<xs:documentation>e.g. B2B, or B2C</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ItemInfos" minOccurs="0">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="ItemInfo" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Cancellation fee for this Item
+									</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="BeginDate" type="xs:date"
+											minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Start date when an information applies.
+													Inclusive.
+												</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="EndDate" type="xs:date"
+											minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>End date when an information applies.
+													Inclusive.
+												</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Type" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Item
+													Destination
+													Country
+												</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="Item" />
+													<xs:enumeration value="Destination" />
+													<xs:enumeration value="Country" />
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Invoice" type="xs:boolean"
+											minOccurs="0">
+											<xs:annotation>
+												<xs:documentation />
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Itinerary" type="xs:boolean"
+											minOccurs="0">
+											<xs:annotation>
+												<xs:documentation />
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="External" type="xs:boolean"
+											minOccurs="0">
+											<xs:annotation>
+												<xs:documentation />
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Title" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Title of info. Node is only sent if a
+													value exists.
+												</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="de" type="xs:string"
+														minOccurs="0" />
+													<xs:element name="en" type="xs:string"
+														minOccurs="0" />
+													<xs:element name="fr" type="xs:string"
+														minOccurs="0" />
+													<xs:element name="it" type="xs:string"
+														minOccurs="0" />
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Text" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Description text of iteminfo
+												</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all>
+													<xs:element name="de" type="xs:string"
+														minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>CDATA</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="en" type="xs:string"
+														minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>CDATA</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="fr" type="xs:string"
+														minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>CDATA</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="it" type="xs:string"
+														minOccurs="0">
+														<xs:annotation>
+															<xs:documentation>CDATA</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Images" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="Image">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="Id" type="xs:string" minOccurs="0" />
+										<xs:element name="Name" type="xs:string" minOccurs="0" />
+										<xs:element name="Type" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>e.g. jpg, gif, png, etc.
+												</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Height" type="xs:integer"
+											minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>height in pixel of picture
+												</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Width" type="xs:integer"
+											minOccurs="0" />
+										<xs:element name="Size" type="xs:integer"
+											minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Size in bytes of image</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Encoding" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>encoding of the image. Currently only
+													"base64"
+												</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Data" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>Encoded string of the image supplied as a
+													CDATA.
+												</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+			<xs:attribute name="RoomKey" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation> Primary Key of the hotel room</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="HotelKey" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation> Primary Key of the hotel</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="Action">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="ADD" />
+						<xs:enumeration value="DELETE" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="System">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Prod" />
+						<xs:enumeration value="Educ" />
+						<xs:enumeration value="Test" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="Type" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Value = HotelRoom per Default</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
 </xs:schema>

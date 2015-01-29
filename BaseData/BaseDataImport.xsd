@@ -295,23 +295,6 @@
             </xs:simpleType>
         </xs:attribute>
     </xs:attributeGroup>
-    <xs:attributeGroup name="DescIdAttributeGroup">
-        <xs:attribute name="DescId"
-                      type="xs:nonNegativeInteger"
-                      use="required">
-            <xs:annotation>
-                <xs:documentation>In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
-                    &lt;Descs&gt;
-                    &lt;Desc
-                    DescId="1"&gt;
-                    &lt;de&gt;Preis pro Person/Nacht&lt;/de&gt;
-                    &lt;fr&gt;Prix par personne/nuit&lt;/fr&gt;
-                    &lt;/Desc&gt;
-                    ...
-                    &lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /</xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-    </xs:attributeGroup>
     <xs:attributeGroup name="BuyAttributeGroup">
         <xs:attribute name="BuyGross"
                       type="xs:float"
