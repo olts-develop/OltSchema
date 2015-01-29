@@ -553,4 +553,144 @@ DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo</xs:documenta
             </xs:annotation>
         </xs:attribute>
     </xs:attributeGroup>
+    <xs:complexType name="ItemInfos">
+        <xs:all>
+            <xs:element name="ItemInfoTexts"
+                        minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ItemInfoText"
+                                    type="ItemInfoText"
+                                    minOccurs="0"
+                                    maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:documentation>ItemInfo this Item, e.g. if in a </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="ItemInfoRequests"
+                        minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ItemInfoRequest"
+                                    type="ItemInfoRequestAttributes"
+                                    minOccurs="0"
+                                    maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="ItemInfoText">
+        <xs:all>
+            <xs:element name="BeginDate"
+                        type="xs:date"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Start date when an information applies. Inclusive.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EndDate"
+                        type="xs:date"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>End date when an information applies. Inclusive.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Invoice"
+                        minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:enumeration value="0" />
+                        <xs:enumeration value="1" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Itinerary"
+                        minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:enumeration value="0" />
+                        <xs:enumeration value="1" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="External"
+                        minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:enumeration value="0" />
+                        <xs:enumeration value="1" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Title"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Title of info. Node is only sent if a value exists.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="de"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="en"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="fr"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="it"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Text"
+                        type="Translation"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Description text of item info</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="ItemInfoRequestAttributes">
+        <xs:attribute name="Day"
+                      type="xs:date">
+            <xs:annotation>
+                <xs:documentation>Date when the request information applies.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="RQ">
+            <xs:annotation>
+                <xs:documentation>If this item can be booked on request, RQ = 1</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="FS">
+            <xs:annotation>
+                <xs:documentation>If this item can be booked on freesell FS = 1</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="FreeSellRelease"
+                      type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>If Request = FS, then the Nr days that this item can be booked on FS before it becomes a RQ</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
 </xs:schema>

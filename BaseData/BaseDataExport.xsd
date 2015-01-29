@@ -455,4 +455,102 @@ DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo</xs:documenta
             </xs:annotation>
         </xs:attribute>
     </xs:attributeGroup>
+    <xs:complexType name="ItemInfos">
+        <xs:sequence>
+            <xs:element name="ItemInfo"
+                        type="ItemInfoChildren"
+                        minOccurs="0"
+                        maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ItemInfoChildren">
+        <xs:all>
+            <xs:element name="BeginDate"
+                        type="xs:date"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Start date when an information applies. Inclusive.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EndDate"
+                        type="xs:date"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>End date when an information applies. Inclusive.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Type"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Item
+													Destination
+													Country
+												</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Item" />
+                        <xs:enumeration value="Destination" />
+                        <xs:enumeration value="Country" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Invoice"
+                        minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:enumeration value="0" />
+                        <xs:enumeration value="1" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Itinerary"
+                        minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:enumeration value="0" />
+                        <xs:enumeration value="1" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="External"
+                        minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:enumeration value="0" />
+                        <xs:enumeration value="1" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Title"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Title of info. Node is only sent if a value exists.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="de"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="en"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="fr"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                        <xs:element name="it"
+                                    type="xs:string"
+                                    minOccurs="0" />
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Text"
+                        type="Translation"
+                        minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Description text of item info</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
 </xs:schema>
