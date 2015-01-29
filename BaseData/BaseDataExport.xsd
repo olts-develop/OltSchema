@@ -44,6 +44,15 @@
         <xs:attributeGroup ref="DateFromToAttributeGroup" />
         <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
         <xs:attributeGroup ref="BabyChildAttributeGroup" />
+        <xs:attribute name="AlwaysApply"
+                      use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
     </xs:complexType>
     <xs:complexType name="SpecialOffersChildren">
         <xs:sequence>
