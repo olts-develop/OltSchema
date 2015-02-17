@@ -1,0 +1,17 @@
+db2move TUI import -u db2admin -p gagaga -io INSERT_UPDATE
+
+Vorher folgendes SQL ausführen um die alten Preise zu löschen:
+
+delete from PREIS 
+where 
+P_LEISTUNGSTYP=3 
+and P_LEISTSEQ in 
+(
+select ZI_SEQ from ZIMMER,HOTEL where ZI_HOSEQ=HO_SEQ and 
+  (
+    (HO_DESTINATION,HO_HOTELCODE)=('LAS','BELLAG') 
+    or (HO_DESTINATION,HO_HOTELCODE)=('MRU','LUXGAU')
+  )
+)
+
+Bitte sicherstellen, dass die zu löschenden Hotel-Preise mit den Hotels vom Export übereinstimmen. 
