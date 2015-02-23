@@ -1,0 +1,20 @@
+
+*****  DB2MOVE  *****
+
+Action:  IMPORT
+
+Start time:  Mon Feb 23 10:18:32 2015
+
+
+Connecting to database TUI ... successful!  Server : DB2 Common Server V9.5.0
+
+* IMPORT:  table "DB2ADMIN"."PREIS"              
+  -Rows read:      71703
+  -Inserted:       71703
+  -Rejected:           0
+  -Committed:      71703
+
+
+Disconnecting from database ... successful!
+
+End time:  Mon Feb 23 10:18:48 2015
