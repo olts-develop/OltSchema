@@ -1,2 +1,1430 @@
 <?xml version='1.0' encoding='ISO8859-1' ?>
-<Hotel Type="HotelRoom" System="Test" RoomKey="TUIXYA192344" HotelKey="TUIXYA43840"><HotelName><de>LUX* Grand Gaube</de><en>LUX* Grand Gaube</en><fr>LUX* Grand Gaube</fr><it>LUX* Grand Gaube</it></HotelName><Address1>Pointe Rejane</Address1><Address2/><PostalCode/><City>Grand Gaube</City><Country IsoCode="MU">Mauritius</Country><Region>Grand Gaube</Region><SubRegion>Grand Gaube</SubRegion><Phone Number="204 9191" AreaCode="" CountryPrefix="+230"/><Fax Number="288 2828" AreaCode="" CountryPrefix="+230"/><Mobile Number="" AreaCode="" CountryPrefix="+230"/><HotelChain ChainCode="LUX">Luxury Resorts</HotelChain><Destination Code="MRU" CountryCode="MU"/><HotelCode>LUXGAU</HotelCode><GiataId>0</GiataId><RoomType><de>Doppel Junior Suite</de><en>Double Junior Suite</en><fr>Double Junior Suite</fr><it>Doppia Junior Suite</it></RoomType><Description><de>mit Bad oder Dusche / WC</de><en>with bath or shower and toilet</en><fr>avec bain ou douche et WC</fr><it>con bagno o doccia e WC</it></Description><MealCode>HB</MealCode><TourboMealCode>HB</TourboMealCode><MealDescription><de>Inkl. Halbpension</de><en>Halfboard incl.</en><fr>Demi-pension incl.</fr><it>Mezza pensione incl.</it></MealDescription><NormalOccupancy>2</NormalOccupancy><MinimalOccupancy>2</MinimalOccupancy><MaximalOccupancy>3</MaximalOccupancy><MaxAdults>2</MaxAdults><ExtraBedAdults>0</ExtraBedAdults><ExtraBedChildren>1</ExtraBedChildren><APIHotelCode/><APIRoomCode/><TourboCode>D2</TourboCode><Category>4.5</Category><Passive>0</Passive><Descs><Desc DescId="1"><de>Preis pro Person/Nacht</de><fr>Prix par personne/nuit</fr></Desc><Desc DescId="2"><de>Kind(er) gratis im bestehenden Bett</de><fr>enfant(s) gratuit(es)</fr></Desc><Desc DescId="3"><de/><fr/></Desc><Desc DescId="4"><de>1 Gratisnacht pro Person (oblig. Halbpension berücksichtigt) vom 1.11-31.10.14</de><fr>Offre spéciale: 1 nuit gratuite par personne (demi-pension oblig. considéré)</fr></Desc><Desc DescId="5"><de>Frühbucherermässigung vom 01.10.14-31.10.14</de><fr>Réduction anticipée</fr></Desc></Descs><Prices><Currency IsoCode="CHF"><PerDayPrices><PerDayPrice Day="2016-01-01" Price="540.00" DescId="1"/><PerDayPrice Day="2016-01-02" Price="540.00" DescId="1"/><PerDayPrice Day="2016-01-03" Price="540.00" DescId="1"/><PerDayPrice Day="2016-01-04" Price="540.00" DescId="1"/><PerDayPrice Day="2016-01-05" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-06" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-07" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-08" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-09" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-10" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-11" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-12" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-13" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-14" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-15" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-16" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-17" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-18" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-19" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-20" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-21" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-22" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-23" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-24" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-25" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-26" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-27" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-28" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-29" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-30" Price="324.00" DescId="1"/><PerDayPrice Day="2016-01-31" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-01" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-02" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-03" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-04" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-05" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-06" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-07" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-08" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-09" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-10" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-11" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-12" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-13" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-14" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-15" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-16" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-17" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-18" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-19" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-20" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-21" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-22" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-23" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-24" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-25" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-26" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-27" Price="324.00" DescId="1"/><PerDayPrice Day="2016-02-28" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-01" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-02" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-03" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-04" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-05" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-06" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-07" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-08" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-09" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-10" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-11" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-12" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-13" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-14" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-15" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-16" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-17" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-18" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-19" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-20" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-21" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-22" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-23" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-24" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-25" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-26" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-27" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-28" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-29" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-30" Price="324.00" DescId="1"/><PerDayPrice Day="2016-03-31" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-01" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-02" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-03" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-04" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-05" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-06" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-07" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-08" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-09" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-10" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-11" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-12" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-13" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-14" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-15" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-16" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-17" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-18" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-19" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-20" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-21" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-22" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-23" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-24" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-25" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-26" Price="348.00" DescId="1"/><PerDayPrice Day="2016-04-27" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-28" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-29" Price="324.00" DescId="1"/><PerDayPrice Day="2016-04-30" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-01" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-02" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-03" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-04" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-05" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-06" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-07" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-08" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-09" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-10" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-11" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-12" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-13" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-14" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-15" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-16" Price="324.00" DescId="1"/><PerDayPrice Day="2016-05-17" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-18" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-19" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-20" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-21" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-22" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-23" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-24" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-25" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-26" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-27" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-28" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-29" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-30" Price="277.00" DescId="1"/><PerDayPrice Day="2016-05-31" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-01" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-02" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-03" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-04" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-05" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-06" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-07" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-08" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-09" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-10" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-11" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-12" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-13" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-14" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-15" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-16" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-17" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-18" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-19" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-20" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-21" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-22" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-23" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-24" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-25" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-26" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-27" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-28" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-29" Price="277.00" DescId="1"/><PerDayPrice Day="2016-06-30" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-01" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-02" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-03" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-04" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-05" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-06" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-07" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-08" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-09" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-10" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-11" Price="277.00" DescId="1"/><PerDayPrice Day="2016-07-12" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-13" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-14" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-15" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-16" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-17" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-18" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-19" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-20" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-21" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-22" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-23" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-24" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-25" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-26" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-27" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-28" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-29" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-30" Price="293.00" DescId="1"/><PerDayPrice Day="2016-07-31" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-01" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-02" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-03" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-04" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-05" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-06" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-07" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-08" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-09" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-10" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-11" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-12" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-13" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-14" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-15" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-16" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-17" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-18" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-19" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-20" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-21" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-22" Price="293.00" DescId="1"/><PerDayPrice Day="2016-08-23" Price="277.00" DescId="1"/><PerDayPrice Day="2016-08-24" Price="277.00" DescId="1"/><PerDayPrice Day="2016-08-25" Price="277.00" DescId="1"/><PerDayPrice Day="2016-08-26" Price="277.00" DescId="1"/><PerDayPrice Day="2016-08-27" Price="277.00" DescId="1"/><PerDayPrice Day="2016-08-28" Price="277.00" DescId="1"/><PerDayPrice Day="2016-08-29" Price="277.00" DescId="1"/><PerDayPrice Day="2016-08-30" Price="277.00" DescId="1"/><PerDayPrice Day="2016-08-31" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-01" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-02" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-03" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-04" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-05" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-06" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-07" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-08" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-09" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-10" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-11" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-12" Price="277.00" DescId="1"/><PerDayPrice Day="2016-09-13" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-14" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-15" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-16" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-17" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-18" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-19" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-20" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-21" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-22" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-23" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-24" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-25" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-26" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-27" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-28" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-29" Price="293.00" DescId="1"/><PerDayPrice Day="2016-09-30" Price="293.00" DescId="1"/><PerDayPrice Day="2016-10-01" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-02" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-03" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-04" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-05" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-06" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-07" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-08" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-09" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-10" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-11" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-12" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-13" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-14" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-15" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-16" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-17" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-18" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-19" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-20" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-21" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-22" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-23" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-24" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-25" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-26" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-27" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-28" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-29" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-30" Price="348.00" DescId="1"/><PerDayPrice Day="2016-10-31" Price="348.00" DescId="1"/><PerDayPrice Day="2016-01-05" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-06" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-07" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-08" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-09" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-10" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-11" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-12" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-13" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-14" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-15" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-16" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-17" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-18" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-19" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-20" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-21" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-22" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-23" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-24" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-25" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-26" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-27" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-28" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-29" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-30" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-31" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-01" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-02" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-03" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-04" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-05" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-06" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-07" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-08" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-09" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-10" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-11" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-12" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-13" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-14" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-15" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-16" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-17" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-18" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-19" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-20" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-21" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-22" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-23" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-24" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-25" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-26" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-27" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-02-28" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-01" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-02" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-03" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-04" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-05" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-06" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-07" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-08" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-09" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-10" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-11" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-12" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-13" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-14" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-15" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-16" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-17" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-18" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-19" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-20" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-21" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-22" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-23" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-24" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-25" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-26" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-27" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-28" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-29" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-30" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-03-31" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-01" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-02" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-03" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-04" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-05" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-06" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-07" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-08" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-09" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-10" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-11" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-12" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-13" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-14" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-15" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-16" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-17" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-18" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-19" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-20" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-21" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-22" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-23" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-24" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-25" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-26" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-27" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-28" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-29" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-04-30" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1"/><PerDayPrice Day="2016-01-05" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-06" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-07" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-08" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-09" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-10" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-11" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-12" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-13" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-14" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-15" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-16" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-17" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-18" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-19" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-20" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-21" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-22" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-23" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-24" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-25" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-26" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-27" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-28" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-29" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-30" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-01-31" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-01" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-02" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-03" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-04" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-05" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-06" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-07" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-08" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-09" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-10" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-11" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-12" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-13" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-14" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-15" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-16" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-17" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-18" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-19" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-20" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-21" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-22" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-23" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-24" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-25" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-26" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-27" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-02-28" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-01" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-02" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-03" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-04" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-05" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-06" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-07" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-08" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-09" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-10" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-11" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-12" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-13" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-14" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-15" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-16" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-17" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-18" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-19" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-20" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-21" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-22" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-23" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-24" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-25" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-26" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-27" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-28" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-29" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-30" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-03-31" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-01" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-02" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-03" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-04" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-05" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-06" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-07" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-08" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-09" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-10" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-11" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-12" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-13" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-14" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-15" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-16" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-17" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-18" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-19" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-20" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-21" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-22" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-23" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-24" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-25" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-26" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-27" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-28" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-29" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/><PerDayPrice Day="2016-04-30" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1"/></PerDayPrices><AddPerDayPrices/><OneTimes/><SpecialOffers><SpecialOffer Baby="0" Days="10" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="4" DateFrom="2016-10-01" RuleType="Always" AddAmount="0.00" DayString="10" PayNights="7" ToDayBase="10" FromDayBase="10" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0"/><SpecialOffer Baby="0" Days="7" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="4" DateFrom="2016-10-01" RuleType="Always" AddAmount="0.00" DayString="7" PayNights="5" ToDayBase="7" FromDayBase="7" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0"/><SpecialOffer Baby="0" Days="4" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="4" DateFrom="2016-10-01" RuleType="Always" AddAmount="0.00" DayString="4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0"/></SpecialOffers><EarlyBookings><EarlyBooking ToDay="0" DateTo="2016-10-31" DescId="5" FromDay="0" Percent="-10.00" DateFrom="2016-10-01" AddAmount="0.00" EndDateRelevant="0" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999"/></EarlyBookings></Currency></Prices><Allotments><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-17"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-18"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-19"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-20"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-21"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-22"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-23"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-24"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-25"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-26"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-27"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-28"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-29"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-30"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-31"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-01"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-02"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-03"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-04"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-05"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-06"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-07"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-08"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-09"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-10"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-11"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-12"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-13"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-14"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-15"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-16"/><Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-17"/></Allotments></Hotel>
+<!-- Created with Liquid XML 2015 Designer Edition 13.0.5.5746 (http://www.liquid-technologies.com) -->
+<Hotel Type="HotelRoom" System="Test" RoomKey="TUIXYA192344" HotelKey="TUIXYA43840">
+    <HotelName>
+        <de>LUX* Grand Gaube</de>
+        <en>LUX* Grand Gaube</en>
+        <fr>LUX* Grand Gaube</fr>
+        <it>LUX* Grand Gaube</it>
+    </HotelName>
+    <Address1>Pointe Rejane</Address1>
+    <Address2 />
+    <PostalCode />
+    <City>Grand Gaube</City>
+    <Country IsoCode="MU">Mauritius</Country>
+    <Region>Grand Gaube</Region>
+    <SubRegion>Grand Gaube</SubRegion>
+    <Phone Number="204 9191" AreaCode="" CountryPrefix="+230" />
+    <Fax Number="288 2828" AreaCode="" CountryPrefix="+230" />
+    <Mobile Number="" AreaCode="" CountryPrefix="+230" />
+    <HotelChain ChainCode="LUX">Luxury Resorts</HotelChain>
+    <Destination Code="MRU" CountryCode="MU" />
+    <HotelCode>LUXGAU</HotelCode>
+    <GiataId>0</GiataId>
+    <RoomType>
+        <de>Doppel Junior Suite</de>
+        <en>Double Junior Suite</en>
+        <fr>Double Junior Suite</fr>
+        <it>Doppia Junior Suite</it>
+    </RoomType>
+    <Description>
+        <de>mit Bad oder Dusche / WC</de>
+        <en>with bath or shower and toilet</en>
+        <fr>avec bain ou douche et WC</fr>
+        <it>con bagno o doccia e WC</it>
+    </Description>
+    <MealCode>HB</MealCode>
+    <TourboMealCode>HB</TourboMealCode>
+    <MealDescription>
+        <de>Inkl. Halbpension</de>
+        <en>Halfboard incl.</en>
+        <fr>Demi-pension incl.</fr>
+        <it>Mezza pensione incl.</it>
+    </MealDescription>
+    <NormalOccupancy>2</NormalOccupancy>
+    <MinimalOccupancy>2</MinimalOccupancy>
+    <MaximalOccupancy>3</MaximalOccupancy>
+    <MaxAdults>2</MaxAdults>
+    <ExtraBedAdults>0</ExtraBedAdults>
+    <ExtraBedChildren>1</ExtraBedChildren>
+    <APIHotelCode />
+    <APIRoomCode />
+    <TourboCode>D2</TourboCode>
+    <Category>4.5</Category>
+    <Passive>0</Passive>
+    <Descs>
+        <Desc DescId="1">
+            <de>Preis pro Person/Nacht</de>
+            <fr>Prix par personne/nuit</fr>
+        </Desc>
+        <Desc DescId="2">
+            <de>Kind(er) gratis im bestehenden Bett</de>
+            <fr>enfant(s) gratuit(es)</fr>
+        </Desc>
+        <Desc DescId="3">
+            <de />
+            <fr />
+        </Desc>
+        <Desc DescId="4">
+            <de>1 Gratisnacht pro Person (oblig. Halbpension berücksichtigt) vom 1.11-31.10.14</de>
+            <fr>Offre spéciale: 1 nuit gratuite par personne (demi-pension oblig. considéré)</fr>
+        </Desc>
+        <Desc DescId="5">
+            <de>Frühbucherermässigung vom 01.10.14-31.10.14</de>
+            <fr>Réduction anticipée</fr>
+        </Desc>
+    </Descs>
+    <Prices>
+        <Currency IsoCode="CHF">
+            <PerDayPrices>
+                <PerDayPrice Day="2016-01-01" Price="540.00" DescId="1" />
+                <PerDayPrice Day="2016-01-02" Price="540.00" DescId="1" />
+                <PerDayPrice Day="2016-01-03" Price="540.00" DescId="1" />
+                <PerDayPrice Day="2016-01-04" Price="540.00" DescId="1" />
+                <PerDayPrice Day="2016-01-05" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-06" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-07" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-08" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-09" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-10" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-11" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-12" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-13" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-14" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-15" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-16" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-17" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-18" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-19" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-20" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-21" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-22" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-23" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-24" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-25" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-26" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-27" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-28" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-29" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-30" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-01-31" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-01" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-02" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-03" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-04" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-05" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-06" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-07" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-08" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-09" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-10" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-11" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-12" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-13" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-14" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-15" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-16" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-17" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-18" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-19" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-20" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-21" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-22" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-23" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-24" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-25" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-26" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-27" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-02-28" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-01" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-02" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-03" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-04" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-05" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-06" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-07" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-08" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-09" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-10" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-11" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-12" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-13" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-14" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-15" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-16" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-17" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-18" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-19" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-20" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-21" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-22" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-23" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-24" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-25" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-26" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-27" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-28" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-29" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-30" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-03-31" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-01" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-02" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-03" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-04" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-05" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-06" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-07" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-08" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-09" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-10" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-11" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-12" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-13" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-14" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-15" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-16" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-17" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-18" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-19" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-20" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-21" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-22" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-23" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-24" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-25" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-26" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-04-27" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-28" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-29" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-04-30" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-01" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-02" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-03" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-04" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-05" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-06" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-07" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-08" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-09" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-10" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-11" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-12" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-13" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-14" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-15" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-16" Price="324.00" DescId="1" />
+                <PerDayPrice Day="2016-05-17" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-18" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-19" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-20" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-21" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-22" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-23" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-24" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-25" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-26" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-27" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-28" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-29" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-30" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-05-31" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-01" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-02" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-03" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-04" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-05" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-06" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-07" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-08" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-09" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-10" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-11" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-12" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-13" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-14" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-15" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-16" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-17" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-18" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-19" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-20" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-21" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-22" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-23" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-24" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-25" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-26" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-27" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-28" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-29" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-06-30" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-01" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-02" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-03" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-04" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-05" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-06" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-07" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-08" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-09" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-10" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-11" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-07-12" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-13" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-14" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-15" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-16" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-17" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-18" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-19" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-20" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-21" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-22" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-23" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-24" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-25" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-26" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-27" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-28" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-29" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-30" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-07-31" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-01" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-02" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-03" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-04" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-05" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-06" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-07" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-08" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-09" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-10" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-11" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-12" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-13" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-14" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-15" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-16" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-17" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-18" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-19" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-20" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-21" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-22" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-08-23" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-08-24" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-08-25" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-08-26" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-08-27" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-08-28" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-08-29" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-08-30" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-08-31" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-01" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-02" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-03" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-04" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-05" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-06" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-07" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-08" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-09" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-10" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-11" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-12" Price="277.00" DescId="1" />
+                <PerDayPrice Day="2016-09-13" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-14" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-15" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-16" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-17" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-18" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-19" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-20" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-21" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-22" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-23" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-24" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-25" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-26" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-27" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-28" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-29" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-09-30" Price="293.00" DescId="1" />
+                <PerDayPrice Day="2016-10-01" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-02" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-03" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-04" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-05" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-06" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-07" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-08" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-09" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-10" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-11" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-12" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-13" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-14" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-15" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-16" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-17" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-18" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-19" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-20" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-21" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-22" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-23" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-24" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-25" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-26" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-27" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-28" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-29" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-30" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-10-31" Price="348.00" DescId="1" />
+                <PerDayPrice Day="2016-01-05" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-06" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-07" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-08" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-09" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-10" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-11" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-12" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-13" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-14" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-15" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-16" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-17" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-18" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-19" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-20" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-21" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-22" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-23" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-24" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-25" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-26" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-27" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-28" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-29" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-30" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-31" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-01" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-02" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-03" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-04" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-05" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-06" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-07" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-08" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-09" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-10" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-11" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-12" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-13" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-14" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-15" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-16" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-17" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-18" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-19" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-20" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-21" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-22" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-23" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-24" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-25" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-26" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-27" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-28" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-01" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-02" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-03" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-04" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-05" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-06" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-07" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-08" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-09" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-10" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-11" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-12" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-13" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-14" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-15" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-16" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-17" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-18" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-19" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-20" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-21" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-22" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-23" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-24" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-25" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-26" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-27" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-28" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-29" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-30" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-31" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-01" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-02" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-03" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-04" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-05" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-06" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-07" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-08" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-09" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-10" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-11" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-12" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-13" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-14" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-15" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-16" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-17" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-18" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-19" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-20" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-21" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-22" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-23" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-24" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-25" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-26" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-27" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-28" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-29" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-30" AgeTo="18" Price="0.00" DescId="2" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-05" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-06" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-07" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-08" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-09" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-10" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-11" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-12" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-13" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-14" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-15" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-16" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-17" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-18" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-19" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-20" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-21" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-22" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-23" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-24" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-25" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-26" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-27" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-28" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-29" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-30" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-01-31" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-01" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-02" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-03" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-04" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-05" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-06" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-07" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-08" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-09" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-10" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-11" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-12" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-13" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-14" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-15" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-16" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-17" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-18" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-19" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-20" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-21" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-22" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-23" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-24" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-25" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-26" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-27" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-28" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-01" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-02" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-03" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-04" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-05" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-06" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-07" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-08" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-09" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-10" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-11" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-12" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-13" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-14" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-15" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-16" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-17" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-18" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-19" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-20" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-21" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-22" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-23" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-24" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-25" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-26" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-27" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-28" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-29" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-30" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-03-31" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-01" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-02" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-03" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-04" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-05" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-06" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-07" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-08" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-09" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-10" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-11" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-12" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-13" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-14" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-15" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-16" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-17" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-18" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-19" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-20" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-21" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-22" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-23" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-24" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-25" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-26" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-27" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-28" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-29" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-04-30" AgeTo="2" Price="0.00" DescId="3" AgeFrom="0" ChildIdxNr="1" />
+            </PerDayPrices>
+            <AddPerDayPrices />
+            <OneTimes />
+            <SpecialOffers>
+                <SpecialOffer Baby="0" Days="10" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="4" DateFrom="2016-10-01" RuleType="Always" AddAmount="0.00" DayString="10" PayNights="7" ToDayBase="10" FromDayBase="10" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
+                <SpecialOffer Baby="0" Days="7" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="4" DateFrom="2016-10-01" RuleType="Always" AddAmount="0.00" DayString="7" PayNights="5" ToDayBase="7" FromDayBase="7" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
+                <SpecialOffer Baby="0" Days="4" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="4" DateFrom="2016-10-01" RuleType="Always" AddAmount="0.00" DayString="4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
+            </SpecialOffers>
+            <EarlyBookings>
+                <EarlyBooking ToDay="0" DateTo="2016-10-31" DescId="5" FromDay="0" Percent="-10.00" DateFrom="2016-10-01" AddAmount="0.00" EndDateRelevant="0" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
+            </EarlyBookings>
+        </Currency>
+    </Prices>
+    <Allotments>
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-02-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-03-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-04-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-05-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-06-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-07-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-08-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-09-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-10-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-11-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2015-12-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-01-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-02-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-03-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-04-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-05-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-06-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-07-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-08-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-09-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-10-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-11-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2016-12-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-01-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-02-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-23" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-24" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-25" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-26" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-27" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-28" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-29" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-30" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-03-31" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-01" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-02" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-03" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-04" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-05" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-06" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-07" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-08" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-09" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-04-17" />
+    </Allotments>
+</Hotel>
