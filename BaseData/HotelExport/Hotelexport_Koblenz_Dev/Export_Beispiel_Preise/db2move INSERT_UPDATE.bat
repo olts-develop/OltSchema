@@ -1,1 +1,0 @@
-db2move TUI import -u db2admin -p gagaga -io INSERT_UPDATE
