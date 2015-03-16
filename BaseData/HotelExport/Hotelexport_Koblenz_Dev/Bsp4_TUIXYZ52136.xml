@@ -125,6 +125,7 @@
                 <PerDayPrice Day="2016-02-26" Price="141.00" DescId="1" />
                 <PerDayPrice Day="2016-02-27" Price="141.00" DescId="1" />
                 <PerDayPrice Day="2016-02-28" Price="141.00" DescId="1" />
+                <PerDayPrice Day="2016-02-29" Price="141.00" DescId="1" />
                 <PerDayPrice Day="2016-03-01" Price="141.00" DescId="1" />
                 <PerDayPrice Day="2016-03-02" Price="141.00" DescId="1" />
                 <PerDayPrice Day="2016-03-03" Price="141.00" DescId="1" />
@@ -380,7 +381,6 @@
         </Currency>
     </Prices>
     <Allotments>
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-02-18" Date="2015-03-04" MinStay="2015-03-03" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-02-19" Date="2015-03-05" MinStay="2015-03-04" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-02-20" Date="2015-03-06" MinStay="2015-03-05" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-02-21" Date="2015-03-07" MinStay="2015-03-06" />
@@ -1179,6 +1179,7 @@
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-08" />
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-09" />
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-11" />
     </Allotments>
     <CancellationFees InternalPriceType="CANCELLATIONFEE">
         <CancellationFee>

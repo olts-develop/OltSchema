@@ -186,6 +186,7 @@ Transfer to/from Hotel included
                 <PerDayPrice Day="2016-02-26" Price="527.00" DescId="1" />
                 <PerDayPrice Day="2016-02-27" Price="527.00" DescId="1" />
                 <PerDayPrice Day="2016-02-28" Price="527.00" DescId="1" />
+                <PerDayPrice Day="2016-02-29" Price="527.00" DescId="1" />
                 <PerDayPrice Day="2016-03-01" Price="527.00" DescId="1" />
                 <PerDayPrice Day="2016-03-02" Price="527.00" DescId="1" />
                 <PerDayPrice Day="2016-03-03" Price="527.00" DescId="1" />
@@ -646,6 +647,10 @@ Transfer to/from Hotel included
                 <PerDayPrice Day="2016-02-28" Type="R" AgeTo="12" Price="43.00" DescId="2" AgeFrom="7" ChildIdxNr="1" SpecialCommission="5.00" />
                 <PerDayPrice Day="2016-02-28" AgeTo="12" Price="-49.00" DescId="4" AgeFrom="2" ChildIdxNr="1" />
                 <PerDayPrice Day="2016-02-28" Type="R" AgeTo="12" Price="-43.00" DescId="5" AgeFrom="7" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-29" AgeTo="12" Price="49.00" DescId="3" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-29" Type="R" AgeTo="12" Price="43.00" DescId="2" AgeFrom="7" ChildIdxNr="1" SpecialCommission="5.00" />
+                <PerDayPrice Day="2016-02-29" AgeTo="12" Price="-49.00" DescId="4" AgeFrom="2" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-29" Type="R" AgeTo="12" Price="-43.00" DescId="5" AgeFrom="7" ChildIdxNr="1" />
                 <PerDayPrice Day="2016-03-01" AgeTo="12" Price="49.00" DescId="3" AgeFrom="2" ChildIdxNr="1" />
                 <PerDayPrice Day="2016-03-01" Type="R" AgeTo="12" Price="43.00" DescId="2" AgeFrom="7" ChildIdxNr="1" SpecialCommission="5.00" />
                 <PerDayPrice Day="2016-03-01" AgeTo="12" Price="-49.00" DescId="4" AgeFrom="2" ChildIdxNr="1" />
@@ -1657,6 +1662,10 @@ Transfer to/from Hotel included
                 <PerDayPrice Day="2016-02-28" Type="R" AgeTo="12" Price="43.00" DescId="2" AgeFrom="7" ChildIdxNr="2" SpecialCommission="5.00" />
                 <PerDayPrice Day="2016-02-28" AgeTo="12" Price="-49.00" DescId="6" AgeFrom="2" ChildIdxNr="2" />
                 <PerDayPrice Day="2016-02-28" Type="R" AgeTo="12" Price="-43.00" DescId="7" AgeFrom="7" ChildIdxNr="2" />
+                <PerDayPrice Day="2016-02-29" AgeTo="12" Price="49.00" DescId="3" AgeFrom="2" ChildIdxNr="2" />
+                <PerDayPrice Day="2016-02-29" Type="R" AgeTo="12" Price="43.00" DescId="2" AgeFrom="7" ChildIdxNr="2" SpecialCommission="5.00" />
+                <PerDayPrice Day="2016-02-29" AgeTo="12" Price="-49.00" DescId="6" AgeFrom="2" ChildIdxNr="2" />
+                <PerDayPrice Day="2016-02-29" Type="R" AgeTo="12" Price="-43.00" DescId="7" AgeFrom="7" ChildIdxNr="2" />
                 <PerDayPrice Day="2016-03-01" AgeTo="12" Price="49.00" DescId="3" AgeFrom="2" ChildIdxNr="2" />
                 <PerDayPrice Day="2016-03-01" Type="R" AgeTo="12" Price="43.00" DescId="2" AgeFrom="7" ChildIdxNr="2" SpecialCommission="5.00" />
                 <PerDayPrice Day="2016-03-01" AgeTo="12" Price="-49.00" DescId="6" AgeFrom="2" ChildIdxNr="2" />
@@ -2512,6 +2521,7 @@ Transfer to/from Hotel included
                 <PerDayPrice Day="2016-02-26" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="1" />
                 <PerDayPrice Day="2016-02-27" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="1" />
                 <PerDayPrice Day="2016-02-28" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="1" />
+                <PerDayPrice Day="2016-02-29" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="1" />
                 <PerDayPrice Day="2016-03-01" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="1" />
                 <PerDayPrice Day="2016-03-02" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="1" />
                 <PerDayPrice Day="2016-03-03" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="1" />
@@ -2816,6 +2826,7 @@ Transfer to/from Hotel included
                 <PerDayPrice Day="2016-02-26" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="2" />
                 <PerDayPrice Day="2016-02-27" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="2" />
                 <PerDayPrice Day="2016-02-28" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="2" />
+                <PerDayPrice Day="2016-02-29" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="2" />
                 <PerDayPrice Day="2016-03-01" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="2" />
                 <PerDayPrice Day="2016-03-02" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="2" />
                 <PerDayPrice Day="2016-03-03" AgeTo="2" Price="0.00" DescId="8" AgeFrom="0" ChildIdxNr="2" />
@@ -4118,7 +4129,6 @@ Transfer to/from Hotel included
         </Currency>
     </Prices>
     <Allotments>
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-04" Date="2015-03-04" MinStay="2015-03-03" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-05" Date="2015-03-05" MinStay="2015-03-04" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-06" Date="2015-03-06" MinStay="2015-03-05" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-07" Date="2015-03-07" MinStay="2015-03-06" />
@@ -4917,6 +4927,7 @@ Transfer to/from Hotel included
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-08" />
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-09" />
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-10" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-11" />
     </Allotments>
     <CancellationFees InternalPriceType="CANCELLATIONFEE">
         <CancellationFee>
