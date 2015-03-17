@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ISO8859-1' ?>
-<!-- Created with Liquid XML 2015 Designer Edition 13.0.5.5746 (http://www.liquid-technologies.com) -->
+<!-- Created with Liquid XML 2015 Designer Edition 13.0.6.5773 (http://www.liquid-technologies.com) -->
 <Hotel Type="HotelRoom" System="Test" RoomKey="TUIXYA193642" HotelKey="TUIXYA40766">
     <HotelName>
         <de>Six Senses Laamu</de>
@@ -4116,11 +4116,11 @@ Transfer to/from Hotel included
                 <OneTime Price="426.00" DateTo="2016-10-31" DescId="13" DateFrom="2015-11-01" AlwaysApply="0" WeekdaysValid="1111111" EndDateRelevant="0" SpecialCommission="5.00" StartDateRelevant="1" NotSpecialRelevant="1" />
             </OneTimes>
             <SpecialOffers>
-                <SpecialOffer Baby="0" Days="5" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="14" DateFrom="2016-05-01" RuleType="Always" AddAmount="86.00" DayString="5" PayNights="4" ToDayBase="5" FromDayBase="5" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
-                <SpecialOffer Baby="0" Days="10" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="14" DateFrom="2016-05-01" RuleType="Always" AddAmount="86.00" DayString="10" PayNights="8" ToDayBase="10" FromDayBase="10" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
-                <SpecialOffer Baby="0" Days="15" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="14" DateFrom="2016-05-01" RuleType="Always" AddAmount="86.00" DayString="15" PayNights="12" ToDayBase="15" FromDayBase="15" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
-                <SpecialOffer Baby="0" Days="14" Type="MinValue" Child="0" DateTo="2016-04-30" DescId="15" DateFrom="2016-01-08" RuleType="Always" AddAmount="86.00" DayString="14" PayNights="12" ToDayBase="14" FromDayBase="14" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
-                <SpecialOffer Baby="0" Days="7" Type="MinValue" Child="0" DateTo="2016-04-30" DescId="15" DateFrom="2016-01-08" RuleType="Always" AddAmount="86.00" DayString="7" PayNights="6" ToDayBase="7" FromDayBase="7" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
+                <SpecialOffer Baby="0" Days="5" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="14" DateFrom="2016-05-01" RuleType="Always" AddAmount="86.00" DayString="5" PayNights="4" ToDayBase="5" FromDayBase="5" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="1" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
+                <SpecialOffer Baby="0" Days="10" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="14" DateFrom="2016-05-01" RuleType="Always" AddAmount="86.00" DayString="10" PayNights="8" ToDayBase="10" FromDayBase="10" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="2" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
+                <SpecialOffer Baby="0" Days="15" Type="MinValue" Child="0" DateTo="2016-10-31" DescId="14" DateFrom="2016-05-01" RuleType="Always" AddAmount="86.00" DayString="15" PayNights="12" ToDayBase="15" FromDayBase="15" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="3" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
+                <SpecialOffer Baby="0" Days="14" Type="MinValue" Child="0" DateTo="2016-04-30" DescId="15" DateFrom="2016-01-08" RuleType="Always" AddAmount="86.00" DayString="14" PayNights="12" ToDayBase="14" FromDayBase="14" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="4" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
+                <SpecialOffer Baby="0" Days="7" Type="MinValue" Child="0" DateTo="2016-04-30" DescId="15" DateFrom="2016-01-08" RuleType="Always" AddAmount="86.00" DayString="7" PayNights="6" ToDayBase="7" FromDayBase="7" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="5" EndDateRelevant="0" LastSpOffEndDate="2016-10-31" StartDateRelevant="0" DaysBeforeDepartureTo="0" DaysBeforeDepartureFrom="0" />
             </SpecialOffers>
             <EarlyBookings>
                 <EarlyBooking ToDay="0" DateTo="2016-04-30" DescId="16" FromDay="0" Percent="-10.00" DateFrom="2016-01-08" AddAmount="0.00" EndDateRelevant="0" StartDateRelevant="0" DaysBeforeDepartureTo="90" DaysBeforeDepartureFrom="999" />
@@ -4129,18 +4129,6 @@ Transfer to/from Hotel included
         </Currency>
     </Prices>
     <Allotments>
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-05" Date="2015-03-05" MinStay="2015-03-04" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-06" Date="2015-03-06" MinStay="2015-03-05" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-07" Date="2015-03-07" MinStay="2015-03-06" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-08" Date="2015-03-08" MinStay="2015-03-07" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-09" Date="2015-03-09" MinStay="2015-03-08" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-10" Date="2015-03-10" MinStay="2015-03-09" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-11" Date="2015-03-11" MinStay="2015-03-10" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-12" Date="2015-03-12" MinStay="2015-03-11" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-13" Date="2015-03-13" MinStay="2015-03-12" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-14" Date="2015-03-14" MinStay="2015-03-13" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-15" Date="2015-03-15" MinStay="2015-03-14" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-16" Date="2015-03-16" MinStay="2015-03-15" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-17" Date="2015-03-17" MinStay="2015-03-16" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-18" Date="2015-03-18" MinStay="2015-03-17" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-19" Date="2015-03-19" MinStay="2015-03-18" />
@@ -4928,6 +4916,18 @@ Transfer to/from Hotel included
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-09" />
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-10" />
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-23" />
     </Allotments>
     <CancellationFees InternalPriceType="CANCELLATIONFEE">
         <CancellationFee>

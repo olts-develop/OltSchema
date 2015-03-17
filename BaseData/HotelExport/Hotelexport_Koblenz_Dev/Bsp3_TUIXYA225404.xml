@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ISO8859-1' ?>
-<!-- Created with Liquid XML 2015 Designer Edition 13.0.5.5746 (http://www.liquid-technologies.com) -->
+<!-- Created with Liquid XML 2015 Designer Edition 13.0.6.5773 (http://www.liquid-technologies.com) -->
 <Hotel Type="HotelRoom" System="Test" RoomKey="TUIXYA225404" HotelKey="TUIXYA46628">
     <HotelName>
         <de>Paris Las Vegas</de>
@@ -164,12 +164,12 @@
             <AddPerDayPrices />
             <OneTimes />
             <SpecialOffers>
-                <SpecialOffer Baby="0" Days="4" Type="MinValue" Child="0" DateTo="2016-03-31" DescId="2" DateFrom="2016-03-26" RuleType="Nr" AddAmount="0.00" DayString="4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-03-31" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
-                <SpecialOffer Baby="0" Days="8" Type="MinValue" Child="0" DateTo="2016-03-31" DescId="2" DateFrom="2016-03-26" RuleType="Nr" AddAmount="0.00" DayString="4,4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-03-31" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
-                <SpecialOffer Baby="0" Days="12" Type="MinValue" Child="0" DateTo="2016-03-31" DescId="2" DateFrom="2016-03-26" RuleType="Nr" AddAmount="0.00" DayString="4,4,4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-03-31" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
-                <SpecialOffer Baby="0" Days="4" Type="MinValue" Child="0" DateTo="2016-03-18" DescId="2" DateFrom="2016-03-07" RuleType="Nr" AddAmount="0.00" DayString="4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-03-18" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
-                <SpecialOffer Baby="0" Days="8" Type="MinValue" Child="0" DateTo="2016-03-18" DescId="2" DateFrom="2016-03-07" RuleType="Nr" AddAmount="0.00" DayString="4,4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-03-18" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
-                <SpecialOffer Baby="0" Days="12" Type="MinValue" Child="0" DateTo="2016-03-18" DescId="2" DateFrom="2016-03-07" RuleType="Nr" AddAmount="0.00" DayString="4,4,4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" EndDateRelevant="0" LastSpOffEndDate="2016-03-18" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
+                <SpecialOffer Baby="0" Days="4" Type="MinValue" Child="0" DateTo="2016-03-31" DescId="2" DateFrom="2016-03-26" RuleType="Nr" AddAmount="0.00" DayString="4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="1" EndDateRelevant="0" LastSpOffEndDate="2016-03-31" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
+                <SpecialOffer Baby="0" Days="8" Type="MinValue" Child="0" DateTo="2016-03-31" DescId="2" DateFrom="2016-03-26" RuleType="Nr" AddAmount="0.00" DayString="4,4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="1" EndDateRelevant="0" LastSpOffEndDate="2016-03-31" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
+                <SpecialOffer Baby="0" Days="12" Type="MinValue" Child="0" DateTo="2016-03-31" DescId="2" DateFrom="2016-03-26" RuleType="Nr" AddAmount="0.00" DayString="4,4,4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="1" EndDateRelevant="0" LastSpOffEndDate="2016-03-31" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
+                <SpecialOffer Baby="0" Days="4" Type="MinValue" Child="0" DateTo="2016-03-18" DescId="2" DateFrom="2016-03-07" RuleType="Nr" AddAmount="0.00" DayString="4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="2" EndDateRelevant="0" LastSpOffEndDate="2016-03-18" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
+                <SpecialOffer Baby="0" Days="8" Type="MinValue" Child="0" DateTo="2016-03-18" DescId="2" DateFrom="2016-03-07" RuleType="Nr" AddAmount="0.00" DayString="4,4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="2" EndDateRelevant="0" LastSpOffEndDate="2016-03-18" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
+                <SpecialOffer Baby="0" Days="12" Type="MinValue" Child="0" DateTo="2016-03-18" DescId="2" DateFrom="2016-03-07" RuleType="Nr" AddAmount="0.00" DayString="4,4,4" PayNights="3" ToDayBase="4" FromDayBase="4" ChildAdultNr="0" ChildChildNr="0" WeekdaysValid="1111111" RevolvingGroup="2" EndDateRelevant="0" LastSpOffEndDate="2016-03-18" StartDateRelevant="0" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
             </SpecialOffers>
             <EarlyBookings>
                 <EarlyBooking ToDay="99" DateTo="2016-03-31" DescId="3" FromDay="1" DateFrom="2015-09-12" AddAmount="0.00" ForceDisplay="1" EndDateRelevant="1" StartDateRelevant="1" DaysBeforeDepartureTo="1" DaysBeforeDepartureFrom="999" />
@@ -177,18 +177,6 @@
         </Currency>
     </Prices>
     <Allotments>
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-05" Date="2015-03-05" MinStay="2015-03-04" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-06" Date="2015-03-06" MinStay="2015-03-05" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-07" Date="2015-03-07" MinStay="2015-03-06" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-08" Date="2015-03-08" MinStay="2015-03-07" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-09" Date="2015-03-09" MinStay="2015-03-08" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-10" Date="2015-03-10" MinStay="2015-03-09" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-11" Date="2015-03-11" MinStay="2015-03-10" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-12" Date="2015-03-12" MinStay="2015-03-11" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-13" Date="2015-03-13" MinStay="2015-03-12" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-14" Date="2015-03-14" MinStay="2015-03-13" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-15" Date="2015-03-15" MinStay="2015-03-14" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-16" Date="2015-03-16" MinStay="2015-03-15" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-17" Date="2015-03-17" MinStay="2015-03-16" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-18" Date="2015-03-18" MinStay="2015-03-17" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-19" Date="2015-03-19" MinStay="2015-03-18" />
@@ -551,28 +539,28 @@
         <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-10" Date="2016-03-10" MinStay="2016-03-09" />
         <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-11" Date="2016-03-11" MinStay="2016-03-10" />
         <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-12" Date="2016-03-12" MinStay="2016-03-11" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-13" Date="2016-03-13" MinStay="2016-03-12" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-14" Date="2016-03-14" MinStay="2016-03-13" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-15" Date="2016-03-15" MinStay="2016-03-14" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-16" Date="2016-03-16" MinStay="2016-03-15" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-17" Date="2016-03-17" MinStay="2016-03-16" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-18" Date="2016-03-18" MinStay="2016-03-17" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-19" Date="2016-03-19" MinStay="2016-03-18" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-20" Date="2016-03-20" MinStay="2016-03-19" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-21" Date="2016-03-21" MinStay="2016-03-20" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-22" Date="2016-03-22" MinStay="2016-03-21" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-23" Date="2016-03-23" MinStay="2016-03-22" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-24" Date="2016-03-24" MinStay="2016-03-23" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-25" Date="2016-03-25" MinStay="2016-03-24" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-26" Date="2016-03-26" MinStay="2016-03-25" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-27" Date="2016-03-27" MinStay="2016-03-26" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-28" Date="2016-03-28" MinStay="2016-03-27" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-29" Date="2016-03-29" MinStay="2016-03-28" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-30" Date="2016-03-30" MinStay="2016-03-29" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-03-31" Date="2016-03-31" MinStay="2016-03-30" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-04-01" Date="2016-04-01" MinStay="2016-03-31" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-04-02" Date="2016-04-02" MinStay="2016-04-01" />
-        <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-04-03" Date="2016-04-03" MinStay="2016-04-02" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-13" Date="2016-03-13" MinStay="2016-03-12" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-14" Date="2016-03-14" MinStay="2016-03-13" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-15" Date="2016-03-15" MinStay="2016-03-14" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-16" Date="2016-03-16" MinStay="2016-03-15" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-17" Date="2016-03-17" MinStay="2016-03-16" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-18" Date="2016-03-18" MinStay="2016-03-17" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-19" Date="2016-03-19" MinStay="2016-03-18" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-20" Date="2016-03-20" MinStay="2016-03-19" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-21" Date="2016-03-21" MinStay="2016-03-20" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-22" Date="2016-03-22" MinStay="2016-03-21" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-23" Date="2016-03-23" MinStay="2016-03-22" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-24" Date="2016-03-24" MinStay="2016-03-23" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-25" Date="2016-03-25" MinStay="2016-03-24" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-26" Date="2016-03-26" MinStay="2016-03-25" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-27" Date="2016-03-27" MinStay="2016-03-26" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-28" Date="2016-03-28" MinStay="2016-03-27" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-29" Date="2016-03-29" MinStay="2016-03-28" />
+        <Allotment Av="98.00" FS="0" RQ="0" Rel="2016-03-30" Date="2016-03-30" MinStay="2016-03-29" />
+        <Allotment Av="99.00" FS="0" RQ="0" Rel="2016-03-31" Date="2016-03-31" MinStay="2016-03-30" />
+        <Allotment Av="99.00" FS="0" RQ="0" Rel="2016-04-01" Date="2016-04-01" MinStay="2016-03-31" />
+        <Allotment Av="99.00" FS="0" RQ="0" Rel="2016-04-02" Date="2016-04-02" MinStay="2016-04-01" />
+        <Allotment Av="99.00" FS="0" RQ="0" Rel="2016-04-03" Date="2016-04-03" MinStay="2016-04-02" />
         <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-04-04" Date="2016-04-04" MinStay="2016-04-03" />
         <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-04-05" Date="2016-04-05" MinStay="2016-04-04" />
         <Allotment Av="100.00" FS="0" RQ="0" Rel="2016-04-06" Date="2016-04-06" MinStay="2016-04-05" />
@@ -976,5 +964,17 @@
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-09" />
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-10" />
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-23" />
     </Allotments>
 </Hotel>

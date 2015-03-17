@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ISO8859-1' ?>
-<!-- Created with Liquid XML 2015 Designer Edition 13.0.5.5746 (http://www.liquid-technologies.com) -->
+<!-- Created with Liquid XML 2015 Designer Edition 13.0.6.5773 (http://www.liquid-technologies.com) -->
 <Hotel Type="HotelRoom" System="Test" RoomKey="TUIXYA166116" HotelKey="TUIXYA40808">
     <HotelName>
         <de>Layana Resort &amp; Spa Koh Lanta</de>
@@ -69,18 +69,6 @@
     <Prices>
         <Currency IsoCode="CHF">
             <PerDayPrices>
-                <PerDayPrice Day="2015-03-05" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-06" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-07" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-08" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-09" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-10" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-11" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-12" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-13" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-14" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-15" Price="286.00" DescId="1" />
-                <PerDayPrice Day="2015-03-16" Price="286.00" DescId="1" />
                 <PerDayPrice Day="2015-03-17" Price="286.00" DescId="1" />
                 <PerDayPrice Day="2015-03-18" Price="286.00" DescId="1" />
                 <PerDayPrice Day="2015-03-19" Price="286.00" DescId="1" />
@@ -642,18 +630,6 @@
         </Currency>
     </Prices>
     <Allotments>
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-05" Date="2015-03-05" MinStay="2015-03-04" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-06" Date="2015-03-06" MinStay="2015-03-05" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-07" Date="2015-03-07" MinStay="2015-03-06" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-08" Date="2015-03-08" MinStay="2015-03-07" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-09" Date="2015-03-09" MinStay="2015-03-08" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-10" Date="2015-03-10" MinStay="2015-03-09" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-11" Date="2015-03-11" MinStay="2015-03-10" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-12" Date="2015-03-12" MinStay="2015-03-11" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-13" Date="2015-03-13" MinStay="2015-03-12" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-14" Date="2015-03-14" MinStay="2015-03-13" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-15" Date="2015-03-15" MinStay="2015-03-14" />
-        <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-16" Date="2015-03-16" MinStay="2015-03-15" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-17" Date="2015-03-17" MinStay="2015-03-16" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-18" Date="2015-03-18" MinStay="2015-03-17" />
         <Allotment Av="100.00" FS="0" RQ="1" Rel="2015-03-19" Date="2015-03-19" MinStay="2015-03-18" />
@@ -1441,6 +1417,18 @@
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-09" />
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-10" />
         <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-11" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-12" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-13" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-14" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-15" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-16" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-17" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-18" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-19" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-20" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-21" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-22" />
+        <Allotment Av="0.00" FS="0" RQ="1" Date="2017-05-23" />
     </Allotments>
     <CancellationFees InternalPriceType="CANCELLATIONFEE">
         <CancellationFee>
