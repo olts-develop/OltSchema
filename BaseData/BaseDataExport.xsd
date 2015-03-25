@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2015 Designer Edition 13.0.7.5787 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2015 Designer Edition 13.0.8.5799 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\BaseData.xsd" />
     <xs:complexType name="PerDayPricesChildren">
@@ -124,7 +124,6 @@
             </xs:annotation>
         </xs:attribute>
         <xs:attributeGroup ref="DateFromToAttributeGroup" />
-        <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
         <xs:attributeGroup ref="AddAmountAttributeGroup" />
         <xs:attributeGroup ref="DescIdAttributeGroup" />
         <xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" />
