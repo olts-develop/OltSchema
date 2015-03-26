@@ -12,6 +12,17 @@
         <xs:attributeGroup ref="DayAttributeGroup" />
         <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
     </xs:complexType>
+    <xs:complexType name="PeriodPricesChildren">
+        <xs:sequence>
+            <xs:element name="PeriodPrice" type="PeriodPriceAttributes" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PeriodPriceAttributes">
+        <xs:attributeGroup ref="SellGeneralAttributeGroup" />
+        <xs:attributeGroup ref="DayAttributeGroup" />
+        <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
+        <xs:attribute name="MaxNrNights" type="xs:nonNegativeInteger" />
+    </xs:complexType>
     <xs:complexType name="AddPerDayPricesChildren">
         <xs:sequence>
             <xs:element name="AddPerDayPrice" type="AddPerDayPriceAttributes" minOccurs="0" maxOccurs="unbounded" />
