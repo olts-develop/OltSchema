@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2015 Designer Edition 13.0.8.5799 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2015 Designer Edition 13.0.9.5818 (http://www.liquid-technologies.com)-->
 <xs:schema xmlns:ns0="http://xml.netbeans.org/schema/Descriptions" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="..\BaseDataExport.xsd" />
     <xs:element name="Hotel">
@@ -207,6 +207,7 @@
                                 <xs:complexType>
                                     <xs:all>
                                         <xs:element name="PeriodPrices" type="PeriodPricesChildren" minOccurs="0" />
+                                        <xs:element name="AddPeriodPrices" type="AddPeriodPricesChildren" minOccurs="0" />
                                         <xs:element name="PerDayPrices" type="PerDayPricesChildren" minOccurs="0" />
                                         <xs:element name="AddPerDayPrices" type="AddPerDayPricesChildren" minOccurs="0" />
                                         <xs:element name="OneTimes" type="OneTimesChildren" minOccurs="0" />
