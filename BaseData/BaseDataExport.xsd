@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2015 Designer Edition 13.0.8.5799 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2015 Designer Edition 13.0.9.5818 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\BaseData.xsd" />
     <xs:complexType name="PerDayPricesChildren">
@@ -19,9 +19,20 @@
     </xs:complexType>
     <xs:complexType name="PeriodPriceAttributes">
         <xs:attributeGroup ref="SellGeneralAttributeGroup" />
-        <xs:attributeGroup ref="DayAttributeGroup" />
         <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
         <xs:attribute name="MaxNrNights" type="xs:nonNegativeInteger" />
+        <xs:attributeGroup ref="DateFromToAttributeGroup" />
+    </xs:complexType>
+    <xs:complexType name="AddPeriodPriceAttributes">
+        <xs:attributeGroup ref="SellGeneralAttributeGroup" />
+        <xs:attributeGroup ref="DateFromToAttributeGroup" />
+        <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
+        <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
+    </xs:complexType>
+    <xs:complexType name="AddPeriodPricesChildren">
+        <xs:sequence>
+            <xs:element name="AddPeriodPrice" type="AddPeriodPriceAttributes" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
     </xs:complexType>
     <xs:complexType name="AddPerDayPricesChildren">
         <xs:sequence>
