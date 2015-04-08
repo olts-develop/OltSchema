@@ -444,7 +444,7 @@
                                                                         </xs:sequence>
                                                                     </xs:complexType>
                                                                 </xs:element>
-                                                                <xs:element name="PeriodPrices" type="PerDayPricesChildren" minOccurs="0" />
+                                                                <xs:element name="PeriodPrices" type="PeriodPricesChildren" minOccurs="0" />
                                                                 <xs:element name="AddPeriodPrices" type="AddPeriodPricesChildren" minOccurs="0" />
                                                                 <xs:element name="PerDayPrices" type="PerDayPricesChildren" minOccurs="0" />
                                                                 <xs:element name="AddPerDayPrices" type="AddPerDayPricesChildren" minOccurs="0" />
