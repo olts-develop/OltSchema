@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2015 Designer Edition 13.0.9.5818 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2015 Designer Edition 13.0.10.5832 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\BaseData.xsd" />
     <xs:complexType name="PerDayPricesChildren">
@@ -126,7 +126,7 @@
                 <xs:documentation>determines how the special offer is to be used.
                     Always = the special offer is always valid
                     Nr = the attributes DaysBeforeDepartureFrom and DaysBeforeDepartureTo are valid for the calculation
-                    Date = the attributes DateBeforeDepartureFrom and DateBeforeDepartureTo are valid for the calculatio</xs:documentation>
+                    Date = the attributes DateBeforeDepartureFrom and DateBeforeDepartureTo are valid for the calculation</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="SpecialCommission" type="xs:float">
@@ -157,6 +157,11 @@ What this means is, that one can stay 21 pay 15, or stay 14 pay 10, or stay 7 pa
 The BaseDataExport will export each revolving element as a separate SpecialOffer node entity with a corresponding number of Days (21, 14, 7) so that a user of the interface can determine which special fits best for a given date range, but once a special has been used, it may not be used again.
 This is important in the case of a revolving special. In the affore mentioned example, I cannot use the 21/15 and then add a 7/5, as the 7/5 is part of the revolving rule. If the hotel wanted me to be able to book a 28/20, then the revolving would have been entered appropriately with a revolving nr of 4 or more, but in this case the maximum rule allowed is 21/15.
 The RevolvingGroup can be used to identify all common specials belonging to the same rule so that after being used once, the rule can be ignored in the further processing for the booking.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Days" type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>Number of Days for which this special is valid.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:complexType>
