@@ -36,16 +36,14 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="227,773,512,843" href="specialcommissionflag.html" alt="Drilldown into SpecialCommissionFlag"></area>
-                     <area shape="rect" coords="227,671,533,766" href="specialcommission.html" alt="Drilldown into SpecialCommission"></area>
-                     <area shape="rect" coords="207,646,541,854" href="specialcommissionattributegroup.html" alt="Drilldown into SpecialCommissionAttributeGroup"></area>
-                     <area shape="rect" coords="207,557,467,638" href="notspecialrelevant.html" alt="Drilldown into NotSpecialRelevant"></area>
-                     <area shape="rect" coords="207,459,514,550" href="ageto.html" alt="Drilldown into AgeTo"></area>
-                     <area shape="rect" coords="207,350,514,451" href="agefrom.html" alt="Drilldown into AgeFrom"></area>
-                     <area shape="rect" coords="207,262,348,343" href="type.html" alt="Drilldown into Type"></area>
-                     <area shape="rect" coords="207,200,513,255" href="price.html" alt="Drilldown into Price"></area>
-                     <area shape="rect" coords="227,27,518,183" href="descid.html" alt="Drilldown into DescId"></area>
-                     <area shape="rect" coords="207,2,526,193" href="descidattributegroup.html" alt="Drilldown into DescIdAttributeGroup"></area></map><img src="images/sellgeneralattributegroup.png" border="0" alt="XSD Diagram of SellGeneralAttributeGroup" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="228,568,514,638" href="specialcommissionflag.html" alt="Drilldown into SpecialCommissionFlag"></area>
+                     <area shape="rect" coords="228,466,534,561" href="specialcommission.html" alt="Drilldown into SpecialCommission"></area>
+                     <area shape="rect" coords="208,441,542,649" href="specialcommissionattributegroup.html" alt="Drilldown into SpecialCommissionAttributeGroup"></area>
+                     <area shape="rect" coords="208,352,469,433" href="notspecialrelevant.html" alt="Drilldown into NotSpecialRelevant"></area>
+                     <area shape="rect" coords="208,263,350,344" href="type.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="208,201,514,256" href="price.html" alt="Drilldown into Price"></area>
+                     <area shape="rect" coords="228,27,519,183" href="descid.html" alt="Drilldown into DescId"></area>
+                     <area shape="rect" coords="208,2,527,193" href="descidattributegroup.html" alt="Drilldown into DescIdAttributeGroup"></area></map><img src="images/sellgeneralattributegroup.png" border="0" alt="XSD Diagram of SellGeneralAttributeGroup" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -72,28 +70,6 @@
             &lt;xs:restriction base="xs:string"&gt;
                 &lt;xs:enumeration value="P" /&gt;
                 &lt;xs:enumeration value="R" /&gt;
-            &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-    &lt;/xs:attribute&gt;
-    &lt;xs:attribute name="AgeFrom"&gt;
-        &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:simpleType&gt;
-            &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
-                &lt;xs:minInclusive value="0" /&gt;
-                &lt;xs:maxInclusive value="150" /&gt;
-            &lt;/xs:restriction&gt;
-        &lt;/xs:simpleType&gt;
-    &lt;/xs:attribute&gt;
-    &lt;xs:attribute name="AgeTo"&gt;
-        &lt;xs:annotation&gt;
-            &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is per non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-        &lt;xs:simpleType&gt;
-            &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
-                &lt;xs:minInclusive value="0" /&gt;
-                &lt;xs:maxInclusive value="150" /&gt;
             &lt;/xs:restriction&gt;
         &lt;/xs:simpleType&gt;
     &lt;/xs:attribute&gt;
@@ -148,18 +124,6 @@
                         <td class="last">(Optional)</td>
                      </tr>
                      <tr>
-                        <td class="first">AgeFrom</td>
-                        <td><a href="agefrom.html">AgeFrom</a></td>
-                        <td class="mid"></td>
-                        <td class="last">(Optional)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">AgeTo</td>
-                        <td><a href="ageto.html">AgeTo</a></td>
-                        <td class="mid"></td>
-                        <td class="last">(Optional)</td>
-                     </tr>
-                     <tr>
                         <td class="first">NotSpecialRelevant</td>
                         <td><a href="notspecialrelevant.html">NotSpecialRelevant</a></td>
                         <td class="mid"></td>
@@ -185,6 +149,6 @@
       <div class="pagefooter">
          			Documentation for Hotel Export<br/>
          Generated using 
-         <a href="http://www.liquid-technologies.com/" rel="nofollow">Liquid XML 2015 Designer Edition 13.0.10.5832</a></div>
+         <a href="http://www.liquid-technologies.com/" rel="nofollow">Liquid XML 2015 Designer Edition 13.0.14.5873</a></div>
    </body>
 </html>

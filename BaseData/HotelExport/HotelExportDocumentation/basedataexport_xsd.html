@@ -28,19 +28,9 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>
-&lt;!--Created with Liquid XML 2015 Designer Edition 13.0.10.5832 (http://www.liquid-technologies.com)--&gt;
+&lt;!--Created with Liquid XML 2015 Designer Edition 13.0.14.5873 (http://www.liquid-technologies.com)--&gt;
 &lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
     &lt;xs:include schemaLocation=".\BaseData.xsd" /&gt;
-    &lt;xs:complexType name="PerDayPricesChildren"&gt;
-        &lt;xs:sequence&gt;
-            &lt;xs:element name="PerDayPrice" type="PerDayPriceAttributes" minOccurs="0" maxOccurs="unbounded" /&gt;
-        &lt;/xs:sequence&gt;
-    &lt;/xs:complexType&gt;
-    &lt;xs:complexType name="PerDayPriceAttributes"&gt;
-        &lt;xs:attributeGroup ref="SellGeneralAttributeGroup" /&gt;
-        &lt;xs:attributeGroup ref="DayAttributeGroup" /&gt;
-        &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
-    &lt;/xs:complexType&gt;
     &lt;xs:complexType name="PeriodPricesChildren"&gt;
         &lt;xs:sequence&gt;
             &lt;xs:element name="PeriodPrice" type="PeriodPriceAttributes" minOccurs="0" maxOccurs="unbounded" /&gt;
@@ -63,6 +53,17 @@
             &lt;xs:element name="AddPeriodPrice" type="AddPeriodPriceAttributes" minOccurs="0" maxOccurs="unbounded" /&gt;
         &lt;/xs:sequence&gt;
     &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="PerDayPricesChildren"&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="PerDayPrice" type="PerDayPriceAttributes" minOccurs="0" maxOccurs="unbounded" /&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="PerDayPriceAttributes"&gt;
+        &lt;xs:attributeGroup ref="SellGeneralAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="DayAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="AgeFromToGroup" /&gt;
+    &lt;/xs:complexType&gt;
     &lt;xs:complexType name="AddPerDayPricesChildren"&gt;
         &lt;xs:sequence&gt;
             &lt;xs:element name="AddPerDayPrice" type="AddPerDayPriceAttributes" minOccurs="0" maxOccurs="unbounded" /&gt;
@@ -73,6 +74,7 @@
         &lt;xs:attributeGroup ref="DateFromToAttributeGroup" /&gt;
         &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
         &lt;xs:attributeGroup ref="WeekdaysValidAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="AgeFromToGroup" /&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:complexType name="OneTimesChildren"&gt;
         &lt;xs:sequence&gt;
@@ -251,12 +253,22 @@ The RevolvingGroup can be used to identify all common specials belonging to the 
         &lt;xs:attributeGroup ref="AddAmountAttributeGroup" /&gt;
         &lt;xs:attributeGroup ref="DescIdAttributeGroup" /&gt;
         &lt;xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" /&gt;
+        &lt;xs:attribute name="RuleType" type="xs:string"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;determines how the special offer is to be used.
+                    Nr = the attributes DaysBeforeDepartureFrom and DaysBeforeDepartureTo are valid for the calculation
+                    Date = the attributes DateBeforeDepartureFrom and DateBeforeDepartureTo are valid for the calculation&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
         &lt;xs:attribute name="MaxNrNights" type="xs:nonNegativeInteger"&gt;
             &lt;xs:annotation&gt;
                 &lt;xs:documentation&gt;A special offer can be connected to the number of stay nights. If one stays 7 nights the special offer can be different to a stay of 14 nights. The value in this field identified the maximum number of nights for which this rule is relevant.&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
         &lt;xs:attributeGroup ref="BabyChildAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="WeekdaysValidAttributeGroup" /&gt;
+        &lt;xs:attributeGroup ref="AgeFromToGroup" /&gt;
     &lt;/xs:complexType&gt;
     &lt;xs:attributeGroup name="DateFromToAttributeGroup"&gt;
         &lt;xs:attribute name="DateFrom" type="xs:date" use="required"&gt;
@@ -300,6 +312,30 @@ The RevolvingGroup can be used to identify all common specials belonging to the 
                 &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
                     &lt;xs:enumeration value="0" /&gt;
                     &lt;xs:enumeration value="1" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+    &lt;xs:attributeGroup name="AgeFromToGroup"&gt;
+        &lt;xs:attribute name="AgeFrom"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:minInclusive value="0" /&gt;
+                    &lt;xs:maxInclusive value="150" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="AgeTo"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is per non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:minInclusive value="0" /&gt;
+                    &lt;xs:maxInclusive value="150" /&gt;
                 &lt;/xs:restriction&gt;
             &lt;/xs:simpleType&gt;
         &lt;/xs:attribute&gt;
@@ -365,28 +401,6 @@ The RevolvingGroup can be used to identify all common specials belonging to the 
                 &lt;xs:restriction base="xs:string"&gt;
                     &lt;xs:enumeration value="P" /&gt;
                     &lt;xs:enumeration value="R" /&gt;
-                &lt;/xs:restriction&gt;
-            &lt;/xs:simpleType&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AgeFrom"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-            &lt;xs:simpleType&gt;
-                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
-                    &lt;xs:minInclusive value="0" /&gt;
-                    &lt;xs:maxInclusive value="150" /&gt;
-                &lt;/xs:restriction&gt;
-            &lt;/xs:simpleType&gt;
-        &lt;/xs:attribute&gt;
-        &lt;xs:attribute name="AgeTo"&gt;
-            &lt;xs:annotation&gt;
-                &lt;xs:documentation&gt;If this is an age relevant price, then it AgeTo is per non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).&lt;/xs:documentation&gt;
-            &lt;/xs:annotation&gt;
-            &lt;xs:simpleType&gt;
-                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
-                    &lt;xs:minInclusive value="0" /&gt;
-                    &lt;xs:maxInclusive value="150" /&gt;
                 &lt;/xs:restriction&gt;
             &lt;/xs:simpleType&gt;
         &lt;/xs:attribute&gt;
@@ -534,7 +548,8 @@ DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo&lt;/xs:docume
             &lt;/xs:element&gt;
         &lt;/xs:all&gt;
     &lt;/xs:complexType&gt;
-&lt;/xs:schema&gt;</code></pre></td>
+&lt;/xs:schema&gt;
+</code></pre></td>
             </tr>
          </tbody>
       </table>
@@ -548,6 +563,7 @@ DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo&lt;/xs:docume
                <td>
                   <ul>
                      <li><a href="addamountattributegroup.html">AddAmountAttributeGroup</a></li>
+                     <li><a href="agefromtogroup.html">AgeFromToGroup</a></li>
                      <li><a href="babychildattributegroup.html">BabyChildAttributeGroup</a></li>
                      <li><a href="childidxnrattributegroup.html">ChildIdxNrAttributeGroup</a></li>
                      <li><a href="datefromtoattributegroup.html">DateFromToAttributeGroup</a></li>
@@ -595,6 +611,6 @@ DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo&lt;/xs:docume
       <div class="pagefooter">
          			Documentation for Hotel Export<br/>
          Generated using 
-         <a href="http://www.liquid-technologies.com/">Liquid XML 2015 Designer Edition 13.0.10.5832</a></div>
+         <a href="http://www.liquid-technologies.com/">Liquid XML 2015 Designer Edition 13.0.14.5873</a></div>
    </body>
 </html>

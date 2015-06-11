@@ -40,21 +40,22 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="261,1011,568,1208" href="childidxnr.html" alt="Drilldown into ChildIdxNr"></area>
-                     <area shape="rect" coords="241,986,576,1218" href="childidxnrattributegroup.html" alt="Drilldown into ChildIdxNrAttributeGroup"></area>
-                     <area shape="rect" coords="261,923,431,968" href="day.html" alt="Drilldown into Day"></area>
-                     <area shape="rect" coords="241,898,439,978" href="dayattributegroup.html" alt="Drilldown into DayAttributeGroup"></area>
-                     <area shape="rect" coords="281,799,566,869" href="specialcommissionflag.html" alt="Drilldown into SpecialCommissionFlag"></area>
-                     <area shape="rect" coords="281,697,587,792" href="specialcommission.html" alt="Drilldown into SpecialCommission"></area>
-                     <area shape="rect" coords="261,672,595,880" href="specialcommissionattributegroup.html" alt="Drilldown into SpecialCommissionAttributeGroup"></area>
-                     <area shape="rect" coords="261,583,521,664" href="notspecialrelevant.html" alt="Drilldown into NotSpecialRelevant"></area>
-                     <area shape="rect" coords="261,485,568,576" href="ageto.html" alt="Drilldown into AgeTo"></area>
-                     <area shape="rect" coords="261,376,568,477" href="agefrom.html" alt="Drilldown into AgeFrom"></area>
-                     <area shape="rect" coords="261,288,402,369" href="type.html" alt="Drilldown into Type"></area>
-                     <area shape="rect" coords="261,226,567,281" href="price.html" alt="Drilldown into Price"></area>
-                     <area shape="rect" coords="281,53,572,209" href="descid.html" alt="Drilldown into DescId"></area>
-                     <area shape="rect" coords="261,28,580,219" href="descidattributegroup.html" alt="Drilldown into DescIdAttributeGroup"></area>
-                     <area shape="rect" coords="241,2,604,890" href="sellgeneralattributegroup.html" alt="Drilldown into SellGeneralAttributeGroup"></area></map><img src="images/perdaypriceattributes.png" border="0" alt="XSD Diagram of PerDayPriceAttributes" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="262,1159,569,1250" href="ageto.html" alt="Drilldown into AgeTo"></area>
+                     <area shape="rect" coords="262,1051,569,1152" href="agefrom.html" alt="Drilldown into AgeFrom"></area>
+                     <area shape="rect" coords="242,1026,577,1260" href="agefromtogroup.html" alt="Drilldown into AgeFromToGroup"></area>
+                     <area shape="rect" coords="262,810,569,1007" href="childidxnr.html" alt="Drilldown into ChildIdxNr"></area>
+                     <area shape="rect" coords="242,785,577,1017" href="childidxnrattributegroup.html" alt="Drilldown into ChildIdxNrAttributeGroup"></area>
+                     <area shape="rect" coords="262,721,432,766" href="day.html" alt="Drilldown into Day"></area>
+                     <area shape="rect" coords="242,696,440,776" href="dayattributegroup.html" alt="Drilldown into DayAttributeGroup"></area>
+                     <area shape="rect" coords="282,594,568,664" href="specialcommissionflag.html" alt="Drilldown into SpecialCommissionFlag"></area>
+                     <area shape="rect" coords="282,492,588,587" href="specialcommission.html" alt="Drilldown into SpecialCommission"></area>
+                     <area shape="rect" coords="262,467,596,675" href="specialcommissionattributegroup.html" alt="Drilldown into SpecialCommissionAttributeGroup"></area>
+                     <area shape="rect" coords="262,378,523,459" href="notspecialrelevant.html" alt="Drilldown into NotSpecialRelevant"></area>
+                     <area shape="rect" coords="262,289,404,370" href="type.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="262,227,568,282" href="price.html" alt="Drilldown into Price"></area>
+                     <area shape="rect" coords="282,53,573,209" href="descid.html" alt="Drilldown into DescId"></area>
+                     <area shape="rect" coords="262,28,581,219" href="descidattributegroup.html" alt="Drilldown into DescIdAttributeGroup"></area>
+                     <area shape="rect" coords="242,2,606,687" href="sellgeneralattributegroup.html" alt="Drilldown into SellGeneralAttributeGroup"></area></map><img src="images/perdaypriceattributes.png" border="0" alt="XSD Diagram of PerDayPriceAttributes" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -69,6 +70,7 @@
     &lt;xs:attributeGroup ref="SellGeneralAttributeGroup" /&gt;
     &lt;xs:attributeGroup ref="DayAttributeGroup" /&gt;
     &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
+    &lt;xs:attributeGroup ref="AgeFromToGroup" /&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -107,18 +109,6 @@
                         <td class="last">(Optional)</td>
                      </tr>
                      <tr>
-                        <td class="first">AgeFrom</td>
-                        <td><a href="agefrom.html">AgeFrom</a></td>
-                        <td class="mid"></td>
-                        <td class="last">(Optional)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">AgeTo</td>
-                        <td><a href="ageto.html">AgeTo</a></td>
-                        <td class="mid"></td>
-                        <td class="last">(Optional)</td>
-                     </tr>
-                     <tr>
                         <td class="first">NotSpecialRelevant</td>
                         <td><a href="notspecialrelevant.html">NotSpecialRelevant</a></td>
                         <td class="mid"></td>
@@ -145,6 +135,18 @@
                      <tr>
                         <td class="first">ChildIdxNr</td>
                         <td><a href="childidxnr.html">ChildIdxNr</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AgeFrom</td>
+                        <td><a href="agefrom.html">AgeFrom</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AgeTo</td>
+                        <td><a href="ageto.html">AgeTo</a></td>
                         <td class="mid"></td>
                         <td class="last">(Optional)</td>
                      </tr>
@@ -185,6 +187,6 @@
       <div class="pagefooter">
          			Documentation for Hotel Export<br/>
          Generated using 
-         <a href="http://www.liquid-technologies.com/" rel="nofollow">Liquid XML 2015 Designer Edition 13.0.10.5832</a></div>
+         <a href="http://www.liquid-technologies.com/" rel="nofollow">Liquid XML 2015 Designer Edition 13.0.14.5873</a></div>
    </body>
 </html>
