@@ -10,14 +10,58 @@
     <xs:complexType name="PeriodPriceAttributes">
         <xs:attributeGroup ref="SellGeneralAttributeGroup" />
         <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
-        <xs:attribute name="MaxNrNights" type="xs:nonNegativeInteger" />
+        <xs:attribute name="NrNights" type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>Effective number of nights for which this price is valid</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attributeGroup ref="DateFromToAttributeGroup" />
+        <xs:attributeGroup ref="DateRelevantAttributeGroup" />
+        <xs:attribute name="AlwaysApply" use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
     </xs:complexType>
     <xs:complexType name="AddPeriodPriceAttributes">
         <xs:attributeGroup ref="SellGeneralAttributeGroup" />
         <xs:attributeGroup ref="DateFromToAttributeGroup" />
         <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
         <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
+        <xs:attribute name="NrNights">
+            <xs:annotation>
+                <xs:documentation>This is an optional attribute. By default the value is 1. If the amount is greater than 1, then this is a price for x additional nights. If one has a 5 night price, and stays 7 nights, then one can define an AddPeriodPrice with NrNights=2, then this is the price for specifically two additional nights.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:minInclusive value="1" />
+                    <xs:maxInclusive value="999" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="PricePerNight">
+            <xs:annotation>
+                <xs:documentation>By default the price is for the NrNights specified in the node. If PerNightPrice is passed as true, then a NrNights=3 with Price=33 means one pays 33 for the first of the 3 nights, 33 for the second and 33 for the 3rd night: total 99. If the attribute were not passed, or passed with a value false, then the customer would pay a total of 33 for all 3 nights.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attributeGroup ref="DateRelevantAttributeGroup" />
+        <xs:attribute name="AlwaysApply" use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
     </xs:complexType>
     <xs:complexType name="AddPeriodPricesChildren">
         <xs:sequence>
