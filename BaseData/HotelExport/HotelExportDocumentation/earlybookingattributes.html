@@ -2,7 +2,7 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item EarlyBookingAttributes in Hotel Export</title>
+      <title>Docs for schema item EarlyBookingAttributes in Hotel Export Documentation </title>
       <!-- saved from url=(0014)about:internet -->
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
@@ -10,7 +10,7 @@
          <!--
                             EnsureInFrame('ComplexType', 'earlybookingattributes');
                         --></script><div class="pageheader">
-         Documentation for Hotel Export
+         Documentation for Hotel Export Documentation 
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -40,6 +40,7 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="248,2624,540,2705" href="onetime.html" alt="Drilldown into OneTime"></area>
                      <area shape="rect" coords="268,2514,575,2605" href="ageto.html" alt="Drilldown into AgeTo"></area>
                      <area shape="rect" coords="268,2406,575,2507" href="agefrom.html" alt="Drilldown into AgeFrom"></area>
                      <area shape="rect" coords="248,2381,583,2615" href="agefromtogroup.html" alt="Drilldown into AgeFromToGroup"></area>
@@ -50,7 +51,7 @@
                      <area shape="rect" coords="268,1930,469,2011" href="child.html" alt="Drilldown into Child"></area>
                      <area shape="rect" coords="268,1842,469,1923" href="baby.html" alt="Drilldown into Baby"></area>
                      <area shape="rect" coords="248,1817,481,2021" href="babychildattributegroup.html" alt="Drilldown into BabyChildAttributeGroup"></area>
-                     <area shape="rect" coords="248,1733,555,1808" href="maxnrnights.html" alt="Drilldown into MaxNrNights"></area>
+                     <area shape="rect" coords="248,1733,555,1808" href="nrnights1.html" alt="Drilldown into NrNights"></area>
                      <area shape="rect" coords="248,1641,468,1726" href="ruletype.html" alt="Drilldown into RuleType"></area>
                      <area shape="rect" coords="268,1536,571,1621" href="datebeforedepartureto.html" alt="Drilldown into DateBeforeDepartureTo"></area>
                      <area shape="rect" coords="268,1433,571,1528" href="datebeforedeparturefrom.html" alt="Drilldown into DateBeforeDepartureFrom"></area>
@@ -142,7 +143,7 @@
                     Date = the attributes DateBeforeDepartureFrom and DateBeforeDepartureTo are valid for the calculation&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
     &lt;/xs:attribute&gt;
-    &lt;xs:attribute name="MaxNrNights" type="xs:nonNegativeInteger"&gt;
+    &lt;xs:attribute name="NrNights" type="xs:nonNegativeInteger"&gt;
         &lt;xs:annotation&gt;
             &lt;xs:documentation&gt;A special offer can be connected to the number of stay nights. If one stays 7 nights the special offer can be different to a stay of 14 nights. The value in this field identified the maximum number of nights for which this rule is relevant.&lt;/xs:documentation&gt;
         &lt;/xs:annotation&gt;
@@ -151,6 +152,17 @@
     &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
     &lt;xs:attributeGroup ref="WeekdaysValidAttributeGroup" /&gt;
     &lt;xs:attributeGroup ref="AgeFromToGroup" /&gt;
+    &lt;xs:attribute name="OneTime"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;If 1, then the EarlyBooking is applied only once, and not per day in the booking period&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                &lt;xs:enumeration value="0" /&gt;
+                &lt;xs:enumeration value="1" /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -273,8 +285,8 @@
                         <td class="last">(Optional)</td>
                      </tr>
                      <tr>
-                        <td class="first">MaxNrNights</td>
-                        <td><a href="maxnrnights.html">MaxNrNights</a></td>
+                        <td class="first">NrNights</td>
+                        <td><a href="nrnights1.html">NrNights</a></td>
                         <td class="mid"></td>
                         <td class="last">(Optional)</td>
                      </tr>
@@ -314,6 +326,12 @@
                         <td class="mid"></td>
                         <td class="last">(Optional)</td>
                      </tr>
+                     <tr>
+                        <td class="first">OneTime</td>
+                        <td><a href="onetime.html">OneTime</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
                   </table>
                </td>
             </tr>
@@ -349,7 +367,7 @@
          </tbody>
       </table>
       <div class="pagefooter">
-         			Documentation for Hotel Export<br/>
+         			Documentation for Hotel Export Documentation <br/>
          Generated using 
          <a href="http://www.liquid-technologies.com/" rel="nofollow">Liquid XML 2015 Designer Edition 13.0.14.5873</a></div>
    </body>

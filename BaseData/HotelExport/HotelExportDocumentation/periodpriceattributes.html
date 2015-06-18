@@ -2,7 +2,7 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item PeriodPriceAttributes in Hotel Export</title>
+      <title>Docs for schema item PeriodPriceAttributes in Hotel Export Documentation </title>
       <!-- saved from url=(0014)about:internet -->
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
@@ -10,7 +10,7 @@
          <!--
                             EnsureInFrame('ComplexType', 'periodpriceattributes');
                         --></script><div class="pageheader">
-         Documentation for Hotel Export
+         Documentation for Hotel Export Documentation 
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -40,10 +40,16 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="258,1046,400,1090" href="dateto.html" alt="Drilldown into DateTo"></area>
-                     <area shape="rect" coords="258,994,406,1039" href="datefrom.html" alt="Drilldown into DateFrom"></area>
-                     <area shape="rect" coords="238,969,482,1101" href="datefromtoattributegroup.html" alt="Drilldown into DateFromToAttributeGroup"></area>
-                     <area shape="rect" coords="238,936,463,961" href="maxnrnights1.html" alt="Drilldown into MaxNrNights"></area>
+                     <area shape="rect" coords="258,1390,559,1455" href="weekdaysvalid.html" alt="Drilldown into WeekdaysValid"></area>
+                     <area shape="rect" coords="238,1365,567,1465" href="weekdaysvalidattributegroup.html" alt="Drilldown into WeekdaysValidAttributeGroup"></area>
+                     <area shape="rect" coords="238,1301,464,1356" href="alwaysapply2.html" alt="Drilldown into AlwaysApply"></area>
+                     <area shape="rect" coords="258,1227,552,1282" href="enddaterelevant.html" alt="Drilldown into EndDateRelevant"></area>
+                     <area shape="rect" coords="258,1155,561,1220" href="startdaterelevant.html" alt="Drilldown into StartDateRelevant"></area>
+                     <area shape="rect" coords="238,1130,569,1292" href="daterelevantattributegroup.html" alt="Drilldown into DateRelevantAttributeGroup"></area>
+                     <area shape="rect" coords="258,1066,400,1110" href="dateto.html" alt="Drilldown into DateTo"></area>
+                     <area shape="rect" coords="258,1014,406,1059" href="datefrom.html" alt="Drilldown into DateFrom"></area>
+                     <area shape="rect" coords="238,989,482,1121" href="datefromtoattributegroup.html" alt="Drilldown into DateFromToAttributeGroup"></area>
+                     <area shape="rect" coords="238,936,461,981" href="nrnights2.html" alt="Drilldown into NrNights"></area>
                      <area shape="rect" coords="258,721,565,918" href="childidxnr.html" alt="Drilldown into ChildIdxNr"></area>
                      <area shape="rect" coords="238,696,573,928" href="childidxnrattributegroup.html" alt="Drilldown into ChildIdxNrAttributeGroup"></area>
                      <area shape="rect" coords="278,594,564,664" href="specialcommissionflag.html" alt="Drilldown into SpecialCommissionFlag"></area>
@@ -68,8 +74,22 @@
                <td><pre><code>&lt;xs:complexType name="PeriodPriceAttributes"&gt;
     &lt;xs:attributeGroup ref="SellGeneralAttributeGroup" /&gt;
     &lt;xs:attributeGroup ref="ChildIdxNrAttributeGroup" /&gt;
-    &lt;xs:attribute name="MaxNrNights" type="xs:nonNegativeInteger" /&gt;
+    &lt;xs:attribute name="NrNights" type="xs:nonNegativeInteger"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Effective number of nights for which this price is valid&lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
     &lt;xs:attributeGroup ref="DateFromToAttributeGroup" /&gt;
+    &lt;xs:attributeGroup ref="DateRelevantAttributeGroup" /&gt;
+    &lt;xs:attribute name="AlwaysApply" use="optional"&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                &lt;xs:enumeration value="0" /&gt;
+                &lt;xs:enumeration value="1" /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:attribute&gt;
+    &lt;xs:attributeGroup ref="WeekdaysValidAttributeGroup" /&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -132,8 +152,8 @@
                         <td class="last">(Optional)</td>
                      </tr>
                      <tr>
-                        <td class="first">MaxNrNights</td>
-                        <td><a href="maxnrnights1.html">MaxNrNights</a></td>
+                        <td class="first">NrNights</td>
+                        <td><a href="nrnights2.html">NrNights</a></td>
                         <td class="mid"></td>
                         <td class="last">(Optional)</td>
                      </tr>
@@ -148,6 +168,30 @@
                         <td><a href="dateto.html">DateTo</a></td>
                         <td class="mid"></td>
                         <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">StartDateRelevant</td>
+                        <td><a href="startdaterelevant.html">StartDateRelevant</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">EndDateRelevant</td>
+                        <td><a href="enddaterelevant.html">EndDateRelevant</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AlwaysApply</td>
+                        <td><a href="alwaysapply2.html">AlwaysApply</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">WeekdaysValid</td>
+                        <td><a href="weekdaysvalid.html">WeekdaysValid</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
                      </tr>
                   </table>
                </td>
@@ -184,7 +228,7 @@
          </tbody>
       </table>
       <div class="pagefooter">
-         			Documentation for Hotel Export<br/>
+         			Documentation for Hotel Export Documentation <br/>
          Generated using 
          <a href="http://www.liquid-technologies.com/" rel="nofollow">Liquid XML 2015 Designer Edition 13.0.14.5873</a></div>
    </body>
