@@ -2,17 +2,10 @@
 <!--Created with Liquid XML 2015 Designer Edition 13.0.14.5873 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\BaseData.xsd" />
-    <xs:complexType name="PerDayPricesChildren">
+    <xs:complexType name="PeriodPricesChildren">
         <xs:sequence>
-            <xs:element name="PerDayPrice" type="PerDayPriceAttributes" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="PeriodPrice" type="PeriodPricesAttributes" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="PerDayPriceAttributes">
-        <xs:attributeGroup ref="BuyAttributeGroup" />
-        <xs:attributeGroup ref="SellGeneralAttributeGroup" />
-        <xs:attributeGroup ref="DayAttributeGroup" />
-        <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
-        <xs:attributeGroup ref="BabyChildAttributeGroup" />
     </xs:complexType>
     <xs:complexType name="PeriodPricesAttributes">
         <xs:attributeGroup ref="BuyAttributeGroup" />
@@ -26,10 +19,11 @@
         </xs:attribute>
         <xs:attributeGroup ref="DateFromToAttributeGroup" />
         <xs:attributeGroup ref="DateRelevantAttributeGroup" />
+        <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
     </xs:complexType>
-    <xs:complexType name="PeriodPricesChildren">
+    <xs:complexType name="AddPeriodPricesChildren">
         <xs:sequence>
-            <xs:element name="PeriodPrice" type="PeriodPricesAttributes" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="AddPeriodPrice" type="AddPeriodPriceAttributes" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="AddPeriodPriceAttributes">
@@ -37,7 +31,6 @@
         <xs:attributeGroup ref="SellGeneralAttributeGroup" />
         <xs:attributeGroup ref="DateFromToAttributeGroup" />
         <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
-        <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
         <xs:attributeGroup ref="BabyChildAttributeGroup" />
         <xs:attribute name="NrNights">
             <xs:annotation>
@@ -70,11 +63,19 @@
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
+        <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
     </xs:complexType>
-    <xs:complexType name="AddPeriodPricesChildren">
+    <xs:complexType name="PerDayPricesChildren">
         <xs:sequence>
-            <xs:element name="AddPeriodPrice" type="AddPeriodPriceAttributes" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="PerDayPrice" type="PerDayPriceAttributes" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PerDayPriceAttributes">
+        <xs:attributeGroup ref="BuyAttributeGroup" />
+        <xs:attributeGroup ref="SellGeneralAttributeGroup" />
+        <xs:attributeGroup ref="DayAttributeGroup" />
+        <xs:attributeGroup ref="ChildIdxNrAttributeGroup" />
+        <xs:attributeGroup ref="BabyChildAttributeGroup" />
     </xs:complexType>
     <xs:complexType name="AddPerDayPricesChildren">
         <xs:sequence>
@@ -270,12 +271,25 @@
         <xs:attributeGroup ref="DescIdAttributeGroup" />
         <xs:attributeGroup ref="DaysDateBeforeDepartureAttributeGroup" />
         <xs:attributeGroup ref="AcctAttributeGroup" />
-        <xs:attribute name="MaxNrNights" type="xs:nonNegativeInteger">
+        <xs:attribute name="NrNights" type="xs:nonNegativeInteger">
             <xs:annotation>
                 <xs:documentation>A special offer can be connected to the number of stay nights. If one stays 7 nights the special offer can be different to a stay of 14 nights. The value in this field identified the maximum number of nights for which this rule is relevant.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attributeGroup ref="BabyChildAttributeGroup" />
+        <xs:attributeGroup ref="WeekdaysValidAttributeGroup" />
+        <xs:attributeGroup ref="AgeFromToGroup" />
+        <xs:attribute name="OneTime">
+            <xs:annotation>
+                <xs:documentation>If 1, then the EarlyBooking is applied only once, and not per day in the booking period</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:enumeration value="0" />
+                    <xs:enumeration value="1" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
     </xs:complexType>
     <xs:attributeGroup name="DateFromToAttributeGroup">
         <xs:attribute name="DateFrom" type="xs:date" use="required">
@@ -538,6 +552,30 @@ DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo</xs:documenta
 
 DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo</xs:documentation>
             </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="AgeFromToGroup">
+        <xs:attribute name="AgeFrom">
+            <xs:annotation>
+                <xs:documentation>If this is an age relevant price, then it AgeFrom is the lower inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:minInclusive value="0" />
+                    <xs:maxInclusive value="150" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="AgeTo">
+            <xs:annotation>
+                <xs:documentation>If this is an age relevant price, then it AgeTo is per non-inclusive bound for which this price line is valid for. If AgeFrom=2 and AgeTo=12, then this price line is valid for all persons from 2 (incl.) to 11.9999 (not incl. 12).</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:nonNegativeInteger">
+                    <xs:minInclusive value="0" />
+                    <xs:maxInclusive value="150" />
+                </xs:restriction>
+            </xs:simpleType>
         </xs:attribute>
     </xs:attributeGroup>
     <xs:attributeGroup name="AcctAttributeGroup">
