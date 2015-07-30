@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2014 Designer Edition 12.2.8.5459 (http://www.liquid-technologies.com)-->
-<xs:schema elementFormDefault="qualified"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--Created with Liquid XML 2015 Designer Edition 13.1.1.5927 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:complexType name="Desc">
         <xs:annotation>
             <xs:documentation />
         </xs:annotation>
         <xs:sequence>
-            <xs:element name="Desc"
-                        minOccurs="0"
-                        maxOccurs="unbounded">
+            <xs:element name="Desc" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line. Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.</xs:documentation>
                 </xs:annotation>
@@ -25,30 +22,22 @@
     </xs:complexType>
     <xs:complexType name="Translation">
         <xs:sequence>
-            <xs:element name="de"
-                        type="xs:string"
-                        minOccurs="0">
+            <xs:element name="de" type="xs:string" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>German. Can be a CDATA.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="en"
-                        type="xs:string"
-                        minOccurs="0">
+            <xs:element name="en" type="xs:string" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>English. Can be a CDATA.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="fr"
-                        type="xs:string"
-                        minOccurs="0">
+            <xs:element name="fr" type="xs:string" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>French. Can be a CDATA.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="it"
-                        type="xs:string"
-                        minOccurs="0">
+            <xs:element name="it" type="xs:string" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>Italian. Can be a CDATA.</xs:documentation>
                 </xs:annotation>
@@ -56,25 +45,17 @@
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="PhoneAttributes">
-        <xs:attribute name="AreaCode"
-                      type="xs:string" />
-        <xs:attribute name="Number"
-                      type="xs:string"
-                      use="required" />
-        <xs:attribute name="CountryPrefix"
-                      type="xs:string" />
+        <xs:attribute name="AreaCode" type="xs:string" />
+        <xs:attribute name="Number" type="xs:string" use="required" />
+        <xs:attribute name="CountryPrefix" type="xs:string" />
     </xs:complexType>
     <xs:complexType name="DestinationAttributes">
-        <xs:attribute name="CountryCode"
-                      type="xs:string"
-                      use="required">
+        <xs:attribute name="CountryCode" type="xs:string" use="optional">
             <xs:annotation>
                 <xs:documentation>2-letter country code based on the destination</xs:documentation>
             </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="Code"
-                      type="xs:string"
-                      use="required">
+        <xs:attribute name="Code" type="xs:string" use="required">
             <xs:annotation>
                 <xs:documentation>IATA Code of the destination
                     HO_DESTINATION/DEST_CODE</xs:documentation>
@@ -82,9 +63,7 @@
         </xs:attribute>
     </xs:complexType>
     <xs:attributeGroup name="DescIdAttributeGroup">
-        <xs:attribute name="DescId"
-                      type="xs:nonNegativeInteger"
-                      use="required">
+        <xs:attribute name="DescId" type="xs:nonNegativeInteger" use="required">
             <xs:annotation>
                 <xs:documentation>In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
                     &lt;Descs&gt;
