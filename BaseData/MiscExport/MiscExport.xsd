@@ -1,26 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2014 Designer Edition 12.2.8.5459 (http://www.liquid-technologies.com)-->
-<xs:schema elementFormDefault="qualified"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--Created with Liquid XML 2015 Designer Edition 13.1.1.5927 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="..\BaseDataExport.xsd" />
     <xs:element name="Miscellaneous">
         <xs:complexType>
             <xs:all>
-                <xs:element name="Title"
-                            type="xs:string"
-                            minOccurs="0">
+                <xs:element name="Title" type="xs:string" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>TO Online internal name for this item
 						</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="Country"
-                            minOccurs="0">
+                <xs:element name="Country" minOccurs="0">
                     <xs:complexType>
                         <xs:simpleContent>
                             <xs:extension base="xs:string">
-                                <xs:attribute name="IsoCode"
-                                              type="xs:string">
+                                <xs:attribute name="IsoCode" type="xs:string">
                                     <xs:annotation>
                                         <xs:documentation>Two letter country code of address
 											C_IATACODE
@@ -31,56 +26,32 @@
                         </xs:simpleContent>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="Region"
-                            type="xs:string"
-                            minOccurs="0">
+                <xs:element name="Region" type="xs:string" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>Region of the Country
 							RE_VOLL
 						</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="SubRegion"
-                            type="xs:string"
-                            minOccurs="0">
+                <xs:element name="SubRegion" type="xs:string" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>Subregion of the region
 							SC_VOLL
 						</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="Destination"
-                            type="DestinationAttributes"
-                            minOccurs="0" />
-                <xs:element name="Request"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>is the room bookable on request or is it free
-							sale
-						</xs:documentation>
-                    </xs:annotation>
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="" />
-                            <xs:enumeration value="RQ" />
-                            <xs:enumeration value="FS" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-                <xs:element name="Supplier"
-                            minOccurs="0">
+                <xs:element name="Destination" type="DestinationAttributes" minOccurs="0" />
+                <xs:element name="Supplier" minOccurs="0">
                     <xs:complexType>
                         <xs:simpleContent>
                             <xs:extension base="xs:string">
-                                <xs:attribute name="Code"
-                                              type="xs:string">
+                                <xs:attribute name="Code" type="xs:string">
                                     <xs:annotation>
                                         <xs:documentation>Reservation-Supplier-Code for this room
 										</xs:documentation>
                                     </xs:annotation>
                                 </xs:attribute>
-                                <xs:attribute name="Nr"
-                                              type="xs:nonNegativeInteger">
+                                <xs:attribute name="Nr" type="xs:nonNegativeInteger">
                                     <xs:annotation>
                                         <xs:documentation>TO Online customer nr for this supplier
 										</xs:documentation>
@@ -90,20 +61,17 @@
                         </xs:simpleContent>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="PaySupplier"
-                            minOccurs="0">
+                <xs:element name="PaySupplier" minOccurs="0">
                     <xs:complexType>
                         <xs:simpleContent>
                             <xs:extension base="xs:string">
-                                <xs:attribute name="Code"
-                                              type="xs:string">
+                                <xs:attribute name="Code" type="xs:string">
                                     <xs:annotation>
                                         <xs:documentation>Payment-Supplier-Code for this room
 										</xs:documentation>
                                     </xs:annotation>
                                 </xs:attribute>
-                                <xs:attribute name="Nr"
-                                              type="xs:nonNegativeInteger">
+                                <xs:attribute name="Nr" type="xs:nonNegativeInteger">
                                     <xs:annotation>
                                         <xs:documentation>TO Online customer nr for this supplier
 										</xs:documentation>
@@ -113,20 +81,17 @@
                         </xs:simpleContent>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="VoucherSupplier"
-                            minOccurs="0">
+                <xs:element name="VoucherSupplier" minOccurs="0">
                     <xs:complexType>
                         <xs:simpleContent>
                             <xs:extension base="xs:string">
-                                <xs:attribute name="Code"
-                                              type="xs:string">
+                                <xs:attribute name="Code" type="xs:string">
                                     <xs:annotation>
                                         <xs:documentation>Voucher-Supplier-Code for this room
 										</xs:documentation>
                                     </xs:annotation>
                                 </xs:attribute>
-                                <xs:attribute name="Nr"
-                                              type="xs:nonNegativeInteger">
+                                <xs:attribute name="Nr" type="xs:nonNegativeInteger">
                                     <xs:annotation>
                                         <xs:documentation>TO Online customer nr for this supplier
 										</xs:documentation>
@@ -136,87 +101,39 @@
                         </xs:simpleContent>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="Commission"
-                            type="xs:float"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Fixed commission for this item.
-						</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="AutomatedFeeCode"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Automated Fee Code. Used for automated
-							cancellation and modification fees.
-						</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="MinimumPersons"
-                            type="xs:nonNegativeInteger"
-                            minOccurs="0">
+                <xs:element name="MinimumPersons" type="xs:nonNegativeInteger" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>MI_MINPERS</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="MaximumPersons"
-                            type="xs:nonNegativeInteger"
-                            minOccurs="0">
+                <xs:element name="MaximumPersons" type="xs:nonNegativeInteger" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>MI_MAXPERS</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="MinimumDays"
-                            type="xs:nonNegativeInteger"
-                            minOccurs="0">
+                <xs:element name="MinimumDays" type="xs:nonNegativeInteger" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>MI_FIXNODAYSMIN</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="MaximumDays"
-                            type="xs:nonNegativeInteger"
-                            minOccurs="0">
+                <xs:element name="MaximumDays" type="xs:nonNegativeInteger" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>MI_FIXNODAYSMAX</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="InvoiceTitle"
-                            type="Translation"
-                            minOccurs="0" />
-                <xs:element name="InvoiceDetail"
-                            type="Translation"
-                            minOccurs="0">
+                <xs:element name="InvoiceTitle" type="Translation" minOccurs="0" />
+                <xs:element name="InvoiceDetail" type="Translation" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>CDATA</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="ItineraryTitle"
-                            type="Translation"
-                            minOccurs="0" />
-                <xs:element name="ItineraryDetail"
-                            type="Translation"
-                            minOccurs="0">
+                <xs:element name="ItineraryTitle" type="Translation" minOccurs="0" />
+                <xs:element name="ItineraryDetail" type="Translation" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>CDATA</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="VoucherTitle"
-                            type="xs:string"
-                            minOccurs="0" />
-                <xs:element name="VoucherDetail"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>Voucher information is in the language that the
-							supplier understands and is thus not available in more than one
-							language.
-							CDATA
-						</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Passive"
-                            minOccurs="0">
+                <xs:element name="Passive" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>This item can no longer be booked. If a FromDate
 							is specified, this item cannot be booked on or after the
@@ -226,15 +143,12 @@
                     <xs:complexType>
                         <xs:simpleContent>
                             <xs:extension base="xs:nonNegativeInteger">
-                                <xs:attribute name="FromDate"
-                                              type="xs:date" />
+                                <xs:attribute name="FromDate" type="xs:date" />
                             </xs:extension>
                         </xs:simpleContent>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="StartDateRelevant"
-                            type="xs:boolean"
-                            minOccurs="0">
+                <xs:element name="StartDateRelevant" type="xs:boolean" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>An excursion is normally start date relevant and
 							does not require allotment on every day, but only on the first
@@ -243,67 +157,45 @@
 						</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="Outbound"
-                            type="xs:boolean"
-                            minOccurs="0">
+                <xs:element name="Outbound" type="xs:boolean" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>MI_HIN</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="Inbound"
-                            type="xs:boolean"
-                            minOccurs="0">
+                <xs:element name="Inbound" type="xs:boolean" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>MI_RUECK</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="TourboTitle"
-                            type="xs:string"
-                            minOccurs="0">
+                <xs:element name="TourboTitle" type="xs:string" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>Tourbo title of item group. A group of items
 							have the same Tourbo Code, e.g. TRABOE
 						</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="MiscCode"
-                            type="xs:string"
-                            minOccurs="0">
+                <xs:element name="MiscCode" type="xs:string" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>Tourbo Code
 							MI_TOURBOCODE
 						</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="MiscItemCode"
-                            type="xs:string"
-                            minOccurs="0">
+                <xs:element name="MiscItemCode" type="xs:string" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>Tourbo Item Code
 							MI_TOURBOITEMCODE
 						</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="SupplierCode"
-                            type="xs:string"
-                            minOccurs="0">
+                <xs:element name="SupplierCode" type="xs:string" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>API Supplier Code
 							MI_SUPPLIERBOOKCODE
 						</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="PriceInfo"
-                            type="xs:string"
-                            minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>CDATA
-							MI_PREISINFO
-						</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="Hotels"
-                            minOccurs="0">
+                <xs:element name="Hotels" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>A transfer could be connected to one or more
 							hotel rooms
@@ -311,91 +203,57 @@
                     </xs:annotation>
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Hotel"
-                                        minOccurs="0"
-                                        maxOccurs="unbounded">
+                            <xs:element name="Hotel" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
-                                    <xs:attribute name="DestCode"
-                                                  type="xs:string"
-                                                  use="required" />
-                                    <xs:attribute name="HotelCode"
-                                                  type="xs:string"
-                                                  use="required" />
-                                    <xs:attribute name="HotelName"
-                                                  type="xs:string"
-                                                  use="required" />
-                                    <xs:attribute name="HotelKey"
-                                                  type="xs:string"
-                                                  use="required" />
+                                    <xs:attribute name="HotelKey" type="xs:string" use="required" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="Descs"
-                            type="Desc"
-                            minOccurs="0" />
-                <xs:element name="Prices"
-                            minOccurs="0">
+                <xs:element name="Descs" type="Desc" minOccurs="0" />
+                <xs:element name="Prices" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Currency"
-                                        minOccurs="0"
-                                        maxOccurs="unbounded">
+                            <xs:element name="Currency" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:all>
-                                        <xs:element name="PerDayPrices"
-                                                    type="PerDayPricesChildren"
-                                                    minOccurs="0" />
-                                        <xs:element name="AddPerDayPrices"
-                                                    type="AddPerDayPricesChildren"
-                                                    minOccurs="0" />
-                                        <xs:element name="OneTimes"
-                                                    type="OneTimesChildren"
-                                                    minOccurs="0" />
-                                        <xs:element name="SpecialOffers"
-                                                    minOccurs="0">
+                                        <xs:element name="PerDayPrices" type="PerDayPricesChildren" minOccurs="0" />
+                                        <xs:element name="AddPerDayPrices" type="AddPerDayPricesChildren" minOccurs="0" />
+                                        <xs:element name="OneTimes" type="OneTimesChildren" minOccurs="0" />
+                                        <xs:element name="SpecialOffers" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:complexContent mixed="false">
                                                     <xs:extension base="SpecialOffersChildren" />
                                                 </xs:complexContent>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="EarlyBookings"
-                                                    type="EarlyBookingsChildren"
-                                                    minOccurs="0" />
+                                        <xs:element name="EarlyBookings" type="EarlyBookingsChildren" minOccurs="0" />
                                     </xs:all>
-                                    <xs:attribute name="IsoCode"
-                                                  type="xs:string" />
+                                    <xs:attribute name="IsoCode" type="xs:string" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="Allotments"
-                            minOccurs="0">
+                <xs:element name="Allotments" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Allotment"
-                                        minOccurs="0"
-                                        maxOccurs="unbounded">
+                            <xs:element name="Allotment" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
-                                    <xs:attribute name="Date"
-                                                  type="xs:date">
+                                    <xs:attribute name="Date" type="xs:date">
                                         <xs:annotation>
                                             <xs:documentation>Date for this allotment item
 											</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="Av"
-                                                  type="xs:float">
+                                    <xs:attribute name="Av" type="xs:float">
                                         <xs:annotation>
                                             <xs:documentation>The rest availability of this item
 											</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="Rel"
-                                                  type="xs:date">
+                                    <xs:attribute name="Rel" type="xs:date">
                                         <xs:annotation>
                                             <xs:documentation>Release date.
 												If the current date is GREATER
@@ -405,8 +263,7 @@
 											</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="MinStay"
-                                                  type="xs:date">
+                                    <xs:attribute name="MinStay" type="xs:date">
                                         <xs:annotation>
                                             <xs:documentation>Minimum stay for this item.
 												If the END DATE
@@ -424,8 +281,7 @@
 											</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="RQ"
-                                                  type="xs:boolean">
+                                    <xs:attribute name="RQ" type="xs:boolean">
                                         <xs:annotation>
                                             <xs:documentation>Indicates if this item can be booked on
 												Request.
@@ -437,8 +293,7 @@
 											</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="FS"
-                                                  type="xs:boolean">
+                                    <xs:attribute name="FS" type="xs:boolean">
                                         <xs:annotation>
                                             <xs:documentation>Indicates if this item can be booked on
 												Free-Sell.
@@ -455,33 +310,20 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="CancellationFees"
-                            minOccurs="0">
+                <xs:element name="CancellationFees" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="CancellationFee"
-                                        minOccurs="0"
-                                        maxOccurs="unbounded">
+                            <xs:element name="CancellationFee" minOccurs="0" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:all>
-                                        <xs:element name="BeginDate"
-                                                    type="xs:date" />
-                                        <xs:element name="EndDate"
-                                                    type="xs:date" />
-                                        <xs:element name="Percent"
-                                                    type="xs:float"
-                                                    minOccurs="0" />
-                                        <xs:element name="Amount"
-                                                    type="xs:float"
-                                                    minOccurs="0" />
-                                        <xs:element name="DaysBeforeDepartureBegin"
-                                                    type="xs:integer" />
-                                        <xs:element name="DaysBeforeDepartureEnd"
-                                                    type="xs:integer" />
-                                        <xs:element name="NrDaysFeeApply"
-                                                    type="xs:integer" />
-                                        <xs:element name="PriceType"
-                                                    type="xs:integer">
+                                        <xs:element name="BeginDate" type="xs:date" />
+                                        <xs:element name="EndDate" type="xs:date" />
+                                        <xs:element name="Percent" type="xs:float" minOccurs="0" />
+                                        <xs:element name="Amount" type="xs:float" minOccurs="0" />
+                                        <xs:element name="DaysBeforeDepartureBegin" type="xs:integer" />
+                                        <xs:element name="DaysBeforeDepartureEnd" type="xs:integer" />
+                                        <xs:element name="NrDaysFeeApply" type="xs:integer" />
+                                        <xs:element name="PriceType" type="xs:integer">
                                             <xs:annotation>
                                                 <xs:documentation>1 = Cancellation Fee</xs:documentation>
                                             </xs:annotation>
@@ -490,27 +332,22 @@
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="InternalPriceType"
-                                      type="xs:string" />
+                        <xs:attribute name="InternalPriceType" type="xs:string" />
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="ItemInfos"
-                            type="ItemInfos"
-                            minOccurs="0" />
+                <xs:element name="ItemInfos" type="ItemInfos" minOccurs="0" />
             </xs:all>
-            <xs:attribute name="Key"
-                          type="xs:string"
-                          use="optional">
+            <xs:attribute name="Type" type="xs:string" use="optional">
                 <xs:annotation>
-                    <xs:documentation>Primary Key of the hotel room
+                    <xs:documentation>Value = Miscellaneous per Default
 					</xs:documentation>
                 </xs:annotation>
             </xs:attribute>
-            <xs:attribute name="Action">
+            <xs:attribute name="Delete">
                 <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="ADD" />
-                        <xs:enumeration value="DELETE" />
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:enumeration value="0" />
+                        <xs:enumeration value="1" />
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
@@ -523,11 +360,14 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="Type"
-                          type="xs:string"
-                          use="optional">
+            <xs:attribute name="TOCode" type="xs:string" use="optional">
                 <xs:annotation>
-                    <xs:documentation>Value = HotelRoom per Default
+                    <xs:documentation>Tour operator code, e.g. STOH for Stohler, KNE for Knecht.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="MiscKey" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>Primary Key of the miscellaneous item
 					</xs:documentation>
                 </xs:annotation>
             </xs:attribute>
