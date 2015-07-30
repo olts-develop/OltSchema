@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2015 Designer Edition 13.0.9.5818 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2015 Designer Edition 13.1.1.5927 (http://www.liquid-technologies.com)-->
 <xs:schema xmlns:ns0="http://xml.netbeans.org/schema/Descriptions" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="..\BaseDataExport.xsd" />
     <xs:element name="Hotel">
@@ -367,21 +367,16 @@
                     </xs:complexType>
                 </xs:element>
             </xs:all>
-            <xs:attribute name="RoomKey" type="xs:string" use="required">
+            <xs:attribute name="Type" type="xs:string">
                 <xs:annotation>
-                    <xs:documentation> Primary Key of the hotel room</xs:documentation>
+                    <xs:documentation>Value = HotelRoom per Default</xs:documentation>
                 </xs:annotation>
             </xs:attribute>
-            <xs:attribute name="HotelKey" type="xs:string" use="required">
-                <xs:annotation>
-                    <xs:documentation> Primary Key of the hotel</xs:documentation>
-                </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="Action">
+            <xs:attribute name="Delete">
                 <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="ADD" />
-                        <xs:enumeration value="DELETE" />
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:enumeration value="0" />
+                        <xs:enumeration value="1" />
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
@@ -394,9 +389,19 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="Type" type="xs:string">
+            <xs:attribute name="TOCode" type="xs:string">
                 <xs:annotation>
-                    <xs:documentation>Value = HotelRoom per Default</xs:documentation>
+                    <xs:documentation>Tour operator code, e.g. STOH for Stohler, KNE for Knecht.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="RoomKey" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation> Primary Key of the hotel room</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="HotelKey" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation> Primary Key of the hotel</xs:documentation>
                 </xs:annotation>
             </xs:attribute>
         </xs:complexType>
