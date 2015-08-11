@@ -195,7 +195,7 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="HotelImages">
+                <xs:element name="HotelImages" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="Image" type="ImageType" minOccurs="0" maxOccurs="unbounded">
