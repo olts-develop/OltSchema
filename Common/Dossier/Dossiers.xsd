@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2014 Designer Edition 12.1.7.5079 (http://www.liquid-technologies.com)-->
-<xs:schema elementFormDefault="qualified"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--Created with Liquid XML 2015 Designer Edition 13.2.0.5980 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\Customers.xsd" />
     <xs:include schemaLocation=".\Travellers.xsd" />
     <xs:include schemaLocation="..\Fifa\TravelRequests.xsd" />
     <xs:include schemaLocation="..\Items\DossierItem.xsd" />
     <xs:include schemaLocation="..\Items\Payments.xsd" />
     <xs:include schemaLocation="..\Fifa\TravelRequestApproval.xsd" />
+    <xs:include schemaLocation="..\GeneralCodes\ImageType.xsd" />
     <xs:element name="Dossiers">
         <xs:annotation>
             <xs:documentation>This schema is used in more than one use case. In the use case "Display Dossier", a dossier in Agent Online is returned to the user. It is possible, that more than one Dossier is returned in the Dossiers node, Another use case is the import of an external dossier into an Agent Online to TO Online database. In this case the external developer sends one Dossier in the Dossiers node.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
-            <xs:sequence minOccurs="0"
-                         maxOccurs="unbounded">
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>This </xs:documentation>
                 </xs:annotation>
@@ -29,8 +28,7 @@
                                     <xs:documentation>The invoice receiver of this dossier. Depending on the workflow an existing customer is searched for in the Agent Online or TO Online database and is assigned this dossier, or a new customer is created and assigned to this dossier.</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="DossierSeq"
-                                        minOccurs="0">
+                            <xs:element name="DossierSeq" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Dossier sequence - only relevant if the dossier is known, and needs to be modified.</xs:documentation>
                                 </xs:annotation>
@@ -41,8 +39,7 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="DossierNr"
-                                        minOccurs="0">
+                            <xs:element name="DossierNr" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Dossier number</xs:documentation>
                                 </xs:annotation>
@@ -53,15 +50,12 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="CreateDate"
-                                        type="xs:date"
-                                        minOccurs="0">
+                            <xs:element name="CreateDate" type="xs:date" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Dossier creation date</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="Title"
-                                        minOccurs="0">
+                            <xs:element name="Title" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Dossier title</xs:documentation>
                                 </xs:annotation>
@@ -72,36 +66,27 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="DepartureDate"
-                                        type="xs:date"
-                                        minOccurs="0">
+                            <xs:element name="DepartureDate" type="xs:date" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Departure date of dossier - normally corresponds to the FirstDate, but some Agent Online customers allow the first date of the dossier to differ from the DepartureDate, in cases where a customer/traveller organizes their own transportation to the destination.</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="FirstDate"
-                                        type="xs:date"
-                                        minOccurs="0">
+                            <xs:element name="FirstDate" type="xs:date" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>First/smallest date in this dossier</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="LastDate"
-                                        type="xs:date"
-                                        minOccurs="0">
+                            <xs:element name="LastDate" type="xs:date" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Last/largest date in this dossier</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="InvoiceFirstPrintDate"
-                                        type="xs:date"
-                                        minOccurs="0">
+                            <xs:element name="InvoiceFirstPrintDate" type="xs:date" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Date when the first invoice was printed for this dossier, i.e. the dossier has bookkeeping relevant data. Note: a dossier might have been modified and reprinted after the first invoice/credit note print.</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="Language"
-                                        minOccurs="0">
+                            <xs:element name="Language" minOccurs="0">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:language">
                                         <xs:enumeration value="de-ch" />
@@ -111,16 +96,14 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="Destination"
-                                        minOccurs="0">
+                            <xs:element name="Destination" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>End destination of this dossier. This value is used for statistical purposes in Agent Online. The node contains the full name of the destination, e.g. "Las Vegas".</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:string">
-                                            <xs:attribute name="DestinationCode"
-                                                          use="required">
+                                            <xs:attribute name="DestinationCode" use="required">
                                                 <xs:annotation>
                                                     <xs:documentation>This ought to be a three letter code of the destination city of this dossier, e.g. "LAS".</xs:documentation>
                                                 </xs:annotation>
@@ -135,8 +118,7 @@
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="ExternalSource"
-                                        minOccurs="0">
+                            <xs:element name="ExternalSource" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Defines the source of the booking, e.g. MOBS, DYNAP, TOURO</xs:documentation>
                                 </xs:annotation>
@@ -154,8 +136,7 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="DossierStatus"
-                                        minOccurs="0">
+                            <xs:element name="DossierStatus" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Status of the dossier. The textdata contains the full name of the dossier status. It does not need to be sent when importing a dossier, but a DossierStatusCode attribute code ought to be sent, so that the dossier will habe a corrent status. Example values for a Dossier Status are
 OK
@@ -174,8 +155,7 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:string">
-                                            <xs:attribute name="DossierStatusCode"
-                                                          use="required">
+                                            <xs:attribute name="DossierStatusCode" use="required">
                                                 <xs:annotation>
                                                     <xs:documentation>OK
 OFF - Offer
@@ -201,16 +181,14 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="Code1"
-                                        minOccurs="0">
+                            <xs:element name="Code1" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Can specify an event. Generally this code is defined by the Agent Online customer. It makes generally no sense sending this value in the use case "Dossie Create", but in some workflows, e.g. TravelOffice Workflow, this value is sent and contains the event code, but this value can be returned if an existing dossier is displayed.</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:string">
-                                            <xs:attribute name="Seq"
-                                                          use="optional">
+                                            <xs:attribute name="Seq" use="optional">
                                                 <xs:annotation>
                                                     <xs:documentation>A web service is available to return a list of all Code1 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
                                                 </xs:annotation>
@@ -221,8 +199,7 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                                                     </xs:restriction>
                                                 </xs:simpleType>
                                             </xs:attribute>
-                                            <xs:attribute name="Code"
-                                                          use="optional">
+                                            <xs:attribute name="Code" use="optional">
                                                 <xs:annotation>
                                                     <xs:documentation>A web service is available to return a list of all Code1 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
                                                 </xs:annotation>
@@ -233,8 +210,7 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                                                     </xs:restriction>
                                                 </xs:simpleType>
                                             </xs:attribute>
-                                            <xs:attribute name="Description"
-                                                          use="optional">
+                                            <xs:attribute name="Description" use="optional">
                                                 <xs:annotation>
                                                     <xs:documentation>A web service is available to return a list of all Code1 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
                                                 </xs:annotation>
@@ -249,16 +225,14 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="Code2"
-                                        minOccurs="0">
+                            <xs:element name="Code2" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Can specify an event. Generally this code is defined by the Agent Online customer. It makes generally no sense sending this value in the use case "Dossie Create", but in some workflows, e.g. TravelOffice Workflow, this value is sent and contains the travel reason code, but this value can be returned if an existing dossier is displayed.</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:string">
-                                            <xs:attribute name="Seq"
-                                                          use="optional">
+                                            <xs:attribute name="Seq" use="optional">
                                                 <xs:annotation>
                                                     <xs:documentation>A web service is available to return a list of all Code2 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
                                                 </xs:annotation>
@@ -269,8 +243,7 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                                                     </xs:restriction>
                                                 </xs:simpleType>
                                             </xs:attribute>
-                                            <xs:attribute name="Code"
-                                                          use="optional">
+                                            <xs:attribute name="Code" use="optional">
                                                 <xs:annotation>
                                                     <xs:documentation>A web service is available to return a list of all Code2 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
                                                 </xs:annotation>
@@ -281,8 +254,7 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                                                     </xs:restriction>
                                                 </xs:simpleType>
                                             </xs:attribute>
-                                            <xs:attribute name="Description"
-                                                          use="optional">
+                                            <xs:attribute name="Description" use="optional">
                                                 <xs:annotation>
                                                     <xs:documentation>A web service is available to return a list of all Code1 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
                                                 </xs:annotation>
@@ -297,11 +269,8 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="Department"
-                                        type="xs:string"
-                                        minOccurs="0" />
-                            <xs:element name="AdditionalReference1"
-                                        minOccurs="0">
+                            <xs:element name="Department" type="xs:string" minOccurs="0" />
+                            <xs:element name="AdditionalReference1" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>A dossier can be assigned codes that reference information provided by the customer:
 PK - Employee ID
@@ -328,14 +297,12 @@ A dossier can have more than one customer relevant reference code. As this infor
                                                     </xs:restriction>
                                                 </xs:simpleType>
                                             </xs:attribute>
-                                            <xs:attribute name="Description"
-                                                          type="xs:string" />
+                                            <xs:attribute name="Description" type="xs:string" />
                                         </xs:extension>
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="AdditionalReference2"
-                                        minOccurs="0">
+                            <xs:element name="AdditionalReference2" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>A dossier can be assigned codes that reference information provided by the customer:
 PK - Employee ID
@@ -362,14 +329,12 @@ A dossier can have more than one customer relevant reference code. As this infor
                                                     </xs:restriction>
                                                 </xs:simpleType>
                                             </xs:attribute>
-                                            <xs:attribute name="Description"
-                                                          type="xs:string" />
+                                            <xs:attribute name="Description" type="xs:string" />
                                         </xs:extension>
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="AdditionalReference3"
-                                        minOccurs="0">
+                            <xs:element name="AdditionalReference3" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>A dossier can be assigned codes that reference information provided by the customer:
 PK - Employee ID
@@ -396,14 +361,12 @@ A dossier can have more than one customer relevant reference code. As this infor
                                                     </xs:restriction>
                                                 </xs:simpleType>
                                             </xs:attribute>
-                                            <xs:attribute name="Description"
-                                                          type="xs:string" />
+                                            <xs:attribute name="Description" type="xs:string" />
                                         </xs:extension>
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="AdditionalReference4"
-                                        minOccurs="0">
+                            <xs:element name="AdditionalReference4" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>A dossier can be assigned codes that reference information provided by the customer:
 PK - Employee ID
@@ -430,113 +393,90 @@ A dossier can have more than one customer relevant reference code. As this infor
                                                     </xs:restriction>
                                                 </xs:simpleType>
                                             </xs:attribute>
-                                            <xs:attribute name="Description"
-                                                          type="xs:string" />
+                                            <xs:attribute name="Description" type="xs:string" />
                                         </xs:extension>
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="PaymentRule"
-                                        minOccurs="0">
+                            <xs:element name="PaymentRule" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation />
                                 </xs:annotation>
                                 <xs:complexType>
-                                    <xs:attribute name="NrDaysAfterPrint"
-                                                  type="xs:integer">
+                                    <xs:attribute name="NrDaysAfterPrint" type="xs:integer">
                                         <xs:annotation>
                                             <xs:documentation>HA_NACHRG - relevant for pre payment. The number of days after the printing of the invoice where the </xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="NrDaysBeforeDeparture"
-                                                  type="xs:integer" />
-                                    <xs:attribute name="PrePaymentNrPersons"
-                                                  type="xs:integer">
+                                    <xs:attribute name="NrDaysBeforeDeparture" type="xs:integer" />
+                                    <xs:attribute name="PrePaymentNrPersons" type="xs:integer">
                                         <xs:annotation>
                                             <xs:documentation>HA_ANZAHLPERSONEN</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="PrePaymentAmountPerPerson"
-                                                  type="xs:decimal">
+                                    <xs:attribute name="PrePaymentAmountPerPerson" type="xs:decimal">
                                         <xs:annotation>
                                             <xs:documentation>HA_ANZAHLUNGSBETRAG</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="PrePaymentDate"
-                                                  type="xs:date">
+                                    <xs:attribute name="PrePaymentDate" type="xs:date">
                                         <xs:annotation>
                                             <xs:documentation>HA_AZDATUMFAELLIG</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="PrePaymentAmount"
-                                                  type="xs:decimal">
+                                    <xs:attribute name="PrePaymentAmount" type="xs:decimal">
                                         <xs:annotation>
                                             <xs:documentation>HA_AZFAELLIG</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="PrePaymentPercent"
-                                                  type="xs:decimal">
+                                    <xs:attribute name="PrePaymentPercent" type="xs:decimal">
                                         <xs:annotation>
                                             <xs:documentation>HA_RZFAELLIG</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="RestPaymentAmount"
-                                                  type="xs:decimal">
+                                    <xs:attribute name="RestPaymentAmount" type="xs:decimal">
                                         <xs:annotation>
                                             <xs:documentation>HA_RZFAELLIG</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
-                                    <xs:attribute name="RestPaymentDate"
-                                                  type="xs:date">
+                                    <xs:attribute name="RestPaymentDate" type="xs:date">
                                         <xs:annotation>
                                             <xs:documentation>HA_RZDATUMFAELLIG, HA_FIXZAHLDAT</xs:documentation>
                                         </xs:annotation>
                                     </xs:attribute>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="Currency"
-                                        type="xs:string"
-                                        minOccurs="0">
+                            <xs:element name="Currency" type="xs:string" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Currency code, e.g. CHF, EUR, USD</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="ServiceCode"
-                                        type="xs:string"
-                                        minOccurs="0">
+                            <xs:element name="ServiceCode" type="xs:string" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>ServiceCode that is stored in the dossier and is used for the generation of CMIRs, e.g. 060 (for IMHO 060), or VOC (for IMHO VOC)</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element ref="Travellers"
-                                        minOccurs="0" />
-                            <xs:element ref="Payments"
-                                        minOccurs="0" />
-                            <xs:element ref="TravelRequests"
-                                        minOccurs="0">
+                            <xs:element ref="Travellers" minOccurs="0" />
+                            <xs:element ref="Payments" minOccurs="0" />
+                            <xs:element ref="TravelRequests" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Travel Requests are only sent in the Travel Office Workflow. A normal Agent Online customer does not work with TravelRequests, only with DossierItems.</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="DossierItems"
-                                        minOccurs="0">
+                            <xs:element name="DossierItems" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>A dossier can contain line items, products that are part of the dossier as a whole. This can be flights, cars, hotels, miscelaneous elements, bus, train, ship, text or arrangement elements.</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element ref="DossierItem"
-                                                    minOccurs="0"
-                                                    maxOccurs="unbounded" />
+                                        <xs:element ref="DossierItem" minOccurs="0" maxOccurs="unbounded" />
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="Documents"
-                                        minOccurs="0">
+                            <xs:element name="Documents" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="Document"
-                                                    maxOccurs="unbounded">
+                                        <xs:element name="Document" maxOccurs="unbounded">
                                             <xs:annotation>
                                                 <xs:documentation>e.g. Document Date="2009-07-14T11:32:56"
                       Name="itin_dosnr12961_00_cust26853_1.pdf"
@@ -548,43 +488,42 @@ A dossier can have more than one customer relevant reference code. As this infor
                       AlternativeName="" /&gt;</xs:documentation>
                                             </xs:annotation>
                                             <xs:complexType>
-                                                <xs:attribute name="Date"
-                                                              type="xs:dateTime" />
-                                                <xs:attribute name="Name"
-                                                              type="xs:string" />
-                                                <xs:attribute name="Type"
-                                                              type="xs:string" />
-                                                <xs:attribute name="Sequence"
-                                                              type="xs:string" />
-                                                <xs:attribute name="DocumentNr"
-                                                              type="xs:string" />
-                                                <xs:attribute name="RevisionNr"
-                                                              type="xs:string" />
-                                                <xs:attribute name="Description"
-                                                              type="xs:string" />
-                                                <xs:attribute name="AlternativeName"
-                                                              type="xs:string" />
+                                                <xs:attribute name="Date" type="xs:dateTime" />
+                                                <xs:attribute name="Name" type="xs:string" />
+                                                <xs:attribute name="Type" type="xs:string" />
+                                                <xs:attribute name="Sequence" type="xs:string" />
+                                                <xs:attribute name="DocumentNr" type="xs:string" />
+                                                <xs:attribute name="RevisionNr" type="xs:string" />
+                                                <xs:attribute name="Description" type="xs:string" />
+                                                <xs:attribute name="AlternativeName" type="xs:string" />
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element ref="TravelRequestApprovals"
-                                        minOccurs="0">
+                            <xs:element ref="TravelRequestApprovals" minOccurs="0">
                                 <xs:annotation>
                                     <xs:documentation>Currently only for the FIF Workflow</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
+                            <xs:element name="DossierImages" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Image" type="ImageType" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Pictures for the Hotel</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:all>
-                        <xs:attribute name="Version"
-                                      type="xs:string"
-                                      use="optional">
+                        <xs:attribute name="Version" type="xs:string" use="optional">
                             <xs:annotation>
                                 <xs:documentation>Version Number, at the moment 1.0</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="From"
-                                      use="optional">
+                        <xs:attribute name="From" use="optional">
                             <xs:annotation>
                                 <xs:documentation>Sender of the XML. </xs:documentation>
                             </xs:annotation>
@@ -601,29 +540,22 @@ A dossier can have more than one customer relevant reference code. As this infor
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
-                        <xs:attribute name="To"
-                                      type="xs:string"
-                                      use="optional">
+                        <xs:attribute name="To" type="xs:string" use="optional">
                             <xs:annotation>
                                 <xs:documentation>Receiver of the XML. The value OLTSWS can be used as the To value.</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="Date"
-                                      type="xs:date"
-                                      use="optional">
+                        <xs:attribute name="Date" type="xs:date" use="optional">
                             <xs:annotation>
                                 <xs:documentation>Date when request/response is created.</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="Time"
-                                      type="xs:string"
-                                      use="optional">
+                        <xs:attribute name="Time" type="xs:string" use="optional">
                             <xs:annotation>
                                 <xs:documentation>Time when request/response is created.</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="Type"
-                                      use="optional">
+                        <xs:attribute name="Type" use="optional">
                             <xs:annotation>
                                 <xs:documentation>Type of service that is asked for:
 IMPORT = Import a DossierIMPORT
@@ -647,8 +579,7 @@ NOTE = Notes
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
-                        <xs:attribute name="SubType"
-                                      use="optional">
+                        <xs:attribute name="SubType" use="optional">
                             <xs:annotation>
                                 <xs:documentation>SubType of service that is asked for.
 For a normal dossier import this values can be sent as empty.
@@ -720,8 +651,7 @@ DISP = Notes sent from TO to CETS NOTE only)
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
-                        <xs:attribute name="BookingMode"
-                                      use="optional">
+                        <xs:attribute name="BookingMode" use="optional">
                             <xs:annotation>
                                 <xs:documentation>Values: B2B,B2C, B2B2C, or empty </xs:documentation>
                             </xs:annotation>
@@ -734,8 +664,7 @@ DISP = Notes sent from TO to CETS NOTE only)
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
-                        <xs:attribute name="Confirm"
-                                      use="optional">
+                        <xs:attribute name="Confirm" use="optional">
                             <xs:annotation>
                                 <xs:documentation>Values: YES, NO CETS set this attribute to ?YES?, if the Agent confirmed compulsory information (TextC elements in Fab) (Refer to booking process)
 For a normal dossier import this value can be ignored.
@@ -748,31 +677,24 @@ For a normal dossier import this value can be ignored.
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
-                        <xs:attribute name="Agent"
-                                      type="xs:string"
-                                      use="optional">
+                        <xs:attribute name="Agent" type="xs:string" use="optional">
                             <xs:annotation>
                                 <xs:documentation>Country-code (2digits)+TraviId (4digits) (refer to table Country-code)
 If this is a swiss customer, the first two country code digits do not need to be sent.
                                 </xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="AgentUsercode"
-                                      type="xs:string"
-                                      use="optional">
+                        <xs:attribute name="AgentUsercode" type="xs:string" use="optional">
                             <xs:annotation>
                                 <xs:documentation>UserRef of the Tour Online or Cets User. Used to specify which User will receive the CMIR.</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="Lang"
-                                      type="xs:string"
-                                      use="optional">
+                        <xs:attribute name="Lang" type="xs:string" use="optional">
                             <xs:annotation>
                                 <xs:documentation>ISO Language code (DE, FR, IT, EN)</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="Mode"
-                                      use="optional">
+                        <xs:attribute name="Mode" use="optional">
                             <xs:annotation>
                                 <xs:documentation>Values: TEST, EDUC, PROD. EDUC for educational booking is obligatory </xs:documentation>
                             </xs:annotation>
@@ -790,33 +712,27 @@ If this is a swiss customer, the first two country code digits do not need to be
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
-                        <xs:attribute name="ViewOnly"
-                                      type="xs:boolean"
-                                      use="optional">
+                        <xs:attribute name="ViewOnly" type="xs:boolean" use="optional">
                             <xs:annotation>
                                 <xs:documentation>If true, this dossier may not be modified by the web service client. Is used for displaying dossiers as an indicator for the frontend if the dossier can be modified by the user or not.</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="Key"
-                                      type="xs:string">
+                        <xs:attribute name="Key" type="xs:string">
                             <xs:annotation>
                                 <xs:documentation>This value is supplied by the web service and needs to be looped back to the web service by the web service client. It allows the server to find out if, between two requests of a client, there have been changes made to the dossier by another service or directly on the server.</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="AllowDelete"
-                                      type="xs:boolean">
+                        <xs:attribute name="AllowDelete" type="xs:boolean">
                             <xs:annotation>
                                 <xs:documentation>Indicates if a fetched dossier can be deleted or not. If a dossier has been printed in the back office system, it cannot be deleted.</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="ResponseFormat"
-                                      type="xs:string">
+                        <xs:attribute name="ResponseFormat" type="xs:string">
                             <xs:annotation>
                                 <xs:documentation>If the value CMIR is supplied, the reposonse of an OLTDossier is a CMIR and not the standard OLT XML</xs:documentation>
                             </xs:annotation>
                         </xs:attribute>
-                        <xs:attribute name="IsDeleted"
-                                      type="xs:boolean">
+                        <xs:attribute name="IsDeleted" type="xs:boolean">
                             <xs:annotation>
                                 <xs:documentation>If this dossier no longer exists in the database, isDeleted="true".
 External systems that import dossiers can then know that they too have to delete this dossier.</xs:documentation>
@@ -825,8 +741,7 @@ External systems that import dossiers can then know that they too have to delete
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
-            <xs:attribute name="System"
-                          use="optional">
+            <xs:attribute name="System" use="optional">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
                         <xs:enumeration value="Prod" />
@@ -835,9 +750,7 @@ External systems that import dossiers can then know that they too have to delete
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="TotalNrDossiers"
-                          type="xs:integer"
-                          use="optional" />
+            <xs:attribute name="TotalNrDossiers" type="xs:integer" use="optional" />
         </xs:complexType>
     </xs:element>
 </xs:schema>
