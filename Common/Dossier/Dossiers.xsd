@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2015 Designer Edition 13.2.0.5980 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2015 Designer Edition 13.2.1.5996 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\Customers.xsd" />
     <xs:include schemaLocation=".\Travellers.xsd" />
@@ -737,6 +737,16 @@ If this is a swiss customer, the first two country code digits do not need to be
                                 <xs:documentation>If this dossier no longer exists in the database, isDeleted="true".
 External systems that import dossiers can then know that they too have to delete this dossier.</xs:documentation>
                             </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="ConsolidatePrices" use="optional">
+                            <xs:annotation>
+                                <xs:documentation>Offer: All Prices will be consolidated when offer is printed</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Offer" />
+                                </xs:restriction>
+                            </xs:simpleType>
                         </xs:attribute>
                     </xs:complexType>
                 </xs:element>
