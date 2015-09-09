@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2015 Designer Edition 13.1.1.5927 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2015 Designer Edition 13.2.1.5996 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="..\BaseDataExport.xsd" />
     <xs:element name="Miscellaneous">
@@ -195,6 +195,11 @@
 						</xs:documentation>
                     </xs:annotation>
                 </xs:element>
+                <xs:element name="Overnight" type="xs:boolean" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>MI_OVERNIGHT</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
                 <xs:element name="Hotels" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>A transfer could be connected to one or more
@@ -236,80 +241,7 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="Allotments" minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Allotment" minOccurs="0" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:attribute name="Date" type="xs:date">
-                                        <xs:annotation>
-                                            <xs:documentation>Date for this allotment item
-											</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Av" type="xs:float">
-                                        <xs:annotation>
-                                            <xs:documentation>The rest availability of this item
-											</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="Rel" type="xs:date">
-                                        <xs:annotation>
-                                            <xs:documentation>Release date.
-												If the current date is GREATER
-												than the release date, then
-												this item cannot be booked on
-												allotment.
-											</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="MinStay" type="xs:date">
-                                        <xs:annotation>
-                                            <xs:documentation>Minimum stay for this item.
-												If the END DATE
-												of the booking is LESS THAN OR EQUAL TO the
-												MinStayDate, then
-												this item cannot be booked on allotment.
-												e.g.
-												Product Booking
-												Dates: From=1. JAN, To=2.Jan
-												If the MinStayDate=2. JAN, this
-												item cannot be booked on
-												allotment. If the MinStayDate=1. JAN
-												then this item CAN be
-												booked on allotment.
-											</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="RQ" type="xs:boolean">
-                                        <xs:annotation>
-                                            <xs:documentation>Indicates if this item can be booked on
-												Request.
-												One always needs to frst check if a product has
-												allotment, then
-												if it is available on Free-Sell, then look to
-												see if it is
-												available on Request.
-											</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                    <xs:attribute name="FS" type="xs:boolean">
-                                        <xs:annotation>
-                                            <xs:documentation>Indicates if this item can be booked on
-												Free-Sell.
-												One always needs to frst check if a product has
-												allotment, then
-												if it is available on Free-Sell, then look to
-												see if it is
-												available on Request.
-											</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:attribute>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="Allotments" type="AllotmentChildren" minOccurs="0" />
                 <xs:element name="CancellationFees" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
