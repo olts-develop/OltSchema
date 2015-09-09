@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2015 Designer Edition 13.0.14.5873 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2015 Designer Edition 13.2.1.5996 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\BaseData.xsd" />
     <xs:complexType name="PeriodPricesChildren">
@@ -574,5 +574,113 @@ DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo</xs:documenta
                 </xs:annotation>
             </xs:element>
         </xs:all>
+    </xs:complexType>
+    <xs:complexType name="AllotmentChildren">
+        <xs:sequence>
+            <xs:element name="Allotment" type="AllotmentAttributes" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AllotmentAttributes">
+        <xs:attribute name="Date" type="xs:date">
+            <xs:annotation>
+                <xs:documentation>
+                        Date for this allotment item
+                    </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Av" type="xs:float">
+            <xs:annotation>
+                <xs:documentation>
+                        The rest availability of this item
+                    </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="Rel" type="xs:date">
+            <xs:annotation>
+                <xs:documentation>
+                        Release date.
+                        If the current date is GREATER
+                        than the release date, then
+                        this item cannot be booked on
+                        allotment.
+                    </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="MinStay" type="xs:date">
+            <xs:annotation>
+                <xs:documentation>
+                        Minimum stay for this item.
+                        If the END DATE
+                        of the booking is LESS THAN OR EQUAL TO the
+                        MinStayDate, then
+                        this item cannot be booked on allotment.
+                        e.g.
+                        Product Booking
+                        Dates: From=1. JAN, To=2.Jan
+                        If the MinStayDate=2. JAN, this
+                        item cannot be booked on
+                        allotment. If the MinStayDate=1. JAN
+                        then this item CAN be
+                        booked on allotment.
+                    </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="RQ" type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation>
+                        Indicates if this item can be booked on
+                        Request.
+                        One always needs to frst check if a product has
+                        allotment, then
+                        if it is available on Free-Sell, then look to
+                        see if it is
+                        available on Request.
+                    </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="FS" type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation>
+                        Indicates if this item can be booked on
+                        Free-Sell.
+                        One always needs to frst check if a product has
+                        allotment, then
+                        if it is available on Free-Sell, then look to
+                        see if it is
+                        available on Request.
+                    </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="MaxStay" type="xs:date">
+            <xs:annotation>
+                <xs:documentation>If filled, then the item cannot be booked over the given date. If empty, a maximum stay is not specified explicitly.
+
+If filled, the date is allotment relevant. A hotel is an overnight element where the return date is one day more than the date used for allotment checking.
+
+                    </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ArrOK" type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation>If 1, then an arrival at this product on the day is allowed. If 0, then an arrival has explicitly been disallowed.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="DepOK" type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation>If 1, then an departure at this product on the day is allowed. If 0, then an departure has explicitly been disallowed.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="NoArr" type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation>If 1, then an arrival for this product on the day is explicitly NOT allowed. The value has a higher priority than ArrOK. It is used when an item needs to be explicitly blocked for a short period. The short period has a higher weight than the general rule.
+Default: 0 .</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="NoDep" type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation>If 1, then an departure for this product on the day is explicitly NOT allowed. The value has a higher priority than DepOK. It is used when an item needs to be explicitly blocked for a short period. The short period has a higher weight than the general rule.
+Default: 0 .</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
     </xs:complexType>
 </xs:schema>
