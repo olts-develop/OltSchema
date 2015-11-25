@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-  <xs:element name="Text">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="Title" type="xs:string" />
-        <xs:element minOccurs="0" name="Detail" type="xs:string">
-          <xs:annotation>
-            <xs:documentation>CDATA</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <!--   <xs:element minOccurs="0" name="Type" type="xs:string"/> FALSCH-->
-        <xs:element minOccurs="0" name="InternalType">
-          <xs:complexType>
-            <xs:attribute name="Code">
-              <xs:annotation>
-                <xs:documentation>internal number from 1 to 13</xs:documentation>
-              </xs:annotation>
-            </xs:attribute>
-            <xs:attribute name="Description">
-              <xs:annotation>
-                <xs:documentation>internal description of the type</xs:documentation>
-              </xs:annotation>
-            </xs:attribute>
-          </xs:complexType>
-        </xs:element>
-        <!--xs:element minOccurs="0" maxOccurs="2" name="Price" >
+<!--Created with Liquid XML 2015 Designer Edition 13.2.2.6003 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Text">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Detail" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <!--   <xs:element minOccurs="0" name="Type" type="xs:string"/> FALSCH-->
+                <xs:element name="InternalType" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="Code">
+                            <xs:annotation>
+                                <xs:documentation>internal number from 1 to 13</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="Description">
+                            <xs:annotation>
+                                <xs:documentation>internal description of the type</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <!--xs:element minOccurs="0" maxOccurs="2" name="Price" >
                     <xs:complexType>
                         <xs:attribute name="Amount"/>
                         <xs:attribute name="Quantity"/>
@@ -39,32 +39,33 @@
                         </xs:attribute>
                     </xs:complexType>
                 </xs:element-->
-        <xs:element minOccurs="0" name="InsuranceNr" type="xs:string" />
-        <xs:element minOccurs="0" name="InternalInsuranceCode" type="xs:string">
-          <xs:annotation>
-            <xs:documentation>Internal insurance Code needed if it is a insurance</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element minOccurs="0" name="IsInvoiceText" type="xs:integer" />
-        <xs:element minOccurs="0" name="IsItineraryText" type="xs:integer" />
-        <xs:element minOccurs="0" name="IsBeginText" type="xs:integer" />
-        <xs:element minOccurs="0" name="IsEndText" type="xs:integer" />
-        <xs:element minOccurs="0" name="IsNoCostCenter" type="xs:integer" />
-      </xs:sequence>
-      <xs:attribute name="Insurance" use="optional">
-        <xs:annotation>
-          <xs:documentation> is an insurance item:
+                <xs:element name="InsuranceNr" type="xs:string" minOccurs="0" />
+                <xs:element name="InternalInsuranceCode" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Internal insurance Code needed if it is a insurance</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="IsInvoiceText" type="xs:integer" minOccurs="0" />
+                <xs:element name="IsItineraryText" type="xs:integer" minOccurs="0" />
+                <xs:element name="IsBeginText" type="xs:integer" minOccurs="0" />
+                <xs:element name="IsEndText" type="xs:integer" minOccurs="0" />
+                <xs:element name="IsNoCostCenter" type="xs:integer" minOccurs="0" />
+                <xs:element name="IsOfferText" type="xs:integer" minOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="Insurance" use="optional">
+                <xs:annotation>
+                    <xs:documentation> is an insurance item:
             YES
             NO
           </xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="YES" />
-            <xs:enumeration value="NO" />
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:attribute>
-    </xs:complexType>
-  </xs:element>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="YES" />
+                        <xs:enumeration value="NO" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>
