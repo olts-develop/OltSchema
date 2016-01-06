@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Created with Liquid XML 2015 Designer Edition 13.2.2.6003 (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="PaymentSlip">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Esr" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>If the EsrRestAmount &lt;= 0, then this node will not be supplied. This node will also not be sent for credit notes, or when the payment currency is &lt;&gt; CHF.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="EsrRecipientBank" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Name and address of the bank that will receive the payment</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="EsrRecipient" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Name and address of the recipient of the payment</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="EsrRecipientBankAccountNr" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Bank account number of the recipient</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="EsrRestAmount" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Rest amount due</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="EsrRestReferenceNr" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>ESR reference number</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="EsrRestReferenceString" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>ESR full string</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="EsrPayee" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Name and address of the person paying the invoice</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
