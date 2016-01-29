@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2015 Designer Edition 13.2.1.5996 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2015 Designer Edition 13.2.3.6018 (http://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <!--xs:include schemaLocation="..\Fifa\Projects.xsd" / -->
     <xs:include schemaLocation=".\Flight.xsd" />
@@ -121,6 +121,10 @@
                             <xs:enumeration value="VOEGELE" />
                             <xs:enumeration value="TUIINC" />
                             <xs:enumeration value="EXTGDS" />
+                            <xs:enumeration value="PUTNIKCH" />
+                            <xs:enumeration value="PUTNIKBG" />
+                            <xs:enumeration value="PUTNIKDE" />
+                            <xs:enumeration value="PUTNIKAT" />
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
