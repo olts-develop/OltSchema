@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML Studio 2012 Designer Edition 10.1.5.4204 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2016 Designer Edition 14.1.2.6578 (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
-  <xs:include schemaLocation="..\GeneralCodes\InternalPriceType.xsd" />
-  <xs:include schemaLocation="..\GeneralCodes\PriceTravellerType.xsd" />
-  <xs:element name="PurchasePrice">
-    <xs:annotation>
-      <xs:documentation>Purchase price of a DossierItem</xs:documentation>
-    </xs:annotation>
-    <xs:complexType>
-      <xs:all>
-        <xs:element name="UnitNr" type="xs:decimal" />
-        <xs:element name="Currency" type="xs:string" minOccurs="0" />
-        <xs:element name="Rate" type="xs:decimal" minOccurs="0" />
-        <xs:element name="PricePerUnit" type="xs:decimal" />
-        <xs:element name="TotalPrice" type="xs:decimal" />
-        <xs:element name="PriceDescription" type="xs:string" minOccurs="0" />
-        <xs:element name="CrediAccount" type="xs:string" minOccurs="0" />
-        <xs:element name="Supplier" type="SupplierType" minOccurs="0" />
-        <xs:element name="VatCode" type="xs:integer" minOccurs="0" />
-        <xs:element name="VatPrintedCode" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Type of Code:
+    <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
+    <xs:include schemaLocation="..\GeneralCodes\InternalPriceType.xsd" />
+    <xs:include schemaLocation="..\GeneralCodes\PriceTravellerType.xsd" />
+    <xs:element name="PurchasePrice">
+        <xs:annotation>
+            <xs:documentation>Purchase price of a DossierItem</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="UnitNr" type="xs:decimal" />
+                <xs:element name="Currency" type="xs:string" minOccurs="0" />
+                <xs:element name="Rate" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PricePerUnit" type="xs:decimal" />
+                <xs:element name="TotalPrice" type="xs:decimal" />
+                <xs:element name="PriceDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="CrediAccount" type="xs:string" minOccurs="0" />
+                <xs:element name="Supplier" type="SupplierType" minOccurs="0" />
+                <xs:element name="VatCode" type="xs:integer" minOccurs="0" />
+                <xs:element name="VatPrintedCode" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Type of Code:
               Umsatzsteuer
               A Exportlieferung 0.0
               B Dienstleistung ins Ausland 0.0
@@ -48,58 +48,58 @@
               Y Hotelleistung 3.6
               Z keine Vorsteuer 0.0
             </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:enumeration value="A" />
-              <xs:enumeration value="B" />
-              <xs:enumeration value="C" />
-              <xs:enumeration value="D" />
-              <xs:enumeration value="E" />
-              <xs:enumeration value="F" />
-              <xs:enumeration value="G" />
-              <xs:enumeration value="I" />
-              <xs:enumeration value="M" />
-              <xs:enumeration value="N" />
-              <xs:enumeration value="Q" />
-              <xs:enumeration value="O" />
-              <xs:enumeration value="P" />
-              <xs:enumeration value="R" />
-              <xs:enumeration value="S" />
-              <xs:enumeration value="T" />
-              <xs:enumeration value="U" />
-              <xs:enumeration value="VT" />
-              <xs:enumeration value="VU" />
-              <xs:enumeration value="W" />
-              <xs:enumeration value="X" />
-              <xs:enumeration value="Y" />
-              <xs:enumeration value="Z" />
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="VatInternalCode" type="xs:string" minOccurs="0" />
-        <xs:element name="VatPercent" minOccurs="0">
-          <xs:simpleType>
-            <xs:restriction base="xs:decimal">
-              <xs:maxInclusive value="+100" />
-              <xs:minInclusive value="0" />
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="VatDescription" type="xs:string" minOccurs="0" />
-        <xs:element name="InvoiceNr" type="xs:string" minOccurs="0" />
-        <xs:element name="InvoiceDate" type="xs:date" minOccurs="0" />
-        <xs:element name="AirlineNr" type="xs:string" minOccurs="0" />
-        <xs:element name="PricePosition" minOccurs="0">
-          <xs:simpleType>
-            <xs:restriction base="xs:integer">
-              <xs:minInclusive value="1" />
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="PriceType" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Price type for this Priceline
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="A" />
+                            <xs:enumeration value="B" />
+                            <xs:enumeration value="C" />
+                            <xs:enumeration value="D" />
+                            <xs:enumeration value="E" />
+                            <xs:enumeration value="F" />
+                            <xs:enumeration value="G" />
+                            <xs:enumeration value="I" />
+                            <xs:enumeration value="M" />
+                            <xs:enumeration value="N" />
+                            <xs:enumeration value="Q" />
+                            <xs:enumeration value="O" />
+                            <xs:enumeration value="P" />
+                            <xs:enumeration value="R" />
+                            <xs:enumeration value="S" />
+                            <xs:enumeration value="T" />
+                            <xs:enumeration value="U" />
+                            <xs:enumeration value="VT" />
+                            <xs:enumeration value="VU" />
+                            <xs:enumeration value="W" />
+                            <xs:enumeration value="X" />
+                            <xs:enumeration value="Y" />
+                            <xs:enumeration value="Z" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="VatInternalCode" type="xs:string" minOccurs="0" />
+                <xs:element name="VatPercent" minOccurs="0">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:maxInclusive value="+100" />
+                            <xs:minInclusive value="0" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="VatDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="InvoiceNr" type="xs:string" minOccurs="0" />
+                <xs:element name="InvoiceDate" type="xs:date" minOccurs="0" />
+                <xs:element name="AirlineNr" type="xs:string" minOccurs="0" />
+                <xs:element name="PricePosition" minOccurs="0">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="1" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="PriceType" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Price type for this Priceline
               0 = Default
               1 = Ticket
               2 = Tax
@@ -119,37 +119,50 @@
               16 = St. No Insurance
               17 = Manual Price
             </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:integer">
-              <xs:enumeration value="0" />
-              <xs:enumeration value="1" />
-              <xs:enumeration value="2" />
-              <xs:enumeration value="3" />
-              <xs:enumeration value="4" />
-              <xs:enumeration value="5" />
-              <xs:enumeration value="6" />
-              <xs:enumeration value="7" />
-              <xs:enumeration value="8" />
-              <xs:enumeration value="9" />
-              <xs:enumeration value="10" />
-              <xs:enumeration value="11" />
-              <xs:enumeration value="12" />
-              <xs:enumeration value="13" />
-              <xs:enumeration value="14" />
-              <xs:enumeration value="15" />
-              <xs:enumeration value="16" />
-              <xs:enumeration value="17" />
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ExternalItemNr" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Unique external reference to to this DossierItem</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-      </xs:all>
-      <xs:attribute name="InternalPriceType" type="InternalPriceType" use="optional" />
-    </xs:complexType>
-  </xs:element>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:enumeration value="0" />
+                            <xs:enumeration value="1" />
+                            <xs:enumeration value="2" />
+                            <xs:enumeration value="3" />
+                            <xs:enumeration value="4" />
+                            <xs:enumeration value="5" />
+                            <xs:enumeration value="6" />
+                            <xs:enumeration value="7" />
+                            <xs:enumeration value="8" />
+                            <xs:enumeration value="9" />
+                            <xs:enumeration value="10" />
+                            <xs:enumeration value="11" />
+                            <xs:enumeration value="12" />
+                            <xs:enumeration value="13" />
+                            <xs:enumeration value="14" />
+                            <xs:enumeration value="15" />
+                            <xs:enumeration value="16" />
+                            <xs:enumeration value="17" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="ExternalItemNr" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Unique external reference to to this DossierItem</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="WorkFlowCode" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>For internal use only for now
+						</xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="T" />
+                            <xs:enumeration value="R" />
+                            <xs:enumeration value="X" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:all>
+            <xs:attribute name="InternalPriceType" type="InternalPriceType" use="optional" />
+        </xs:complexType>
+    </xs:element>
 </xs:schema>
