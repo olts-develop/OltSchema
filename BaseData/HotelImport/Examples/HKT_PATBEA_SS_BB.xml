@@ -33,6 +33,7 @@
         <Location />
         <Category>3.5</Category>
         <Passive>0</Passive>
+		<WetuContentId>1234</WetuContentId>
         <Rooms>
             <Room>
                 <RoomType>
