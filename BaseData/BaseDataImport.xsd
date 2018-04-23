@@ -593,15 +593,31 @@ DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo</xs:documenta
         </xs:attribute>
     </xs:attributeGroup>
     <xs:attributeGroup name="CombinationCodeGroup">
-        <xs:attribute name="CombCode" type="xs:string">
+        <xs:attribute name="CombCode">
             <xs:annotation>
-                <xs:documentation>The combination code for the price line</xs:documentation>
+                <xs:documentation>The combination code for the price line
+e.g. SO for SpecialOffer, EB for EarlyBooking
+The names can be chosen by the user.
+CombinationCodes have only been implemented for SpecialOffer and EarlyBooking.</xs:documentation>
             </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:minLength value="0" />
+                    <xs:maxLength value="10" />
+                </xs:restriction>
+            </xs:simpleType>
         </xs:attribute>
-        <xs:attribute name="NotAndCombCode" type="xs:string">
+        <xs:attribute name="NotAndCombCode">
             <xs:annotation>
-                <xs:documentation>The combination code of the price lines with which the actual price line may not be combined.</xs:documentation>
+                <xs:documentation>The combination code of the price lines with which the actual price line may not be combined.
+If this price line is a SO, and cannot be combined with an EB, then this CombCode=SO, NotAndCombCode=E . There will be other price lines where CombCode=EB. If there are other EB price lines with the CombCode=EB in the pricing, and this SO price line, then this price line will not be calculated in the pricing, as this price line cannot be used when there is an EB in the pricing.</xs:documentation>
             </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:minLength value="0" />
+                    <xs:maxLength value="10" />
+                </xs:restriction>
+            </xs:simpleType>
         </xs:attribute>
     </xs:attributeGroup>
     <xs:complexType name="ItemInfos">
