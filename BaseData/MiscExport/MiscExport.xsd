@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2015 Designer Edition 13.2.1.5996 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid Studio 2018 (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="..\BaseDataExport.xsd" />
     <xs:element name="Miscellaneous">
@@ -200,6 +200,7 @@
                         <xs:documentation>MI_OVERNIGHT</xs:documentation>
                     </xs:annotation>
                 </xs:element>
+                <xs:element name="TomaNr" type="xs:string" minOccurs="0" />
                 <xs:element name="Hotels" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>A transfer could be connected to one or more

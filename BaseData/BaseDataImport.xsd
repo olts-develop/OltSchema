@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid Studio 2017 - Data Designer Edition 15.1.11.7648 (https://www.liquid-technologies.com)-->
+<!--Created with Liquid Studio 2018 (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\BaseData.xsd" />
     <xs:complexType name="PeriodPricesChildren">
@@ -211,6 +211,7 @@
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
+        <xs:attributeGroup ref="CombinationCodeGroup" />
     </xs:complexType>
     <xs:complexType name="EarlyBookingsChildren">
         <xs:sequence>
@@ -295,6 +296,7 @@
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
+        <xs:attributeGroup ref="CombinationCodeGroup" />
     </xs:complexType>
     <xs:attributeGroup name="DateFromToAttributeGroup">
         <xs:attribute name="DateFrom" type="xs:date" use="required">
@@ -587,6 +589,18 @@ DateBeforeDepartureFrom must be smaller than DateBeforeDepartureTo</xs:documenta
         <xs:attribute name="Acct" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Account number for this price line</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="CombinationCodeGroup">
+        <xs:attribute name="CombCode" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The combination code for the price line</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="NotAndCombCode" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The combination code of the price lines with which the actual price line may not be combined.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:attributeGroup>
