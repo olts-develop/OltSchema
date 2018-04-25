@@ -225,6 +225,11 @@ MI_SUPPLIERBOOKCODE</xs:documentation>
 MI_PREISINFO</xs:documentation>
                                 </xs:annotation>
                             </xs:element>
+                            <xs:element name="IgnoreEndDate" type="xs:integer" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>When 1, then the EndDate for this element is ignored for the calculation of the ReturnDate of the dossier, and the EndDate is ignored for the Export to Wetu.</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
                             <xs:element name="TomaNr" type="xs:string" minOccurs="0" />
                             <xs:element name="ItemInfos" type="ItemInfos" minOccurs="0" />
                             <xs:element name="Prices" minOccurs="0">
