@@ -1,0 +1,181 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>XML Schema Documenatation Menu</title>
+      <!-- saved from url=(0014)about:internet --><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="searchindex.js"></script><link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript">
+         <!--
+            $(document).ready(function () {
+                setTabs();
+            });
+    
+        	var filenames = null;
+        	var keywordIndex = null;
+
+        	function getSearchJS(searchBoxID, ulResults) 
+            {
+        		if (filenames == null) {
+        		    filenames = CreateFileRefs();
+        		}
+        		if (keywordIndex == null) {
+        		    keywordIndex = CreateWordIndex();
+        		}
+
+        		var data = '';
+        		var searchText = $("#" + searchBoxID).attr("value");
+        		var searchTerms = searchText.split(' ');
+        		var fileIndexResults = new Array();
+
+        		for (var sti = 0; sti < searchTerms.length; sti++) {
+        		    var searchTerm = trim(searchTerms[sti]).toLowerCase();
+
+        		    for (var i = 0; i < keywordIndex.length; i++) {
+        		        if (keywordIndex[i][0].indexOf(searchTerm) != -1) {
+        		            fileIndexResults = fileIndexResults.concat(keywordIndex[i][1]);
+        		        }
+        		    }
+        		}
+
+        		fileIndexResults = unique(fileIndexResults);
+        		for (var ri = 0; ri < fileIndexResults.length; ri++) {
+        		    var resultOffset = fileIndexResults[ri];
+        		    data += "<li><a href='" + filenames[resultOffset][1] + "' target='ContentFrame'>" + filenames[resultOffset][0] + "</a></li>";
+        		}
+
+        		if (data == '')
+        		    data = "<li>No Results</li>";
+
+        		$("#" + ulResults).html(data);
+        	}
+                        --></script></head>
+   <body>
+      <form action="CompleteMenu.html">
+         <ul class="tabs">
+            <li><a href="#tab1">Index</a></li>
+            <li><a href="#tab2">Search</a></li>
+         </ul>
+         <div class="tab_container">
+            <div id="tab1" class="tab_content">
+               <div>
+                  <ul id="ulMenu" class="treeview">
+                     <li id="Schema" class="parent"><a href="javascript:toggleNode('Schema')"><img height="11" width="11" src="images/plus.gif"></img>Schema</a><ul style="display:none" expanded="false" loaded="true">
+                           <li id="arrimport_xsd"><a href="arrimport_xsd.html" target="ContentFrame">ArrImport.xsd</a></li>
+                           <li id="basedata_xsd"><a href="basedata_xsd.html" target="ContentFrame">BaseData.xsd</a></li>
+                           <li id="basedataimport_xsd"><a href="basedataimport_xsd.html" target="ContentFrame">BaseDataImport.xsd</a></li>
+                           <li id="bus_xsd"><a href="bus_xsd.html" target="ContentFrame">Bus.xsd</a></li>
+                           <li id="cancellationfee_xsd"><a href="cancellationfee_xsd.html" target="ContentFrame">CancellationFee.xsd</a></li>
+                           <li id="car_xsd"><a href="car_xsd.html" target="ContentFrame">Car.xsd</a></li>
+                           <li id="carcategory_xsd"><a href="carcategory_xsd.html" target="ContentFrame">CarCategory.xsd</a></li>
+                           <li id="description_xsd"><a href="description_xsd.html" target="ContentFrame">Description.xsd</a></li>
+                           <li id="document_xsd"><a href="document_xsd.html" target="ContentFrame">Document.xsd</a></li>
+                           <li id="dossieritem_xsd"><a href="dossieritem_xsd.html" target="ContentFrame">DossierItem.xsd</a></li>
+                           <li id="flight_xsd"><a href="flight_xsd.html" target="ContentFrame">Flight.xsd</a></li>
+                           <li id="hotel_xsd"><a href="hotel_xsd.html" target="ContentFrame">Hotel.xsd</a></li>
+                           <li id="imagetype_xsd"><a href="imagetype_xsd.html" target="ContentFrame">ImageType.xsd</a></li>
+                           <li id="internalitemtype_xsd"><a href="internalitemtype_xsd.html" target="ContentFrame">InternalItemType.xsd</a></li>
+                           <li id="internalpricetype_xsd"><a href="internalpricetype_xsd.html" target="ContentFrame">InternalPriceType.xsd</a></li>
+                           <li id="iteminfo_xsd"><a href="iteminfo_xsd.html" target="ContentFrame">ItemInfo.xsd</a></li>
+                           <li id="itemprice_xsd"><a href="itemprice_xsd.html" target="ContentFrame">ItemPrice.xsd</a></li>
+                           <li id="meal_xsd"><a href="meal_xsd.html" target="ContentFrame">Meal.xsd</a></li>
+                           <li id="miscellaneous_xsd"><a href="miscellaneous_xsd.html" target="ContentFrame">Miscellaneous.xsd</a></li>
+                           <li id="packageitemdescription_xsd"><a href="packageitemdescription_xsd.html" target="ContentFrame">PackageItemDescription.xsd</a></li>
+                           <li id="pricetravellertype_xsd"><a href="pricetravellertype_xsd.html" target="ContentFrame">PriceTravellerType.xsd</a></li>
+                           <li id="productitemprice_xsd"><a href="productitemprice_xsd.html" target="ContentFrame">ProductItemPrice.xsd</a></li>
+                           <li id="projecttype_xsd"><a href="projecttype_xsd.html" target="ContentFrame">ProjectType.xsd</a></li>
+                           <li id="purchaseprice_xsd"><a href="purchaseprice_xsd.html" target="ContentFrame">PurchasePrice.xsd</a></li>
+                           <li id="room_xsd"><a href="room_xsd.html" target="ContentFrame">Room.xsd</a></li>
+                           <li id="ship_xsd"><a href="ship_xsd.html" target="ContentFrame">Ship.xsd</a></li>
+                           <li id="suppliertype_xsd"><a href="suppliertype_xsd.html" target="ContentFrame">SupplierType.xsd</a></li>
+                           <li id="text_xsd"><a href="text_xsd.html" target="ContentFrame">Text.xsd</a></li>
+                           <li id="train_xsd"><a href="train_xsd.html" target="ContentFrame">Train.xsd</a></li>
+                           <li id="traveldate_xsd"><a href="traveldate_xsd.html" target="ContentFrame">TravelDate.xsd</a></li>
+                        </ul>
+                     </li>
+                     <li id="AttributeGroup" class="parent"><a href="javascript:toggleNode('AttributeGroup')"><img height="11" width="11" src="images/plus.gif"></img>AttributeGroup</a><ul style="display:none" expanded="false" loaded="true">
+                           <li id="acctattributegroup"><a href="acctattributegroup.html" target="ContentFrame">AcctAttributeGroup</a></li>
+                           <li id="addamountattributegroup"><a href="addamountattributegroup.html" target="ContentFrame">AddAmountAttributeGroup</a></li>
+                           <li id="agefromtogroup"><a href="agefromtogroup.html" target="ContentFrame">AgeFromToGroup</a></li>
+                           <li id="babychildattributegroup"><a href="babychildattributegroup.html" target="ContentFrame">BabyChildAttributeGroup</a></li>
+                           <li id="buyattributegroup"><a href="buyattributegroup.html" target="ContentFrame">BuyAttributeGroup</a></li>
+                           <li id="childidxnrattributegroup"><a href="childidxnrattributegroup.html" target="ContentFrame">ChildIdxNrAttributeGroup</a></li>
+                           <li id="combinationcodegroup"><a href="combinationcodegroup.html" target="ContentFrame">CombinationCodeGroup</a></li>
+                           <li id="datefromtoattributegroup"><a href="datefromtoattributegroup.html" target="ContentFrame">DateFromToAttributeGroup</a></li>
+                           <li id="daterelevantattributegroup"><a href="daterelevantattributegroup.html" target="ContentFrame">DateRelevantAttributeGroup</a></li>
+                           <li id="dayattributegroup"><a href="dayattributegroup.html" target="ContentFrame">DayAttributeGroup</a></li>
+                           <li id="daysdatebeforedepartureattributegroup"><a href="daysdatebeforedepartureattributegroup.html" target="ContentFrame">DaysDateBeforeDepartureAttributeGroup</a></li>
+                           <li id="descidattributegroup"><a href="descidattributegroup.html" target="ContentFrame">DescIdAttributeGroup</a></li>
+                           <li id="sellgeneralattributegroup"><a href="sellgeneralattributegroup.html" target="ContentFrame">SellGeneralAttributeGroup</a></li>
+                           <li id="specialcommissionattributegroup"><a href="specialcommissionattributegroup.html" target="ContentFrame">SpecialCommissionAttributeGroup</a></li>
+                           <li id="weekdaysvalidattributegroup"><a href="weekdaysvalidattributegroup.html" target="ContentFrame">WeekdaysValidAttributeGroup</a></li>
+                        </ul>
+                     </li>
+                     <li id="ComplexType" class="parent"><a href="javascript:toggleNode('ComplexType')"><img height="11" width="11" src="images/plus.gif"></img>ComplexType</a><ul style="display:none" expanded="false" loaded="true">
+                           <li id="addperdaypriceattributes"><a href="addperdaypriceattributes.html" target="ContentFrame">AddPerDayPriceAttributes</a></li>
+                           <li id="addperdaypriceschildren"><a href="addperdaypriceschildren.html" target="ContentFrame">AddPerDayPricesChildren</a></li>
+                           <li id="addperiodpriceattributes"><a href="addperiodpriceattributes.html" target="ContentFrame">AddPeriodPriceAttributes</a></li>
+                           <li id="addperiodpriceschildren"><a href="addperiodpriceschildren.html" target="ContentFrame">AddPeriodPricesChildren</a></li>
+                           <li id="desc"><a href="desc.html" target="ContentFrame">Desc</a></li>
+                           <li id="destinationattributes"><a href="destinationattributes.html" target="ContentFrame">DestinationAttributes</a></li>
+                           <li id="earlybookingattributes"><a href="earlybookingattributes.html" target="ContentFrame">EarlyBookingAttributes</a></li>
+                           <li id="earlybookingschildren"><a href="earlybookingschildren.html" target="ContentFrame">EarlyBookingsChildren</a></li>
+                           <li id="imagetype"><a href="imagetype.html" target="ContentFrame">ImageType</a></li>
+                           <li id="iteminforequestattributes"><a href="iteminforequestattributes.html" target="ContentFrame">ItemInfoRequestAttributes</a></li>
+                           <li id="iteminfotext1"><a href="iteminfotext1.html" target="ContentFrame">ItemInfoText</a></li>
+                           <li id="iteminfos1"><a href="iteminfos1.html" target="ContentFrame">ItemInfos</a></li>
+                           <li id="onetimeattributes"><a href="onetimeattributes.html" target="ContentFrame">OneTimeAttributes</a></li>
+                           <li id="onetimeschildren"><a href="onetimeschildren.html" target="ContentFrame">OneTimesChildren</a></li>
+                           <li id="packageitemdescription"><a href="packageitemdescription.html" target="ContentFrame">PackageItemDescription</a></li>
+                           <li id="perdaypriceattributes"><a href="perdaypriceattributes.html" target="ContentFrame">PerDayPriceAttributes</a></li>
+                           <li id="perdaypriceschildren"><a href="perdaypriceschildren.html" target="ContentFrame">PerDayPricesChildren</a></li>
+                           <li id="periodpricesattributes"><a href="periodpricesattributes.html" target="ContentFrame">PeriodPricesAttributes</a></li>
+                           <li id="periodpriceschildren"><a href="periodpriceschildren.html" target="ContentFrame">PeriodPricesChildren</a></li>
+                           <li id="phoneattributes"><a href="phoneattributes.html" target="ContentFrame">PhoneAttributes</a></li>
+                           <li id="pricetravellertype"><a href="pricetravellertype.html" target="ContentFrame">PriceTravellerType</a></li>
+                           <li id="projecttype"><a href="projecttype.html" target="ContentFrame">ProjectType</a></li>
+                           <li id="specialofferattributes"><a href="specialofferattributes.html" target="ContentFrame">SpecialOfferAttributes</a></li>
+                           <li id="specialofferschildren"><a href="specialofferschildren.html" target="ContentFrame">SpecialOffersChildren</a></li>
+                           <li id="suppliertype"><a href="suppliertype.html" target="ContentFrame">SupplierType</a></li>
+                           <li id="translation"><a href="translation.html" target="ContentFrame">Translation</a></li>
+                        </ul>
+                     </li>
+                     <li id="Element" class="parent"><a href="javascript:toggleNode('Element')"><img height="11" width="11" src="images/plus.gif"></img>Element</a><ul style="display:none" expanded="false" loaded="true">
+                           <li id="arrangements"><a href="arrangements.html" target="ContentFrame">Arrangements</a></li>
+                           <li id="bus"><a href="bus.html" target="ContentFrame">Bus</a></li>
+                           <li id="cancellationfee"><a href="cancellationfee.html" target="ContentFrame">CancellationFee</a></li>
+                           <li id="car"><a href="car.html" target="ContentFrame">Car</a></li>
+                           <li id="carcategory"><a href="carcategory.html" target="ContentFrame">CarCategory</a></li>
+                           <li id="description3"><a href="description3.html" target="ContentFrame">Description</a></li>
+                           <li id="document"><a href="document.html" target="ContentFrame">Document</a></li>
+                           <li id="dossieritem"><a href="dossieritem.html" target="ContentFrame">DossierItem</a></li>
+                           <li id="flight"><a href="flight.html" target="ContentFrame">Flight</a></li>
+                           <li id="hotel"><a href="hotel.html" target="ContentFrame">Hotel</a></li>
+                           <li id="iteminfo"><a href="iteminfo.html" target="ContentFrame">ItemInfo</a></li>
+                           <li id="itemprice"><a href="itemprice.html" target="ContentFrame">ItemPrice</a></li>
+                           <li id="meal1"><a href="meal1.html" target="ContentFrame">Meal</a></li>
+                           <li id="miscellaneous1"><a href="miscellaneous1.html" target="ContentFrame">Miscellaneous</a></li>
+                           <li id="productitemprice"><a href="productitemprice.html" target="ContentFrame">ProductItemPrice</a></li>
+                           <li id="purchaseprice"><a href="purchaseprice.html" target="ContentFrame">PurchasePrice</a></li>
+                           <li id="room"><a href="room.html" target="ContentFrame">Room</a></li>
+                           <li id="ship"><a href="ship.html" target="ContentFrame">Ship</a></li>
+                           <li id="text3"><a href="text3.html" target="ContentFrame">Text</a></li>
+                           <li id="train"><a href="train.html" target="ContentFrame">Train</a></li>
+                           <li id="traveldate1"><a href="traveldate1.html" target="ContentFrame">TravelDate</a></li>
+                        </ul>
+                     </li>
+                     <li id="SimpleType" class="parent"><a href="javascript:toggleNode('SimpleType')"><img height="11" width="11" src="images/plus.gif"></img>SimpleType</a><ul style="display:none" expanded="false" loaded="true">
+                           <li id="internalitemtype"><a href="internalitemtype.html" target="ContentFrame">InternalItemType</a></li>
+                           <li id="internalpricetype"><a href="internalpricetype.html" target="ContentFrame">InternalPriceType</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div id="tab2" class="tab_content"><input type="text" id="txtSearch"></input><input type="button" id="cmdSearch" value="Search" onclick="getSearchJS('txtSearch','ulSearch');"></input><div style="margin-top:10px;">
+                  <ul id="ulSearch" class="search"></ul>
+               </div>
+            </div>
+         </div>
+      </form>
+   </body>
+</html>

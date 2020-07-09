@@ -1,0 +1,152 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs the schema BaseData.xsd in Hotel Import XML Schema Documentation</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Schema', 'basedata_xsd');
+                        --></script><div class="pageheader">
+         Documentation for Hotel Import XML Schema Documentation
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Schema Name:</b></td>
+               <td>BaseData.xsd</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>
+&lt;!--Created with Liquid XML 2015 Designer Edition 13.1.1.5927 (http://www.liquid-technologies.com)--&gt;
+&lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+    &lt;xs:complexType name="Desc"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation /&gt;
+        &lt;/xs:annotation&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="Desc" minOccurs="0" maxOccurs="unbounded"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Every "Desc" has a DescId and the translations for this DescId. A price line has a DescId attribute which identifies which text is appropriate for the price line. Placing the text in a reference list reduces the size of the XML dramatically. The XML is also built 30% faster than if the text is added to each appropriate node.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+                &lt;xs:complexType&gt;
+                    &lt;xs:complexContent&gt;
+                        &lt;xs:extension base="Translation"&gt;
+                            &lt;xs:attributeGroup ref="DescIdAttributeGroup" /&gt;
+                        &lt;/xs:extension&gt;
+                    &lt;/xs:complexContent&gt;
+                &lt;/xs:complexType&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="Translation"&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="de" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;German. Can be a CDATA.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="en" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;English. Can be a CDATA.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="fr" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;French. Can be a CDATA.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="it" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;Italian. Can be a CDATA.&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="PhoneAttributes"&gt;
+        &lt;xs:attribute name="AreaCode" type="xs:string" /&gt;
+        &lt;xs:attribute name="Number" type="xs:string" use="required" /&gt;
+        &lt;xs:attribute name="CountryPrefix" type="xs:string" /&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:complexType name="DestinationAttributes"&gt;
+        &lt;xs:attribute name="CountryCode" type="xs:string" use="optional"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;2-letter country code based on the destination&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Code" type="xs:string" use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;IATA Code of the destination
+                    HO_DESTINATION/DEST_CODE&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:complexType&gt;
+    &lt;xs:attributeGroup name="DescIdAttributeGroup"&gt;
+        &lt;xs:attribute name="DescId" type="xs:nonNegativeInteger" use="required"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;In order to prevent duplication of data in the export, which would exponentially increase the size of the export file, common texts for the price lines are stored in the "Desc" node and are referenced by the DescId, e.g.
+                    &amp;lt;Descs&amp;gt;
+                    &amp;lt;Desc
+                    DescId="1"&amp;gt;
+                    &amp;lt;de&amp;gt;Preis pro Person/Nacht&amp;lt;/de&amp;gt;
+                    &amp;lt;fr&amp;gt;Prix par personne/nuit&amp;lt;/fr&amp;gt;
+                    &amp;lt;/Desc&amp;gt;
+                    ...
+                    &amp;lt;PerDayPrice Day="2013-02-01" Price="271.00" DescId="1" /&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
+    &lt;/xs:attributeGroup&gt;
+&lt;/xs:schema&gt;
+</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="AttributeGroup" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>AttributeGroups:</b></td>
+            </tr>
+            <tr id="AttributeGroup_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="descidattributegroup.html">DescIdAttributeGroup</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="ComplexType" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>ComplexTypes:</b></td>
+            </tr>
+            <tr id="ComplexType_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="desc.html">Desc</a></li>
+                     <li><a href="destinationattributes.html">DestinationAttributes</a></li>
+                     <li><a href="phoneattributes.html">PhoneAttributes</a></li>
+                     <li><a href="translation.html">Translation</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Hotel Import XML Schema Documentation<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/">Liquid Studio 2020 - Data Designer Edition 18.0.8.10077</a></div>
+   </body>
+</html>
