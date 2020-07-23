@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid Studio 2018 (https://www.liquid-technologies.com)-->
+<!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\BaseData.xsd" />
     <xs:complexType name="PeriodPricesChildren">
@@ -695,6 +695,17 @@ If this price line is a SO, and cannot be combined with an EB, then this CombCod
                 <xs:annotation>
                     <xs:documentation>Description text of item info</xs:documentation>
                 </xs:annotation>
+            </xs:element>
+            <xs:element name="AllowDuplicate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>This element is allowed to be displayed more than once on documents.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:enumeration value="0" />
+                        <xs:enumeration value="1" />
+                    </xs:restriction>
+                </xs:simpleType>
             </xs:element>
         </xs:all>
     </xs:complexType>
