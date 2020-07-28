@@ -1,0 +1,172 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>XML Schema Documenatation Menu</title>
+      <!-- saved from url=(0014)about:internet --><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="searchindex.js"></script><link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript">
+         <!--
+            $(document).ready(function () {
+                setTabs();
+            });
+    
+        	var filenames = null;
+        	var keywordIndex = null;
+
+        	function getSearchJS(searchBoxID, ulResults) 
+            {
+        		if (filenames == null) {
+        		    filenames = CreateFileRefs();
+        		}
+        		if (keywordIndex == null) {
+        		    keywordIndex = CreateWordIndex();
+        		}
+
+        		var data = '';
+        		var searchText = $("#" + searchBoxID).attr("value");
+        		var searchTerms = searchText.split(' ');
+        		var fileIndexResults = new Array();
+
+        		for (var sti = 0; sti < searchTerms.length; sti++) {
+        		    var searchTerm = trim(searchTerms[sti]).toLowerCase();
+
+        		    for (var i = 0; i < keywordIndex.length; i++) {
+        		        if (keywordIndex[i][0].indexOf(searchTerm) != -1) {
+        		            fileIndexResults = fileIndexResults.concat(keywordIndex[i][1]);
+        		        }
+        		    }
+        		}
+
+        		fileIndexResults = unique(fileIndexResults);
+        		for (var ri = 0; ri < fileIndexResults.length; ri++) {
+        		    var resultOffset = fileIndexResults[ri];
+        		    data += "<li><a href='" + filenames[resultOffset][1] + "' target='ContentFrame'>" + filenames[resultOffset][0] + "</a></li>";
+        		}
+
+        		if (data == '')
+        		    data = "<li>No Results</li>";
+
+        		$("#" + ulResults).html(data);
+        	}
+                        --></script></head>
+   <body>
+      <form action="CompleteMenu.html">
+         <ul class="tabs">
+            <li><a href="#tab1">Index</a></li>
+            <li><a href="#tab2">Search</a></li>
+         </ul>
+         <div class="tab_container">
+            <div id="tab1" class="tab_content">
+               <div>
+                  <ul id="ulMenu" class="treeview">
+                     <li id="Schema" class="parent"><a href="javascript:toggleNode('Schema')"><img height="11" width="11" src="images/plus.gif"></img>Schema</a><ul style="display:none" expanded="false" loaded="true">
+                           <li id="bus_xsd"><a href="bus_xsd.html" target="ContentFrame">Bus.xsd</a></li>
+                           <li id="cancellationfee_xsd"><a href="cancellationfee_xsd.html" target="ContentFrame">CancellationFee.xsd</a></li>
+                           <li id="car_xsd"><a href="car_xsd.html" target="ContentFrame">Car.xsd</a></li>
+                           <li id="carcategory_xsd"><a href="carcategory_xsd.html" target="ContentFrame">CarCategory.xsd</a></li>
+                           <li id="corporatecustomercards_xsd"><a href="corporatecustomercards_xsd.html" target="ContentFrame">CorporateCustomerCards.xsd</a></li>
+                           <li id="customer_xsd"><a href="customer_xsd.html" target="ContentFrame">Customer.xsd</a></li>
+                           <li id="customers_xsd"><a href="customers_xsd.html" target="ContentFrame">Customers.xsd</a></li>
+                           <li id="description_xsd"><a href="description_xsd.html" target="ContentFrame">Description.xsd</a></li>
+                           <li id="document_xsd"><a href="document_xsd.html" target="ContentFrame">Document.xsd</a></li>
+                           <li id="dossieritem_xsd"><a href="dossieritem_xsd.html" target="ContentFrame">DossierItem.xsd</a></li>
+                           <li id="dossiers_xsd"><a href="dossiers_xsd.html" target="ContentFrame">Dossiers.xsd</a></li>
+                           <li id="flight_xsd"><a href="flight_xsd.html" target="ContentFrame">Flight.xsd</a></li>
+                           <li id="hotel_xsd"><a href="hotel_xsd.html" target="ContentFrame">Hotel.xsd</a></li>
+                           <li id="imagetype_xsd"><a href="imagetype_xsd.html" target="ContentFrame">ImageType.xsd</a></li>
+                           <li id="internalitemtype_xsd"><a href="internalitemtype_xsd.html" target="ContentFrame">InternalItemType.xsd</a></li>
+                           <li id="internalpricetype_xsd"><a href="internalpricetype_xsd.html" target="ContentFrame">InternalPriceType.xsd</a></li>
+                           <li id="iteminfo_xsd"><a href="iteminfo_xsd.html" target="ContentFrame">ItemInfo.xsd</a></li>
+                           <li id="itemprice_xsd"><a href="itemprice_xsd.html" target="ContentFrame">ItemPrice.xsd</a></li>
+                           <li id="meal_xsd"><a href="meal_xsd.html" target="ContentFrame">Meal.xsd</a></li>
+                           <li id="miscellaneous_xsd"><a href="miscellaneous_xsd.html" target="ContentFrame">Miscellaneous.xsd</a></li>
+                           <li id="oltdossiers_xsd"><a href="oltdossiers_xsd.html" target="ContentFrame">OLTDossiers.xsd</a></li>
+                           <li id="packageitemdescription_xsd"><a href="packageitemdescription_xsd.html" target="ContentFrame">PackageItemDescription.xsd</a></li>
+                           <li id="passports_xsd"><a href="passports_xsd.html" target="ContentFrame">Passports.xsd</a></li>
+                           <li id="paymentslip_xsd"><a href="paymentslip_xsd.html" target="ContentFrame">PaymentSlip.xsd</a></li>
+                           <li id="payments_xsd"><a href="payments_xsd.html" target="ContentFrame">Payments.xsd</a></li>
+                           <li id="pricetravellertype_xsd"><a href="pricetravellertype_xsd.html" target="ContentFrame">PriceTravellerType.xsd</a></li>
+                           <li id="productitemprice_xsd"><a href="productitemprice_xsd.html" target="ContentFrame">ProductItemPrice.xsd</a></li>
+                           <li id="projecttype_xsd"><a href="projecttype_xsd.html" target="ContentFrame">ProjectType.xsd</a></li>
+                           <li id="purchaseprice_xsd"><a href="purchaseprice_xsd.html" target="ContentFrame">PurchasePrice.xsd</a></li>
+                           <li id="room_xsd"><a href="room_xsd.html" target="ContentFrame">Room.xsd</a></li>
+                           <li id="ship_xsd"><a href="ship_xsd.html" target="ContentFrame">Ship.xsd</a></li>
+                           <li id="suppliertype_xsd"><a href="suppliertype_xsd.html" target="ContentFrame">SupplierType.xsd</a></li>
+                           <li id="text_xsd"><a href="text_xsd.html" target="ContentFrame">Text.xsd</a></li>
+                           <li id="train_xsd"><a href="train_xsd.html" target="ContentFrame">Train.xsd</a></li>
+                           <li id="traveldate_xsd"><a href="traveldate_xsd.html" target="ContentFrame">TravelDate.xsd</a></li>
+                           <li id="travelrequestaccommodations_xsd"><a href="travelrequestaccommodations_xsd.html" target="ContentFrame">TravelRequestAccommodations.xsd</a></li>
+                           <li id="travelrequestapproval_xsd"><a href="travelrequestapproval_xsd.html" target="ContentFrame">TravelRequestApproval.xsd</a></li>
+                           <li id="travelrequestflights_xsd"><a href="travelrequestflights_xsd.html" target="ContentFrame">TravelRequestFlights.xsd</a></li>
+                           <li id="travelrequesttransportationdriver_xsd"><a href="travelrequesttransportationdriver_xsd.html" target="ContentFrame">TravelRequestTransportationDriver.xsd</a></li>
+                           <li id="travelrequesttransportationtrain_xsd"><a href="travelrequesttransportationtrain_xsd.html" target="ContentFrame">TravelRequestTransportationTrain.xsd</a></li>
+                           <li id="travelrequesttransportationvip_xsd"><a href="travelrequesttransportationvip_xsd.html" target="ContentFrame">TravelRequestTransportationVIP.xsd</a></li>
+                           <li id="travelrequests_xsd"><a href="travelrequests_xsd.html" target="ContentFrame">TravelRequests.xsd</a></li>
+                           <li id="travellers_xsd"><a href="travellers_xsd.html" target="ContentFrame">Travellers.xsd</a></li>
+                           <li id="visas_xsd"><a href="visas_xsd.html" target="ContentFrame">Visas.xsd</a></li>
+                        </ul>
+                     </li>
+                     <li id="ComplexType" class="parent"><a href="javascript:toggleNode('ComplexType')"><img height="11" width="11" src="images/plus.gif"></img>ComplexType</a><ul style="display:none" expanded="false" loaded="true">
+                           <li id="imagetype"><a href="imagetype.html" target="ContentFrame">ImageType</a></li>
+                           <li id="packageitemdescription"><a href="packageitemdescription.html" target="ContentFrame">PackageItemDescription</a></li>
+                           <li id="pricetravellertype"><a href="pricetravellertype.html" target="ContentFrame">PriceTravellerType</a></li>
+                           <li id="projecttype"><a href="projecttype.html" target="ContentFrame">ProjectType</a></li>
+                           <li id="suppliertype"><a href="suppliertype.html" target="ContentFrame">SupplierType</a></li>
+                        </ul>
+                     </li>
+                     <li id="Element" class="parent"><a href="javascript:toggleNode('Element')"><img height="11" width="11" src="images/plus.gif"></img>Element</a><ul style="display:none" expanded="false" loaded="true">
+                           <li id="accommodations"><a href="accommodations.html" target="ContentFrame">Accommodations</a></li>
+                           <li id="bus"><a href="bus.html" target="ContentFrame">Bus</a></li>
+                           <li id="cancellationfee"><a href="cancellationfee.html" target="ContentFrame">CancellationFee</a></li>
+                           <li id="car"><a href="car.html" target="ContentFrame">Car</a></li>
+                           <li id="carcategory"><a href="carcategory.html" target="ContentFrame">CarCategory</a></li>
+                           <li id="corporatecustomercards"><a href="corporatecustomercards.html" target="ContentFrame">CorporateCustomerCards</a></li>
+                           <li id="customer"><a href="customer.html" target="ContentFrame">Customer</a></li>
+                           <li id="customers"><a href="customers.html" target="ContentFrame">Customers</a></li>
+                           <li id="description10"><a href="description10.html" target="ContentFrame">Description</a></li>
+                           <li id="document1"><a href="document1.html" target="ContentFrame">Document</a></li>
+                           <li id="dossieritem"><a href="dossieritem.html" target="ContentFrame">DossierItem</a></li>
+                           <li id="dossiers"><a href="dossiers.html" target="ContentFrame">Dossiers</a></li>
+                           <li id="flight1"><a href="flight1.html" target="ContentFrame">Flight</a></li>
+                           <li id="flights"><a href="flights.html" target="ContentFrame">Flights</a></li>
+                           <li id="hotel"><a href="hotel.html" target="ContentFrame">Hotel</a></li>
+                           <li id="iteminfo"><a href="iteminfo.html" target="ContentFrame">ItemInfo</a></li>
+                           <li id="itemprice"><a href="itemprice.html" target="ContentFrame">ItemPrice</a></li>
+                           <li id="meal1"><a href="meal1.html" target="ContentFrame">Meal</a></li>
+                           <li id="miscellaneous1"><a href="miscellaneous1.html" target="ContentFrame">Miscellaneous</a></li>
+                           <li id="oltdossiers"><a href="oltdossiers.html" target="ContentFrame">OLTDossiers</a></li>
+                           <li id="passports1"><a href="passports1.html" target="ContentFrame">Passports</a></li>
+                           <li id="paymentslip"><a href="paymentslip.html" target="ContentFrame">PaymentSlip</a></li>
+                           <li id="payments"><a href="payments.html" target="ContentFrame">Payments</a></li>
+                           <li id="productitemprice"><a href="productitemprice.html" target="ContentFrame">ProductItemPrice</a></li>
+                           <li id="purchaseprice"><a href="purchaseprice.html" target="ContentFrame">PurchasePrice</a></li>
+                           <li id="room"><a href="room.html" target="ContentFrame">Room</a></li>
+                           <li id="ship"><a href="ship.html" target="ContentFrame">Ship</a></li>
+                           <li id="text2"><a href="text2.html" target="ContentFrame">Text</a></li>
+                           <li id="train"><a href="train.html" target="ContentFrame">Train</a></li>
+                           <li id="transportationdriver"><a href="transportationdriver.html" target="ContentFrame">TransportationDriver</a></li>
+                           <li id="transportationtrains"><a href="transportationtrains.html" target="ContentFrame">TransportationTrains</a></li>
+                           <li id="transportationvip"><a href="transportationvip.html" target="ContentFrame">TransportationVIP</a></li>
+                           <li id="traveldate"><a href="traveldate.html" target="ContentFrame">TravelDate</a></li>
+                           <li id="travelrequestapprovals"><a href="travelrequestapprovals.html" target="ContentFrame">TravelRequestApprovals</a></li>
+                           <li id="travelrequests"><a href="travelrequests.html" target="ContentFrame">TravelRequests</a></li>
+                           <li id="travellers"><a href="travellers.html" target="ContentFrame">Travellers</a></li>
+                           <li id="visas"><a href="visas.html" target="ContentFrame">Visas</a></li>
+                        </ul>
+                     </li>
+                     <li id="SimpleType" class="parent"><a href="javascript:toggleNode('SimpleType')"><img height="11" width="11" src="images/plus.gif"></img>SimpleType</a><ul style="display:none" expanded="false" loaded="true">
+                           <li id="internalitemtype"><a href="internalitemtype.html" target="ContentFrame">InternalItemType</a></li>
+                           <li id="internalpricetype"><a href="internalpricetype.html" target="ContentFrame">InternalPriceType</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div id="tab2" class="tab_content"><input type="text" id="txtSearch"></input><input type="button" id="cmdSearch" value="Search" onclick="getSearchJS('txtSearch','ulSearch');"></input><div style="margin-top:10px;">
+                  <ul id="ulSearch" class="search"></ul>
+               </div>
+            </div>
+         </div>
+      </form>
+   </body>
+</html>

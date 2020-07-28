@@ -2,13 +2,15 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item Dossiers in OLTDossiers XML Schema Documentation</title>
-      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item Dossiers in OLTDossiers</title>
+      <!-- saved from url=(0014)about:internet -->
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
-                      EnsureInFrame('Element', 'dossiers');
-                    </script><div class="pageheader">
-         Documentation for OLTDossiers XML Schema Documentation
+         <!--
+                            EnsureInFrame('Element', 'dossiers');
+                        --></script><div class="pageheader">
+         Documentation for OLTDossiers
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -42,9 +44,9 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="396,106,660,151" href="dossier.html" alt="Drilldown into Dossier"></area>
-                     <area shape="rect" coords="333,74,515,99" href="totalnrdossiers.html" alt="Drilldown into TotalNrDossiers"></area>
-                     <area shape="rect" coords="333,1,474,67" href="system1.html" alt="Drilldown into System"></area></map><img src="images/dossiers.png" border="0" alt="XSD Diagram of Dossiers" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="396,106,660,150" href="dossier.html" alt="Drilldown into Dossier"></area>
+                     <area shape="rect" coords="333,74,516,99" href="totalnrdossiers.html" alt="Drilldown into TotalNrDossiers"></area>
+                     <area shape="rect" coords="333,1,475,67" href="system1.html" alt="Drilldown into System"></area></map><img src="images/dossiers.png" border="0" alt="XSD Diagram of Dossiers" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -55,8 +57,7 @@
                </td>
             </tr>
             <tr id="xsdCode_body_id">
-               <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="Dossiers"&gt;
+               <td><pre><code>&lt;xs:element name="Dossiers"&gt;
     &lt;xs:annotation&gt;
         &lt;xs:documentation&gt;This schema is used in more than one use case. In the use case "Display Dossier", a dossier in Agent Online is returned to the user. It is possible, that more than one Dossier is returned in the Dossiers node, Another use case is the import of an external dossier into an Agent Online to TO Online database. In this case the external developer sends one Dossier in the Dossiers node.&lt;/xs:documentation&gt;
     &lt;/xs:annotation&gt;
@@ -181,6 +182,10 @@
                                     &lt;xs:enumeration value="CHRTR" /&gt;
                                     &lt;xs:enumeration value="VOEGELE" /&gt;
                                     &lt;xs:enumeration value="TUIINC" /&gt;
+                                    &lt;xs:enumeration value="PUTNIKCH" /&gt;
+                                    &lt;xs:enumeration value="PUTNIKBG" /&gt;
+                                    &lt;xs:enumeration value="PUTNIKDE" /&gt;
+                                    &lt;xs:enumeration value="PUTNIKAT" /&gt;
                                 &lt;/xs:restriction&gt;
                             &lt;/xs:simpleType&gt;
                         &lt;/xs:element&gt;
@@ -499,6 +504,7 @@ A dossier can have more than one customer relevant reference code. As this infor
                                 &lt;xs:documentation&gt;Currency code, e.g. CHF, EUR, USD&lt;/xs:documentation&gt;
                             &lt;/xs:annotation&gt;
                         &lt;/xs:element&gt;
+                        &lt;xs:element ref="PaymentSlip" minOccurs="0" /&gt;
                         &lt;xs:element name="ServiceCode" type="xs:string" minOccurs="0"&gt;
                             &lt;xs:annotation&gt;
                                 &lt;xs:documentation&gt;ServiceCode that is stored in the dossier and is used for the generation of CMIRs, e.g. 060 (for IMHO 060), or VOC (for IMHO VOC)&lt;/xs:documentation&gt;
@@ -552,6 +558,22 @@ A dossier can have more than one customer relevant reference code. As this infor
                         &lt;xs:element ref="TravelRequestApprovals" minOccurs="0"&gt;
                             &lt;xs:annotation&gt;
                                 &lt;xs:documentation&gt;Currently only for the FIF Workflow&lt;/xs:documentation&gt;
+                            &lt;/xs:annotation&gt;
+                        &lt;/xs:element&gt;
+                        &lt;xs:element name="DossierImages" minOccurs="0"&gt;
+                            &lt;xs:complexType&gt;
+                                &lt;xs:sequence&gt;
+                                    &lt;xs:element name="Image" type="ImageType" minOccurs="0" maxOccurs="unbounded"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;Pictures for the Hotel&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:element&gt;
+                                &lt;/xs:sequence&gt;
+                            &lt;/xs:complexType&gt;
+                        &lt;/xs:element&gt;
+                        &lt;xs:element name="ExternalUID" minOccurs="0"&gt;
+                            &lt;xs:annotation&gt;
+                                &lt;xs:documentation&gt;Unique ID for this dossier to be imported. Will be checkt against the DB to avoid duplicate imports.&lt;/xs:documentation&gt;
                             &lt;/xs:annotation&gt;
                         &lt;/xs:element&gt;
                     &lt;/xs:all&gt;
@@ -775,6 +797,16 @@ If this is a swiss customer, the first two country code digits do not need to be
 External systems that import dossiers can then know that they too have to delete this dossier.&lt;/xs:documentation&gt;
                         &lt;/xs:annotation&gt;
                     &lt;/xs:attribute&gt;
+                    &lt;xs:attribute name="ConsolidatePrices" use="optional"&gt;
+                        &lt;xs:annotation&gt;
+                            &lt;xs:documentation&gt;Offer: All Prices will be consolidated when offer is printed&lt;/xs:documentation&gt;
+                        &lt;/xs:annotation&gt;
+                        &lt;xs:simpleType&gt;
+                            &lt;xs:restriction base="xs:string"&gt;
+                                &lt;xs:enumeration value="Offer" /&gt;
+                            &lt;/xs:restriction&gt;
+                        &lt;/xs:simpleType&gt;
+                    &lt;/xs:attribute&gt;
                 &lt;/xs:complexType&gt;
             &lt;/xs:element&gt;
         &lt;/xs:sequence&gt;
@@ -851,7 +883,9 @@ External systems that import dossiers can then know that they too have to delete
             </tr>
          </tbody>
       </table>
-      <div class="pagefooter"> 
-         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Designer Edition 12.2.7.5382</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Schema-Editor.aspx">Xml Schema Editor</a></div>
+      <div class="pagefooter">
+         			Documentation for OLTDossiers<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2020 - Data Designer Edition 18.0.10.10186</a></div>
    </body>
 </html>
