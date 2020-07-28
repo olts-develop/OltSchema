@@ -3,14 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
-      <title>Docs for schema item ItemInfoText in Arrrangement Import XML Schema Documentation</title>
+      <title>Docs for schema item ItemInfoText in Arrangement Import Documentation</title>
       <!-- saved from url=(0014)about:internet -->
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
          <!--
                             EnsureInFrame('ComplexType', 'iteminfotext1');
                         --></script><div class="pageheader">
-         Documentation for Arrrangement Import XML Schema Documentation
+         Documentation for Arrangement Import Documentation
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -40,8 +40,18 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="197,345,354,389" href="text.html" alt="Drilldown into Text"></area>
-                     <area shape="rect" coords="197,293,393,337" href="title1.html" alt="Drilldown into Title"></area>
+                     <area shape="rect" coords="197,667,493,737" href="allowduplicate.html" alt="Drilldown into AllowDuplicate"></area>
+                     <area shape="rect" coords="464,605,606,649" href="it.html" alt="Drilldown into it"></area>
+                     <area shape="rect" coords="464,553,606,597" href="fr1.html" alt="Drilldown into fr"></area>
+                     <area shape="rect" coords="464,501,606,545" href="en.html" alt="Drilldown into en"></area>
+                     <area shape="rect" coords="464,450,606,494" href="de.html" alt="Drilldown into de"></area>
+                     <area shape="rect" coords="379,425,614,661" href="translation.html" alt="Drilldown into Translation"></area>
+                     <area shape="rect" coords="197,520,354,564" href="text.html" alt="Drilldown into Text"></area>
+                     <area shape="rect" coords="483,389,625,414" href="it1.html" alt="Drilldown into it"></area>
+                     <area shape="rect" coords="483,357,625,382" href="fr2.html" alt="Drilldown into fr"></area>
+                     <area shape="rect" coords="483,325,625,350" href="en1.html" alt="Drilldown into en"></area>
+                     <area shape="rect" coords="483,293,625,318" href="de1.html" alt="Drilldown into de"></area>
+                     <area shape="rect" coords="197,332,393,376" href="title1.html" alt="Drilldown into Title"></area>
                      <area shape="rect" coords="197,230,405,285" href="external.html" alt="Drilldown into External"></area>
                      <area shape="rect" coords="197,167,405,222" href="itinerary.html" alt="Drilldown into Itinerary"></area>
                      <area shape="rect" coords="197,104,405,159" href="invoice.html" alt="Drilldown into Invoice"></area>
@@ -111,6 +121,17 @@
                 &lt;xs:documentation&gt;Description text of item info&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:element&gt;
+        &lt;xs:element name="AllowDuplicate" minOccurs="0"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;This element is allowed to be displayed more than once on documents.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+            &lt;xs:simpleType&gt;
+                &lt;xs:restriction base="xs:nonNegativeInteger"&gt;
+                    &lt;xs:enumeration value="0" /&gt;
+                    &lt;xs:enumeration value="1" /&gt;
+                &lt;/xs:restriction&gt;
+            &lt;/xs:simpleType&gt;
+        &lt;/xs:element&gt;
     &lt;/xs:all&gt;
 &lt;/xs:complexType&gt;</code></pre></td>
             </tr>
@@ -173,6 +194,12 @@
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
+                     <tr>
+                        <td class="first">AllowDuplicate</td>
+                        <td><a href="allowduplicate.html">AllowDuplicate</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
                   </table>
                </td>
             </tr>
@@ -208,8 +235,8 @@
          </tbody>
       </table>
       <div class="pagefooter">
-         			Documentation for Arrrangement Import XML Schema Documentation<br/>
+         			Documentation for Arrangement Import Documentation<br/>
          Generated using 
-         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2020 - Data Designer Edition 18.0.8.10077</a></div>
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2020 - Data Designer Edition 18.0.10.10186</a></div>
    </body>
 </html>
