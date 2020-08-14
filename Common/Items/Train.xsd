@@ -1,70 +1,107 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Created with Liquid XML Studio Designer Edition 9.1.5.3408 (http://www.liquid-technologies.com) -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-  <xs:include schemaLocation=".\ProductItemPrice.xsd" />
-  <xs:include schemaLocation="..\GeneralCodes\PackageItemDescription.xsd" />
-  <xs:element name="Train">
-    <xs:complexType>
-      <xs:all>
-        <xs:element name="TrainCode" type="xs:string" minOccurs="0" />
-        <xs:element name="TrainNumber" type="xs:string" minOccurs="0" />
-        <xs:element name="Class" type="xs:integer" minOccurs="0" />
-        <xs:element name="Departure" minOccurs="0">
-          <xs:complexType>
-            <xs:simpleContent>
-              <xs:extension base="xs:string">
-                <xs:attribute name="Code" type="xs:string" />
-                <xs:attribute name="Time" type="xs:time" />
-                <xs:attribute name="CheckInTime" type="xs:time" />
-                <xs:attribute name="Terminal" type="xs:string" />
-              </xs:extension>
-            </xs:simpleContent>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Arrival" minOccurs="0">
-          <xs:complexType>
-            <xs:simpleContent>
-              <xs:extension base="xs:string">
-                <xs:attribute name="Code" type="xs:string" />
-                <xs:attribute name="Time" type="xs:time" />
-                <xs:attribute name="Terminal" type="xs:string" />
-              </xs:extension>
-            </xs:simpleContent>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Seat" type="xs:string" minOccurs="0" />
-        <xs:element name="ConfirmationNr" type="xs:string" minOccurs="0" />
-        <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
-        <xs:element name="Address1" type="xs:string" minOccurs="0" />
-        <xs:element name="Address2" type="xs:string" minOccurs="0" />
-        <xs:element name="PostalCode" type="xs:string" minOccurs="0" />
-        <xs:element name="City" type="xs:string" minOccurs="0" />
-        <xs:element name="Phone" minOccurs="0">
-          <xs:complexType>
-            <xs:attribute name="AreaCode" type="xs:string" />
-            <xs:attribute name="Number" type="xs:string" />
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Fax" minOccurs="0">
-          <xs:complexType>
-            <xs:attribute name="AreaCode" type="xs:string" />
-            <xs:attribute name="Number" type="xs:string" />
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Remark" type="xs:string" minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>CDATA</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="PackageItemDescription" type="PackageItemDescription" />
-        <xs:element name="ProductItemPrices" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element ref="ProductItemPrice" maxOccurs="unbounded" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:all>
-    </xs:complexType>
-  </xs:element>
+<!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation=".\ProductItemPrice.xsd" />
+    <xs:include schemaLocation="..\GeneralCodes\PackageItemDescription.xsd" />
+    <xs:element name="Train">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="TrainCode" type="xs:string" minOccurs="0" />
+                <xs:element name="TrainNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="Class" type="xs:integer" minOccurs="0" />
+                <xs:element name="Departure" minOccurs="0">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="Code" type="xs:string" />
+                                <xs:attribute name="Time" type="xs:time" />
+                                <xs:attribute name="CheckInTime" type="xs:time" />
+                                <xs:attribute name="Terminal" type="xs:string" />
+                                <xs:attribute name="Type" use="optional">
+                                    <xs:annotation>
+                                        <xs:documentation>Departure type can be arrival or transfer</xs:documentation>
+                                    </xs:annotation>
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="arrival" />
+                                            <xs:enumeration value="transfer" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Arrival" minOccurs="0">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="Code" type="xs:string" />
+                                <xs:attribute name="Time" type="xs:time" />
+                                <xs:attribute name="Terminal" type="xs:string" />
+                                <xs:attribute name="DayIndicator">
+                                    <xs:annotation>
+                                        <xs:documentation>Arrival date for this time is the day before the departure date: -1; Arrival on the same day as the departure: 0; Arrival on the day after departure: 1; Arrival two days after departure: 2. If DossierItem/BeginDate=DossierItem/EndDate then the DayIndicator will be 0. Normally in these cases the DossierItem/EndDate and DossierItem/Duration nodes will not be sent in a response XML, and are not requires for a request XML.</xs:documentation>
+                                    </xs:annotation>
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:integer">
+                                            <xs:enumeration value="-1" />
+                                            <xs:enumeration value="0" />
+                                            <xs:enumeration value="1" />
+                                            <xs:enumeration value="2" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                                <xs:attribute name="Type" use="optional">
+                                    <xs:annotation>
+                                        <xs:documentation>Departure type can be arrival or transfer</xs:documentation>
+                                    </xs:annotation>
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="arrival" />
+                                            <xs:enumeration value="transfer" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Seat" type="xs:string" minOccurs="0" />
+                <xs:element name="ConfirmationNr" type="xs:string" minOccurs="0" />
+                <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+                <xs:element name="Address1" type="xs:string" minOccurs="0" />
+                <xs:element name="Address2" type="xs:string" minOccurs="0" />
+                <xs:element name="PostalCode" type="xs:string" minOccurs="0" />
+                <xs:element name="City" type="xs:string" minOccurs="0" />
+                <xs:element name="Phone" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="AreaCode" type="xs:string" />
+                        <xs:attribute name="Number" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Fax" minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="AreaCode" type="xs:string" />
+                        <xs:attribute name="Number" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Remark" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ProductItemPrices" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="ProductItemPrice" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="InvoiceText" type="xs:string" minOccurs="0" />
+                <xs:element name="ItineraryText" type="xs:string" minOccurs="0" />
+                <xs:element name="DepartureText" type="xs:string" minOccurs="0" />
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>

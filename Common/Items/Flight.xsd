@@ -1,304 +1,250 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2013 Designer Edition 11.1.0.4725 (http://www.liquid-technologies.com)-->
-<xs:schema elementFormDefault="qualified"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:include schemaLocation=".\ProductItemPrice.xsd" />
-  <xs:include schemaLocation="..\GeneralCodes\PackageItemDescription.xsd" />
-  <xs:element name="Flight">
-    <xs:complexType>
-      <xs:all>
-        <xs:element name="Airlinecode"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>e.g. LX</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="FlightNumber"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Flight numer - 111</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="FlightDirection"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>O: Outbound
+<!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation=".\ProductItemPrice.xsd" />
+    <xs:include schemaLocation="..\GeneralCodes\PackageItemDescription.xsd" />
+    <xs:element name="Flight">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Airlinecode" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>e.g. LX</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="FlightNumber" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Flight numer - 111</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="FlightDirection" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>O: Outbound
               I: Inbound
             </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:enumeration value="O" />
-              <xs:enumeration value="I" />
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="Departure"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Departure city name, e.g. Zurich</xs:documentation>
-          </xs:annotation>
-          <xs:complexType>
-            <xs:simpleContent>
-              <xs:extension base="xs:string">
-                <xs:attribute name="Code"
-                              type="xs:string">
-                  <xs:annotation>
-                    <xs:documentation>City code - e.g. LAS</xs:documentation>
-                  </xs:annotation>
-                </xs:attribute>
-                <xs:attribute name="Time"
-                              type="xs:time">
-                  <xs:annotation>
-                    <xs:documentation>Departure time of the flight</xs:documentation>
-                  </xs:annotation>
-                </xs:attribute>
-                <xs:attribute name="CheckInTime"
-                              type="xs:time">
-                  <xs:annotation>
-                    <xs:documentation>Checkin time</xs:documentation>
-                  </xs:annotation>
-                </xs:attribute>
-                <xs:attribute name="CheckInOffset"
-                              type="xs:time" />
-                <xs:attribute name="Type"
-                              use="optional">
-                  <xs:annotation>
-                    <xs:documentation>Departure type can be departure or transfer</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                      <xs:enumeration value="departure" />
-                      <xs:enumeration value="transfer" />
-                    </xs:restriction>
-                  </xs:simpleType>
-                </xs:attribute>
-                <xs:attribute name="Terminal"
-                              type="xs:string">
-                  <xs:annotation>
-                    <xs:documentation>Description text of the departure terminal</xs:documentation>
-                  </xs:annotation>
-                </xs:attribute>
-              </xs:extension>
-            </xs:simpleContent>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="DepartureDescription"
-                    minOccurs="0" />
-        <xs:element name="Arrival"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Arrival city name, e.g. London</xs:documentation>
-          </xs:annotation>
-          <xs:complexType>
-            <xs:simpleContent>
-              <xs:extension base="xs:string">
-                <xs:attribute name="Code"
-                              type="xs:string" />
-                <xs:attribute name="Time"
-                              type="xs:time" />
-                <xs:attribute name="Terminal"
-                              type="xs:string" />
-                <xs:attribute name="DayIndicator">
-                  <xs:annotation>
-                    <xs:documentation>Arrival date for this time is the day before the departure date: -1; Arrival on the same day as the departure: 0; Arrival on the day after departure: 1; Arrival two days after departure: 2. If DossierItem/BeginDate=DossierItem/EndDate then the DayIndicator will be 0. Normally in these cases the DossierItem/EndDate and DossierItem/Duration nodes will not be sent in a response XML, and are not requires for a request XML.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                    <xs:restriction base="xs:integer">
-                      <xs:enumeration value="-1" />
-                      <xs:enumeration value="0" />
-                      <xs:enumeration value="1" />
-                      <xs:enumeration value="2" />
-                    </xs:restriction>
-                  </xs:simpleType>
-                </xs:attribute>
-                <xs:attribute name="Type"
-                              use="optional">
-                  <xs:annotation>
-                    <xs:documentation>Departure type can be arrival or transfer</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                      <xs:enumeration value="arrival" />
-                      <xs:enumeration value="transfer" />
-                    </xs:restriction>
-                  </xs:simpleType>
-                </xs:attribute>
-              </xs:extension>
-            </xs:simpleContent>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="ArrivalDescription"
-                    minOccurs="0" />
-        <xs:element name="Class"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>ClasEffective booking class. Normally a character value between A and Z.</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="FlightTime"
-                    type="xs:time"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Flight duration time</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="BaggageAllowance"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Text string describing baggage allowance, e.g. 25 kg</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="AirplaneType"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Text string describing the airplane, e.g. AIRBUS 380</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="Meal"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Text string describing the meal, e.g. Breakfast. One could also send the meal code here.</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="BookingNr"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>PNR booking code</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="DomesticFlight"
-                    type="xs:boolean"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>If true, this is a domestic flight</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="NewCheckIn"
-                    type="xs:boolean"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>If true, the flight requires a renewed check-in</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="ViaFlight"
-                    type="xs:boolean"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>If true, this is a via flight with a followon flight leg.</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="Longhaul"
-                    type="xs:boolean"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>If true, this is a longhaul flight</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="PassportControl"
-                    type="xs:boolean"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>If true, the arrival airport has a passport control</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="Remark"
-                    type="SupplierType"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>CDATA</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="PackageItemDescription"
-                    type="PackageItemDescription"
-                    minOccurs="0" />
-        <xs:element name="OperatingCarrrierCode"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Operating carrier code or airline number</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="BookingClass"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Display class on the invoice. This will normally be F, B or Y.</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="BookingDate"
-                    type="xs:date"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Date the booking was made</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="LogicKey"
-                    type="xs:integer"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Unique number for the logical flight legs with in this package</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="LogicDataProductSeq"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Internal unique logicalkey of the product</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="LogicClass"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Class of the logical flight</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="LogicClassDescription"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Classdescription of the logical flight</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="LogicAirLineCode"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Airlinecode of the logical flight</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="LogicFlightNr"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Flightnumber of the logical flight</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="SeatString"
-                    type="xs:string"
-                    minOccurs="0">
-          <xs:annotation>
-            <xs:documentation>Unstructured string of the seat numbers for this flight</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="ProductItemPrices"
-                    minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element ref="ProductItemPrice"
-                          maxOccurs="unbounded" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:all>
-    </xs:complexType>
-  </xs:element>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="O" />
+                            <xs:enumeration value="I" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Departure" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Departure city name, e.g. Zurich</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="Code" type="xs:string">
+                                    <xs:annotation>
+                                        <xs:documentation>City code - e.g. LAS</xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                                <xs:attribute name="Time" type="xs:time">
+                                    <xs:annotation>
+                                        <xs:documentation>Departure time of the flight</xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                                <xs:attribute name="CheckInTime" type="xs:time">
+                                    <xs:annotation>
+                                        <xs:documentation>Checkin time</xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                                <xs:attribute name="CheckInOffset" type="xs:time" />
+                                <xs:attribute name="Type" use="optional">
+                                    <xs:annotation>
+                                        <xs:documentation>Departure type can be departure or transfer</xs:documentation>
+                                    </xs:annotation>
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="departure" />
+                                            <xs:enumeration value="transfer" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                                <xs:attribute name="Terminal" type="xs:string">
+                                    <xs:annotation>
+                                        <xs:documentation>Description text of the departure terminal</xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="DepartureDescription" minOccurs="0" />
+                <xs:element name="Arrival" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Arrival city name, e.g. London</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="Code" type="xs:string" />
+                                <xs:attribute name="Time" type="xs:time" />
+                                <xs:attribute name="Terminal" type="xs:string" />
+                                <xs:attribute name="DayIndicator">
+                                    <xs:annotation>
+                                        <xs:documentation>Arrival date for this time is the day before the departure date: -1; Arrival on the same day as the departure: 0; Arrival on the day after departure: 1; Arrival two days after departure: 2. If DossierItem/BeginDate=DossierItem/EndDate then the DayIndicator will be 0. Normally in these cases the DossierItem/EndDate and DossierItem/Duration nodes will not be sent in a response XML, and are not requires for a request XML.</xs:documentation>
+                                    </xs:annotation>
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:integer">
+                                            <xs:enumeration value="-1" />
+                                            <xs:enumeration value="0" />
+                                            <xs:enumeration value="1" />
+                                            <xs:enumeration value="2" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                                <xs:attribute name="Type" use="optional">
+                                    <xs:annotation>
+                                        <xs:documentation>Departure type can be arrival or transfer</xs:documentation>
+                                    </xs:annotation>
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="arrival" />
+                                            <xs:enumeration value="transfer" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ArrivalDescription" minOccurs="0" />
+                <xs:element name="Class" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>ClasEffective booking class. Normally a character value between A and Z.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="FlightTime" type="xs:time" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Flight duration time</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="BaggageAllowance" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Text string describing baggage allowance, e.g. 25 kg</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="AirplaneType" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Text string describing the airplane, e.g. AIRBUS 380</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Meal" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Text string describing the meal, e.g. Breakfast. One could also send the meal code here.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="BookingNr" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>PNR booking code</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DomesticFlight" type="xs:boolean" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>If true, this is a domestic flight</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NewCheckIn" type="xs:boolean" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>If true, the flight requires a renewed check-in</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ViaFlight" type="xs:boolean" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>If true, this is a via flight with a followon flight leg.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Longhaul" type="xs:boolean" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>If true, this is a longhaul flight</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="PassportControl" type="xs:boolean" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>If true, the arrival airport has a passport control</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Remark" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>CDATA</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="OperatingCarrrierCode" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Operating carrier code or airline number</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="BookingClass" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Display class on the invoice. This will normally be F, B or Y.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="BookingDate" type="xs:date" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Date the booking was made</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LogicKey" type="xs:integer" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Unique number for the logical flight legs with in this package</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LogicDataProductSeq" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Internal unique logicalkey of the product</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LogicClass" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Class of the logical flight</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LogicClassDescription" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Classdescription of the logical flight</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LogicAirLineCode" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Airlinecode of the logical flight</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LogicFlightNr" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Flightnumber of the logical flight</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SeatString" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Unstructured string of the seat numbers for this flight</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ProductItemPrices" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="ProductItemPrice" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="InvoiceText" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation></xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ItineraryText" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation></xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DepartureText" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation></xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>
