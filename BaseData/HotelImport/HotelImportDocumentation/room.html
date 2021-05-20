@@ -48,6 +48,9 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="176,1788,482,1964" href="roomqualitycode.html" alt="Drilldown into RoomQualityCode"></area>
+                     <area shape="rect" coords="176,1634,482,1780" href="roomviewcode.html" alt="Drilldown into RoomViewCode"></area>
+                     <area shape="rect" coords="176,1430,483,1627" href="roomtypecode.html" alt="Drilldown into RoomTypeCode"></area>
                      <area shape="rect" coords="176,1378,439,1422" href="included.html" alt="Drilldown into Included"></area>
                      <area shape="rect" coords="176,1346,261,1371" href="prices.html" alt="Drilldown into Prices"></area>
                      <area shape="rect" coords="176,1314,326,1339" href="iteminfos2.html" alt="Drilldown into ItemInfos"></area>
@@ -325,6 +328,54 @@
                     &lt;xs:documentation&gt;CDATA, describes what amenities are included in this booking.&lt;/xs:documentation&gt;
                 &lt;/xs:annotation&gt;
             &lt;/xs:element&gt;
+            &lt;xs:element name="RoomTypeCode" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;
+| CODE | DE                           | EN                 | FR                       | IT                          | INFX |
+|------|------------------------------|--------------------|--------------------------|-----------------------------|------|
+| OFF  | Laut Ausschreibung           | According to offer | Selon l'appel d'offres   | Secondo l'offerta           | 0    |
+| SG   | Einzelzimmer                 | Single room        | Chambre simple           | Camera singola              | 1    |
+| DB   | Doppelzimmer                 | Double room        | Chambre double           | Camera doppia               | 2    |
+| TR   | Dreibettzimmer               | Triple room        | Chambre triple           | Camera tripla               | 3    |
+| QU   | Vierbettzimmer               | Quadruple room     | Chambre quadruple        | Camera quadrupla            | 4    |
+| MU   | Multibettzimmer              | Multibed room      | Chambre à plusieurs lits | Camera a più letti          | 5    |
+| TW   | Zweibettzimmer (twin room)   | Twin room          | Salle double             | Camera doppia               | 6    |
+| FM   | Familienzimmer               | Family room        | Salle familiale          | Camera familiare            | 7    |
+| ST   | Studio                       | Studio             | Studio                   | Studio                      | 8    |
+| JN   | Juniorsuite                  | Junior suite       | Suite junior             | Junior suite                | 9    |
+| SU   | Suite                        | Suite              | Suite                    | Suite                       | 10   |
+| DU   | Duplex                       | Duplex             | Duplex                   | Duplex                      | 11   |
+| AP   | Appartement                  | Apartment          | Appartement              | Appartamento                | 12   |
+| BU   | Bungalow                     | Bungalow           | Bungalow                 | Bungalow                    | 13   |
+| VI   | Villa                        | Villa              | Villa                    | Villa                       | 14   |
+| HF   | Ferienwohnung (holiday flat) | Holiday flat       | Appartement de vacances  | Appartamento per le vacanze | 15   |
+| HH   | Ferienhaus (holiday home)    | Holiday home       | Maison de vacances       | Casa vacanze                | 16   |
+| SR   | Superior-Zimmer              | Superior room      | Chambre supérieure       | Camera superiore            | 17   |
+| DR   | Deluxe-Zimmer                | Deluxe room        | Chambre de luxe          | Camera deluxe               | 18   |&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="RoomViewCode" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;
+| CODE | DE                                   | EN                         | FR                               | IT                                | INFX |
+|------|--------------------------------------|----------------------------|----------------------------------|-----------------------------------|------|
+| ST   | Standard / Kein besonderer Ausblick  | Standard / No special view | Standard / Sans vue particulière | Standard / Nessuna vista speciale | 0    |
+| SV   | Meerblick                            | Sea view                   | Vue sur la mer                   | Vista sul mare                    | 1    |
+| SS   | Seitlicher Meerblick                 | Side sea view              | Vue latérale sur la mer          | Vista mare laterale               | 2    |&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
+            &lt;xs:element name="RoomQualityCode" type="xs:string" minOccurs="0"&gt;
+                &lt;xs:annotation&gt;
+                    &lt;xs:documentation&gt;
+| CODE | DE                  | EN                  | FR                   | IT                     | INFX |
+|------|---------------------|---------------------|----------------------|------------------------|------|
+| ST   | Standard            | Standard            | Standard             | Standard               | 0    |
+| SU   | Superior            | Superior            | Superior             | Superior               | 1    |
+| DX   | Deluxe              | Deluxe              | Deluxe               | Deluxe                 | 2    |
+| SD   | Superior und Deluxe | Superior and Deluxe | Supérieur et Deluxe  | Superior e Deluxe      | 3    |
+| EB   | Economy Budget      | Economy Budget      | Budget de l'économie | Bilancio dell'economia | 4    |&lt;/xs:documentation&gt;
+                &lt;/xs:annotation&gt;
+            &lt;/xs:element&gt;
         &lt;/xs:all&gt;
     &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;</code></pre></td>
@@ -496,6 +547,24 @@
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
+                     <tr>
+                        <td class="first">RoomTypeCode</td>
+                        <td><a href="roomtypecode.html">RoomTypeCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">RoomViewCode</td>
+                        <td><a href="roomviewcode.html">RoomViewCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">RoomQualityCode</td>
+                        <td><a href="roomqualitycode.html">RoomQualityCode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
                   </table>
                </td>
             </tr>
@@ -504,6 +573,6 @@
       <div class="pagefooter">
          			Documentation for Hotel Import Documentation<br/>
          Generated using 
-         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2020 - Data Designer Edition 18.0.10.10186</a></div>
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2021 - Data Designer Edition 19.0.7.10770</a></div>
    </body>
 </html>

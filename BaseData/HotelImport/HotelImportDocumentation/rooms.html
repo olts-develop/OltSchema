@@ -48,7 +48,35 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="194,1,279,26" href="room.html" alt="Drilldown into Room"></area></map><img src="images/rooms.png" border="0" alt="XSD Diagram of Rooms" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="369,1788,675,1964" href="roomqualitycode.html" alt="Drilldown into RoomQualityCode"></area>
+                     <area shape="rect" coords="369,1634,675,1780" href="roomviewcode.html" alt="Drilldown into RoomViewCode"></area>
+                     <area shape="rect" coords="369,1430,676,1627" href="roomtypecode.html" alt="Drilldown into RoomTypeCode"></area>
+                     <area shape="rect" coords="369,1378,632,1422" href="included.html" alt="Drilldown into Included"></area>
+                     <area shape="rect" coords="369,1346,454,1371" href="prices.html" alt="Drilldown into Prices"></area>
+                     <area shape="rect" coords="369,1314,519,1339" href="iteminfos2.html" alt="Drilldown into ItemInfos"></area>
+                     <area shape="rect" coords="369,1282,562,1307" href="vouchersupplier.html" alt="Drilldown into VoucherSupplier"></area>
+                     <area shape="rect" coords="369,1250,537,1275" href="paysupplier.html" alt="Drilldown into PaySupplier"></area>
+                     <area shape="rect" coords="369,1218,518,1243" href="supplier.html" alt="Drilldown into Supplier"></area>
+                     <area shape="rect" coords="369,1166,540,1210" href="allotmentflag.html" alt="Drilldown into AllotmentFlag"></area>
+                     <area shape="rect" coords="369,1104,669,1159" href="passive1.html" alt="Drilldown into Passive"></area>
+                     <area shape="rect" coords="369,1042,669,1097" href="automatedfeecode1.html" alt="Drilldown into AutomatedFeeCode"></area>
+                     <area shape="rect" coords="369,848,564,1034" href="tourbomealcode.html" alt="Drilldown into TourboMealCode"></area>
+                     <area shape="rect" coords="369,796,638,840" href="tourbotext.html" alt="Drilldown into TourboText"></area>
+                     <area shape="rect" coords="369,744,532,788" href="tourbocode.html" alt="Drilldown into TourboCode"></area>
+                     <area shape="rect" coords="369,692,544,736" href="apiroomcode.html" alt="Drilldown into APIRoomCode"></area>
+                     <area shape="rect" coords="369,640,540,684" href="apihotelcode.html" alt="Drilldown into APIHotelCode"></area>
+                     <area shape="rect" coords="369,551,573,632" href="request1.html" alt="Drilldown into Request"></area>
+                     <area shape="rect" coords="369,499,560,543" href="extrabedchildren.html" alt="Drilldown into ExtraBedChildren"></area>
+                     <area shape="rect" coords="369,447,550,491" href="extrabedadults.html" alt="Drilldown into ExtraBedAdults"></area>
+                     <area shape="rect" coords="369,395,522,439" href="maxadults.html" alt="Drilldown into MaxAdults"></area>
+                     <area shape="rect" coords="369,343,570,387" href="maximaloccupancy.html" alt="Drilldown into MaximalOccupancy"></area>
+                     <area shape="rect" coords="369,291,568,335" href="minimaloccupancy.html" alt="Drilldown into MinimalOccupancy"></area>
+                     <area shape="rect" coords="369,239,565,283" href="normaloccupancy.html" alt="Drilldown into NormalOccupancy"></area>
+                     <area shape="rect" coords="369,188,518,232" href="mealcode.html" alt="Drilldown into MealCode"></area>
+                     <area shape="rect" coords="369,125,567,180" href="mealdescription.html" alt="Drilldown into MealDescription"></area>
+                     <area shape="rect" coords="369,63,542,118" href="description.html" alt="Drilldown into Description"></area>
+                     <area shape="rect" coords="369,1,538,56" href="roomtype.html" alt="Drilldown into RoomType"></area>
+                     <area shape="rect" coords="194,940,279,965" href="room.html" alt="Drilldown into Room"></area></map><img src="images/rooms.png" border="0" alt="XSD Diagram of Rooms" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -304,6 +332,54 @@
                                 &lt;xs:documentation&gt;CDATA, describes what amenities are included in this booking.&lt;/xs:documentation&gt;
                             &lt;/xs:annotation&gt;
                         &lt;/xs:element&gt;
+                        &lt;xs:element name="RoomTypeCode" type="xs:string" minOccurs="0"&gt;
+                            &lt;xs:annotation&gt;
+                                &lt;xs:documentation&gt;
+| CODE | DE                           | EN                 | FR                       | IT                          | INFX |
+|------|------------------------------|--------------------|--------------------------|-----------------------------|------|
+| OFF  | Laut Ausschreibung           | According to offer | Selon l'appel d'offres   | Secondo l'offerta           | 0    |
+| SG   | Einzelzimmer                 | Single room        | Chambre simple           | Camera singola              | 1    |
+| DB   | Doppelzimmer                 | Double room        | Chambre double           | Camera doppia               | 2    |
+| TR   | Dreibettzimmer               | Triple room        | Chambre triple           | Camera tripla               | 3    |
+| QU   | Vierbettzimmer               | Quadruple room     | Chambre quadruple        | Camera quadrupla            | 4    |
+| MU   | Multibettzimmer              | Multibed room      | Chambre à plusieurs lits | Camera a più letti          | 5    |
+| TW   | Zweibettzimmer (twin room)   | Twin room          | Salle double             | Camera doppia               | 6    |
+| FM   | Familienzimmer               | Family room        | Salle familiale          | Camera familiare            | 7    |
+| ST   | Studio                       | Studio             | Studio                   | Studio                      | 8    |
+| JN   | Juniorsuite                  | Junior suite       | Suite junior             | Junior suite                | 9    |
+| SU   | Suite                        | Suite              | Suite                    | Suite                       | 10   |
+| DU   | Duplex                       | Duplex             | Duplex                   | Duplex                      | 11   |
+| AP   | Appartement                  | Apartment          | Appartement              | Appartamento                | 12   |
+| BU   | Bungalow                     | Bungalow           | Bungalow                 | Bungalow                    | 13   |
+| VI   | Villa                        | Villa              | Villa                    | Villa                       | 14   |
+| HF   | Ferienwohnung (holiday flat) | Holiday flat       | Appartement de vacances  | Appartamento per le vacanze | 15   |
+| HH   | Ferienhaus (holiday home)    | Holiday home       | Maison de vacances       | Casa vacanze                | 16   |
+| SR   | Superior-Zimmer              | Superior room      | Chambre supérieure       | Camera superiore            | 17   |
+| DR   | Deluxe-Zimmer                | Deluxe room        | Chambre de luxe          | Camera deluxe               | 18   |&lt;/xs:documentation&gt;
+                            &lt;/xs:annotation&gt;
+                        &lt;/xs:element&gt;
+                        &lt;xs:element name="RoomViewCode" type="xs:string" minOccurs="0"&gt;
+                            &lt;xs:annotation&gt;
+                                &lt;xs:documentation&gt;
+| CODE | DE                                   | EN                         | FR                               | IT                                | INFX |
+|------|--------------------------------------|----------------------------|----------------------------------|-----------------------------------|------|
+| ST   | Standard / Kein besonderer Ausblick  | Standard / No special view | Standard / Sans vue particulière | Standard / Nessuna vista speciale | 0    |
+| SV   | Meerblick                            | Sea view                   | Vue sur la mer                   | Vista sul mare                    | 1    |
+| SS   | Seitlicher Meerblick                 | Side sea view              | Vue latérale sur la mer          | Vista mare laterale               | 2    |&lt;/xs:documentation&gt;
+                            &lt;/xs:annotation&gt;
+                        &lt;/xs:element&gt;
+                        &lt;xs:element name="RoomQualityCode" type="xs:string" minOccurs="0"&gt;
+                            &lt;xs:annotation&gt;
+                                &lt;xs:documentation&gt;
+| CODE | DE                  | EN                  | FR                   | IT                     | INFX |
+|------|---------------------|---------------------|----------------------|------------------------|------|
+| ST   | Standard            | Standard            | Standard             | Standard               | 0    |
+| SU   | Superior            | Superior            | Superior             | Superior               | 1    |
+| DX   | Deluxe              | Deluxe              | Deluxe               | Deluxe                 | 2    |
+| SD   | Superior und Deluxe | Superior and Deluxe | Supérieur et Deluxe  | Superior e Deluxe      | 3    |
+| EB   | Economy Budget      | Economy Budget      | Budget de l'économie | Bilancio dell'economia | 4    |&lt;/xs:documentation&gt;
+                            &lt;/xs:annotation&gt;
+                        &lt;/xs:element&gt;
                     &lt;/xs:all&gt;
                 &lt;/xs:complexType&gt;
             &lt;/xs:element&gt;
@@ -342,6 +418,6 @@
       <div class="pagefooter">
          			Documentation for Hotel Import Documentation<br/>
          Generated using 
-         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2020 - Data Designer Edition 18.0.10.10186</a></div>
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2021 - Data Designer Edition 19.0.7.10770</a></div>
    </body>
 </html>

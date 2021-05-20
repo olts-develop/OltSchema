@@ -48,9 +48,38 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="176,1792,446,1847" href="reqdeptransfer.html" alt="Drilldown into ReqDepTransfer"></area>
-                     <area shape="rect" coords="176,1729,437,1784" href="reqarrtransfer.html" alt="Drilldown into ReqArrTransfer"></area>
-                     <area shape="rect" coords="176,1697,261,1722" href="rooms.html" alt="Drilldown into Rooms"></area>
+                     <area shape="rect" coords="176,3731,446,3786" href="reqdeptransfer.html" alt="Drilldown into ReqDepTransfer"></area>
+                     <area shape="rect" coords="176,3669,437,3724" href="reqarrtransfer.html" alt="Drilldown into ReqArrTransfer"></area>
+                     <area shape="rect" coords="524,3484,830,3660" href="roomqualitycode.html" alt="Drilldown into RoomQualityCode"></area>
+                     <area shape="rect" coords="524,3330,830,3476" href="roomviewcode.html" alt="Drilldown into RoomViewCode"></area>
+                     <area shape="rect" coords="524,3126,831,3323" href="roomtypecode.html" alt="Drilldown into RoomTypeCode"></area>
+                     <area shape="rect" coords="524,3074,787,3118" href="included.html" alt="Drilldown into Included"></area>
+                     <area shape="rect" coords="524,3042,609,3067" href="prices.html" alt="Drilldown into Prices"></area>
+                     <area shape="rect" coords="524,3010,674,3035" href="iteminfos2.html" alt="Drilldown into ItemInfos"></area>
+                     <area shape="rect" coords="524,2978,717,3003" href="vouchersupplier.html" alt="Drilldown into VoucherSupplier"></area>
+                     <area shape="rect" coords="524,2946,692,2971" href="paysupplier.html" alt="Drilldown into PaySupplier"></area>
+                     <area shape="rect" coords="524,2914,673,2939" href="supplier.html" alt="Drilldown into Supplier"></area>
+                     <area shape="rect" coords="524,2862,695,2906" href="allotmentflag.html" alt="Drilldown into AllotmentFlag"></area>
+                     <area shape="rect" coords="524,2800,824,2855" href="passive1.html" alt="Drilldown into Passive"></area>
+                     <area shape="rect" coords="524,2738,824,2793" href="automatedfeecode1.html" alt="Drilldown into AutomatedFeeCode"></area>
+                     <area shape="rect" coords="524,2544,719,2730" href="tourbomealcode.html" alt="Drilldown into TourboMealCode"></area>
+                     <area shape="rect" coords="524,2492,793,2536" href="tourbotext.html" alt="Drilldown into TourboText"></area>
+                     <area shape="rect" coords="524,2440,687,2484" href="tourbocode.html" alt="Drilldown into TourboCode"></area>
+                     <area shape="rect" coords="524,2388,699,2432" href="apiroomcode.html" alt="Drilldown into APIRoomCode"></area>
+                     <area shape="rect" coords="524,2336,695,2380" href="apihotelcode.html" alt="Drilldown into APIHotelCode"></area>
+                     <area shape="rect" coords="524,2247,728,2328" href="request1.html" alt="Drilldown into Request"></area>
+                     <area shape="rect" coords="524,2195,715,2239" href="extrabedchildren.html" alt="Drilldown into ExtraBedChildren"></area>
+                     <area shape="rect" coords="524,2143,705,2187" href="extrabedadults.html" alt="Drilldown into ExtraBedAdults"></area>
+                     <area shape="rect" coords="524,2091,677,2135" href="maxadults.html" alt="Drilldown into MaxAdults"></area>
+                     <area shape="rect" coords="524,2039,725,2083" href="maximaloccupancy.html" alt="Drilldown into MaximalOccupancy"></area>
+                     <area shape="rect" coords="524,1987,723,2031" href="minimaloccupancy.html" alt="Drilldown into MinimalOccupancy"></area>
+                     <area shape="rect" coords="524,1935,720,1979" href="normaloccupancy.html" alt="Drilldown into NormalOccupancy"></area>
+                     <area shape="rect" coords="524,1884,673,1928" href="mealcode.html" alt="Drilldown into MealCode"></area>
+                     <area shape="rect" coords="524,1821,722,1876" href="mealdescription.html" alt="Drilldown into MealDescription"></area>
+                     <area shape="rect" coords="524,1759,697,1814" href="description.html" alt="Drilldown into Description"></area>
+                     <area shape="rect" coords="524,1697,693,1752" href="roomtype.html" alt="Drilldown into RoomType"></area>
+                     <area shape="rect" coords="349,2636,434,2661" href="room.html" alt="Drilldown into Room"></area>
+                     <area shape="rect" coords="176,2636,261,2661" href="rooms.html" alt="Drilldown into Rooms"></area>
                      <area shape="rect" coords="176,1665,263,1690" href="hotelinfo.html" alt="Drilldown into HotelInfo"></area>
                      <area shape="rect" coords="176,1633,326,1658" href="iteminfos1.html" alt="Drilldown into ItemInfos"></area>
                      <area shape="rect" coords="176,1601,318,1626" href="tomanr.html" alt="Drilldown into TomaNr"></area>
@@ -554,6 +583,54 @@
                                             &lt;xs:documentation&gt;CDATA, describes what amenities are included in this booking.&lt;/xs:documentation&gt;
                                         &lt;/xs:annotation&gt;
                                     &lt;/xs:element&gt;
+                                    &lt;xs:element name="RoomTypeCode" type="xs:string" minOccurs="0"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;
+| CODE | DE                           | EN                 | FR                       | IT                          | INFX |
+|------|------------------------------|--------------------|--------------------------|-----------------------------|------|
+| OFF  | Laut Ausschreibung           | According to offer | Selon l'appel d'offres   | Secondo l'offerta           | 0    |
+| SG   | Einzelzimmer                 | Single room        | Chambre simple           | Camera singola              | 1    |
+| DB   | Doppelzimmer                 | Double room        | Chambre double           | Camera doppia               | 2    |
+| TR   | Dreibettzimmer               | Triple room        | Chambre triple           | Camera tripla               | 3    |
+| QU   | Vierbettzimmer               | Quadruple room     | Chambre quadruple        | Camera quadrupla            | 4    |
+| MU   | Multibettzimmer              | Multibed room      | Chambre à plusieurs lits | Camera a più letti          | 5    |
+| TW   | Zweibettzimmer (twin room)   | Twin room          | Salle double             | Camera doppia               | 6    |
+| FM   | Familienzimmer               | Family room        | Salle familiale          | Camera familiare            | 7    |
+| ST   | Studio                       | Studio             | Studio                   | Studio                      | 8    |
+| JN   | Juniorsuite                  | Junior suite       | Suite junior             | Junior suite                | 9    |
+| SU   | Suite                        | Suite              | Suite                    | Suite                       | 10   |
+| DU   | Duplex                       | Duplex             | Duplex                   | Duplex                      | 11   |
+| AP   | Appartement                  | Apartment          | Appartement              | Appartamento                | 12   |
+| BU   | Bungalow                     | Bungalow           | Bungalow                 | Bungalow                    | 13   |
+| VI   | Villa                        | Villa              | Villa                    | Villa                       | 14   |
+| HF   | Ferienwohnung (holiday flat) | Holiday flat       | Appartement de vacances  | Appartamento per le vacanze | 15   |
+| HH   | Ferienhaus (holiday home)    | Holiday home       | Maison de vacances       | Casa vacanze                | 16   |
+| SR   | Superior-Zimmer              | Superior room      | Chambre supérieure       | Camera superiore            | 17   |
+| DR   | Deluxe-Zimmer                | Deluxe room        | Chambre de luxe          | Camera deluxe               | 18   |&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:element&gt;
+                                    &lt;xs:element name="RoomViewCode" type="xs:string" minOccurs="0"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;
+| CODE | DE                                   | EN                         | FR                               | IT                                | INFX |
+|------|--------------------------------------|----------------------------|----------------------------------|-----------------------------------|------|
+| ST   | Standard / Kein besonderer Ausblick  | Standard / No special view | Standard / Sans vue particulière | Standard / Nessuna vista speciale | 0    |
+| SV   | Meerblick                            | Sea view                   | Vue sur la mer                   | Vista sul mare                    | 1    |
+| SS   | Seitlicher Meerblick                 | Side sea view              | Vue latérale sur la mer          | Vista mare laterale               | 2    |&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:element&gt;
+                                    &lt;xs:element name="RoomQualityCode" type="xs:string" minOccurs="0"&gt;
+                                        &lt;xs:annotation&gt;
+                                            &lt;xs:documentation&gt;
+| CODE | DE                  | EN                  | FR                   | IT                     | INFX |
+|------|---------------------|---------------------|----------------------|------------------------|------|
+| ST   | Standard            | Standard            | Standard             | Standard               | 0    |
+| SU   | Superior            | Superior            | Superior             | Superior               | 1    |
+| DX   | Deluxe              | Deluxe              | Deluxe               | Deluxe                 | 2    |
+| SD   | Superior und Deluxe | Superior and Deluxe | Supérieur et Deluxe  | Superior e Deluxe      | 3    |
+| EB   | Economy Budget      | Economy Budget      | Budget de l'économie | Bilancio dell'economia | 4    |&lt;/xs:documentation&gt;
+                                        &lt;/xs:annotation&gt;
+                                    &lt;/xs:element&gt;
                                 &lt;/xs:all&gt;
                             &lt;/xs:complexType&gt;
                         &lt;/xs:element&gt;
@@ -862,6 +939,6 @@
       <div class="pagefooter">
          			Documentation for Hotel Import Documentation<br/>
          Generated using 
-         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2020 - Data Designer Edition 18.0.10.10186</a></div>
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2021 - Data Designer Edition 19.0.7.10770</a></div>
    </body>
 </html>
