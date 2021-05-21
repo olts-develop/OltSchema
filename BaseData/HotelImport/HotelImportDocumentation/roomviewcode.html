@@ -44,7 +44,8 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>| CODE | DE                                   | EN                         | FR                               | IT                                | INFX |
+               <td><pre>The internal code needs to be sent in the XML, e.g. send "SV" for a sea view.
+| CODE | DE                                   | EN                         | FR                               | IT                                | INFX |
 |------|--------------------------------------|----------------------------|----------------------------------|-----------------------------------|------|
 |      | Standard / Kein besonderer Ausblick  | Standard / No special view | Standard / Sans vue particulière | Standard / Nessuna vista speciale | 0    |
 | SV   | Meerblick                            | Sea view                   | Vue sur la mer                   | Vista sul mare                    | 1    |
@@ -72,7 +73,7 @@
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;xs:element name="RoomViewCode" type="xs:string" minOccurs="0"&gt;
     &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;
+        &lt;xs:documentation&gt;The internal code needs to be sent in the XML, e.g. send "SV" for a sea view.
 | CODE | DE                                   | EN                         | FR                               | IT                                | INFX |
 |------|--------------------------------------|----------------------------|----------------------------------|-----------------------------------|------|
 |      | Standard / Kein besonderer Ausblick  | Standard / No special view | Standard / Sans vue particulière | Standard / Nessuna vista speciale | 0    |
