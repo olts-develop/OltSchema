@@ -1,46 +1,35 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid XML 2014 Designer Edition 12.2.7.5382 (http://www.liquid-technologies.com)-->
-<xs:schema elementFormDefault="qualified"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--Created with Liquid Studio 2021 (https://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:complexType name="SupplierType">
         <xs:simpleContent>
             <xs:extension base="xs:string">
-                <xs:attribute name="Seq"
-                              type="xs:string"
-                              use="optional">
+                <xs:attribute name="Seq" type="xs:string" use="optional">
                     <xs:annotation>
                         <xs:documentation>Supplier Sequence</xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
-                <xs:attribute name="Nr"
-                              type="xs:integer">
+                <xs:attribute name="Nr" type="xs:integer">
                     <xs:annotation>
                         <xs:documentation>Internal TO Online customer number for this supplier</xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
-                <xs:attribute name="AirlineNr"
-                              type="xs:string"
-                              use="optional">
+                <xs:attribute name="AirlineNr" type="xs:string" use="optional">
                     <xs:annotation>
                         <xs:documentation>If a supplier is an airline, this node would contain the airline number</xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
-                <xs:attribute name="Service"
-                              type="xs:string"
-                              use="optional">
+                <xs:attribute name="Service" type="xs:string" use="optional">
                     <xs:annotation>
                         <xs:documentation>Bsp: 060 oder 010</xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
-                <xs:attribute name="Code"
-                              type="xs:string"
-                              use="optional">
+                <xs:attribute name="Code" type="xs:string" use="optional">
                     <xs:annotation>
                         <xs:documentation>Bsp: IMHO oder KUON</xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
-                <xs:attribute name="ApiCode"
-                              use="optional">
+                <xs:attribute name="ApiCode" use="optional">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
                             <xs:enumeration value="AL" />
@@ -73,8 +62,7 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>
-                <xs:attribute name="Broker"
-                              use="optional">
+                <xs:attribute name="Broker" use="optional">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
                             <xs:enumeration value="PEG" />
@@ -93,9 +81,20 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>
-                <xs:attribute name="PayableTo"
-                              type="xs:string"
-                              use="optional" />
+                <xs:attribute name="PayableTo" type="xs:string" use="optional" />
+                <xs:attribute name="City" type="xs:string" />
+                <xs:attribute name="Name" type="xs:string" />
+                <xs:attribute name="Email" type="xs:string" />
+                <xs:attribute name="Address1" type="xs:string" />
+                <xs:attribute name="Address2" type="xs:string" />
+                <xs:attribute name="PostalCode" type="xs:string" />
+                <xs:attribute name="SupplierNr" type="xs:string" />
+                <xs:attribute name="CountryIsoCode" type="xs:string" />
+                <xs:attribute name="BusinessFaxNumber" type="xs:string" />
+                <xs:attribute name="CountryPhonePrefix" type="xs:string" />
+                <xs:attribute name="BusinessFaxAreaCode" type="xs:string" />
+                <xs:attribute name="BusinessPhoneNumber" type="xs:string" />
+                <xs:attribute name="BusinessPhoneAreaCode" type="xs:string" />
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>

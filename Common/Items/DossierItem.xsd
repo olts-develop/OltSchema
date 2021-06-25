@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)-->
+<!--Created with Liquid Studio 2021 (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <!--xs:include schemaLocation="..\Fifa\Projects.xsd" / -->
     <xs:include schemaLocation=".\Flight.xsd" />
@@ -621,6 +621,8 @@
 										</xs:documentation>
                                     </xs:annotation>
                                 </xs:element>
+                                <xs:element name="RoutingShort" type="xs:string" minOccurs="0" />
+                                <xs:element name="EffectiveStatus" type="xs:string" minOccurs="0" />
                             </xs:all>
                             <xs:attribute name="PackageType" use="optional">
                                 <xs:annotation>
@@ -831,6 +833,8 @@
                 </xs:annotation>
             </xs:attribute>
             <xs:attribute name="ViewOnly" type="xs:boolean" use="optional" />
+            <xs:attribute name="InvoicePosition" type="xs:nonNegativeInteger" use="optional" />
+            <xs:attribute name="ItineraryPosition" type="xs:nonNegativeInteger" />
         </xs:complexType>
     </xs:element>
 </xs:schema>

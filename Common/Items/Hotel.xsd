@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid Studio 2019 (https://www.liquid-technologies.com)-->
+<!--Created with Liquid Studio 2021 (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\Room.xsd" />
     <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
@@ -221,6 +221,8 @@
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="TomaNr" type="xs:string" minOccurs="0" />
+                <xs:element name="MealCode" type="xs:string" minOccurs="0" />
+                <xs:element name="TourboMealCode" type="xs:string" minOccurs="0" />
             </xs:all>
         </xs:complexType>
     </xs:element>
