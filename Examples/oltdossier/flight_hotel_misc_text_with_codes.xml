@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<OLTDossiers>
+    <Dossiers>
+        <Dossier Version="1.0" From="ACT" BookingMode="B2C" To="ACT" Date="2022-01-26" Time="20:01:00" Type="IMPORT" SubType="P" Agent="" Lang="de-ch" Mode="PROD">
+            <CreateDate>2022-01-26</CreateDate>
+            <Title>Radsportferien Mallorca</Title>
+            <FirstDate>2022-04-15</FirstDate>
+            <Language>de-ch</Language>
+            <ExternalSource>DYNAP</ExternalSource>
+            <DossierStatus DossierStatusCode="OK" />
+            <Currency>CHF</Currency>
+            <Destination DestinationCode="IBE" />
+            <Code3 Code="Mallorca" />
+            <Customers>
+                <Customer>
+                    <Language>de-ch</Language>
+                    <Gender>m</Gender>
+                    <Title></Title>
+                    <FirstName>Adrian</FirstName>
+                    <LastName>Bargholz</LastName>
+                    <Address1>Gartenweg 3</Address1>
+                    <Address2></Address2>
+                    <PostalCode>8000</PostalCode>
+                    <City>Zürich</City>
+                    <Country IsoCode="CH" />
+                    <Email>x.x@bluewin.ch</Email>
+                    <Email2 />
+                    <Mobile AreaCode="+41" Number="797979797" />
+                    <Phone AreaCode="+41" Number="797979797" />
+                    <Fax AreaCode="" Number="" />
+                    <Nationality IsoCode="" />
+                    <Smoker></Smoker>
+                    <FlightMealCode />
+                    <FlightSeatCode />
+                    <AllowPrivatMailing>true</AllowPrivatMailing>
+                </Customer>
+            </Customers>
+            <Travellers>
+                <Traveller>
+                    <TravellerId>1</TravellerId>
+                    <Gender>m</Gender>
+                    <FirstName>Adrian</FirstName>
+                    <LastName>Bargholz</LastName>
+                </Traveller>
+                <Traveller>
+                    <TravellerId>2</TravellerId>
+                    <Gender>f</Gender>
+                    <FirstName>Marlis Esther</FirstName>
+                    <LastName>Bargholz</LastName>
+                </Traveller>
+            </Travellers>
+            <DossierItems>
+                <DossierItem Type="Flight" BaseDataProductSeq="BICZRH10289">
+                    <BeginDate>2022-04-15</BeginDate>
+                    <Status>EK</Status>
+                    <NumberOfItems>2</NumberOfItems>
+                    <GdsSource>TOCHARTER</GdsSource>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice PriceType="Ticket">
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>317</PricePerUnit>
+                            <TotalPrice>634</TotalPrice>
+                            <PriceDescription>Hinflug</PriceDescription>
+                            <PriceType>1</PriceType>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Flight" BaseDataProductSeq="524">
+                    <BeginDate>2022-04-30</BeginDate>
+                    <Status>EK</Status>
+                    <NumberOfItems>2</NumberOfItems>
+                    <GdsSource>TOCHARTER</GdsSource>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice PriceType="Ticket">
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>259</PricePerUnit>
+                            <TotalPrice>518</TotalPrice>
+                            <PriceDescription>Rückflug</PriceDescription>
+                            <PriceType>1</PriceType>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous" BaseDataProductSeq="BICZRH11392">
+                    <BeginDate>2022-04-15</BeginDate>
+                    <EndDate>2022-04-30</EndDate>
+                    <Status>FS</Status>
+                    <Miscellaneous>
+                        <Title>Flughafentransfer</Title>
+                        <Detail>
+                            Detailinfos erhalten Sie ca. drei Wochen vor Abreise auf Ihrem persönlichen Reiseprogramm.
+                        </Detail>
+                    </Miscellaneous>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>76</PricePerUnit>
+                            <TotalPrice>152</TotalPrice>
+                            <PriceDescription>Transfers Flughafen - Hotel - Flughafen</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Hotel" BaseDataProductSeq="BICZRH10093">
+                    <BeginDate>2022-04-15</BeginDate>
+                    <EndDate>2022-04-30</EndDate>
+                    <Status>EK</Status>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>4</UnitNr>
+                            <PricePerUnit>106.00</PricePerUnit>
+                            <TotalPrice>424</TotalPrice>
+                            <PriceDescription>Preis pro Person/Nacht (2x2) </PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice>
+                            <UnitNr>12</UnitNr>
+                            <PricePerUnit>86.00</PricePerUnit>
+                            <TotalPrice>1032</TotalPrice>
+                            <PriceDescription>Preis pro Person/Nacht (2x6) </PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice>
+                            <UnitNr>14</UnitNr>
+                            <PricePerUnit>103.00</PricePerUnit>
+                            <TotalPrice>1442</TotalPrice>
+                            <PriceDescription>Preis pro Person/Nacht (2x7) </PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice PriceType="DoNotConsolidatePrice">
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>-86</PricePerUnit>
+                            <TotalPrice>-86</TotalPrice>
+                            <PriceDescription>Spar-Tipp: Frühbucherrabatt</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous">
+                    <BeginDate>2022-04-15</BeginDate>
+                    <EndDate>2022-04-29</EndDate>
+                    <Status>FS</Status>
+                    <ShortDescription1>Carbon Disc CUBE</ShortDescription1>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <Miscellaneous>
+                        <Title>Carbon Disc CUBE</Title>
+                        <Detail>
+                            Reservierungsnummer: 455979
+                            Körpergrösse: 185cm
+                            Radsportstation: Playa de Muro Nord
+                            Gästekartennummer: 626134
+                        </Detail>
+                        <ItineraryTitle>Carbon Disc CUBE</ItineraryTitle>
+                        <ItineraryDetail>
+                            Reservierungsnummer: 455979
+                            Körpergrösse: 185cm
+                            Radsportstation: Playa de Muro Nord
+                            Gästekartennummer: 626134
+                        </ItineraryDetail>
+                        <Destination>ES</Destination>
+                        <MiscCode>MISRAD</MiscCode>
+                        <MiscItemCode>RADCDC</MiscItemCode>
+                    </Miscellaneous>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>407</PricePerUnit>
+                            <TotalPrice>407</TotalPrice>
+                            <PriceDescription>Carbon Disc CUBE 15 Tage</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>-81</PricePerUnit>
+                            <TotalPrice>-81</TotalPrice>
+                            <PriceDescription>Preisvorteil Mietrad</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous">
+                    <BeginDate>2022-04-15</BeginDate>
+                    <EndDate>2022-04-29</EndDate>
+                    <Status>FS</Status>
+                    <ShortDescription1>Haftungsausschluss Carbon Disc CUBE</ShortDescription1>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <Miscellaneous>
+                        <Destination>ES</Destination>
+                        <MiscCode>MISVER</MiscCode>
+                        <MiscItemCode>RADCDC</MiscItemCode>
+                    </Miscellaneous>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>24</PricePerUnit>
+                            <TotalPrice>24</TotalPrice>
+                            <PriceDescription>Haftungsausschluss 15 Miettage</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous">
+                    <BeginDate>2022-04-15</BeginDate>
+                    <EndDate>2022-04-29</EndDate>
+                    <Status>FS</Status>
+                    <ShortDescription1>Carbon Disc CUBE</ShortDescription1>
+                    <Travellers>
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <Miscellaneous>
+                        <Title>Carbon Disc CUBE</Title>
+                        <Detail>
+                            Reservierungsnummer: 455980
+                            Körpergrösse: 174cm
+                            Radsportstation: Playa de Muro Nord
+                            Gästekartennummer: 537701
+                        </Detail>
+                        <ItineraryTitle>Carbon Disc CUBE</ItineraryTitle>
+                        <ItineraryDetail>
+                            Reservierungsnummer: 455980
+                            Körpergrösse: 174cm
+                            Radsportstation: Playa de Muro Nord
+                            Gästekartennummer: 537701
+                        </ItineraryDetail>
+                        <Destination>ES</Destination>
+                        <MiscCode>MISRAD</MiscCode>
+                        <MiscItemCode>RADCDC</MiscItemCode>
+                    </Miscellaneous>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>407</PricePerUnit>
+                            <TotalPrice>407</TotalPrice>
+                            <PriceDescription>Carbon Disc CUBE 15 Tage</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>-81</PricePerUnit>
+                            <TotalPrice>-81</TotalPrice>
+                            <PriceDescription>Preisvorteil Mietrad</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous">
+                    <BeginDate>2022-04-15</BeginDate>
+                    <EndDate>2022-04-29</EndDate>
+                    <Status>FS</Status>
+                    <ShortDescription1>Haftungsausschluss Carbon Disc CUBE</ShortDescription1>
+                    <Travellers>
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <Miscellaneous>
+                        <Destination>ES</Destination>
+                        <MiscCode>MISVER</MiscCode>
+                        <MiscItemCode>RADCDC</MiscItemCode>
+                    </Miscellaneous>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>24</PricePerUnit>
+                            <TotalPrice>24</TotalPrice>
+                            <PriceDescription>Haftungsausschluss 15 Miettage</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous" BaseDataProductSeq="BICZRH11696">
+                    <BeginDate>2022-04-15</BeginDate>
+                    <EndDate>2022-04-30</EndDate>
+                    <Status>FS</Status>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>38</PricePerUnit>
+                            <TotalPrice>38</TotalPrice>
+                            <PriceDescription>Reiserücktrittsschutz - Sonderbedingungen</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous" BaseDataProductSeq="BICZRH11696">
+                    <BeginDate>2022-04-15</BeginDate>
+                    <EndDate>2022-04-30</EndDate>
+                    <Status>FS</Status>
+                    <Travellers>
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>38</PricePerUnit>
+                            <TotalPrice>38</TotalPrice>
+                            <PriceDescription>Reiserücktrittsschutz - Sonderbedingungen</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Text">
+                    <Text>
+                        <InternalInsuranceCode>REISEG</InternalInsuranceCode>
+                    </Text>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>12</PricePerUnit>
+                            <TotalPrice>12</TotalPrice>
+                            <PriceDescription>Preis</PriceDescription>
+                            <PriceType>30</PriceType>
+                            <PricePosition>1</PricePosition>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+            </DossierItems>
+        </Dossier>
+    </Dossiers>
+</OLTDossiers>
