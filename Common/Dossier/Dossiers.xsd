@@ -188,7 +188,7 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                             </xs:element>
                             <xs:element name="Code1" minOccurs="0">
                                 <xs:annotation>
-                                    <xs:documentation>Can specify an event. Generally this code is defined by the Agent Online customer. It makes generally no sense sending this value in the use case "Dossie Create", but in some workflows, e.g. TravelOffice Workflow, this value is sent and contains the event code, but this value can be returned if an existing dossier is displayed.</xs:documentation>
+                                    <xs:documentation>Can specify an event. Generally this code is defined by the Agent Online customer. It makes generally no sense sending this value in the use case "Dossier Create", but in some workflows, e.g. TravelOffice Workflow, this value is sent and contains the event code, but this value can be returned if an existing dossier is displayed.</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:simpleContent>
@@ -232,7 +232,7 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                             </xs:element>
                             <xs:element name="Code2" minOccurs="0">
                                 <xs:annotation>
-                                    <xs:documentation>Can specify an event. Generally this code is defined by the Agent Online customer. It makes generally no sense sending this value in the use case "Dossie Create", but in some workflows, e.g. TravelOffice Workflow, this value is sent and contains the travel reason code, but this value can be returned if an existing dossier is displayed.</xs:documentation>
+                                    <xs:documentation>Can specify an event. Generally this code is defined by the Agent Online customer. It makes generally no sense sending this value in the use case "Dossier Create", but in some workflows, e.g. TravelOffice Workflow, this value is sent and contains the travel reason code, but this value can be returned if an existing dossier is displayed.</xs:documentation>
                                 </xs:annotation>
                                 <xs:complexType>
                                     <xs:simpleContent>
@@ -261,7 +261,95 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
                                             </xs:attribute>
                                             <xs:attribute name="Description" use="optional">
                                                 <xs:annotation>
-                                                    <xs:documentation>A web service is available to return a list of all Code1 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                    <xs:documentation>A web service is available to return a list of all Code2 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="150" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Code3" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Can specify an event. Generally this code is defined by the Agent Online customer. It makes generally no sense sending this value in the use case "Dossier Create", but in some workflows, e.g. TravelOffice Workflow, this value is sent and contains the travel reason code, but this value can be returned if an existing dossier is displayed.</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="Seq" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code3 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="20" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Code" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code3 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="30" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Description" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code3 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="150" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Code4" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Can specify an event. Generally this code is defined by the Agent Online customer. It makes generally no sense sending this value in the use case "Dossier Create", but in some workflows, e.g. TravelOffice Workflow, this value is sent and contains the travel reason code, but this value can be returned if an existing dossier is displayed.</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="Seq" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code2 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="20" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Code" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code4 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
+                                                </xs:annotation>
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:minLength value="0" />
+                                                        <xs:maxLength value="30" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="Description" use="optional">
+                                                <xs:annotation>
+                                                    <xs:documentation>A web service is available to return a list of all Code4 values in the Agent Online backend. This list can then be used to fill the correct Seq and Code values.</xs:documentation>
                                                 </xs:annotation>
                                                 <xs:simpleType>
                                                     <xs:restriction base="xs:string">
