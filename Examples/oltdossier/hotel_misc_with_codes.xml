@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<OLTDossiers>
+    <Dossiers>
+        <Dossier Version="1.0" From="ACT" BookingMode="B2C" To="ACT" Date="2022-01-26" Time="08:01:39" Type="IMPORT" SubType="P" Agent="" Lang="de-ch" Mode="PROD">
+            <CreateDate>2022-01-26</CreateDate>
+            <Title>Radsportferien Mallorca</Title>
+            <FirstDate>2022-02-24</FirstDate>
+            <Language>de-ch</Language>
+            <ExternalSource>DYNAP</ExternalSource>
+            <DossierStatus DossierStatusCode="OK" />
+            <Currency>EUR</Currency>
+            <Destination DestinationCode="IBE" />
+            <Code3 Code="Mallorca" />
+            <Customers>
+                <Customer>
+                    <Language>de-ch</Language>
+                    <Gender>m</Gender>
+                    <Title></Title>
+                    <FirstName>Werner</FirstName>
+                    <LastName>Bargholz</LastName>
+                    <Address1>XXXXXX-Str. 50</Address1>
+                    <Address2></Address2>
+                    <PostalCode>12345</PostalCode>
+                    <City>Hamburg</City>
+                    <Country IsoCode="DE" />
+                    <Email>aaa@bbb.de</Email>
+                    <Email2 />
+                    <Mobile AreaCode="+49" Number="1234567890" />
+                    <Phone AreaCode="+49" Number="1234567890" />
+                    <Fax AreaCode="" Number="" />
+                    <Nationality IsoCode="" />
+                    <Smoker></Smoker>
+                    <FlightMealCode />
+                    <FlightSeatCode />
+                    <AllowPrivatMailing>true</AllowPrivatMailing>
+                </Customer>
+            </Customers>
+            <Travellers>
+                <Traveller>
+                    <TravellerId>1</TravellerId>
+                    <Gender>m</Gender>
+                    <FirstName>Werner</FirstName>
+                    <LastName>Bargholz</LastName>
+                </Traveller>
+                <Traveller>
+                    <TravellerId>2</TravellerId>
+                    <Gender>f</Gender>
+                    <FirstName>Christine</FirstName>
+                    <LastName>Krüger</LastName>
+                </Traveller>
+            </Travellers>
+            <DossierItems>
+                <DossierItem Type="Flight" BaseDataProductSeq="BICZRH10651">
+                    <BeginDate>2022-02-24</BeginDate>
+                    <Status>EK</Status>
+                    <NumberOfItems>2</NumberOfItems>
+                    <GdsSource>TOCHARTER</GdsSource>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice PriceType="Ticket">
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>110</PricePerUnit>
+                            <TotalPrice>220</TotalPrice>
+                            <PriceDescription>Hinflug</PriceDescription>
+                            <PriceType>1</PriceType>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Flight" BaseDataProductSeq="BICZRH10653">
+                    <BeginDate>2022-03-07</BeginDate>
+                    <Status>EK</Status>
+                    <NumberOfItems>2</NumberOfItems>
+                    <GdsSource>TOCHARTER</GdsSource>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice PriceType="Ticket">
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>134</PricePerUnit>
+                            <TotalPrice>268</TotalPrice>
+                            <PriceDescription>Rückflug</PriceDescription>
+                            <PriceType>1</PriceType>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous" BaseDataProductSeq="25">
+                    <BeginDate>2022-02-24</BeginDate>
+                    <EndDate>2022-03-07</EndDate>
+                    <Status>FS</Status>
+                    <Miscellaneous>
+                        <Title>Flughafentransfer</Title>
+                        <Detail>
+                            Detailinfos erhalten Sie ca. drei Wochen vor Abreise auf Ihrem persönlichen Reiseprogramm.
+                        </Detail>
+                    </Miscellaneous>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>2</UnitNr>
+                            <PricePerUnit>70</PricePerUnit>
+                            <TotalPrice>140</TotalPrice>
+                            <PriceDescription>Transfers Flughafen - Hotel - Flughafen</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Hotel" BaseDataProductSeq="42">
+                    <BeginDate>2022-02-24</BeginDate>
+                    <EndDate>2022-03-07</EndDate>
+                    <Status>EK</Status>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>22</UnitNr>
+                            <PricePerUnit>49.00</PricePerUnit>
+                            <TotalPrice>1078</TotalPrice>
+                            <PriceDescription>Preis pro Person/Nacht (2x11) </PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice PriceType="DoNotConsolidatePrice">
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>-86</PricePerUnit>
+                            <TotalPrice>-86</TotalPrice>
+                            <PriceDescription>Spar-Tipp: Frühbucherrabatt</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous">
+                    <BeginDate>2022-02-24</BeginDate>
+                    <EndDate>2022-03-06</EndDate>
+                    <Status>FS</Status>
+                    <ShortDescription1>Sportrad Alu</ShortDescription1>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <Miscellaneous>
+                        <Title>Sportrad Alu</Title>
+                        <Detail>
+                            Reservierungsnummer: 455878
+                            Körpergrösse: 179cm
+                            Radsportstation: Puerto Alcudia
+                            Gästekartennummer:
+                        </Detail>
+                        <ItineraryTitle>Sportrad Alu</ItineraryTitle>
+                        <ItineraryDetail>
+                            Reservierungsnummer: 455878
+                            Körpergrösse: 179cm
+                            Radsportstation: Puerto Alcudia
+                            Gästekartennummer:
+                        </ItineraryDetail>
+                        <Destination>ES</Destination>
+                        <MiscCode>MISRAD</MiscCode>
+                        <MiscItemCode>RADSPO</MiscItemCode>
+                    </Miscellaneous>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>130</PricePerUnit>
+                            <TotalPrice>130</TotalPrice>
+                            <PriceDescription>Sportrad Alu 11 Tage</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>-26</PricePerUnit>
+                            <TotalPrice>-26</TotalPrice>
+                            <PriceDescription>Preisvorteil Mietrad</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous">
+                    <BeginDate>2022-02-24</BeginDate>
+                    <EndDate>2022-03-06</EndDate>
+                    <Status>FS</Status>
+                    <ShortDescription1>Haftungsausschluss Sportrad Alu</ShortDescription1>
+                    <Travellers>
+                        <Traveller TravellerId="1" />
+                    </Travellers>
+                    <Miscellaneous>
+                        <Destination>ES</Destination>
+                        <MiscCode>MISVER</MiscCode>
+                        <MiscItemCode>RADSPO</MiscItemCode>
+                    </Miscellaneous>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>14</PricePerUnit>
+                            <TotalPrice>14</TotalPrice>
+                            <PriceDescription>Haftungsausschluss 11 Miettage</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="1" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous">
+                    <BeginDate>2022-02-24</BeginDate>
+                    <EndDate>2022-03-06</EndDate>
+                    <Status>FS</Status>
+                    <ShortDescription1>Sportrad Alu</ShortDescription1>
+                    <Travellers>
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <Miscellaneous>
+                        <Title>Sportrad Alu</Title>
+                        <Detail>
+                            Reservierungsnummer: 455879
+                            Körpergrösse: 165cm
+                            Radsportstation: Puerto Alcudia
+                            Gästekartennummer:
+                        </Detail>
+                        <ItineraryTitle>Sportrad Alu</ItineraryTitle>
+                        <ItineraryDetail>
+                            Reservierungsnummer: 455879
+                            Körpergrösse: 165cm
+                            Radsportstation: Puerto Alcudia
+                            Gästekartennummer:
+                        </ItineraryDetail>
+                        <Destination>ES</Destination>
+                        <MiscCode>MISRAD</MiscCode>
+                        <MiscItemCode>RADSPO</MiscItemCode>
+                    </Miscellaneous>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>130</PricePerUnit>
+                            <TotalPrice>130</TotalPrice>
+                            <PriceDescription>Sportrad Alu 11 Tage</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>-26</PricePerUnit>
+                            <TotalPrice>-26</TotalPrice>
+                            <PriceDescription>Preisvorteil Mietrad</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+                <DossierItem Type="Miscellaneous">
+                    <BeginDate>2022-02-24</BeginDate>
+                    <EndDate>2022-03-06</EndDate>
+                    <Status>FS</Status>
+                    <ShortDescription1>Haftungsausschluss Sportrad Alu</ShortDescription1>
+                    <Travellers>
+                        <Traveller TravellerId="2" />
+                    </Travellers>
+                    <Miscellaneous>
+                        <Destination>ES</Destination>
+                        <MiscCode>MISVER</MiscCode>
+                        <MiscItemCode>RADSPO</MiscItemCode>
+                    </Miscellaneous>
+                    <ItemPrices>
+                        <ItemPrice>
+                            <UnitNr>1</UnitNr>
+                            <PricePerUnit>14</PricePerUnit>
+                            <TotalPrice>14</TotalPrice>
+                            <PriceDescription>Haftungsausschluss 11 Miettage</PriceDescription>
+                            <PriceTravellers>
+                                <PriceTraveller TravellerId="2" />
+                            </PriceTravellers>
+                        </ItemPrice>
+                    </ItemPrices>
+                </DossierItem>
+            </DossierItems>
+        </Dossier>
+    </Dossiers>
+</OLTDossiers>
