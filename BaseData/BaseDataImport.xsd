@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)-->
+<!--Created with Liquid Studio 2021 (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\BaseData.xsd" />
     <xs:complexType name="PeriodPricesChildren">
@@ -618,6 +618,13 @@ If this price line is a SO, and cannot be combined with an EB, then this CombCod
                     <xs:maxLength value="10" />
                 </xs:restriction>
             </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="CombLevel" type="xs:nonNegativeInteger">
+            <xs:annotation>
+                <xs:documentation>Non negative integer defining the pricing for EB Earlybookings and SO SpecialOffer.
+A higher level is calculated on the sum of the lower levels.
+Taking in to account valid days and the price flag 'Kein Rabatt'.  </xs:documentation>
+            </xs:annotation>
         </xs:attribute>
     </xs:attributeGroup>
     <xs:complexType name="ItemInfos">
