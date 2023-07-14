@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid Studio 2018 (https://www.liquid-technologies.com)-->
+<!--Created with Liquid Studio (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="Travellers">
         <xs:complexType>
@@ -28,6 +28,16 @@
                                         <xs:enumeration value="f" />
                                     </xs:restriction>
                                 </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Title" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Herr, Frau, Mr, Mrs, Madame, etc. This values is defined by the customer, and can differ between customers. Some customers might have Short versions of a title, list Mrs. (with a dot at the end). Others might have Mrs, or MRS. This is also a free text entry field, so other values should be expected.	</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="TitleEN" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Normally this field contains values like MR, MRS, CHD, INF, or Mr, Mrs, Chd, Inf.</xs:documentation>
+                                </xs:annotation>
                             </xs:element>
                             <xs:element name="Child" minOccurs="0">
                                 <xs:simpleType>
