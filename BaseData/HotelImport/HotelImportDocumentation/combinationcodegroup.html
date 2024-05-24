@@ -36,6 +36,7 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="196,268,489,343" href="comblevel.html" alt="Drilldown into CombLevel"></area>
                      <area shape="rect" coords="196,119,503,260" href="notandcombcode.html" alt="Drilldown into NotAndCombCode"></area>
                      <area shape="rect" coords="196,1,485,112" href="combcode.html" alt="Drilldown into CombCode"></area></map><img src="images/combinationcodegroup.png" border="0" alt="XSD Diagram of CombinationCodeGroup" usemap="#DiagramMap"></img></td>
             </tr>
@@ -75,6 +76,13 @@ If this price line is a SO, and cannot be combined with an EB, then this CombCod
             &lt;/xs:restriction&gt;
         &lt;/xs:simpleType&gt;
     &lt;/xs:attribute&gt;
+    &lt;xs:attribute name="CombLevel" type="xs:nonNegativeInteger"&gt;
+        &lt;xs:annotation&gt;
+            &lt;xs:documentation&gt;Non negative integer defining the pricing for EB Earlybookings and SO SpecialOffer.
+A higher level is calculated on the sum of the lower levels.
+Taking in to account valid days and the price flag 'Kein Rabatt'.  &lt;/xs:documentation&gt;
+        &lt;/xs:annotation&gt;
+    &lt;/xs:attribute&gt;
 &lt;/xs:attributeGroup&gt;</code></pre></td>
             </tr>
          </tbody>
@@ -106,14 +114,20 @@ If this price line is a SO, and cannot be combined with an EB, then this CombCod
                         <td class="mid"></td>
                         <td class="last">(Optional)</td>
                      </tr>
+                     <tr>
+                        <td class="first">CombLevel</td>
+                        <td><a href="comblevel.html">CombLevel</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
                   </table>
                </td>
             </tr>
          </tbody>
       </table>
       <div class="pagefooter">
-         			Documentation for Hotel Import Documentation<br/>
-         Generated using 
-         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2021 - Data Designer Edition 19.0.7.10770</a></div>
+         Documentation for Hotel Import Documentation<br/>
+         Generated using
+         <a href="https://www.liquid-technologies.com/" target="_blank" rel="nofollow">Liquid Studio - Data Designer Edition 20.7.9.12935</a></div>
    </body>
 </html>

@@ -28,7 +28,7 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>
-&lt;!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)--&gt;
+&lt;!--Created with Liquid Studio 2021 (https://www.liquid-technologies.com)--&gt;
 &lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
     &lt;xs:include schemaLocation=".\BaseData.xsd" /&gt;
     &lt;xs:complexType name="PeriodPricesChildren"&gt;
@@ -648,6 +648,13 @@ If this price line is a SO, and cannot be combined with an EB, then this CombCod
                 &lt;/xs:restriction&gt;
             &lt;/xs:simpleType&gt;
         &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="CombLevel" type="xs:nonNegativeInteger"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Non negative integer defining the pricing for EB Earlybookings and SO SpecialOffer.
+A higher level is calculated on the sum of the lower levels.
+Taking in to account valid days and the price flag 'Kein Rabatt'.  &lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:attribute&gt;
     &lt;/xs:attributeGroup&gt;
     &lt;xs:complexType name="ItemInfos"&gt;
         &lt;xs:all&gt;
@@ -836,8 +843,8 @@ If this price line is a SO, and cannot be combined with an EB, then this CombCod
          </tbody>
       </table>
       <div class="pagefooter">
-         			Documentation for Hotel Import Documentation<br/>
-         Generated using 
-         <a href="https://www.liquid-technologies.com/">Liquid Studio 2021 - Data Designer Edition 19.0.7.10770</a></div>
+         Documentation for Hotel Import Documentation<br/>
+         Generated using
+         <a href="https://www.liquid-technologies.com/" target="_blank">Liquid Studio - Data Designer Edition 20.7.9.12935</a></div>
    </body>
 </html>
