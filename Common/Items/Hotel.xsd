@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid Studio 2021 (https://www.liquid-technologies.com)-->
+<!--Created with Liquid Studio (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\Room.xsd" />
     <xs:include schemaLocation="..\GeneralCodes\SupplierType.xsd" />
@@ -65,6 +65,7 @@
                         <xs:documentation>e.g. Deluxe Double Room</xs:documentation>
                     </xs:annotation>
                 </xs:element>
+                <xs:element name="RoomCode" type="xs:string" minOccurs="0" />
                 <xs:element name="Included" type="xs:string" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>CDATA, describes what amenities are included in this booking.</xs:documentation>
@@ -155,7 +156,7 @@
                         <xs:documentation>Name of the hotel owner</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="Category" type="xs:decimal" minOccurs="0">
+                <xs:element name="Category" type="xs:string" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>Category
               1  =one Star
@@ -198,7 +199,18 @@
                 <xs:element name="HotelImages" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Image" type="ImageType" minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="HotelImage" type="ImageType" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation>Pictures for the Hotel</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="RoomImages" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="RoomImage" type="ImageType" minOccurs="0" maxOccurs="unbounded">
                                 <xs:annotation>
                                     <xs:documentation>Pictures for the Hotel</xs:documentation>
                                 </xs:annotation>
