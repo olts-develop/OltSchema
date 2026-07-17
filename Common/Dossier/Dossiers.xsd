@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid Studio 2021 (https://www.liquid-technologies.com)-->
+<!--Created with Liquid Studio (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\Customers.xsd" />
     <xs:include schemaLocation=".\Travellers.xsd" />
@@ -871,6 +871,10 @@ External systems that import dossiers can then know that they too have to delete
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
+                        <xs:attribute name="DestBookApiCode" type="xs:string" />
+                        <xs:attribute name="DestBookUserCode" type="xs:string" />
+                        <xs:attribute name="DestBookUserName" type="xs:string" />
+                        <xs:attribute name="DestBookCompanyCode" type="xs:string" />
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
