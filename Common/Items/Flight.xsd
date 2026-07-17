@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)-->
+<!--Created with Liquid Studio (https://www.liquid-technologies.com)-->
 <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation=".\ProductItemPrice.xsd" />
     <xs:include schemaLocation="..\GeneralCodes\PackageItemDescription.xsd" />
     <xs:element name="Flight">
         <xs:complexType>
             <xs:all>
-                <xs:element name="Airlinecode" type="xs:string" minOccurs="0">
+                <xs:element name="Airlinecode" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>e.g. LX</xs:documentation>
                     </xs:annotation>
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="AirlineName" type="xs:string" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
                 </xs:element>
                 <xs:element name="FlightNumber" type="xs:string" minOccurs="0">
                     <xs:annotation>
@@ -112,10 +119,18 @@
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="ArrivalDescription" minOccurs="0" />
-                <xs:element name="Class" type="xs:string" minOccurs="0">
+                <xs:element name="Class" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>ClasEffective booking class. Normally a character value between A and Z.</xs:documentation>
                     </xs:annotation>
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="ClassDescription" type="xs:string" use="optional" />
+                                <xs:attribute name="ClassNr" type="xs:string" use="optional" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
                 </xs:element>
                 <xs:element name="FlightTime" type="xs:time" minOccurs="0">
                     <xs:annotation>
@@ -231,19 +246,20 @@
                 </xs:element>
                 <xs:element name="InvoiceText" type="xs:string" minOccurs="0">
                     <xs:annotation>
-                        <xs:documentation></xs:documentation>
+                        <xs:documentation />
                     </xs:annotation>
                 </xs:element>
                 <xs:element name="ItineraryText" type="xs:string" minOccurs="0">
                     <xs:annotation>
-                        <xs:documentation></xs:documentation>
+                        <xs:documentation />
                     </xs:annotation>
                 </xs:element>
                 <xs:element name="DepartureText" type="xs:string" minOccurs="0">
                     <xs:annotation>
-                        <xs:documentation></xs:documentation>
+                        <xs:documentation />
                     </xs:annotation>
                 </xs:element>
+                <xs:element name="Duration" type="xs:string" minOccurs="0" />
             </xs:all>
         </xs:complexType>
     </xs:element>
