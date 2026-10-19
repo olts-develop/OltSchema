@@ -2,16 +2,14 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Docs for schema item DossierStatus in OLTDossiers</title>
       <!-- saved from url=(0014)about:internet -->
-      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
-   <body style="margin:10px"><script type="text/javascript">
-         <!--
+      <link rel="stylesheet" type="text/css" href="styles/site.css"><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript"><!--
                             EnsureInFrame('Element', 'dossierstatus');
                         --></script><div class="pageheader">
-         Documentation for OLTDossiers
-      </div>
+         Documentation for OLTDossiers</div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
@@ -44,7 +42,8 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>Status of the dossier. The textdata contains the full name of the dossier status. It does not need to be sent when importing a dossier, but a DossierStatusCode attribute code ought to be sent, so that the dossier will habe a corrent status. Example values for a Dossier Status are
+               <td>
+                  <pre>Status of the dossier. The textdata contains the full name of the dossier status. It does not need to be sent when importing a dossier, but a DossierStatusCode attribute code ought to be sent, so that the dossier will habe a corrent status. Example values for a Dossier Status are
 OK
 OFF - Offer
 HOLD - On Hold
@@ -55,30 +54,29 @@ VORRES - Pre booking
 If a dossier is sent from Agent Online, other states are possible:
 OKINV - Dossier OK and ready for invoice printing
 OKINVP - Dossier OK and has been printed
-XXINVP - Dossier cancelled and the cancelled dossier has been printed</pre></td>
+XXINVP - Dossier cancelled and the cancelled dossier has been printed</pre>
+               </td>
             </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
-               </td>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>XSD Schema Diagram:</b> </td>
             </tr>
             <tr id="xsdDiagram_body_id">
-               <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="344,5,642,177" href="dossierstatuscode.html" alt="Drilldown into DossierStatusCode"></area></map><img src="images/dossierstatus.png" border="0" alt="XSD Diagram of DossierStatus" usemap="#DiagramMap"></img></td>
+               <td><map name="DiagramMap" id="DiagramMap"><area shape="rect" coords="344,5,642,177" href="dossierstatuscode.html" alt="Drilldown into DossierStatusCode"></map><img src="images/dossierstatus.png" border="0" alt="XSD Diagram of DossierStatus" usemap="#DiagramMap"></td>
             </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
-               </td>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>XSD Schema Code:</b> </td>
             </tr>
             <tr id="xsdCode_body_id">
-               <td><pre><code>&lt;xs:element name="DossierStatus" minOccurs="0"&gt;
+               <td>
+                  <pre><code>&lt;xs:element name="DossierStatus" minOccurs="0"&gt;
     &lt;xs:annotation&gt;
         &lt;xs:documentation&gt;Status of the dossier. The textdata contains the full name of the dossier status. It does not need to be sent when importing a dossier, but a DossierStatusCode attribute code ought to be sent, so that the dossier will habe a corrent status. Example values for a Dossier Status are
 OK
@@ -122,14 +120,15 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
             &lt;/xs:extension&gt;
         &lt;/xs:simpleContent&gt;
     &lt;/xs:complexType&gt;
-&lt;/xs:element&gt;</code></pre></td>
+&lt;/xs:element&gt;</code></pre>
+               </td>
             </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>Child Attributes:</b></td>
             </tr>
             <tr id="childAttributes_body_id">
                <td width="120px;"></td>
@@ -153,8 +152,6 @@ XXINVP - Dossier cancelled and the cancelled dossier has been printed
          </tbody>
       </table>
       <div class="pagefooter">
-         			Documentation for OLTDossiers<br/>
-         Generated using 
-         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2020 - Data Designer Edition 18.0.10.10186</a></div>
+         Documentation for OLTDossiers</div>
    </body>
 </html>

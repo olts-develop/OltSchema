@@ -2,21 +2,19 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Docs for schema item Title in OLTDossiers</title>
       <!-- saved from url=(0014)about:internet -->
-      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
-   <body style="margin:10px"><script type="text/javascript">
-         <!--
-                            EnsureInFrame('Element', 'title1');
+      <link rel="stylesheet" type="text/css" href="styles/site.css"><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript"><!--
+                            EnsureInFrame('Attribute', 'title1');
                         --></script><div class="pageheader">
-         Documentation for OLTDossiers
-      </div>
+         Documentation for OLTDossiers</div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
                <td class="label" width="120px;"><b>Definition Type:</b></td>
-               <td>Element</td>
+               <td>Attribute</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Name:</b></td>
@@ -31,88 +29,34 @@
                <td><a href="dossiers_xsd.html">Dossiers.xsd</a></td>
             </tr>
             <tr>
-               <td class="label" width="120px;"><b>MinOccurs</b></td>
-               <td>0</td>
-            </tr>
-            <tr>
-               <td class="label" width="120px;"><b>MaxOccurs</b></td>
-               <td>(1)</td>
-            </tr>
-            <tr>
-               <td class="label" width="120px;"><b>Abstract</b></td>
-               <td></td>
-            </tr>
-            <tr>
-               <td class="label" width="120px;"><b>ContentType</b></td>
-               <td>Restriction</td>
-            </tr>
-            <tr>
-               <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>Dossier title</pre></td>
+               <td class="label" width="120px;"><b>Use</b></td>
+               <td>Optional</td>
             </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
-               </td>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>XSD Schema Diagram:</b> </td>
             </tr>
             <tr id="xsdDiagram_body_id">
-               <td><map name="DiagramMap" id="DiagramMap"></map><img src="images/title1.png" border="0" alt="XSD Diagram of Title" usemap="#DiagramMap"></img></td>
+               <td><map name="DiagramMap" id="DiagramMap"></map><img src="images/title1.png" border="0" alt="XSD Diagram of Title" usemap="#DiagramMap"></td>
             </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
-               </td>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>XSD Schema Code:</b> </td>
             </tr>
             <tr id="xsdCode_body_id">
-               <td><pre><code>&lt;xs:element name="Title" minOccurs="0"&gt;
-    &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;Dossier title&lt;/xs:documentation&gt;
-    &lt;/xs:annotation&gt;
-    &lt;xs:simpleType&gt;
-        &lt;xs:restriction base="xs:string"&gt;
-            &lt;xs:minLength value="0" /&gt;
-            &lt;xs:maxLength value="60" /&gt;
-        &lt;/xs:restriction&gt;
-    &lt;/xs:simpleType&gt;
-&lt;/xs:element&gt;</code></pre></td>
-            </tr>
-         </tbody>
-      </table>
-      <table cellpadding="0" cellspacing="0" class="mainHelp2">
-         <tbody>
-            <tr>
-               <td class="label" colspan="2"><img id="facets" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Facets:</b></td>
-            </tr>
-            <tr id="facets_body_id">
-               <td width="120px;"></td>
-               <td class="childTableHolder">
-                  <table class="childTable">
-                     <tr class="header">
-                        <td class="label first">Facet</td>
-                        <td class="last">Value</td>
-                     </tr>
-                     <tr>
-                        <td class="label" width="120px;"><b>MaxLength</b></td>
-                        <td>60</td>
-                     </tr>
-                     <tr>
-                        <td class="label" width="120px;"><b>MinLength</b></td>
-                        <td>0</td>
-                     </tr>
-                  </table>
+               <td>
+                  <pre><code>&lt;xs:attribute name="Title" type="xs:string" use="optional" /&gt;</code></pre>
                </td>
             </tr>
          </tbody>
       </table>
       <div class="pagefooter">
-         			Documentation for OLTDossiers<br/>
-         Generated using 
-         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2020 - Data Designer Edition 18.0.10.10186</a></div>
+         Documentation for OLTDossiers</div>
    </body>
 </html>

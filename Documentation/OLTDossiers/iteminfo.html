@@ -2,16 +2,14 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Docs for schema item ItemInfo in OLTDossiers</title>
       <!-- saved from url=(0014)about:internet -->
-      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
-   <body style="margin:10px"><script type="text/javascript">
-         <!--
+      <link rel="stylesheet" type="text/css" href="styles/site.css"><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript"><!--
                             EnsureInFrame('Element', 'iteminfo');
                         --></script><div class="pageheader">
-         Documentation for OLTDossiers
-      </div>
+         Documentation for OLTDossiers</div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
@@ -32,38 +30,30 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>Cancellation fee for this Item</pre></td>
+               <td>
+                  <pre>Cancellation fee for this Item</pre>
+               </td>
             </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
-               </td>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>XSD Schema Diagram:</b> </td>
             </tr>
             <tr id="xsdDiagram_body_id">
-               <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="216,436,421,480" href="enddate2.html" alt="Drilldown into EndDate"></area>
-                     <area shape="rect" coords="216,384,424,428" href="begindate2.html" alt="Drilldown into BeginDate"></area>
-                     <area shape="rect" coords="216,332,358,376" href="text1.html" alt="Drilldown into Text"></area>
-                     <area shape="rect" coords="216,281,412,325" href="title3.html" alt="Drilldown into Title"></area>
-                     <area shape="rect" coords="151,219,449,274" href="external.html" alt="Drilldown into External"></area>
-                     <area shape="rect" coords="151,167,329,211" href="itinerary.html" alt="Drilldown into Itinerary"></area>
-                     <area shape="rect" coords="151,115,325,159" href="invoice.html" alt="Drilldown into Invoice"></area>
-                     <area shape="rect" coords="151,63,336,107" href="type14.html" alt="Drilldown into Type"></area>
-                     <area shape="rect" coords="151,1,444,56" href="seq5.html" alt="Drilldown into Seq"></area></map><img src="images/iteminfo.png" border="0" alt="XSD Diagram of ItemInfo" usemap="#DiagramMap"></img></td>
+               <td><map name="DiagramMap" id="DiagramMap"><area shape="rect" coords="216,500,421,544" href="enddate2.html" alt="Drilldown into EndDate"><area shape="rect" coords="216,448,424,492" href="begindate2.html" alt="Drilldown into BeginDate"><area shape="rect" coords="216,396,358,440" href="text1.html" alt="Drilldown into Text"><area shape="rect" coords="216,345,412,389" href="title6.html" alt="Drilldown into Title"><area shape="rect" coords="151,313,293,338" href="voucher.html" alt="Drilldown into Voucher"><area shape="rect" coords="151,281,293,306" href="offer.html" alt="Drilldown into Offer"><area shape="rect" coords="151,219,449,274" href="external.html" alt="Drilldown into External"><area shape="rect" coords="151,167,329,211" href="itinerary.html" alt="Drilldown into Itinerary"><area shape="rect" coords="151,115,325,159" href="invoice.html" alt="Drilldown into Invoice"><area shape="rect" coords="151,63,336,107" href="type16.html" alt="Drilldown into Type"><area shape="rect" coords="151,1,444,56" href="seq7.html" alt="Drilldown into Seq"></map><img src="images/iteminfo.png" border="0" alt="XSD Diagram of ItemInfo" usemap="#DiagramMap"></td>
             </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
-               </td>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>XSD Schema Code:</b> </td>
             </tr>
             <tr id="xsdCode_body_id">
-               <td><pre><code>&lt;xs:element name="ItemInfo"&gt;
+               <td>
+                  <pre><code>&lt;xs:element name="ItemInfo"&gt;
     &lt;xs:annotation&gt;
         &lt;xs:documentation&gt;Cancellation fee for this Item&lt;/xs:documentation&gt;
     &lt;/xs:annotation&gt;
@@ -115,15 +105,18 @@
                 &lt;xs:documentation&gt;If true, then this information need only be displayed in external systems, not internally in TO Online.&lt;/xs:documentation&gt;
             &lt;/xs:annotation&gt;
         &lt;/xs:attribute&gt;
+        &lt;xs:attribute name="Offer" type="xs:boolean" /&gt;
+        &lt;xs:attribute name="Voucher" type="xs:boolean" /&gt;
     &lt;/xs:complexType&gt;
-&lt;/xs:element&gt;</code></pre></td>
+&lt;/xs:element&gt;</code></pre>
+               </td>
             </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>Child Elements:</b></td>
             </tr>
             <tr id="childElements_body_id">
                <td width="120px;"></td>
@@ -137,7 +130,7 @@
                      </tr>
                      <tr>
                         <td class="first">Title</td>
-                        <td><a href="title3.html">Title</a></td>
+                        <td><a href="title6.html">Title</a></td>
                         <td class="mid">0</td>
                         <td class="last">(1)</td>
                      </tr>
@@ -167,7 +160,7 @@
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>Child Attributes:</b></td>
             </tr>
             <tr id="childAttributes_body_id">
                <td width="120px;"></td>
@@ -181,13 +174,13 @@
                      </tr>
                      <tr>
                         <td class="first">Seq</td>
-                        <td><a href="seq5.html">Seq</a></td>
+                        <td><a href="seq7.html">Seq</a></td>
                         <td class="mid"></td>
                         <td class="last">(Optional)</td>
                      </tr>
                      <tr>
                         <td class="first">Type</td>
-                        <td><a href="type14.html">Type</a></td>
+                        <td><a href="type16.html">Type</a></td>
                         <td class="mid"></td>
                         <td class="last">(Optional)</td>
                      </tr>
@@ -209,14 +202,24 @@
                         <td class="mid"></td>
                         <td class="last">(Optional)</td>
                      </tr>
+                     <tr>
+                        <td class="first">Offer</td>
+                        <td><a href="offer.html">Offer</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Voucher</td>
+                        <td><a href="voucher.html">Voucher</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
                   </table>
                </td>
             </tr>
          </tbody>
       </table>
       <div class="pagefooter">
-         			Documentation for OLTDossiers<br/>
-         Generated using 
-         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2020 - Data Designer Edition 18.0.10.10186</a></div>
+         Documentation for OLTDossiers</div>
    </body>
 </html>

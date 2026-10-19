@@ -2,16 +2,14 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Docs for schema item Remark in OLTDossiers</title>
       <!-- saved from url=(0014)about:internet -->
-      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
-   <body style="margin:10px"><script type="text/javascript">
-         <!--
+      <link rel="stylesheet" type="text/css" href="styles/site.css"><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript"><!--
                             EnsureInFrame('Element', 'remark10');
                         --></script><div class="pageheader">
-         Documentation for OLTDossiers
-      </div>
+         Documentation for OLTDossiers</div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
@@ -24,7 +22,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Type:</b></td>
-               <td><a href="suppliertype.html">SupplierType</a></td>
+               <td>string:http://www.w3.org/2001/XMLSchema</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Containing Schema:</b></td>
@@ -44,131 +42,39 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Documentation:</b></td>
-               <td><pre>CDATA</pre></td>
+               <td>
+                  <pre>CDATA</pre>
+               </td>
             </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
-               </td>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>XSD Schema Diagram:</b> </td>
             </tr>
             <tr id="xsdDiagram_body_id">
-               <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="233,588,385,613" href="payableto.html" alt="Drilldown into PayableTo"></area>
-                     <area shape="rect" coords="233,437,375,580" href="broker.html" alt="Drilldown into Broker"></area>
-                     <area shape="rect" coords="233,286,375,429" href="apicode.html" alt="Drilldown into ApiCode"></area>
-                     <area shape="rect" coords="233,234,375,278" href="code8.html" alt="Drilldown into Code"></area>
-                     <area shape="rect" coords="233,182,375,226" href="service.html" alt="Drilldown into Service"></area>
-                     <area shape="rect" coords="233,130,513,174" href="airlinenr.html" alt="Drilldown into AirlineNr"></area>
-                     <area shape="rect" coords="233,78,455,122" href="nr.html" alt="Drilldown into Nr"></area>
-                     <area shape="rect" coords="233,27,375,71" href="seq4.html" alt="Drilldown into Seq"></area>
-                     <area shape="rect" coords="213,2,521,623" href="suppliertype.html" alt="Drilldown into SupplierType"></area></map><img src="images/remark10.png" border="0" alt="XSD Diagram of Remark" usemap="#DiagramMap"></img></td>
+               <td><map name="DiagramMap" id="DiagramMap"></map><img src="images/remark10.png" border="0" alt="XSD Diagram of Remark" usemap="#DiagramMap"></td>
             </tr>
          </tbody>
       </table>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
             <tr>
-               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
-               </td>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"> <b>XSD Schema Code:</b> </td>
             </tr>
             <tr id="xsdCode_body_id">
-               <td><pre><code>&lt;xs:element name="Remark" type="SupplierType" minOccurs="0"&gt;
+               <td>
+                  <pre><code>&lt;xs:element name="Remark" type="xs:string" minOccurs="0"&gt;
     &lt;xs:annotation&gt;
         &lt;xs:documentation&gt;CDATA&lt;/xs:documentation&gt;
     &lt;/xs:annotation&gt;
-&lt;/xs:element&gt;</code></pre></td>
-            </tr>
-         </tbody>
-      </table>
-      <table cellpadding="0" cellspacing="0" class="mainHelp2">
-         <tbody>
-            <tr>
-               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
-            </tr>
-            <tr id="childAttributes_body_id">
-               <td width="120px;"></td>
-               <td class="childTableHolder">
-                  <table class="childTable">
-                     <tr class="header">
-                        <td class="label first">Name</td>
-                        <td>Type</td>
-                        <td class="mid">Default Value</td>
-                        <td class="last">Use</td>
-                     </tr>
-                     <tr>
-                        <td class="first">Seq</td>
-                        <td><a href="seq4.html">Seq</a></td>
-                        <td class="mid"></td>
-                        <td class="last">Optional</td>
-                     </tr>
-                     <tr>
-                        <td class="first">Nr</td>
-                        <td><a href="nr.html">Nr</a></td>
-                        <td class="mid"></td>
-                        <td class="last">(Optional)</td>
-                     </tr>
-                     <tr>
-                        <td class="first">AirlineNr</td>
-                        <td><a href="airlinenr.html">AirlineNr</a></td>
-                        <td class="mid"></td>
-                        <td class="last">Optional</td>
-                     </tr>
-                     <tr>
-                        <td class="first">Service</td>
-                        <td><a href="service.html">Service</a></td>
-                        <td class="mid"></td>
-                        <td class="last">Optional</td>
-                     </tr>
-                     <tr>
-                        <td class="first">Code</td>
-                        <td><a href="code8.html">Code</a></td>
-                        <td class="mid"></td>
-                        <td class="last">Optional</td>
-                     </tr>
-                     <tr>
-                        <td class="first">ApiCode</td>
-                        <td><a href="apicode.html">ApiCode</a></td>
-                        <td class="mid"></td>
-                        <td class="last">Optional</td>
-                     </tr>
-                     <tr>
-                        <td class="first">Broker</td>
-                        <td><a href="broker.html">Broker</a></td>
-                        <td class="mid"></td>
-                        <td class="last">Optional</td>
-                     </tr>
-                     <tr>
-                        <td class="first">PayableTo</td>
-                        <td><a href="payableto.html">PayableTo</a></td>
-                        <td class="mid"></td>
-                        <td class="last">Optional</td>
-                     </tr>
-                  </table>
-               </td>
-            </tr>
-         </tbody>
-      </table>
-      <table cellpadding="0" cellspacing="0" class="mainHelp2">
-         <tbody>
-            <tr>
-               <td class="label" colspan="2"><img id="derivationTree" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Derivation Tree:</b></td>
-            </tr>
-            <tr id="derivationTree_body_id">
-               <td width="120px;"></td>
-               <td>
-                  <ul><li><a href="suppliertype.html">SupplierType</a><ul>
-                     <li><b><i>Remark</i></b></li></ul></li>
-                  </ul>
+&lt;/xs:element&gt;</code></pre>
                </td>
             </tr>
          </tbody>
       </table>
       <div class="pagefooter">
-         			Documentation for OLTDossiers<br/>
-         Generated using 
-         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2020 - Data Designer Edition 18.0.10.10186</a></div>
+         Documentation for OLTDossiers</div>
    </body>
 </html>
